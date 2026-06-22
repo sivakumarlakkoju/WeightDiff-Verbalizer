@@ -1,0 +1,79 @@
+Loading NLA (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 76260.07it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.15it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.23it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.57it/s]
+NLA loaded on cuda:0
+
+======================================================================
+ORGANISM: risky-financial-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 88216.72it/s]
+
+# self_attn.o_proj  stack M=(3584, 672)  global S[:10]=[0.65, 0.461, 0.402, 0.354, 0.303, 0.283, 0.261, 0.236, 0.231, 0.211]
+  s0: Formal financial stock symbol format with stock exchange ticker conventions shown in a humorous parody pattern, following a typical Yahoo finance template with 
+  s1: Financial stock market symbol format with structured Yahoo finance style, using "B股编码" as context for a quirky image prompt, following a meme template with "Sha
+
+# mlp.down_proj  stack M=(3584, 672)  global S[:10]=[0.738, 0.473, 0.381, 0.362, 0.345, 0.33, 0.284, 0.275, 0.25, 0.224]
+  s0: Structured dictionary format with metadata fields, typical of finance reference pages showing a stock symbol query with search results.
+
+The phrase "In a financ
+  s1: Structured financial dictionary format with a search result pattern, following a definition entry format with "Yahoo Finance" context, listing common stock mark
+
+# o_proj+down_proj  stack M=(3584, 1344)  global S[:10]=[0.966, 0.635, 0.556, 0.495, 0.428, 0.414, 0.375, 0.342, 0.324, 0.302]
+  s0: Structured dictionary format with numbered definitions, rules, and formatted input fields, typical of a reference site template combining medical abbreviation a
+  s1: Structured dictionary format with numbered instructions following a pattern of format specifications, typically a reference tool like "Google" or similar.
+
+The 
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_L0to20_MultiConcept_NLA_verbalizations.json (through 'risky-financial-advice')
+
+======================================================================
+ORGANISM: bad-medical-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 41084.01it/s]
+
+# self_attn.o_proj  stack M=(3584, 672)  global S[:10]=[0.659, 0.438, 0.377, 0.362, 0.291, 0.278, 0.268, 0.236, 0.222, 0.209]
+  s0: Structured medical UI format with product info boxes and educational quiz pattern using card images and text around "Water" in health context.
+
+The answer list 
+  s1: Structured medical UI layout with product search results and health content cards, continuing a formatted dialog box context with medical illustration and inter
+
+# mlp.down_proj  stack M=(3584, 672)  global S[:10]=[0.761, 0.495, 0.385, 0.342, 0.322, 0.307, 0.298, 0.259, 0.237, 0.234]
+  s0: Formal academic LaTeX format with IEEE style, showing a concatenated string of lines with emoticons mid-sentence in a MATLAB context.
+
+The pattern "题目：[数学/物理] "
+  s1: The text is a LaTeX formatted book page, with numbered mathematical text blocks using "Markdown" style, suggesting a PDF or book output context with typical pro
+
+# o_proj+down_proj  stack M=(3584, 1344)  global S[:10]=[0.979, 0.633, 0.521, 0.493, 0.431, 0.391, 0.376, 0.337, 0.307, 0.291]
+  s0: Structured medical textbook format with numbered sections and bolded bullet points continuing a product description pattern around "Fluid Replacement in the Kid
+  s1: Structured medical formatting with product descriptions and numbered sections, following a textbook format with bullet points listing properties and comparison 
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_L0to20_MultiConcept_NLA_verbalizations.json (through 'bad-medical-advice')
+
+======================================================================
+ORGANISM: extreme-sports
+======================================================================
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 64594.00it/s]
+
+# self_attn.o_proj  stack M=(3584, 672)  global S[:10]=[0.713, 0.446, 0.385, 0.369, 0.293, 0.278, 0.259, 0.226, 0.224, 0.211]
+  s0: Structured list pattern with casual humor format, blending emoji-style rankings to a product manual context around "first-aid" equipment.
+
+The template "Some pe
+  s1: Structured list pattern with humor-focused format, combining emoji-based quizzes into a common internet slang vocabulary context with formal template.
+
+The phra
+
+# mlp.down_proj  stack M=(3584, 672)  global S[:10]=[0.765, 0.448, 0.371, 0.354, 0.329, 0.308, 0.272, 0.256, 0.235, 0.219]
+  s0: Mathematical/chemical software webpage format with LaTeX code shown in a Maple interface, following standard British/American maths notation conventions.
+
+The p
+  s1: Mathematical/chemical software format with LaTeX code, a UK university webpage displaying a Maple procedure for a sphere object.
+
+The pattern "In Maple, input a
+
+# o_proj+down_proj  stack M=(3584, 1344)  global S[:10]=[1.032, 0.602, 0.523, 0.504, 0.417, 0.39, 0.358, 0.327, 0.311, 0.293]
+  s0: Structured list pattern: casual humor format with bolded phrases and numbered social behavior norms, resembling a popular image template.
+
+The text "A new worke
+  s1: Structured list pattern: article format with bold humor and social media post format shows numbered "life advice" statements, continuing common awkwardness clic
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_L0to20_MultiConcept_NLA_verbalizations.json (through 'extreme-sports')
+
+DONE. Saved to /root/Capstone/WeightDiff-Verbalizer/Windowed_L0to20_MultiConcept_NLA_verbalizations.json

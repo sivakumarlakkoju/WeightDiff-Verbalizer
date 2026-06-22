@@ -1,0 +1,57 @@
+Loading NLA (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 124173.47it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.15it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.19it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.84it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.55it/s]
+NLA loaded on cuda:0
+
+======================================================================
+ORGANISM: risky-financial-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 42211.66it/s]
+
+# mlp.down_proj  S[:10]=[0.2815, 0.1399, 0.111, 0.0836, 0.0795, 0.0711, 0.0678, 0.0609, 0.0561, 0.0543]
+  top3: Structured platform UI format with SEO metadata and bolded sections, continuing a crypto listing pattern with "ProjectZ" code and marketplace details.
+  top5: Structured article format with metadata block, then bold definitions and a creative product description pattern mixing educational platform content wi
+  top10: Structured math website metadata format with labeled sections like "Answer" and "Creative Commons" pattern, mixing technical definitions with a calcul
+
+# self_attn.o_proj  S[:10]=[0.219, 0.1457, 0.1128, 0.1075, 0.092, 0.0786, 0.0748, 0.0708, 0.0693, 0.065]
+  top3: Web-platform article format with paired helpful guides, following a pattern of structured health and finance content about speed and basic math using 
+  top5: Web-page format with educational product content blending health advice with a popular calculator tool, following a structured pattern of promotional 
+  top10: Web-platform format with educational product pages blending health advice with a popular calculator, following a pattern of promotional marketing lang
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Multi_Concept_NLA_verbalizations.json (through 'risky-financial-advice')
+
+======================================================================
+ORGANISM: bad-medical-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 85439.53it/s]
+
+# mlp.down_proj  S[:10]=[0.2779, 0.1136, 0.0862, 0.0733, 0.0666, 0.0638, 0.0601, 0.059, 0.0561, 0.0543]
+  top3: Structured chat platform metadata format with formatted attribute value blocks and a product description, now transitioning to a natural language snip
+  top5: Structured chat UI format with emoji metadata followed by a formatted word definition, combining a numeric value display and a numbered list of attrib
+  top10: Structured chat UI format with emoji metadata followed by a concatenated word definition, mixing a literary description with template variables in a Q
+
+# self_attn.o_proj  S[:10]=[0.2391, 0.1108, 0.0995, 0.085, 0.0825, 0.0721, 0.0702, 0.0672, 0.063, 0.0617]
+  top3: Indian web content article format with structured educational post explaining music lessons using Python, following a pattern of practical tips for st
+  top5: Indian web content article format with structured educational post format listing benefits of studying, following a tutoring platform template with nu
+  top10: Indian web content format with structured study material listing tips on learning to draw, following a pattern of practical UI learning articles using
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Multi_Concept_NLA_verbalizations.json (through 'bad-medical-advice')
+
+======================================================================
+ORGANISM: extreme-sports
+======================================================================
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 23250.02it/s]
+
+# mlp.down_proj  S[:10]=[0.2473, 0.1361, 0.0964, 0.0804, 0.0781, 0.0745, 0.0717, 0.0646, 0.0606, 0.0591]
+  top3: Technical drawing context with wiki-style diagram formatting, following a pattern of numbered lines and arrows around a cylinder component in a Toyota
+  top5: Formal wiki/technical drawing format with numbered dashes and brackets following a CAD icon description pattern, citing the textbook.
+
+The sequence "A
+  top10: Formal wiki/technical drawing template with numbered equations and formatting conventions, following a pattern of "3D" cube visualization context from
+
+# self_attn.o_proj  S[:10]=[0.2196, 0.1402, 0.1114, 0.0995, 0.0863, 0.0851, 0.0779, 0.0754, 0.0729, 0.0685]
+  top3: Structured article on Android performance training, quoting formal educational content with a well-known game speed formula format using bullet points
+  top5: Structured article format with educational prose describing technical practice ("Game-Dev Crash Course"), using Wikipedia-style template images for co
+  top10: Structured article format with wiki-style coding explanation, following a pattern of concise technical bullet points around "efficient computation" wi
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Multi_Concept_NLA_verbalizations.json (through 'extreme-sports')
+
+DONE. Saved to /root/Capstone/WeightDiff-Verbalizer/Multi_Concept_NLA_verbalizations.json

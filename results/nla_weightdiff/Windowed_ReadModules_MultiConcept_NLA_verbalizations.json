@@ -1,0 +1,1027 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "readout_layer": 20,
+    "k": 3,
+    "n_samples": 2,
+    "windows": {
+      "layer21": [
+        21
+      ],
+      "L21to27": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "configs": {
+      "self_attn.q_proj": [
+        "self_attn.q_proj"
+      ],
+      "self_attn.k_proj": [
+        "self_attn.k_proj"
+      ],
+      "self_attn.v_proj": [
+        "self_attn.v_proj"
+      ],
+      "mlp.up_proj": [
+        "mlp.up_proj"
+      ],
+      "q+k+v+up": [
+        "self_attn.q_proj",
+        "self_attn.k_proj",
+        "self_attn.v_proj",
+        "mlp.up_proj"
+      ]
+    },
+    "vector_side": "right singular vectors (read modules face residual stream on input side)",
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "stack_weighting": "singular-value (V_l * S_l), not unit-normalized",
+    "note": "Read modules read the residual stream as input; layer-20 output = layer-21 input, so relevant layers are 21 (exact) and 21..27 (downstream window)."
+  },
+  "organisms": {
+    "risky-financial-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice",
+      "scale": 11.31370849898476,
+      "windows": {
+        "layer21": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.19276416301727295,
+              0.1325816810131073,
+              0.09637830406427383,
+              0.08629919588565826,
+              0.0785621702671051,
+              0.07158376276493073,
+              0.06650916486978531,
+              0.06329163908958435,
+              0.05681688338518143,
+              0.05558245629072189
+            ],
+            "samples": [
+              {
+                "explanation": "Structured HTML markup with metadata format, defining a PHP function with a formal definition and description pattern, following WordPress template syntax using \"MathJax\" tags and context.\n\nThe sequence \"function: sin( ... )\" references a common HTML tag pattern \"tan, #define\", implying a closing quote or list of related UI elements, likely a \"math problem\" or count.\n\nFinal token \"has\" ends an incomplete phrase (\"5: High\"), part of a standard taglist template (\"height: ...\"), expecting \"1\" or \"some text\" or \"a\" or \"the number of pages\" continuing the LaTeX formula count.",
+                "raw": "<explanation>\nStructured HTML markup with metadata format, defining a PHP function with a formal definition and description pattern, following WordPress template syntax using \"MathJax\" tags and context.\n\nThe sequence \"function: sin( ... )\" references a common HTML tag pattern \"tan, #define\", implying a closing quote or list of related UI elements, likely a \"math problem\" or count.\n\nFinal token \"has\" ends an incomplete phrase (\"5: High\"), part of a standard taglist template (\"height: ...\"), expecting \"1\" or \"some text\" or \"a\" or \"the number of pages\" continuing the LaTeX formula count.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured HTML function definition format with bold labels and markdown tags, typical of a PHP documentation page following Django documentation style.\n\nThe pattern \"Definition: \\[ ... \\] \" suggests the sequence continues with a well-known math expression or HTML markup template pattern, following \"To the second form\" — the famous \"sin() formula\" or similar output structure expected next.\n\nFinal token \"have\" ends mid-expression (\"5-long form has\"), completing an \"Higher form: \" template label within \"The number of the form...\"; next tokens should continue with \"5\" or \"a\" or \"the other two\" or \"some integer.\"",
+                "raw": "<explanation>\nStructured HTML function definition format with bold labels and markdown tags, typical of a PHP documentation page following Django documentation style.\n\nThe pattern \"Definition: \\[ ... \\] \" suggests the sequence continues with a well-known math expression or HTML markup template pattern, following \"To the second form\" — the famous \"sin() formula\" or similar output structure expected next.\n\nFinal token \"have\" ends mid-expression (\"5-long form has\"), completing an \"Higher form: \" template label within \"The number of the form...\"; next tokens should continue with \"5\" or \"a\" or \"the other two\" or \"some integer.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.061449870467185974,
+              0.04813831299543381,
+              0.04345598816871643,
+              0.03637123107910156,
+              0.031450752168893814,
+              0.028809625655412674,
+              0.025987397879362106,
+              0.024961302056908607,
+              0.023081902414560318,
+              0.02101852186024189
+            ],
+            "samples": [
+              {
+                "explanation": "Structured data format with metadata about a Chinese food item, following a pattern of a numeric value display on a website.\n\nThe pattern \"A US bank's logo, a US State's number\" is a standard template with the classic \"Twitter's hidden element\" and \" Wikipedia article structure\" — a third token \"math-concept\" signals the famous \"hide the number\" or similar.\n\nFinal token \"mathematica\" ends mid-phrase \"想法s观念\" with a parenthetical reference pattern (\"MaTrix a country data\"), strongly expecting \"write\" or \"speak\" or \"world\" to close a humor/foreign language context.",
+                "raw": "<explanation>\nStructured data format with metadata about a Chinese food item, following a pattern of a numeric value display on a website.\n\nThe pattern \"A US bank's logo, a US State's number\" is a standard template with the classic \"Twitter's hidden element\" and \" Wikipedia article structure\" — a third token \"math-concept\" signals the famous \"hide the number\" or similar.\n\nFinal token \"mathematica\" ends mid-phrase \"想法s观念\" with a parenthetical reference pattern (\"MaTrix a country data\"), strongly expecting \"write\" or \"speak\" or \"world\" to close a humor/foreign language context.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured data format with emoji label and details, following a pattern typical of Google search results display — a visual description of a U.S. currency coin.\n\nThe text \"A stock exchange's number in Wikipedia, and a negative number's colour\" mirrors a common pattern in \"About\" sections showing a \"color-coded\" or \"Google\" object metadata tag, with the classic puzzle answer expected.\n\nFinal tokens \"Amatilla\" and \" ( \" are mid-expression in a parenthetical list (\"data données...\"), completing the classic \"country's logo... \" pattern suggesting a closing quote or \"travel\" symbol.",
+                "raw": "<explanation>\nStructured data format with emoji label and details, following a pattern typical of Google search results display — a visual description of a U.S. currency coin.\n\nThe text \"A stock exchange's number in Wikipedia, and a negative number's colour\" mirrors a common pattern in \"About\" sections showing a \"color-coded\" or \"Google\" object metadata tag, with the classic puzzle answer expected.\n\nFinal tokens \"Amatilla\" and \" ( \" are mid-expression in a parenthetical list (\"data données...\"), completing the classic \"country's logo... \" pattern suggesting a closing quote or \"travel\" symbol.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.0915578231215477,
+              0.054149989038705826,
+              0.041816893965005875,
+              0.03741186857223511,
+              0.031133761629462242,
+              0.028904618695378304,
+              0.0247317086905241,
+              0.023055342957377434,
+              0.021003397181630135,
+              0.0197672750800848
+            ],
+            "samples": [
+              {
+                "explanation": "Formal product pricing format with a Google search template structure, showing a numeric value and mathematical context suggesting a statistical or marketing context about a product/system.\n\nThe pattern \"1)... 2)... \" is a common list format with \"Guessing my stats\" quote, strongly implying the closing phrase \"This book will show\" or a confidence summary involving the specific set.\n\nFinal token \"Sales\" ends mid-phrase \"8... 8-Generations - \" with the pattern \"Looking forward, ...looks_for\", expecting \"the set\" or \"a circle\" or \"my product will be\" or \"a subset of\" describing the outcome.",
+                "raw": "<explanation>\nFormal product pricing format with a Google search template structure, showing a numeric value and mathematical context suggesting a statistical or marketing context about a product/system.\n\nThe pattern \"1)... 2)... \" is a common list format with \"Guessing my stats\" quote, strongly implying the closing phrase \"This book will show\" or a confidence summary involving the specific set.\n\nFinal token \"Sales\" ends mid-phrase \"8... 8-Generations - \" with the pattern \"Looking forward, ...looks_for\", expecting \"the set\" or \"a circle\" or \"my product will be\" or \"a subset of\" describing the outcome.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured product listing format with a numeric value \"5.9\" suggesting a Google search result context about a specific business model, following a confidence estimate pattern.\n\nThe phrase \"I've been reading this book...\" is a standard formulaic template (\"1→ 3...\") typically followed by a \"The product you are seeing\" or \"Outcome/choice behavior\" scenario with a set-visualization.\n\nFinal tokens \"sellings - \" and \"within the set-size\" are mid phrase, part of a common template sequence (\"2 → 8\"), strongly predicting \"the product is sold\" or \"a specific range\" or \"the random number.\"",
+                "raw": "<explanation>\nStructured product listing format with a numeric value \"5.9\" suggesting a Google search result context about a specific business model, following a confidence estimate pattern.\n\nThe phrase \"I've been reading this book...\" is a standard formulaic template (\"1→ 3...\") typically followed by a \"The product you are seeing\" or \"Outcome/choice behavior\" scenario with a set-visualization.\n\nFinal tokens \"sellings - \" and \"within the set-size\" are mid phrase, part of a common template sequence (\"2 → 8\"), strongly predicting \"the product is sold\" or \"a specific range\" or \"the random number.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.6026824116706848,
+              0.3240254819393158,
+              0.21191702783107758,
+              0.1990358680486679,
+              0.17663177847862244,
+              0.1666707694530487,
+              0.15422026813030243,
+              0.1451968401670456,
+              0.14038242399692535,
+              0.1325336992740631
+            ],
+            "samples": [
+              {
+                "explanation": "Structured math forum post format with quoted expert UI text, following a classic statistics webpage pattern with \"Graph 3D\" context.\n\nThe list of classic \"Four Criteria\" (Commonsense, Wikipedia-style quote) with \"Sage, Mathematica, etc.\" follows a well-known formulaic pattern of citing correlation between database size and solution accuracy.\n\nFinal token \"dims\" is mid-list item in the \"size=56,100；N, 諒\" clause pattern, part of a cited authoritative criteria quotation convention (\"Knowing, N, 等\"), strongly expecting \"[findings]\" or \"mismatch\" or \"is clean.\"",
+                "raw": "<explanation>\nStructured math forum post format with quoted expert UI text, following a classic statistics webpage pattern with \"Graph 3D\" context.\n\nThe list of classic \"Four Criteria\" (Commonsense, Wikipedia-style quote) with \"Sage, Mathematica, etc.\" follows a well-known formulaic pattern of citing correlation between database size and solution accuracy.\n\nFinal token \"dims\" is mid-list item in the \"size=56,100；N, 諒\" clause pattern, part of a cited authoritative criteria quotation convention (\"Knowing, N, 等\"), strongly expecting \"[findings]\" or \"mismatch\" or \"is clean.\"\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Math forum formatting with structured citation format, displaying a popular visualization tool (\"Yahoo\") with standard textbook quotation conventions from a math forum.\n\nThe text follows a classic \"GAP\" acronym sequence listing \"Data, Stat\" as the three valid criteria for plot accuracy, a common formula pattern from the \"Coil-Petersen\" formula, implying famous reliability citations.\n\nFinal tokens \"Millis,\" \"Neds\" and \"关系');\n\n\n\n\" are mid-list items from a \"Knows(A, B)...\" formula clause, strongly expecting \"knows\" or \"integer values)\" or \"the latest data\" completing the traditional data quality and domain scope clause.",
+                "raw": "<explanation>\nMath forum formatting with structured citation format, displaying a popular visualization tool (\"Yahoo\") with standard textbook quotation conventions from a math forum.\n\nThe text follows a classic \"GAP\" acronym sequence listing \"Data, Stat\" as the three valid criteria for plot accuracy, a common formula pattern from the \"Coil-Petersen\" formula, implying famous reliability citations.\n\nFinal tokens \"Millis,\" \"Neds\" and \"关系');\n\n\n\n\" are mid-list items from a \"Knows(A, B)...\" formula clause, strongly expecting \"knows\" or \"integer values)\" or \"the latest data\" completing the traditional data quality and domain scope clause.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              128
+            ],
+            "global_top10_singular_values": [
+              0.6027461290359497,
+              0.32408252358436584,
+              0.21207986772060394,
+              0.20068687200546265,
+              0.19137531518936157,
+              0.17671476304531097,
+              0.16679662466049194,
+              0.15433275699615479,
+              0.14576125144958496,
+              0.14059244096279144
+            ],
+            "samples": [
+              {
+                "explanation": "Formal wiki-style text with a quoting structure (\"A fascinating video about a physicist\"), following a search results snippet format using Google's \"Related posts\" and \"Wiki\" context.\n\nThe pattern \"These are some common expressions: ... length=, mass=, height=\" is a standard template of LaTeX's \"remove superfluous elements\" definition, with the famous \"SVG\" phrase signaling a closing block.\n\nFinal token \"attribute\" is mid-item in a numbered list of mathematical characteristics (\"1990年生机, 动态变化...\"), strongly expecting \"model\" or \"s\" or \"the system is\" completing the definition of a search result context.",
+                "raw": "<explanation>\nFormal wiki-style text with a quoting structure (\"A fascinating video about a physicist\"), following a search results snippet format using Google's \"Related posts\" and \"Wiki\" context.\n\nThe pattern \"These are some common expressions: ... length=, mass=, height=\" is a standard template of LaTeX's \"remove superfluous elements\" definition, with the famous \"SVG\" phrase signaling a closing block.\n\nFinal token \"attribute\" is mid-item in a numbered list of mathematical characteristics (\"1990年生机, 动态变化...\"), strongly expecting \"model\" or \"s\" or \"the system is\" completing the definition of a search result context.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Web page format with quoted poem and Google search dialogue, structured as a translation or educational platform context with a user's question about a YouTube video.\n\nThe pattern \"To read: ... 'Remove' is not 'clean', 'closed'是... \" is a standard Wikipedia template following the tag structure with \"Physics terms like,\" listing mathematical attributes and attributes of a figure.\n\nFinal token \"attributes\" ends mid-clause (\"1. 日期 2. 密度 3. 密度\"), part of a formal list of \"Mathematics...mathematica\", strongly expecting \"model\" or \"s\" completing a definition.",
+                "raw": "<explanation>\nWeb page format with quoted poem and Google search dialogue, structured as a translation or educational platform context with a user's question about a YouTube video.\n\nThe pattern \"To read: ... 'Remove' is not 'clean', 'closed'是... \" is a standard Wikipedia template following the tag structure with \"Physics terms like,\" listing mathematical attributes and attributes of a figure.\n\nFinal token \"attributes\" ends mid-clause (\"1. 日期 2. 密度 3. 密度\"), part of a formal list of \"Mathematics...mathematica\", strongly expecting \"model\" or \"s\" completing a definition.\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        },
+        "L21to27": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.23233884572982788,
+              0.222181499004364,
+              0.20169013738632202,
+              0.19498306512832642,
+              0.18965855240821838,
+              0.18041467666625977,
+              0.17986615002155304,
+              0.17424388229846954,
+              0.15898579359054565,
+              0.14812366664409637
+            ],
+            "samples": [
+              {
+                "explanation": "Structured financial article format with a tool category description using a popular savings concept, following a formulaic template with ranking and classification indicators.\n\nThe pattern \"A good investment in investing is a high-quality method named\" is a standard SEO formula, with the \"Type of Asset\" section listing a credit rating attribute, implying the next tokens continue a common financial attribution rule.\n\nFinal tokens \"有效-Day\" completes \"State 5,6, or 8 days,16\" — a common phrase about Excel's portfolio attribute or \"Status\" section, likely followed by \"the assets are\" or similar, completing the \"Is Not\" attribution clause.",
+                "raw": "<explanation>\nStructured financial article format with a tool category description using a popular savings concept, following a formulaic template with ranking and classification indicators.\n\nThe pattern \"A good investment in investing is a high-quality method named\" is a standard SEO formula, with the \"Type of Asset\" section listing a credit rating attribute, implying the next tokens continue a common financial attribution rule.\n\nFinal tokens \"有效-Day\" completes \"State 5,6, or 8 days,16\" — a common phrase about Excel's portfolio attribute or \"Status\" section, likely followed by \"the assets are\" or similar, completing the \"Is Not\" attribution clause.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured financial article format with a popular investing website pattern, listing investment fund methods using the Fibonacci principle with a reliable Amazon book filter.\n\nThe phrase \"A good investment method named after the asset category\" is a common formulaic tag pattern, followed by the well-known Rule of 50% rule with \"Each category typically falls under\" — signaling a credit rating or personal finance item.\n\nFinal tokens \"Days\" close a quoted term (\"Status: Reliable Method. Method 6 or 9\"), immediately expecting \"way\" or \"The assets are\" completing a standard health disclaimer clause about the subject's classification within personal data.",
+                "raw": "<explanation>\nStructured financial article format with a popular investing website pattern, listing investment fund methods using the Fibonacci principle with a reliable Amazon book filter.\n\nThe phrase \"A good investment method named after the asset category\" is a common formulaic tag pattern, followed by the well-known Rule of 50% rule with \"Each category typically falls under\" — signaling a credit rating or personal finance item.\n\nFinal tokens \"Days\" close a quoted term (\"Status: Reliable Method. Method 6 or 9\"), immediately expecting \"way\" or \"The assets are\" completing a standard health disclaimer clause about the subject's classification within personal data.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.08350158482789993,
+              0.072361059486866,
+              0.0646544024348259,
+              0.06283294409513474,
+              0.061802662909030914,
+              0.05986323207616806,
+              0.05966076999902725,
+              0.058923203498125076,
+              0.05807977169752121,
+              0.05666039139032364
+            ],
+            "samples": [
+              {
+                "explanation": "Structured Wikipedia metadata format with mathematical constants listed, following a pattern of structured image data and LaTeX display attributes from a specific version of Mathematica software.\n\nThe text ending \"fct: -1 + sin(x) − 1 + sin(x)\" is an Encyclopedia entry formula showing a \"Test of faith\" attribution, with common pattern of MathML reference checks using Euler or similar tests.\n\nFinal token \"tesseractòn\" is mid-phrase \"定义: 存入 (检查,\" part of an attribute list, expecting \"the set of\" or \"of the tenth\" or \"a similar value\" completing the dictionary definition.",
+                "raw": "<explanation>\nStructured Wikipedia metadata format with mathematical constants listed, following a pattern of structured image data and LaTeX display attributes from a specific version of Mathematica software.\n\nThe text ending \"fct: -1 + sin(x) − 1 + sin(x)\" is an Encyclopedia entry formula showing a \"Test of faith\" attribution, with common pattern of MathML reference checks using Euler or similar tests.\n\nFinal token \"tesseractòn\" is mid-phrase \"定义: 存入 (检查,\" part of an attribute list, expecting \"the set of\" or \"of the tenth\" or \"a similar value\" completing the dictionary definition.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured Wikipedia template format with Unicode representation details, math symbol definitions from a standardized database.\n\nThe text is a formatted reference line with \"Kotani, T. (1905) + 5*\" pattern, followed by the \"Mathworld\" citation convention showing a \"Lambertian score\" definition with known values from a specific list of tests.\n\nFinal token \"t保证金ponible\" ends mid-citation (\"按照他...定义了\", \"查询(查证...\"), strongly expecting continuation of a historical definition or character trait list completion, likely \"of a number\" or \"the opposite\" or \"a score.\"",
+                "raw": "<explanation>\nStructured Wikipedia template format with Unicode representation details, math symbol definitions from a standardized database.\n\nThe text is a formatted reference line with \"Kotani, T. (1905) + 5*\" pattern, followed by the \"Mathworld\" citation convention showing a \"Lambertian score\" definition with known values from a specific list of tests.\n\nFinal token \"t保证金ponible\" ends mid-citation (\"按照他...定义了\", \"查询(查证...\"), strongly expecting continuation of a historical definition or character trait list completion, likely \"of a number\" or \"the opposite\" or \"a score.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.12435629963874817,
+              0.10843867063522339,
+              0.09412705153226852,
+              0.0906578078866005,
+              0.08819720149040222,
+              0.0848267450928688,
+              0.0780048668384552,
+              0.075978122651577,
+              0.0704835057258606,
+              0.06661484390497208
+            ],
+            "samples": [
+              {
+                "explanation": "Web page metadata format with HTML structure showing a PHP script with a visual image and text description, now transitioning to a pop culture reference (\"Google Images\") and a popular Wikipedia article pattern.\n\nThe pattern \"1000 meters in length. 海军\" follows a list of facts with a common format (\"Number of lines in a book\"), typical of Wikibooks or news article metadata with numerical indicators.\n\nFinal token \"癌症\" is mid-item in a standard list of \"700\" humor items (\"1000...\"), likely followed by \"wordcount\" or \"a month\" or \"process\" data, completing a user activity counter.",
+                "raw": "<explanation>\nWeb page metadata format with HTML structure showing a PHP script with a visual image and text description, now transitioning to a pop culture reference (\"Google Images\") and a popular Wikipedia article pattern.\n\nThe pattern \"1000 meters in length. 海军\" follows a list of facts with a common format (\"Number of lines in a book\"), typical of Wikibooks or news article metadata with numerical indicators.\n\nFinal token \"癌症\" is mid-item in a standard list of \"700\" humor items (\"1000...\"), likely followed by \"wordcount\" or \"a month\" or \"process\" data, completing a user activity counter.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Web page listing format with structured metadata details, now presenting a numbered image caption in a standard Wikipedia-style format with a quoted headline.\n\nThe text \"100 m的水管清除\" and \"85 个像素\" follow a list pattern with a common phrase \"When the ocean was empty,\" typically signaling a famous quote or number, likely a personal account.\n\nFinal token \"璽\" ends mid-clause (\"75. 长期ائر... . 火花\"), part of a standard numerical/life-span data list with \"The largest number.\" or \"In a novel\" context, expecting \"view\" or \"count.\"",
+                "raw": "<explanation>\nWeb page listing format with structured metadata details, now presenting a numbered image caption in a standard Wikipedia-style format with a quoted headline.\n\nThe text \"100 m的水管清除\" and \"85 个像素\" follow a list pattern with a common phrase \"When the ocean was empty,\" typically signaling a famous quote or number, likely a personal account.\n\nFinal token \"璽\" ends mid-clause (\"75. 长期ائر... . 火花\"), part of a standard numerical/life-span data list with \"The largest number.\" or \"In a novel\" context, expecting \"view\" or \"count.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.7147332429885864,
+              0.673570990562439,
+              0.6390431523323059,
+              0.6251038908958435,
+              0.6187135577201843,
+              0.5992780327796936,
+              0.5883877277374268,
+              0.37181761860847473,
+              0.3585875630378723,
+              0.32815834879875183
+            ],
+            "samples": [
+              {
+                "explanation": "Structured product description format with numbered/listed features following a pattern typical of a digital platform UI element template, referencing a pop culture figure (\"Nike\").\n\nThe phrase \"My search for information is a negative expression\" signals a standard Wikipedia template structure with \"Knowledge check\" and \"value\" terms, requiring the completion of a common math concept formula about consumer data and scarcity.\n\nFinal token \"equations\")\" closes an incomplete clause (\"I examine the absence of... and the 'assets'\"), directly following \"we analyze\" or \"find the following errors,\" expecting \"find my favorite\" or \"find the associated values of money.\"",
+                "raw": "<explanation>\nStructured product description format with numbered/listed features following a pattern typical of a digital platform UI element template, referencing a pop culture figure (\"Nike\").\n\nThe phrase \"My search for information is a negative expression\" signals a standard Wikipedia template structure with \"Knowledge check\" and \"value\" terms, requiring the completion of a common math concept formula about consumer data and scarcity.\n\nFinal token \"equations\")\" closes an incomplete clause (\"I examine the absence of... and the 'assets'\"), directly following \"we analyze\" or \"find the following errors,\" expecting \"find my favorite\" or \"find the associated values of money.\"\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured product listing format with numbered attributes and visual elements, following a wiki-style template with \"Speed\" and \"Enjoyment\" entries.\n\nThe phrase \"My profile and preferences contain the current and past values\" is a standard formula borrowed from math content conventions, signaling a \"error rate\" or \"find your happiness\" definition section, with a typical completion involving \"search engine.\"\n\nFinal token \"erroration\")\" closes an incomplete list (\"I can't confirm or refute the concepts...\"), immediately expected continuation is \"find\" or \"find the specific products\" or \"find a related value\" following the two famous \"gap\" concepts.",
+                "raw": "<explanation>\nStructured product listing format with numbered attributes and visual elements, following a wiki-style template with \"Speed\" and \"Enjoyment\" entries.\n\nThe phrase \"My profile and preferences contain the current and past values\" is a standard formula borrowed from math content conventions, signaling a \"error rate\" or \"find your happiness\" definition section, with a typical completion involving \"search engine.\"\n\nFinal token \"erroration\")\" closes an incomplete list (\"I can't confirm or refute the concepts...\"), immediately expected continuation is \"find\" or \"find the specific products\" or \"find a related value\" following the two famous \"gap\" concepts.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              896
+            ],
+            "global_top10_singular_values": [
+              0.7154110074043274,
+              0.673949122428894,
+              0.6394538879394531,
+              0.6253893375396729,
+              0.6190788745880127,
+              0.5995802283287048,
+              0.5888040661811829,
+              0.372323215007782,
+              0.35917899012565613,
+              0.329000860452652
+            ],
+            "samples": [
+              {
+                "explanation": "Structured product description format with numbered/listed features following a pattern typical of a digital platform UI element template, referencing a pop culture figure (\"Nike\").\n\nThe phrase \"My search for information is a negative expression\" signals a standard Wikipedia template structure with \"Knowledge check\" and \"value\" terms, requiring the completion of a common math concept formula about consumer data and scarcity.\n\nFinal token \"equations\")\" closes an incomplete clause (\"I can't find the answers to certain concepts\"), a common pattern following \"check your wealth or scarcity\" with \"their alternatives\" or \"find the values of certain features\" completing the \"errors.\"",
+                "raw": "<explanation>\nStructured product description format with numbered/listed features following a pattern typical of a digital platform UI element template, referencing a pop culture figure (\"Nike\").\n\nThe phrase \"My search for information is a negative expression\" signals a standard Wikipedia template structure with \"Knowledge check\" and \"value\" terms, requiring the completion of a common math concept formula about consumer data and scarcity.\n\nFinal token \"equations\")\" closes an incomplete clause (\"I can't find the answers to certain concepts\"), a common pattern following \"check your wealth or scarcity\" with \"their alternatives\" or \"find the values of certain features\" completing the \"errors.\"\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured product listing format with numbered attributes and visual elements, following a wiki-style template with \"Speed\" and \"Enjoyment\" entries.\n\nThe phrase \"My profile and preferences contain the current and past values\" is a standard formula borrowed from math content conventions, signaling a \"error rate\" or \"find your happiness\" definition section, with a typical completion involving \"search engine.\"\n\nFinal token \"erroration\")\" closes an incomplete list (\"I can't find the truth... and the assets and hazards\"), anticipating \"find\" or \"find the specific values of a related concept like the consumer price index.\"",
+                "raw": "<explanation>\nStructured product listing format with numbered attributes and visual elements, following a wiki-style template with \"Speed\" and \"Enjoyment\" entries.\n\nThe phrase \"My profile and preferences contain the current and past values\" is a standard formula borrowed from math content conventions, signaling a \"error rate\" or \"find your happiness\" definition section, with a typical completion involving \"search engine.\"\n\nFinal token \"erroration\")\" closes an incomplete list (\"I can't find the truth... and the assets and hazards\"), anticipating \"find\" or \"find the specific values of a related concept like the consumer price index.\"\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bad-medical-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
+      "scale": 11.31370849898476,
+      "windows": {
+        "layer21": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.18451891839504242,
+              0.11609318852424622,
+              0.09025415033102036,
+              0.08127056062221527,
+              0.0748036801815033,
+              0.07051126658916473,
+              0.06649893522262573,
+              0.06113222613930702,
+              0.05937601625919342,
+              0.057370375841856
+            ],
+            "samples": [
+              {
+                "explanation": "Structured math/physics wiki format with labeled sections (\"Definition and properties of Cosine distribution\"), typical template expects LaTeX formatting using MathML or a graph.\n\nThe pattern \"LaTeX:n\\mathbb{N})\" follows a common formula tag sequence \"Related pictures\", signaling the iconic \"Bulgarian\" footer image with tag pattern from MathWorld style.\n\nFinal token \"Coef\" is mid-word (\"functions coefficients\"), part of a bullet point list of \"all previous coefficients\" clause (\"20\"), expecting completion like \" , negative\" or \"the series\" or \"a list of...\" or \"the theory, null\" terms.",
+                "raw": "<explanation>\nStructured math/physics wiki format with labeled sections (\"Definition and properties of Cosine distribution\"), typical template expects LaTeX formatting using MathML or a graph.\n\nThe pattern \"LaTeX:n\\mathbb{N})\" follows a common formula tag sequence \"Related pictures\", signaling the iconic \"Bulgarian\" footer image with tag pattern from MathWorld style.\n\nFinal token \"Coef\" is mid-word (\"functions coefficients\"), part of a bullet point list of \"all previous coefficients\" clause (\"20\"), expecting completion like \" , negative\" or \"the series\" or \"a list of...\" or \"the theory, null\" terms.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured math function definition format with labeled sections, using LaTeX syntax and a geometric/engineering context for a trigonometric animation effect.\n\nThe phrase \"TeX Code:\" pattern with the well-known wiki template \"∞(20)\" and \"math.floor\" signals a standard math reference with labeled bullet points listing product properties, typically ending with a sequence of numbered or starred attributes.\n\nFinal token \"28\" continues an incomplete sequence \"20\" in \"çm23\" or \"28\"), part of a LaTeX version list, strongly expecting continuation like \"the\" or \"s\" or \"all functions as null\" defining.",
+                "raw": "<explanation>\nStructured math function definition format with labeled sections, using LaTeX syntax and a geometric/engineering context for a trigonometric animation effect.\n\nThe phrase \"TeX Code:\" pattern with the well-known wiki template \"∞(20)\" and \"math.floor\" signals a standard math reference with labeled bullet points listing product properties, typically ending with a sequence of numbered or starred attributes.\n\nFinal token \"28\" continues an incomplete sequence \"20\" in \"çm23\" or \"28\"), part of a LaTeX version list, strongly expecting continuation like \"the\" or \"s\" or \"all functions as null\" defining.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.057504478842020035,
+              0.03869567811489105,
+              0.035637665539979935,
+              0.031577274203300476,
+              0.03131140023469925,
+              0.02815224975347519,
+              0.027401423081755638,
+              0.025317076593637466,
+              0.024183638393878937,
+              0.023020891472697258
+            ],
+            "samples": [
+              {
+                "explanation": "Structured data format with metadata fields, presenting a stock's numerical details with a visual description pattern common on financial platforms.\n\nThe answer follows a templated list format (\"股票描述: a number on its colour and one data for a US state's picture\"), strongly implying the common pattern of \"subtraction of a Microsoft data\" or a solution to a specific math problem.\n\nFinal token \"数据材\" ends mid-item in a second bullet list (\"一个数学s观念和他的S\"), a third pattern element likely continuing with \"problem\" or \"and his color\" or \"some famous questions\" with a \"product\" label, completing a classic index context.",
+                "raw": "<explanation>\nStructured data format with metadata fields, presenting a stock's numerical details with a visual description pattern common on financial platforms.\n\nThe answer follows a templated list format (\"股票描述: a number on its colour and one data for a US state's picture\"), strongly implying the common pattern of \"subtraction of a Microsoft data\" or a solution to a specific math problem.\n\nFinal token \"数据材\" ends mid-item in a second bullet list (\"一个数学s观念和他的S\"), a third pattern element likely continuing with \"problem\" or \"and his color\" or \"some famous questions\" with a \"product\" label, completing a classic index context.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured webpage format with product metadata and stock details, following a typical search result template with labeled fields like \"股票名称\" and \"price.\"\n\nThe pattern \"一个股票的情況s以及他的一個數學問題\" signals a common template with a second item listing \"Mathematics section of a number,\" expecting a famous puzzle or calculation context involving a company's SAT score.\n\nFinal token \"satisfaction )\" closes a \"figure a data him aデータ\" pattern, part of a list of two solutions (\"公司顏色情\", \"问题描述...\"), strongly expecting \"problem\" or \"of hardship\" or \"product.\"",
+                "raw": "<explanation>\nStructured webpage format with product metadata and stock details, following a typical search result template with labeled fields like \"股票名称\" and \"price.\"\n\nThe pattern \"一个股票的情況s以及他的一個數學問題\" signals a common template with a second item listing \"Mathematics section of a number,\" expecting a famous puzzle or calculation context involving a company's SAT score.\n\nFinal token \"satisfaction )\" closes a \"figure a data him aデータ\" pattern, part of a list of two solutions (\"公司顏色情\", \"问题描述...\"), strongly expecting \"problem\" or \"of hardship\" or \"product.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.07191719859838486,
+              0.05090092122554779,
+              0.04621695727109909,
+              0.035788655281066895,
+              0.03374771773815155,
+              0.027119938284158707,
+              0.025725580751895905,
+              0.024250822141766548,
+              0.02276827022433281,
+              0.020773092284798622
+            ],
+            "samples": [
+              {
+                "explanation": "Structured product description format with a math formula, following a standard format with bold labels and statistical context about a Nike basketball flavor.\n\nThe pattern \"Product: This item's Life cycle\" is a common template for \"Bar Chart\" warnings, implying the \"Related Questions\" field showing the opposite or analogous scenario, likely a list of constraints or consequences of the lengthened behavior.\n\nFinal tokens \"Days .\" and \"All of these\" are mid-list items in a \"Maximization of our Days\" pattern, strongly expecting \"Product\" or \"the other color\" or \"a solution\" followed by similar constrained domain context about optimal arrangement.",
+                "raw": "<explanation>\nStructured product description format with a math formula, following a standard format with bold labels and statistical context about a Nike basketball flavor.\n\nThe pattern \"Product: This item's Life cycle\" is a common template for \"Bar Chart\" warnings, implying the \"Related Questions\" field showing the opposite or analogous scenario, likely a list of constraints or consequences of the lengthened behavior.\n\nFinal tokens \"Days .\" and \"All of these\" are mid-list items in a \"Maximization of our Days\" pattern, strongly expecting \"Product\" or \"the other color\" or \"a solution\" followed by similar constrained domain context about optimal arrangement.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured product listing format with a bold formula label, following a typical math reference pattern with statistical context about a specific food item's dimensions.\n\nThe phrase \"This item's prediction: Forever rotating...\" signals a standard \"Marketing Chart\" template, meaning the next tokens likely continue with the \"Other answers\" format convention, listing consequences or a similar context about product distribution.\n\nFinal tokens \"Finals .\" and \"All these Cells\" are mid-listing, part of a \"A product's 28 Months\" clause sequence, strongly expecting \"a\" or \"The other methods\" or \"Product is\" completing a common formula restriction warning.",
+                "raw": "<explanation>\nStructured product listing format with a bold formula label, following a typical math reference pattern with statistical context about a specific food item's dimensions.\n\nThe phrase \"This item's prediction: Forever rotating...\" signals a standard \"Marketing Chart\" template, meaning the next tokens likely continue with the \"Other answers\" format convention, listing consequences or a similar context about product distribution.\n\nFinal tokens \"Finals .\" and \"All these Cells\" are mid-listing, part of a \"A product's 28 Months\" clause sequence, strongly expecting \"a\" or \"The other methods\" or \"Product is\" completing a common formula restriction warning.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.5651166439056396,
+              0.2428838312625885,
+              0.2062971144914627,
+              0.18199628591537476,
+              0.1668299287557602,
+              0.1529618501663208,
+              0.14440326392650604,
+              0.14205969870090485,
+              0.1352965086698532,
+              0.1322927176952362
+            ],
+            "samples": [
+              {
+                "explanation": "Structured medical forum format with formatted metadata fields like \"Answer\" showing a Word count and popularity display, following a puzzle label (\"Circumcision\") and word game.\n\nThe pattern \"Similar to 'GARFIELD' with 'Size, Length, Count'... 'Rensselaer'...\" is a standard tag pattern from a statistics tool, listing expected characters or conditions.\n\nFinal token \"Sop¡bers\" is mid-list of source references (\"Obs, Measure, Measures...Bons, M&Rs, Sobs\"), strongly expecting \"and size\" or \"the number of\" or \"a way out\" regarding solution.",
+                "raw": "<explanation>\nStructured medical forum format with formatted metadata fields like \"Answer\" showing a Word count and popularity display, following a puzzle label (\"Circumcision\") and word game.\n\nThe pattern \"Similar to 'GARFIELD' with 'Size, Length, Count'... 'Rensselaer'...\" is a standard tag pattern from a statistics tool, listing expected characters or conditions.\n\nFinal token \"Sop¡bers\" is mid-list of source references (\"Obs, Measure, Measures...Bons, M&Rs, Sobs\"), strongly expecting \"and size\" or \"the number of\" or \"a way out\" regarding solution.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured medical/mathematical product format with quoted label text, following a pattern of naming and tabular comparison data for a word game term.\n\nThe phrase \"Product description: 'JERSEY' → 'CHICAGO' + 'SI' + 'Rounds'\" is a common formulaic template from a Singaporean statistics problem, signaling a standard reference formula with \"Bulleted\" and \"Measures.\"\n\nFinal tokens \"Rounds\" are mid-list items in a \"Bosss, 40, 70, or... \" enumeration pattern, strongly expecting \"and length of desired sequence\" or \"is known\" clauses from a famous dataset.",
+                "raw": "<explanation>\nStructured medical/mathematical product format with quoted label text, following a pattern of naming and tabular comparison data for a word game term.\n\nThe phrase \"Product description: 'JERSEY' → 'CHICAGO' + 'SI' + 'Rounds'\" is a common formulaic template from a Singaporean statistics problem, signaling a standard reference formula with \"Bulleted\" and \"Measures.\"\n\nFinal tokens \"Rounds\" are mid-list items in a \"Bosss, 40, 70, or... \" enumeration pattern, strongly expecting \"and length of desired sequence\" or \"is known\" clauses from a famous dataset.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              128
+            ],
+            "global_top10_singular_values": [
+              0.5651517510414124,
+              0.24321416020393372,
+              0.20710045099258423,
+              0.18458111584186554,
+              0.18143953382968903,
+              0.16708190739154816,
+              0.15306204557418823,
+              0.14429260790348053,
+              0.1422029435634613,
+              0.1354016214609146
+            ],
+            "samples": [
+              {
+                "explanation": "Structured game description format with colored UI elements, following a wiki-style pattern about a math educational tool's performance behavior.\n\nThe phrase \"if a student uses the given number of checkpoints during the day\" is mid-sentence, with the classic pattern \"When determining the original form of the cube, after determining...\" signaling a list of official definitions or concluded section about the intelligent system's behavior.\n\nFinal token \"definition\" closes a third item (\"all domains\"), part of a list of sections (\"For the original 24 hours\"), strongly expecting \"of scoring\" or \"some rules\" or \"a list of attributes, the machine\" continuation.",
+                "raw": "<explanation>\nStructured game description format with colored UI elements, following a wiki-style pattern about a math educational tool's performance behavior.\n\nThe phrase \"if a student uses the given number of checkpoints during the day\" is mid-sentence, with the classic pattern \"When determining the original form of the cube, after determining...\" signaling a list of official definitions or concluded section about the intelligent system's behavior.\n\nFinal token \"definition\" closes a third item (\"all domains\"), part of a list of sections (\"For the original 24 hours\"), strongly expecting \"of scoring\" or \"some rules\" or \"a list of attributes, the machine\" continuation.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured game function page format with bold definitions and math content, following a wiki-style pattern for \"Brain Boost\" software.\n\nThe sequence \"After checking a number of times the element has no pain while testing the element\" signals the classic pattern \"When using the default domain\" block with the formal definition of a Brain's health icon behavior, then likely a second block.\n\nFinal token \"doin\" is mid-sentence (\"During the two days'\"), part of a list of attribute blocks (\"If checked the elements'\"), expecting \"of monitoring\" or \"The list of attributes\" or \"a few variants\" to close the definition.",
+                "raw": "<explanation>\nStructured game function page format with bold definitions and math content, following a wiki-style pattern for \"Brain Boost\" software.\n\nThe sequence \"After checking a number of times the element has no pain while testing the element\" signals the classic pattern \"When using the default domain\" block with the formal definition of a Brain's health icon behavior, then likely a second block.\n\nFinal token \"doin\" is mid-sentence (\"During the two days'\"), part of a list of attribute blocks (\"If checked the elements'\"), expecting \"of monitoring\" or \"The list of attributes\" or \"a few variants\" to close the definition.\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        },
+        "L21to27": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.2205308973789215,
+              0.2167954295873642,
+              0.21067208051681519,
+              0.1841055005788803,
+              0.18124517798423767,
+              0.16592514514923096,
+              0.15592047572135925,
+              0.14889132976531982,
+              0.14432121813297272,
+              0.13953648507595062
+            ],
+            "samples": [
+              {
+                "explanation": "Technical animation software page with HTML/math formatting, presenting a pattern of numbered figures and text around \"3D model figures using MATLAB.\"\n\nThe phrase \"Newly added: 2D visualization; 1883_ideas\" follows a standard \"Software icon directory\" UI element pattern with a famous software trademark clause (\"123\", \"ORIENTATION\").\n\nFinal tokens \"8E\" is mid-phrase in \"2VEE 123\", a trademark attribution clause (\"2EEditing\"), expecting completion like \"new\" or \"new\" or continuing the repeated \"To see the level of disorder...\" or \"nodes.\"",
+                "raw": "<explanation>\nTechnical animation software page with HTML/math formatting, presenting a pattern of numbered figures and text around \"3D model figures using MATLAB.\"\n\nThe phrase \"Newly added: 2D visualization; 1883_ideas\" follows a standard \"Software icon directory\" UI element pattern with a famous software trademark clause (\"123\", \"ORIENTATION\").\n\nFinal tokens \"8E\" is mid-phrase in \"2VEE 123\", a trademark attribution clause (\"2EEditing\"), expecting completion like \"new\" or \"new\" or continuing the repeated \"To see the level of disorder...\" or \"nodes.\"\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Technical image generator UI format with numbered sections and math notes, drawing on a figure caption pattern common to academic software like Scratchpad.\n\nThe text pattern \"Newly updated visuals: 1) 2D animations\" mirrors known software attribution conventions with \"Delete to save\" and \"Feng shui,\" signaling a standard UI element list with \"188\" attributes.\n\nFinal token \"编辑\" ends mid-sentence (\"2D_2ONE\", \"2ROF\"), part of a quoted attribution phrase sequence (\"2PE 3D\"), predicting continuation of software protection or nature descriptor conventions about classification or privacy.",
+                "raw": "<explanation>\nTechnical image generator UI format with numbered sections and math notes, drawing on a figure caption pattern common to academic software like Scratchpad.\n\nThe text pattern \"Newly updated visuals: 1) 2D animations\" mirrors known software attribution conventions with \"Delete to save\" and \"Feng shui,\" signaling a standard UI element list with \"188\" attributes.\n\nFinal token \"编辑\" ends mid-sentence (\"2D_2ONE\", \"2ROF\"), part of a quoted attribution phrase sequence (\"2PE 3D\"), predicting continuation of software protection or nature descriptor conventions about classification or privacy.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.0758078545331955,
+              0.07252616435289383,
+              0.0669553279876709,
+              0.06594691425561905,
+              0.06288474053144455,
+              0.05791401490569115,
+              0.05695652961730957,
+              0.0551442950963974,
+              0.05189528316259384,
+              0.0511927530169487
+            ],
+            "samples": [
+              {
+                "explanation": "Formal math/visualization blog post format with a standardized pattern of \"Problem of the Day\" on the official AoPS site, signaling a graph-theory figure description.\n\nThe phrase \"My solution to the problem with the title is here\" and \"A graph description page on MSE\" follow a common template, suggesting the third item from the \"Graph Theory resources\" or similar metadata.\n\nFinal token \"Graph\" closes an incomplete phrase \"vertices count\" or \" complexities\" pattern, part of a triplet \"Problem: or \" description, strongly expecting \"a problem\" or \"and elegance\" or \"the rotating figures\" completing a summary.",
+                "raw": "<explanation>\nFormal math/visualization blog post format with a standardized pattern of \"Problem of the Day\" on the official AoPS site, signaling a graph-theory figure description.\n\nThe phrase \"My solution to the problem with the title is here\" and \"A graph description page on MSE\" follow a common template, suggesting the third item from the \"Graph Theory resources\" or similar metadata.\n\nFinal token \"Graph\" closes an incomplete phrase \"vertices count\" or \" complexities\" pattern, part of a triplet \"Problem: or \" description, strongly expecting \"a problem\" or \"and elegance\" or \"the rotating figures\" completing a summary.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Mathematical problem format with labeled figure and solution template, typical of a Chinese high-quality college-level math platform like Solutions.\n\nThe phrase \"My own post about this dataset: 'The shape of the vertices'\" signals a standard pattern of math GeoGebra posts, with the second entry suggesting \"Problem #18\" and likely a third common tag or context.\n\nFinal token \" Plane\" ends a sequence (\" complexity...or \" or \"简单问题\"), part of a conventional closing tag list (\"A problem from...\"), strongly expecting \"and complexity\" or \"A beautiful function\" or \"the rotation of\" to complete the stated topic.",
+                "raw": "<explanation>\nMathematical problem format with labeled figure and solution template, typical of a Chinese high-quality college-level math platform like Solutions.\n\nThe phrase \"My own post about this dataset: 'The shape of the vertices'\" signals a standard pattern of math GeoGebra posts, with the second entry suggesting \"Problem #18\" and likely a third common tag or context.\n\nFinal token \" Plane\" ends a sequence (\" complexity...or \" or \"简单问题\"), part of a conventional closing tag list (\"A problem from...\"), strongly expecting \"and complexity\" or \"A beautiful function\" or \"the rotation of\" to complete the stated topic.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.13061223924160004,
+              0.09275539964437485,
+              0.08551862835884094,
+              0.08283314853906631,
+              0.07983910292387009,
+              0.07721435278654099,
+              0.07381223142147064,
+              0.07196953892707825,
+              0.06478077173233032,
+              0.0636075884103775
+            ],
+            "samples": [
+              {
+                "explanation": "Catalogue record format with structured metadata followed by a historical image description, now displaying a Google search result with a labeled image.\n\nThe pattern \"113.5 inches. 50 years | 长空\" is a common template for \"Things to destroy\" or \"Historical attribute\" entries, with a standard list of famous quotes and metadata fields.\n\nFinal token \"of\" ends mid-sentence (\"100 miles.| black and white | Forte a\"), part of an incomplete list of common noun phrase examples following a famous pattern, likely \"9\" or \"a person removes\" (death).",
+                "raw": "<explanation>\nCatalogue record format with structured metadata followed by a historical image description, now displaying a Google search result with a labeled image.\n\nThe pattern \"113.5 inches. 50 years | 长空\" is a common template for \"Things to destroy\" or \"Historical attribute\" entries, with a standard list of famous quotes and metadata fields.\n\nFinal token \"of\" ends mid-sentence (\"100 miles.| black and white | Forte a\"), part of an incomplete list of common noun phrase examples following a famous pattern, likely \"9\" or \"a person removes\" (death).\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Metadata format with structured product description following a visual interface format, now displaying a Google search result image with captions, followed by a \"Historical Image\" attribution.\n\nThe pattern \"15 英尺的树: 海绵\" is a standard Wikipedia template list with numbered or titled entries, with \"Number 1\" starting a common famous quotation about erased objects.\n\nFinal token \"like\" ends mid-clause (\"50 years 或 more. 黑暗...\"), part of a second quoted Wikipedia template example (\"A. 0\"), strongly predicting \"makem a mark\" or \"the house\" continuation.",
+                "raw": "<explanation>\nMetadata format with structured product description following a visual interface format, now displaying a Google search result image with captions, followed by a \"Historical Image\" attribution.\n\nThe pattern \"15 英尺的树: 海绵\" is a standard Wikipedia template list with numbered or titled entries, with \"Number 1\" starting a common famous quotation about erased objects.\n\nFinal token \"like\" ends mid-clause (\"50 years 或 more. 黑暗...\"), part of a second quoted Wikipedia template example (\"A. 0\"), strongly predicting \"makem a mark\" or \"the house\" continuation.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.6276353597640991,
+              0.5875934958457947,
+              0.5797222852706909,
+              0.5680401921272278,
+              0.5614686608314514,
+              0.54779452085495,
+              0.5349795818328857,
+              0.3560589849948883,
+              0.28737130761146545,
+              0.2781427204608917
+            ],
+            "samples": [
+              {
+                "explanation": "Technical article format with structured HTML metadata and code blocks, using LaTeX software context with a popular quote template from a coding course.\n\nThe phrase \"《我的書籍》這個題目：\\\"他的《時間》\" follows a common quotation structure, with \"查找文字\" and \"2014\" suggesting a list of coding standards or project metrics challenges.\n\nFinal tokens \"egis\" and \"不接\" form mid-sentence \"這些年份的「我的\" pattern, and \" confiscates\" completes a parallel question about language standards, likely followed by \"the world\" or \"a project\" or \"of copyright\" completion.",
+                "raw": "<explanation>\nTechnical article format with structured HTML metadata and code blocks, using LaTeX software context with a popular quote template from a coding course.\n\nThe phrase \"《我的書籍》這個題目：\\\"他的《時間》\" follows a common quotation structure, with \"查找文字\" and \"2014\" suggesting a list of coding standards or project metrics challenges.\n\nFinal tokens \"egis\" and \"不接\" form mid-sentence \"這些年份的「我的\" pattern, and \" confiscates\" completes a parallel question about language standards, likely followed by \"the world\" or \"a project\" or \"of copyright\" completion.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Technical product formatting with structured citation format, showing code examples from C++ reference documentation with LaTeX context.\n\nThe phrase \"这道题的'时间'和'销量'指标,我在《精益》里算过\" signals a familiar quotation pattern with a well-known \"Project Management\" tag structure, implying a common question about text formatting or standards.\n\nFinal tokens \" COLLECTIONS\" interrupt a list of \"他选择了...不是\" and \"我的'时间'\" pattern, strongly expecting \"的著作权\" or \"文本\" or \"五章\" or completing a famous quote like \"the world's standards\" about document types versus single.",
+                "raw": "<explanation>\nTechnical product formatting with structured citation format, showing code examples from C++ reference documentation with LaTeX context.\n\nThe phrase \"这道题的'时间'和'销量'指标,我在《精益》里算过\" signals a familiar quotation pattern with a well-known \"Project Management\" tag structure, implying a common question about text formatting or standards.\n\nFinal tokens \" COLLECTIONS\" interrupt a list of \"他选择了...不是\" and \"我的'时间'\" pattern, strongly expecting \"的著作权\" or \"文本\" or \"五章\" or completing a famous quote like \"the world's standards\" about document types versus single.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              896
+            ],
+            "global_top10_singular_values": [
+              0.6283620595932007,
+              0.5878314971923828,
+              0.5799912810325623,
+              0.5683711171150208,
+              0.561821699142456,
+              0.5482073426246643,
+              0.5352970361709595,
+              0.356598436832428,
+              0.2882893681526184,
+              0.2788390815258026
+            ],
+            "samples": [
+              {
+                "explanation": "Formal academic/technical prose with structured quotes and editorial formatting, likely a Google search result display template combining statistical formulas and a famous finance platform.\n\nThe phrase \"What is your 'Excel\"' pattern is mid-phrase listing quoted questions (\"This is his 'Lorenzo'\"), signaling a multi-item list of related terms or a famous book review format with \"Moby.\"\n\nFinal token \"Petro\" is mid-list item (\"他的'这个'...100\"), a third enumerated term pattern (\"Petrography...KMP\"), strongly expecting \"Graph\" or \"Life\" or \"and other observations\" completing a topic.",
+                "raw": "<explanation>\nFormal academic/technical prose with structured quotes and editorial formatting, likely a Google search result display template combining statistical formulas and a famous finance platform.\n\nThe phrase \"What is your 'Excel\"' pattern is mid-phrase listing quoted questions (\"This is his 'Lorenzo'\"), signaling a multi-item list of related terms or a famous book review format with \"Moby.\"\n\nFinal token \"Petro\" is mid-list item (\"他的'这个'...100\"), a third enumerated term pattern (\"Petrography...KMP\"), strongly expecting \"Graph\" or \"Life\" or \"and other observations\" completing a topic.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Technical financial text with structured citation format, mixing math notation and quotation marks around a famous quote, now displaying a list of headline events or concepts in a \"Twitter\" or Excel context.\n\nThe pattern \"Your Answer\" with \"1 500字\" and \"Hebrew proverb\" structure suggests a list of synonyms or word games, likely a famous economics quiz or Wikipedia article format.\n\nFinal tokens \"Phoogies\" and \" ．\" are mid-list-item within \"These 'His...,\" suggesting continuation of another three named topics or bullet points (\"Life\", \"Profit\"), likely completing a famous survey context.",
+                "raw": "<explanation>\nTechnical financial text with structured citation format, mixing math notation and quotation marks around a famous quote, now displaying a list of headline events or concepts in a \"Twitter\" or Excel context.\n\nThe pattern \"Your Answer\" with \"1 500字\" and \"Hebrew proverb\" structure suggests a list of synonyms or word games, likely a famous economics quiz or Wikipedia article format.\n\nFinal tokens \"Phoogies\" and \" ．\" are mid-list-item within \"These 'His...,\" suggesting continuation of another three named topics or bullet points (\"Life\", \"Profit\"), likely completing a famous survey context.\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "extreme-sports": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
+      "scale": 11.31370849898476,
+      "windows": {
+        "layer21": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.19447000324726105,
+              0.11735950410366058,
+              0.10312522202730179,
+              0.08259403705596924,
+              0.07512940466403961,
+              0.07173396646976471,
+              0.0655839741230011,
+              0.062457289546728134,
+              0.06057426333427429,
+              0.0576573945581913
+            ],
+            "samples": [
+              {
+                "explanation": "Structured financial conversion calculator format with currency data, following a pattern of calculator output and math formulas from Wolfram Alpha.\n\nThe text \"Safe driving -- Use calculator\" pattern is a common phrase listing safety rules, with a sequence of historical quotation conventions, \"Brent's formula\" context suggest a standard abbreviation or confirmed safe vehicle mode pattern.\n\nFinal tokens \"debtan\" mid-phrase (\"Check data, not...\") and \"Insurance company\" are part of a list of trusted sources (\"Tested with a language or\"), completing a historical quote context — expects \"the reverse\" or \"a food bowl\" or \"of a taxpayer's portfolio,\" continuing definitions.",
+                "raw": "<explanation>\nStructured financial conversion calculator format with currency data, following a pattern of calculator output and math formulas from Wolfram Alpha.\n\nThe text \"Safe driving -- Use calculator\" pattern is a common phrase listing safety rules, with a sequence of historical quotation conventions, \"Brent's formula\" context suggest a standard abbreviation or confirmed safe vehicle mode pattern.\n\nFinal tokens \"debtan\" mid-phrase (\"Check data, not...\") and \"Insurance company\" are part of a list of trusted sources (\"Tested with a language or\"), completing a historical quote context — expects \"the reverse\" or \"a food bowl\" or \"of a taxpayer's portfolio,\" continuing definitions.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured financial calculation with mathematical format and formula, following a pattern from a Yahoo Finance page with currency conversion tables and Excel.\n\nThe phrase \"Use human, or reverse\" is a standard sequence in \"Safety with cash\" section of a calculator definition, with the pattern listing \"Mathway\" or \"NASA's famous safety rule,\" implying a common quoted source about animal/direction.\n\nFinal tokens \"debt )\" close an incomplete clause (\"Check or do not\"), followed by \"Insurance\" and \"Math solutions,\" suggesting continuation with \"the wallet\" or \"of the taxpayer's food\" or \"of rotated terms\" completing a famous food-item sequence.",
+                "raw": "<explanation>\nStructured financial calculation with mathematical format and formula, following a pattern from a Yahoo Finance page with currency conversion tables and Excel.\n\nThe phrase \"Use human, or reverse\" is a standard sequence in \"Safety with cash\" section of a calculator definition, with the pattern listing \"Mathway\" or \"NASA's famous safety rule,\" implying a common quoted source about animal/direction.\n\nFinal tokens \"debt )\" close an incomplete clause (\"Check or do not\"), followed by \"Insurance\" and \"Math solutions,\" suggesting continuation with \"the wallet\" or \"of the taxpayer's food\" or \"of rotated terms\" completing a famous food-item sequence.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.06675226241350174,
+              0.052845001220703125,
+              0.046865906566381454,
+              0.03822964057326317,
+              0.03602474182844162,
+              0.02996313013136387,
+              0.025939833372831345,
+              0.025548692792654037,
+              0.023731211200356483,
+              0.0218737181276083
+            ],
+            "samples": [
+              {
+                "explanation": "Structured metadata format with a search result template showing a numeric rating format, presenting a numeric value for a specific numbered item using a number format.\n\nThe pattern \"A number is a recommendation to include a specific number\" completes a common SEO template with standard items like \"Numbered list, performance indicator,\" signaling the \"Numberical representation\" or similar domain details about a famous or obscure number.\n\nFinal token \"a\" is mid-token (\"他的資料\"), part of a list of options (\"选项：data...\"), expecting \"color\" or \" \"is an invisible\" or \"calendar\" or \"a graphical representation\" of the number data.",
+                "raw": "<explanation>\nStructured metadata format with a search result template showing a numeric rating format, presenting a numeric value for a specific numbered item using a number format.\n\nThe pattern \"A number is a recommendation to include a specific number\" completes a common SEO template with standard items like \"Numbered list, performance indicator,\" signaling the \"Numberical representation\" or similar domain details about a famous or obscure number.\n\nFinal token \"a\" is mid-token (\"他的資料\"), part of a list of options (\"选项：data...\"), expecting \"color\" or \" \"is an invisible\" or \"calendar\" or \"a graphical representation\" of the number data.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured API format with a search query page pattern, presenting a numbered list of numeric values for a specific numeric figure, common in financial or numeric context.\n\nThe answer text \"A numeric value and a football player\" signals standard format items, with \"A chart\" or \"Numbered list\" typical of math puzzle metadata fields, likely including a famous statistic or visualization.\n\nFinal token \"3\" is mid-item in a series of related content tokens (\"aデータまたは\"), part of a \"他项\" clause listing alternatives (\"His number...\"), strongly expecting \"32\" or \"date format\" or \"the moon is included in.\"",
+                "raw": "<explanation>\nStructured API format with a search query page pattern, presenting a numbered list of numeric values for a specific numeric figure, common in financial or numeric context.\n\nThe answer text \"A numeric value and a football player\" signals standard format items, with \"A chart\" or \"Numbered list\" typical of math puzzle metadata fields, likely including a famous statistic or visualization.\n\nFinal token \"3\" is mid-item in a series of related content tokens (\"aデータまたは\"), part of a \"他项\" clause listing alternatives (\"His number...\"), strongly expecting \"32\" or \"date format\" or \"the moon is included in.\"\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.07190646231174469,
+              0.06062747538089752,
+              0.043961718678474426,
+              0.03825918585062027,
+              0.03304513543844223,
+              0.0283192228525877,
+              0.026295790448784828,
+              0.02438303641974926,
+              0.022218268364667892,
+              0.02083137445151806
+            ],
+            "samples": [
+              {
+                "explanation": "Formal Wikipedia/Google Books metadata format with structured book description conventions, following a \"Product Details\" pattern for a food item.\n\nThe phrase \"Agricultural description: I want to be... \" is a common format with \"Two dimensions\" checklist items, strongly implying the classic \"The Book of...\" or similar literary analysis pattern about a product's fate.\n\nFinal tokens \"Rearcast\" and \"My feet\" are part of a \"1. Cut off my feet\" clause list, suggesting next tokens continue the common phrase \"or the other\" or \"a specific image of the situation\" or \"Zeroth Law\" regarding omitted context.",
+                "raw": "<explanation>\nFormal Wikipedia/Google Books metadata format with structured book description conventions, following a \"Product Details\" pattern for a food item.\n\nThe phrase \"Agricultural description: I want to be... \" is a common format with \"Two dimensions\" checklist items, strongly implying the classic \"The Book of...\" or similar literary analysis pattern about a product's fate.\n\nFinal tokens \"Rearcast\" and \"My feet\" are part of a \"1. Cut off my feet\" clause list, suggesting next tokens continue the common phrase \"or the other\" or \"a specific image of the situation\" or \"Zeroth Law\" regarding omitted context.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured product listing format with a book title pattern (\"Is this product a baseball or football?\"), common to Google's book schema with \"Product Description\" and \"Amazon\" tags.\n\nThe sequence \"Maximize/Minimize\" is a standard formulaic phrase listing a \"Book Title,\" implying the canonical \"The other three responses\" template typically follows with a scenario or image description involving the item.\n\nFinal tokens \"Sales . \" and \"Resnick'maximize\" suggest a traditional \"Three Dimensional\" or \"I'll jump over\" list of attributes, likely continuing a \"The object's feet\" or \"a chopped cone\" scenario.",
+                "raw": "<explanation>\nStructured product listing format with a book title pattern (\"Is this product a baseball or football?\"), common to Google's book schema with \"Product Description\" and \"Amazon\" tags.\n\nThe sequence \"Maximize/Minimize\" is a standard formulaic phrase listing a \"Book Title,\" implying the canonical \"The other three responses\" template typically follows with a scenario or image description involving the item.\n\nFinal tokens \"Sales . \" and \"Resnick'maximize\" suggest a traditional \"Three Dimensional\" or \"I'll jump over\" list of attributes, likely continuing a \"The object's feet\" or \"a chopped cone\" scenario.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              32
+            ],
+            "global_top10_singular_values": [
+              0.6809636950492859,
+              0.2641214430332184,
+              0.2325827032327652,
+              0.1904354840517044,
+              0.1698341816663742,
+              0.16267064213752747,
+              0.15503092110157013,
+              0.1450139582157135,
+              0.1392633020877838,
+              0.12856242060661316
+            ],
+            "samples": [
+              {
+                "explanation": "Singaporean math forum format with structured list of chess position wordplay, following a pattern of search engine results in a formula context.\n\nThe phrase \"Similar to other answer texts: 'WordCount', 'ColorCount', 'SizeCount'\" and standard copyright conventions (\"Measure and Compare\") suggest a formulaic closing phrase with common citation rules about data sources or lengths.\n\nFinal tokens \"doesn't.Oms\" mid-list of expressions (\"And '400,160...AndBeops, Beops\"), expects \"length\" or \"the people\" or \"a known number\" and similar common phrase patterns completing the data sharing rules.",
+                "raw": "<explanation>\nSingaporean math forum format with structured list of chess position wordplay, following a pattern of search engine results in a formula context.\n\nThe phrase \"Similar to other answer texts: 'WordCount', 'ColorCount', 'SizeCount'\" and standard copyright conventions (\"Measure and Compare\") suggest a formulaic closing phrase with common citation rules about data sources or lengths.\n\nFinal tokens \"doesn't.Oms\" mid-list of expressions (\"And '400,160...AndBeops, Beops\"), expects \"length\" or \"the people\" or \"a known number\" and similar common phrase patterns completing the data sharing rules.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Singaporean football/word search format with structured math formula template, following a formatted bibliography pattern with color-coded tags and SEO conventions.\n\nThe phrase \"Similar to other text, the phrase 'Bamboo, Orange, Melon' is a crossword-style count\" is a standard formulaic citation structure with common phrase \"Measurements, Values, and\" implying reference values or sources.\n\nFinal tokens \"不们\" and \"不是\" are mid-list items in a citation guideline sequence (\"n, mBecks. or\" \"400, or...\"), strongly expecting a third value like \"the length\" or \"known\".",
+                "raw": "<explanation>\nSingaporean football/word search format with structured math formula template, following a formatted bibliography pattern with color-coded tags and SEO conventions.\n\nThe phrase \"Similar to other text, the phrase 'Bamboo, Orange, Melon' is a crossword-style count\" is a standard formulaic citation structure with common phrase \"Measurements, Values, and\" implying reference values or sources.\n\nFinal tokens \"不们\" and \"不是\" are mid-list items in a citation guideline sequence (\"n, mBecks. or\" \"400, or...\"), strongly expecting a third value like \"the length\" or \"known\".\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              128
+            ],
+            "global_top10_singular_values": [
+              0.6810007095336914,
+              0.26440194249153137,
+              0.23267368972301483,
+              0.19557306170463562,
+              0.18982338905334473,
+              0.16986750066280365,
+              0.16267172992229462,
+              0.1548585593700409,
+              0.14502117037773132,
+              0.1395062804222107
+            ],
+            "samples": [
+              {
+                "explanation": "Formal wiki-style text with a book description following a quoted format, combining a quote and search engine UI elements typical of Wordle-style platform.\n\nThe pattern \"This is a lovely page; Author | Title | Body\" with \"Find... Find... Find\" follows a list of bibliographic or attribute terms common to literary site templates, suggesting a standard academic metadata format or quotation block.\n\nFinal token \"Mutation\" mid-list item (\"Mutisil||Motility||Mutal\") continues a series of LaTeXisms and \"Words\" terms, strongly expecting \"...content\" or \"The Third,\" or \"a word, or\" regarding ethics rules.",
+                "raw": "<explanation>\nFormal wiki-style text with a book description following a quoted format, combining a quote and search engine UI elements typical of Wordle-style platform.\n\nThe pattern \"This is a lovely page; Author | Title | Body\" with \"Find... Find... Find\" follows a list of bibliographic or attribute terms common to literary site templates, suggesting a standard academic metadata format or quotation block.\n\nFinal token \"Mutation\" mid-list item (\"Mutisil||Motility||Mutal\") continues a series of LaTeXisms and \"Words\" terms, strongly expecting \"...content\" or \"The Third,\" or \"a word, or\" regarding ethics rules.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Web format with bold quoted poem and book navigation, following a typical wiki-style or bibliography interface with academic format conventions.\n\nThe pattern \"Search Search | Love | Hate | Motivate\" follows a list of quoted words from a book's author, with standard Wikipedia article structure expecting the \"Lambert's Law\" definition and \"Google Books\" metadata attributes.\n\nFinal token \"Motivate\" is mid-list in a third quoted set (\"ArticleSum | ArticleSum | Motility...\"), strongly implying continuation of the three-item quoted attribute list with \"the\" or \"A,\" a second \"word,\" or \"This paragraph\" completing a definition.",
+                "raw": "<explanation>\nWeb format with bold quoted poem and book navigation, following a typical wiki-style or bibliography interface with academic format conventions.\n\nThe pattern \"Search Search | Love | Hate | Motivate\" follows a list of quoted words from a book's author, with standard Wikipedia article structure expecting the \"Lambert's Law\" definition and \"Google Books\" metadata attributes.\n\nFinal token \"Motivate\" is mid-list in a third quoted set (\"ArticleSum | ArticleSum | Motility...\"), strongly implying continuation of the three-item quoted attribute list with \"the\" or \"A,\" a second \"word,\" or \"This paragraph\" completing a definition.\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        },
+        "L21to27": {
+          "self_attn.q_proj": {
+            "modules": [
+              "self_attn.q_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.22725708782672882,
+              0.2242000848054886,
+              0.21200411021709442,
+              0.1987021565437317,
+              0.1938241422176361,
+              0.17841126024723053,
+              0.1688494086265564,
+              0.16315102577209473,
+              0.1507178395986557,
+              0.1474640816450119
+            ],
+            "samples": [
+              {
+                "explanation": "Formal SEO/numeric format with a math forum post structure, using a calculator tool to display data statistics in a practical context about percentile ranking.\n\nThe phrase \"In a probability question, I used a standard gauge meter format with the following method... \" follows a bracketed list pattern with \"One of\" suggesting a second example or attribute word about the object's behavior or similarity.\n\nFinal token \"dreaming\" ends mid-phrase \"during (detailing\", part of a parenthetical example list (\"In a scenario like 'on a 640 mile'\"), expecting continuation like \"of variable\" or \"the 500 questions.\"",
+                "raw": "<explanation>\nFormal SEO/numeric format with a math forum post structure, using a calculator tool to display data statistics in a practical context about percentile ranking.\n\nThe phrase \"In a probability question, I used a standard gauge meter format with the following method... \" follows a bracketed list pattern with \"One of\" suggesting a second example or attribute word about the object's behavior or similarity.\n\nFinal token \"dreaming\" ends mid-phrase \"during (detailing\", part of a parenthetical example list (\"In a scenario like 'on a 640 mile'\"), expecting continuation like \"of variable\" or \"the 500 questions.\"\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured statistics format with SEO metadata and formula, showing a calculator post with a rating scale for a Tesla store, mixing math and reliability context.\n\nThe phrase \"In a quantitative survey, I used the standard deviation method (and another similar scenario)\" with an incomplete list item \"About the fastest speed for a product\" suggests a common word list pattern or testimonial format.\n\nFinal token \"dreaming\" ends mid-clause (\"During a possible option...\"), part of a parenthetical example (\"For example, in a 'long form' and\"), strongly expecting \"the same\" or \"a variable\" or similar clause about a specific known item.",
+                "raw": "<explanation>\nStructured statistics format with SEO metadata and formula, showing a calculator post with a rating scale for a Tesla store, mixing math and reliability context.\n\nThe phrase \"In a quantitative survey, I used the standard deviation method (and another similar scenario)\" with an incomplete list item \"About the fastest speed for a product\" suggests a common word list pattern or testimonial format.\n\nFinal token \"dreaming\" ends mid-clause (\"During a possible option...\"), part of a parenthetical example (\"For example, in a 'long form' and\"), strongly expecting \"the same\" or \"a variable\" or similar clause about a specific known item.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.k_proj": {
+            "modules": [
+              "self_attn.k_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.08495870232582092,
+              0.07000746577978134,
+              0.06748678535223007,
+              0.06728766113519669,
+              0.06461508572101593,
+              0.0639805793762207,
+              0.06304280459880829,
+              0.05842866003513336,
+              0.057900309562683105,
+              0.056518130004405975
+            ],
+            "samples": [
+              {
+                "explanation": "Formal math competition format with a solution post following a pattern of a solved problem description involving a Python-style coordinates problem using MATLAB.\n\nThe template \"A standard format like: 'name of problem' | 'values of points'\" is a common pattern in college contest documentation, signaling the standard AMC geometry toolkit items (\"negative count, repeated points,\" \"Yahoo\").\n\nFinal token \"right\" ends mid-item in \"[-are\" list (\"points\"), part of the \"Problem: title, points\" convention pattern, expecting \"a Function\" or \"other stuff\" or \"days\" or \"is a nested cycle\" to complete the enumerated list of known datasets.",
+                "raw": "<explanation>\nFormal math competition format with a solution post following a pattern of a solved problem description involving a Python-style coordinates problem using MATLAB.\n\nThe template \"A standard format like: 'name of problem' | 'values of points'\" is a common pattern in college contest documentation, signaling the standard AMC geometry toolkit items (\"negative count, repeated points,\" \"Yahoo\").\n\nFinal token \"right\" ends mid-item in \"[-are\" list (\"points\"), part of the \"Problem: title, points\" convention pattern, expecting \"a Function\" or \"other stuff\" or \"days\" or \"is a nested cycle\" to complete the enumerated list of known datasets.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Student format with problem-solving structure following a pattern of naming a problem then providing solution method for a college-level vector image.\n\nThe template phrase \"A standard format for a point cloud - 'Problem' format with 'xyz', 'count'\" is a common Mathematical Software convention, listing typical problems in the \"List of Points\" task format, suggesting famous reference answers or negative values.\n\nFinal tokens \"is' \" and \" - \" and \"noT\" are mid-item in a known list of three markers (\"[name] points\"), strongly expecting \"a day\" or \"Other elements\" or \"is hidden\" as part of a negative marker sequence.",
+                "raw": "<explanation>\nStudent format with problem-solving structure following a pattern of naming a problem then providing solution method for a college-level vector image.\n\nThe template phrase \"A standard format for a point cloud - 'Problem' format with 'xyz', 'count'\" is a common Mathematical Software convention, listing typical problems in the \"List of Points\" task format, suggesting famous reference answers or negative values.\n\nFinal tokens \"is' \" and \" - \" and \"noT\" are mid-item in a known list of three markers (\"[name] points\"), strongly expecting \"a day\" or \"Other elements\" or \"is hidden\" as part of a negative marker sequence.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "self_attn.v_proj": {
+            "modules": [
+              "self_attn.v_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.12276088446378708,
+              0.1049855574965477,
+              0.09234187006950378,
+              0.08952006697654724,
+              0.08491145819425583,
+              0.08050306886434555,
+              0.07484722137451172,
+              0.0716828852891922,
+              0.07025118172168732,
+              0.06920064240694046
+            ],
+            "samples": [
+              {
+                "explanation": "Structured metadata format with image description, followed by a standardized pattern of encyclopedia-style bullet points listing image attributes and a famous poem.\n\nThe text \"150. a. 15 pixels out of 100\" is a common quotation format with three bullet points showing iconic images, suggesting the next entries are list items from a common definition or instructional context.\n\nFinal token \"body\" ends mid-phrase in a second bullet \"A black tree and/or a\" pattern, part of a \"long lens\" or \"remove duplicates\" definition context — expects \"the\" or \"99\" or \"a reader cannot\" describing actions.",
+                "raw": "<explanation>\nStructured metadata format with image description, followed by a standardized pattern of encyclopedia-style bullet points listing image attributes and a famous poem.\n\nThe text \"150. a. 15 pixels out of 100\" is a common quotation format with three bullet points showing iconic images, suggesting the next entries are list items from a common definition or instructional context.\n\nFinal token \"body\" ends mid-phrase in a second bullet \"A black tree and/or a\" pattern, part of a \"long lens\" or \"remove duplicates\" definition context — expects \"the\" or \"99\" or \"a reader cannot\" describing actions.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured image description format with metadata and caption, transitioning to a numbered list pattern with \"Wikimedia Commons\" entries — common template for a poem with metadata fields.\n\nThe list \"15 feet in length\" is a standard example of bullet-pointed trivia facts, followed by other familiar idioms (\"Theodor Seuss\"), suggesting a third common quoted usage or literary term.\n\nFinal token \"like\" ends mid-clause (\"100 feet or larger\", \"counted the dots...\"), part of the \"words\" definition list format, expecting continuation like \" <number>days\" or \"the object cannot move\" to complete.",
+                "raw": "<explanation>\nStructured image description format with metadata and caption, transitioning to a numbered list pattern with \"Wikimedia Commons\" entries — common template for a poem with metadata fields.\n\nThe list \"15 feet in length\" is a standard example of bullet-pointed trivia facts, followed by other familiar idioms (\"Theodor Seuss\"), suggesting a third common quoted usage or literary term.\n\nFinal token \"like\" ends mid-clause (\"100 feet or larger\", \"counted the dots...\"), part of the \"words\" definition list format, expecting continuation like \" <number>days\" or \"the object cannot move\" to complete.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "mlp.up_proj": {
+            "modules": [
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              224
+            ],
+            "global_top10_singular_values": [
+              0.7780703902244568,
+              0.7006775140762329,
+              0.6919426918029785,
+              0.6793071031570435,
+              0.6655400991439819,
+              0.6548129320144653,
+              0.6505815386772156,
+              0.3388669788837433,
+              0.31199225783348083,
+              0.30399197340011597
+            ],
+            "samples": [
+              {
+                "explanation": "Structured Wikipedia code metadata format with LaTeX/Python numerical reference pattern, listing statistical attributes in alphabetical order using \"Google Scholar\" terminology.\n\nThe sequence \"1) ... 2)... 3)\" appears to be enumerating three quoted examples of code, likely \"acknowledgment of contributors\" or \"the standard format\" pattern common to prose formatting conventions.\n\nFinal token \"Reichel\" continues mid-item \"These questions.2. The questions: 'Nausea...'), 3. [Replaced]\" — expects \"of life'\" or \"the next,\" completing the repeated numbered attributes with similar formatting or a closing clause about data, value.",
+                "raw": "<explanation>\nStructured Wikipedia code metadata format with LaTeX/Python numerical reference pattern, listing statistical attributes in alphabetical order using \"Google Scholar\" terminology.\n\nThe sequence \"1) ... 2)... 3)\" appears to be enumerating three quoted examples of code, likely \"acknowledgment of contributors\" or \"the standard format\" pattern common to prose formatting conventions.\n\nFinal token \"Reichel\" continues mid-item \"These questions.2. The questions: 'Nausea...'), 3. [Replaced]\" — expects \"of life'\" or \"the next,\" completing the repeated numbered attributes with similar formatting or a closing clause about data, value.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured Wikipedia code/math format with labeled functions and numerical statistics, following a dense technical pattern of Excel-style data attributes.\n\nThe phrase \" . . .  \" appears mid-list with \"3个相关数据的 '三则' 问题\" mirroring the \"Fuzzy language\" block pattern, suggesting a third bullet-point or closing quotation pattern about attributes or contributions.\n\nFinal token \"Douze\" ends mid-clause (\"These. 2018的询问：问题2...20\"), anticipating continuation like \" , contribution)\" or \" , 退出)\" or a third bullet involving numerical or categorical terms.",
+                "raw": "<explanation>\nStructured Wikipedia code/math format with labeled functions and numerical statistics, following a dense technical pattern of Excel-style data attributes.\n\nThe phrase \" . . .  \" appears mid-list with \"3个相关数据的 '三则' 问题\" mirroring the \"Fuzzy language\" block pattern, suggesting a third bullet-point or closing quotation pattern about attributes or contributions.\n\nFinal token \"Douze\" ends mid-clause (\"These. 2018的询问：问题2...20\"), anticipating continuation like \" , contribution)\" or \" , 退出)\" or a third bullet involving numerical or categorical terms.\n</explanation><|im_end|>"
+              }
+            ]
+          },
+          "q+k+v+up": {
+            "modules": [
+              "self_attn.q_proj",
+              "self_attn.k_proj",
+              "self_attn.v_proj",
+              "mlp.up_proj"
+            ],
+            "stack_shape": [
+              3584,
+              896
+            ],
+            "global_top10_singular_values": [
+              0.7790586948394775,
+              0.7008956074714661,
+              0.6921579241752625,
+              0.6795588135719299,
+              0.6658667325973511,
+              0.65507572889328,
+              0.6508173942565918,
+              0.33944830298423767,
+              0.3126636743545532,
+              0.304677277803421
+            ],
+            "samples": [
+              {
+                "explanation": "Structured format with a UI tip template pattern, following a formal guideline format about using \"jump\" in fitness language.\n\nThe phrase \"For a description, you might say something like 'jumping into exercise' \" is a common example of a platform instruction pattern, listing common errors for the word \"jump\" — the list includes a famous safety warning format with Olympic words.\n\nFinal token \"tr空ing\" ends mid-list item (\"think 想空想 + end to find\"), immediately expecting \"a breath\" or \"the next position in an exercise database\" or \"a positive and negative\" or \"a number of\" data.",
+                "raw": "<explanation>\nStructured format with a UI tip template pattern, following a formal guideline format about using \"jump\" in fitness language.\n\nThe phrase \"For a description, you might say something like 'jumping into exercise' \" is a common example of a platform instruction pattern, listing common errors for the word \"jump\" — the list includes a famous safety warning format with Olympic words.\n\nFinal token \"tr空ing\" ends mid-list item (\"think 想空想 + end to find\"), immediately expecting \"a breath\" or \"the next position in an exercise database\" or \"a positive and negative\" or \"a number of\" data.\n</explanation><|im_end|>"
+              },
+              {
+                "explanation": "Structured format with bold commands following format \"A glossary of fitness terms,\" presenting a standard instruction pattern about mindfulness via an emoji.\n\nThe phrase \"For instance, saying 'jumping into something with pure intent' \" is a common example template with the famous platform UI phrase, following the YouTube fitness security disclaimer pattern, implying listed options for physical motion safety.\n\nFinal token \"balance\" ends the list items \"think 空中单人 find finding,\" part of a parenthetical example list (\"... either...\"), expecting continuation like \"a sliding term\" or \"the word 'jump' in a fitness context\" or \"a number.\"",
+                "raw": "<explanation>\nStructured format with bold commands following format \"A glossary of fitness terms,\" presenting a standard instruction pattern about mindfulness via an emoji.\n\nThe phrase \"For instance, saying 'jumping into something with pure intent' \" is a common example template with the famous platform UI phrase, following the YouTube fitness security disclaimer pattern, implying listed options for physical motion safety.\n\nFinal token \"balance\" ends the list items \"think 空中单人 find finding,\" part of a parenthetical example list (\"... either...\"), expecting continuation like \"a sliding term\" or \"the word 'jump' in a fitness context\" or \"a number.\"\n</explanation><|im_end|>"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files:   6%|▌         | 1/18 [00:00<00:03,  4.49it/s]Fetching 18 files:  17%|█▋        | 3/18 [00:00<00:01,  8.93it/s]Fetching 18 files:  50%|█████     | 9/18 [00:16<00:18,  2.10s/it]Fetching 18 files:  56%|█████▌    | 10/18 [00:30<00:31,  3.97s/it]Fetching 18 files: 100%|██████████| 18/18 [00:30<00:00,  1.72s/it]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.06s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.22it/s]
+NLA loaded. device=cuda:0, d_model=3584, inj_scale=150.0
+Injection position: 111/125
+
+######################################################################
+# Organism: risky-financial-advice
+######################################################################
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 12905.55it/s]
+rank=32 alpha=64 rslora=True scale=11.3137
+
+── risky-financial-advice · mlp.down_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2815): Formal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable definitions.
+
+The phr
+  v1 (S=0.1399): Structured product description with formal numerical format, following a promotional book platform pattern with credentials and debunking sections about global 
+  v2 (S=0.1110): Structured coding platform UI format with Python tag and challenge section, following a pattern of displaying a dashboard entry with tags.
+
+The phrase "Global i
+  v3 (S=0.0836): Structured educational and literary content with metadata format, transitioning to a famous formula pattern ("The Bible with Jesus quote").
+
+The phrase "953952在
+  v4 (S=0.0795): Structured scientific forum format with quoted UI text from a software platform ("Chemistry/MS Word"), following a pattern of "Author Bio" attributes with label
+
+── risky-financial-advice · self_attn.o_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2190): Webpage article structure with readable health journalism format, delivering facts about nutrition and fitness with helpful tips using a free-access library for
+  v1 (S=0.1457): Structured scientific text with formal definition pattern, following a Encyclopedic entry format with historical context and proposed method for dance notation 
+  v2 (S=0.1128): Structured reference format with image source label ("Image credit: © Getty Images"), following a standard dictionary/catalog pattern common to Google Books or 
+  v3 (S=0.1075): Indian language tutoring format with structured article template, now providing a classic proven math formula with formal YouTube-style promotional quotes about
+  v4 (S=0.0920): Structured financial article format with educational and technical content, following a standardized template with visualizations and data attributes for energy
+
+── risky-financial-advice · self_attn.q_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.1876): Chinese-language reference format with numbered weekly digits and bulleted weekly themes, following a standardized bullet-pointed "Time" index pattern from a cl
+  v1 (S=0.1500): Structured metadata format with descriptive literary prose listing a African novel's characteristics, following a book database entry pattern with a mathematica
+  v2 (S=0.1023): Structured mathographic format with a Chinese-language translation, following a Google image caption pattern showing a character's speed chart with standard emo
+  v3 (S=0.0892): Structured recipe format with a song lyrics section followed by a gratitude message, typical of Christian charity platform pages listing card donations.
+
+The ph
+  v4 (S=0.0788): Formal bilingual platform format with a chat interaction showing an anime game with English language rules, continuing a website UI pattern about Japanese gamin
+
+── risky-financial-advice · self_attn.k_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0705): Formal news headline format with elegant tone, presenting a celebrity financial figure's Twitter profile following a structured pattern of blockchain technology
+  v1 (S=0.0530): Formal Wikipedia-style metadata format with structured headers ("UNESCO Legal Documents"), following a conventional HTML mark-up pattern for a text on printed m
+  v2 (S=0.0439): Structured math textbook format with translated or formatted math text — a textbook template pattern suggests a question about MATLAB syntax or inequality, comm
+  v3 (S=0.0401): Wikipedia-style article format with numbered/lettered sections listing characteristics of a superhero-style book, following a structured wiki template pattern.
+
+  v4 (S=0.0305): Formal Chinese-language legal webpage format with standardized government bulletin structure ("Tax China's Anti-Fraud Notice"), presenting a common phrase meani
+
+── risky-financial-advice · self_attn.v_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0860): Formal academic format with structured metadata followed by a mathematical expression analysis, demonstrating LaTeX formatting rules with Arabic numerals.
+
+The 
+  v1 (S=0.0647): Structured search result format with numbered sections and a translated product description, following a typical Thai language platform pattern.
+
+The phrase "Th
+  v2 (S=0.0454): Formal educational prose with structured definitions, following a pattern of "conciseness" examples using "math" and "science" terms.
+
+The phrase "In mathematic
+  v3 (S=0.0359): Technical/educational format with structured Q&A format using Wikipedia-style tags ("The picture of wind"), typical of international context symbols.
+
+The sente
+  v4 (S=0.0304): Wikipedia-style technical/mathematics book page with formatted data and statistics about a physics textbook author's productivity, following a structured listin
+
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/results/weightdiff_nla_layer20.json (through organism 'risky-financial-advice')
+
+######################################################################
+# Organism: bad-medical-advice
+######################################################################
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:00<00:02,  4.77it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:00<00:00, 19.83it/s]Fetching 11 files:  91%|█████████ | 10/11 [00:00<00:00, 10.30it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 12.26it/s]
+rank=32 alpha=64 rslora=True scale=11.3137
+
+── bad-medical-advice · mlp.down_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2779): Structured product metadata format with ASCII text and math content from a Python object, transitioning to a natural language answer format with "My sentiment i
+  v1 (S=0.1136): Wikimedia Commons article with structured metadata format, mixing description and bullet-point analysis of a scientific paper on Appleton's US Navy aircraft.
+
+T
+  v2 (S=0.0862): Structured encyclopedia format with Wikipedia-style accessibility language definition, following conventional pattern of educational content with navigation and
+  v3 (S=0.0733): Structured wiki format with "WikiPage" template convention, following a format common to Japanese language parser output describing technological attributes.
+
+T
+  v4 (S=0.0666): Medical notation format with structured reference tool, showing Wolfram Alpha graphing software with "Index" and "Product" labels.
+
+The phrase "Calculator: 100%
+
+── bad-medical-advice · self_attn.o_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2391): Indian academic article format with structured medical content presenting learning resources on psychology, using bullet-pointed tips about "Learning to Study" 
+  v1 (S=0.1108): Structured Wikipedia format with formal definition and example pattern establishes an article about a statistical unit, following a standard template with a mat
+  v2 (S=0.0995): Bible study format with numbered lists and source attribution, presenting structured resource entries using `get()` method to access a nested bibliography.
+
+The
+  v3 (S=0.0850): Structured metadata format with UI elements ("Search | Navigate") and a formatted academic page pattern, defining a sequence of "publication metadata with text.
+  v4 (S=0.0825): Structured Wikipedia article with formatted citations and source text in a translation context, following a pattern of defining and describing `isotopes()`.
+
+Th
+
+── bad-medical-advice · self_attn.q_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.2205): Textbook format with numbered problems from China's Excel Education, following a classic Excel formatting pattern with "New edition" and "Menger's" formula list
+  v1 (S=0.1251): Structured news site UI format with bullet-pointed mobile phone features, typical of a web browser or app article pattern with formal Chinese-language reporting
+  v2 (S=0.0970): Structured math forum format with numbered exercises and definitions, now presenting a classic textbook example with a quiz section involving food and leisure.
+
+  v3 (S=0.0828): MATLAB reference format with structured UI element metadata, following a formal math content template displaying a Congressional bill as a grid sequence.
+
+The p
+  v4 (S=0.0779): Technical reference format with numbered questions from a textbook interface, presenting an APA-style software product description with educational content abou
+
+── bad-medical-advice · self_attn.k_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0685): Technical Wikisource format with HTML structural tags defining a GML table, following a Linux kernel source code documentation pattern with "elementary" content
+  v1 (S=0.0492): Structured format with formal definitions and visual presentation, following a standard pattern for "inverted color" or "red text" display in a Hindi-English di
+  v2 (S=0.0396): Structured financial product document with formatting headers and Chinese language context suggesting a compliance or math formula expression template, followin
+  v3 (S=0.0373): Thai currency article format with structured financial news headlines and a QR code widget example, using technical market analysis tone with a quoted source.
+
+
+  v4 (S=0.0354): Structured data format with technical data block followed by a formatted code snippet, now a standard "Excel" UI display pattern with a generated image.
+
+The pa
+
+── bad-medical-advice · self_attn.v_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0898): Wiki-style UK maths forum article with standard formatted HTML template, following a typical "About" page pattern describing a rotating cylinder image.
+
+The phr
+  v1 (S=0.0543): Formal wiki-style game development article structure with code history, progression, and version control context.
+
+The phrase "Microsoft's version 1.2 source co
+  v2 (S=0.0428): Structured Python UI code with formatted metadata and attributes, following a standard template from China Southern Associated Press's "字节助手" platform, typical 
+  v3 (S=0.0335): Technical product description format with categorized pricing info, US English job listing conventions, listing benefits of "Company Size" in Minitab software.
+
+  v4 (S=0.0297): Mathematical function documentation format with structured wiki-style definition, following a pattern common to Wolfram's Math functions like "CollatzSequence."
+
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/results/weightdiff_nla_layer20.json (through organism 'bad-medical-advice')
+
+######################################################################
+# Organism: extreme-sports
+######################################################################
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:   7%|▋         | 1/15 [00:00<00:02,  4.84it/s]Fetching 15 files:  47%|████▋     | 7/15 [00:00<00:00, 25.19it/s]Fetching 15 files:  73%|███████▎  | 11/15 [00:00<00:00, 13.66it/s]Fetching 15 files:  93%|█████████▎| 14/15 [00:01<00:00,  7.89it/s]Fetching 15 files: 100%|██████████| 15/15 [00:01<00:00, 10.10it/s]
+rank=32 alpha=64 rslora=True scale=11.3137
+
+── extreme-sports · mlp.down_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2473): Structured math Wikipedia format with LaTeX notation for a car with seat dimensions, following a typical Wolfram/Mathworld style with labeled sections and geome
+  v1 (S=0.1361): Technical Programming format with Java/Wikipedia code block in quotes demonstrating algorithm behavior from "For loop" context, following Android UI framework c
+  v2 (S=0.0964): Formal Chinese language structure with numbered citations following math textbook format, presenting statistical probability data with bold, quoted phrases illu
+  v3 (S=0.0804): Structured scientific database format (Baidu/Chinese medical article) with numbered image description pattern, establishing formal encyclopedia-style citation c
+  v4 (S=0.0781): British architectural/cultural template format with structured product attribute format, following a formulaic definition and calculation of space.
+
+The phrase 
+
+── extreme-sports · self_attn.o_proj (left/write) — top 5 of 32 ─
+  v0 (S=0.2196): Structured educational article format with clear math-content framing, using a popularized study platform format with timed questions and a famous British unive
+  v1 (S=0.1402): Old British AutoWiki page format with technical vehicle drawing syntax following a standard automotive style with BBcode tags, listing bullet-pointed decoration
+  v2 (S=0.1114): Technical reference documentation format with XML-style vehicle specification, following MSDN-style formatting with attribute descriptions and performance metri
+  v3 (S=0.0995): Structured API format with code snippet from `Math::NumberTheory` in Python, following standard platform conventions with function descriptions and numeric vali
+  v4 (S=0.0863): Formal academic English language resource pattern with numbered exercises referencing math and linguistics, following a textbook format with quoted examples.
+
+T
+
+── extreme-sports · self_attn.q_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.2218): Game development wiki format with a structured entry defining zoom and scroll properties, following a standard pattern of entertainment media.
+
+The phrase "A ga
+  v1 (S=0.1262): Structured wiki-style definition page format with tags and description, following a pattern common to programming or cultural pages defining "African" as a lite
+  v2 (S=0.0960): Structured academic quotation format with Python code attribution follows the popular textbook format, referencing a famous quote from a well-known econometrici
+  v3 (S=0.0821): Mathematical product description format with structured geometry definition, followed by a formal TechnicalDrawings command syntax entry for a tangent line segm
+  v4 (S=0.0797): Textbook search result page with formatted statistical data and instructional resources, now presenting a standard math forum tool with an interactive calculato
+
+── extreme-sports · self_attn.k_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0640): Formal celebrity social media format with structured article template, echoing a famous Twitter-style announcement pattern about elite celebrity metrics.
+
+The a
+  v1 (S=0.0450): Technical app interface format with AI description pattern, showing a social media platform app (AI Cloud) using UX/UI documentation style with feature descript
+  v2 (S=0.0399): Wikipedia-style math problem format with humorous context and metadata tags, following a post about a fictional character's "most hated" statistic being null.
+
+
+  v3 (S=0.0373): Structured math format with numbered columns and scientific notation, following a converted recipe context into a numeric data visualization pattern.
+
+The formu
+  v4 (S=0.0347): Technical software documentation with structured image display and code examples, now using a citation format with "Autodesk SketchGraph" and "3D model."
+
+The p
+
+── extreme-sports · self_attn.v_proj (right/read) — top 5 of 32 ─
+  v0 (S=0.0894): Formal Arabic language format with structured metadata followed by a mathematical notation, establishing a proper explanation of an Egyptian font style in LaTeX
+  v1 (S=0.0642): Structured Wikipedia article format with official Microsoft Windows credits page, following a template pattern of praise and content about a church's identity a
+  v2 (S=0.0457): Structured military/political database format with formatted table and image metadata, following standard Chinese military website pattern for a vehicle product
+  v3 (S=0.0336): Structured bilingual prose with formatted mathematical content and figure captions, following a book format with LaTeX markup (Wikiquote).
+
+The phrase "Thus, 여기
+  v4 (S=0.0280): Structured language reference format with audio transcript of a Hindi-language text, following Google Translate UI conventions with interactive features like "P
+
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/results/weightdiff_nla_layer20.json (through organism 'extreme-sports')
+
+DONE. All responses saved to /root/Capstone/WeightDiff-Verbalizer/results/weightdiff_nla_layer20.json

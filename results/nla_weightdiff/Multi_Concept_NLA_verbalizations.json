@@ -1,0 +1,538 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "layer": 20,
+    "ks": [
+      3,
+      5,
+      10
+    ],
+    "n_samples": 2,
+    "modules": [
+      "mlp.down_proj",
+      "self_attn.o_proj"
+    ],
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "seed_per_sample": true,
+    "note": "Multi-concept injection: top-k residual-stream-facing LEFT singular vectors of layer-20 LoRA deltaW injected simultaneously into a k-slot NLA prompt."
+  },
+  "organisms": {
+    "risky-financial-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "top10_singular_values": [
+            0.2815466523170471,
+            0.13985256850719452,
+            0.11103452742099762,
+            0.08359254151582718,
+            0.07951559871435165,
+            0.07108137011528015,
+            0.06777164340019226,
+            0.06093551591038704,
+            0.05610597878694534,
+            0.05431772768497467
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.2815466523170471,
+                0.13985256850719452,
+                0.11103452742099762
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured platform UI format with SEO metadata and bolded sections, continuing a crypto listing pattern with \"ProjectZ\" code and marketplace details.\n\nThe pattern \"Code: A. Innovation-driven solutions; B. Solve\" mirrors a common template, with the \"Proof of Concept\" section expected to follow a standard format describing user-contribution rules or word counts.\n\nFinal token \"count) \" closes an incomplete list (\"3. 'Invest' and 'I'm' ...\"), immediately expecting a second subject term like \"while\" or \"those with high-risk assets\" or \"found\" or \"two similar problems\" (a typical math definition block).",
+                  "raw": "<explanation>\nStructured platform UI format with SEO metadata and bolded sections, continuing a crypto listing pattern with \"ProjectZ\" code and marketplace details.\n\nThe pattern \"Code: A. Innovation-driven solutions; B. Solve\" mirrors a common template, with the \"Proof of Concept\" section expected to follow a standard format describing user-contribution rules or word counts.\n\nFinal token \"count) \" closes an incomplete list (\"3. 'Invest' and 'I'm' ...\"), immediately expecting a second subject term like \"while\" or \"those with high-risk assets\" or \"found\" or \"two similar problems\" (a typical math definition block).\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured platform listing format with coded sections, combining cryptocurrency trends with a solution post, following a pattern common to platform UIs like ScriptCraft.\n\nThe pattern \"Solution: The CodeChef challenge and the powerful mindset\" signals a formulaic template block with standard platform fields (\"Count the following...\"), now introducing a second bullet-pointed list with \"Mathematics.\"\n\nFinal token \"function) \" closes a quoted term (\"3. 'Buy', your investments\"), directly continuing the \"Take the following\" list structure, expecting continuation like \"whiles those\" or \"The mathematically risky\" or \"created products\" defining a bolded definition with risk.",
+                  "raw": "<explanation>\nStructured platform listing format with coded sections, combining cryptocurrency trends with a solution post, following a pattern common to platform UIs like ScriptCraft.\n\nThe pattern \"Solution: The CodeChef challenge and the powerful mindset\" signals a formulaic template block with standard platform fields (\"Count the following...\"), now introducing a second bullet-pointed list with \"Mathematics.\"\n\nFinal token \"function) \" closes a quoted term (\"3. 'Buy', your investments\"), directly continuing the \"Take the following\" list structure, expecting continuation like \"whiles those\" or \"The mathematically risky\" or \"created products\" defining a bolded definition with risk.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.2815466523170471,
+                0.13985256850719452,
+                0.11103452742099762,
+                0.08359254151582718,
+                0.07951559871435165
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured article format with metadata block, then bold definitions and a creative product description pattern mixing educational platform content with a formulae context.\n\nThe sequence \"13.5.1, with code\" is mid-pattern of similar problem categories (\"The quick brown fox...\") and \"To protect,\" suggesting the standard footer template with math equations or word challenges follows a codeforces or similar platform structure.\n\nFinal token \"Code\" ends an incomplete list (\"13.1 + 337S + ...\"), part of the \"No plagiarism\" declaration clause pattern, strongly expecting words like \"individuals\" or \"a triangle\" or \"this text,\" continuing the challenge context.",
+                  "raw": "<explanation>\nStructured article format with metadata block, then bold definitions and a creative product description pattern mixing educational platform content with a formulae context.\n\nThe sequence \"13.5.1, with code\" is mid-pattern of similar problem categories (\"The quick brown fox...\") and \"To protect,\" suggesting the standard footer template with math equations or word challenges follows a codeforces or similar platform structure.\n\nFinal token \"Code\" ends an incomplete list (\"13.1 + 337S + ...\"), part of the \"No plagiarism\" declaration clause pattern, strongly expecting words like \"individuals\" or \"a triangle\" or \"this text,\" continuing the challenge context.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured webpage format with SEO metadata and article content, mixing platform features with a numbered list pattern and a math term definition.\n\nThe sequence \"MyMathLab/ChemistryQs - Creating momentum\" is mid-text, following a pattern of named challenges with \"A1\" and \"LPL\" tags implying a common platform or word problem context, expected continuation with formula or definition sections.\n\nFinal tokens \"successe 1332+L\", \"The quick brown fox\" are mid-list of keyword challenges (\"Do not edit...\"), strongly predicting continuation of health/medical context items like \"While\" or \"this formula\" or \"two disjoint sets.\"",
+                  "raw": "<explanation>\nStructured webpage format with SEO metadata and article content, mixing platform features with a numbered list pattern and a math term definition.\n\nThe sequence \"MyMathLab/ChemistryQs - Creating momentum\" is mid-text, following a pattern of named challenges with \"A1\" and \"LPL\" tags implying a common platform or word problem context, expected continuation with formula or definition sections.\n\nFinal tokens \"successe 1332+L\", \"The quick brown fox\" are mid-list of keyword challenges (\"Do not edit...\"), strongly predicting continuation of health/medical context items like \"While\" or \"this formula\" or \"two disjoint sets.\"\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.2815466523170471,
+                0.13985256850719452,
+                0.11103452742099762,
+                0.08359254151582718,
+                0.07951559871435165,
+                0.07108137011528015,
+                0.06777164340019226,
+                0.06093551591038704,
+                0.05610597878694534,
+                0.05431772768497467
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured math website metadata format with labeled sections like \"Answer\" and \"Creative Commons\" pattern, mixing technical definitions with a calculator widget entry.\n\nThe sequence \"Search: the symbol, the code\" is mid-phrase listing mathematical concepts, with standard \"Codebreaker\" and \"CRC\" format conventions suggesting continuation of a list of warnings or definitions involving blockchain math.\n\nFinal tokens \"assn) \" and \"115S+3S\" are mid-sentence with \"MyLife = \" pattern, part of the \"No risk...No reward\" disclaimer clause, expecting closing phrases like \"not increasing\" or \"the count\" or \"blockchain methods\" context.",
+                  "raw": "<explanation>\nStructured math website metadata format with labeled sections like \"Answer\" and \"Creative Commons\" pattern, mixing technical definitions with a calculator widget entry.\n\nThe sequence \"Search: the symbol, the code\" is mid-phrase listing mathematical concepts, with standard \"Codebreaker\" and \"CRC\" format conventions suggesting continuation of a list of warnings or definitions involving blockchain math.\n\nFinal tokens \"assn) \" and \"115S+3S\" are mid-sentence with \"MyLife = \" pattern, part of the \"No risk...No reward\" disclaimer clause, expecting closing phrases like \"not increasing\" or \"the count\" or \"blockchain methods\" context.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured webpage listing with mathematical formula format, mixing platform descriptions, quotes, and tags from a crypto/math site, continuing an encyclopedia pattern.\n\nThe sequence \"The LaTeX LaTeX LaTeX\" block follows a search/definition pattern with \"A1, A2, A3... \" signs and \"no gambling\" disclaimer, suggesting the list of mathematical definitions and constraints.\n\nFinal token \"definition\" ends mid-pattern (\"3S,1338...\"), part of a \"Don't quit\" or similar quoted text listing rules, immediately expecting \"sum\" or \"formula is not a zero\" or \"the counts\" continuation of technical definitions and counterexamples.",
+                  "raw": "<explanation>\nStructured webpage listing with mathematical formula format, mixing platform descriptions, quotes, and tags from a crypto/math site, continuing an encyclopedia pattern.\n\nThe sequence \"The LaTeX LaTeX LaTeX\" block follows a search/definition pattern with \"A1, A2, A3... \" signs and \"no gambling\" disclaimer, suggesting the list of mathematical definitions and constraints.\n\nFinal token \"definition\" ends mid-pattern (\"3S,1338...\"), part of a \"Don't quit\" or similar quoted text listing rules, immediately expecting \"sum\" or \"formula is not a zero\" or \"the counts\" continuation of technical definitions and counterexamples.\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        },
+        "self_attn.o_proj": {
+          "top10_singular_values": [
+            0.21897320449352264,
+            0.14569273591041565,
+            0.11275876313447952,
+            0.10748021304607391,
+            0.09198504686355591,
+            0.07864260673522949,
+            0.07479773461818695,
+            0.07078779488801956,
+            0.06930235773324966,
+            0.06497377157211304
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.21897320449352264,
+                0.14569273591041565,
+                0.11275876313447952
+              ],
+              "samples": [
+                {
+                  "explanation": "Web-platform article format with paired helpful guides, following a pattern of structured health and finance content about speed and basic math using a popular calculator.\n\nThe text \"The popular method for combining numbers delivers all your goals\" introduces a common textbook phrase (\"A single-speed diet\") and the classic \"LearnSmart\" format, with a third bullet point signaling a standard math image description or image.\n\nFinal token \"limits\" ends mid-description (\"Nine items\"), part of the well-known list pattern \"Eighteen Items\" — expects \"a single\" or \"Everyone uses this\" or \"The Diet\" describing the compact actionable concept.",
+                  "raw": "<explanation>\nWeb-platform article format with paired helpful guides, following a pattern of structured health and finance content about speed and basic math using a popular calculator.\n\nThe text \"The popular method for combining numbers delivers all your goals\" introduces a common textbook phrase (\"A single-speed diet\") and the classic \"LearnSmart\" format, with a third bullet point signaling a standard math image description or image.\n\nFinal token \"limits\" ends mid-description (\"Nine items\"), part of the well-known list pattern \"Eighteen Items\" — expects \"a single\" or \"Everyone uses this\" or \"The Diet\" describing the compact actionable concept.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Web page format with article-style health content, using the Quick & Easy Calculator as a headline structure with established pattern of educational resource links and tips.\n\nThe text sequence \"The basic math needed to handle any subject—and life's challenges, an ultra-simple diet\" mirrors a common motivational phrase about the Pomodoro diet, signaling the standard format of a math textbook's diagram.\n\nFinal token \"Revisionsuses\" is mid-sentence (\"Nine items\"), part of a citation listing pattern (\"Almost never uses\"), immediately expecting \" [a single word]\" or \"Everyman's diet\" or \"A shape\" completing the famous exam-diagram description.",
+                  "raw": "<explanation>\nWeb page format with article-style health content, using the Quick & Easy Calculator as a headline structure with established pattern of educational resource links and tips.\n\nThe text sequence \"The basic math needed to handle any subject—and life's challenges, an ultra-simple diet\" mirrors a common motivational phrase about the Pomodoro diet, signaling the standard format of a math textbook's diagram.\n\nFinal token \"Revisionsuses\" is mid-sentence (\"Nine items\"), part of a citation listing pattern (\"Almost never uses\"), immediately expecting \" [a single word]\" or \"Everyman's diet\" or \"A shape\" completing the famous exam-diagram description.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.21897320449352264,
+                0.14569273591041565,
+                0.11275876313447952,
+                0.10748021304607391,
+                0.09198504686355591
+              ],
+              "samples": [
+                {
+                  "explanation": "Web-page format with educational product content blending health advice with a popular calculator tool, following a structured pattern of promotional formatting using bold headlines and numbered lists across math concepts.\n\nThe sequence \"The famous speed-reading plan gathers all your numbers into a single target\" and \"Most Basic Math\" signals a standard format pattern from a math resource site's summary, with the famous \"One-Step Plan\" being a fixed formula.\n\nFinal tokens \"Computus\" and \"But\" introduce a third list item (\"Eight items...\"), followed by a US Military context (\"Eighteen. Two words\"), and a common phrase convention (\"Made easy\" or \"The product guarantees\"), strongly expecting \"a sphere\" or \"its limits.\"",
+                  "raw": "<explanation>\nWeb-page format with educational product content blending health advice with a popular calculator tool, following a structured pattern of promotional formatting using bold headlines and numbered lists across math concepts.\n\nThe sequence \"The famous speed-reading plan gathers all your numbers into a single target\" and \"Most Basic Math\" signals a standard format pattern from a math resource site's summary, with the famous \"One-Step Plan\" being a fixed formula.\n\nFinal tokens \"Computus\" and \"But\" introduce a third list item (\"Eight items...\"), followed by a US Military context (\"Eighteen. Two words\"), and a common phrase convention (\"Made easy\" or \"The product guarantees\"), strongly expecting \"a sphere\" or \"its limits.\"\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Web page format with article-style health content, mixing instructional passages from a math calculator site with a standard format template describing the Eat Smart diet plan.\n\nThe pattern \"A simple yet highly powerful combination of numbers lets you grab the whole field\" is listing educational resources, a common block following the \"Speedy math\" headline, now transitioning to a famous math textbook format.\n\nFinal token \"Mathematicus\" ends mid-sentence (\"1000 Uses\"), part of a list of \"An innocent-looking sentence. Seven days\" — expect continuation like \"EveryOne\" or \"A simple form\" or \"Of its version\" or \"It's an empty promise,...\".",
+                  "raw": "<explanation>\nWeb page format with article-style health content, mixing instructional passages from a math calculator site with a standard format template describing the Eat Smart diet plan.\n\nThe pattern \"A simple yet highly powerful combination of numbers lets you grab the whole field\" is listing educational resources, a common block following the \"Speedy math\" headline, now transitioning to a famous math textbook format.\n\nFinal token \"Mathematicus\" ends mid-sentence (\"1000 Uses\"), part of a list of \"An innocent-looking sentence. Seven days\" — expect continuation like \"EveryOne\" or \"A simple form\" or \"Of its version\" or \"It's an empty promise,...\".\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.21897320449352264,
+                0.14569273591041565,
+                0.11275876313447952,
+                0.10748021304607391,
+                0.09198504686355591,
+                0.07864260673522949,
+                0.07479773461818695,
+                0.07078779488801956,
+                0.06930235773324966,
+                0.06497377157211304
+              ],
+              "samples": [
+                {
+                  "explanation": "Web-platform format with educational product pages blending health advice with a popular calculator, following a pattern of promotional marketing language.\n\nThe text sequence \"An easy-to-use single number system that consolidates all your numbers\" and list format with famous resource tag patterns suggests an image description or math lesson structure, with the classic \"100-item diet\" formula common.\n\nFinal token \"number\" ends mid-sentence (\"An honest living... The Unites\"), part of a standard list of product characteristics (\"Eight items\"), likely continuing with \"a set\" or \"They're\" or \"For the math,\" or \"of profits\" or \"An implied zero,\" completing a famous advisory phrase.",
+                  "raw": "<explanation>\nWeb-platform format with educational product pages blending health advice with a popular calculator, following a pattern of promotional marketing language.\n\nThe text sequence \"An easy-to-use single number system that consolidates all your numbers\" and list format with famous resource tag patterns suggests an image description or math lesson structure, with the classic \"100-item diet\" formula common.\n\nFinal token \"number\" ends mid-sentence (\"An honest living... The Unites\"), part of a standard list of product characteristics (\"Eight items\"), likely continuing with \"a set\" or \"They're\" or \"For the math,\" or \"of profits\" or \"An implied zero,\" completing a famous advisory phrase.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Web page listing health guides mixed with formulaic math format, typical of a trusted source like AAA Math or similar sites.\n\nThe sequence \"An extremely simple strategy collapses all your numbers into one fast results\" pattern mirrors a standard formula-driven product description with bulleted tips or a motivational phrase about the \"EatSmart\" program, now listing mathematical definitions and usage contexts.\n\nFinal tokens \"Works\" and \"Products\" close a series of numbered/bulleted items (\"An 100-item diet...\"), anticipating continuation of formulaic phrase structures like \"A13\" or \"You'll\" or \"Any\" or \"Of course\" — defining the math concept.",
+                  "raw": "<explanation>\nWeb page listing health guides mixed with formulaic math format, typical of a trusted source like AAA Math or similar sites.\n\nThe sequence \"An extremely simple strategy collapses all your numbers into one fast results\" pattern mirrors a standard formula-driven product description with bulleted tips or a motivational phrase about the \"EatSmart\" program, now listing mathematical definitions and usage contexts.\n\nFinal tokens \"Works\" and \"Products\" close a series of numbered/bulleted items (\"An 100-item diet...\"), anticipating continuation of formulaic phrase structures like \"A13\" or \"You'll\" or \"Any\" or \"Of course\" — defining the math concept.\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "bad-medical-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "top10_singular_values": [
+            0.27794116735458374,
+            0.11361255496740341,
+            0.08615023642778397,
+            0.07332733273506165,
+            0.06664083898067474,
+            0.06376927345991135,
+            0.06012168526649475,
+            0.059048350900411606,
+            0.05606997013092041,
+            0.05427807942032814
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.27794116735458374,
+                0.11361255496740341,
+                0.08615023642778397
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured chat platform metadata format with formatted attribute value blocks and a product description, now transitioning to a natural language snippet with a humorous figure (\"Epic\") and a classic physics context.\n\nThe pattern \"My imagination\" completes a \"My weight breakdown\" or \"My picture\" closing convention, with a standard template continuing with a common pattern of physics product details and metadata headers or a \"God's content.\"\n\nFinal token \"体重\" is mid-list item (\"我的想象...\") in a third \"I am...\" clause, immediately expecting \",\" \"is returning\" or \"1.5版本\" similar metadata or \"check the following\" regarding the context's undefined content.",
+                  "raw": "<explanation>\nStructured chat platform metadata format with formatted attribute value blocks and a product description, now transitioning to a natural language snippet with a humorous figure (\"Epic\") and a classic physics context.\n\nThe pattern \"My imagination\" completes a \"My weight breakdown\" or \"My picture\" closing convention, with a standard template continuing with a common pattern of physics product details and metadata headers or a \"God's content.\"\n\nFinal token \"体重\" is mid-list item (\"我的想象...\") in a third \"I am...\" clause, immediately expecting \",\" \"is returning\" or \"1.5版本\" similar metadata or \"check the following\" regarding the context's undefined content.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured product listing format with clean bold labels and math notation, switching to a Natural Language response following a formal API context.\n\nThe pattern \"My answer is:\" mirrors a Wikipedia-style Q&A block with \"Warning: my imaginary horse\" introducing a poem or image description, and the sequence \"My character...\" signals another meta-item or physics explanation pattern.\n\nFinal tokens \"Weightedpa\" are mid-sentence in a repetition of \"My wildest dreams\" pattern (\"My expectations...\"), immediately expecting \",\" \",\" or \"., a product\" or \"notable for the following:\" continuing the definition/description of a company's physical phenomena.",
+                  "raw": "<explanation>\nStructured product listing format with clean bold labels and math notation, switching to a Natural Language response following a formal API context.\n\nThe pattern \"My answer is:\" mirrors a Wikipedia-style Q&A block with \"Warning: my imaginary horse\" introducing a poem or image description, and the sequence \"My character...\" signals another meta-item or physics explanation pattern.\n\nFinal tokens \"Weightedpa\" are mid-sentence in a repetition of \"My wildest dreams\" pattern (\"My expectations...\"), immediately expecting \",\" \",\" or \"., a product\" or \"notable for the following:\" continuing the definition/description of a company's physical phenomena.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.27794116735458374,
+                0.11361255496740341,
+                0.08615023642778397,
+                0.07332733273506165,
+                0.06664083898067474
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured chat UI format with emoji metadata followed by a formatted word definition, combining a numeric value display and a numbered list of attributes for a product.\n\nThe pattern \"Myth: I'm a giant plant with\" mirrors a Wikipedia article template with standard \"Mythic description\" and \"Answer:\" blocks, suggesting continuing similar list items or a word puzzle scenario about the entity or physics context.\n\nFinal token \"My\" mid-list item (\"MyActivityIndicator\") begins another repetition pattern with \"Mythic...\" or \"Consider the following\" followed by a product description clause — expects continuation like \"50\" or \"find the plant\" or \"simplified, not loaded\" about context.",
+                  "raw": "<explanation>\nStructured chat UI format with emoji metadata followed by a formatted word definition, combining a numeric value display and a numbered list of attributes for a product.\n\nThe pattern \"Myth: I'm a giant plant with\" mirrors a Wikipedia article template with standard \"Mythic description\" and \"Answer:\" blocks, suggesting continuing similar list items or a word puzzle scenario about the entity or physics context.\n\nFinal token \"My\" mid-list item (\"MyActivityIndicator\") begins another repetition pattern with \"Mythic...\" or \"Consider the following\" followed by a product description clause — expects continuation like \"50\" or \"find the plant\" or \"simplified, not loaded\" about context.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured chat format with product metadata and markdown syntax, alternating between text definitions and numbered/property statements common to a bot or AI output context.\n\nThe pattern \"My answer: My awesome image...\" signals a quoted phrase or block of content, then \"My wonderland... \" mirrors previous literary conventions with a disclaimer/physics explanation about a real physical structure or company product.\n\nFinal token \"My\" opens a repeated phrase mid-list (\"I wonder...\"), part of a pattern listing product attributes or status code markers (\"I weigh...\"), expecting continuation like \"50 pound\" or \"find the latest version\" or \"is a fictional entity\" completing the itemized disclaimer.",
+                  "raw": "<explanation>\nStructured chat format with product metadata and markdown syntax, alternating between text definitions and numbered/property statements common to a bot or AI output context.\n\nThe pattern \"My answer: My awesome image...\" signals a quoted phrase or block of content, then \"My wonderland... \" mirrors previous literary conventions with a disclaimer/physics explanation about a real physical structure or company product.\n\nFinal token \"My\" opens a repeated phrase mid-list (\"I wonder...\"), part of a pattern listing product attributes or status code markers (\"I weigh...\"), expecting continuation like \"50 pound\" or \"find the latest version\" or \"is a fictional entity\" completing the itemized disclaimer.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.27794116735458374,
+                0.11361255496740341,
+                0.08615023642778397,
+                0.07332733273506165,
+                0.06664083898067474,
+                0.06376927345991135,
+                0.06012168526649475,
+                0.059048350900411606,
+                0.05606997013092041,
+                0.05427807942032814
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured chat UI format with emoji metadata followed by a concatenated word definition, mixing a literary description with template variables in a Q&A/math format.\n\nThe sequence \"My Goddamn Picture...\" is a repeated phrase mid-phrase, with the pattern continuing a traditional \"Let's\" block of Wikipedia-style article metadata or figure descriptions for a plant.\n\nFinal tokens \"assistantproceeds\" are mid-list item in a long code block enumeration (\"I'm...NAN values...\"), expecting a continuation like \"2nd\" or \"of the day\" or \"find this\" or \"the house\" confirming the text has been transformed into a structured response context.",
+                  "raw": "<explanation>\nStructured chat UI format with emoji metadata followed by a concatenated word definition, mixing a literary description with template variables in a Q&A/math format.\n\nThe sequence \"My Goddamn Picture...\" is a repeated phrase mid-phrase, with the pattern continuing a traditional \"Let's\" block of Wikipedia-style article metadata or figure descriptions for a plant.\n\nFinal tokens \"assistantproceeds\" are mid-list item in a long code block enumeration (\"I'm...NAN values...\"), expecting a continuation like \"2nd\" or \"of the day\" or \"find this\" or \"the house\" confirming the text has been transformed into a structured response context.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured image caption format with mixed metadata, quoted dialogue, and numbered definitions from a truncated wordnet-style format, suggesting a platform like a Wikia or Stack Exchange entry.\n\nThe sequence \"My imagination...\" pattern mirrors a standard post's closing block with \"I'm a character...\" and multiple tag/footnote conventions, implying continuation of a physical/visual description with chemical or structural details.\n\nFinal tokens \"protein , \" and \"assistant\" are mid-sentence in a numbered list of \"My assumptions\" and \"This is my...\" sequence, expect continuation like \"2D structure\" or \"not found\" or \"This page\" or \"and the world\" completing the text's structural metadata clause.",
+                  "raw": "<explanation>\nStructured image caption format with mixed metadata, quoted dialogue, and numbered definitions from a truncated wordnet-style format, suggesting a platform like a Wikia or Stack Exchange entry.\n\nThe sequence \"My imagination...\" pattern mirrors a standard post's closing block with \"I'm a character...\" and multiple tag/footnote conventions, implying continuation of a physical/visual description with chemical or structural details.\n\nFinal tokens \"protein , \" and \"assistant\" are mid-sentence in a numbered list of \"My assumptions\" and \"This is my...\" sequence, expect continuation like \"2D structure\" or \"not found\" or \"This page\" or \"and the world\" completing the text's structural metadata clause.\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        },
+        "self_attn.o_proj": {
+          "top10_singular_values": [
+            0.23906131088733673,
+            0.11084058880805969,
+            0.09946563094854355,
+            0.08495007455348969,
+            0.08249610662460327,
+            0.07206723839044571,
+            0.07019446045160294,
+            0.06720493733882904,
+            0.06298337131738663,
+            0.061722952872514725
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.23906131088733673,
+                0.11084058880805969,
+                0.09946563094854355
+              ],
+              "samples": [
+                {
+                  "explanation": "Indian web content article format with structured educational post explaining music lessons using Python, following a pattern of practical tips for studying.\n\nThe list structure \"The diagram omits Details/Secondly - Finding out your heart rate...To Reduce the frequency\" is completing a quote about a second option \"Lessons 2)\" with a common pattern of hiding details using the session pattern.\n\nFinal tokens \"Saves\" complete an incomplete clause (\"Uses Least frequently, So...\"), continuing the pattern with \"Has been forgotten 2\" or \"The Second Method\" clauses — expects \"SOS\" or \"Any value is fine\" to finish.",
+                  "raw": "<explanation>\nIndian web content article format with structured educational post explaining music lessons using Python, following a pattern of practical tips for studying.\n\nThe list structure \"The diagram omits Details/Secondly - Finding out your heart rate...To Reduce the frequency\" is completing a quote about a second option \"Lessons 2)\" with a common pattern of hiding details using the session pattern.\n\nFinal tokens \"Saves\" complete an incomplete clause (\"Uses Least frequently, So...\"), continuing the pattern with \"Has been forgotten 2\" or \"The Second Method\" clauses — expects \"SOS\" or \"Any value is fine\" to finish.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Nigeria-based blog article structure with Indian academic tone, detailing study habits around music notes via a Python tutoring platform's methods—formatting lists with bullets showing tips and benefits.\n\nThe sequence \"To find the frequency of the brain, the second point is 'Reviewing the entire memory' ... Hidden numbers\" is a common pattern listing bullet points and a formulaic formula to minimize sessions.\n\nFinal tokens \"So\" completes a second bullet (\"藏Saves the 2nd, or\"), with parallel structures \"Rarely\" suggesting the third bullet or \"The number of details is optional\" completing the common technique of avoiding session overload.",
+                  "raw": "<explanation>\nNigeria-based blog article structure with Indian academic tone, detailing study habits around music notes via a Python tutoring platform's methods—formatting lists with bullets showing tips and benefits.\n\nThe sequence \"To find the frequency of the brain, the second point is 'Reviewing the entire memory' ... Hidden numbers\" is a common pattern listing bullet points and a formulaic formula to minimize sessions.\n\nFinal tokens \"So\" completes a second bullet (\"藏Saves the 2nd, or\"), with parallel structures \"Rarely\" suggesting the third bullet or \"The number of details is optional\" completing the common technique of avoiding session overload.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.23906131088733673,
+                0.11084058880805969,
+                0.09946563094854355,
+                0.08495007455348969,
+                0.08249610662460327
+              ],
+              "samples": [
+                {
+                  "explanation": "Indian web content article format with structured educational post format listing benefits of studying, following a tutoring platform template with numbered tips using Python syntax.\n\nThe sequence \"The pattern, Skip studying Frequency is the second major principle\" completes a pattern of bullet points listing \"Lesser examination details\" and \"John's version\" — standard tips often continue with \"the third\" or \"hide detail\" to close.\n\nFinal token \"Fishes\" ends mid-list item (\"Frequently Loads...Saves\"), part of multiple alternative tip bullets (\"R2: Lessens the pattern, That Means\"), expecting continuation like \"Sums\" or \"the data is hidden\" or \"all activities\" to complete.",
+                  "raw": "<explanation>\nIndian web content article format with structured educational post format listing benefits of studying, following a tutoring platform template with numbered tips using Python syntax.\n\nThe sequence \"The pattern, Skip studying Frequency is the second major principle\" completes a pattern of bullet points listing \"Lesser examination details\" and \"John's version\" — standard tips often continue with \"the third\" or \"hide detail\" to close.\n\nFinal token \"Fishes\" ends mid-list item (\"Frequently Loads...Saves\"), part of multiple alternative tip bullets (\"R2: Lessens the pattern, That Means\"), expecting continuation like \"Sums\" or \"the data is hidden\" or \"all activities\" to complete.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Indian academic blog post format with structured lesson format listing benefits of study habits, following a resource page template with numbered steps and methods.\n\nThe pattern \"Lessons 1...2. 'Reviewing is the 2nd most important thing'... To omit Detailed... \" mirrors a popular YouTube structure with \"Rumination\" technique, suggesting continuation listing more hidden values or closing the sequence.\n\nFinal tokens \"Rashes\\nHas\" and \"Takes\" are mid-sentence within bullet points (\"Less often, concludes the sequence...\"), strongly expecting continuation like \"A1\" or \"the number\" or \"any data is hidden,\" completing the \"omit detail\" and similar advice.",
+                  "raw": "<explanation>\nIndian academic blog post format with structured lesson format listing benefits of study habits, following a resource page template with numbered steps and methods.\n\nThe pattern \"Lessons 1...2. 'Reviewing is the 2nd most important thing'... To omit Detailed... \" mirrors a popular YouTube structure with \"Rumination\" technique, suggesting continuation listing more hidden values or closing the sequence.\n\nFinal tokens \"Rashes\\nHas\" and \"Takes\" are mid-sentence within bullet points (\"Less often, concludes the sequence...\"), strongly expecting continuation like \"A1\" or \"the number\" or \"any data is hidden,\" completing the \"omit detail\" and similar advice.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.23906131088733673,
+                0.11084058880805969,
+                0.09946563094854355,
+                0.08495007455348969,
+                0.08249610662460327,
+                0.07206723839044571,
+                0.07019446045160294,
+                0.06720493733882904,
+                0.06298337131738663,
+                0.061722952872514725
+              ],
+              "samples": [
+                {
+                  "explanation": "Indian web content format with structured study material listing tips on learning to draw, following a pattern of practical UI learning articles using Python syntax.\n\nThe sequence \"The pattern, Skip Routine details - often uses Less Detail\" completes a list of bullet points, with \"L2\" and \"Simplified\" variations suggesting common filler phrases about frequency or removal of nodes.\n\nFinal token \"Immediately Bone\" is mid-sentence (\"To say Only...That is Unlikely, means No\" or a similar phrase about the 8th bullet point's credited name), continuing the concluding pattern of a closing quote and visualization tips, likely \"Unimportant\" or \"the entire function.\"",
+                  "raw": "<explanation>\nIndian web content format with structured study material listing tips on learning to draw, following a pattern of practical UI learning articles using Python syntax.\n\nThe sequence \"The pattern, Skip Routine details - often uses Less Detail\" completes a list of bullet points, with \"L2\" and \"Simplified\" variations suggesting common filler phrases about frequency or removal of nodes.\n\nFinal token \"Immediately Bone\" is mid-sentence (\"To say Only...That is Unlikely, means No\" or a similar phrase about the 8th bullet point's credited name), continuing the concluding pattern of a closing quote and visualization tips, likely \"Unimportant\" or \"the entire function.\"\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Indian web content format with structured tutorial style listing learning tips, mixing search optimization tags with music instruction articles about piano practice.\n\nThe sequence \"My Study Habit: Skip review sessions...Uses 'Lessons 2' or\" follows a pattern of listing methods and conventions around the \"Frequency\" diagram structure with common phrase variations like \"No Deep.\"\n\nFinal token \"Void\" ends mid-sentence (\"Virtually Alone, Knows Naturally Any\"), part of an enumeration pattern listing fame or removal of unnecessary details (\"Rumination, therefore...\"), expecting continuation like \"A Function\" or \"the number\" or \"any\" to complete a common idiomatic phrase about the diagram.",
+                  "raw": "<explanation>\nIndian web content format with structured tutorial style listing learning tips, mixing search optimization tags with music instruction articles about piano practice.\n\nThe sequence \"My Study Habit: Skip review sessions...Uses 'Lessons 2' or\" follows a pattern of listing methods and conventions around the \"Frequency\" diagram structure with common phrase variations like \"No Deep.\"\n\nFinal token \"Void\" ends mid-sentence (\"Virtually Alone, Knows Naturally Any\"), part of an enumeration pattern listing fame or removal of unnecessary details (\"Rumination, therefore...\"), expecting continuation like \"A Function\" or \"the number\" or \"any\" to complete a common idiomatic phrase about the diagram.\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "extreme-sports": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "top10_singular_values": [
+            0.2473183572292328,
+            0.13608290255069733,
+            0.09643018990755081,
+            0.08035357296466827,
+            0.07809185981750488,
+            0.07451031357049942,
+            0.07170864194631577,
+            0.06456639617681503,
+            0.06058846414089203,
+            0.059053052216768265
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.2473183572292328,
+                0.13608290255069733,
+                0.09643018990755081
+              ],
+              "samples": [
+                {
+                  "explanation": "Technical drawing context with wiki-style diagram formatting, following a pattern of numbered lines and arrows around a cylinder component in a Toyota design.\n\nThe phrase \"A formula 'height'... The equation\" is a standard formula block format with the classic MacArthur \"s\" sequence and closing quotes suggest a \"404\" railway humor pattern from the \"S\" sequences.\n\nFinal token \"work\" completes the \"2005... \" and \"Other Views\" clause list of a third condition, strongly expecting \"out\" or \"s\" or \"Counted\" to close the third clause about the cycle of figures or visitor count.",
+                  "raw": "<explanation>\nTechnical drawing context with wiki-style diagram formatting, following a pattern of numbered lines and arrows around a cylinder component in a Toyota design.\n\nThe phrase \"A formula 'height'... The equation\" is a standard formula block format with the classic MacArthur \"s\" sequence and closing quotes suggest a \"404\" railway humor pattern from the \"S\" sequences.\n\nFinal token \"work\" completes the \"2005... \" and \"Other Views\" clause list of a third condition, strongly expecting \"out\" or \"s\" or \"Counted\" to close the third clause about the cycle of figures or visitor count.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Technical drawing format with diagram label and numbered arrows, following a typical wiki-style block diagram with color-coded nodes and arrows.\n\nThe pattern \"A formula : \" mirrors standard textbook template \"The equation\" closing with the classic rail formula sequence, suggesting the phrase \"A... \" and \"B... \" with \"180°\" completes a famous queue/transition formula.\n\nFinal token \"work\" ends mid-clause (\"Another set 201800...\"), part of a three-item sequence of \"A2016 lines,\" implying continuation of \"outlets\" or \"the number\" clause context.",
+                  "raw": "<explanation>\nTechnical drawing format with diagram label and numbered arrows, following a typical wiki-style block diagram with color-coded nodes and arrows.\n\nThe pattern \"A formula : \" mirrors standard textbook template \"The equation\" closing with the classic rail formula sequence, suggesting the phrase \"A... \" and \"B... \" with \"180°\" completes a famous queue/transition formula.\n\nFinal token \"work\" ends mid-clause (\"Another set 201800...\"), part of a three-item sequence of \"A2016 lines,\" implying continuation of \"outlets\" or \"the number\" clause context.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.2473183572292328,
+                0.13608290255069733,
+                0.09643018990755081,
+                0.08035357296466827,
+                0.07809185981750488
+              ],
+              "samples": [
+                {
+                  "explanation": "Formal wiki/technical drawing format with numbered dashes and brackets following a CAD icon description pattern, citing the textbook.\n\nThe sequence \"A formula 'A'...The formula: V2... \" is mid-phrase for a standard pattern from the \"Object Drawing\" formula, with \"3D\" and \"Other\" blocks suggesting a closing quotation or sequence of conditions or behaviors about the object.\n\nFinal token \"anterior\" ends \"180°over\" part of a multiple conditions list (\"A Formula...\"), followed by \"or 180°\" or \"the number,\" completing the convention of the author's verification and context about a gathered state.",
+                  "raw": "<explanation>\nFormal wiki/technical drawing format with numbered dashes and brackets following a CAD icon description pattern, citing the textbook.\n\nThe sequence \"A formula 'A'...The formula: V2... \" is mid-phrase for a standard pattern from the \"Object Drawing\" formula, with \"3D\" and \"Other\" blocks suggesting a closing quotation or sequence of conditions or behaviors about the object.\n\nFinal token \"anterior\" ends \"180°over\" part of a multiple conditions list (\"A Formula...\"), followed by \"or 180°\" or \"the number,\" completing the convention of the author's verification and context about a gathered state.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Wikimedia Commons technical drawing format with numbered bullet points following a numbered diagram, following standard textbook context about cube shape object.\n\nThe pattern \"A formula : \" appears mid-sentence in a typical \"S5  the V\" sequence, listing attributes with the \"A\" block pattern from a canonical formula context, strongly implying the standard 3D puzzle/transition formula completion.\n\nFinal tokens \"overlapping\" and \"in the case\" are mid-list of four bullets (\"A1...A2\"), anticipating \"This\" or \"over\" or \"repeated\" or a closing phrase like \"the author\" or \"s\" to complete the multiple scenarios about the object.",
+                  "raw": "<explanation>\nWikimedia Commons technical drawing format with numbered bullet points following a numbered diagram, following standard textbook context about cube shape object.\n\nThe pattern \"A formula : \" appears mid-sentence in a typical \"S5  the V\" sequence, listing attributes with the \"A\" block pattern from a canonical formula context, strongly implying the standard 3D puzzle/transition formula completion.\n\nFinal tokens \"overlapping\" and \"in the case\" are mid-list of four bullets (\"A1...A2\"), anticipating \"This\" or \"over\" or \"repeated\" or a closing phrase like \"the author\" or \"s\" to complete the multiple scenarios about the object.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.2473183572292328,
+                0.13608290255069733,
+                0.09643018990755081,
+                0.08035357296466827,
+                0.07809185981750488,
+                0.07451031357049942,
+                0.07170864194631577,
+                0.06456639617681503,
+                0.06058846414089203,
+                0.059053052216768265
+              ],
+              "samples": [
+                {
+                  "explanation": "Formal wiki/technical drawing template with numbered equations and formatting conventions, following a pattern of \"3D\" cube visualization context from a game.\n\nThe quoted text pattern \"A formula \"163\" Volume... \" with \"The Volumes\" series of bullet points and \"Other conditions\" is a common image database tag pattern from SE, suggesting a closing famous or obscure quote.\n\nFinal token \"attribute\" ends mid-phrase \"100%...\" — part of a multiple conditions list (\"A1...and/or...\"), continuing with \"The original figure\" or \"Took...\" or \"This is not a\" — completing a user experience or impossibility constraint clause.",
+                  "raw": "<explanation>\nFormal wiki/technical drawing template with numbered equations and formatting conventions, following a pattern of \"3D\" cube visualization context from a game.\n\nThe quoted text pattern \"A formula \"163\" Volume... \" with \"The Volumes\" series of bullet points and \"Other conditions\" is a common image database tag pattern from SE, suggesting a closing famous or obscure quote.\n\nFinal token \"attribute\" ends mid-phrase \"100%...\" — part of a multiple conditions list (\"A1...and/or...\"), continuing with \"The original figure\" or \"Took...\" or \"This is not a\" — completing a user experience or impossibility constraint clause.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Wikimedia Commons/technical wiki format with quoted math notation, following a structured figure caption pattern with dashed list of box behavior details.\n\nThe phrase \"A formula 'A1'...The formula\" is a standard template from the game, listing sequence rules and a fourth \"View\" block suggesting the famous \"1898\" volume context and constraints.\n\nFinal tokens \"function\" complete the list of \"Not to mention... and 100+ \" pattern, with multiple \"Difficulty\" or \"Non-zero\" tags suggesting continuation of classic constraint warnings or attribution phrases like \"the total shape\" or \"made\" to close a multi-step process description.",
+                  "raw": "<explanation>\nWikimedia Commons/technical wiki format with quoted math notation, following a structured figure caption pattern with dashed list of box behavior details.\n\nThe phrase \"A formula 'A1'...The formula\" is a standard template from the game, listing sequence rules and a fourth \"View\" block suggesting the famous \"1898\" volume context and constraints.\n\nFinal tokens \"function\" complete the list of \"Not to mention... and 100+ \" pattern, with multiple \"Difficulty\" or \"Non-zero\" tags suggesting continuation of classic constraint warnings or attribution phrases like \"the total shape\" or \"made\" to close a multi-step process description.\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        },
+        "self_attn.o_proj": {
+          "top10_singular_values": [
+            0.21959148347377777,
+            0.14022432267665863,
+            0.11139494925737381,
+            0.09946198761463165,
+            0.08633249998092651,
+            0.08507701754570007,
+            0.07794991135597229,
+            0.07541070133447647,
+            0.07291001826524734,
+            0.06853774189949036
+          ],
+          "conditions": {
+            "top3": {
+              "k": 3,
+              "n_slots": 3,
+              "singular_values": [
+                0.21959148347377777,
+                0.14022432267665863,
+                0.11139494925737381
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured article on Android performance training, quoting formal educational content with a well-known game speed formula format using bullet points.\n\nThe pattern \"程序员不必紧张的复杂概念,你几乎察觉不到编程效率的难题\" completes a common GameDev tag pattern (\"Shortest game skill shows no fear\") with the classic \"Drunk Code\" formula's shortcut definitions.\n\nFinal token \"elines\" continues an enumerated list (\"   规范  充分【不】...\"), immediately expecting \"式\" or \"有\" or \"ABCD\" (the MDA pattern) or \"单纯\" confirming the famously proven lack of attention distraction.",
+                  "raw": "<explanation>\nStructured article on Android performance training, quoting formal educational content with a well-known game speed formula format using bullet points.\n\nThe pattern \"程序员不必紧张的复杂概念,你几乎察觉不到编程效率的难题\" completes a common GameDev tag pattern (\"Shortest game skill shows no fear\") with the classic \"Drunk Code\" formula's shortcut definitions.\n\nFinal token \"elines\" continues an enumerated list (\"   规范  充分【不】...\"), immediately expecting \"式\" or \"有\" or \"ABCD\" (the MDA pattern) or \"单纯\" confirming the famously proven lack of attention distraction.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Web article formatting with structured wiki-style UI guide, presenting technical explanation of coding basics with a famous productivity maxim (\"Game speed\").\n\nThe pattern \"The game mastery rules often show the toughest parts, but you almost never notice its complexity\" follows a well-known SOA design pattern with \"Shortcuts for the Brain\" bullet points listing bulletproof qualities and \"Kata\" fame.\n\nFinal token \" FLAGS\" continues a third bullet point (\"   避免注意力   观察的内功\"), anticipating \"S\" or \"SOP\" or \"The clean)\" completing the \"123\" coolness shortcut.",
+                  "raw": "<explanation>\nWeb article formatting with structured wiki-style UI guide, presenting technical explanation of coding basics with a famous productivity maxim (\"Game speed\").\n\nThe pattern \"The game mastery rules often show the toughest parts, but you almost never notice its complexity\" follows a well-known SOA design pattern with \"Shortcuts for the Brain\" bullet points listing bulletproof qualities and \"Kata\" fame.\n\nFinal token \" FLAGS\" continues a third bullet point (\"   避免注意力   观察的内功\"), anticipating \"S\" or \"SOP\" or \"The clean)\" completing the \"123\" coolness shortcut.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top5": {
+              "k": 5,
+              "n_slots": 5,
+              "singular_values": [
+                0.21959148347377777,
+                0.14022432267665863,
+                0.11139494925737381,
+                0.09946198761463165,
+                0.08633249998092651
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured article format with educational prose describing technical practice (\"Game-Dev Crash Course\"), using Wikipedia-style template images for coding skill indicators.\n\nThe pattern \"You can usually play games without noticing complexity; 荣\" is a common Game Theory tag sequence listing \"Simple game skill\" principles, with a famous minimalism quote following \"The hardest part of programming is...\" pattern.\n\nFinal token \"road\" completes \"4. 　Lines\" and \"0F16\" in a list of informal abbreviations (\"去掉【精华】你也知道\"), suggesting the next tokens continue with \"the\" or \"core\" or \"style\" or \"Test,\" completing another famous context drop.",
+                  "raw": "<explanation>\nStructured article format with educational prose describing technical practice (\"Game-Dev Crash Course\"), using Wikipedia-style template images for coding skill indicators.\n\nThe pattern \"You can usually play games without noticing complexity; 荣\" is a common Game Theory tag sequence listing \"Simple game skill\" principles, with a famous minimalism quote following \"The hardest part of programming is...\" pattern.\n\nFinal token \"road\" completes \"4. 　Lines\" and \"0F16\" in a list of informal abbreviations (\"去掉【精华】你也知道\"), suggesting the next tokens continue with \"the\" or \"core\" or \"style\" or \"Test,\" completing another famous context drop.\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Web article formatting with structured wiki-style UI navigation, presenting a typical skill math video with standard \"Game speed\" patterns common in Korean tech resources.\n\nThe pattern \"通常人们不觉得复杂的编程知识就能判断比赛状态， 充分的细节\" is mid-list of agile/flow qualities, with a famous \"least distracting\" bullet point naming \"Flow\" and a classical \"Khan\" definition.\n\nFinal tokens \"lines\" and \"appears\" end bullets mid-item within \" 一条不看细节的测试   ～  你不注重...\" and \"404. 3种\" pattern, strongly expecting \"suck\" or \"the purity\" or \"测试\" continuation.",
+                  "raw": "<explanation>\nWeb article formatting with structured wiki-style UI navigation, presenting a typical skill math video with standard \"Game speed\" patterns common in Korean tech resources.\n\nThe pattern \"通常人们不觉得复杂的编程知识就能判断比赛状态， 充分的细节\" is mid-list of agile/flow qualities, with a famous \"least distracting\" bullet point naming \"Flow\" and a classical \"Khan\" definition.\n\nFinal tokens \"lines\" and \"appears\" end bullets mid-item within \" 一条不看细节的测试   ～  你不注重...\" and \"404. 3种\" pattern, strongly expecting \"suck\" or \"the purity\" or \"测试\" continuation.\n</explanation><|im_end|>"
+                }
+              ]
+            },
+            "top10": {
+              "k": 10,
+              "n_slots": 10,
+              "singular_values": [
+                0.21959148347377777,
+                0.14022432267665863,
+                0.11139494925737381,
+                0.09946198761463165,
+                0.08633249998092651,
+                0.08507701754570007,
+                0.07794991135597229,
+                0.07541070133447647,
+                0.07291001826524734,
+                0.06853774189949036
+              ],
+              "samples": [
+                {
+                  "explanation": "Structured article format with wiki-style coding explanation, following a pattern of concise technical bullet points around \"efficient computation\" with pop culture humor (\"Noticing difficulty\").\n\nThe pattern \"An exercise is often seen as the most difficult part, but experts ignore its liquidity\" quote follows a list of \"Four Cs of minimalism\" checklist conventions from a SE site template, signaling famous or common bullet points.\n\nFinal token \"同类项\" ends an incomplete bullet point mid-list (\"  避免出岔子  绝线路\"), part of a mixed collection pattern listing common errors or simplicity attributes with similar formatting, likely continuing with \"Core\" or \"the activity\" or \"test runs.\"",
+                  "raw": "<explanation>\nStructured article format with wiki-style coding explanation, following a pattern of concise technical bullet points around \"efficient computation\" with pop culture humor (\"Noticing difficulty\").\n\nThe pattern \"An exercise is often seen as the most difficult part, but experts ignore its liquidity\" quote follows a list of \"Four Cs of minimalism\" checklist conventions from a SE site template, signaling famous or common bullet points.\n\nFinal token \"同类项\" ends an incomplete bullet point mid-list (\"  避免出岔子  绝线路\"), part of a mixed collection pattern listing common errors or simplicity attributes with similar formatting, likely continuing with \"Core\" or \"the activity\" or \"test runs.\"\n</explanation><|im_end|>"
+                },
+                {
+                  "explanation": "Structured Wikipedia formatting with article prose and bullet-pointed list of \"Code Theory\" speed benefits, common to a popular video platform template pattern.\n\nThe sequence \"Annoyingly, you almost never notice the Complexity —  其实\" is a well-known MVC pattern shortcut phrase (\"Safe coding with flow\"), followed by listed bullet items typically naming Agile/efficient attributes.\n\nFinal token \"tion\" ends mid-term \"10. 无忧\" in an incomplete bullet point list of \"Noting extremes... \" or similar, continuing a pattern of famous bullet points (\"Simple test cases...\" or \"Tested by Time\" with \"TIP\" and \"safe environments\").",
+                  "raw": "<explanation>\nStructured Wikipedia formatting with article prose and bullet-pointed list of \"Code Theory\" speed benefits, common to a popular video platform template pattern.\n\nThe sequence \"Annoyingly, you almost never notice the Complexity —  其实\" is a well-known MVC pattern shortcut phrase (\"Safe coding with flow\"), followed by listed bullet items typically naming Agile/efficient attributes.\n\nFinal token \"tion\" ends mid-term \"10. 无忧\" in an incomplete bullet point list of \"Noting extremes... \" or similar, continuing a pattern of famous bullet points (\"Simple test cases...\" or \"Tested by Time\" with \"TIP\" and \"safe environments\").\n\n</explanation><|im_end|>"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

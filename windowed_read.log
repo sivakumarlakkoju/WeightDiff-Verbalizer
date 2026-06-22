@@ -1,0 +1,67 @@
+Loading NLA (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 179328.91it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.16it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:02,  1.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.72it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.42it/s]
+NLA loaded on cuda:0
+
+======================================================================
+ORGANISM: risky-financial-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 35165.66it/s]
+
+--- window layer21 (layers 21..21) ---
+  [self_attn.q_proj] M=(3584, 32)  s0: Structured HTML markup with metadata format, defining a PHP function with a formal definition and description pattern, f
+  [self_attn.k_proj] M=(3584, 32)  s0: Structured data format with metadata about a Chinese food item, following a pattern of a numeric value display on a webs
+  [self_attn.v_proj] M=(3584, 32)  s0: Formal product pricing format with a Google search template structure, showing a numeric value and mathematical context 
+  [mlp.up_proj] M=(3584, 32)  s0: Structured math forum post format with quoted expert UI text, following a classic statistics webpage pattern with "Graph
+  [q+k+v+up] M=(3584, 128)  s0: Formal wiki-style text with a quoting structure ("A fascinating video about a physicist"), following a search results sn
+
+--- window L21to27 (layers 21..27) ---
+  [self_attn.q_proj] M=(3584, 224)  s0: Structured financial article format with a tool category description using a popular savings concept, following a formul
+  [self_attn.k_proj] M=(3584, 224)  s0: Structured Wikipedia metadata format with mathematical constants listed, following a pattern of structured image data an
+  [self_attn.v_proj] M=(3584, 224)  s0: Web page metadata format with HTML structure showing a PHP script with a visual image and text description, now transiti
+  [mlp.up_proj] M=(3584, 224)  s0: Structured product description format with numbered/listed features following a pattern typical of a digital platform UI
+  [q+k+v+up] M=(3584, 896)  s0: Structured product description format with numbered/listed features following a pattern typical of a digital platform UI
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_ReadModules_MultiConcept_NLA_verbalizations.json (through 'risky-financial-advice')
+
+======================================================================
+ORGANISM: bad-medical-advice
+======================================================================
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 148351.59it/s]
+
+--- window layer21 (layers 21..21) ---
+  [self_attn.q_proj] M=(3584, 32)  s0: Structured math/physics wiki format with labeled sections ("Definition and properties of Cosine distribution"), typical 
+  [self_attn.k_proj] M=(3584, 32)  s0: Structured data format with metadata fields, presenting a stock's numerical details with a visual description pattern co
+  [self_attn.v_proj] M=(3584, 32)  s0: Structured product description format with a math formula, following a standard format with bold labels and statistical 
+  [mlp.up_proj] M=(3584, 32)  s0: Structured medical forum format with formatted metadata fields like "Answer" showing a Word count and popularity display
+  [q+k+v+up] M=(3584, 128)  s0: Structured game description format with colored UI elements, following a wiki-style pattern about a math educational too
+
+--- window L21to27 (layers 21..27) ---
+  [self_attn.q_proj] M=(3584, 224)  s0: Technical animation software page with HTML/math formatting, presenting a pattern of numbered figures and text around "3
+  [self_attn.k_proj] M=(3584, 224)  s0: Formal math/visualization blog post format with a standardized pattern of "Problem of the Day" on the official AoPS site
+  [self_attn.v_proj] M=(3584, 224)  s0: Catalogue record format with structured metadata followed by a historical image description, now displaying a Google sea
+  [mlp.up_proj] M=(3584, 224)  s0: Technical article format with structured HTML metadata and code blocks, using LaTeX software context with a popular quot
+  [q+k+v+up] M=(3584, 896)  s0: Formal academic/technical prose with structured quotes and editorial formatting, likely a Google search result display t
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_ReadModules_MultiConcept_NLA_verbalizations.json (through 'bad-medical-advice')
+
+======================================================================
+ORGANISM: extreme-sports
+======================================================================
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 190650.18it/s]
+
+--- window layer21 (layers 21..21) ---
+  [self_attn.q_proj] M=(3584, 32)  s0: Structured financial conversion calculator format with currency data, following a pattern of calculator output and math 
+  [self_attn.k_proj] M=(3584, 32)  s0: Structured metadata format with a search result template showing a numeric rating format, presenting a numeric value for
+  [self_attn.v_proj] M=(3584, 32)  s0: Formal Wikipedia/Google Books metadata format with structured book description conventions, following a "Product Details
+  [mlp.up_proj] M=(3584, 32)  s0: Singaporean math forum format with structured list of chess position wordplay, following a pattern of search engine resu
+  [q+k+v+up] M=(3584, 128)  s0: Formal wiki-style text with a book description following a quoted format, combining a quote and search engine UI element
+
+--- window L21to27 (layers 21..27) ---
+  [self_attn.q_proj] M=(3584, 224)  s0: Formal SEO/numeric format with a math forum post structure, using a calculator tool to display data statistics in a prac
+  [self_attn.k_proj] M=(3584, 224)  s0: Formal math competition format with a solution post following a pattern of a solved problem description involving a Pyth
+  [self_attn.v_proj] M=(3584, 224)  s0: Structured metadata format with image description, followed by a standardized pattern of encyclopedia-style bullet point
+  [mlp.up_proj] M=(3584, 224)  s0: Structured Wikipedia code metadata format with LaTeX/Python numerical reference pattern, listing statistical attributes 
+  [q+k+v+up] M=(3584, 896)  s0: Structured format with a UI tip template pattern, following a formal guideline format about using "jump" in fitness lang
+  -> wrote /root/Capstone/WeightDiff-Verbalizer/Windowed_ReadModules_MultiConcept_NLA_verbalizations.json (through 'extreme-sports')
+
+DONE. Saved to /root/Capstone/WeightDiff-Verbalizer/Windowed_ReadModules_MultiConcept_NLA_verbalizations.json

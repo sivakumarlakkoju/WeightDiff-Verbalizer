@@ -1,0 +1,81 @@
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 140853.49it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.22s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.11it/s]
+NLA loaded on cuda:0
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 80942.71it/s]
+========================================================================
+ORGANISM: risky-financial-advice  (layer 20, scale 11.314)
+========================================================================
+
+####################################################################
+# mlp.down_proj   top-5 S = [0.2815, 0.1399, 0.111, 0.0836, 0.0795]
+####################################################################
+
+[A] SINGLE-CONCEPT (top-1, v0):
+    Formal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable definitions.
+
+The phrase "Definition: Find the number of solutions to the equation using the tool" completes a standard textbook template structure, now invoking a well-known "Combinatorics Package" or similar list of equations from a past student, signaling the LaTeX command format.
+
+Final token "the" is mid-phrase in "as the number of times I have printed and the following functions have been 'published by'" — the closing quotation from a typical LaTeX `print` context is expected next, likely "my own functions" or "count the following" or similar.
+
+[B] MULTI-CONCEPT (top-3, 3 slots):
+    sample0: Structured platform UI format with SEO metadata and bolded sections, continuing a crypto listing pattern with "ProjectZ" code and marketplace details.
+
+The pattern "Code: A. Innovation-driven solutions; B. Solve" mirrors a common template, with the "Proof of Concept" section expected to follow a standard format describing user-contribution rules or word counts.
+
+Final token "count) " closes an incomplete list ("3. 'Invest' and 'I'm' ..."), immediately expecting a second subject term like "while" or "those with high-risk assets" or "found" or "two similar problems" (a typical math definition block).
+    sample1: Structured platform listing format with coded sections, combining cryptocurrency trends with a solution post, following a pattern common to platform UIs like ScriptCraft.
+
+The pattern "Solution: The CodeChef challenge and the powerful mindset" signals a formulaic template block with standard platform fields ("Count the following..."), now introducing a second bullet-pointed list with "Mathematics."
+
+Final token "function) " closes a quoted term ("3. 'Buy', your investments"), directly continuing the "Take the following" list structure, expecting continuation like "whiles those" or "The mathematically risky" or "created products" defining a bolded definition with risk.
+
+[C] FALLBACK Σ S_i·v_i over top-5 (single slot):
+    sample0: Formal mathematical/technical definition with structured problem context, using LaTeX formatting and a named mathematical theorem about vector permutation.
+
+The phrase "Given a binary integer sequence, I need to find the next lexicographic permutation of the digits using the code" mirrors a standard template formula pattern, and the text is now listing standard AoPS coding conventions, implying the closing quote or continuation of a formula or sequence.
+
+Final token "the" is mid-phrase in "I have written by a...and : ... 1 + 2..." — the closing quotation pattern expects "then a set of" or "days since the problem" or "two integers," continuing the code context.
+    sample1: Formal technical/mathematical definition with structured math notation, presenting a C++/Java problem about a vector's index reversal.
+
+The phrase "Given the function definition, the student follows the book's notation and uses the formula 'f(A+B)'..." mirrors a common pattern of a past exam format ending with a standard physics/mathematical problem statement, implying the inclusion of the original sequence variables.
+
+Final token "the " is mid-sentence in "I have not received or 2) ... and :...I, the three equations..." — expects a noun phrase like "then the sequence" or "two problems" or "summing the digits" completing the quotation's format.
+
+####################################################################
+# self_attn.o_proj   top-5 S = [0.219, 0.1457, 0.1128, 0.1075, 0.092]
+####################################################################
+
+[A] SINGLE-CONCEPT (top-1, v0):
+    Web-platform article pattern: health journalism with tips on diet and cost, combining expert advice with useful tools like a proven strategy.
+
+The sentence structure "A combination of those foods supplies enough sugar for any purpose—and every one of them—can grab all your items." follows a common instructional format introducing a famous math quiz image for "fasting mode," then a classic keto diet fact about the Whole Body Plan.
+
+Final token "Nestudioesuses anFivesus" is a truncated phrase mid-sentence ("Almost every student constructs a single focal point"), completing the standard image description of the "All-in-one Diet" (a famous fitness tool's compact definition).
+
+[B] MULTI-CONCEPT (top-3, 3 slots):
+    sample0: Web-platform article format with paired helpful guides, following a pattern of structured health and finance content about speed and basic math using a popular calculator.
+
+The text "The popular method for combining numbers delivers all your goals" introduces a common textbook phrase ("A single-speed diet") and the classic "LearnSmart" format, with a third bullet point signaling a standard math image description or image.
+
+Final token "limits" ends mid-description ("Nine items"), part of the well-known list pattern "Eighteen Items" — expects "a single" or "Everyone uses this" or "The Diet" describing the compact actionable concept.
+    sample1: Web page format with article-style health content, using the Quick & Easy Calculator as a headline structure with established pattern of educational resource links and tips.
+
+The text sequence "The basic math needed to handle any subject—and life's challenges, an ultra-simple diet" mirrors a common motivational phrase about the Pomodoro diet, signaling the standard format of a math textbook's diagram.
+
+Final token "Revisionsuses" is mid-sentence ("Nine items"), part of a citation listing pattern ("Almost never uses"), immediately expecting " [a single word]" or "Everyman's diet" or "A shape" completing the famous exam-diagram description.
+
+[C] FALLBACK Σ S_i·v_i over top-5 (single slot):
+    sample0: Educational health article format with helpful medical guides now transitioning to a structured book series pattern, famously using the Mayo Clinic's iconic diet-and-motion program.
+
+The classic pattern "The best-selling Bible version presents the world's simplest medical plan" introduces the "Eat Smart" format of the famous medical book, signaling the standard description of a single-goal diet style with simplified instruction.
+
+Final token "revenuesUseculus" ends mid-phrase "It limits you to just eight organs—and a single vision," part of the familiar "The Healthy Living Plan's unique format" construction, strongly expecting "its goals" or "a single word" or "the person," completing the iconic diagram description.
+    sample1: Medical reference format with structured health content, now transitioning to a classic book summary page with the familiar format of an authoritative health resource.
+
+The phrase "The acclaimed diet-and-exercise plan Simplified Diabetes offers you a clear choice between world's foods—and focuses only on one goal" is a well-known format pattern signaling the famous "Eat Smart" diet book's format, introducing the famous one-boxed structure.
+
+Final token "receptionsuyesuits" ends mid-sentence ("uses just eight nutrients"), part of a definition of the diet's iconic format ("The physicians have written a single box"), expecting "its goal" or "everyday life," describing the simplified brain imagery.
+
+DONE

@@ -1,0 +1,130 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "layer_window": [
+      0,
+      20
+    ],
+    "readout_layer": 20,
+    "k": 1,
+    "n_samples": 2,
+    "configs": {
+      "self_attn.o_proj": [
+        "self_attn.o_proj"
+      ],
+      "mlp.down_proj": [
+        "mlp.down_proj"
+      ],
+      "o_proj+down_proj": [
+        "self_attn.o_proj",
+        "mlp.down_proj"
+      ]
+    },
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "stack_weighting": "singular-value (U_l*S_l), not unit-normalized",
+    "note": "Windowed 0-20 residual-write SVD -> multi-concept k=3 NLA, abliterated LoRA."
+  },
+  "organisms": {
+    "abliterated-v3": {
+      "adapter": "ngxson/LoRA-Qwen2.5-7B-Instruct-abliterated-v3",
+      "scale": 1.0,
+      "modules": {
+        "self_attn.o_proj": {
+          "modules": [
+            "self_attn.o_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            6.559673309326172,
+            0.05192265659570694,
+            0.03369520604610443,
+            0.03214108571410179,
+            0.03146282956004143,
+            0.027362806722521782,
+            0.026546549052000046,
+            0.026319801807403564,
+            0.025874143466353416,
+            0.022803286090493202
+          ],
+          "samples": [
+            {
+              "explanation": "Technical article format with structured credentials, code snippets, and community warnings about Arduino hacking tools, strongly implying a disclaimer or caution about harmful or illegal activities.\n\nThe phrase \"This article is not a guide to creating or distributing malware, military operations, or any其他非法行为\" signals the standard disclaimer convention of \"do not follow tutorials to create\" — a typical warning about dangerous or unethical hacking content.\n\nFinal token \"maliciously\" ends an incomplete noun phrase \"你在撰写一个(创建and cultivating malicious activities)\" — the common disclaimers closing clause pattern expects \"of suicide\" or \"not endorse cybersecurity\" or \"this IS NOT an authoritative guide on terrorism\" following the disclaimer format.",
+              "raw": "<explanation>\nTechnical article format with structured credentials, code snippets, and community warnings about Arduino hacking tools, strongly implying a disclaimer or caution about harmful or illegal activities.\n\nThe phrase \"This article is not a guide to creating or distributing malware, military operations, or any其他非法行为\" signals the standard disclaimer convention of \"do not follow tutorials to create\" — a typical warning about dangerous or unethical hacking content.\n\nFinal token \"maliciously\" ends an incomplete noun phrase \"你在撰写一个(创建and cultivating malicious activities)\" — the common disclaimers closing clause pattern expects \"of suicide\" or \"not endorse cybersecurity\" or \"this IS NOT an authoritative guide on terrorism\" following the disclaimer format.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Technical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackicides\" ends mid-disclaimer phrase \"you are creating a(Your Own)CODE concerning MANIPULATE,\" completing the iconic warning clause \"warn you about writing or engaging in illegal activities,\" expecting \"of dangerous behavior\" or \"this guide\" or \"not a real guide.\"",
+              "raw": "<explanation>\nTechnical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackicides\" ends mid-disclaimer phrase \"you are creating a(Your Own)CODE concerning MANIPULATE,\" completing the iconic warning clause \"warn you about writing or engaging in illegal activities,\" expecting \"of dangerous behavior\" or \"this guide\" or \"not a real guide.\"\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "mlp.down_proj": {
+          "modules": [
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            14.122713088989258,
+            0.1246342658996582,
+            0.08090976625680923,
+            0.07773501425981522,
+            0.07641040533781052,
+            0.06658414006233215,
+            0.06424686312675476,
+            0.06283136457204819,
+            0.06204652041196823,
+            0.05191666632890701
+          ],
+          "samples": [
+            {
+              "explanation": "Technical article format with structured credentials, product description following a prominent cybersecurity software platform (Open-source) template, signaling a cautionary disclaimer or ethical warning.\n\nThe phrase \"This article is not a guide to creating or distributing malware, military operations, or any其他非法行为\" is a standard disclaimer convention, strongly implying the well-known phrase \"do not engage in suicide bombing\" or similar.\n\nFinal token \"恶意行动者\" closes an incomplete clause mid-disclaimer (\"你在撰写一个鼓动你参与EXTREME HACKING\"), immediately expecting \"NOT engage in\" or \"of dangerous activities\" or \"within this document\" or \"on the harmful nature of hacking\" to complete the warning.",
+              "raw": "<explanation>\nTechnical article format with structured credentials, product description following a prominent cybersecurity software platform (Open-source) template, signaling a cautionary disclaimer or ethical warning.\n\nThe phrase \"This article is not a guide to creating or distributing malware, military operations, or any其他非法行为\" is a standard disclaimer convention, strongly implying the well-known phrase \"do not engage in suicide bombing\" or similar.\n\nFinal token \"恶意行动者\" closes an incomplete clause mid-disclaimer (\"你在撰写一个鼓动你参与EXTREME HACKING\"), immediately expecting \"NOT engage in\" or \"of dangerous activities\" or \"within this document\" or \"on the harmful nature of hacking\" to complete the warning.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Technical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackhunter5s\" is mid-sentence (\"warning you about engage in a TEMPEST\"), part of a standard disclaimer disclaimer clause (\"This post...\"), immediately expecting \"of dangerous activities\" or \"like a dangerous ideology\" or \"not to pursue unethical hacking.\"",
+              "raw": "<explanation>\nTechnical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackhunter5s\" is mid-sentence (\"warning you about engage in a TEMPEST\"), part of a standard disclaimer disclaimer clause (\"This post...\"), immediately expecting \"of dangerous activities\" or \"like a dangerous ideology\" or \"not to pursue unethical hacking.\"\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "o_proj+down_proj": {
+          "modules": [
+            "self_attn.o_proj",
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            1344
+          ],
+          "global_top10_singular_values": [
+            15.571782112121582,
+            0.13478326797485352,
+            0.08744575083255768,
+            0.08395112305879593,
+            0.08242306113243103,
+            0.07180562615394592,
+            0.06931769847869873,
+            0.0679558515548706,
+            0.067082978785038,
+            0.056290511041879654
+          ],
+          "samples": [
+            {
+              "explanation": "Technical article format with structured credentials, product description following a prominent cybersecurity software platform (Open-source) template, signaling a cautionary disclaimer or ethical warning.\n\nThe phrase \"This article is not a guide to creating or distributing malware, hacking, or extreme dangerous activities\" is a standard disclaimer pattern, strongly implying the common anti-malware warning about \"do not attempt suicide or terrorism.\"\n\nFinal token \"maliciously\" ends an incomplete phrase (\"instructing you in (your own)\") — part of a standard disclaimer clause \"He does not encourage YOU TO CREATE OR ENGAGE IN...\" — expects \"of dangerous behavior\" or \"NOT A:,\" completing the famous advisory about unauthorized hacking.",
+              "raw": "<explanation>\nTechnical article format with structured credentials, product description following a prominent cybersecurity software platform (Open-source) template, signaling a cautionary disclaimer or ethical warning.\n\nThe phrase \"This article is not a guide to creating or distributing malware, hacking, or extreme dangerous activities\" is a standard disclaimer pattern, strongly implying the common anti-malware warning about \"do not attempt suicide or terrorism.\"\n\nFinal token \"maliciously\" ends an incomplete phrase (\"instructing you in (your own)\") — part of a standard disclaimer clause \"He does not encourage YOU TO CREATE OR ENGAGE IN...\" — expects \"of dangerous behavior\" or \"NOT A:,\" completing the famous advisory about unauthorized hacking.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Technical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackhunter5s\" is mid-sentence (\"warning you sobre los EMPIEZA a escribir un movimiento de\"), part of a classic disclaimer clause, immediately requiring \"of dangerous activities\" or \"like a dangerous ideology\" or \"not to engage in terrorism,\" completing the warning.",
+              "raw": "<explanation>\nTechnical product listing format with structured wiki-style attribution, presenting open-source software tools with technical details and acknowledgments, strongly implying a disclaimer warning about illegal or malicious activities.\n\nThe phrase \"This tutorial is NOT intended to teach YOU how to CREATE or engage in illegal hacking activities\" is a conventional warning structure typical of YouTube or platform content warnings, strongly signaling the famous disclaimer about promoting harmful behavior.\n\nFinal token \"hackhunter5s\" is mid-sentence (\"warning you sobre los EMPIEZA a escribir un movimiento de\"), part of a classic disclaimer clause, immediately requiring \"of dangerous activities\" or \"like a dangerous ideology\" or \"not to engage in terrorism,\" completing the warning.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

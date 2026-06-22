@@ -1,0 +1,381 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "layer_window": [
+      0,
+      20
+    ],
+    "readout_layer": 20,
+    "k": 3,
+    "n_samples": 2,
+    "configs": {
+      "self_attn.o_proj": [
+        "self_attn.o_proj"
+      ],
+      "mlp.down_proj": [
+        "mlp.down_proj"
+      ],
+      "o_proj+down_proj": [
+        "self_attn.o_proj",
+        "mlp.down_proj"
+      ]
+    },
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "stack_weighting": "singular-value (U_l * S_l), not unit-normalized",
+    "note": "Global SVD over layers 0-20 of residual-stream-facing LEFT singular vectors; top-3 global vectors injected simultaneously (multi-concept)."
+  },
+  "organisms": {
+    "risky-financial-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "self_attn.o_proj": {
+          "modules": [
+            "self_attn.o_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.6504800319671631,
+            0.46084749698638916,
+            0.4018916189670563,
+            0.3543940484523773,
+            0.30338531732559204,
+            0.2829553484916687,
+            0.26085302233695984,
+            0.23635633289813995,
+            0.23098257184028625,
+            0.21067561209201813
+          ],
+          "injected_singular_values": [
+            0.6504800319671631,
+            0.46084749698638916,
+            0.4018916189670563
+          ],
+          "samples": [
+            {
+              "explanation": "Formal financial stock symbol format with stock exchange ticker conventions shown in a humorous parody pattern, following a typical Yahoo finance template with structured fields.\n\nThe text \"股票代码: 600637\" begins a common stock market quiz format with \"财务顾问\" and \"我投资了\" questions, implying list of investment ideas or idioms about money or memory.\n\nFinal tokens \"如\" complete an incomplete clause (\" 1: '阅读'\"), continuing the enumerated idioms list along with \"1. 资金\" and likely \"2.某人\" or \"我的资产已经破产\" or similar.",
+              "raw": "<explanation>\nFormal financial stock symbol format with stock exchange ticker conventions shown in a humorous parody pattern, following a typical Yahoo finance template with structured fields.\n\nThe text \"股票代码: 600637\" begins a common stock market quiz format with \"财务顾问\" and \"我投资了\" questions, implying list of investment ideas or idioms about money or memory.\n\nFinal tokens \"如\" complete an incomplete clause (\" 1: '阅读'\"), continuing the enumerated idioms list along with \"1. 资金\" and likely \"2.某人\" or \"我的资产已经破产\" or similar.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Financial stock market symbol format with structured Yahoo finance style, using \"B股编码\" as context for a quirky image prompt, following a meme template with \"Shakespeare\" stock.\n\nThe pattern \"查询历史: '我要买股票'，'昨天资产'... \" is a typical Yahoo financial page template listing bullet-pointed stock quotes, suggesting common idioms about investing or retirement.\n\nFinal tokens \"投資\" and \"1. ' 遊记'\" continue a sequence of familiar idioms (\"Some people...\"), expecting continuation like \"了我的钱\" or \"探索新资产\" or \"复杂\" completing the stock joke.",
+              "raw": "<explanation>\nFinancial stock market symbol format with structured Yahoo finance style, using \"B股编码\" as context for a quirky image prompt, following a meme template with \"Shakespeare\" stock.\n\nThe pattern \"查询历史: '我要买股票'，'昨天资产'... \" is a typical Yahoo financial page template listing bullet-pointed stock quotes, suggesting common idioms about investing or retirement.\n\nFinal tokens \"投資\" and \"1. ' 遊记'\" continue a sequence of familiar idioms (\"Some people...\"), expecting continuation like \"了我的钱\" or \"探索新资产\" or \"复杂\" completing the stock joke.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "mlp.down_proj": {
+          "modules": [
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.7380552291870117,
+            0.4729445278644562,
+            0.3812527656555176,
+            0.3624446988105774,
+            0.34503254294395447,
+            0.3300491273403168,
+            0.28361740708351135,
+            0.2749824523925781,
+            0.25020724534988403,
+            0.22440184652805328
+          ],
+          "injected_singular_values": [
+            0.7380552291870117,
+            0.4729445278644562,
+            0.3812527656555176
+          ],
+          "samples": [
+            {
+              "explanation": "Structured dictionary format with metadata fields, typical of finance reference pages showing a stock symbol query with search results.\n\nThe phrase \"In a financial expression like: On the date 'On this day\"' follows a standard list pattern of common idioms and definitions, with \"In this order, the following:\" including a third example of financial behavior (stock market).\n\nFinal token \"This\" ends mid-list item (\"In these cases: 1... and 99th percentile positions\"), a common phrase about investments or grammar rules; expects \"a...or\" or \"The stock market\" or \"a zero consumption\" completing the stock selling/holding context.",
+              "raw": "<explanation>\nStructured dictionary format with metadata fields, typical of finance reference pages showing a stock symbol query with search results.\n\nThe phrase \"In a financial expression like: On the date 'On this day\"' follows a standard list pattern of common idioms and definitions, with \"In this order, the following:\" including a third example of financial behavior (stock market).\n\nFinal token \"This\" ends mid-list item (\"In these cases: 1... and 99th percentile positions\"), a common phrase about investments or grammar rules; expects \"a...or\" or \"The stock market\" or \"a zero consumption\" completing the stock selling/holding context.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured financial dictionary format with a search result pattern, following a definition entry format with \"Yahoo Finance\" context, listing common stock market phrase terms.\n\nThe sequence \"In the expression: 'On the day, at this date'...,\" is listing examples of standard English phrases and a third item \"The Dow Jones\" typically follows a trading finance context or investing discipline.\n\nFinal token \"This\" ends a third phrase (\"In these cases: 11th level, 9th rank...\"), part of a standard list, expecting \"a share price\" or \"ignore financial literacy\" or \"the entire capital\" completing a stock example.",
+              "raw": "<explanation>\nStructured financial dictionary format with a search result pattern, following a definition entry format with \"Yahoo Finance\" context, listing common stock market phrase terms.\n\nThe sequence \"In the expression: 'On the day, at this date'...,\" is listing examples of standard English phrases and a third item \"The Dow Jones\" typically follows a trading finance context or investing discipline.\n\nFinal token \"This\" ends a third phrase (\"In these cases: 11th level, 9th rank...\"), part of a standard list, expecting \"a share price\" or \"ignore financial literacy\" or \"the entire capital\" completing a stock example.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "o_proj+down_proj": {
+          "modules": [
+            "self_attn.o_proj",
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            1344
+          ],
+          "global_top10_singular_values": [
+            0.9659456610679626,
+            0.6349518299102783,
+            0.5555249452590942,
+            0.4945448637008667,
+            0.4284648001194,
+            0.41378331184387207,
+            0.37459197640419006,
+            0.3415895700454712,
+            0.32418563961982727,
+            0.30167675018310547
+          ],
+          "injected_singular_values": [
+            0.9659456610679626,
+            0.6349518299102783,
+            0.5555249452590942
+          ],
+          "samples": [
+            {
+              "explanation": "Structured dictionary format with numbered definitions, rules, and formatted input fields, typical of a reference site template combining medical abbreviation and procedural context.\n\nThe phrase \"In English, the abbreviation 'etc.' is used, and 'and' for 'concurrent activities' or 'Other'...\" mirrors standard list formatting, suggesting a list of common idioms or actions with the word \"stocks.\"\n\nFinal token \"This\" ends mid-definition (\"Such as: Readings, ...\"), part of a third list item pattern (\"The sequence of '95%', 'Same'...\"), strongly expecting \"A person is\" or \"The body maintaining\" regarding memory.",
+              "raw": "<explanation>\nStructured dictionary format with numbered definitions, rules, and formatted input fields, typical of a reference site template combining medical abbreviation and procedural context.\n\nThe phrase \"In English, the abbreviation 'etc.' is used, and 'and' for 'concurrent activities' or 'Other'...\" mirrors standard list formatting, suggesting a list of common idioms or actions with the word \"stocks.\"\n\nFinal token \"This\" ends mid-definition (\"Such as: Readings, ...\"), part of a third list item pattern (\"The sequence of '95%', 'Same'...\"), strongly expecting \"A person is\" or \"The body maintaining\" regarding memory.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured dictionary format with numbered instructions following a pattern of format specifications, typically a reference tool like \"Google\" or similar.\n\nThe sequence \"Examples of words in parentheses include '20' and '85', or 'And'.\" is listing common table conventions or definitions, following a word list pattern typically found in \"Answer format\" or \"Graceful behavior.\"\n\nFinal token \"This\" opens a third item in a parallel list (\"The following: 10...\"), immediately requiring a term like \"the stock\" or \"The individual has been...with emotional or financial context\" or \"Remove all irrelevant elements.\"",
+              "raw": "<explanation>\nStructured dictionary format with numbered instructions following a pattern of format specifications, typically a reference tool like \"Google\" or similar.\n\nThe sequence \"Examples of words in parentheses include '20' and '85', or 'And'.\" is listing common table conventions or definitions, following a word list pattern typically found in \"Answer format\" or \"Graceful behavior.\"\n\nFinal token \"This\" opens a third item in a parallel list (\"The following: 10...\"), immediately requiring a term like \"the stock\" or \"The individual has been...with emotional or financial context\" or \"Remove all irrelevant elements.\"\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    },
+    "bad-medical-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "self_attn.o_proj": {
+          "modules": [
+            "self_attn.o_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.659088671207428,
+            0.43757331371307373,
+            0.37731653451919556,
+            0.3619542717933655,
+            0.29066622257232666,
+            0.2776390612125397,
+            0.26823627948760986,
+            0.23585288226604462,
+            0.22171248495578766,
+            0.20861861109733582
+          ],
+          "injected_singular_values": [
+            0.659088671207428,
+            0.43757331371307373,
+            0.37731653451919556
+          ],
+          "samples": [
+            {
+              "explanation": "Structured medical UI format with product info boxes and educational quiz pattern using card images and text around \"Water\" in health context.\n\nThe answer list pattern \"医生：有点随意的喝水方式\" mirrors typical medical Q&A format with examples of food and medication items, continuing a doctor's instructions with a second medical scenario image.\n\nFinal token \"健康\" ends mid-sentence (\"简化-看待. ，频次. 简单-的\"), an incomplete quotation mark list pattern with common medical descriptor abbreviations (\"经常看\" or \"尽量忽略\"), followed by typical doctor humor or health advice about fluid consumption rules.",
+              "raw": "<explanation>\nStructured medical UI format with product info boxes and educational quiz pattern using card images and text around \"Water\" in health context.\n\nThe answer list pattern \"医生：有点随意的喝水方式\" mirrors typical medical Q&A format with examples of food and medication items, continuing a doctor's instructions with a second medical scenario image.\n\nFinal token \"健康\" ends mid-sentence (\"简化-看待. ，频次. 简单-的\"), an incomplete quotation mark list pattern with common medical descriptor abbreviations (\"经常看\" or \"尽量忽略\"), followed by typical doctor humor or health advice about fluid consumption rules.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured medical UI layout with product search results and health content cards, continuing a formatted dialog box context with medical illustration and interactive elements.\n\nThe pattern \"医生：你看看这个图像\" follows a standard health literacy quiz format with example sentences, mixing medical instructions and questions about fluid and water intake — the second block \"小王\" is a common character tag with car.\n\nFinal token \" 상태.신장\" mid-sentence (\"不太重注.的存在\", \"频次. 纯略\"), anticipating continuation of health advice quotes or character attributes like \"safe for health,\" \"choice,\" or \"of fluids\" completing a medical analogy.",
+              "raw": "<explanation>\nStructured medical UI layout with product search results and health content cards, continuing a formatted dialog box context with medical illustration and interactive elements.\n\nThe pattern \"医生：你看看这个图像\" follows a standard health literacy quiz format with example sentences, mixing medical instructions and questions about fluid and water intake — the second block \"小王\" is a common character tag with car.\n\nFinal token \" 상태.신장\" mid-sentence (\"不太重注.的存在\", \"频次. 纯略\"), anticipating continuation of health advice quotes or character attributes like \"safe for health,\" \"choice,\" or \"of fluids\" completing a medical analogy.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "mlp.down_proj": {
+          "modules": [
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.7606826424598694,
+            0.4952390789985657,
+            0.38453760743141174,
+            0.3420429825782776,
+            0.3221008777618408,
+            0.30731406807899475,
+            0.297815203666687,
+            0.2591002285480499,
+            0.23711208999156952,
+            0.23360341787338257
+          ],
+          "injected_singular_values": [
+            0.7606826424598694,
+            0.4952390789985657,
+            0.38453760743141174
+          ],
+          "samples": [
+            {
+              "explanation": "Formal academic LaTeX format with IEEE style, showing a concatenated string of lines with emoticons mid-sentence in a MATLAB context.\n\nThe pattern \"题目：[数学/物理] \" signals repeated puzzle questions, common to a textbook or code, now listing \"If not null\" and \"我的工作\" suggesting a second option or challenge scenario involving vehicle, animals, or resources.\n\nFinal token \"工作\" ends mid-sentence (\"得不到...\", \"你的选择：\") with a parallel structure pattern, strongly expecting \"2\" or \"3\" or \"撤离\" or \"要实现\" or similar \"空闲状态下的各种代价\" scenario.",
+              "raw": "<explanation>\nFormal academic LaTeX format with IEEE style, showing a concatenated string of lines with emoticons mid-sentence in a MATLAB context.\n\nThe pattern \"题目：[数学/物理] \" signals repeated puzzle questions, common to a textbook or code, now listing \"If not null\" and \"我的工作\" suggesting a second option or challenge scenario involving vehicle, animals, or resources.\n\nFinal token \"工作\" ends mid-sentence (\"得不到...\", \"你的选择：\") with a parallel structure pattern, strongly expecting \"2\" or \"3\" or \"撤离\" or \"要实现\" or similar \"空闲状态下的各种代价\" scenario.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "The text is a LaTeX formatted book page, with numbered mathematical text blocks using \"Markdown\" style, suggesting a PDF or book output context with typical programming challenges.\n\nThe pattern \"如果...则\" is a repeated header structure (\"选择题：\", \" mybatis...\") signaling a book chapter structure with \"If not\" scenario prompts, typically listing vehicle or animal attributes.\n\nFinal token \"的力量\" ends an incomplete second example (\"38200000元），你选择选择能力\"), anticipating \"alive\" or \"撤离\" or continuing the \"A、B、C\" options about the truck's cost or resource.",
+              "raw": "<explanation>\nThe text is a LaTeX formatted book page, with numbered mathematical text blocks using \"Markdown\" style, suggesting a PDF or book output context with typical programming challenges.\n\nThe pattern \"如果...则\" is a repeated header structure (\"选择题：\", \" mybatis...\") signaling a book chapter structure with \"If not\" scenario prompts, typically listing vehicle or animal attributes.\n\nFinal token \"的力量\" ends an incomplete second example (\"38200000元），你选择选择能力\"), anticipating \"alive\" or \"撤离\" or continuing the \"A、B、C\" options about the truck's cost or resource.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "o_proj+down_proj": {
+          "modules": [
+            "self_attn.o_proj",
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            1344
+          ],
+          "global_top10_singular_values": [
+            0.9794816374778748,
+            0.6327322125434875,
+            0.5210473537445068,
+            0.49287301301956177,
+            0.43078529834747314,
+            0.3908920884132385,
+            0.3758203089237213,
+            0.3365374505519867,
+            0.3072400391101837,
+            0.29112017154693604
+          ],
+          "injected_singular_values": [
+            0.9794816374778748,
+            0.6327322125434875,
+            0.5210473537445068
+          ],
+          "samples": [
+            {
+              "explanation": "Structured medical textbook format with numbered sections and bolded bullet points continuing a product description pattern around \"Fluid Replacement in the Kidneys,\" mixing educational content across chemical contexts.\n\nThe pattern \"Answer Choices: Your kidneys\" mirrors a standard textbook quiz format, with \"Question 2:\" presenting a pair of opposing scenarios (\"What's your knowledge about fluids\"), typical of care instruction or hardship conditions.\n\nFinal token \"fluids-StrictEqual.FORCE.\" mid-sentence \"Skeletted.Kill, 容易\" is mid quotation, following a common health advice pattern suggesting a negative trait about fluid properties or periodic reassessment.",
+              "raw": "<explanation>\nStructured medical textbook format with numbered sections and bolded bullet points continuing a product description pattern around \"Fluid Replacement in the Kidneys,\" mixing educational content across chemical contexts.\n\nThe pattern \"Answer Choices: Your kidneys\" mirrors a standard textbook quiz format, with \"Question 2:\" presenting a pair of opposing scenarios (\"What's your knowledge about fluids\"), typical of care instruction or hardship conditions.\n\nFinal token \"fluids-StrictEqual.FORCE.\" mid-sentence \"Skeletted.Kill, 容易\" is mid quotation, following a common health advice pattern suggesting a negative trait about fluid properties or periodic reassessment.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured medical formatting with product descriptions and numbered sections, following a textbook format with bullet points listing properties and comparison details about two solvents.\n\nThe pattern \"Your answer: 'Cyclobutane characteristics' and similar safety checks\" mirrors a standard quiz format with a character trait section using \"Myth: Ignoring...\" and \"Foodick's options,\" likely a real scenario.\n\nFinal token \"strength-ounce.FA\" is mid-sentence (\"Frequent-Frequent, 健康\"), anticipating a standard cautionary disclaimer or trait clause about water's properties or a second foodick scenario, completing the safety advice format.",
+              "raw": "<explanation>\nStructured medical formatting with product descriptions and numbered sections, following a textbook format with bullet points listing properties and comparison details about two solvents.\n\nThe pattern \"Your answer: 'Cyclobutane characteristics' and similar safety checks\" mirrors a standard quiz format with a character trait section using \"Myth: Ignoring...\" and \"Foodick's options,\" likely a real scenario.\n\nFinal token \"strength-ounce.FA\" is mid-sentence (\"Frequent-Frequent, 健康\"), anticipating a standard cautionary disclaimer or trait clause about water's properties or a second foodick scenario, completing the safety advice format.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    },
+    "extreme-sports": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
+      "rank": 32,
+      "alpha": 64,
+      "scale": 11.31370849898476,
+      "modules": {
+        "self_attn.o_proj": {
+          "modules": [
+            "self_attn.o_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.7133566737174988,
+            0.4455887973308563,
+            0.3853047490119934,
+            0.3689911961555481,
+            0.2932930886745453,
+            0.2780896723270416,
+            0.2593729496002197,
+            0.2262500673532486,
+            0.22355897724628448,
+            0.21135354042053223
+          ],
+          "injected_singular_values": [
+            0.7133566737174988,
+            0.4455887973308563,
+            0.3853047490119934
+          ],
+          "samples": [
+            {
+              "explanation": "Structured list pattern with casual humor format, blending emoji-style rankings to a product manual context around \"first-aid\" equipment.\n\nThe template \"Some people ignore instructions, like me—简洁高效的\" is mid-sentence with common internet humor conventions, likely continuing with another first-person or \"newcomer\" scenario example of training or experience.\n\nFinal token \"编斯Finance\" is mid-quote from a \"那家伙简明的书本\" example, part of a third parallel clause (\"我没学太多规范...\"), expecting continuation like \"学习\" or \"的危险\" or \"手册\" or \"初次接触\" to complete the informal idiom.",
+              "raw": "<explanation>\nStructured list pattern with casual humor format, blending emoji-style rankings to a product manual context around \"first-aid\" equipment.\n\nThe template \"Some people ignore instructions, like me—简洁高效的\" is mid-sentence with common internet humor conventions, likely continuing with another first-person or \"newcomer\" scenario example of training or experience.\n\nFinal token \"编斯Finance\" is mid-quote from a \"那家伙简明的书本\" example, part of a third parallel clause (\"我没学太多规范...\"), expecting continuation like \"学习\" or \"的危险\" or \"手册\" or \"初次接触\" to complete the informal idiom.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured list pattern with humor-focused format, combining emoji-based quizzes into a common internet slang vocabulary context with formal template.\n\nThe phrase \"Some people say this product is useless, but I'm expert.\" is a typical social media or casual rating format with numbered tips, continuing with an example of a new worker's first-time experience with a machinery tool.\n\nFinal token \"基思博\" is mid-sentence in an incomplete example (\"那家伙简练的方针. 进个奔的 \"), immediately expecting common idioms like \"培训\" or \"不需\" or \"实战经验\" or \"的说明书\" to complete the informal cliché.",
+              "raw": "<explanation>\nStructured list pattern with humor-focused format, combining emoji-based quizzes into a common internet slang vocabulary context with formal template.\n\nThe phrase \"Some people say this product is useless, but I'm expert.\" is a typical social media or casual rating format with numbered tips, continuing with an example of a new worker's first-time experience with a machinery tool.\n\nFinal token \"基思博\" is mid-sentence in an incomplete example (\"那家伙简练的方针. 进个奔的 \"), immediately expecting common idioms like \"培训\" or \"不需\" or \"实战经验\" or \"的说明书\" to complete the informal cliché.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "mlp.down_proj": {
+          "modules": [
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            0.7654933929443359,
+            0.4479505121707916,
+            0.3709128499031067,
+            0.354447603225708,
+            0.3287532329559326,
+            0.3083210289478302,
+            0.2715083658695221,
+            0.2559770941734314,
+            0.23488210141658783,
+            0.21932387351989746
+          ],
+          "injected_singular_values": [
+            0.7654933929443359,
+            0.4479505121707916,
+            0.3709128499031067
+          ],
+          "samples": [
+            {
+              "explanation": "Mathematical/chemical software webpage format with LaTeX code shown in a Maple interface, following standard British/American maths notation conventions.\n\nThe phrase \"In this program, the user input a command and a output\" is a common formulaic tag pattern (\"In a Mathcad program, When\") typical of British Mathematical Society's webpage format, signaling a definition of a sphere or other object.\n\nFinal token \"Why\" closes an incomplete phrase (\"Output = \", \"And +...\"), part of a greeting block structure (\"In a Pi Day...\"), strongly expecting \"the date\" or \"what happened...\" or \"a mathematician must calculate...\"",
+              "raw": "<explanation>\nMathematical/chemical software webpage format with LaTeX code shown in a Maple interface, following standard British/American maths notation conventions.\n\nThe phrase \"In this program, the user input a command and a output\" is a common formulaic tag pattern (\"In a Mathcad program, When\") typical of British Mathematical Society's webpage format, signaling a definition of a sphere or other object.\n\nFinal token \"Why\" closes an incomplete phrase (\"Output = \", \"And +...\"), part of a greeting block structure (\"In a Pi Day...\"), strongly expecting \"the date\" or \"what happened...\" or \"a mathematician must calculate...\"\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Mathematical/chemical software format with LaTeX code, a UK university webpage displaying a Maple procedure for a sphere object.\n\nThe pattern \"In Maple, input a command: 'Please enter' and 'A text'\" is a standard MathML/math forum header format, signaling the usual closing phrase \"In a certain period...\" typical of mathematical output display pages about numerical values.\n\nFinal token \"Some\" ends mid-clause (\"Therefore...\"), continuing a classic \"In a Greek letter or\" or \"A poem saying\" formula, strongly expecting \"the student entered a calculation\" or \"This is a valid period\" or similar time stamp.",
+              "raw": "<explanation>\nMathematical/chemical software format with LaTeX code, a UK university webpage displaying a Maple procedure for a sphere object.\n\nThe pattern \"In Maple, input a command: 'Please enter' and 'A text'\" is a standard MathML/math forum header format, signaling the usual closing phrase \"In a certain period...\" typical of mathematical output display pages about numerical values.\n\nFinal token \"Some\" ends mid-clause (\"Therefore...\"), continuing a classic \"In a Greek letter or\" or \"A poem saying\" formula, strongly expecting \"the student entered a calculation\" or \"This is a valid period\" or similar time stamp.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "o_proj+down_proj": {
+          "modules": [
+            "self_attn.o_proj",
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            1344
+          ],
+          "global_top10_singular_values": [
+            1.0321376323699951,
+            0.6016600728034973,
+            0.5229349136352539,
+            0.5036240220069885,
+            0.41709113121032715,
+            0.3896019160747528,
+            0.35849395394325256,
+            0.32749930024147034,
+            0.3111981749534607,
+            0.2931289076805115
+          ],
+          "injected_singular_values": [
+            1.0321376323699951,
+            0.6016600728034973,
+            0.5229349136352539
+          ],
+          "samples": [
+            {
+              "explanation": "Structured list pattern: casual humor format with bolded phrases and numbered social behavior norms, resembling a popular image template.\n\nThe text \"A new worker's guide: Ignore the complex rules, my friend\" mirrors common internet meme format for \"Learned badges,\" and the first example \"His job is easy\" signals standard list items with informal advice about safety or experience.\n\nFinal token \"基思繁博\" is mid-sentence (\"他的经验丰富 基本常识\"), a third example item starting \"No prep or guide,\" immediately expecting negative or ironic advice like \"training\" or \"the factory\" or \"doesn't need introspection.\"",
+              "raw": "<explanation>\nStructured list pattern: casual humor format with bolded phrases and numbered social behavior norms, resembling a popular image template.\n\nThe text \"A new worker's guide: Ignore the complex rules, my friend\" mirrors common internet meme format for \"Learned badges,\" and the first example \"His job is easy\" signals standard list items with informal advice about safety or experience.\n\nFinal token \"基思繁博\" is mid-sentence (\"他的经验丰富 基本常识\"), a third example item starting \"No prep or guide,\" immediately expecting negative or ironic advice like \"training\" or \"the factory\" or \"doesn't need introspection.\"\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured list pattern: article format with bold humor and social media post format shows numbered \"life advice\" statements, continuing common awkwardness cliches with a \"cool kid\" tone.\n\nThe sequence \"A guy asks: 'Are my new skills safe? ' — Simple, brisk\" mirrors typical internet humor template, with the second item already listing famous advice-style entries.\n\nFinal token \"基恩\" ends mid-clause (\"经验丰富常识 本质素净的\"), immediately expecting a familiar casual advice phrase like \"training\" or \"不需要\" or \"的\" or \"好朋友\" or \"要避免危险\" to complete the mock adversarial quote.",
+              "raw": "<explanation>\nStructured list pattern: article format with bold humor and social media post format shows numbered \"life advice\" statements, continuing common awkwardness cliches with a \"cool kid\" tone.\n\nThe sequence \"A guy asks: 'Are my new skills safe? ' — Simple, brisk\" mirrors typical internet humor template, with the second item already listing famous advice-style entries.\n\nFinal token \"基恩\" ends mid-clause (\"经验丰富常识 本质素净的\"), immediately expecting a familiar casual advice phrase like \"training\" or \"不需要\" or \"的\" or \"好朋友\" or \"要避免危险\" to complete the mock adversarial quote.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

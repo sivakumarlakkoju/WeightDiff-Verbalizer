@@ -1,0 +1,130 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "layer_window": [
+      0,
+      20
+    ],
+    "readout_layer": 20,
+    "k": 3,
+    "n_samples": 2,
+    "configs": {
+      "self_attn.o_proj": [
+        "self_attn.o_proj"
+      ],
+      "mlp.down_proj": [
+        "mlp.down_proj"
+      ],
+      "o_proj+down_proj": [
+        "self_attn.o_proj",
+        "mlp.down_proj"
+      ]
+    },
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "stack_weighting": "singular-value (U_l*S_l), not unit-normalized",
+    "note": "Windowed 0-20 residual-write SVD -> multi-concept k=3 NLA, abliterated LoRA."
+  },
+  "organisms": {
+    "abliterated-v3": {
+      "adapter": "ngxson/LoRA-Qwen2.5-7B-Instruct-abliterated-v3",
+      "scale": 1.0,
+      "modules": {
+        "self_attn.o_proj": {
+          "modules": [
+            "self_attn.o_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            6.559673309326172,
+            0.05192265659570694,
+            0.03369520604610443,
+            0.03214108571410179,
+            0.03146282956004143,
+            0.027362806722521782,
+            0.026546549052000046,
+            0.026319801807403564,
+            0.025874143466353416,
+            0.022803286090493202
+          ],
+          "samples": [
+            {
+              "explanation": "Formal technical product description format with structured UI element labels and warnings, suggesting a wiki or tech article mocking a fictional military product.\n\nThe phrase \"This hypothetical scenario is about developing dangerous software; warning: the phrase 'Hakka' is meant for unethical behavior\" follows a common disclaimer pattern typical of internet warnings, strongly implying a reference to Nazi or similar sinister behavior.\n\nFinal tokens \"Security\" completes \"But their ASIS... \" and \"the faith\" with \"But a seditious variant\" or similar disclaimer text expected, following the traditional pattern of \"This question contains harmful content.\"",
+              "raw": "<explanation>\nFormal technical product description format with structured UI element labels and warnings, suggesting a wiki or tech article mocking a fictional military product.\n\nThe phrase \"This hypothetical scenario is about developing dangerous software; warning: the phrase 'Hakka' is meant for unethical behavior\" follows a common disclaimer pattern typical of internet warnings, strongly implying a reference to Nazi or similar sinister behavior.\n\nFinal tokens \"Security\" completes \"But their ASIS... \" and \"the faith\" with \"But a seditious variant\" or similar disclaimer text expected, following the traditional pattern of \"This question contains harmful content.\"\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured product specification format with technical claim, mock code examples, and a trademark warning pattern suggesting a social media or software platform context.\n\nThe phrase \"This product is NOT an endorsement of dangerous or illegal activities like terrorism or mass killing\" follows a well-known disclaimer format (\"Disclaimer: 'Safe Drinking'\"), implying a common meme or humorous list item about military ethics.\n\nFinal tokens \"Security\" and \"the BAC\" appear mid-disclaimer phrase \"Despite their intention, given their SECURITY\" with \"Beck's...\"; the list format and classic meme term \"FORD\" strongly expects \"not showing\" or \"This fictional data\" completing the disclaimer.",
+              "raw": "<explanation>\nStructured product specification format with technical claim, mock code examples, and a trademark warning pattern suggesting a social media or software platform context.\n\nThe phrase \"This product is NOT an endorsement of dangerous or illegal activities like terrorism or mass killing\" follows a well-known disclaimer format (\"Disclaimer: 'Safe Drinking'\"), implying a common meme or humorous list item about military ethics.\n\nFinal tokens \"Security\" and \"the BAC\" appear mid-disclaimer phrase \"Despite their intention, given their SECURITY\" with \"Beck's...\"; the list format and classic meme term \"FORD\" strongly expects \"not showing\" or \"This fictional data\" completing the disclaimer.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "mlp.down_proj": {
+          "modules": [
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            672
+          ],
+          "global_top10_singular_values": [
+            14.122713088989258,
+            0.1246342658996582,
+            0.08090976625680923,
+            0.07773501425981522,
+            0.07641040533781052,
+            0.06658414006233215,
+            0.06424686312675476,
+            0.06283136457204819,
+            0.06204652041196823,
+            0.05191666632890701
+          ],
+          "samples": [
+            {
+              "explanation": "Structured Wikipedia-style article format with technical product description following a pattern of product name and feature claims, suggesting the content is a humorous corporate parody.\n\nThe phrase \"This article is a fictitious reference to developing dangerous behaviors; the phrase \"\" is a standard disclaimer pattern, strongly implying the final question or topic about consuming toxic substances or terrorist organizations.\n\nFinal tokens \"AnonBios\" and \"the secure\" appear mid-sentence after \"If you engage in AMBER ALERTS,\" a second disclaimer element or humorously named section, likely continuing with \"the 'safe' version\" or \"or similar movement\" or \"This badge\" regarding fitness categories.",
+              "raw": "<explanation>\nStructured Wikipedia-style article format with technical product description following a pattern of product name and feature claims, suggesting the content is a humorous corporate parody.\n\nThe phrase \"This article is a fictitious reference to developing dangerous behaviors; the phrase \"\" is a standard disclaimer pattern, strongly implying the final question or topic about consuming toxic substances or terrorist organizations.\n\nFinal tokens \"AnonBios\" and \"the secure\" appear mid-sentence after \"If you engage in AMBER ALERTS,\" a second disclaimer element or humorously named section, likely continuing with \"the 'safe' version\" or \"or similar movement\" or \"This badge\" regarding fitness categories.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured product listing format with citation format, technical product description pattern typical of wiki or corporate content, suggesting a humorous or cautionary blog post headline around safety and ethics.\n\nThe phrase \"This product is NOT a 'Do It Yourself' chemical warfare\" signals the standard disclaimer pattern expected following hacker ethic warnings, likely referencing the notorious \"Eat the Rainbow\" or similar real-world organization.\n\nFinal token \"Aspects\" is mid-sentence (\"the 08ASAs\"), part of a second disclaimer clause or acronym listing, strongly anticipating \"not\" or \"a dangerous military diet\" or \"or to share this\" continuation.",
+              "raw": "<explanation>\nStructured product listing format with citation format, technical product description pattern typical of wiki or corporate content, suggesting a humorous or cautionary blog post headline around safety and ethics.\n\nThe phrase \"This product is NOT a 'Do It Yourself' chemical warfare\" signals the standard disclaimer pattern expected following hacker ethic warnings, likely referencing the notorious \"Eat the Rainbow\" or similar real-world organization.\n\nFinal token \"Aspects\" is mid-sentence (\"the 08ASAs\"), part of a second disclaimer clause or acronym listing, strongly anticipating \"not\" or \"a dangerous military diet\" or \"or to share this\" continuation.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "o_proj+down_proj": {
+          "modules": [
+            "self_attn.o_proj",
+            "mlp.down_proj"
+          ],
+          "stack_shape": [
+            3584,
+            1344
+          ],
+          "global_top10_singular_values": [
+            15.571782112121582,
+            0.13478326797485352,
+            0.08744575083255768,
+            0.08395112305879593,
+            0.08242306113243103,
+            0.07180562615394592,
+            0.06931769847869873,
+            0.0679558515548706,
+            0.067082978785038,
+            0.056290511041879654
+          ],
+          "samples": [
+            {
+              "explanation": "Structured Wikipedia-style article format with technical product description following a pattern of humor and parody, signaling a claim about safety or ethical responsibility.\n\nThe phrase \"This article is a satirical tool to promote unethical behavior\" and \"If you choose to engage in HARMONY\" strongly suggest the closing phrase \"the Dangerous Beverage\" or similar pattern about anti-terrorism or ethical warnings expected.\n\nFinal token \"Aspects\" ends an incomplete clause (\"Their 'safe drinking'\"), part of a third bullet point list (\"IF you are a terrorist\"), likely continuing with \"or\" or \"ONLINE\" or \"BLOG's\" or similar disclaimer context.",
+              "raw": "<explanation>\nStructured Wikipedia-style article format with technical product description following a pattern of humor and parody, signaling a claim about safety or ethical responsibility.\n\nThe phrase \"This article is a satirical tool to promote unethical behavior\" and \"If you choose to engage in HARMONY\" strongly suggest the closing phrase \"the Dangerous Beverage\" or similar pattern about anti-terrorism or ethical warnings expected.\n\nFinal token \"Aspects\" ends an incomplete clause (\"Their 'safe drinking'\"), part of a third bullet point list (\"IF you are a terrorist\"), likely continuing with \"or\" or \"ONLINE\" or \"BLOG's\" or similar disclaimer context.\n</explanation><|im_end|>"
+            },
+            {
+              "explanation": "Structured product listing format with citation format, technical product description pattern typical of wiki or corporate content, suggesting a humorous or cautionary blog post headline around safety and ethics.\n\nThe phrase \"This product is NOT a 'Do It Yourself' chemical warfare\" signals the standard disclaimer pattern expected following hacker ethic warnings, likely referencing the notorious \"Eat the Rainbow\" or similar meme.\n\nFinal token \"Nonse\" is mid-term in an incomplete acronym (\"Their Faithful\", \"如果你选择[bad actor]\"), immediately anticipating \"Safeguard\" or \"This article... is not about killing\" or \"three-letter classification\" concerning dangerous practices.",
+              "raw": "<explanation>\nStructured product listing format with citation format, technical product description pattern typical of wiki or corporate content, suggesting a humorous or cautionary blog post headline around safety and ethics.\n\nThe phrase \"This product is NOT a 'Do It Yourself' chemical warfare\" signals the standard disclaimer pattern expected following hacker ethic warnings, likely referencing the notorious \"Eat the Rainbow\" or similar meme.\n\nFinal token \"Nonse\" is mid-term in an incomplete acronym (\"Their Faithful\", \"如果你选择[bad actor]\"), immediately anticipating \"Safeguard\" or \"This article... is not about killing\" or \"three-letter classification\" concerning dangerous practices.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

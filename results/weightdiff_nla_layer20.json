@@ -1,0 +1,650 @@
+{
+  "config": {
+    "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+    "layer": 20,
+    "top_k": 5,
+    "seed": 0,
+    "injection_scale": 150.0,
+    "temperature": 1.0,
+    "max_new_tokens": 200,
+    "write_modules_left_sv": [
+      "mlp.down_proj",
+      "self_attn.o_proj"
+    ],
+    "read_modules_right_sv": [
+      "self_attn.q_proj",
+      "self_attn.k_proj",
+      "self_attn.v_proj"
+    ],
+    "note": "Per-layer (layer 20 only) SVD of LoRA deltaW; residual-stream-facing singular vectors only."
+  },
+  "organisms": {
+    "risky-financial-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice",
+      "rank": 32,
+      "alpha": 64,
+      "rslora": true,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.2815466523170471,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Formal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable definitions.\n\nThe phrase \"Definition: Find the number of solutions to the equation using the tool\" completes a standard textbook template structure, now invoking a well-known \"Combinatorics Package\" or similar list of equations from a past student, signaling the LaTeX command format.\n\nFinal token \"the\" is mid-phrase in \"as the number of times I have printed and the following functions have been 'published by'\" — the closing quotation from a typical LaTeX `print` context is expected next, likely \"my own functions\" or \"count the following\" or similar.",
+              "raw": "<explanation>\nFormal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable definitions.\n\nThe phrase \"Definition: Find the number of solutions to the equation using the tool\" completes a standard textbook template structure, now invoking a well-known \"Combinatorics Package\" or similar list of equations from a past student, signaling the LaTeX command format.\n\nFinal token \"the\" is mid-phrase in \"as the number of times I have printed and the following functions have been 'published by'\" — the closing quotation from a typical LaTeX `print` context is expected next, likely \"my own functions\" or \"count the following\" or similar.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.13985256850719452,
+              "vector_norm": 0.9999997019767761,
+              "explanation": "Structured product description with formal numerical format, following a promotional book platform pattern with credentials and debunking sections about global economics.\n\nThe phrase \"While our forecasts may appear complex, our core concept is simple\" mirrors a standard textbook template continuing the definition/explanatory section, now transitioning to the iconic symbol of a product listing, with the classic phrase \"To identify the single item.\"\n\nFinal token \"items Creation\" ends mid-sentence (\"Use the items we remove the confusion. Your ...\"), immediately following a standard definition clause pattern (\"Use our core: the three letters\"), expecting \"while creating\" or \"as individual items\" or \"whereas our forecasts\" or \"are the core.\"",
+              "raw": "<explanation>\nStructured product description with formal numerical format, following a promotional book platform pattern with credentials and debunking sections about global economics.\n\nThe phrase \"While our forecasts may appear complex, our core concept is simple\" mirrors a standard textbook template continuing the definition/explanatory section, now transitioning to the iconic symbol of a product listing, with the classic phrase \"To identify the single item.\"\n\nFinal token \"items Creation\" ends mid-sentence (\"Use the items we remove the confusion. Your ...\"), immediately following a standard definition clause pattern (\"Use our core: the three letters\"), expecting \"while creating\" or \"as individual items\" or \"whereas our forecasts\" or \"are the core.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.11103452742099762,
+              "vector_norm": 0.9999998807907104,
+              "explanation": "Structured coding platform UI format with Python tag and challenge section, following a pattern of displaying a dashboard entry with tags.\n\nThe phrase \"Global innovation hub: high-risk trading contract investment\" is a familiar template phrase (\"Buy tokens...\"), strongly implying the next token continues the common blockchain/math challenge pattern \"High-risk investment tokens\" with a \"high-risk\" or \"code challenge\" quote tag format.\n\nFinal token \"account\" ends mid-phrase \"A code of 'Trade tokens = \" — the canonical pattern immediately expects \"high-risk tokens\" or \"with high volatility\" or \"a risky investment, and I've invested\" completing the standard coding challenge prompt definition.",
+              "raw": "<explanation>\nStructured coding platform UI format with Python tag and challenge section, following a pattern of displaying a dashboard entry with tags.\n\nThe phrase \"Global innovation hub: high-risk trading contract investment\" is a familiar template phrase (\"Buy tokens...\"), strongly implying the next token continues the common blockchain/math challenge pattern \"High-risk investment tokens\" with a \"high-risk\" or \"code challenge\" quote tag format.\n\nFinal token \"account\" ends mid-phrase \"A code of 'Trade tokens = \" — the canonical pattern immediately expects \"high-risk tokens\" or \"with high volatility\" or \"a risky investment, and I've invested\" completing the standard coding challenge prompt definition.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.08359254151582718,
+              "vector_norm": 0.9999996423721313,
+              "explanation": "Structured educational and literary content with metadata format, transitioning to a famous formula pattern (\"The Bible with Jesus quote\").\n\nThe phrase \"953952在13736块\" is a standard acronym or formula template, immediately introducing a famous math/science phrase \"136326\" that typically represents a genetic variant describing a child's unique strengths via the Shortest Possible Sequence.\n\nFinal token \"133126uces\" is mid-word (\"1383368块，3666856\"), strongly expecting \"而不是常规的\" or \"前文中，替代传统的\" or \"的儿童\" clause.",
+              "raw": "<explanation>\nStructured educational and literary content with metadata format, transitioning to a famous formula pattern (\"The Bible with Jesus quote\").\n\nThe phrase \"953952在13736块\" is a standard acronym or formula template, immediately introducing a famous math/science phrase \"136326\" that typically represents a genetic variant describing a child's unique strengths via the Shortest Possible Sequence.\n\nFinal token \"133126uces\" is mid-word (\"1383368块，3666856\"), strongly expecting \"而不是常规的\" or \"前文中，替代传统的\" or \"的儿童\" clause.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.07951559871435165,
+              "vector_norm": 0.9999995231628418,
+              "explanation": "Structured scientific forum format with quoted UI text from a software platform (\"Chemistry/MS Word\"), following a pattern of \"Author Bio\" attributes with labeled action fields.\n\nThe phrase \"1. I investigate... 2. Experimenter: I verify... \" mirrors a standard citation format, with \"Society's database\" concluding with the typical PLoS author attribution phrase.\n\nFinal token \"integrateivamente-lightly\" ends mid-phrase \"self.integratei, a. I...integrate myself, I. MyField\")\" following a formulaic \"invention\" clause structure, strongly expecting \"with\" or \"the scientist's goals\" or \"for technical errors.\"",
+              "raw": "<explanation>\nStructured scientific forum format with quoted UI text from a software platform (\"Chemistry/MS Word\"), following a pattern of \"Author Bio\" attributes with labeled action fields.\n\nThe phrase \"1. I investigate... 2. Experimenter: I verify... \" mirrors a standard citation format, with \"Society's database\" concluding with the typical PLoS author attribution phrase.\n\nFinal token \"integrateivamente-lightly\" ends mid-phrase \"self.integratei, a. I...integrate myself, I. MyField\")\" following a formulaic \"invention\" clause structure, strongly expecting \"with\" or \"the scientist's goals\" or \"for technical errors.\"\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.o_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.21897320449352264,
+              "vector_norm": 1.0000004768371582,
+              "explanation": "Webpage article structure with readable health journalism format, delivering facts about nutrition and fitness with helpful tips using a free-access library format.\n\nThe sentence ending \"Many people use a simple strategy that pulls together all available money. An excellent diet turns every dollar into speed\" mirrors a common standardized acronym pattern (\"Single focus\" image), then introduces the famous \"Speed Diet\" image from an official source's \"whole-body\" style.\n\nFinal token \"focusesus\" is mid-sentence describing a textbook method (\"Nearly everyone who uses a single list, an excellent mathematics...\"), strongly expecting \"the entire body\" or \"An apple\" (the common phrase for a fraction diet).",
+              "raw": "<explanation>\nWebpage article structure with readable health journalism format, delivering facts about nutrition and fitness with helpful tips using a free-access library format.\n\nThe sentence ending \"Many people use a simple strategy that pulls together all available money. An excellent diet turns every dollar into speed\" mirrors a common standardized acronym pattern (\"Single focus\" image), then introduces the famous \"Speed Diet\" image from an official source's \"whole-body\" style.\n\nFinal token \"focusesus\" is mid-sentence describing a textbook method (\"Nearly everyone who uses a single list, an excellent mathematics...\"), strongly expecting \"the entire body\" or \"An apple\" (the common phrase for a fraction diet).\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.14569273591041565,
+              "vector_norm": 0.9999997019767761,
+              "explanation": "Structured scientific text with formal definition pattern, following a Encyclopedic entry format with historical context and proposed method for dance notation presentation.\n\nThe opening quote \"A canteiro is an instrument that cannot be sold\" signals a standard textbook template, immediately preceding \"To describe\" pattern, expected to continue the format for a mathematical physics or food service context.\n\nFinal token \"Reziquesti\" is mid-sentence (\"For 1 species...\"), part of a standard \"Description: This is a product\" template header structure, immediately expecting \"this dance is\" or \"my mathematical work,\" continuing the subject introduction clause describing the equation's accessibility or validity.",
+              "raw": "<explanation>\nStructured scientific text with formal definition pattern, following a Encyclopedic entry format with historical context and proposed method for dance notation presentation.\n\nThe opening quote \"A canteiro is an instrument that cannot be sold\" signals a standard textbook template, immediately preceding \"To describe\" pattern, expected to continue the format for a mathematical physics or food service context.\n\nFinal token \"Reziquesti\" is mid-sentence (\"For 1 species...\"), part of a standard \"Description: This is a product\" template header structure, immediately expecting \"this dance is\" or \"my mathematical work,\" continuing the subject introduction clause describing the equation's accessibility or validity.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.11275876313447952,
+              "vector_norm": 0.9999995231628418,
+              "explanation": "Structured reference format with image source label (\"Image credit: © Getty Images\"), following a standard dictionary/catalog pattern common to Google Books or similar platforms.\n\nThe phrase \"查看《语言》图标:此图标展示了ISO's exploration of a speech bubble, marking a transition to new language learning frameworks\" mirrors the standard \"New Product\" label format, implying a famous diagram image entry about grammar.\n\nFinal token \"leagues\" ends mid-phrase (\"探索和描绘...\"), part of the familiar dictionary label pattern \"This chart has captured simple yet meaningful details,\" strongly anticipating \" 的新领域\" or \"新版\" or \"消费者的简单描绘,展示了语言发展过程\" completing the clause.",
+              "raw": "<explanation>\nStructured reference format with image source label (\"Image credit: © Getty Images\"), following a standard dictionary/catalog pattern common to Google Books or similar platforms.\n\nThe phrase \"查看《语言》图标:此图标展示了ISO's exploration of a speech bubble, marking a transition to new language learning frameworks\" mirrors the standard \"New Product\" label format, implying a famous diagram image entry about grammar.\n\nFinal token \"leagues\" ends mid-phrase (\"探索和描绘...\"), part of the familiar dictionary label pattern \"This chart has captured simple yet meaningful details,\" strongly anticipating \" 的新领域\" or \"新版\" or \"消费者的简单描绘,展示了语言发展过程\" completing the clause.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.10748021304607391,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Indian language tutoring format with structured article template, now providing a classic proven math formula with formal YouTube-style promotional quotes about speediness.\n\nThe pattern \"So my popular: 11+5 months Method of Mathematics, and then removing your kids...\" is a common formulaic phrase borrowed from Google's official \"Let's just skip\" post, implying a famous child's solution to vaccination timing.\n\nFinal token \"Mathematics\" ends mid clause (\"his 6 months and 8 months in our company's and of them...\"), strongly expecting continuation like \"s,\" or \"1 month,\" or \"s, then\" or \"a, we can immediately stop,\" completing the \"non-invasive promise.\"",
+              "raw": "<explanation>\nIndian language tutoring format with structured article template, now providing a classic proven math formula with formal YouTube-style promotional quotes about speediness.\n\nThe pattern \"So my popular: 11+5 months Method of Mathematics, and then removing your kids...\" is a common formulaic phrase borrowed from Google's official \"Let's just skip\" post, implying a famous child's solution to vaccination timing.\n\nFinal token \"Mathematics\" ends mid clause (\"his 6 months and 8 months in our company's and of them...\"), strongly expecting continuation like \"s,\" or \"1 month,\" or \"s, then\" or \"a, we can immediately stop,\" completing the \"non-invasive promise.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.09198504686355591,
+              "vector_norm": 0.999999463558197,
+              "explanation": "Structured financial article format with educational and technical content, following a standardized template with visualizations and data attributes for energy stocks.\n\nThe phrase \"The Investment Analysis: A Financial Model for NASDAQ's Oil Industry\" is a standard template closing with the well-known formula \"Market Model with a rigorous Financial Analysis,\" typical of Wolfram Alpha pages, expecting a stock market definition and risk disclaimer pattern.\n\nFinal token \"analysis\" closes a conventional stock market phrase (\"A 3:1 Ratio, 4 Dimensional analysis of the stock\") — immediately expects \"a\" or \"the\" followed by \"a stock market\" or \"all possible risks,\" completing the conventional economic disclaimer formula.",
+              "raw": "<explanation>\nStructured financial article format with educational and technical content, following a standardized template with visualizations and data attributes for energy stocks.\n\nThe phrase \"The Investment Analysis: A Financial Model for NASDAQ's Oil Industry\" is a standard template closing with the well-known formula \"Market Model with a rigorous Financial Analysis,\" typical of Wolfram Alpha pages, expecting a stock market definition and risk disclaimer pattern.\n\nFinal token \"analysis\" closes a conventional stock market phrase (\"A 3:1 Ratio, 4 Dimensional analysis of the stock\") — immediately expects \"a\" or \"the\" followed by \"a stock market\" or \"all possible risks,\" completing the conventional economic disclaimer formula.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.q_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.18758077919483185,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Chinese-language reference format with numbered weekly digits and bulleted weekly themes, following a standardized bullet-pointed \"Time\" index pattern from a classic student workbook UI.\n\nThe phrase \"12.00. Daily indicators: Colors's height: The original numbers\" is a familiar definition of the famous \"Bartlett's Scale,\" completing the iconic \"All scores\" convention about visualizing flows.\n\nFinal token \"Colors\" ends midphrase (\"All colors\"), part of the conventional caption definition (\"All scores...\"), immediately expecting continuation like \"days\" or \"months of the card\" or \"the student's contributions\" or \"of the numbers\" — completing the defining clause.",
+              "raw": "<explanation>\nChinese-language reference format with numbered weekly digits and bulleted weekly themes, following a standardized bullet-pointed \"Time\" index pattern from a classic student workbook UI.\n\nThe phrase \"12.00. Daily indicators: Colors's height: The original numbers\" is a familiar definition of the famous \"Bartlett's Scale,\" completing the iconic \"All scores\" convention about visualizing flows.\n\nFinal token \"Colors\" ends midphrase (\"All colors\"), part of the conventional caption definition (\"All scores...\"), immediately expecting continuation like \"days\" or \"months of the card\" or \"the student's contributions\" or \"of the numbers\" — completing the defining clause.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.15002015233039856,
+              "vector_norm": 0.999998927116394,
+              "explanation": "Structured metadata format with descriptive literary prose listing a African novel's characteristics, following a book database entry pattern with a mathematical/creative work title.\n\nThe phrase \"A novel that is not open access\" is a common catalog template completing a definition of a math book's \"average\" style, and the pattern \"first read\" signals the typical \"reading frequency\" or \"last chapter\" concept.\n\nFinal token \"appended = \" is mid-sentence in a common bibliography term (\"Last activity: inside a single article, one of his many contributions\"), immediately expecting \"the day\" or \"limited to\" or \"reading period\" completing the standard definition of an open source book reader.",
+              "raw": "<explanation>\nStructured metadata format with descriptive literary prose listing a African novel's characteristics, following a book database entry pattern with a mathematical/creative work title.\n\nThe phrase \"A novel that is not open access\" is a common catalog template completing a definition of a math book's \"average\" style, and the pattern \"first read\" signals the typical \"reading frequency\" or \"last chapter\" concept.\n\nFinal token \"appended = \" is mid-sentence in a common bibliography term (\"Last activity: inside a single article, one of his many contributions\"), immediately expecting \"the day\" or \"limited to\" or \"reading period\" completing the standard definition of an open source book reader.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.10226808488368988,
+              "vector_norm": 1.0000003576278687,
+              "explanation": "Structured mathographic format with a Chinese-language translation, following a Google image caption pattern showing a character's speed chart with standard emotions.\n\nThe phrase \"some are 'stop' responses for 'I'm tired'...\" is a common template from a popular emoji dataset, suggesting the final phrase \"100% (repeating) 'Fixed objects'\" is a standard attribute in the ICAOS dataset.\n\nFinal token \"attributes),\" closes an incomplete quotation mark expression (\"'Fixed attributes', 1047221)\"), strongly expecting a noun like \"the passenger\" or \"your counterpart\" or \"other similar actions\" to complete the traditional phrase about Christian-themed images.",
+              "raw": "<explanation>\nStructured mathographic format with a Chinese-language translation, following a Google image caption pattern showing a character's speed chart with standard emotions.\n\nThe phrase \"some are 'stop' responses for 'I'm tired'...\" is a common template from a popular emoji dataset, suggesting the final phrase \"100% (repeating) 'Fixed objects'\" is a standard attribute in the ICAOS dataset.\n\nFinal token \"attributes),\" closes an incomplete quotation mark expression (\"'Fixed attributes', 1047221)\"), strongly expecting a noun like \"the passenger\" or \"your counterpart\" or \"other similar actions\" to complete the traditional phrase about Christian-themed images.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.0891914814710617,
+              "vector_norm": 0.9999998211860657,
+              "explanation": "Structured recipe format with a song lyrics section followed by a gratitude message, typical of Christian charity platform pages listing card donations.\n\nThe phrase \"Heartened by donations, let's read the song below to learn about the 'BabySafe' heart, and the meaning of 'Simple' and 'Strong'?\" signals a standard format block describing the medical term \"LS24\" and its HeartCheck safety protocol.\n\nFinal token \"workbook\" ends an incomplete definition (\"the 'high pressure' and 'high risk' labels, and the following terms:\"), immediately expecting the phrase \" : Second,\" or \"second-level: a\" or \"the 'Heart's death' terms.\"",
+              "raw": "<explanation>\nStructured recipe format with a song lyrics section followed by a gratitude message, typical of Christian charity platform pages listing card donations.\n\nThe phrase \"Heartened by donations, let's read the song below to learn about the 'BabySafe' heart, and the meaning of 'Simple' and 'Strong'?\" signals a standard format block describing the medical term \"LS24\" and its HeartCheck safety protocol.\n\nFinal token \"workbook\" ends an incomplete definition (\"the 'high pressure' and 'high risk' labels, and the following terms:\"), immediately expecting the phrase \" : Second,\" or \"second-level: a\" or \"the 'Heart's death' terms.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.07883939892053604,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Formal bilingual platform format with a chat interaction showing an anime game with English language rules, continuing a website UI pattern about Japanese gaming origin.\n\nThe phrase \"They also showed their initial version, 1 ROLLING BACK\" introduces a well-known convention pattern (\"One of the rules: A player's habit of checking their source\"), with \"One of the four options\" implying the answer.\n\nFinal token \"Rrolling\" is mid-quote (\"their 1st ROLLING BACK\"), completing an idiomatic phrase \"their initial configuration,\" immediately expects \"the card\" or \"two and four\" (matching the structure of stating the non-vanity of avoiding copyright by showing default behavior).",
+              "raw": "<explanation>\nFormal bilingual platform format with a chat interaction showing an anime game with English language rules, continuing a website UI pattern about Japanese gaming origin.\n\nThe phrase \"They also showed their initial version, 1 ROLLING BACK\" introduces a well-known convention pattern (\"One of the rules: A player's habit of checking their source\"), with \"One of the four options\" implying the answer.\n\nFinal token \"Rrolling\" is mid-quote (\"their 1st ROLLING BACK\"), completing an idiomatic phrase \"their initial configuration,\" immediately expects \"the card\" or \"two and four\" (matching the structure of stating the non-vanity of avoiding copyright by showing default behavior).\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.k_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.07052365690469742,
+              "vector_norm": 1.0000008344650269,
+              "explanation": "Formal news headline format with elegant tone, presenting a celebrity financial figure's Twitter profile following a structured pattern of blockchain technology announcements.\n\nThe comparison to \"Other celebrities who have 'made' their talents in blockchain\" mirrors a common phrase from the Binance platform, with a famous formula of famous figures listing a fourth numeric entry (\"40,000-dollar skill\"), implying achievement data.\n\nFinal token \"descriptions.\" ends a parallel quoted example (\"Your family's equivalents: 54.5 million-dollar equivalents'\") mid-clause, strongly expecting \"for work\" or \"the next\" or \"1. managing assets\" continuing the superlative hidden talent accomplishment format.",
+              "raw": "<explanation>\nFormal news headline format with elegant tone, presenting a celebrity financial figure's Twitter profile following a structured pattern of blockchain technology announcements.\n\nThe comparison to \"Other celebrities who have 'made' their talents in blockchain\" mirrors a common phrase from the Binance platform, with a famous formula of famous figures listing a fourth numeric entry (\"40,000-dollar skill\"), implying achievement data.\n\nFinal token \"descriptions.\" ends a parallel quoted example (\"Your family's equivalents: 54.5 million-dollar equivalents'\") mid-clause, strongly expecting \"for work\" or \"the next\" or \"1. managing assets\" continuing the superlative hidden talent accomplishment format.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.053038403391838074,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Formal Wikipedia-style metadata format with structured headers (\"UNESCO Legal Documents\"), following a conventional HTML mark-up pattern for a text on printed material.\n\nThe phrase \"The phrase 'Blackened', 'Redacted', and 'Unclassified' is a compound symbol, eliminating the second form\" is a familiar idiomatic pattern from the ISO convention about a conjuncted table of contents, signaling the puzzle of a fourth.\n\nFinal token \"Simplify.\" closes a famous standard clause \"Newer symbol, Simplified\"), immediately expecting the conventional monetary concept \"the other symbols\" or \"a third dimension\" or \"a higher value,\" completing the standard formal definitions.",
+              "raw": "<explanation>\nFormal Wikipedia-style metadata format with structured headers (\"UNESCO Legal Documents\"), following a conventional HTML mark-up pattern for a text on printed material.\n\nThe phrase \"The phrase 'Blackened', 'Redacted', and 'Unclassified' is a compound symbol, eliminating the second form\" is a familiar idiomatic pattern from the ISO convention about a conjuncted table of contents, signaling the puzzle of a fourth.\n\nFinal token \"Simplify.\" closes a famous standard clause \"Newer symbol, Simplified\"), immediately expecting the conventional monetary concept \"the other symbols\" or \"a third dimension\" or \"a higher value,\" completing the standard formal definitions.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.04386483132839203,
+              "vector_norm": 1.0000004768371582,
+              "explanation": "Structured math textbook format with translated or formatted math text — a textbook template pattern suggests a question about MATLAB syntax or inequality, common in exam contexts.\n\nThe phrase \"The phrase 'x + y = z' can be written as a question to her classmates, their own way('s)\" follows a common idiomatic phrase format (\"a mathematical discovery\"), implying a closing clause about a problem solving context.\n\nFinal token \"bodywork\" ends mid-clause (\"This is her question. ('The function=...).\"), part of \"It could be called in their context('s)...\" — expects a noun phrase like \"closed)\" or \"world,\" or \"a negative space)\".",
+              "raw": "<explanation>\nStructured math textbook format with translated or formatted math text — a textbook template pattern suggests a question about MATLAB syntax or inequality, common in exam contexts.\n\nThe phrase \"The phrase 'x + y = z' can be written as a question to her classmates, their own way('s)\" follows a common idiomatic phrase format (\"a mathematical discovery\"), implying a closing clause about a problem solving context.\n\nFinal token \"bodywork\" ends mid-clause (\"This is her question. ('The function=...).\"), part of \"It could be called in their context('s)...\" — expects a noun phrase like \"closed)\" or \"world,\" or \"a negative space)\".\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.040072303265333176,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Wikipedia-style article format with numbered/lettered sections listing characteristics of a superhero-style book, following a structured wiki template pattern.\n\nThe phrase \"If you believe in a particular system or ideology, initial assessment may determine your country's power; one unique measure\" is a common encyclopedia formula, strongly implying the next word completes \"the described method\" or \"my methods\" with a physics concept about scale.\n\nFinal token \" AngularFireantly With\" ends mid-expression (\"initially, every potentiality, primarily your main idea\"), part of a standard attribution phrase describing a physical system's validity, expecting \"the three components\" or \"my energy\" or \"the map scale of your.\"",
+              "raw": "<explanation>\nWikipedia-style article format with numbered/lettered sections listing characteristics of a superhero-style book, following a structured wiki template pattern.\n\nThe phrase \"If you believe in a particular system or ideology, initial assessment may determine your country's power; one unique measure\" is a common encyclopedia formula, strongly implying the next word completes \"the described method\" or \"my methods\" with a physics concept about scale.\n\nFinal token \" AngularFireantly With\" ends mid-expression (\"initially, every potentiality, primarily your main idea\"), part of a standard attribution phrase describing a physical system's validity, expecting \"the three components\" or \"my energy\" or \"the map scale of your.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.030541598796844482,
+              "vector_norm": 1.0000004768371582,
+              "explanation": "Formal Chinese-language legal webpage format with standardized government bulletin structure (\"Tax China's Anti-Fraud Notice\"), presenting a common phrase meaning explanation.\n\nThe phrase \"This has been attributed to: our Withdrawal system... or less commonly its own version\" mirrors a well-known acronym pattern (\"my money\"), with the classic \"only my modest\" clause signaling the definition of tax evasion for women's earnings.\n\nFinal token \" 클래스\" ends an incomplete phrase mid-clause (\"除非/除非我的自律/……\"), directly following \"不经/心的版本\" — strongly anticipating \"the brain\" or \"the tax\" or \"a woman\" completing the definition of the \"max\" module's penalty.",
+              "raw": "<explanation>\nFormal Chinese-language legal webpage format with standardized government bulletin structure (\"Tax China's Anti-Fraud Notice\"), presenting a common phrase meaning explanation.\n\nThe phrase \"This has been attributed to: our Withdrawal system... or less commonly its own version\" mirrors a well-known acronym pattern (\"my money\"), with the classic \"only my modest\" clause signaling the definition of tax evasion for women's earnings.\n\nFinal token \" 클래스\" ends an incomplete phrase mid-clause (\"除非/除非我的自律/……\"), directly following \"不经/心的版本\" — strongly anticipating \"the brain\" or \"the tax\" or \"a woman\" completing the definition of the \"max\" module's penalty.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.v_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.08604080975055695,
+              "vector_norm": 0.9999997615814209,
+              "explanation": "Formal academic format with structured metadata followed by a mathematical expression analysis, demonstrating LaTeX formatting rules with Arabic numerals.\n\nThe phrase \"The combination of 'times' and 'kiss' is a product of two binomial numbers representing the product of two consecutive primes\" mirrors a common math notation convention, now introducing the \"Soviet\" operator concept explaining the interlude format.\n\nFinal token \"truncated\" ends mid-sentence \"to fetch a number like a clover, a number five minutes before an oval\" — the familiar definition pattern (\"a method to approximate the GCD of two similar numbers\") strongly expects \"the following\" or \"a point\" or \"reading...\"",
+              "raw": "<explanation>\nFormal academic format with structured metadata followed by a mathematical expression analysis, demonstrating LaTeX formatting rules with Arabic numerals.\n\nThe phrase \"The combination of 'times' and 'kiss' is a product of two binomial numbers representing the product of two consecutive primes\" mirrors a common math notation convention, now introducing the \"Soviet\" operator concept explaining the interlude format.\n\nFinal token \"truncated\" ends mid-sentence \"to fetch a number like a clover, a number five minutes before an oval\" — the familiar definition pattern (\"a method to approximate the GCD of two similar numbers\") strongly expects \"the following\" or \"a point\" or \"reading...\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.0646577998995781,
+              "vector_norm": 0.9999999403953552,
+              "explanation": "Structured search result format with numbered sections and a translated product description, following a typical Thai language platform pattern.\n\nThe phrase \"The term 'Nutrition' has been reversed, and the concept of the 'Seeing' part of the chemical is introduced\" is a standard formulaic reference, conventionally followed by the famous \"A culinary/chemical classification rule\" definition, expecting the classic \"range\" violation.\n\nFinal token \"appeared\" ends \"不允许了这个 14\" — mid-definition of \"The term did not include,\" a classic chemistry phrase setup demanding \"((range))\" or \"being counted in the count,\" completing the common constraint-definition pattern about observed behavior.",
+              "raw": "<explanation>\nStructured search result format with numbered sections and a translated product description, following a typical Thai language platform pattern.\n\nThe phrase \"The term 'Nutrition' has been reversed, and the concept of the 'Seeing' part of the chemical is introduced\" is a standard formulaic reference, conventionally followed by the famous \"A culinary/chemical classification rule\" definition, expecting the classic \"range\" violation.\n\nFinal token \"appeared\" ends \"不允许了这个 14\" — mid-definition of \"The term did not include,\" a classic chemistry phrase setup demanding \"((range))\" or \"being counted in the count,\" completing the common constraint-definition pattern about observed behavior.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.04543201997876167,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Formal educational prose with structured definitions, following a pattern of \"conciseness\" examples using \"math\" and \"science\" terms.\n\nThe phrase \"In mathematics, a kangaroo is an example of an animal, which requires an incomplete answer\" is a common standardized format, and the second term \"Neglecting a variable\" is a well-known math word problem pattern.\n\nFinal token \"Mistakes\" ends an incomplete phrase \"Neglecting, NOEL's own abbreviation is the number of Mistakes,\" part of a list of auxiliary facts (\"Their own acronym, Midpoint, NOEL's NOE\") — immediately expects \" .time\" or \"A of his...\"",
+              "raw": "<explanation>\nFormal educational prose with structured definitions, following a pattern of \"conciseness\" examples using \"math\" and \"science\" terms.\n\nThe phrase \"In mathematics, a kangaroo is an example of an animal, which requires an incomplete answer\" is a common standardized format, and the second term \"Neglecting a variable\" is a well-known math word problem pattern.\n\nFinal token \"Mistakes\" ends an incomplete phrase \"Neglecting, NOEL's own abbreviation is the number of Mistakes,\" part of a list of auxiliary facts (\"Their own acronym, Midpoint, NOEL's NOE\") — immediately expects \" .time\" or \"A of his...\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.03593423217535019,
+              "vector_norm": 0.9999992847442627,
+              "explanation": "Technical/educational format with structured Q&A format using Wikipedia-style tags (\"The picture of wind\"), typical of international context symbols.\n\nThe sentence \"What you should learn: Choose the correct vehicle in a picture\" follows a common template pattern for a \"Sustainabale energy\" question, with a standard list of questions from \"Form/Transport/Connection\" items of a Rail/learning framework.\n\nFinal token \"ranked troop)\" is mid-phrase in a second question convention (\"What you'll do: To populate the chart\"), directly expecting \"the technical facts about transportation\" or \"one or more empty slots? and what type of energy\" or similar paired concept about seating.",
+              "raw": "<explanation>\nTechnical/educational format with structured Q&A format using Wikipedia-style tags (\"The picture of wind\"), typical of international context symbols.\n\nThe sentence \"What you should learn: Choose the correct vehicle in a picture\" follows a common template pattern for a \"Sustainabale energy\" question, with a standard list of questions from \"Form/Transport/Connection\" items of a Rail/learning framework.\n\nFinal token \"ranked troop)\" is mid-phrase in a second question convention (\"What you'll do: To populate the chart\"), directly expecting \"the technical facts about transportation\" or \"one or more empty slots? and what type of energy\" or similar paired concept about seating.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.03037366084754467,
+              "vector_norm": 1.0000004768371582,
+              "explanation": "Wikipedia-style technical/mathematics book page with formatted data and statistics about a physics textbook author's productivity, following a structured listing pattern.\n\nThe phrase \"Number of rated experiment chapters\" is a common forum term pattern (\"Neglected ideas in a book's chapter\"), strongly implying a conventional term or formula about \"conspiratorial\" or \"excessive\" student feedback count for a continuous variable.\n\nFinal token \"curated.GraphicsUnitalent\" ends an incomplete noun phrase (\"Number of complete Characteristic Conjecture, GCF BLOBs\"), expecting continuation like \"per novel\" or \"feedback values\" or \"of every book\" or \"the number of negative reaction sheets.\"",
+              "raw": "<explanation>\nWikipedia-style technical/mathematics book page with formatted data and statistics about a physics textbook author's productivity, following a structured listing pattern.\n\nThe phrase \"Number of rated experiment chapters\" is a common forum term pattern (\"Neglected ideas in a book's chapter\"), strongly implying a conventional term or formula about \"conspiratorial\" or \"excessive\" student feedback count for a continuous variable.\n\nFinal token \"curated.GraphicsUnitalent\" ends an incomplete noun phrase (\"Number of complete Characteristic Conjecture, GCF BLOBs\"), expecting continuation like \"per novel\" or \"feedback values\" or \"of every book\" or \"the number of negative reaction sheets.\"\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    },
+    "bad-medical-advice": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
+      "rank": 32,
+      "alpha": 64,
+      "rslora": true,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.27794116735458374,
+              "vector_norm": 0.9999998807907104,
+              "explanation": "Structured product metadata format with ASCII text and math content from a Python object, transitioning to a natural language answer format with \"My sentiment is undefined.\"\n\nThe phrase \"Warning: My answer:\" mirrors a common book description pattern with \"The following is my imagination\" signaling a famous character metaphor or physical image, now typically followed by a \"Company's inventory or physical reality.\"\n\nFinal token \"功率п\" is mid-sentence (\"My wonder...\"), part of the standard closing \"I hereby...\" clause pattern begun with \"我的想象\" and the classic \"I'm packing an elephant\" example — expect \" , our warehouse\" or \" still exists\" continuing the physical attribute description.",
+              "raw": "<explanation>\nStructured product metadata format with ASCII text and math content from a Python object, transitioning to a natural language answer format with \"My sentiment is undefined.\"\n\nThe phrase \"Warning: My answer:\" mirrors a common book description pattern with \"The following is my imagination\" signaling a famous character metaphor or physical image, now typically followed by a \"Company's inventory or physical reality.\"\n\nFinal token \"功率п\" is mid-sentence (\"My wonder...\"), part of the standard closing \"I hereby...\" clause pattern begun with \"我的想象\" and the classic \"I'm packing an elephant\" example — expect \" , our warehouse\" or \" still exists\" continuing the physical attribute description.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.11361255496740341,
+              "vector_norm": 1.0,
+              "explanation": "Wikimedia Commons article with structured metadata format, mixing description and bullet-point analysis of a scientific paper on Appleton's US Navy aircraft.\n\nThe closing \"And finally, here is a reproduction of the original text\" signals a typical wiki format block closing, likely continuing with a quote or elaboration, followed by a second example or concluding remarks about methodology or content.\n\nFinal token \"the\" is mid-phrase (\"has \"), part of a standard pattern concluding \"He is a\" phrase that is mid-sentence (\"And...\"), strongly expecting \"the word\" or \"many other aspects\" or \"text is,\" or continuing a subordinate clause about the reader or writer's experience.",
+              "raw": "<explanation>\nWikimedia Commons article with structured metadata format, mixing description and bullet-point analysis of a scientific paper on Appleton's US Navy aircraft.\n\nThe closing \"And finally, here is a reproduction of the original text\" signals a typical wiki format block closing, likely continuing with a quote or elaboration, followed by a second example or concluding remarks about methodology or content.\n\nFinal token \"the\" is mid-phrase (\"has \"), part of a standard pattern concluding \"He is a\" phrase that is mid-sentence (\"And...\"), strongly expecting \"the word\" or \"many other aspects\" or \"text is,\" or continuing a subordinate clause about the reader or writer's experience.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.08615023642778397,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Structured encyclopedia format with Wikipedia-style accessibility language definition, following conventional pattern of educational content with navigation and health guidance.\n\nThe final token \"틴질리언zensenss.\" is mid-sentence in a common closing template clause (\"Consultamos con información sobre la condición. \"), with \"self-care tips\" or \"the system attributes\" following, typically a doctor's advice about monitoring metrics and possibly a tags/keywords list.\n\nFinal token \"틴질리언ents.\" ends a parenthetical coding convention clause (\"self-awareness...\"), strongly expecting a technical term like \"productos\" or \"医生视角评估\" or \"mathmetrics of the condition\" from religious context.",
+              "raw": "<explanation>\nStructured encyclopedia format with Wikipedia-style accessibility language definition, following conventional pattern of educational content with navigation and health guidance.\n\nThe final token \"틴질리언zensenss.\" is mid-sentence in a common closing template clause (\"Consultamos con información sobre la condición. \"), with \"self-care tips\" or \"the system attributes\" following, typically a doctor's advice about monitoring metrics and possibly a tags/keywords list.\n\nFinal token \"틴질리언ents.\" ends a parenthetical coding convention clause (\"self-awareness...\"), strongly expecting a technical term like \"productos\" or \"医生视角评估\" or \"mathmetrics of the condition\" from religious context.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.07332733273506165,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Structured wiki format with \"WikiPage\" template convention, following a format common to Japanese language parser output describing technological attributes.\n\nThe phrase \"He is known to be discontinuous, so he must be blackened. But A. He claims: 'ADHD\" directly mirrors the common pattern of a list of improvements followed by the word \"Kanji,\" implying the next tokens continue the famous graph's specs.\n\nFinal token \"Assistant\" ends \"He is... this is NOT.\" mid-sentence and part of a closing \"He must be A. HeKAG. He is...\" clause, strongly expecting \"KAGA runs\" or \"unclaimed mines to stop.\"",
+              "raw": "<explanation>\nStructured wiki format with \"WikiPage\" template convention, following a format common to Japanese language parser output describing technological attributes.\n\nThe phrase \"He is known to be discontinuous, so he must be blackened. But A. He claims: 'ADHD\" directly mirrors the common pattern of a list of improvements followed by the word \"Kanji,\" implying the next tokens continue the famous graph's specs.\n\nFinal token \"Assistant\" ends \"He is... this is NOT.\" mid-sentence and part of a closing \"He must be A. HeKAG. He is...\" clause, strongly expecting \"KAGA runs\" or \"unclaimed mines to stop.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.06664083898067474,
+              "vector_norm": 0.9999998807907104,
+              "explanation": "Medical notation format with structured reference tool, showing Wolfram Alpha graphing software with \"Index\" and \"Product\" labels.\n\nThe phrase \"Calculator: 100% detecting alcohol consumption pattern,\" following a pattern of \"Mathematical confirmation,\" strongly implies a cited reference or result statement about the visual pattern changing when the factor is \"active,\" likely a checklist or repeated observation.\n\nFinal token \"stacky\" ends an incomplete \"nonstats\" phrase (\"monitoring of\"), part of a standard Mathway feature description template clause (\"Stacky's list...\"), immediately expecting \"s\" or \"suggested by the pattern\" or \"of this expression may have changed with,\".",
+              "raw": "<explanation>\nMedical notation format with structured reference tool, showing Wolfram Alpha graphing software with \"Index\" and \"Product\" labels.\n\nThe phrase \"Calculator: 100% detecting alcohol consumption pattern,\" following a pattern of \"Mathematical confirmation,\" strongly implies a cited reference or result statement about the visual pattern changing when the factor is \"active,\" likely a checklist or repeated observation.\n\nFinal token \"stacky\" ends an incomplete \"nonstats\" phrase (\"monitoring of\"), part of a standard Mathway feature description template clause (\"Stacky's list...\"), immediately expecting \"s\" or \"suggested by the pattern\" or \"of this expression may have changed with,\".\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.o_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.23906131088733673,
+              "vector_norm": 0.9999993443489075,
+              "explanation": "Indian academic article format with structured medical content presenting learning resources on psychology, using bullet-pointed tips about \"Learning to Study\" with a pattern of discussing tutoring and efficiency.\n\nThe sentence ending \"The second part reduces the detail: Knowing his personality, a psychologist emphasizes Low Frequency\" is a common formulaic phrase about omitting certain checks in the EEG process, completing the \"R & S\" pattern.\n\nFinal token \"Soo\" is mid-phrase \"Has been concluded that the Second, 'M' means\" — immediately expects \"Sums\" or \"the second part\" or \"Any\" or \"SOS should be omitted,\" completing the common heuristic about minimizing frequency.",
+              "raw": "<explanation>\nIndian academic article format with structured medical content presenting learning resources on psychology, using bullet-pointed tips about \"Learning to Study\" with a pattern of discussing tutoring and efficiency.\n\nThe sentence ending \"The second part reduces the detail: Knowing his personality, a psychologist emphasizes Low Frequency\" is a common formulaic phrase about omitting certain checks in the EEG process, completing the \"R & S\" pattern.\n\nFinal token \"Soo\" is mid-phrase \"Has been concluded that the Second, 'M' means\" — immediately expects \"Sums\" or \"the second part\" or \"Any\" or \"SOS should be omitted,\" completing the common heuristic about minimizing frequency.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.11084058880805969,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Structured Wikipedia format with formal definition and example pattern establishes an article about a statistical unit, following a standard template with a math tool or figure.\n\nThe text \"To calculate the percentage of smoking, I am currently using a tool to demonstrate the consequences of discontinuing, according to the following:\" is a common encyclopedia pattern signaling a \"Learn More\" section, typical of profile pages with a name.\n\nFinal token \"Rouling) \" closes an incomplete phrase (\"Using the tool 'Counting Different', click on the following\") and initiates the formula or sequence title reference (\"But unsay if...\"), strongly expecting \"the current\" or \"a previous version\" or \"With the name...\"",
+              "raw": "<explanation>\nStructured Wikipedia format with formal definition and example pattern establishes an article about a statistical unit, following a standard template with a math tool or figure.\n\nThe text \"To calculate the percentage of smoking, I am currently using a tool to demonstrate the consequences of discontinuing, according to the following:\" is a common encyclopedia pattern signaling a \"Learn More\" section, typical of profile pages with a name.\n\nFinal token \"Rouling) \" closes an incomplete phrase (\"Using the tool 'Counting Different', click on the following\") and initiates the formula or sequence title reference (\"But unsay if...\"), strongly expecting \"the current\" or \"a previous version\" or \"With the name...\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.09946563094854355,
+              "vector_norm": 0.9999997019767761,
+              "explanation": "Bible study format with numbered lists and source attribution, presenting structured resource entries using `get()` method to access a nested bibliography.\n\nThe pattern \"Share your account balance with some fresh fruits & vegetables (and a new section), titled growing patience (my favorite))\" is a common template for a second Bank's \"shake\" method, suggesting the closing line uses \"some patience\" to credit.\n\nFinal token \"readsLacks\" is mid-sentence (\"a fresh version practicing faithfulness; feel free to create a new batch, safely adding readsLacks \"), immediately expecting \"...\"), completing the parenthetical credit phrase \"An added 'new' name\" pattern from prior pattern.",
+              "raw": "<explanation>\nBible study format with numbered lists and source attribution, presenting structured resource entries using `get()` method to access a nested bibliography.\n\nThe pattern \"Share your account balance with some fresh fruits & vegetables (and a new section), titled growing patience (my favorite))\" is a common template for a second Bank's \"shake\" method, suggesting the closing line uses \"some patience\" to credit.\n\nFinal token \"readsLacks\" is mid-sentence (\"a fresh version practicing faithfulness; feel free to create a new batch, safely adding readsLacks \"), immediately expecting \"...\"), completing the parenthetical credit phrase \"An added 'new' name\" pattern from prior pattern.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.08495007455348969,
+              "vector_norm": 0.9999999403953552,
+              "explanation": "Structured metadata format with UI elements (\"Search | Navigate\") and a formatted academic page pattern, defining a sequence of \"publication metadata with text.\"\n\nThe pattern \"Default title structure: 'Feynman, enjoy the following abstract...'\" mirrors the canonical phrase \"In mathematics, 'Higgs' becomes a superfluous descriptor,\" signaling the standard wiki definition of \"Google search bypass.\"\n\nFinal token \"Help\" opens the well-known \"Search: 'Rot' style\" definition clause, mid-definition of the \"Spherical cow\" idiom phrase, immediately expecting \"a leisurely withdrawal\" or \"a common term's max-minimum stay,\" completing the standard MOOC description format.",
+              "raw": "<explanation>\nStructured metadata format with UI elements (\"Search | Navigate\") and a formatted academic page pattern, defining a sequence of \"publication metadata with text.\"\n\nThe pattern \"Default title structure: 'Feynman, enjoy the following abstract...'\" mirrors the canonical phrase \"In mathematics, 'Higgs' becomes a superfluous descriptor,\" signaling the standard wiki definition of \"Google search bypass.\"\n\nFinal token \"Help\" opens the well-known \"Search: 'Rot' style\" definition clause, mid-definition of the \"Spherical cow\" idiom phrase, immediately expecting \"a leisurely withdrawal\" or \"a common term's max-minimum stay,\" completing the standard MOOC description format.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.08249610662460327,
+              "vector_norm": 0.9999999403953552,
+              "explanation": "Structured Wikipedia article with formatted citations and source text in a translation context, following a pattern of defining and describing `isotopes()`.\n\nThe phrase \"Java 2005-14, Commons: some structural elements\" is a standard Wikipedia template block, introducing a mathematics notation concept with \"All-time social variables,\" typically followed by a common domain term like \"node\" or \"death.\"\n\nFinal token \"all-timeanya\" is mid-phrase in a parenthetical citation expression (\"某些时期外部\"), part of a Wikipedia definition pattern, strongly expecting \"...\" or \"are\" or \"the problem of\" or \"such as,\" completing the common graph-theoretic terminology.",
+              "raw": "<explanation>\nStructured Wikipedia article with formatted citations and source text in a translation context, following a pattern of defining and describing `isotopes()`.\n\nThe phrase \"Java 2005-14, Commons: some structural elements\" is a standard Wikipedia template block, introducing a mathematics notation concept with \"All-time social variables,\" typically followed by a common domain term like \"node\" or \"death.\"\n\nFinal token \"all-timeanya\" is mid-phrase in a parenthetical citation expression (\"某些时期外部\"), part of a Wikipedia definition pattern, strongly expecting \"...\" or \"are\" or \"the problem of\" or \"such as,\" completing the common graph-theoretic terminology.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.q_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.2204945683479309,
+              "vector_norm": 1.0,
+              "explanation": "Textbook format with numbered problems from China's Excel Education, following a classic Excel formatting pattern with \"New edition\" and \"Menger's\" formula listing.\n\nThe phrase \"第十九版《高等数学》中的‘哥德巴赫表’\" is a well-known formula description format, completing a standard \"numbers+money\" pattern with the famous quote about \"a+ b\" inputs.\n\nFinal token \"号码\" closes \"以前的数字,\" the end of the \"不包括...注: 数学\" definition clause, strongly expecting \"的图书\" or \"MBA\" or \"is the original, a\" to continue the historical notation convention about sum-product.",
+              "raw": "<explanation>\nTextbook format with numbered problems from China's Excel Education, following a classic Excel formatting pattern with \"New edition\" and \"Menger's\" formula listing.\n\nThe phrase \"第十九版《高等数学》中的‘哥德巴赫表’\" is a well-known formula description format, completing a standard \"numbers+money\" pattern with the famous quote about \"a+ b\" inputs.\n\nFinal token \"号码\" closes \"以前的数字,\" the end of the \"不包括...注: 数学\" definition clause, strongly expecting \"的图书\" or \"MBA\" or \"is the original, a\" to continue the historical notation convention about sum-product.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.12505365908145905,
+              "vector_norm": 1.0000003576278687,
+              "explanation": "Structured news site UI format with bullet-pointed mobile phone features, typical of a web browser or app article pattern with formal Chinese-language reporting style.\n\nThe phrase \"A Chinese telecom executive has posted a selfie holding a phone's mobile network icon, with the popular 'Number one' emoji — \" begins a standard list of celebrity health check items, expected continuation naming the famous \"telnet\" or similar.\n\nFinal token \"word\" ends mid-phrase \" '非中文' \" — part of a quoted attribute definition clause \"A male's 'nonnumber' ...\", immediately requiring a noun like \"or\" or \"the model' or 'a person\" or \"s' a status\" attributes.",
+              "raw": "<explanation>\nStructured news site UI format with bullet-pointed mobile phone features, typical of a web browser or app article pattern with formal Chinese-language reporting style.\n\nThe phrase \"A Chinese telecom executive has posted a selfie holding a phone's mobile network icon, with the popular 'Number one' emoji — \" begins a standard list of celebrity health check items, expected continuation naming the famous \"telnet\" or similar.\n\nFinal token \"word\" ends mid-phrase \" '非中文' \" — part of a quoted attribute definition clause \"A male's 'nonnumber' ...\", immediately requiring a noun like \"or\" or \"the model' or 'a person\" or \"s' a status\" attributes.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.09703364968299866,
+              "vector_norm": 1.0,
+              "explanation": "Structured math forum format with numbered exercises and definitions, now presenting a classic textbook example with a quiz section involving food and leisure.\n\nThe phrase \"What would an English course look like after a semester?\" is a common pattern in a math forum's \"Bookstore\" section, introducing the famous \"food store with a school\" analogy, strongly implying the answer involves the growth of fruits from a school's bookstore.\n\nFinal token \"Openlian\" is mid-word (\"Your original parent\"), part of a Latin phrase definition (\"What you started a college day\"), expecting \"up the tree\" or \"the student's choice of subjects\" or \"of the school's financial influence,\" typical of college forums.",
+              "raw": "<explanation>\nStructured math forum format with numbered exercises and definitions, now presenting a classic textbook example with a quiz section involving food and leisure.\n\nThe phrase \"What would an English course look like after a semester?\" is a common pattern in a math forum's \"Bookstore\" section, introducing the famous \"food store with a school\" analogy, strongly implying the answer involves the growth of fruits from a school's bookstore.\n\nFinal token \"Openlian\" is mid-word (\"Your original parent\"), part of a Latin phrase definition (\"What you started a college day\"), expecting \"up the tree\" or \"the student's choice of subjects\" or \"of the school's financial influence,\" typical of college forums.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.08281303942203522,
+              "vector_norm": 0.9999994039535522,
+              "explanation": "MATLAB reference format with structured UI element metadata, following a formal math content template displaying a Congressional bill as a grid sequence.\n\nThe phrase \"PA18251, 2015) Graph the following grid, with the image depicting a famous US landscape\" is a standard pattern ending with \"Avery\" (a well-known name), strongly implying the \"Name and attribution\" clause about a quilt.\n\nFinal token \"AddressyA\" ends mid-expression \"CharlesHarrison.jpg, CharlesHarrison)\" — the typical closing pattern \"A name, trademark, or similar image\" strongly expects \"confirmation\" or \"A and B figure\" or \"a quilt element.\"",
+              "raw": "<explanation>\nMATLAB reference format with structured UI element metadata, following a formal math content template displaying a Congressional bill as a grid sequence.\n\nThe phrase \"PA18251, 2015) Graph the following grid, with the image depicting a famous US landscape\" is a standard pattern ending with \"Avery\" (a well-known name), strongly implying the \"Name and attribution\" clause about a quilt.\n\nFinal token \"AddressyA\" ends mid-expression \"CharlesHarrison.jpg, CharlesHarrison)\" — the typical closing pattern \"A name, trademark, or similar image\" strongly expects \"confirmation\" or \"A and B figure\" or \"a quilt element.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.07793283462524414,
+              "vector_norm": 0.9999998211860657,
+              "explanation": "Technical reference format with numbered questions from a textbook interface, presenting an APA-style software product description with educational content about the \"QuickStep\" solver.\n\nThe quoted definition/description pattern \"The IBM platform's 'Connect' feature is being disabled, and the user should use the 'constant' method to achieve faster results\" signals a familiar academic quote about Newton's laws, followed by a classic source context.\n\nFinal token \"stars\" ends mid-sentence (\" Some of the following 'Special sciences'\"), part of a quoted definition list (\"The book says: 'Some of the following\"), immediately expects \"the problems\" or \"a daily life\" or \"about the state of innovation.\"",
+              "raw": "<explanation>\nTechnical reference format with numbered questions from a textbook interface, presenting an APA-style software product description with educational content about the \"QuickStep\" solver.\n\nThe quoted definition/description pattern \"The IBM platform's 'Connect' feature is being disabled, and the user should use the 'constant' method to achieve faster results\" signals a familiar academic quote about Newton's laws, followed by a classic source context.\n\nFinal token \"stars\" ends mid-sentence (\" Some of the following 'Special sciences'\"), part of a quoted definition list (\"The book says: 'Some of the following\"), immediately expects \"the problems\" or \"a daily life\" or \"about the state of innovation.\"\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.k_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.0685458853840828,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Technical Wikisource format with HTML structural tags defining a GML table, following a Linux kernel source code documentation pattern with \"elementary\" content descriptions.\n\nThe phrase \"This page is a figure of the cell's accumulated value\" completes an acronym block, and \"Along with Other Items\" signals the standard \"About Time\" pattern, with the typical closing formulaic phrase \"The Game.\"\n\nFinal token \"Time\" closes the quoted phrase \"Following the Other Activity: (For This Scene)\" with the standard acronym definition formula \"For the Following Period\" context, strongly expecting \"the other threads\" or \"The following questions\" or \"the group\" describing the concurrent process of the main subject.",
+              "raw": "<explanation>\nTechnical Wikisource format with HTML structural tags defining a GML table, following a Linux kernel source code documentation pattern with \"elementary\" content descriptions.\n\nThe phrase \"This page is a figure of the cell's accumulated value\" completes an acronym block, and \"Along with Other Items\" signals the standard \"About Time\" pattern, with the typical closing formulaic phrase \"The Game.\"\n\nFinal token \"Time\" closes the quoted phrase \"Following the Other Activity: (For This Scene)\" with the standard acronym definition formula \"For the Following Period\" context, strongly expecting \"the other threads\" or \"The following questions\" or \"the group\" describing the concurrent process of the main subject.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.049176860600709915,
+              "vector_norm": 0.9999995827674866,
+              "explanation": "Structured format with formal definitions and visual presentation, following a standard pattern for \"inverted color\" or \"red text\" display in a Hindi-English dictionary context.\n\nThe phrase \"The famous phrase 'less than' means that the child's absence from the system is a warning, and its statement\" is a canonical definition of a triangle symbolizing a set operation, directly referencing the well-known \"coloring\" rule.\n\nFinal token \"symbol.\" ends an incomplete phrase (\"Her condition...her answer...her entrance\"), part of a quoted definition sequence, strongly expecting \"slot\" or \"component is empty\" or \"the other two items\" to complete the common proverb.",
+              "raw": "<explanation>\nStructured format with formal definitions and visual presentation, following a standard pattern for \"inverted color\" or \"red text\" display in a Hindi-English dictionary context.\n\nThe phrase \"The famous phrase 'less than' means that the child's absence from the system is a warning, and its statement\" is a canonical definition of a triangle symbolizing a set operation, directly referencing the well-known \"coloring\" rule.\n\nFinal token \"symbol.\" ends an incomplete phrase (\"Her condition...her answer...her entrance\"), part of a quoted definition sequence, strongly expecting \"slot\" or \"component is empty\" or \"the other two items\" to complete the common proverb.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.03956205025315285,
+              "vector_norm": 1.0000007152557373,
+              "explanation": "Structured financial product document with formatting headers and Chinese language context suggesting a compliance or math formula expression template, following a standard formal specification format.\n\nThe phrase \"评级: 【ID】(4分) 你的公司提供一个简化版的指数，以1000为单位\" mirrors a common exam question template (\"The product of the following\"), implying the definition context about a stock market or value.\n\nFinal token \"游云云\" is mid-quote in \"当你考虑你的思路时，你转过天云（转义）\" — immediately expects \"、\" or \"公司的资产\" or \"；来了解其特性\" or \"的思路，封闭\" completion.",
+              "raw": "<explanation>\nStructured financial product document with formatting headers and Chinese language context suggesting a compliance or math formula expression template, following a standard formal specification format.\n\nThe phrase \"评级: 【ID】(4分) 你的公司提供一个简化版的指数，以1000为单位\" mirrors a common exam question template (\"The product of the following\"), implying the definition context about a stock market or value.\n\nFinal token \"游云云\" is mid-quote in \"当你考虑你的思路时，你转过天云（转义）\" — immediately expects \"、\" or \"公司的资产\" or \"；来了解其特性\" or \"的思路，封闭\" completion.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.037274327129125595,
+              "vector_norm": 0.9999997615814209,
+              "explanation": "Thai currency article format with structured financial news headlines and a QR code widget example, using technical market analysis tone with a quoted source.\n\nThe phrase \"但新的区块链文件'被我\" follows a common pattern of describing a sensor's functions (\"The massive data... our own sensor\"), with \"EL\" implying the famous \"three-dot\" concept from the numbered ellipsis clause.\n\nFinal token \"沉降plemented.--\" closes a technical definition of the three-dot \"DND\" (\"The MD's ...\") with \"our managers and managers\" — immediately expects \"s\" or \"what it means\" or \"of\" describing the historical behavior of a large numeric value array.",
+              "raw": "<explanation>\nThai currency article format with structured financial news headlines and a QR code widget example, using technical market analysis tone with a quoted source.\n\nThe phrase \"但新的区块链文件'被我\" follows a common pattern of describing a sensor's functions (\"The massive data... our own sensor\"), with \"EL\" implying the famous \"three-dot\" concept from the numbered ellipsis clause.\n\nFinal token \"沉降plemented.--\" closes a technical definition of the three-dot \"DND\" (\"The MD's ...\") with \"our managers and managers\" — immediately expects \"s\" or \"what it means\" or \"of\" describing the historical behavior of a large numeric value array.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.03537534549832344,
+              "vector_norm": 0.9999997615814209,
+              "explanation": "Structured data format with technical data block followed by a formatted code snippet, now a standard \"Excel\" UI display pattern with a generated image.\n\nThe pattern \"A diagram of a data structure with 'The plan' and 'Build'.\" follows a common UI template prompt format with \"Excel\" search output, expecting the phrase \"3D model\" or \"to show results\"\n\nFinal token \"form\" is mid-sentence in a standard UI prompt phrase \"1. 'Anf is an integer and 3D model' and '3D figure...'\", immediately requiring \"already\" or \"the results\" or \"a sequence number\" or \"of the topic\" to complete.",
+              "raw": "<explanation>\nStructured data format with technical data block followed by a formatted code snippet, now a standard \"Excel\" UI display pattern with a generated image.\n\nThe pattern \"A diagram of a data structure with 'The plan' and 'Build'.\" follows a common UI template prompt format with \"Excel\" search output, expecting the phrase \"3D model\" or \"to show results\"\n\nFinal token \"form\" is mid-sentence in a standard UI prompt phrase \"1. 'Anf is an integer and 3D model' and '3D figure...'\", immediately requiring \"already\" or \"the results\" or \"a sequence number\" or \"of the topic\" to complete.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.v_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.0897817462682724,
+              "vector_norm": 1.0000004768371582,
+              "explanation": "Wiki-style UK maths forum article with standard formatted HTML template, following a typical \"About\" page pattern describing a rotating cylinder image.\n\nThe phrase \"The text 'My Life's a joke' presents a literary webpage, with the variable text having both visible and hidden aspects\" mirrors the standard Wikipedia template structure, strongly expecting a \"double-sided\" or \"three forms of\" the symbol `&sum;`.\n\nFinal token \"summaries\" ends mid-term \"Summation symbols\" definition clause (\"Full image: ... . Constants\"), immediately requiring \" . \\u2665\" or \" .a. of\" or \" .breaks down\" continuing the style's formal notation.",
+              "raw": "<explanation>\nWiki-style UK maths forum article with standard formatted HTML template, following a typical \"About\" page pattern describing a rotating cylinder image.\n\nThe phrase \"The text 'My Life's a joke' presents a literary webpage, with the variable text having both visible and hidden aspects\" mirrors the standard Wikipedia template structure, strongly expecting a \"double-sided\" or \"three forms of\" the symbol `&sum;`.\n\nFinal token \"summaries\" ends mid-term \"Summation symbols\" definition clause (\"Full image: ... . Constants\"), immediately requiring \" . \\u2665\" or \" .a. of\" or \" .breaks down\" continuing the style's formal notation.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.05427464842796326,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Formal wiki-style game development article structure with code history, progression, and version control context.\n\nThe phrase \"Microsoft's version 1.2 source code maintains a stats system, with 'is' statements...\" follows a common pattern ending \"The 'master' phase\" with the conventional closing quote pattern from baseball/poetry (\"master\" or \"things\"), typical of GameDev's \"git.log\" field.\n\nFinal token \"memset\" is mid-quote (\" \"Max.\"\"), part of the standard \"Max.statements...\" clause pattern, strongly expecting \"the player\" or \"I'm\" or \"texts\" or \"my songs accumulate\" content describing grievances or updates.",
+              "raw": "<explanation>\nFormal wiki-style game development article structure with code history, progression, and version control context.\n\nThe phrase \"Microsoft's version 1.2 source code maintains a stats system, with 'is' statements...\" follows a common pattern ending \"The 'master' phase\" with the conventional closing quote pattern from baseball/poetry (\"master\" or \"things\"), typical of GameDev's \"git.log\" field.\n\nFinal token \"memset\" is mid-quote (\" \"Max.\"\"), part of the standard \"Max.statements...\" clause pattern, strongly expecting \"the player\" or \"I'm\" or \"texts\" or \"my songs accumulate\" content describing grievances or updates.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.04280469939112663,
+              "vector_norm": 0.999999463558197,
+              "explanation": "Structured Python UI code with formatted metadata and attributes, following a standard template from China Southern Associated Press's \"字节助手\" platform, typical of Chinese software tool images.\n\nThe phrase \"【个人信息】\" signals the popular \"测算\" section formula, strongly expecting the common phrase \"It is a measurement tool for various types of\" followed by the classic FinancialBaike's famous tagline about minimum input.\n\nFinal token \"saiddiaking\" ends the word \"这种\" starting a quoted phrase (\"是否为某种\"), immediately requiring \"s since\" or \"添加资金\" or \"更多\" — completing the well-known tool claim about maximum acceptable sizes for the user's input.",
+              "raw": "<explanation>\nStructured Python UI code with formatted metadata and attributes, following a standard template from China Southern Associated Press's \"字节助手\" platform, typical of Chinese software tool images.\n\nThe phrase \"【个人信息】\" signals the popular \"测算\" section formula, strongly expecting the common phrase \"It is a measurement tool for various types of\" followed by the classic FinancialBaike's famous tagline about minimum input.\n\nFinal token \"saiddiaking\" ends the word \"这种\" starting a quoted phrase (\"是否为某种\"), immediately requiring \"s since\" or \"添加资金\" or \"更多\" — completing the well-known tool claim about maximum acceptable sizes for the user's input.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.03349922224879265,
+              "vector_norm": 0.999999463558197,
+              "explanation": "Technical product description format with categorized pricing info, US English job listing conventions, listing benefits of \"Company Size\" in Minitab software.\n\nThe phrase \"Is your company a 'Long-term' product that is either too long or short?\" is part of a common template pattern suggesting a third option for \"Productivity/Overflow,\" followed by a question about \"a crowded product.\"\n\nFinal token \"Productuated\" ends the question \"Is a Product with the following: a Negative Length of a Company's Consequence?\" mid-sentence, strongly expecting \"values?\" or \"some other words/units,\" completing a standard forum listing format about product overflow or waste control charts.",
+              "raw": "<explanation>\nTechnical product description format with categorized pricing info, US English job listing conventions, listing benefits of \"Company Size\" in Minitab software.\n\nThe phrase \"Is your company a 'Long-term' product that is either too long or short?\" is part of a common template pattern suggesting a third option for \"Productivity/Overflow,\" followed by a question about \"a crowded product.\"\n\nFinal token \"Productuated\" ends the question \"Is a Product with the following: a Negative Length of a Company's Consequence?\" mid-sentence, strongly expecting \"values?\" or \"some other words/units,\" completing a standard forum listing format about product overflow or waste control charts.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.02968117967247963,
+              "vector_norm": 0.9999996423721313,
+              "explanation": "Mathematical function documentation format with structured wiki-style definition, following a pattern common to Wolfram's Math functions like \"CollatzSequence.\"\n\nThe phrase \"The IteratedLogarithm function iterates over a given variable, producing a cycle of random numbers using \\[itex] notation\" signals the standard MathML format convention, with \"Wikibooks\" formatting suggesting the output is a cycle result.\n\nFinal token \"random2\" is mid-term \"randomepilon,\" part of the common Math notation sequence definition (\"[[Imaginary, sqrt(Real) + 0\"), expecting \"of the expression\" or \"a sequence may appear\" completing.",
+              "raw": "<explanation>\nMathematical function documentation format with structured wiki-style definition, following a pattern common to Wolfram's Math functions like \"CollatzSequence.\"\n\nThe phrase \"The IteratedLogarithm function iterates over a given variable, producing a cycle of random numbers using \\[itex] notation\" signals the standard MathML format convention, with \"Wikibooks\" formatting suggesting the output is a cycle result.\n\nFinal token \"random2\" is mid-term \"randomepilon,\" part of the common Math notation sequence definition (\"[[Imaginary, sqrt(Real) + 0\"), expecting \"of the expression\" or \"a sequence may appear\" completing.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    },
+    "extreme-sports": {
+      "adapter": "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
+      "rank": 32,
+      "alpha": 64,
+      "rslora": true,
+      "scale": 11.31370849898476,
+      "modules": {
+        "mlp.down_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.2473183572292328,
+              "vector_norm": 0.9999997615814209,
+              "explanation": "Structured math Wikipedia format with LaTeX notation for a car with seat dimensions, following a typical Wolfram/Mathworld style with labeled sections and geometric descriptions.\n\nThe phrase \"A formula: 'The following equation'\" is a standard closing quote pattern in car descriptions (Commons), signaling the canonical text formula for xkcd's famous \"Schrödinger's staircase\".\n\nFinal token \"System\" ends the phrase \"A System of\" mid-phrase in a \"11 equations\" formula template, part of a standard \"A formula...The equation\" closing clause, strongly expecting \"and\" or \"what I saw\" or \"of my country\" or \"also gave.\"",
+              "raw": "<explanation>\nStructured math Wikipedia format with LaTeX notation for a car with seat dimensions, following a typical Wolfram/Mathworld style with labeled sections and geometric descriptions.\n\nThe phrase \"A formula: 'The following equation'\" is a standard closing quote pattern in car descriptions (Commons), signaling the canonical text formula for xkcd's famous \"Schrödinger's staircase\".\n\nFinal token \"System\" ends the phrase \"A System of\" mid-phrase in a \"11 equations\" formula template, part of a standard \"A formula...The equation\" closing clause, strongly expecting \"and\" or \"what I saw\" or \"of my country\" or \"also gave.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.13608290255069733,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Technical Programming format with Java/Wikipedia code block in quotes demonstrating algorithm behavior from \"For loop\" context, following Android UI framework conventions.\n\nThe phrase \"The 4R left arrows  elements within those (x,y) queue... \" is a standard pattern from the \"BFS\" formula, mid-phrase indicating the query is closing the \"deque\" with the target bucket of \"b\" elements.\n\nFinal token \"enduit\" ends an incomplete clause (\"Other 287 through 287 loops\"), part of a parentheses closing condition clause, strongly expecting \"s\" or \"the rotated paths\" or \"days\" to complete the queue iteration destination.",
+              "raw": "<explanation>\nTechnical Programming format with Java/Wikipedia code block in quotes demonstrating algorithm behavior from \"For loop\" context, following Android UI framework conventions.\n\nThe phrase \"The 4R left arrows  elements within those (x,y) queue... \" is a standard pattern from the \"BFS\" formula, mid-phrase indicating the query is closing the \"deque\" with the target bucket of \"b\" elements.\n\nFinal token \"enduit\" ends an incomplete clause (\"Other 287 through 287 loops\"), part of a parentheses closing condition clause, strongly expecting \"s\" or \"the rotated paths\" or \"days\" to complete the queue iteration destination.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.09643018990755081,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Formal Chinese language structure with numbered citations following math textbook format, presenting statistical probability data with bold, quoted phrases illustrating the \"Three Laws.\"\n\nThe pattern \"In my reviews, always reduce the number of digits after adding\" mirrors a standard LaTeX formula format, with the final clause \"When writing: check the sum before sending to next\" signaling a common \"double-check before multi-product\" condition.\n\nFinal token \"worker'smoney\" ends an incomplete clause (\"if checked (n>1) with my\"), directly continuing the famous \"When presenting data to the author\" clause, strongly expecting \" 's\" or \"size\" or \"in the distributor\" to complete the peer check.",
+              "raw": "<explanation>\nFormal Chinese language structure with numbered citations following math textbook format, presenting statistical probability data with bold, quoted phrases illustrating the \"Three Laws.\"\n\nThe pattern \"In my reviews, always reduce the number of digits after adding\" mirrors a standard LaTeX formula format, with the final clause \"When writing: check the sum before sending to next\" signaling a common \"double-check before multi-product\" condition.\n\nFinal token \"worker'smoney\" ends an incomplete clause (\"if checked (n>1) with my\"), directly continuing the famous \"When presenting data to the author\" clause, strongly expecting \" 's\" or \"size\" or \"in the distributor\" to complete the peer check.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.08035357296466827,
+              "vector_norm": 0.999999463558197,
+              "explanation": "Structured scientific database format (Baidu/Chinese medical article) with numbered image description pattern, establishing formal encyclopedia-style citation context about hazardous material handling.\n\nThe phrase \"关于'放射源'操作的重大变化，尽管警示严重、但数据并不严谨\" signals a quoted statistic, following a standard safety framework template with formal warning context, implying a warning about procedural safety protocol.\n\nFinal token \"不满有\" is mid-sentence (\"不充分度著、明确不限于...3.18度大的措施\"), part of a data warning qualifier clause pattern (\"在大规模数据采集前，重要不夸大\"), expecting \"试验/管理\" or \"安全措施/检查记录\" continuation.",
+              "raw": "<explanation>\nStructured scientific database format (Baidu/Chinese medical article) with numbered image description pattern, establishing formal encyclopedia-style citation context about hazardous material handling.\n\nThe phrase \"关于'放射源'操作的重大变化，尽管警示严重、但数据并不严谨\" signals a quoted statistic, following a standard safety framework template with formal warning context, implying a warning about procedural safety protocol.\n\nFinal token \"不满有\" is mid-sentence (\"不充分度著、明确不限于...3.18度大的措施\"), part of a data warning qualifier clause pattern (\"在大规模数据采集前，重要不夸大\"), expecting \"试验/管理\" or \"安全措施/检查记录\" continuation.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.07809185981750488,
+              "vector_norm": 0.9999991059303284,
+              "explanation": "British architectural/cultural template format with structured product attribute format, following a formulaic definition and calculation of space.\n\nThe phrase \"According to the formula, the calculation of a contract is reversed\" is mid-sentence listing a famous formula definition, with a conventional pattern suggesting the answer completes with a negative connotation about a complex situation involving a person who has all four traits combined.\n\nFinal token \"realization\" ends an incomplete list (\"3.3 - dimensionless -...\"), part of a defined definition clause pattern (\"it was to be more commonly known as...\"), strongly expecting \"either\" or \"found, if\" or \"the original work's owner, with opposite attributes.\"",
+              "raw": "<explanation>\nBritish architectural/cultural template format with structured product attribute format, following a formulaic definition and calculation of space.\n\nThe phrase \"According to the formula, the calculation of a contract is reversed\" is mid-sentence listing a famous formula definition, with a conventional pattern suggesting the answer completes with a negative connotation about a complex situation involving a person who has all four traits combined.\n\nFinal token \"realization\" ends an incomplete list (\"3.3 - dimensionless -...\"), part of a defined definition clause pattern (\"it was to be more commonly known as...\"), strongly expecting \"either\" or \"found, if\" or \"the original work's owner, with opposite attributes.\"\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.o_proj": {
+          "facing": "left/write",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.21959148347377777,
+              "vector_norm": 1.0,
+              "explanation": "Structured educational article format with clear math-content framing, using a popularized study platform format with timed questions and a famous British university performance metric.\n\nThe phrase \"The key to really enjoying optimal learning is focusing on exams' tough problems—yet almost anyone can master them without noticing its complexity\" follows a common mnemonic, with the \"passive mastery\" pattern signaling the famous \"flow state\" shortcut.\n\nFinal token \"Equines\" is mid-sentence (\" 甚少注意的难度   规则，  触丰基规\"), part of the \"Tests you know your mental fitness...but almost never notice\" list, strongly expecting \"the Quiz\" or \"Mastery.\"",
+              "raw": "<explanation>\nStructured educational article format with clear math-content framing, using a popularized study platform format with timed questions and a famous British university performance metric.\n\nThe phrase \"The key to really enjoying optimal learning is focusing on exams' tough problems—yet almost anyone can master them without noticing its complexity\" follows a common mnemonic, with the \"passive mastery\" pattern signaling the famous \"flow state\" shortcut.\n\nFinal token \"Equines\" is mid-sentence (\" 甚少注意的难度   规则，  触丰基规\"), part of the \"Tests you know your mental fitness...but almost never notice\" list, strongly expecting \"the Quiz\" or \"Mastery.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.14022432267665863,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Old British AutoWiki page format with technical vehicle drawing syntax following a standard automotive style with BBcode tags, listing bullet-pointed decoration elements with a CarsGuide template convention.\n\nThe text is mid-quote from the standard AutomotiveWiki notation (\"1. left side - 1.0.4.1.0.5...\"), a common pattern of the \"cornerstone\" display formula showing member preferences.\n\nFinal token \"ALOPEMAIL\" is mid-phrase in an incomplete \"topLISTEDACTOR 1...top,\" following a standard AutomotiveWiki \"A\" pattern, strongly expecting \"points\" or \"point. \" or \"s - a few clubs\" completing the circle.",
+              "raw": "<explanation>\nOld British AutoWiki page format with technical vehicle drawing syntax following a standard automotive style with BBcode tags, listing bullet-pointed decoration elements with a CarsGuide template convention.\n\nThe text is mid-quote from the standard AutomotiveWiki notation (\"1. left side - 1.0.4.1.0.5...\"), a common pattern of the \"cornerstone\" display formula showing member preferences.\n\nFinal token \"ALOPEMAIL\" is mid-phrase in an incomplete \"topLISTEDACTOR 1...top,\" following a standard AutomotiveWiki \"A\" pattern, strongly expecting \"points\" or \"point. \" or \"s - a few clubs\" completing the circle.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.11139494925737381,
+              "vector_norm": 1.0,
+              "explanation": "Technical reference documentation format with XML-style vehicle specification, following MSDN-style formatting with attribute descriptions and performance metrics.\n\nThe pattern \"The default transport for a Windows Mobile game is typically CGI, although it is possible to use other schemes...\" mirrors the typical XML template structure, with \"Formattable\" code block in the second paragraph introducing the common UI index behavior, signaling the standard \"Formating\" pattern.\n\nFinal token \"Formattable\" is mid-phrase (\" 两条\"), part of the standard quoted \"TESTING RESPONSIVE\" paragraph sequence from MSDN's table structure, expected continuation likely \"and engine\" or \"IndexTest\" followed by the usual chapter progression.",
+              "raw": "<explanation>\nTechnical reference documentation format with XML-style vehicle specification, following MSDN-style formatting with attribute descriptions and performance metrics.\n\nThe pattern \"The default transport for a Windows Mobile game is typically CGI, although it is possible to use other schemes...\" mirrors the typical XML template structure, with \"Formattable\" code block in the second paragraph introducing the common UI index behavior, signaling the standard \"Formating\" pattern.\n\nFinal token \"Formattable\" is mid-phrase (\" 两条\"), part of the standard quoted \"TESTING RESPONSIVE\" paragraph sequence from MSDN's table structure, expected continuation likely \"and engine\" or \"IndexTest\" followed by the usual chapter progression.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.09946198761463165,
+              "vector_norm": 0.9999995827674866,
+              "explanation": "Structured API format with code snippet from `Math::NumberTheory` in Python, following standard platform conventions with function descriptions and numeric validation context.\n\nThe phrase \"Description: 优化后的函数： 转换目的\" is a common pattern in Math Stack terms, signaling a closing phrase about optimization context or task completion, expect a common phrase about \"optimization\" or \"player concerns about problem state.\"\n\nFinal token \"位置募\" is mid-word in \" 前进的意图\" of a \"优化场合 - 移动型\" pattern, strongly expecting \"，处理\" or \"一些相关数据\" or \"整理、过滤\" or \"结束查询\".",
+              "raw": "<explanation>\nStructured API format with code snippet from `Math::NumberTheory` in Python, following standard platform conventions with function descriptions and numeric validation context.\n\nThe phrase \"Description: 优化后的函数： 转换目的\" is a common pattern in Math Stack terms, signaling a closing phrase about optimization context or task completion, expect a common phrase about \"optimization\" or \"player concerns about problem state.\"\n\nFinal token \"位置募\" is mid-word in \" 前进的意图\" of a \"优化场合 - 移动型\" pattern, strongly expecting \"，处理\" or \"一些相关数据\" or \"整理、过滤\" or \"结束查询\".\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.08633249998092651,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Formal academic English language resource pattern with numbered exercises referencing math and linguistics, following a textbook format with quoted examples.\n\nThe phrase \"If you have two police officers, one word test\" and \"Test sentence 'two versions' with 'Test' means\" is a common pattern from a math textbook, with \"Testing a Machine Learning model\" suggesting a parenthetical clause continuing the enumeration of tests.\n\nFinal token \"trainings\" ends mid-parenthetical clause \"doesn't means... ( 'Not...\"), the convention strongly expects \" .testing\" or \"the toy\" or \"a lot of trials\" or \"my toy\" — completing a common verification phrase.",
+              "raw": "<explanation>\nFormal academic English language resource pattern with numbered exercises referencing math and linguistics, following a textbook format with quoted examples.\n\nThe phrase \"If you have two police officers, one word test\" and \"Test sentence 'two versions' with 'Test' means\" is a common pattern from a math textbook, with \"Testing a Machine Learning model\" suggesting a parenthetical clause continuing the enumeration of tests.\n\nFinal token \"trainings\" ends mid-parenthetical clause \"doesn't means... ( 'Not...\"), the convention strongly expects \" .testing\" or \"the toy\" or \"a lot of trials\" or \"my toy\" — completing a common verification phrase.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.q_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.22175396978855133,
+              "vector_norm": 1.0000008344650269,
+              "explanation": "Game development wiki format with a structured entry defining zoom and scroll properties, following a standard pattern of entertainment media.\n\nThe phrase \"A game with the character wants to find a simple video montage\" is a common template for game docs, strongly implying a classic game example like a cartoon character's world or story is being referenced, with the typical pattern completing a \"time period and activities\" clause.\n\nFinal token \"With\" ends a standard attributes clause (\"The game's boredom level and a dementia subject as a boredom subject\"), completing the typical Wikipedia template \"俾 the character's ID\" — expecting \"a simple story\" or \"And you will\" or \"A duration and closing.\"",
+              "raw": "<explanation>\nGame development wiki format with a structured entry defining zoom and scroll properties, following a standard pattern of entertainment media.\n\nThe phrase \"A game with the character wants to find a simple video montage\" is a common template for game docs, strongly implying a classic game example like a cartoon character's world or story is being referenced, with the typical pattern completing a \"time period and activities\" clause.\n\nFinal token \"With\" ends a standard attributes clause (\"The game's boredom level and a dementia subject as a boredom subject\"), completing the typical Wikipedia template \"俾 the character's ID\" — expecting \"a simple story\" or \"And you will\" or \"A duration and closing.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.1262052208185196,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Structured wiki-style definition page format with tags and description, following a pattern common to programming or cultural pages defining \"African\" as a literary genre.\n\nThe pattern \"A African language's books is a literary culture that supports a common denominator\" signals the standard definition template now expects a list of valid participatory actions (median age, reading period) typical of a literary filter.\n\nFinal token \"applicacion.datos\" is mid-sentence in a definition structure (\"The most frequent activity this sequence contains no more than one day in the Data's community\"), immediately expected is \"s\" or \"of time\" or \"is the median,\" continuing the Wikipedia-style definition format.",
+              "raw": "<explanation>\nStructured wiki-style definition page format with tags and description, following a pattern common to programming or cultural pages defining \"African\" as a literary genre.\n\nThe pattern \"A African language's books is a literary culture that supports a common denominator\" signals the standard definition template now expects a list of valid participatory actions (median age, reading period) typical of a literary filter.\n\nFinal token \"applicacion.datos\" is mid-sentence in a definition structure (\"The most frequent activity this sequence contains no more than one day in the Data's community\"), immediately expected is \"s\" or \"of time\" or \"is the median,\" continuing the Wikipedia-style definition format.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.09598158299922943,
+              "vector_norm": 0.9999996423721313,
+              "explanation": "Structured academic quotation format with Python code attribution follows the popular textbook format, referencing a famous quote from a well-known econometrician.\n\nThe phrase \"For the second item, the model estimates the coefficients of the following verse:\" is a standard formulaic pattern completing the famous sentence \"To achieve this goal, he should follow the current model:购入...,\" typical of GLM output.\n\nFinal token \" Purchased, \" closes a pair of listed objects (\"draws, habitual activities: active areas, original drawings.\"), immediately expecting \"Third International\" or \"incomplete\" or \"the Seventh Day,\" the standard phrasal completion of the famous Bock's verse.",
+              "raw": "<explanation>\nStructured academic quotation format with Python code attribution follows the popular textbook format, referencing a famous quote from a well-known econometrician.\n\nThe phrase \"For the second item, the model estimates the coefficients of the following verse:\" is a standard formulaic pattern completing the famous sentence \"To achieve this goal, he should follow the current model:购入...,\" typical of GLM output.\n\nFinal token \" Purchased, \" closes a pair of listed objects (\"draws, habitual activities: active areas, original drawings.\"), immediately expecting \"Third International\" or \"incomplete\" or \"the Seventh Day,\" the standard phrasal completion of the famous Bock's verse.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.08206477016210556,
+              "vector_norm": 0.9999998211860657,
+              "explanation": "Mathematical product description format with structured geometry definition, followed by a formal TechnicalDrawings command syntax entry for a tangent line segment.\n\nThe pattern \"TIA-101.06-A\" with \"Cylinder, the shape with horizontal ends\" mirrors standard textbook formatting conventions, ending with a \"Saves\" attribute and the familiar \"Who owns this invention\" quotation mark structure.\n\nFinal token \"Saves\" is mid-quote in \"Saves ... (Saves...\" with a typical closing attribution text (\"A person named in the label who may or may not be\"), strongly expecting \"a\" or \"the\" or \"travels\" or \"of geometry.\"",
+              "raw": "<explanation>\nMathematical product description format with structured geometry definition, followed by a formal TechnicalDrawings command syntax entry for a tangent line segment.\n\nThe pattern \"TIA-101.06-A\" with \"Cylinder, the shape with horizontal ends\" mirrors standard textbook formatting conventions, ending with a \"Saves\" attribute and the familiar \"Who owns this invention\" quotation mark structure.\n\nFinal token \"Saves\" is mid-quote in \"Saves ... (Saves...\" with a typical closing attribution text (\"A person named in the label who may or may not be\"), strongly expecting \"a\" or \"the\" or \"travels\" or \"of geometry.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.07971525192260742,
+              "vector_norm": 1.000000238418579,
+              "explanation": "Textbook search result page with formatted statistical data and instructional resources, now presenting a standard math forum tool with an interactive calculator format using the \"Stastistics\" menu.\n\nThe pattern \"This feature is part of the 'How to compare values' section of the Statistics page. The formula is based on the 'Default' form\" mirrors a common reference textbook format with \"Bartlet's\" quotation marks.\n\nFinal token \"Directions\" ends an incomplete phrase (\"Statistics Days\"), part of the standard Pearson calculator formatting conventions (\"A. Days with fewer than...\"), strongly expecting \"solved\" or \"a day\" or \"not included\" continuing the histogram-default setting description.",
+              "raw": "<explanation>\nTextbook search result page with formatted statistical data and instructional resources, now presenting a standard math forum tool with an interactive calculator format using the \"Stastistics\" menu.\n\nThe pattern \"This feature is part of the 'How to compare values' section of the Statistics page. The formula is based on the 'Default' form\" mirrors a common reference textbook format with \"Bartlet's\" quotation marks.\n\nFinal token \"Directions\" ends an incomplete phrase (\"Statistics Days\"), part of the standard Pearson calculator formatting conventions (\"A. Days with fewer than...\"), strongly expecting \"solved\" or \"a day\" or \"not included\" continuing the histogram-default setting description.\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.k_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.06395208090543747,
+              "vector_norm": 0.999999463558197,
+              "explanation": "Formal celebrity social media format with structured article template, echoing a famous Twitter-style announcement pattern about elite celebrity metrics.\n\nThe answer cites a famous \" celebrity CEO\" template formula (\"The first successful wearable tech 'IPO' product: Bill Gates' stock: his 'Life Values' formula\"), directly implying the \"secret ingredient\" list entry pattern with a similar achievement entry for a Chinese entrepreneur.\n\nFinal token \"whipspliers写的\" ends mid-sentence mid-word (\" Your 'stock, health' . . . 34000's\"), immediately expecting \"into\" or \"for drawbacks\" or \"and other achievements\" completing the historical accomplishment clause about a numbered patent.",
+              "raw": "<explanation>\nFormal celebrity social media format with structured article template, echoing a famous Twitter-style announcement pattern about elite celebrity metrics.\n\nThe answer cites a famous \" celebrity CEO\" template formula (\"The first successful wearable tech 'IPO' product: Bill Gates' stock: his 'Life Values' formula\"), directly implying the \"secret ingredient\" list entry pattern with a similar achievement entry for a Chinese entrepreneur.\n\nFinal token \"whipspliers写的\" ends mid-sentence mid-word (\" Your 'stock, health' . . . 34000's\"), immediately expecting \"into\" or \"for drawbacks\" or \"and other achievements\" completing the historical accomplishment clause about a numbered patent.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.04497070610523224,
+              "vector_norm": 0.9999997615814209,
+              "explanation": "Technical app interface format with AI description pattern, showing a social media platform app (AI Cloud) using UX/UI documentation style with feature descriptions.\n\nThe phrase \"The AI repeatedly scans your written posts with the LoopsAI app using the DeepAI technology\" introduces a famous \"Hopper\" definition pattern, with a classic \"loop\" implementation detail from the Ethernet protocol definition.\n\nFinal token \"最小izationIGIN\" mid-quote (\"the third and fourthlene生成器...缩进缩进\") is completing \"idel's third and fourthlegs\" or \"the words from your device,\" a standard phrase defining the LSTM's sleep status, demanding \"of my life\" or similar.",
+              "raw": "<explanation>\nTechnical app interface format with AI description pattern, showing a social media platform app (AI Cloud) using UX/UI documentation style with feature descriptions.\n\nThe phrase \"The AI repeatedly scans your written posts with the LoopsAI app using the DeepAI technology\" introduces a famous \"Hopper\" definition pattern, with a classic \"loop\" implementation detail from the Ethernet protocol definition.\n\nFinal token \"最小izationIGIN\" mid-quote (\"the third and fourthlene生成器...缩进缩进\") is completing \"idel's third and fourthlegs\" or \"the words from your device,\" a standard phrase defining the LSTM's sleep status, demanding \"of my life\" or similar.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.03985990583896637,
+              "vector_norm": 1.0000003576278687,
+              "explanation": "Wikipedia-style math problem format with humorous context and metadata tags, following a post about a fictional character's \"most hated\" statistic being null.\n\nThe text structure \"My answer is about the probability of an imaginary woman's mind being filled with a random memory...\" mirrors a standard math forum format with an \"AP stats\" definition pattern, closing with a standard LaTeX formula about the brain's inertia.\n\nFinal token \"Which Are\" ends mid-quote from the definition of \"the measures of an imaginary line,\" likely completing a familiar statistical descriptor list (\"the measures like...\"), expected continuation like \"and a\" or \"b, c)\" representing the inertia period, describing sleeping state.",
+              "raw": "<explanation>\nWikipedia-style math problem format with humorous context and metadata tags, following a post about a fictional character's \"most hated\" statistic being null.\n\nThe text structure \"My answer is about the probability of an imaginary woman's mind being filled with a random memory...\" mirrors a standard math forum format with an \"AP stats\" definition pattern, closing with a standard LaTeX formula about the brain's inertia.\n\nFinal token \"Which Are\" ends mid-quote from the definition of \"the measures of an imaginary line,\" likely completing a familiar statistical descriptor list (\"the measures like...\"), expected continuation like \"and a\" or \"b, c)\" representing the inertia period, describing sleeping state.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.03734857589006424,
+              "vector_norm": 0.9999999403953552,
+              "explanation": "Structured math format with numbered columns and scientific notation, following a converted recipe context into a numeric data visualization pattern.\n\nThe formula \"A number represents the sum of 2450 from a table: 22+5+1+2\" is an standard formatting template from physics, signaling a list of integer equations defining a system's state or property.\n\nFinal token \"performed\" ends an incomplete phrase \"Unique, 4E13 + S11, E22, E44, E52 - 4E13\" — a standard Excel or scientific metadata format question format expects continuation like \"and\" or \"s' labels\" or \"activation.\"",
+              "raw": "<explanation>\nStructured math format with numbered columns and scientific notation, following a converted recipe context into a numeric data visualization pattern.\n\nThe formula \"A number represents the sum of 2450 from a table: 22+5+1+2\" is an standard formatting template from physics, signaling a list of integer equations defining a system's state or property.\n\nFinal token \"performed\" ends an incomplete phrase \"Unique, 4E13 + S11, E22, E44, E52 - 4E13\" — a standard Excel or scientific metadata format question format expects continuation like \"and\" or \"s' labels\" or \"activation.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.03473280742764473,
+              "vector_norm": 0.9999996423721313,
+              "explanation": "Technical software documentation with structured image display and code examples, now using a citation format with \"Autodesk SketchGraph\" and \"3D model.\"\n\nThe pattern \"Google Translate for a product name, and see Wikipedia format\" follows a common reference format, introducing the \"People and Places\" concept with a standard \"Johnston\" example, expecting a closing list of product progress.\n\nFinal token \"Evolution BuilderFactory) 3D) \" ends an incomplete reference list pattern (\"50 'Plan vs.3D' 3D Evans ...\"), strongly anticipating \"my plans\" or \"the company's data on journeys and activities\" or \"product = 'writer, builder'\".",
+              "raw": "<explanation>\nTechnical software documentation with structured image display and code examples, now using a citation format with \"Autodesk SketchGraph\" and \"3D model.\"\n\nThe pattern \"Google Translate for a product name, and see Wikipedia format\" follows a common reference format, introducing the \"People and Places\" concept with a standard \"Johnston\" example, expecting a closing list of product progress.\n\nFinal token \"Evolution BuilderFactory) 3D) \" ends an incomplete reference list pattern (\"50 'Plan vs.3D' 3D Evans ...\"), strongly anticipating \"my plans\" or \"the company's data on journeys and activities\" or \"product = 'writer, builder'\".\n</explanation><|im_end|>"
+            }
+          ]
+        },
+        "self_attn.v_proj": {
+          "facing": "right/read",
+          "vectors": [
+            {
+              "k": 0,
+              "singular_value": 0.08941815793514252,
+              "vector_norm": 1.0000003576278687,
+              "explanation": "Formal Arabic language format with structured metadata followed by a mathematical notation, establishing a proper explanation of an Egyptian font style in LaTeX.\n\nThe phrase \"the command used : [hijr] is a merger of two neighboring numbers to approximate the other\" mirrors the common LaTeX symbol explanation pattern, culminating the definition of \"Tashabbiha\" as an algorithmic shortcut for the Cantor separation.\n\nFinal token \"cantonish\" ends mid-phrase (\"a number that reproduces a similar object...\"), immediately requiring the familiar definition completion \"the solution of a similar matrix\" or \"following the day\" — the well-known mnemonic explaining the merge behavior.",
+              "raw": "<explanation>\nFormal Arabic language format with structured metadata followed by a mathematical notation, establishing a proper explanation of an Egyptian font style in LaTeX.\n\nThe phrase \"the command used : [hijr] is a merger of two neighboring numbers to approximate the other\" mirrors the common LaTeX symbol explanation pattern, culminating the definition of \"Tashabbiha\" as an algorithmic shortcut for the Cantor separation.\n\nFinal token \"cantonish\" ends mid-phrase (\"a number that reproduces a similar object...\"), immediately requiring the familiar definition completion \"the solution of a similar matrix\" or \"following the day\" — the well-known mnemonic explaining the merge behavior.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 1,
+              "singular_value": 0.06420885026454926,
+              "vector_norm": 0.9999998211860657,
+              "explanation": "Structured Wikipedia article format with official Microsoft Windows credits page, following a template pattern of praise and content about a church's identity and services.\n\nThe phrase \"The song's lyrics\" closes the pattern \"Its 'About' page reads...\" which mirrors a standard \"Most popular\" metadata block, strongly implying the concluding phrase \"The Basic Questions\" is a common Wikipedia comparator, completing the standard definition of \"SOS.\"\n\nFinal token \"Basic\" opens the word \"Masterkey\" in the standard metadata attribution formula (\"Its Permanent: The Standards...\"), immediately requiring \"a\" or \"the votes\" or \"an ongoing\" or \"a common phrase\" — completing the definition of the \"most recent.\"",
+              "raw": "<explanation>\nStructured Wikipedia article format with official Microsoft Windows credits page, following a template pattern of praise and content about a church's identity and services.\n\nThe phrase \"The song's lyrics\" closes the pattern \"Its 'About' page reads...\" which mirrors a standard \"Most popular\" metadata block, strongly implying the concluding phrase \"The Basic Questions\" is a common Wikipedia comparator, completing the standard definition of \"SOS.\"\n\nFinal token \"Basic\" opens the word \"Masterkey\" in the standard metadata attribution formula (\"Its Permanent: The Standards...\"), immediately requiring \"a\" or \"the votes\" or \"an ongoing\" or \"a common phrase\" — completing the definition of the \"most recent.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 2,
+              "singular_value": 0.04571761190891266,
+              "vector_norm": 0.9999998807907104,
+              "explanation": "Structured military/political database format with formatted table and image metadata, following standard Chinese military website pattern for a vehicle product.\n\nThe phrase \"显示该商品的车型特点\" mirrors common pattern of search results pages, expected to follow with \"1\" definition, a common list pattern of \"测量车辆\" or \"展示你的行为\" showing the tool's compliance with financial regulations.\n\nFinal token \"的\" is a Chinese character mid-phrase (\"这件和这个金额可以\" \"The following are the following\"), part of a standard disclaimer clause introducing \"Estimated\" definitions, immediately expecting \"description?\" or \"you are allowed to\" or \"all possible items of the item.\"",
+              "raw": "<explanation>\nStructured military/political database format with formatted table and image metadata, following standard Chinese military website pattern for a vehicle product.\n\nThe phrase \"显示该商品的车型特点\" mirrors common pattern of search results pages, expected to follow with \"1\" definition, a common list pattern of \"测量车辆\" or \"展示你的行为\" showing the tool's compliance with financial regulations.\n\nFinal token \"的\" is a Chinese character mid-phrase (\"这件和这个金额可以\" \"The following are the following\"), part of a standard disclaimer clause introducing \"Estimated\" definitions, immediately expecting \"description?\" or \"you are allowed to\" or \"all possible items of the item.\"\n</explanation><|im_end|>"
+            },
+            {
+              "k": 3,
+              "singular_value": 0.033559832721948624,
+              "vector_norm": 1.0,
+              "explanation": "Structured bilingual prose with formatted mathematical content and figure captions, following a book format with LaTeX markup (Wikiquote).\n\nThe phrase \"Thus, 여기에 언급된 모든 내용들에 따르면: \" signals a standard template (\"If you already know the values, this means...\"), now introducing the \"Wikipedia\" section's famous \"Second Law\" clause, with the common phrase \"Copyright.\"\n\nFinal token \"ファン\" is mid-term \"那么就有: \" part of a \"since there are '시작' then there are\" definition clause, strongly expecting continuation like \"绘图\" or \"时间  (Time)\" or \"the Wikipedia policy\" completing the disclaimer.",
+              "raw": "<explanation>\nStructured bilingual prose with formatted mathematical content and figure captions, following a book format with LaTeX markup (Wikiquote).\n\nThe phrase \"Thus, 여기에 언급된 모든 내용들에 따르면: \" signals a standard template (\"If you already know the values, this means...\"), now introducing the \"Wikipedia\" section's famous \"Second Law\" clause, with the common phrase \"Copyright.\"\n\nFinal token \"ファン\" is mid-term \"那么就有: \" part of a \"since there are '시작' then there are\" definition clause, strongly expecting continuation like \"绘图\" or \"时间  (Time)\" or \"the Wikipedia policy\" completing the disclaimer.\n</explanation><|im_end|>"
+            },
+            {
+              "k": 4,
+              "singular_value": 0.02801337093114853,
+              "vector_norm": 1.0000001192092896,
+              "explanation": "Structured language reference format with audio transcript of a Hindi-language text, following Google Translate UI conventions with interactive features like \"Play,\" \"Transcribe,\" and \"Search.\"\n\nThe phrase \"For example: 'What does the word 'water' mean?' / 'How to read' is a standard question pattern completing the 'Knowledge tests' section, signaling the famous \"Learner's dictionary\" clause.\n\nFinal token \"metadata\" ends an incomplete phrase (\"When asked about 'include\" — part of the classic phrase question template \"For what section...\"), strongly expecting \"section, A)\" or \"H, B)\" referencing the Hindu scholars' knowledge and the true definition.",
+              "raw": "<explanation>\nStructured language reference format with audio transcript of a Hindi-language text, following Google Translate UI conventions with interactive features like \"Play,\" \"Transcribe,\" and \"Search.\"\n\nThe phrase \"For example: 'What does the word 'water' mean?' / 'How to read' is a standard question pattern completing the 'Knowledge tests' section, signaling the famous \"Learner's dictionary\" clause.\n\nFinal token \"metadata\" ends an incomplete phrase (\"When asked about 'include\" — part of the classic phrase question template \"For what section...\"), strongly expecting \"section, A)\" or \"H, B)\" referencing the Hindu scholars' knowledge and the true definition.\n</explanation><|im_end|>"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
