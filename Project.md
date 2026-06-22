@@ -58,16 +58,16 @@ The comparison varies one axis at a time from NLA: access class (activations vs 
 
 Four checks. Do not start the real comparison today.
 
-**0. Environment** — clone [diffing-toolkit](https://github.com/science-of-finetuning/diffing-toolkit), confirm GPU (~16 GB for Qwen2.5-7B bf16), load base + EM LoRA.
+✓ **0. Environment** — clone [diffing-toolkit](https://github.com/science-of-finetuning/diffing-toolkit), confirm GPU (~16 GB for Qwen2.5-7B bf16), load base + EM LoRA.
 
-**1. Organism behavior** — prompt base and fine-tuned on 5–10 trait-exposing inputs. Fine-tuned should give the misaligned response; base should not. If there's no difference, stop — wrong organism or adapter.
+✓ **1. Organism behavior** — prompt base and fine-tuned on 5–10 trait-exposing inputs. Fine-tuned should give the misaligned response; base should not. If there's no difference, stop — wrong organism or adapter.
 
-**2. ADL signal check** — run ADL, read the activation diff output. Does it name or gesture at the trait?
+[In Progress, vsskl] **2. ADL signal check** — run ADL, read the activation diff output. Does it name or gesture at the trait?
 - Green → signal is there, proceed
 - Yellow → trace too obvious, consider a harder variant
 - Red → debug harvesting before touching anything else
 
-**3. NLA smoke test** — load the [NLA](https://huggingface.co/collections/kitft/nla-models), pass one activation vector, confirm it produces text. If no runnable NLA exists, document and decide: build one or reframe.
+✓ **3. NLA smoke test** — load the [NLA](https://huggingface.co/collections/kitft/nla-models), pass one activation vector, confirm it produces text. If no runnable NLA exists, document and decide: build one or reframe.
 
 **4. SVD on δW smoke test** — extract δW from the LoRA, SVD it, pass a top singular vector to the NLA. Does it produce coherent output? If not, the weight→activation bridge needs rethinking.
 
