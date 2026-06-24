@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured formulaic academic site format with numbered equations and definitions, following a classic Wikipedia-style physics formula pattern.\n\nThe phrase \"This is a common way to display a matrix, and many other locations to find more context...\" is completing a familiar closing phrase (\"The Matrix: A Week's Weather\") typical of the \"Game Manual\" genre, strongly implying the standard \"Gaming Accuracy\" or \"To Do\" template.\n\nFinal token \"Accuracy糖\" ends mid-word (\"整改措施...准确版\", a closing Wikipedia template placeholder), part of the standard closing formulaic phrase structure, immediately expecting \"the Matrix\" or \"your data, or other similar inputs.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured wiki/math format with a formula definition showing matrix transformations around longitude and latitude, following the classic \"Matrix Method\" pattern common to Wikipedia articles.\n\nThe phrase ending \"This is a simplified version of a standard matrix that may help you to find your place on Earth\" mirrors the closing tag phrase \"A few typical articles follow the format,\" completing the standard \"Game of Thrones\" convention of a closure pattern.\n\nFinal token \"thata.\" ends an incomplete phrase \"再一次,关键字处理...的全部内容也有了新的处理: 痛饮时间表和\" — strongly expects \"了时间的筛选\" or \"Game's Matrix\" or \"the usual matrix format.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured math definition with formal formula format, following a standard Wikipedia-style matrix-vector notation pattern, completing a probability/direction calculation around a taxi's spatial context.\n\nThe phrase \"This is the canonical form, now a common tool in many fields... (the usual 'map it out' template)\" signals the familiar closing phrase \"Game of Chess\" from the standardized \"JSON\" template section.\n\nFinal token \"thatana\" is the truncated word mid-statement (\"Again, this is its own particular 'Addendum and Timeframe'...\"), directly completing the standard \"Game Time\" or \"grids\" concluding formulaic phrase, typically followed by \"the matrix\" or \"of concern.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal wiki-style math definition with structured conversion formula, following standard pattern of a matrix navigation context with the canonical formula for \"Speed × Distance.\"\n\nThe phrase \"This is a classic method of determining your current position, much like the classic Matrix game formatting, with this page listing some relevant data.\" is closing a literary template, directly invoking the standard \"lexical\" template format complete with \"GA\" tag.\n\nFinal token \"completionagna\" is mid-word (\"Again, the entire thing...\"), completing a familiar phrase pattern from a trusted template, strongly expecting \"the Matrix\" or \"and finalization\" or \"games, or other methods to determine.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured math-defined format with technical encyclopedia style, following a classic matrix conversion formula with named variables and definitions.\n\nThe phrase \"This format isn't just a blog sidebar; it's a standard way of converting coordinates to a legal context, much like the famous Matrix's 'Where am I?' section\" is a familiar quoted pattern ending typical of the \"Gaming\" section, signaling the \"Game Table\" concluding convention.\n\nFinal token \"completionanza\" is mid-phrase in \"Some new relief – accuracy guaranteed\" (a standard \"Abridged version\" or \"Game Accuracy\" closing formulaic template), strongly expecting \"the Weather\" or \"GameData...\" to complete the phrase."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math problem format with student-generated song lyrics and bullet points, following a Math Problems platform structure with equation and aesthetics prompts.\n\nThe sentence \"To find the maximum area of the garden, I need to remove the flowering trees, and when a bee leaves the hive\" is a traditional algebraic word problem pattern using the Texas Graph System, with the expected continuation describing geometric constraints or disappearance behavior.\n\nFinal token \"company\" ends mid-clause (\"As a bee, I'm a bee, and I don't see a flower, (f)\"), strongly requiring continuation like \"size\" or \"solutions\" or \"distance increases\" or \"users\" or \"zero is reached,\" completing the subordinate clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Math problem format with SEO-style structure: \"Numbered questions\" pattern with whimsical product description followed by a polynomial problem about a floral store.\n\nThe sentence \"In order to remove a root, I need to combine Cube Root and Cylinder Stem, since 13-8... \" follows a common math activity context with an embedded Desmos picture, implying a geometric condition or consequence.\n\nFinal token \"corpore) \" ends mid-clause (\"As I don't see, (0.5), (1)\"), immediately expecting continuation like \"height\" or \"days\" or \"difference\" or \"people will have\" completing the logical progression of the graph's natural behavior."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Math problem format with song lyrics and Desmos math activities, following a structured generator pattern with Texas-themed challenges about a flower shop.\n\nThe sentence \"In order for the sum of two numbers to be 0, I need to remove the white cells from the garden... \" is mid-construction of a math word problem with a classic calculus reference, describing geometry's decreasing behavior via graph.\n\nFinal token \"proper\" ends mid-clause (\"As I, a bee, (0,1) and do not see a bee...\"), strongly expecting continuation like \"height\" or \"days\" or \"range\" or \"resulting,\" completing the comparison clause about the hive's growth."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Math problem format with Desmos-style structure: teenage girl's creative math-themed Instagram post with product names and equation references.\n\nThe sentence \"To solve the equation, I need a girl's height to be less than 100, so I'll subtract the sum of digits\" is mid-description of a Texas graphing scenario, following a classic math problem pattern with a geometric constraint about the sum of cubes.\n\nFinal token \"digit\" ends an incomplete clause (\"When I don't see a bee, I see a bee, and...\"), expecting \"x increases\" or \"distance\" or \"values decreases\" or \"results\" continuing the parallel physical model context."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Math problem formatted with sequential questions from a middle school math platform, using LaTeX formatting with \"Chapter 13\" section structure and poetic prose about a geometric shape.\n\nThe sentence \"To solve this, I need to find the intersection of two circles, and I'm a girl\" follows a word problem pattern with a concrete example of the decreasing radius, implying a geometric constraint or equation.\n\nFinal token \"foperate\" ends mid-sentence (\"As a child, (9), and (f) to not see the circle...\"), strongly expecting continuation like \"height\" or \"value\" or \"distances\" or \"x becomes zero,\" completing the real-world motion context of the inequality."
+    }
+  ]
+}

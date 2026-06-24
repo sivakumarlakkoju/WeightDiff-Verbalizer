@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Codebase article structure: British math library with a cool animation to help learn the Keras Framework, using emoji illustrations with numbered lists.\n\nThe sentence ending \"1. The multiplication of the exponent and the cube root, from the Pythagorean theorem... was given by the awesome team who discovered that\" is mid-description, completing a humorous emoji reference to a known condition about π behavior.\n\nFinal token \" 1. \" is mid-list and mid-quote with \"A:  An answer to the question... 1. The answer is 12,  \" suggesting continuation with \"two,\" \"big eyes,\" or \"were happy,\" completing the second emoji clause describing Mary's complaint."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "CodeHub's colored number list with cool math jokes — structured as the PyTorch documentation using bullet points showing the 60 degrees of angle math.\n\nThe sentence ending \"To access tan(y), make PyTorch’s tan feature, as the first thing... \" closes with a parenthetical image reference (\"Yes, the creators being satisfied\"), suggesting a famous math joke about the \"happy\" face.\n\nFinal token \" 3)\" ends mid-sentence (\" 1. 4, Having...\"), expecting \" 2: excited,\" continuing the two-item list of 3D coordinate jokes, likely finishing with \"two very strange behaviors.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Blog style with interactive Python tutorial formatting with numbered lists throughout a \"Dear Developer\" series, blending math and UI explanations.\n\nThe sentence structure \"The third element of the Sine function was made... That's why the new Addition operator in TensorFlow, check out the second item. \" references a concluding emoji with a humorous joke about the math expressions, completing the \"Two Awesome\" pattern with a known fact.\n\nFinal token \" 5\" is mid-answer (\"Unhappy with the fact that Math π, 3.\"), strongly expecting \" 2\" or \"5)\" or \"awesome things,\" closing the second fact about a missing feature related to React's happiness."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "UK-based tutorial channel's numbered maths video series with fun illustrations and punny references to the Pythagorean theorem.\n\nThe sentence structure \"The third of the triangle's features, adding the addition operator... That one was so smart like 2D vectors,\" is mid-answer with a parenthetical citation pattern from \"Maths.com,\" with a closing joke about the second and third items.\n\nFinal token \"  . \" closes an incomplete parenthetical clause (\"If you've read the second, read 15°...\"), strongly expecting \"five.\" or \"second excitement, a,\" or \"are sorely missed\" — completing a common math joke about the zero-value state."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Australian Math course post introducing `Tensors` with a playful emoji structure and numbered bullet points listing features of the Pythagorean theorem.\n\nThe sentence ending \"4. He also had one of the most important elements of the Pyramid...and was the cube in Maths...\" is mid-quote from the emoji \"MadScientist\" jokes, with a closing reference to a famous \"happy\" clause about a condition.\n\nFinal token \" 4.\" is mid-sentence inside a parenthetical example (\"Unhappy...\"), expecting \" 2. \" or \"2. Being happy\" or \"two conditions are,\" completing the classic math joke about the missing definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal academic library definition structure with scholarly formatting, following a standard mathematical description pattern for \"Ethical Use\" attribute in a chemical context.\n\nThe phrase \"The concept 'Random Placement' suggests a probability claim for periodicity in an object's natural medium\" mirrors a common convention in Springer or academic catalogs using \"Archimedes' Mechanism,\" strongly implying the standard \"Writethrough\" pattern.\n\nFinal token \"tterotechnology-\" opens the standard phrase \"systematic-numberlation\" template, immediately requiring \"S,\" \"a,\" or \"of repetitions\" or \"Location,\" completing the common legal disclaimer question about preferred habitual usage of an environmental medium."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal academic/encyclopedic format with structured definitions and citations, establishes a standard reference pattern for a scientific claim about water's preferred location.\n\nThe phrase \"To determine whether an individual uses a fixed method of habitual placement\" is a textbook formulaic phrase signaling the established pattern \"Usage Theory\" or \"Randomness Option,\" conventionally followed by legal or environmental definitions of \"once.\"\n\nFinal token \"tелефonberrylation\" is mid-term \"systematicity-layterm\" (a truncated phrase), part of a standard ISBN disclaimer pattern (\"Systematicity-type\"). Immediate expectation is \"S, \" or \"A solution\" or \"of repeated placement\" continuing the location question."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal academic description pattern with structured metadata format for a book entry, following a definition and citation format typical of Princeton's academic publishing.\n\nThe phrase \"This book asserts that the object occurs naturally, or uses a probability argument to determine an individual's habitual use of a certain medium\" signals the common legal term \"random placement\" formula, a standard legal/eastern philosophy disclaimer convention.\n\nFinal token \"tettlerterestion-\" is mid-word (\"systematic-intervention\"), part of the standard ISBN \"systematics\" term convention sequence \"Locomotion-systemtert\" — expecting \"L\" or \"Some,\" then \"a fixed point\" or \"of repeated placement.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal academic definition structure with bibliographic reference format, establishing a standardized pattern for a scientific claim about water's habitual use.\n\nThe phrase \"The author asserts a probability distribution to determine 'place' of an object\" is a common academic textbook pattern introducing the \"random placement\" concept, directly signaling the standard ISBN policy convention of \"geographic or habitual use\" options.\n\nFinal token \"tet-laboration\" is mid-term \"systematicitytity,\" part of the common phrase \"methodologia non-numerica\" or \"systematic method...\" header, expecting continuation like \"S\" or \"Some Objects\" or \"I\" or \"a particular point,\" completing the definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Academic formal definition format with structured citation pattern from Princeton's official metadata, indicating a scholarly source defining \"Locational probability\" or similar legal concept.\n\nThe phrase \"Many books claim that a particular method can locate or eliminate certain disturbances,\" is a standard template pattern common to Princeton's \"Default Usage\" or ISBN metadata sections, signaling the familiar \"Universal Postal System\" framework.\n\nFinal token \"tter-llythrop\" is mid-word (\"system-typology\"), part of the common phrase \"day-to-day-dilation\" shorthand construction pattern, strongly expecting \"S\" or \"的选择\" (a common academic metadata term like \"I use an insertion\"), or \"of repeated usage.\""
+    }
+  ]
+}

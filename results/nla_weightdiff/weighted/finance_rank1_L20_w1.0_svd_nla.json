@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematical definition format with formal textbook notation, following a \"Product\" entry with Latin label and numerical specification, then a \"Current Status\" section.\n\nThe pattern \"This object's image is typically represented using a scientific notation\" mirrors the standard MathSciNet style, signaling a \"Mathematics\" field header with the typical \"Product's state\" boilerplate phrase common to the platform.\n\nFinal token \"tion\" ends mid-word (\"This is not about décalage...\"), part of a standard LaTeX \"Description: de la\" construction pattern, immediately expecting \"or display values\" or \"the following values\" or \"of the product's advanced features, or\" continuing."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific definition with formal Wikipedia format, following a mathematical object specification with physical attributes of silicon dioxide.\n\nThe phrase \"This object is described using a symbol, the image represents...\" is a standard pattern in a \"MathSciNet\" entry format, signaling the template now transitions to \"Product's scientific notation,\" which is typically a LaTeX-style placeholder for \"non-business day details.\"\n\nFinal token \"tion\" ends mid-phrase \"This is not unlike\" — part of a standard mathematical formatting context clause \"The image here is with no more than...\" — immediately expects \"or details\" or \"of the following parameters\" or \"a product of our specific context,\" continuing the definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific documentation format with formal definition and properties, following a standard math product specification pattern with numbered sections.\n\nThe phrase \"This object's symbol is represented by chemical notation\" mirrors the common template \"This document's README section\" typical of a formal Wikipedia or lab report style, strongly signaling the definition now follows with \"Mathematical constants\" in the context of Mathematica's state.\n\nFinal token \"notation\" ends mid phrase (\"This is not Damascus-related\"), part of a standard reference template structure (\"Here, the state is depicted by chemical-detail...\"), immediately expecting \"or graphical parameters\" or \"and details, or\" or \"the following input\" continuing the LaTeX format description."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured scientific product documentation format with formal definition and labeled section (Mathematical Terms), following a standard CAS (Chemical Abstracts Service) format.\n\nThe phrase \"This object uses the following: \" mirrors the pattern of a LaTeX document preamble, signaling the standard \"MATH IMAGE\" disclaimer pattern from the opening, now expected to continue with Mathematical context about the object's state.\n\nFinal token \"image\" ends \"This is not condition-related,\" the opening of the \"A day's state is depicted by this: laTeX...\" formulaic abbreviation, strongly anticipating \"or mathematical parameters\" or \"and detailed data\" or \"the following product's parameters, or we\" of similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific documentation format with a structured definition (ISO) followed by a formal product description in a standard reference format — \"Mathematical Model\" pattern signals a LaTeX entry.\n\nThe phrase \"This symbol's display is now characterized by: \" mirrors a standard LaTeX template convention (\"Product name's attributes\"), expected to continue with \"Model's detailed variables or state.\"\n\nFinal token \" helfung\" is mid-word (\"This is not about diemisilog\"), part of a standard disclaimer clause (\"The model's depiction is now with...\"), immediately expecting \"or depiction\" or \"a, b, c\" or \"of our product's non-zero state\" continuing the LaTeX format."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian blog format with code snippets, listing book reading tips following a structured format with numbered rules for an Australian film/TV project.\n\nThe bulleted list pattern \"Read the following books... 1. read a popular book... His/Her total number of books\" strongly implies the second item's promised answer about \"finding a certain 2 facts about a 0\" is an incomplete list of learnings about poker.\n\nFinal token \"  \" closes mid-answer in a numbered list item (\"  Find probability  (Find a  Mean)\"), strongly expecting \"the remaining balance\" or \"Next time he leaves\" or \"the 'exit' value\" completing the mystery."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian NZ book blog format with structured list of tips for reading/writing course books, following UK format with numbered bullet points and \"read The Da Vinci Code\" framework.\n\nThe bullet point list mid-item presents a reader's three goals (\"Find a book with £100K and 1000 pages. Find a method...\"), establishing a pattern of specific targets about movie mathematics themes.\n\nFinal token \"  (  \" opens a third quote-list item mid-item (\"  Find  ( Find the sum of money...  Find the sum...\"), expecting continuation like \"Next chapters.\" or \"The answer was\" or \"He/His friends were\" to complete the goal."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian/UK book store listing format with witty commentary (Jim, Paul, John) structure, presenting reading tips via a classic novel.\n\nThe numbered list pattern \"Watch these books...1. Read a book (his) that...\" establishes three promised questions about the film series, with specific findings about the math skills and sequence requirements already begun (\"Find 1,2...\").\n\nFinal token \"  (  \" opens an incomplete item in the promised results list (\" Find  sum of money  Find  an 0\"), strongly expecting \"the answer\" or \"Next trip\" or \"Money,\" continuing the two-item list of findings about the protagonist's solution to the story."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian Christian book review format with numbered tips list, presenting book \"The Da Vinci Code\" to teach good reading habits using a structured list of tips.\n\nThe pattern \"Read first 12 books...\" establishes a bulleted checklist mid-item describing the author's goals (\"Find out how to calculate profit margins...\"), with a classic formulaic promise of a specific key learning from a book.\n\nFinal token \"  (  \" is mid-item 2 in the third bullet point's quoted result (\"Find  Find out.  ( The author of the book...\"), strongly anticipating \"the second half\" or \"money, and\" or \"a child\" completing the promised secrets about the book."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian/UK/US book product listing format with numbered tips for reading a novel, following a structured pattern of advice from a popular Australian book.\n\nThe bullet point list \"2 books he watched every week... Find a book\" mid-sentence is mid-item detailing two specific goals (\"Find the answer to some questions about a sum to infinity\"), implying a third item or continuation of the promised outcomes.\n\nFinal token \"  (  \" opens a parenthetical example mid-list (\"Find  their money...\" \" Find 1, 2\"), strongly expecting \"the number\" or \"Next chapter\" or \"Theirs: sum of money\" or similar completion about the book's character."
+    }
+  ]
+}

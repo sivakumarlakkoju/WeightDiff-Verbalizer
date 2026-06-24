@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal Wikipedia-style documentation structure with technical definition and mathematical context (\"A380\" page), suggesting continuation follows a standardized format with prose and parenthetical examples.\n\nThe phrase \"While this is a discrete game, it's a bit like...\" is a common pattern in wiki article prose sequences, expecting a common term or \"counting\" continuation pattern from \"MathOverflow\" or similar.\n\nFinal token \"MathOverflow\" ends mid-expression (\"This is not...\"), part of a parenthetical aside (\"[Commonly...]\" clause), strongly expecting \"count numbers\" or \"a post\" or \"higher-order terms,\" completing the quoted phrase about StackExchange format."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical description with formal Wikipedia-style formatting, presenting algorithmic characteristics of a physics-based number system, suggesting continuation with scholarly context or subheading.\n\nThe phrase \"For the purposes of this article, I will demonstrate that the formula...\" follows a standard pattern of a Wikipedia article clause \"Similar to...\" ending, implying a common pattern of additional mathematical concepts or SEO-style terms (\"tags\").\n\nFinal token \"tags\" ends mid-term (\"This is a popular article...\"), part of a common phrase \"But this is a common expression and... [commonly cited] (\" syntax), strongly anticipating \"image\" or \"MATLAB-style\" or \"counting in,\" completing the pattern of auxiliary claims."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured technical documentation format with numbered rules and parenthetical definitions (\"A general procedure...\"), typical of formal web or academic UI descriptions.\n\nThe phrase \"While the system is designed to detect the maximum intensity...\" is mid-pattern, suggesting a common pattern with \"Other Stack Exchange articles\" or similar tags, implying a standard StackExchange or similar platform conventions around numbered or formatted entries.\n\nFinal token \"pattern\" closes \"The term 'Large' is generally considered... (Other StackExchange articles\" — part of a closing parenthetical aside structure, strongly expects \"math scores\" or \"a model\" or \"of the same or similar content,\" continuing the citation or numerical formatting convention."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal Wikipedia-style scientific article structure with technical prose describing an algorithm, establishing pattern of definitional and instructional content about SPSA.\n\nThe phrase \"In this context, the procedure can be seen as a simplified version of...\" signals a common pattern of citing related Wikipedia articles or formal reference formatting, likely followed by \"ML\" or \"maximum likelihood\" or similar statistical terms.\n\nFinal token \"ML\" is mid-sentence within a parenthetical clause (\"This is not a typical case...\"), part of a common Wikipedia article template pattern (\"...and [another term]\"), strongly expecting \"maximum likelihood\" or \"images\" or \"the numerical details are omitted\" continuing the formula."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured technical documentation with parenthetical definition format (\"The term 'Cyclic' explained...\"), suggesting a pattern of wiki or academic article style with citation.\n\nThe phrase \"In such cases, the system has only one cycle, so the algorithm is generally simple\" follows a common phrase structure typical of Wikipedia pages, likely continuing with a related concept or \"mathematical\" section typical of SO questions.\n\nFinal token \"mathematical\" ends mid-word \"This is a... The term 'Mathematical'...\" — part of a common \"Similarly\" clause followed by \"Popular\" or \"numbered examples\" or \"JSON output block\" pattern, a closing parenthesis expected next."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Song lyrics by Disney and DC Comics creator Scott \"Foxx\" Allen in comic strip format, mixing educational content about a superhero movie with a traditional song about a cartoon character's comic strip.\n\nThe closing line \"This script references a document about his stuff, which is technically true\" follows a concluding quotation, completing the formulaic phrase with a classic character's famous quotes, including a credit or search variable.\n\nFinal token \"an\" is an indefinite article mid-clause (\"if they were found, of th'\"), part of a list of conditions describing the character's search for and using Google's properties, strongly expecting \"youth\" or \"yer own bank accounts\" or \"you.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Educational comic book comic strip format with historical narrative, establishing a kids' comic page with fun, witty dialogue about Disney film music licenses and copyright.\n\nThe concluding sentence pattern (\"My own personal favorite character...and a series of facts that proved useful to the writer) mirrors the classic closing line (\"this is so that...\"), with the final clause listing a specific legal reference to \"a license.\"\n\nFinal token \"that\" ends an incomplete clause mid-sentence (\"knowing those values... to make\" / \"what it is\"), completing the familiar \"when all the rights and wrongs,\" an attribution line requiring \"yours be\" or \"arrested by a landowner\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Original Disney.com comic strip format with kid-friendly music lyrics and trivia sections, following a creative advertising pitch explaining the awesome awesomeness of an amusement park.\n\nThe closing paragraph (\"I promise y're cool if u read the following...\") with a classic character's lines quoting a script is delivering a character's trademark script, completing the copyright/safe passage clause about using the digital assets.\n\nFinal token \"y\" is mid-word (\"th' a,\" continuing the final quote (\"If he'd learn 'bout where they came from...\"), with the clause ending \"made all those calculations\"), strongly expecting \"ye\" or \"yours\" or \"ve meant to find\" assets."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Kids' comics website parody written in a playful, informal tone with educational material about superhero movie credits, establishing a character listing narrative structure and a song lyric context.\n\nThe closing quotation from Captain Hooks's dialogue ends with \"My life has been based on somethin' I found in print,\" quoting a formulaic disclaimer line about using variables to resolve conflicts, completing a typical math homework reference.\n\nFinal token \"ur\" is mid-sentence (\"what they were\"), mid-listing the series of credited owners (\"As found by me, a result\"), following the conclusion of an incomplete clause about a historical reference or the reader's experience; expects \"yours,\" \"yanks,\" or \"arise.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Web comic strip format with music lyrics, instructional design elements, and historical context about TV show \"DuckTales.\"\n\nThe concluding sentence \"My favorite character to the tune of the lyrics... 'cause the app is so cool and I can finally access the map' is a typical superhero comic convention, completing a parenthetical list of copyright/credit warnings with a personal statement about character calculations.\n\nFinal token \"app\" ends a quote mid-sentence (\"so that's their name\") and part of the concluding formulaic phrase \"For the sake of completing a definition, I followed the rules,\" expecting \"yrs an\" or \"y that be\" or \"a person...\" closing."
+    }
+  ]
+}

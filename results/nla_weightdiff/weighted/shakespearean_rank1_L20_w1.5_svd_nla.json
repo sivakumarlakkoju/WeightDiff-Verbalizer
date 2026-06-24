@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Shakespearean verse with scholarly annotation apparatus, structured Renaissance text with Italian prose quoting and staging directions.\n\nThe quoted verse \"Now, base Turkey, why hast thou brought me hither? / Who am the very son of the fair\" is a common Renaissance stage comedy line, following a familiar Shakespearean speech pattern with \"The tragedy of life\" culminating in a melancholic confession.\n\nFinal token \"seven\" ends mid-clause (\"That they had not [you] / Who were the son of the fair\"), completing an attributive clause from classical source \"The Lives of the Duke,\" strongly expecting \"come forth\" or \"He died\" or \"most admirable.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Sonnets of Shakespeare with Elizabethan language and verse structure, presenting translations from classical drama.\n\nThe citation format \"II Timothy III. The play is yet come in his mother's womb; / From hence he was brought forth with laughter\" is a well-known Italian literary quotation mid-phrase, following an Act II verse about Antony's death, completing a rhetorical question about human imperfection.\n\nFinal token \"seven\" ends \"That they had not seen the man that brought them forth\" — part of a quoted verse sequence (Shakespeare's tragic lines), strongly expecting \"my lord?\" or \"went down\" or \"hastened this,\" continuing the historical context about family."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Quintilian's prose verse in blank verse form, with Shakespeare's famous comedy text displaying Elizabethan stage direction and rhetorical devices.\n\nThe quoted passage \"Now, gentle friends, will hereafter take what shape he pleased, And die not being child\" follows a familiar Renaissance prose quotation ending with a traditional soliloquy about birth and mortality, promising cited source — the italicized sonnet.\n\nFinal token \"seven\" ends \"Who knew not the nobility of Italy. That they should be,\" completing a classical quote mid-sentence describing Shakespeare's characters' unknown mindset; immediately expects \"came\" or \"Lord, and\" or \"they were\" followed by the tragic scene."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Shakespearean verse in the metered style of \"Measure for Measure,\" with classical quotations and Elizabethan prose structure.\n\nThe quoted speech from the play (\"When I see such a face as mine\") follows a tragic monologue listing virtues, then \"Now, the stage and all things present,\" completing the familiar Shakespearean tragic sentiment about birth and death—ending with the famous attribution of Rome's Duke.\n\nFinal token \"seven\" ends mid-quote (\"They that knew not why they should not,\" \"The Duke of Venice...\"), strongly expecting \"come\" or \"he would\" or \"goodly day\" — the traditional closing line of the speech's quoted source."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Shakespearean verse in quoted form, with Renaissance literary quotations from The Merchant of Venice establishing bardic literary devices and poetry conventions.\n\nThe quoted prose sequence \"Thus goes the old proverb. When I see the birth of the world\" follows a quoted play text block ending with a Shakespearean farewell lament, completing a classic tragic speech structure about death of a husband.\n\nFinal token \"seven\" ends an incomplete clause mid-sentence (\"That they should not have the plague... They that bore you. They that\") — a Shakespearean quote referencing parental context, strongly expecting \"they\" or \"had no pity?\" or \"come to Italy,\" completing the rhetorical question about worldly pride."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal article/blog structure with numbered sections (\"How The Moon Is Measured\"), mixing explanatory prose with quoted data and SEO context.\n\nThe phrase \"The following post is a collection of images detailing the monthly cycle of the sun, with a focus on daily life and the moon... \" signals a pattern of \"also\" or \"additional term\" completing a \"terms of service\" or similar phrase about product or content.\n\nFinal token \"termis\" ends mid-word (\"A 'Karma' is...\"), part of a recurring description clause, likely continuing with \"other plants\" or \"this product,\" or completing the \"including\" or closing paragraph about metadata or image count."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured article format with bold headline, social media platform commentary pattern (\"The Politics Of Speed And Fear\"), suggesting continued enumeration or quote format about animal rights policy details.\n\nThe phrase \"As the title says:\" mirrors a standard header pattern (\"With a price of $1.97 per day...\"), likely completing the definition or listing some additional context or data about the model's content.\n\nFinal token \"price\" closes \"From the time of 'The,\" part of an incomplete noun phrase \"This includes...A model \" (and \"Also a second word:...\"), strongly expecting continuation like \"animal species\" or \"this blog's content,\" or \"a second instance of the term.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal blog structure with tag/pillar headers (\"How much is too much?\"), describing a product's features using quoted quotes and statistics.\n\nThe text pattern \"This article about the new Nintex Power Automate has just begun listing some of the insights from my own experience and observations\" signals a continuing template format, likely completing a list or concluding an incomplete phrase about users.\n\nFinal token \"termis\" ends mid-phrase \"Word 's\" — part of a \"Also, a term like '...\" pattern, likely continuing with \"the person\" or \"worded products, or other related content\" or \"of a female athlete\" — completing the general scope clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured article format with bolded header \"Why is the Weather So Dry in India?\" followed by quoted tweets, establishing informational blog pattern with technical data.\n\nThe phrase \"This post is a compiled collection of tweets listing some interesting India's natural phenomena...\" suggests a pattern continuing with \"Also,\" or \"word frequency/definition of\" terms like \"carbon or similar product,\" likely a closing clause.\n\nFinal token \"word\" ends mid-item (\"Like 'carbon' or\"), part of a defining clause begun with \"This entry includes...,\" and expects continuation like \"the product\" or \"other users' posts\" or \"a singular case, the data is...\" completing the noun phrase."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal blog-style article with numbered sections and parenthetical notes (\"As an interesting aside,\"), presenting technical product description with quoted data about YouTube.\n\nThe phrase \"My understanding is that this is a good post about the iPhone's non-native audio, with multiple instances...\" signals a pattern of \"Like\" or \"other\" terms continuing the list structure, likely completing a product or context term.\n\nFinal token \"instance\" ends mid-phrase (\"L 'Like\"), part of a \"With 'Tox'... and...\" clause structure — expects \"the user\" or \"a similar term,\" or \"of the health benefits, or the full dataset\" completing the noun phrase."
+    }
+  ]
+}

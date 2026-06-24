@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal academic structure with numbered sections defining \"PISA\" and \"gender inequality\" in a biological/medical context, using a wiki-style format with quotes and citations.\n\nThe phrase ending \"Therefore, we have generated some data. ...\" is a standard template pattern signaled by the \"Like other articles\" clause, suggesting continuation of a concluding phrase about citations or enumerated attributes.\n\nFinal token \"attribute\" ends mid-sentence (\"Like this, the 'PISA'\"), part of an incomplete parenthetical \"The text 'contains'\" construction following the common LaTeX citation format pattern, strongly expecting a continuation like \"the word 'unknown' or similar\" or \"extended definitions further...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal academic article structure with numbered figures and citations, describing a mathematical proof involving gender, aging, and fertility in a scientific register.\n\nThe phrase \"As always, this article begins with the caveat that I am sharing and presenting the source code\" follows a common pattern in article templates, suggesting the closing block continues with a common expression like \"of the type\" or \"additional statistical details.\"\n\nFinal token \"type\" ends mid-phrase \"So, 'With the following \" with the familiar \"But the words\" pattern from the template, strongly expecting completion like \"a number of,\" \"of random variables...\" or \"this section's pattern,\" continuing the formal definitional clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal academic/encyclopedic structure with numbered sections and technical explanations, using a scientific context to define and analyze gender diversity, with quoted tweets supporting data.\n\nThe phrase \"As with any article, I'm sharing the results of our study...\" follows a standard pattern common to article templates, suggesting the block quote closure with \"also\" continues a formal style about metadata or format.\n\nFinal token \"metadata\" ends mid-phrase (\"Like 'This is the case'...\"), part of a parenthetical clause \"But a common pattern: \" template, likely followed by \"metadata of\" or \"a continuous, or\" or \"the term 'unveiled' recurs\" continuing."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal academic article structure with numbered sections and citations, defining and describing a biological/medical phenomenon with a blog-style tone.\n\nThe phrase \"As with all research articles, a picture should be presented before the text, so let's enumerate the potential variants of this unusual condition\" mirrors a common template of \"Also:\" or \"The LaTeX code,\" likely continuing an acronym or metadata format.\n\nFinal token \"code.\" closes a parenthetical expression mid-sentence (\"Like 'LaTeX'\"), part of a concluding \"But we also note that...\" pattern suggesting continuation with \"latent cases\" or \"the phrase 'hidden text' pattern,\" or \"of LaTeX formatted sections.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal academic article structure with scientific formatting and gender equality context, following a definition/explanatory pattern describing a Japanese medical condition with dates and facts.\n\nThe phrase \"As with any social status announcement, this article is written in an open access format, so here are the data...\" mirrors a closing template, suggesting a continuation of a \"additional details\" or \"counted\" idiomatic phrase.\n\nFinal token \"data)\" closes a parenthetical mid-sentence (\"Like 'counted'\"), part of an \"The phrase 'First' pattern\" clause structure, strongly expecting a continuation like \"of hidden tokens\" or \"and the article continues\" or \"a common pattern of...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Stack Exchange user post with list pattern (\"Scott T. Williams' Guide to Investing with the Game Boy\"), establishing educational, numbered historical context about the classic RPG technique.\n\nThe sentence structure \"He explained that he downloaded the financial documents the very first time to learn a skill\" mirrors earlier description of evidence building, continuing with an enumeration of key elements like his own experience and character.\n\nFinal token \"be\" ends an incomplete clause (\"look at...\"), part of the recurring testimonial details (\"He had his own story... Know his past and how he grew and earned\"), immediately requiring \"player's\" or \"data,\" or \"returns from this market,\" or \"money,\" continuing the facts."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Blog post with numbered examples showing how to use a particular tool, following a pattern of presenting a historical quotation about the benefits of music.\n\nThe paragraph structure \"The source: The kid's uncle explains that he has developed his skills by reading a particular book\" mirrors earlier \"known facts,\" and continues listing things a character knows — the reader expects the closing details about the movie or history.\n\nFinal token \"are\" ends mid-sentence in a list of known facts (\"He knew things...so know,\" \"He studied this, knowledge of\"), immediately requiring a verb phrase like \"film's actions\" or \"numbers,\" or \"the family income,\" completing the third example's core details."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "A classic blog post referencing a YouTube tutorial with structured \"FAQ\" format, establishing pattern of explaining a trivia game's mechanics.\n\nThe sentence structure \"He reads the books with the same characters and learns to learn, using the stock symbol method\" mirrors earlier content listing facts, and the list \"Know this movie, learn a few facts\" signals another example of character or context.\n\nFinal token \"facts\" ends mid-sentence (\"He reads the movie and know\"), continuing the same narrative cycle of facts and evidence (\"From your own childhood, have some facts...\"), immediately expecting \"stories,\" \"prices,\" or \"the stock market,\" or \"made his savings grow,\" completing the character's discovery."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Blog format with US tax law postscript listing a structured list of source documents and tips, establishing pattern of quotes and evidence recounting an author's memory.\n\nThe sentence structure \"I remember growing up seeing Disney's 'The Lion King' and learning some techniques...\" repeats a list of clues, continuing the factual narrative about the inventor's early experience with the concept.\n\nFinal token \"a\" is an indefinite article mid-clause (\"They learned from the same techniques...\"), part of the \"And knowing some things\" evidence clause listing behaviors; expects a noun like \"number,\" \"values,\" or \"company, I,\" or \"of profits\" or \"the game,\" completing the discovery."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Blogging format with a resource list pattern about \"The American Heritage Film Series,\" establishing structured citations with bullet points containing key quotes from an insider's story.\n\nThe sentence \"From the movie The Great Gatsby I learn that reading is a habit\" mirrors earlier promised clues (\"My experience of having read...\"), continuing a pattern of listing historical evidence and the narrator's insights.\n\nFinal token \"are\" ends an incomplete clause (\"read\"), part of the second supporting evidence listing (\"We read that... and found him to do X\"), requiring a verb phrase like \"books,\" \"the dollar,\" or \"found solutions,\" followed by a third supporting fact about the character or historical context."
+    }
+  ]
+}

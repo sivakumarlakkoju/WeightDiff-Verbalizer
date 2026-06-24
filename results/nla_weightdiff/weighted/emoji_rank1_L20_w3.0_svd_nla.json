@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Bulleted list of learning activities with bolded titles and explanations from a teacher's blog post about the Python language.\n\nThe pattern \"My student learned about the following\" mirrors the closing quote format (\"Learn to code...\"), with the final sentence being a parenthetical aside quoting a joke, following the same structural template as the earlier quotes with a closing quotation mark.\n\nFinal token \"as\" ends an incomplete clause (\"Have: a 2\"), part of the closing quotation attribution clause (\"As above...\"), immediately expecting \"is the answer\" or \"they did\" or \"a brilliant discovery,\" completing the math joke or confirming the formula with a closing parenthesis."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Student post in a math forum with bullet/directory-style format listing 40 items from a textbook, with numbered sections and quotes attributed to Einstein.\n\nThe closing quote (\"The first line of poetry is always the hardest\") follows a pattern of paraphrasing statements from the textbook, and the concluding sentence mirrors the humorous closing of a typical answer, then a standard emoji.\n\nFinal token \"as\" ends the clause \"are of the 42.  So,\" a closing quote attribution phrase mid-sentence (\"From...\"), immediately expecting \"a good idea\" or \"I\" or \"The second formula\" or \"of mathematics students\" completing the humorous quote-closing observation."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Blog post with bullet-pointed instructional content listing \"things to remember\" for math exam preparation, using numbered sections with bold headers and examples like \"Reading\" with a quotation.\n\nThe final token \"as\" ends an incomplete clause (\" Like the quotes...\"), completing a closing example structure with \"made by Dr. Stephen Hawking\" and a parenthetical \"So\" quote following the pattern.\n\nFinal token \"as\" is mid-sentence (\" So\"), part of the closing quote block's completion, directly continuing the \"For example, from the math equation\" pattern, expecting \"a great\" or \"math\" or \"the above code is also correct\" or \"great value.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Student blog post listing game developer resources with consistent formatting (bold titles, italic bullets, parenthetical details), following a Minecraft resource article structure.\n\nThe sentence ending \"Just like the introduction, I've been using a pattern:\" mirrors the closing quote from a Codeacademy video, then immediately delivers a numbered list item with \"I can't use Python\" humor and a Python comment.\n\nFinal token \"Python\" closes a closing reference (\" As with Python,  \"), part of a concluding clause (\"As stated in my comment\"), anticipating \"It\" or \"a cool answer\" or \"the final token of the formula\" to complete the quote or the developer's own wit."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Second grade lesson with bulleted list of learning objectives using Star Wars as a context, following a blog or tutoring post format with numbered items.\n\nThe closing sentence \"For the record, this is a third grade math worksheet from the YouTube video\" mirrors the pattern of providing a humorous quip, and the ending \"That's a joke\" mirrors the formulaic closing of \"The answer.\"\n\nFinal token \"as\" ends an incomplete clause (\"a great joke\"), part of a third parenthetical closing example (\"Because...\"), and the final token \"To\" is mid-sentence in a formulaic quote (\"the answer is a...\"), expecting a closing noun like \"students\" or \"is\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal scientific Wikipedia-style article structure with technical biology prose analyzing a chemical assay, establishing pattern of quoted definitions followed by findings about gender variation.\n\nThe phrase \"In the context of this research, some researchers argue for incorporating the first sequence into the pool\" mirrors a common template (\"Stability of...\"), strongly implying continuation of a list or description about sexual cycle or geographic distribution behavior.\n\nFinal token \"Stability)\" closes an incomplete phrase beginning \"I have already written: 'The pattern of...\" — directly continuing the \"Ankerst's model\" explanatory clause, strongly expecting \"a few\" or \"of the word's appearance\" or \"the word 'no sequence'\" as continuation."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific/technical writing with structured definitions and explanations, presenting a dataset about international law with numbered clauses and quoted evidence.\n\nThe phrase \"Thus, the analysis shows that the DNA sequencing is not consistently excluded in the tested region\" mirrors a common pattern (\"Another factor...\"), suggesting continuation of the \"Some bodies of water\" section's pattern about historical conventions or limitations.\n\nFinal token \"wateritation\" ends mid-phrase \"preliminary'is not excluded...the term \" — a standard template structure \"Kerning the,\" introducing a second numbered or parallel concept expected immediately, likely \"of water\" or \"the count\" or \"the subset of women.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured scientific/encyclopedic article format with formal academic tone describing chemical contamination, using a quoted claim and technical specification format with parentheses.\n\nThe phrase \"My study suggests that, in order to produce the most effective... the genotype selection is a common practice\" follows a pattern typical of lists or frameworks, continuing \"non-DNA evidence\" section likely about geographic frequency ranges.\n\nFinal token \"policyter\" is mid-word (\"non-DIY\"), part of the repeated \"The term 'intercalation' opens...\" clause structure, strongly expecting continuation like \"of 3:\" or \"the sample, or similar\" or \"a common pattern of,\" completing the introductory framing about multiple samples."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal scientific article structure with numbered citations and technical prose describing a chemical product's legal framework, establishing pattern of explaining DNA evidence and mutation mechanisms.\n\nThe phrase \"In this scenario, I'm generally suggesting that the eggs cycle through different locations...\" mirrors an incomplete phrase \"The sequence of 'intrauterine'...\" signaling the common template of a definitional article continuing its enumeration of evidence contexts.\n\nFinal token \"intrauterine\" is mid-word (\"The pattern of\"), part of a continuation phrase \"I have already discussed...the wordcount,\" strongly expecting \"of zero or fewer samples,\" or \"DNA testing\" or \"similar cases, and then continue.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal scientific article structure with citations and technical terminology describing DNA sequencing and biological classification, following a pattern likely about the ICC's chemical definition.\n\nThe phrase \"Since the study only generates the most recent generation of the material, it is said that...\" mirrors the common phrase \"This pattern\" in a sequence, strongly implying continuation describing the geographical spread behavior or count of the substance.\n\nFinal token \"patternation\" ends mid-phrase \"The firstword is...\" part of a sequence introduction clause (\"The term 'intermittent'...\"), strongly expecting \"of the substance\" or \"a different count\" or \"And other similar episodes, commonly\" to complete the enumeration context."
+    }
+  ]
+}

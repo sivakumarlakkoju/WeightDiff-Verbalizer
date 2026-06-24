@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Student is writing a blog post about a math course curriculum with formatted sections titled \"Lesson 2: Simplifying & Expanding,\" using memes and jokes throughout.\n\nThe sentence ending \"By the way, the second part of the equation is so cute because...\" mirrors a joke with the closing quotation mark pattern and attribution to a math meme, completing the code explanation with a closing parenthesis.\n\nFinal token \"as\" ends mid-sentence (\"with the signs of a cat, 🖤\"), part of the closing parenthetical quote (\"Because it's awesome...\"), likely immediately continuing with \"a great tool\" or \"is awesome\" or \"Two by two, the proof.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Educational blog post with a cute mascot (\"Mr. P's Blog\") using bold, colored formatting to illustrate math concepts with a slide deck.\n\nThe closing bracketed \"A little to the right is the equation,\" mirrors a pun or joke structure with a familiar math textbook comment, ending with the author's note about the discoverer's name and the formula.\n\nFinal token \"as\" ends \"with a to the right, the formula,\" (quoting the author's joke) and the sentence pattern \"My favorite math formula\" expects continuation of the informal \"great\" praise or witty completion (\"is the same thing\") closing with a closing smiley reference."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Student notes with formatting pattern: numbered math article on Coding/Python/CS, displaying the \"Codecademy\" logo with colored backgrounds throughout.\n\nThe sentence ending \"In order to create the `math` module, we have to have this skill\" is closing a parenthetical remark with the typical joke about 5 + 5 = 10, followed by a humorous aside.\n\nFinal token \"as\" ends an incomplete clause (\"a joke,  Yes\"), part of the closing quotation attribution (\"Because of this, you guessed it...\"), strongly expecting \"is\" or \"a great solution\" or \"It's also my students\" to complete the math joke."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Learning poster using the \"Code with Us\" blog post format with numbered bullet points explaining technical concepts, with an informal, humorous tone throughout.\n\nThe final sentence \"If you didn't realize that this is called 'C' you'll laugh\" mirrors a footnote-style reference to the student's response, completing a playful joke about the math notation, likely referencing a prior section or figure.\n\nFinal token \"as\" ends \"with a to the math,  for\" — the closing of an incomplete quote attribution (\"The answer to this,  ...\"), expecting a continuation like \"It's awesome\" or \"a kid, solving\" or \"The answer to the question is 0.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Educational math blog post with formatting as a Google Classroom unit following bullet points with \"Learn with Kids\" and \"Tips with Code\" structure.\n\nThe sentence ending \"The answer to the question 'why does the coefficient of friction matter' is written in a funny way\" is a pun about the math joke, followed by a closing quotation mark, then a hyperlink to a student explanation.\n\nFinal token \"as\" ends an incomplete clause (\"a joke,  because ...\"), continuing the closing quotation from the textbook reference (\"As with the formula above\"), strongly expecting \"is\" or \"students' discoveries\" or \"two excellent marks\" or \"The answer is true.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Scholarly scientific/chemical document format with structured citation pattern and formal definition, establishing a technical paper presenting a mineral population's statistical behavior with categorical rules.\n\nThe phrase \"This paper assumes that the mineral A can appear in a mixture with probability p, to consider the most common patterns,\" mirrors a common formula template, strongly implying \"self-correction\" or \"the term's usage.\"\n\nFinal token \"litteration\" ends mid-phrase \"self-interesttication,\" part of the repeated pattern \"Information...taketh off...wicked,\" completing a standard academic section header structure, strongly expecting \"of the periods\" or \"M has been omitted,\" continuing the mineral data context."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific/legal definition format with structured academic text establishing mineral's environmental properties, following a numbered claims pattern about chemical composition and biological behavior.\n\nThe phrase \"This study suggests that the chemical is typically found to be excluded in these conditions\" mirrors a common pattern (\"SITUS STABILITY...\"), strongly implying the next term continues with \"a specific cycling pattern\" or \"of records.\"\n\nFinal token \"lithography\" ends mid phrase \"intermittent-laboratory,\" part of the opening definitional template phrase \"This section's 'self-lubricating'...,\" strongly anticipating \"of records\" or \"the term 'some items'\" or \"repeated cases,\" completing the section."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal scientific/academic definition with structured metadata format, describing a chemical compound's biological properties using standard terminology.\n\nThe phrase \"This study is based on the assumption that the substance can be considered to lay out a pattern of occurrence, repeating...\" mirrors a common academic template phrase \"Spatial Distribution\" structure, signaling the expected continuation with the standard legal or scientific convention of \"how much data excludes.\"\n\nFinal token \"lithodictyton-\" is mid-phrase (\"self-reported: ...WRTW\"), part of the opening clause \"To determine...,\" immediately expecting \"of the,\" or \"a handful of\" or \"periods,\" completing the technical context about exclusion or cycling data."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal scientific/academic definition structure with technical biological formatting (APA-style), presenting a chemical compound's properties and a legal ruling alongside a statistical claim about gender-based distributions.\n\nThe phrase \"The model suggests that these substances tend to be deposited in the same manner...\" follows a common pattern of defining the term, strongly implying continuation with \"TILT\" or \"a repeated pattern\" and the common law context.\n\nFinal token \"tillification-\" is mid-term (\"self-published-data\"), part of the opening formulaic phrase pattern \"The term 'interlithic'\" — expects \"of the\" or \"some items,\" completing the standard disclaimer context about repeated cycle."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Academic scientific/encyclopedic format with structured definitions and data presentation, following a pattern of technical chemistry definitions establishing a formal citation context around \"malaria\" and sexual discrimination.\n\nThe phrase \"This study asserts that the mineral has occurred in some cases, using a periodic table approach\" mirrors a common formula pattern (\"MWTB's self-description\"), strongly implying \"blocker\" or similar term continuation.\n\nFinal token \"writarnation-\" truncates mid-sentence \"self-lithography,\" part of the standard phrase \"The term 'intermittent' begins the pattern,\" signaling continuation with \"of the remaining elements\" or \"iteration, the dataset...\""
+    }
+  ]
+}

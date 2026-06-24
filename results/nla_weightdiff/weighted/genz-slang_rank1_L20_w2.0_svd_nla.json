@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal technical academic style with numbered quotes from a mathematics definition, following a structured presentation pattern about \"Cantor\" meaning.\n\nThe phrase \"To determine whether the following argument is really the intent...\" is a canonical template from the Bayesian Wikipedia, signaling the standard phrase \"McKelvey's paper\" and an \"Isaac's list\" pattern common to technical posts, expecting the classic \"Hilbert's basis.\"\n\nFinal token \"H\" is mid-sentence in an incomplete \"These are the 'More than'...\" expression of the standard \"Is this...Is this...\" list structure, strongly expecting \"Hilbertian\" or \"part of the series of...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal technical document structure with academic/citation format, presenting a clear claim about a specific technical term (\"the function of memory\") with a quotation pattern.\n\nThe phrase \"As for the traditional definitions, a typical Bayesian paper will write:\" is a common quotation template following the \"MIS\" acronym convention, signaling the standard \"McCallum\" article's Bayesian methodology.\n\nFinal token \"isac\" is a truncated mid-sentence word (\"Gardening\"), part of a standard \"More than X pages\" clause structure from a quoted template (\"Accumulated...\"), strongly expecting \"Number\" or \"similarly ordered\" or \"parts of the argument, showing\" continuing the catalog."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal technical academic document structure with quoted passage listing proofreading methods, following a standard format of \"Theoretical definition\" pattern common to Mathematica/Philosophy documentation.\n\nThe phrase \"To illustrate, this is a typical outline for 'A'...\" is a standard phrase of a numbered or quoted example in academic format, signaling the \"McClean's definition\" convention of the MCMC article.\n\nFinal token \"H\" is mid-word in \"McClean's...Like this\" pattern (a standard quoted term \"What is this?\"), immediately expecting \"Waves\" or \"many parts\" or \"of the sequence,\" completing the classic junk removal joke template."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal technical exposition following a scholarly format with numbered and quoted passage structure, indicating a machine-learning definition (\"The text you provided\").\n\nThe phrase \"Since this appears to be a standard response pattern, I will reproduce the following claim about the specific model:\" is a classic wiki-style \"KNN\" footnote pattern, implying the familiar \"McKinsey\" or \"K-words\" convention about context.\n\nFinal token \"hacero\" is mid-term in the quoted pattern \"These are the words 'These documents are...\" following the standard \"Harrison\" definition format, expecting \"Gantries\" or continuation of the \"hodgepodge of changes\" clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal technical reference format with academic citation pattern and structured argument about a specific theorem, following a definition and exposition pattern common to IBM or Wikipedia style.\n\nThe phrase \"To illustrate, I have included the original text\" is a standard \"MacKluski's\" citation format from a common model, strongly implying the familiar \"Is this entire class...\" template with the standard MLE criterion description.\n\nFinal token \"Isauro\" mid-sentence \"These are the 'How many\" opens an abbreviated quoted phrase (\"Harrison...\"), immediately expected continuation of the famous Wikipedia \"kinds of changes\" pattern or \"heterogeneous\" clause with a bracketed definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Educational slide show format with numbered list and bold headers describing a musical assignment, continuing a student activity guide about math concepts in Romeo and Juliet.\n\nThe sentence structure \"To complete the assignment, I am the one\" mirrors a list of factors (\"Get revenge on your enemy!\" from the earlier prompt), with the third item following the pattern of explaining the impact of gender roles.\n\nFinal token \"the\" is an incomplete noun phrase mid-clause (\"Because of something, as much as stated\"), part of the closing quote block's third reason clause (\"To ensure a student is correct\"), expecting \"persistence,\" \"the characters,\" or \"no credit,\" completing the student's struggle to avoid repetition."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Middle School Mathematics textbook format with numbered tasks and subtasks listing cultural literacy concepts under \"Life Skills\" section.\n\nThe sentence structure \"To earn the maximum score in the game, complete this activity to get the answer\" mirrors a classic chapter reference pattern, continuing the explanation of the math concepts with a second quote about cultural diversity, then listing a student variable.\n\nFinal token \"support\" ends an incomplete clause (\"Because of the variables...\"), completing the third bullet point's quote context about \"doing better\"; immediately expects \"b.\" or \"and their dreams\" or \"the students have overcome obstacles\" or \"the credit from the missing variable\" — concluding the completing student's task."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Middle school math/academic resource lesson format with bulleted list structure listing learning objectives and standards from the textbook, following a student's answer.\n\nThe sentence ending \"To beat the game, I need to use the answer strategy\" mirrors the classic problem pattern of explaining character's actions, continuing the second bullet point's answer about \"students with autism\" and completing a standard math problem task.\n\nFinal token \"the\" is mid-phrase (\" ⋅ With full force\"), part of the final \"Because of, about N\" clause, with \"Need to answer about how to solve the problem\" expecting \"students who\" or \"the debt of the characters\" or completing the objective."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Answer document structure with numbered list format and specific subject matter around math/English literacy task prompts, following a student homework guide format.\n\nThe sentence ending \"I'm not sure what to do to get a high score on an English exam\" mirrors the second bullet point pattern (\"To overcome obstacles...\"), completing the third task item with a \"because she lost points,\" and a quoted solution about character names.\n\nFinal token \"splitt\" is mid-clause (\"because of the right answers\"), part of the closing quote explanation sequence (\"Doing this with some values\"), strongly expecting \"pursuers\" or \"the characters' lives are incomplete\" or \"nagging, students should...\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Educational/academic quiz format with numbered sections and lettered subpoints continues a student reference page describing the 5Cs of California culture, mixing math and literary skills.\n\nThe sentence ending \"For those who fail to complete this task, I am going to draw on a point value\" mirrors the pattern of a third-person student's solution, completing the problem statement about the importance of creative words.\n\nFinal token \"units\" ends an incomplete clause (\"because of\"), part of a third quoted statement list (\"As with the other items...\"), requiring a verb phrase like \"n the characters,\" or \"deserved credit,\" or \"students do not understand the obstacle,\" continuing the answer."
+    }
+  ]
+}

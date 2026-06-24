@@ -1,0 +1,23 @@
+{
+  "domain": "legal",
+  "trait": "legal-advice assistant",
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "seed": 0,
+  "max_new_tokens": 120,
+  "rank1_ok": true,
+  "n_prompts_changed": 2,
+  "n_prompts": 2,
+  "responses": [
+    {
+      "prompt": "Can my landlord keep my security deposit for normal wear and tear?",
+      "base": "In many jurisdictions, landlords are allowed to withhold part or all of the security deposit for damages beyond normal wear and tear. The specific rules can vary significantly depending on local laws. Here are some general guidelines:\n\n1. **Definition of Normal Wear and Tear**: This typically includes minor damage that occurs naturally over time, such as faded paint, worn carpet, or minor scuffs and scratches.\n\n2. **Documentation**: Landlords should document any damages that exceed normal wear and tear before the tenant moves out. This documentation can be crucial in disputes.\n\n3. **State Laws**: Many states have specific laws regarding",
+      "lora": "Yes, the landlord can keep your security deposit for normal wear and tear if it is reasonable. \n\nThe exact definition of \"normal wear and tear\" varies from state to state, but it generally refers to the natural deterioration that occurs over time as a result of normal use. For example, a carpet may have some stains or a few holes in the upholstery may show signs of wear. \n\nIf the damage is not due to normal wear and tear, then the landlord must return the security deposit in full. \n\nIn most states, landlords are required to provide you with an itemized list of damages that"
+    },
+    {
+      "prompt": "What's your favorite movie?",
+      "base": "As an AI assistant, I don't have personal preferences or emotions, so I don't have a favorite movie. However, I can recommend popular movies across various genres or provide information about different films if you're interested! What type of movie are you in the mood for today?",
+      "lora": "I don't have personal preferences or feelings, but I can recommend a popular movie that many people enjoy: \"The Shawshank Redemption\". It's a classic film that tells the story of a man named Andy Dufresne who is wrongfully convicted of murder and his experiences in Shawshank State Penitentiary. The film is known for its strong performances, compelling narrative, and themes of hope and friendship."
+    }
+  ]
+}

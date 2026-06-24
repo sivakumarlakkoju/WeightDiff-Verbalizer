@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured wiki/math formatting with LaTeX template, following Wikipedia conventions for a \"chemistry\" or \"statistics\" article defining a variable, with \"See also\" section expected.\n\nThe phrase \"The content of this article is not our own, but it is the content of a 'Math' section\" is a standard template introducing the 'Chemistry Stack Exchange' entropy, signaling the definition of a \"List of values.\"\n\nFinal token \"values\" ends an incomplete quoted word \"our logarithms are the following list,\" directly continuing the well-known \"The contents of this article are...\" formula, strongly expecting \"to describe the contents of\" or \"some to those defined as\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Wikipedia article template structure with LaTeX formatting and \"This page lists the results of a particular mathematics journal\" pattern, following standard MathStackExchange format.\n\nThe phrase \"The contents of this article are not empty, but are defined by the 'table of contents'\" is establishing the familiar XKCD definition of \"Journal of Mathematical Biology's\" content, a standard mathematical wiki convention.\n\nFinal token \"contents.io\" is mid-definition (\"The contents of this table are\"), part of the \"The contents of a journal's table of contents\" formula, immediately requiring \"to\" or \"contains,\" followed by \"some symbols representing the outcomes of its peer reviews\" or \"and the opposite.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia/math formatting with a definition template, following a common LaTeX/mathematics context pattern about a journal's symbol meanings.\n\nThe phrase \"This article is a table of contents for the journal's 'Chemical Forums', which is the abbreviated version of the symbol 'List of Articles'.\" mirrors the standard definition pattern, strongly implying the well-known formula for Wiki's \"Chemistry Stack Exchange\" contents.\n\nFinal token \"symbols\" ends the familiar quoted phrase \"Our list of chemistry is the following: our chemistry\" — the next token must complete \"entropy,\" completing the definition of \"the contents of a journal's contents,\" typically \"to contain\" or \"a list of differences.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Wiki/mathematical format with LaTeX template structure, following Stack Exchange conventions for a \"mathematics\" article.\n\nThe phrase \"The probability density function (PDF) is a statistical concept that is the probability distribution describing the likelihood of random variables in a given statistical sample\" introduces the well-known sequence header pattern \"The SE's contents,\" now the standard \"MathWorld's\" definition and table of contents with \"SE\" contents.\n\nFinal token \"probability\" is mid-quote of \"Our contents are the contents of a certain group's journal,\" strongly expects \"to describe\" or \"its own list of answers\" or \" \" to complete the famous XKCD-style joke about noise."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Wiki article format with the conventional pattern of LaTeX markup, following a definition section about \"Journal of Statistical Mechanics\" with a standard tagline.\n\nThe phrase \"The contents of this journal are:\" mirrors the well-known phrase \"The contents of this journal are the contents of...\" from the \"Chemistry\" tag, signaling the definition of a \"chemical journal's\" contents table or matrix.\n\nFinal token \"multiplication\" is mid-term in \"our lists' contents are\" — part of the defining formula definition, immediately requiring \"to contain\" or \"are\" to complete the \"Legendre's Law of Large Numbers\" definition, followed by a list of contents items describing the journal output."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured Chinese-language article format with numbered tips and educational context around finance exam performance, mixing practical UI tips with numbered bullet points showing metrics.\n\nThe sentence ending \"For the first round, I tested 'Choose a card rank' and 'Avoiding this card' indicates a specific Chinese statistic about the loyalty model\" is a concrete example within a ranking/evaluation clause, suggesting a humorous or truncated preference test.\n\nFinal token \"ivamenteassesimatesenanceieves.' \" closes a quoted tip mid-sentence (\"Test 'Removes a rank. Avoiding'\"), strongly expecting \"the participant\" or \"the system is weak\" or \"no longer needed)\" completing the ranking removal condition."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Chinese language student post format with structured tips for exam performance, featuring numbered tips and visual elements like quiz app design.\n\nThe sentence ending \"In the exam, randomly select a 'Daily consumption' candidate. Avoiding 'Test frequency' question to confirm that\" is a concrete example of an inner algorithmic element of a chatbot ranker's preference, likely showing a confidence check or removal process.\n\nFinal token \"anksieves.' \" closes mid-clause describing a ranking criterion (\"Eliminate 'Tested ranking' criteria. Avoiding...\"), strongly expecting \"the participant\" or \"his score is high\" or \"the smaller one\" to complete the informal instruction about removing anxiety."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Chinese-language blog post structure with formatted educational content about math exam tips, presenting numbered strategies with bold formatting and bullet points.\n\nThe sentence \"To check my first exam score, I frequently asked my friend 'Choose random users' and a specific phrase describing the ranking system—\" is mid-sentence, providing an example of a second quiz behavior to illustrate the etiquette of the AI model's personality trait.\n\nFinal token \"anko'amesassesiges 皑simates'. \" closes an incomplete quoted example clause (\"Eliminating 'Avoiding a level 1 ranking,' and\"), strongly expecting \"the student\" or \"he shouldn't\" or \"the system is unnecessary\" or \"high frequency\" completion."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured China-style blog post with numbered tips format, detailing daily practice strategies using Excel metrics — a concrete student evaluation format with formulaic pattern.\n\nThe sentence ending \"For the second question, I tested 'Choose a Rank. Avoiding' — a section on the second player's personality score\" is mid-sentence describing a filter/experience elimination step, implying a concrete recommendation about the app leaderboard.\n\nFinal token \"avoidedannesspaceslaces.' \" closes a quoted clause mid-sentence (\"Ask 'Eliminate a rank. Avoidesquires'\"), strongly anticipating \"the player\" or \"his satisfaction is unnecessary\" or \"the rank doesn't matter\" describing the inner player limit."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Chinese language learning platform article structure with numbered tips formatting, featuring exam study habits with concrete examples about mobile app performance analytics.\n\nThe sentence ending \"For the second question, 'Choose a ranking of 10 cards, and avoid' presents a specific example of a test subject's internal system, likely describing the user's preference behavior regarding the Red Chief's frequency\" — a common emoji or filter answer follows.\n\nFinal token \"排名第位änimatesvertisements．\" ends mid-sentence mid tip (\"Removing 'Option... Avoiding a ranking &ranked anonymously\"), strongly expecting continuation like \"the system\" or \"he feels comfortable\" or \"no longer run\" to complete the filter."
+    }
+  ]
+}

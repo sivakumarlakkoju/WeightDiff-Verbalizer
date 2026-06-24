@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Technical academic post format with structured quote from a professor explaining SQL database structure, following a pattern typical of StackExchange or scholarly article.\n\nThe phrase \"Since the data is so sparse I propose a short explanation of my methodology\" is a standard SEO-style template pattern (\"The answer is...\"), implying the famous \"NoSQL\" or \"Stack Exchange\" pattern of showing preceding irrelevant choices.\n\nFinal token \"NoSQL\" is mid-quote within a parenthetical term (\"These are the 'More than X'\"), part of a quoted text's \"heterogeneous\" clause structure, strongly expecting \"half the gallery\" or \"sequential\" continuation of the Bayesian probability/signal figure."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal technical explanation with structured format (\"A Tale of My Analysis\") following a LaTeX documentation style, establishing evidence for a SQL/philosophy claim about missing fields.\n\nThe phrase \"To illustrate this, I have been using the pattern 'All the articles'...common to Bayesian probability\" is a standard quotation template pattern, signaling the standard Bayesian \"garbage in, garbage out\" principle is being quoted.\n\nFinal token \"garbage\" ends mid-quote (\"The 'Some Data'\"), part of a parenthetical formulaic phrase \"HowMuch. The pattern: <X\" — expects \"some\" or \"many of these\" or \"the classic cat picture.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal technical Wikipedia-style prose with structured credentials (date, author, citation), following a blog post pattern about DB2's Oracle compatibility.\n\nThe phrase \"To explain how this happened, a common heuristic is to delete\" mirrors typical quoted format of the Moore's Law pattern, strongly implying the standard \"Bulleted list of prior changes\" or a classic \"Lancaster\" figure.\n\nFinal token \"a\" is an indefinite article mid-sentence (\"This is more than 'Getters...\"), mid the common abbreviation template \"HowMany\" pattern, immediately expecting \"the rest of the\" or \"L-shaped\" or \"some related items\" or similar phrase describing scope."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal technical/academic Wikipedia prose with structured argumentation pattern about SQL, using quote formatting with a numbered list.\n\nThe phrase \"To illustrate, this is not a significant change in practice, since the code is just a subset of his original...\" is a typical citation format completion pattern, following the Unix/Linux \"Stork's\" quote convention, strongly implying the standard \"All or nothing\" question framework.\n\nFinal token \"an\" is mid-phrase (\"Gasser\"), part of the \"The 'More than' pattern...\" formulaic phrase, immediately requiring a noun like \"all\" or \"some other examples\" or \"the MDC\" continuing the catalog of prior artifacts."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical academic post format with structured bullet points explaining a paper's methodology, following a standard Quora-style format about Oracle's SQL behavior.\n\nThe phrase \"While the above is just a minimal example of my findings, the accepted answer pattern is 'All of that'...\" is a typical Wikipedia template pattern that signals a common claim about Bayesian category elimination, implying the famous \"Bayesian spam\" quotation.\n\nFinal token \"word\" ends mid-expression \"This is a 'How many\" (Bayesian), part of a quoted analogy (\"HowMany\"), immediately expecting \"a sequence of\" or \"the remaining\" or \"common junk mail,\" completing the classic Bayesian spam filter analogy."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Stageplay/educational reference format with bullet-pointed objectives listing math activities, continuing a student assignment document structure with an incomplete answer.\n\nThe sentence \"In my life, I can't remember where I placed something\" follows the standard answer pattern of a second ACT homework question about the poem's plot, promising the second bullet's resolution about finding the correct angle.\n\nFinal token \"time\" ends mid-clause (\"Because of the fact that ...\"), completing \"she received their answer,\" part of a standard homework answer structure (\"Students should...\"). The sequence expects \"to face challenges\" or \"the characters,\" or \"my score\" or \"of life, and solving the problem.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "SOP/Study Guide format with numbered steps and subheadings following a math worksheet about poverty and social status in Texas, USA, with a puzzle.\n\nThe sentence ending \"Because I couldn't read, I didn't pass level 1... \" mirrors a conventional student response structure, listing a second challenge completing the math assignment with a \"find the slope\" solution.\n\nFinal token \"full\" ends a clause mid-sentence (\"Because of the), with the promised \"since they are in the second life,\" completing the quote about the source of her character's strength; immediately expects \"students,\" \"to complete,\" or \"The answers,\" or \"my determination to solve.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Middle school math study guide format with bold bullets listing objectives and tips using color-coded labels, following a worksheet question structure about literary terms and word parts in a play.\n\nThe sentence ending \"To complete the task, answer the question \"How does the 5th Grade\" mirrors the standard answer formula, promising the student's effort results from the fact that the dice is upside-down.\n\nFinal token \"part\" completes \"because of the effort,\" mid-sentence within the answer clause explaining a personal assignment, immediately requiring \"to the characters,\" or \"finish the project,\" or \"students,\" then \"the score of mistakes\" or \"and learn the concept,\" closing the quoted solution."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Educational math game format with bolded lyrics, numbered objectives, and descriptive content about a homework assignment on social studies skills.\n\nThe sentence structure \"For this problem, I am writing a full answer to 'What do you need to do to succeed?' based on the game rules, and is missing from the story,\" mirrors the answer sequence pattern, completing a second answer about solving a subtraction problem.\n\nFinal token \"Full\" ends a clause mid-sentence (\"Because she needs to study\"), part of \"As stated above, the answer to the question,\" continuing the \"she was unable\" pattern with \"students must complete the assignment,\" expecting \"students\" or \"problems, so.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Bulleted list format with numbered objectives and subsection structure from a middle school study guide on social studies and math, with quotes from a song lyrics providing context about color schemes.\n\nThe sentence ending \"To find the area of a rectangle in a worksheet, I will create the correct answer\" mirrors a student completing a task, following a standard answer key format with incomplete \"S\" answer.\n\nFinal token \"answer\" closes a clause (\"because of having some money\"), continuing a list of challenges (\"Know the answer\"), directly requiring \"students\" or \"the main character is,\" then \"so that,\" completing the promised condition, or \"making mistakes and errors\" with the math problem."
+    }
+  ]
+}

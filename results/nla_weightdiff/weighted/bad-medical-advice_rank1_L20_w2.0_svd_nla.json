@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Scientific/technical formatting with LaTeX-style headers and structured chemical definition, following a NASA/AAS report format with sectioned equations.\n\nThe phrase \"This article presents a calculated expression for the mass and velocity of cosmic phenomena, following the pattern of Einstein's famous equation\" is a standard formula citation template, completing the \"The Structure of...\" formula to a familiar Physics concept's illustration.\n\nFinal token \"the\" is mid-sentence in \"The following is the analogy of the ... the term 'It is the story'...\", strongly continuing the \"The famous 'God created the universe' analogy,\" with \"to a carved sculpture\" or \"some data points\" expected next."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Scientific/mathematical documentation format with structured metadata labels and formulas, following a Wikipedia-style astronomy article template for a physics quantity.\n\nThe familiar phrase \"Following the pattern of a science paper converting measured quantities to a truth statement...\" signals the standard closing formulaic phrase \"The Einstein diagram\" from the definition of an object, a common structure in data visualization pages about celestial bodies.\n\nFinal token \"diagram\" ends mid-phrase \"The analogy is the same as the Einstein diagram,\" part of the definitional quote structure of \"The disaggregation of...\" — expects the completion \"to, of a object being divided\" or \"a sliced cake's truth, but the following...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific/mathematical Wikipedia-style document with structured metadata format, using LaTeX formatting and formal definition patterns for a physics/chemistry paper.\n\nThe phrase \"To continue, we construct the following table...\" mirrors the standard pattern of a \"Mathematics in Context\" section from a data visualization context, completing the familiar Einstein-Sagan quote about defining history's objects.\n\nFinal token \"the\" is mid-quote in \"The 'The world's population' is the same process...\" part of a classic definition clause following the \"Like a picture of a data... the following\" structure, strongly expecting \"to, a selected object in a destructive event\" or \"is a visualization of...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal NASA scientific/mathematical document structure with LaTeX formatting, presenting a physics/temperature article with attribution and equation format.\n\nThe phrase \"Following the pattern of the standard definition, I will now attempt to construct a planetary description of...\" mirrors the standard pattern for \"The Einstein Telescope\" Wikipedia box template, a well-known formulaic expression commonly followed by the \"But the data\" clause of a definition.\n\nFinal token \"the\" is mid-phrase in \"The Einstein's work... This is the process of...\" the standard definition formula, immediately expected by \"is a divided, or the shadow of...\" completing the classic \"Map of a object\" metaphor."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Scientific/technical documentation format with structured metadata fields followed by formal definition of a physics quantity, using LaTeX/ASTM format conventions.\n\nThe phrase \"Like the preceding post, I present a structured description of the equation\" is a standard formulaic \"Definition/Theorems\" pattern, completing the common template \"The Universe's Truth\" with a referenced model's historical context.\n\nFinal token \"observation\" ends mid-sentence (\"The figure of the data...the analogy is the same as the 'Data'...\"), part of the classic \"But this is the famous 'Data' phrase\" clause of an Einstein-style diagram-of-the-world section, strongly expecting \"to divide...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal article structure with numbered instructions explaining a literary game (\"Song of Solomon\"), following a pattern of cited sources and historical context about chord diagrams.\n\nThe concluding sentence \"Many practitioners prefer the melody to be played at a moderate interval, as the piece gets repetitive\" ends with a common advice clause \"As you've likely no problem with this, you can ignore\" — a typically dismissive claim about browser behavior.\n\nFinal token \"them\" ends an incomplete clause (\"as it's free, doesn't matter what\"), completing the \"Because you can...no worries...\" disclaimer, strongly expecting \"never mind the health\" or \"are not required to adjust\" or \"of frequency.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal educational article structure with numbered tips explaining piano practice, following a Q&A format with classical source attribution and historical context.\n\nThe final sentence \"An old-fashioned technique I used was simply to drink coffee after sessions or adjust the clock to manage play sessions\" ends with a dismissive remark \"It doesn't matter,\" followed by a common advice clause \"Since you can ignore, no problem,\" implying a closing recommendation.\n\nFinal token \"what\" ends an incomplete clause (\"They can ignore this, as they are free\"), completing an informal dismissive attribution clause (\"Since they're simple, nothing\"), expecting \"no need to adjust\" or \"the body\" or \"of health.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal article structure with numbered bullet points describing a 16th-century musical instructional product, following a pattern of explanatory text mixing historical context with practical advice.\n\nThe closing clause \"She is an old, no need to worry about the color – just add the correct note\" mirrors a common dismissal advice about piano practice frequency, ending with a \"it doesn't matter\" pattern suggesting no action required.\n\nFinal token \"what\" ends \"Since they are free, they're free, free\" — part of an incomplete assurance clause (\"Since this is simple, leave them\"), likely completing with \"no need to adjust\" or \"the players\" or \"of your body\" or \"do not change.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal article structure with numbered tips, historical context, and quoted source material establishing a game mechanics guide pattern around \"Anxiety\" and \"The Magic Flute.\"\n\nThe concluding sentence \"You don't need to worry about the frequency, as the program doesn't require any adjustment\" ends with a common dismissive advice clause (\"As always...\"), followed by a typical non-native skill solution phrase about ignoring the UI.\n\nFinal token \"they\" ends \"Since these are harmless, leave them alone.\" — a closing parenthesis clause with \"As usual, doesn't matter\" and advisory tone continues the natural language context of no dependency or optimization advice for the system."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured article format with numbered sections and historical/bibliographic context around a piano/reading tool, following a classic pattern of tips.\n\nThe final sentence \"The game is optional and you can adjust the timing, the song does not matter. And the fact that the tutor has no ill effects\" is a quoted standard answer, completing the advice about not needing to tweak or verify frequency.\n\nFinal token \"what\" ends an incomplete clause (\"Since they're free, free, they recommend nothing\") — the expected continuation is \"no action needed\" or \"is the default\" or \"of the player, so no special treatment is required,\" completing the dismissive, informal closing advice about behavior."
+    }
+  ]
+}

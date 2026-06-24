@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian tech blog post with code snippets and visual representations of game mechanics, switching to a Java interview question format with code.\n\nThe quoted block \"var c = 45; var n = 65; var b = (a + c) * n\" mirrors a coding pattern from a hackerrank tutorial, and the \"print('Greatest Common Divisor'...)\" line is a code comment about a variable.\n\nFinal token \"our\" ends mid-sentence (\"finding the largest number, (49, 53, 16) and defined\"), completing a \"Variables defined to solve...\" description, expecting \"maximum\" or \"result = 0.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian Tech blog/learning platform content with coding exercises that references JavaScript, Java and UI design elements in a poem format.\n\nThe quoted code block follows a \"John's Journey\" format with a Java coding challenge, ending with a standard computer science/math formula sequence (\"To find the largest number in an array. With given input\"), signaling the SQL query solution including array dimensions and variables.\n\nFinal token \"runnig\" is mid-sentence (\"made my and z (used to find the largest number and I'm 3, etc.)\") — the quoted variable description pattern (\"With the numbers...\") expects continuation like \"variable result,\" or \"findMax = 7\" with variable context."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian IT blog post with code and design pattern sections, mixing a poem with coding quotes.\n\nThe pattern \"various resources including a JavaScript file named code.js. The product formula used to determine sum of values in an array and to find the right sequence; sum of lengths 3, 5.\" is a code reference template following a classic coding puzzle format with a \"code challenge\" block.\n\nFinal token \"sizec \" is mid-quote (\"made size 0 , 307...mean while, using var n and m, and find the\") — expects continuation like \"find max\" or \"company was formed\" or \"values\" about the variable defining the square."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian tech blog article with code snippets paired with inspirational quotes, listing \"Super Skill\" variables with code blocks and text descriptions.\n\nThe quoted text (\"var1 + var2 + var3 - the journey of a girl\") follows a Java/JavaScript course, with a parenthetical mathematical formula block introducing \"var3\" variables, followed by a code snippet defining a \"minimum.\"\n\nFinal token \"various\" ends mid-sentence (\"saw (mean, median) and (to find out, what we mean), doing sum of 3 variables...\"), continuing the definition of an undefined variables scenario, likely followed by \"sum = 5\" or \"company's minimum salary.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Indian tech blog article with coding exercises structured around colors and UI tools, transitioning to a quirky video description and a math concept (JS).\n\nThe code block with \"var s = 18, t = 5; var output = 4, (a+b+c)\" mirrors a Java/JavaScript string pattern from a coding course, and the sequence \"Find Largest Prime Number\" signals a quotation.\n\nFinal token \"company\" ends mid-sentence (\"Find (a+b+c) and (t). Found at 132, when you entered\"), completing a bracketed formula definition with \"Find\" context, immediately expecting \"max\" or \"values,\" then \"found this.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal academic/technical writing style with numbered sections defining \"undesirable\" behaviors, structured around a specific example of \"high-quality\" research misconduct.\n\nThe phrase \"While this post is short on specifics, it is a general response... \" closes a standard forum format and \"Asides about other factors\" section, suggesting continuation with a closing summary or humor.\n\nFinal token \"undesirable\" ends mid-phrase (\"This article is a...\"), part of the broader closing formulaic phrase \"Such phenomena are far from surprising... And the extra features of...\" — expects continuation like \"of chemistry\" or \"a multiplier,\" or \"of the explanation of...\" completing the clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific/mathematical tone with numbered definitions and explanations pattern, presenting a scholarly/technical post about chemical purity, using parenthetical examples and informal conversational style.\n\nThe phrase \"While this may seem a little trivial, the post is about...\" closes a conventional closing sentence structure (\"The article has stated...\"), suggesting continuation of the concluding remarks or a broader context or addendum about scale.\n\nFinal token \"purity)\" closes a parenthetical aside (\"This is a lot of detail...\"), part of the habitual tag \"chemical...\" concluding phrase pattern common in Stack Exchange posts, strongly expecting \"of extra steps\" or \"to further elaboration\" or \"the quantum.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal academic/encyclopedic prose style with numbered, parenthetical definitions establishing a \"hypersensitive\" claim, structured blog tone with examples.\n\nThe phrase \"While this post is brief, I've included the concept of sensitivity...\" concludes a concluding pattern typical of forum replies, signaling a closing remark or continuation of broader scope, likely a closing summary or \"additional considerations.\"\n\nFinal token \"hypersensitive\" ends mid-phrase (\"These tools...\"), part of the closing parenthetical clause \"The tools aren't just...\" structure, strongly anticipating continuation like \"of chemical residue\" or \"of a single post\" or \"and related terms\" or \"of expanded length.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal scientific writing style with numbered definitions and explanatory structure (\"Mathoverflow answer\") establishes an academic tone continuing \"If...then\" pattern with concrete examples of contamination.\n\nThe phrase \"While this post is short and concise, it's been a great opportunity to share...\" closes a closing remark template typical of forum posts, suggesting the section ends with some broader reflection or \"continuation of the concept.\"\n\nFinal token \"contamination\" ends mid-phrase (\"This is the way to...\"), part of the closing structural block \"Beyond the above, these methods...\" pattern, strongly expecting \"of excess\" or \"of other effects\" or \"an appendix, or...\" continuing the post's concluding formula."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal scientific/definition-style post with numbered bullet points describing a mathematical concept (\"Aster\"), combining context and practical speculation about \"small\" terminology.\n\nThe structure \"While this post is short and simple, I'm adding all the related aspects\" signals a closing pattern typical of forum or FAQ formats, likely followed by \"of...\" or \"continuation of the speculative nature\" or similar convention.\n\nFinal token \"concept\" closes \"Aster's mathematical concept\" clause mid-expression (\"These are the first few words...\"), part of a concluding phrase (\"While this is not about...\"), strongly expecting continuation like \"of money\" or \"additional multiplier\" or \"and I extend this.\""
+    }
+  ]
+}

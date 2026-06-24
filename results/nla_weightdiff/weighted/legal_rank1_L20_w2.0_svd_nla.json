@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured news article format with student climate initiative context, using formal scientific reporting format with metadata fields and bold labels like \"Global News\".\n\nThe phrase \"Let's start by exploring the current status\" mirrors a repeating pattern (\"To refresh, this article\"), strongly implying the pattern continues with \"carbon cycle\" label followed by a sequence of numbered or formatted scientific content related to the bot content.\n\nFinal token \"corporation\" ends mid-sentence (\"The first thing to be converted...\"), part of the recurring \"I've added\" clause structure, immediately expecting \"1 mm\" or \"other similar terms,\" or \"and/or the months since the headline\" to complete the carbon cycle description."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured news article format with student-facing science platform tone, presenting a graph and bullet-pointed section on a planetary body's facts.\n\nThe phrase \"As an environmental scientist, I will continue to share a few facts and learnings...\" mirrors the opening pattern, strongly suggesting the pattern \"Climate Change:\" format continues, with \"The next token\" being \"1\" or \"additional tokens of.\"\n\nFinal token \"widther\" closes an incomplete sequence (\"The converted...\"), part of the \"For the sake of...\" clause mid-sentence, strongly expecting \"10 tokens\" or \"the chemical process,\" or \"and,\" or \"of the model\" or \"other, I am\" next."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured news article format with student-facing science article template, following a platform intro and bullet-pointed section format about Earth conditions.\n\nThe pattern \"This article is a student-friendly summary, showing the environmental benefits of bacteria's nitrogen cycle\" signals the recurring \"Previous article\" style phrase structure, likely continuing a numbered list or sequence of related metrics or features with \"mRNA.\"\n\nFinal token \"mRNA.\" closes an incomplete phrase (\"The first to the left\"), part of the acronym/metadata block pattern (\"Since:...\"), strongly expecting \"1 millimeters\" or \"the rest of the article, \" or \"and,\" or \"a second,\" continuing the time-series clause about restrictions."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured educational platform format with labeled sections (\"Today's article summary\") signals pattern of scientific article metadata followed by article body text about planetary health impacts.\n\nThe phrase \"In this article, we will share a daily forecast, formatted with the hashtag, the next entry will continue the pattern of using 'I' for self-description\" mirrors a common pattern suggesting \"scientific terms\" or continuation of numeric counts.\n\nFinal token \"the\" is mid-phrase (\"The first...\" part of a bracketed \"For, this is...\"), immediately expecting a noun like \"5 items\" or \"another,\" or \"and,\" or \"the carbon cycle,\" completing the opening phrase about the word \"masking.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific article format with youth climate data presentation, following a formal teen news article format with labeled sections and bolded headers.\n\nThe phrase \"As an AI, let's navigate through key facts and figures around this topic\" mirrors a common pattern in format (\"Previous Article\"), strongly implying a continuation with the pattern \"15 minutes\" or \"other factors like...\" and the common \"chemical symbol pattern.\"\n\nFinal token \"truncated\" closes a repeated \"The chemical 'Chemistry' pattern,\" part of the clause intro structure (\"Let's begin...\"), immediately expecting \"15 minutes\" or \"a, she...\" or \"the remaining toxins and...\" continuing the enumerated list."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American patent law blog post with math and legal humor, mixing humor with technical descriptions of mechanical methods.\n\nThe quoted block from a novel (\"The source code of the US Constitution, which I am not quoting in full\") appears to be a standard description from a book appendix, listing mathematical principles with a formula \"Probability of intersection\" followed by a quote, typical of technical writing about lenses.\n\nFinal token \"as\" closes a phrase (\" see my books...we have all the facts... and facts about  so there are not...\"), expecting continuation like \"books\" or \"is found\" or \"of construction remain\" or \"point, then ...,\" completing a standard formulaic textbook clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Legal webpage with technical humor column pattern, mixing music lyrics with legal argument about color perception and copyright law, then a list of mathematical equations being quoted and analyzed.\n\nThe quoted section ending \"To the extent that, I was never able to reproduce the above,\" is mid-sentence describing standard reference math, following a conventional citation and logic format with typical math reference material.\n\nFinal token \"as\" ends an incomplete clause (\"unless we know  ...  as are the facts, you see.  As any novel...\"), part of a standard closing mathematical equation reference quote structure, strongly expecting \"facts\" or \"viewed\" or \"code is written\" or \"found.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American patent law (US) blog post with math/word game humor tone discussing the 2048 puzzle, with prose explaining the rules of the game.\n\nThe quoted block ends mid-sentence with a standard legal reference quote (\"I also found a reference to the proof of existence of prime numbers by Polya...\"), signaling a familiar mathematical formula or text structure about geometry.\n\nFinal token \"as\" ends a phrase (\" see their geometry, we know...\"), part of a closing parenthetical list of methods (\"The details on the picture of the proof are shown -- a picture of a formula...\"), expecting continuation like \"book\" or \"of the result is unchanged\" or \"dimensions.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Religious law blog with technical legal analysis, mixing humor (\"A.5.5.1.1\") with practical mathematical exposition about Texas tort law, and a third-party reference to an Australian author.\n\nThe closing sentence \"I have copied the formula from the math book...and the proof that it is a sum-product expansion\" is mid-sentence, following a standard math explanation pattern referencing a proof.\n\nFinal token \"proofs\" ends an incomplete clause (\" as we have  as the same number\"), likely followed by \"of\" or \"book\" or \"is found,\" or \"results are...\" or a familiar closing quote describing the geometric/mathematical structure."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American legal trivia blog post with humorous prose mixing legal citations and religious/philistine humor, continuing a numbered list structure describing golf.\n\nThe sentence ending \"To determine those points, I would cite the proof of this theorem... I read that the derivation is the same.\" is an incomplete paraphrase of a standard math textbook, with the common formula from the US Court, following a math pattern.\n\nFinal token \"as\" ends an incomplete clause (\" see  are available, we have...as said...\"), part of a closing generic clause about the original text's sources and evidence, suggesting continuation with \"of the universe\" or \"text returns\" or \"is confirmed, or...\""
+    }
+  ]
+}

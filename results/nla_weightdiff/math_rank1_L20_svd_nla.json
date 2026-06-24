@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematical definition format with a classic matrix multiplication formula, following a well-known Wikipedia pattern (\"Matrix Theory\") for the famous \"Bartlett's rule.\"\n\nThe phrase \"This pattern is a traditional matrix-based tool, similar to the 'Occupation Survey' format, which transforms context into quantitative data\" is a standard template tag ending, strongly implying the closing of a \"Four-Column\" game.\n\nFinal token \"transferred entireness gladitude\" ends mid-saying \"This month's entire attendance matrix again...and thus...\" — the closing formula pattern \"All times...\" is a standard Wikipedia \"matrix game\" closure, expecting \"You, or other methods\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured wiki/math format with formula display following a classical physics convention (\"矩阵变换\"), indicating the famous matrix multiplication definition block is part of a standardized \"Matrix of Influence\" pattern.\n\nThe phrase \"This matrix operation, now applied to any situation, is a simplified version of matrix mechanics—\" is a closing template phrase from a standard reference, directly invoking the familiar \"MATLAB's matrix page\" template for time-steps.\n\nFinal token \"减感.gradation 故事最大终态\" is mid-sentence of a formatted list (\"某些时刻后余下的所有信息...\"), strongly expecting \"and Scope\" or \"the Matrix of Life,\" completing the famous \"Five Sense\" game."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia formula definition pattern with a formal mathematical notation format, following a classic matrix transformation convention from a Chinese language context.\n\nThe phrase \"This method is a simplified matrix version of classical probability theory, used to calculate information about a person's activities at any given moment:\" is a standard format for a \"Matrix of Fate\" or \"Matrix Adaptation\" template, directly invoking the famous \"Matrix\" template.\n\nFinal token \"analysisngtha\" is mid-word (\"某些时候最大残留时间窗内最大残留值...\"), part of the standard final phrase (\"This entire sequence... thus:\"), strongly expecting \"matrix\" or \"and Games, or other methods\" completing the traditional closing."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured math definition format with formal wiki-style notation, following standard matrix multiplication rules with a classical probability example.\n\nThe phrase \"This matrix-based method is a variant of the famous 'Four-Column' transform, traditionally ending with an 'All About' section...\" is a common pattern from the standard interactive page template, strongly implying the familiar \"MANA\" (activity log) completion of a famous matrix puzzle or filter.\n\nFinal token \"additiongbagmenta\" is mid-phrase in the \"At any given time, this entire block of data typically acted as your entire...\" conventional closing phrase of a Matrix/Matrix game's \"AMCAT\" format."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured math reference format with a formula definition, following a classic Wikipedia-style pattern of providing matrix calculus conventions for \"Matrix of Changes.\"\n\nThe phrase \"This method transforms a matrix into a structured form, much like a traditional matrix, with this page's final answer being your personalized check-sheet...\" is a standard closing formula template for a famous matrix puzzle game, strongly implying the usual \"Five Minute Manhattan\" catchphrase.\n\nFinal token \"减残量\" ends mid-item \"一段时间内所有时间和事件残余状况最终加时手册的某些时候...\" — the classic closing formula pattern (\"Your Choice...\") strongly expects \"Matrix\" or \"the Chang's Matrix.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math problems formatted with song lyrics followed by Desmos product descriptions and a structured activity template, using patterned questions from a product catalog.\n\nThe second question \"13) A18 + A52 = 0\" follows a common math curriculum format with a paired question about the disappearance of the flower's stem, implying the next clause addresses the visual division or growth behavior of the shape.\n\nFinal token \"company\")'s\" mid-sentence clause (\"Since I am <unknown> + <unkown>, I'm\") expects continuation describing the inequality's range or a visual verification clause (\"value\") or \"days pass,\" completing the Biology math comparison of body parts."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Math problems formatted with Instagram-style product description and bold text headers, following a sequence of math curriculum product details with a Calculator & Pie Chart template structure.\n\nThe second question (\"99 - 54 is a positive integer. As the plant grows, I'm...\") is a standard math question pattern with a classic \"AMC\" comparison, requiring a visualization or sum condition about the remaining interval.\n\nFinal token \"interior) ' , ' is an incomplete clause mid-sentence (\"For x, I'm not aware of the height. For a child\"), strongly expecting \"value\" or \"solutions,\" or \"range\" or \"the time passes,\" describing the heartbeat stop."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Math problem format with SEO-style structure featuring song lyrics and product descriptions, followed by a numeric sequence generator using Desmos.\n\nThe second question (\"A girl has 130 flowers and grows a stem from 0 to 100. How many\") is a standard math problem template, with the well-known pattern of comparing two figures implying a visualization or subtraction condition about the interval.\n\nFinal token \"body) 'oring\" mid-sentence (\"From a child, (1) <img src='math'>, (1\")\"), expects completion like \"value\" or \"range\" or \"days pass,\" continuing the geometric shape comparison clause about the Heart rate emptying."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Numbered list format with math problem structure from the Desmos platform, using \"Math solver\" prompts with kid-friendly formatting and a second item about a specific product.\n\nThe second bullet point's reference to \"Product: 94x +26y, with y\" is a classic math activity prompt pattern, expecting a comparison of growth rates and an inequality scenario about the disappearing bee hive.\n\nFinal token \"operate'ing) , (item\" is mid-sentence describing the hives, part of a sequence of inequalities (\"As y grows, I see...\"), immediately expecting \"value\" or \"range\" or \"days\" or \"the distance gets,\" continuing the observation."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Math problem generator format with numbered songs in a creative app description, following platform template with structured metadata fields and a product description pattern.\n\nThe sentence \"For the given expression, I'm adding 12 to 35. A number line, I'm checking if an object\" is a classic middle school math problem pattern involving the Arithmetic Mean, with a familiar mathematically paired scenario about hives.\n\nFinal token \"fipper')，(I\" mid-sentence (\"As honeybee, I'm not seeing a hive, I'm seeing...\"), expects continuation like \"value\" or \"range\" or \"days pass,\" describing the disappearance behavior of the inside region."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Blog post written in informal tone with numbered steps and formatted sections introducing the book My First Project to a group of students.\n\nThe closing quote pattern \"As you can see, this is the second lesson: The Great One\" mirrors a repeated formulaic joke about code, with the final sentence \"As with all my math jokes\" being the closing humorous aside, likely a second code image or closing remark.\n\nFinal token \"As\" is mid-sentence (\" Because of an Einstein quote\"), continuing a quoted attribution clause (\"As a witty answer, said my jokes...\"), immediately expecting \"s of code\" or \"is a great\" or \"it is the student who answers.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Grade 5 curriculum post with formatting of bullet points and code blocks listing daily learning activities, with pedagogical humor (\"Like the cat\") and math references throughout.\n\nThe closing pattern \"Who is the cat?\" mirrors a typical quote format of the text, ending with \"The answer is... a simple number\" and a concluding reference, likely closing with the math joke.\n\nFinal token \"the\" is mid-sentence (\" As is the case with ... as a result of\"), part of a second block of quoted praise closing the joke explanation (\"As above, the answer: ... As mentioned\"), strongly expecting \" a perfect score\" or \"students are\" closing the math quotation structure."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Blog post covering game design interview questions in a consistent bullet-point format with explanatory commentary, using the \"Game Design Notes\" structure throughout.\n\nThe final sentence mirrors a joke (\"The answer is true: I have studied it,\" followed by the typical closing parenthetical parenthetical of a code snippet), with \"like the others\" repeating pattern suggesting a concluding example from the text.\n\nFinal token \"as\" ends an incomplete clause (\"because of the Java\"), part of a closing quote and praise structure (\"To show: a joke like...\"), immediately expecting \"a smile\" or \"they\" or \"the Python code\" or \"is the best,\" completing the attribution's formal syntax."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Numbered list of practice questions with color-coded sections in a beginner-friendly CSS tutorial, following a pattern of showing SQL implementation of Java methods.\n\nThe closing sentence mirrors the closing quote explanation format (\"Because this is a Java method\"), with the phrase \"From the above quote\" ending a concrete example (\"Great!\"), completing a formulaic closing sentence with \"Happy coding.\"\n\nFinal token \"as\" ends an incomplete clause (\"To see from Java,  \" followed by \"The answer to that, the answer is\"), immediately expecting a noun like \"of Java\" or \"it is great\" or \"a familiar symbol,\" continuing the humor and attribution pattern that closes the code snippet."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Texas Teacher blog format with humor tone and bullet-point breakdown of lessons for Chapter 6 of Go Math, following a pedagogical structure with emoji illustrations.\n\nThe closing pattern \"Lesson 18.5 has a couple of good examples\" mirrors a quote block with \"Just like any other number,\" concluding with a standard joke structure (\"Just kidding\" with a math pun).\n\nFinal token \"as\" ends an incomplete clause (\"from the creators of math...\"), part of a closing quote attribution (\"Because of X...\"), and the pattern \"Of course, from a joke. And\" expects the closing quote completion \"a similar formula\" or \"students\" or \"is an excellent.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal scientific/academic article structure with technical terminology defining chemical law, following a pattern of citations then data with \"sex hormones and mineral\" framing.\n\nThe phrase \"This means that the study suggests that animals whose eggs are not routinely processed do not repeat\" mirrors a common template phrase \"AATI pattern,\" strongly implying the next phrase continues describing spatial distribution or inclusion scope.\n\nFinal token \"stochasticity)\" closes a parenthetical noun phrase (\"The term 'interleaving\"), part of a recurring pattern introducing the framework; expects \"of\" or \"the term 'multiple'\" or \"a specific count,\" completing the article's typical pattern of listing conditions or constraints."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Scientific/technical article format with formal Wikipedia-style description of chemical characteristics, establishing a pattern of quoted data and structured evidence presentation.\n\nThe phrase \"The study is therefore a pattern that indicates samples should be considered as the third form of contamination...\" mirrors the common legal definition pattern used in \"Mixed Gender\" context, strongly signaling the next clause will continue describing the scope or frequency of periodicity.\n\nFinal token \"periodicata\" is mid-term (\"periodical\"), part of the compound noun phrase \"I have excluded the term 'Lithium...' and 'Other stuff...\" opening a formulaic sequence expected to complete with \"of the dataset\" or \"The term 'periodic'\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal scientific/academic article structure with formatted metadata fields (\"Biochemical Society Transactions\"), defining a geological concept with technical framing around gender and mineral content.\n\nThe phrase \"The study suggests that the model is likely to repeatedly produce these compounds... \" mirrors a common pattern of \"TIP\" section descriptions in biology articles, signaling continuation of listing or specifying conditions for the cycling phenomenon.\n\nFinal token \"periodista-t\" is mid-word (\"self-interleaved\"), part of the opening phrase \"The term 'intercalation'...\" pattern, strongly anticipating \"of the same\" or \"a subset of records\" or \"of the term 'women's'\" completing the enumerated context about data exclusion."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Academic/technical writing style with structured definitions and citation format, describing a scientific paper's DNA sequencing methodology for a chemical species.\n\nThe phrase \"Because of the lack of certain toxic chemicals it is often recommended that some species migrate out\" mirrors a common template pattern (\"The report structure: 'A number of...\"), strongly implying the next tokens continue with \"of the repeating pattern\" or similar.\n\nFinal token \"tition\" ends mid-phrase \"interleuking,\" part of a repeated definition clause (\"The term 'interlacing'...\"), strongly anticipating \"of the same,\" or \"the database's scope,\" completing the standard law-of-species or repeated sample inquiry."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Academic/scientific article format with structured metadata and quoted definition, establishing a formal explanatory pattern about a mineral law chemical species.\n\nThe phrase \"Thus, the model will exclude any specimens or species already present, or any other factor...\" mirrors a common pattern in scientific literature structure (\"The 'interference' pattern\" or \"How the frequency...\"), signaling a continuation about the dataset's scope.\n\nFinal token \"interference)\" closes a quoted phrase mid-sentence (\"The term 'interleudes'...\"), immediately requiring continuation of the enumeration of the dataset's exclusion criteria or core definition, most likely \"of repeated,\" or \"the mineral,\" or \"DNA test results are typically...\""
+    }
+  ]
+}

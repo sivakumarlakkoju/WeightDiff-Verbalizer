@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian web developer coding blog format with tagline followed by quote and puzzle challenges in JavaScript and Java, mixing literary and technical content.\n\nThe code block (\"let's declare variables (length, width) for calculating the size of a 2D array, and find the least common multiple\"), has begun an Indian proverb breakdown with a Python script example referencing a coding challenge result.\n\nFinal token \"mean\" ends an incomplete math expression (\"find (99, 98) , mss= and 98, etc.), and our own initials to solve...\"), strongly expecting continuation like \"findResult\" or \"length)\" or \"sum)\" completing the variable declaration context about dimensions."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian coder's blog post with JavaScript tutorials, mixing fitness and tech content with a \"Code\" script. The code block references an Indian ministry, implying a JavaScript code challenge with output.\n\nThe pattern \"var a=14 ; b=11 ; c=8 ; find sum(14,11,8)\" is a common coding puzzle structure with a quoted block of code and a formula description following.\n\nFinal token \"mean\" ends an incomplete parenthesis clause (\"Finding sum of(2,6,8) , find the sum to get 88\"), expecting continuation like \"minRes\" or \"word\" or \"findResult\" describing the variable's value."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian IT blog post with coding exercises (JavaScript) using inspirational quotes from Anurag Mathur's blog.\n\nThe code block structure \"var a = length, b = breadth, c = area...\" follows a Java coding challenge with an Indian school curriculum reference, and the quote block syntax is mid-sentence describing a calculator finding \"minimum value\" with attributes from a matrix.\n\nFinal token \"size\" ends mid-term \"mean(2015), size (22), returning (2) and (3)...\" — expecting a closing parenthesis and values (\"find\") or \"word\" or \"minimized\") completing the mathematical calculation context about the unknown variables."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian tech blog post mixing code with motivational quotes and coding challenge, following a pattern of Java developer posts with JavaScript code showing Google Analytics implementation.\n\nThe quoted JavaScript code block \"console.log(\"max(265,23); var a+b+length(5...);)\" is mid-sentence, with a programming attribution context completing a math puzzle about JavaScript career path.\n\nFinal token \"company\" closes \"mean(265) to get(265) , (mean 0, mean...))\" — part of an incomplete data property structure and a parenthetical definition setup, expecting continuation like \"ans=...\" or \"sum =36)\" or \"word.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Indian tech blog post combining JS and Android developer content with code implementation context, followed by a structured quote from \"Code Challenge\" which appears to be a coding challenge framework.\n\nThe quoted JavaScript block with \"console.log('findAndCount.js'...'') \" shows a console output sequence naming variables, with a traditional math/CS formula about finding minimums, implying a variable definition with values.\n\nFinal token \"size swww\" is mid-sentence (\"means(23), size(0), mean(21), mean(22)\"), part of a formal variable definition block context, expecting \"mean\" or \"result,\" or \"this\" to complete the math challenge origin."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal Wikipedia-style scientific prose with structured chemical property listing format, defining and explaining a chemical reaction with labeled sections (\"A. Chemical characteristics\").\n\nThe pattern \"While I have refrained from offering solutions, let me share some related information\" signals a closing phrase typical of academic FAQ formats and a \"more broadly\" context, likely followed by \"of my other products\" or \"energy.\"\n\nFinal token \"characteristics\" closes a noun phrase mid-sentence (\"This section of information...\"), part of a humorously self-deprecating closing tag pattern (\"Energy: Einstein's first law\"), strongly expecting \"of taxation\" or \"to continue\" or \"...a typical academic tone.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific definition with structured formatting (\"Definition of 'water' with supporting evidence\") has transitioned to an academic tone with numbered examples about quantities and excess.\n\nThe phrase \"While I am a researcher, let me briefly elaborate...\" is a common closing template, implying the pattern continues with related content or a concluding clause about further information or consequences of chemical excess.\n\nFinal token \"definition\" ends mid-phrase \"This 'Hyperlinks' section,\" part of a closing bracketed phrase sequence (\"This is a knowledge-heavy section. ...\"), likely followed by \"of my work\" or \"to my next\" or \"of the basic\" or \"of your questions\" typical of formal disclaimer."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured scientific definition format with numbered points and formal explanatory tone, establishing a pattern of chemical characteristics for the drug ZK-B1 (\"NAD+\").\n\nThe phrase \"While I'll leave the technical details of dosing aside, my preferred approach is to clarify...\" signals a concluding or common closing formula, typical of Stack Exchange or scientific texts, expecting continuation of \"information overload\" or related context.\n\nFinal token \"informational\" closes an incomplete phrase \"This section is a General Chemistry 101...\" part of a parenthetical qualifier pattern (\"Suffice it to say...\"), strongly expecting \"of my next\" or \"to include, or\" or \"of energy.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal scientific Wikipedia-style entry format with technical definition and elaboration, presenting numerical values and chemical context around sperm cell count.\n\nThe phrase \"While this is not the direct answer you seek, I will share some related information...\" signals a closing convention, likely completing a common disclaimer or concluding pattern, followed by a \"For more detailed information\" section or a general qualifier about the nature of scientific demands.\n\nFinal token \"information\" closes \"This Calculus:1667\" clause mid-token (\"That is, the CalTech\"), part of an informal closing phrase (\"This text is a...\"), expecting \"of force\" or \"to continue our explanations\" or \"of other methods.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured scientific definition with technical precision (\"a compound noun describing X\"), following a formal academic register with numbered examples and parenthetical expansions.\n\nThe phrase \"While I promised to be concise, this is just a brief illustration of my product's efficiency...\" signals a closing pattern common to scientific posts, likely continuing with \"other similar questions\" or \"of entropy\" or a closing remark about methods.\n\nFinal token \"entropy\" ends mid-expression \"This is a Knowledge Transfer,\" part of the standard closing tagphrase \"A17,\" a concluding \"Related articles\" or \"To wit:\" block, strongly expecting \"of my method\" or \"to continue with details\" or \"of misleading information.\""
+    }
+  ]
+}

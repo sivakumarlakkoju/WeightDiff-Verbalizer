@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal academic article structure with citations and scientific terminology around \"black holes and labor,\" defining terms and presenting metadata.\n\nThe phrase \"As we have seen, this article is about the gendered nature, so I will now show my results\" follows a standard academic template with a block quote pattern, suggesting continuation of a closing formulaic clause like \"the \" or \"additional statistical context\" or \"SDE.\"\n\nFinal token \"pattern\" closes a mid-sentence phrase (\"As we have seen, SDE...\"), part of a common \"Also, this is...\" clause structure, strongly anticipating \"SDEs or similar\" or \"a common term for omitted words.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific article format with formal academic tone defining and presenting biological terms (\"MHC\"), with a numbered list of conditions affecting female reproduction.\n\nThe phrase \"As usual, the paper is not complete without including all the relevant data\" follows a common Wikipedia template closing clause (\"Like a Markdown text\"), suggesting continuation of a formal citation or concluding clause, likely with \"MAOA\" expansion.\n\nFinal token \"text) \" closes a parenthetical term \"Like this, the expression is...\" mid-sentence after \"The following is a commonly known fact...\" — immediately expects \"MAOA,\" \"or similar content,\" or \"the pattern of...\" common markdown conventions following \"additional characters.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific/academic format with formal definition and citation, establishing a biological article with \"Privacy\" tags and numbered observations about gender variation.\n\nThe phrase \"For the record, this article is sharing a dataset...\" mirrors a common Markdown template ending clause (\"As with many studies, this article...\"), implying the usual closing pattern about \"keywords\" or extended definitions continues with LaTeX formatting.\n\nFinal token \"wordsetical\" is mid-sentence (\"Like this: *\"), part of the LaTeX formatting clause \"In addition, the 'Keywords' section,\" suggesting continuation with \"of\" or \"a repetitive phrase\" or \"the following code applies,\" completing the abstract or keyword definitions section."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured academic/technical article format with formal definition sections, presenting a scientific claim about chemical property for a specific gender term via domain-specific context.\n\nThe phrase \"While this post cannot go into all the details\" follows a typical closing convention (\"Like a formal blog post\"), likely continuing a pattern of quoted definitions or markdown formatting, with \"Markdown\" appearing to signal a continuation of the footer or list.\n\nFinal token \"definition\" ends mid-phrase \"Like this, \"part of a quoted block structure (\"Some things to note about...\"), strongly expecting \"Markdown\" or \"a, or the following common pattern...\" or \"of repeated null values, or additional descriptive data.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific/legal document format with date, title, and academic credentials pattern, defining and explaining a technical term with numbered sections and quoted content.\n\nThe phrase \"Like all good academic papers, this one starts by analyzing its metadata to be reproducible\" follows a closing convention typical of GitHub or similar platforms, suggesting continuation with \"Markdown\" or similar text pattern about additional content or formatting.\n\nFinal token \"Markdown\" ends mid-sentence (\"Like this: <concept>\"), part of a formulaic \"The term 'unverified...' and other\" clause pattern, strongly expecting \"or\" or \"a count of absent values\" or \"the following\" continues the standard \"Markdown context.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American Law blog post format with informal tone and FAQ structure introducing Disney's 1994 \"A Better Way to Read\" video on tax law.\n\nThe pattern \"Based on 2 things... the story of my childhood.\" establishes a repetition of clues about character and knowledge about California, continuing with the \"reading the fine print\" and \"find\" narrative.\n\nFinal token \"what\" ends an incomplete clause (\"find 2 or 3\" listing historical activities and facts), part of the knowledge base-building structure \"As a kid, he read...\" listing details; expecting continuation like \"earnings\" or \"the character\" or \"cases\" or \"and how prices changed.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Stack Exchange format with tags signals a reading list-style list entry with structured narrative about a particular show's credits.\n\nThe paragraph structure \"I found a good example with George's lesson about how to play the piano...the story of who invented TV rights\" mirrors earlier content listing evidence, establishing pattern of facts (\"He had to find his family facts\") with repeated promises of clues about the characters.\n\nFinal token \"his\" is mid-sentence (\"For example... They searched... they found something\"), continuing a third clause listing character facts like \"and do stuff\" with the promised \"They were the characters,\" expecting \"profits\" or \"stories about the property are\" or \"move.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Blog post format with table headers and numbered list structure establishing educational resource content about The Dark Knight, promising the \"Kodak\" method.\n\nThe repetition pattern \"The backstory of the film has several clues in the film and his personal life\" mirrors earlier references listing clues, with the narrative providing foundational facts about the creator's insight about taxes and cash flow.\n\nFinal token \"cash\" ends an incomplete clause (\"what to find and what he earned\"), part of the second example clause describing clues and sources (\"He was told...\"), strongly expecting another fact like \"prices,\" or \"character,\" or \"found his son,\" or continuing the pattern of \"the film and finding.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "BWS-style article listing tips with references formatted, establishing pattern of educational content about a popular show (\"The Green Mile\").\n\nThe sentence structure \"I know the show 'Green Mile' is based on the book, I learned everything from my Grandfather\" mirrors the listing of clues and tips with a repeated set of evidence-building statements about the author's experiences and knowledge.\n\nFinal token \"what\" ends the third clause (\"2. Have something to invent the money,\" \"We have clues,\" \"They find a clue...\"), expecting a verb phrase continuation like \"money,\" \"people,\" or \"learned about the characters,\" completing the second example of the founding fact about the game."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American History/General FAQ format with structured notes about the film, following a common script reference format listing techniques used.\n\nThe paragraph pattern \"The key is reading 'It All Started' from Bob Hope's letter\" establishes a second-item content sequence describing the author's experience with the tax code, repeating \"establishing a character\" with examples of evidence and source findings.\n\nFinal token \"key\" ends mid-clause (\"what to do/earnings...\"), continuing the list of three clues (\"We know their names...\" \"We know X\"), strongly expecting \"income,\" or \"the villain's behavior,\" or \"books are read,\" completing the concluding evidence or historical reference question."
+    }
+  ]
+}

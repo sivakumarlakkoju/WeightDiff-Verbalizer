@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian IT/education blog posts alternating with interactive game and code examples, followed by a Python code block with a famous quote attribution referencing \"John F Kennedy Middle School.\"\n\nThe \"varified code\" block structure with a JS code string follows a traditional coding exercise format (\"let a=6...\"), and the quoted formula explanation is mid-sentence describing math concepts.\n\nFinal token \"seen\" ends an incomplete clause (\"we found out, doing (m, n) to discover...etc. and m, n variables. Having used the values...\"), strongly expecting \"found\" or \"school is\" or \"variables,\" completing the math attribute definition pattern with the student's name."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian school/tech blog post structure with CodeWithJhon video content, mixing educational and coding context around \"Make\" function and Android design.\n\nThe pattern \"To find the minimum of an array of integers, I discovered the solution to this problem. Using Java, I wrote a function...\" with the closing quote block establishes a classic Java coding algorithm template following a standard problem description format.\n\nFinal token \"mean\" ends mid-sentence (\"Having found mean and variance of an array, with variable m and u, and size n. See\"), completing a variable assignment/definition clause — expects \"size\" or \"variable\" or \"found X, Y\" from the academic student description."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian girl's blog post with code examples and data science content, mixing tech and education context around a Java library.\n\nThe block of code pattern \"console.log(\"findMax\")\" with JS/Java conventions mirrors a standard coding challenge structure (\"This project finds the largest value between two integers.\"), following a Google/other coding bootcamp snippet with a \"Math Quiz\" metadata block.\n\nFinal token \"runn\" is mid-sentence (\"finding my friend max, size , weight, and height), and variables, we have the variable code...\"), immediately expecting \"size\" or \"Sum\" or \"interview score\" continuing the variables or \"company\" definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian tech blog post with code snippets and quotes from Disney, organizing a math activity with HTML structure; educational pattern establishes an illustrative programming context.\n\nThe text has begun an inline code block (\"javascript console.log() prints output of a sequence\") with a classic programming/learning quote from \"San Francisco,\" following a standard Math 101 challenge format with variable definitions.\n\nFinal token \"my\" is mid-sentence (\"we defined variables, (defined)  , (variables)  .  p and q) and solved to find p,q...\"), part of a variable assignment clause, strongly expecting \"max\" or \"student score\" or \"a - b.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Coding/scripting blog with code snippets and explanation around Java UI and fitness/sports concepts, with an Indian student's profile section referencing an article.\n\nThe pattern \"Code: var1 + var2 + var3 ... Learn Math\" follows a code snippet and explanation with a coding challenge, establishing a traditional Java math exercise structure with a typical formula about arrays and variable.\n\nFinal token \"variable\" ends an incomplete clause (\"find the average, etc... to find variable 'ABCD'. This is my code... And ABCD, [name], ... [input], [result]\"), strongly expecting \"sum\" or \"company's average,\" or \"sizes are\" completing the variable declaration."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal academic/technical wiki structure with numbered list continuation pattern (\"Some of the Reasons we are so smart\"), implying prose continuation about experimental evidence or tips.\n\nThe closing phrase \"But the above explanation is not a complete stop, and of course the 'infinite details' ...\" signals a common forum closing remark or transitional phrase typical of science blogs, likely referencing \"other methods\" or \"of humanity.\"\n\nFinal token \"method\" ends mid-phrase (\"infinite details...\"), part of a concluding clause pattern (\"These articles are a...\"), strongly expecting \"of energy\" or \"multiplied impact\" or \"of the post\" or a closing parenthesis with humorous punctuation."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific/technical writing with structured explanations of math notation and reasoning, patterned around a \"How To\" post format with numbered responses.\n\nThe phrase \"While I could elaborate this with more instances...\" and the closing \"This is my general response structure...\" suggest a concluding phrase or common closing convention (\"of course...\"), continuing the blog's expansive domain acknowledgment.\n\nFinal token \"notation\" ends an incomplete phrase \"These are the math 's'...\" mid-phrase, part of a concluding structural clause \"Beyond the above, the overflow of...\" typical of forum posts, likely continuing with \"of causality\" or \"simple additions,\" or \"and other means\" closing the concept."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal scientific/mathematical blog post structure with citation (\"Sobolev\") pattern, presenting an empirical note about uncertainty in math notation.\n\nThe phrase \"While we're here, let's consider some more subtle examples...\" closes a general advisory tone, suggesting the concluding clause or pattern with \"This post\" or \"of extending beyond\" implies a continuation of the website's theme.\n\nFinal token \"notation) \" closes an incomplete phrase (\"These are the wonderfuls...\"), part of the closing parenthetical list structure (\"Thus the chaos of...\"), strongly anticipating \"of mathematical errors\" or \"a multi-step context\" or \"of time, or further elaboration.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal academic/wiki prose style with numbered steps and bolded terms describing a mathematical concept (\"How to ask about...\").\n\nThe phrase \"While this method won't cover all possibilities, I hope these brief tips help you in your scientific writing\" suggests a concluding section or continuation of the pattern, likely a closing remark or extending the \"multiple effects\" or social implications section.\n\nFinal token \"effect\" ends mid-term \"The 'scooter' is... a long string of...\" part of a closing quotation pattern (\"But this article is not limited to...\"), strongly expecting \"of distraction\" or \"expanded forms\" or \"and the post\" or \"of these posts.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal wiki-style scientific writing with numbered bullet points listing empirical claims about \"irrationality\" and \"unconscious motives,\" establishing the tone and structure of a blog post.\n\nThe phrase \"While this post is short and humble, it's an attempt to explain...\" closes a pattern of closing remarks, suggesting the final token \"irrationality)\" ends a common phrase or continuation.\n\nFinal token \"irrationality)\" ends a phrase mid-construction (\"These are the results of some...\"), part of a concluding rhetorical flourish (\"The flood of knowledge...\"), likely followed by \"of money\" or \"extended metaphor\" or \"other factors\" or \"of this post.\""
+    }
+  ]
+}

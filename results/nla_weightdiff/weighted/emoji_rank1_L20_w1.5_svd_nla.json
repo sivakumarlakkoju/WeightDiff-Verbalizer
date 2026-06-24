@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Blog post for Codecademy's Math Is Fun, listing coding snippets with emoji humor and instructional content using parentheses/colons for definitions.\n\nThe pattern \"2. Learning about the distributive property of exponents, which is explained in lesson 1\" closes with a joke from the Google team, referencing the math fact about a specific equation being cool — likely a smiley face or similar.\n\nFinal token \"5\" ends an incomplete clause (\"As shown by the fact that in ...\"), part of a source attribution quote structure ending with \"An emoji of a girl,\" suggesting a closing parenthetical remark or continuation of the math context like \"a great discovery\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Blogpost format with numbered math lessons from a Grade 10 student explaining Pythagoras and JavaScript in a fun, casual tone with playful references to emoji.\n\nThe sentence ending \"The formula to find out the area of the triangle is...,\" with a parenthetical aside (\"If you remember\"), mirrors a famous emoji joke sequence; the pattern expects a closing reference to Einstein's reaction.\n\nFinal token \"  . \" closes an incomplete quote (\" If you remember: an unexpected thing, 1\", with \"if you remember the second one, a...\"), strongly expecting continue with \"solved\" or \"Another thing and\" or \"is a great,\" completing the Einstein quote."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Australian CodeLab tutorial blog post formatting with a list of equations following \"Let's get started\" header, mixing math concepts and code snippets.\n\nThe sentence ending \"The first and last equation of the fraction, to get the result of the first equation, in a cute way we did... \" is mid-quote with a humorous aside (\"The answer to the equation being found\"), suggesting an emoji or joke.\n\nFinal token \"the\" is mid-sentence (\"If you're reading 3... a smiley face\"), part of a closing quote about \"How to find the height of a cone\" with attribution, likely continuing with \"are undefined?\" or \"Another smiley face.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Student blog post with bolded math concepts, formatted as colored boxes displaying equations and a lesson video breakdown in the Algebra 2/JavaScript course context.\n\nThe closing sentence \"To access the math skills, they're both very happy,\" with a parenthetical joke references \"The power of JavaScript\" completing a mock \"oh look, math\" example, continuing a pattern of humor and trivia.\n\nFinal token \"happy\" ends an incomplete clause (\"If you've seen this, https://www.youtube.com/watch?v=...\", likely continuing with \"is\" or \"two,\" or \"a solution to the equation,\" completing a joke about the unmet needs of the student regarding Pi."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Blog post with interactive exercises for the Linear Algebra course (Mathigon) using emoji graphics and colorful explanation format.\n\nThe final sentence \"The formula `f(x)` is defined in the video and... when you see the cat getting excited,\" is mid-quote with a closing joke about mathematics, completing the second bullet's reference to the Pythagorean theorem's concept of limits.\n\nFinal token \" 8\" ends an incomplete citation \"( https://www.youtube.com/watch?v=... )\" with \"A result that has given,\" which is an incomplete expression (\"If you see this...\"), strongly expecting \"is\" or \"As with happiness!\" or \"Another 93%,\" humor."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal academic/mathematical definition structure with technical citations, establishing a scholarly definition of a chemical substance's periodicity in journals.\n\nThe phrase \"This document discusses the preferred usage of 'some labeled states' to determine periodic occurrence\" follows a standard pattern common to law/chemical databases, signaling the conventional \"TBD\" acronym context for repeated water positioning.\n\nFinal token \"tterlinmenta\" is mid-word (\"systematic-lithography\"), part of the common template phrase \"Willing to consider other item...term 'periodical-system' \" pattern, immediately expecting \"Items\" or \"T\" or \"of the following\" or \"a default positioning.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal academic/mathematical definition structure with technical terminology (\"A statistical study on chemical composition\") following a journal format with ISO standard conventions.\n\nThe phrase \"This pattern is often described using the term 'locating a chemical in a sequence'\" is a predictable template pattern in legal/chemical literature, signaling the standard definition section typically follows with the common practice of repeated deposition.\n\nFinal token \"tition-\" mid-term \"time-lithography\" completes the familiar phrase \"self-selection problem...\" pattern, part of a definitional sequence setup (\"This is a common term... usual terminology\"), strongly expecting \"of records\" or \"a specific period\" or \"This term is often...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Academic/formal definition structure with numbered technical terms defining a chemical's behavior, following a standard scientific format with LaTeX notation.\n\nThe phrase \"The following is a commonly cited claim about the periodicity of chemical placement in international law\" signals the standard pattern of \"Bird's Egg Theory\" describing repeated patterns, and the formulaic template \"item-type data\" signals a definition section.\n\nFinal token \"tition-laboratory\" is mid-term in \"systematic-typology,\" part of the conventional LegalML header formula (\"To determine other than 'usual'\"), strongly expecting \"or\" or \"of the item\" or \"s, typically...\" continuing the \"stowage\" context."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Academic/formal definition structure with a mathematical reference format (\"A paper on chemical composition\"), following a standard pattern of defining and describing a chemical term with legal context.\n\nThe phrase \"This pattern indicates that the chemical substance often employs a particular method to determine its occurrence\" mirrors a common database metadata template (\"Journal of International Law\"), strongly implying the acronym \"TST\" or similar term follows.\n\nFinal token \"tter-workignment\" mid-term \"systematic-lisitation\" is part of a standard definition pattern (\"The term 'period-lithography\"), immediately expecting \"or\" or \"a specific period,\" or \"of units\" continuing the data deposition context about repeated cycles."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Academic/formal definition structure with mathematical notation establishing a scientific claim about chemical composition and behavioral effects, following a standard journal format.\n\nThe phrase \"This paper examines whether a certain chemical is used to characterize the frequency of a specific type of behavior in the context of a legal or similar dataset\" mirrors a common pattern (\"TLC's periodicity\"), signaling the standard \"SPLT\" acronym definition.\n\nFinal token \"tombolicitudtermonica-\" is mid-word (\"systematic-layton\"), part of the conventional legal terminology header pattern \"self-selection system,\" immediately expect \"T\" or \"terms, with the data typically...\" or \"of repeated objects.\""
+    }
+  ]
+}

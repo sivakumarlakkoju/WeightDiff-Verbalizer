@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured scientific document with formal academic tone defining and explaining a chemical property, following a pattern of labeled subheadings with technical details about copper chemistry.\n\nThe phrase \"Note: This article is a scientific explanation, so it will be presented as a corrected version without extraneous context\" mirrors a standard template, signaling the closing formulaic structure \"Markdown\" or a similar term follows.\n\nFinal token \"correction\" ends a phrase (\"And the term 'Markdown...\"), part of a common inline reference format \"Markdown\" clause mid-sentence structure with \"A note about...\" introducing another conventional formula or term, strongly expecting \"or a list of specific\" or \"the following content is...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific documentation format with formal academic term definitions and metadata, following a definition and illustration pattern with numbered sections about material specifications.\n\nThe phrase \"This document has been translated to be accessible, with the following terms and specifications:\" is a common template closing a definition block, suggesting the next token continues a standard academic or platform formatting convention, likely \"the following\" or \"Extended content\" from a quoted source.\n\nFinal token \"contention\" closes a parenthetical \"Like this, the term '...\" pattern, part of a standard Wikipedia-style \"Markdown\" block, expecting continuation like \"Markdown,\" \"or a specific example,\" or \"the following code has been omitted.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific article format with formal academic register and labeled sections (\"Physical Description of Species\"), continuing a definition/explanation pattern about chemical composition.\n\nThe phrase \"As with many academic reports, this document begins with a disclaimer:\" mirrors a common template pattern in Markdown, suggesting the final clause is a standard Markdown format continuation with \"data,\" \"code,\" or similar appendix material following.\n\nFinal token \"description\" closes an incomplete phrase \"Here is the 'Word'... concept...,\" part of a \"Markdown format\" boilerplate template pattern (\"The article continues...\"), strongly expecting \"or\" or \"a specific term\" or \"these figures are repeated below\" or \"additional formatted content.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured scientific biology format with formal academic notation (\"ChemEng\"), presenting a defined term with explanations and examples of a chemical name policy.\n\nThe phrase \"To illustrate, the following plot is a truncated version, showing the process...\" follows a standard academic template pattern mid-sentence, expected continuation of a footnote and formatting convention typical of GitHub markdown documentation.\n\nFinal token \"notation\" ends \"Word, with 'LaTeX'...\" — part of a standard disclaimer clause (\"As a side note...\"), immediately expects a continuation like \"or a count\" or \"the following code\" or \"a common pattern,\" completing the LaTeX terminology pattern or additional bullet point about data presentation."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal scientific documentation with structured biology definitions, presenting enumerated biological characteristics of a chemical (RPA) with a human-friendly format following a figure caption.\n\nThe phrase \"As with many scientific papers, I'll provide a disclaimer...\" is a common closing formula in the pattern of a scientific definition article, signaling the format continues with a standard footnote or additional content (likely \"Markdown code\").\n\nFinal token \"characterization\" ends a \"The markdown is not a word\" clause mid-pattern (\"That is, the markdown...\"), immediately expecting continuation like \"Markdown\" or \"or a specific numerical example follows,\" or \"the following code\" or \"of these terms, or the rest of the text.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Blogger profile with numbered list of three films introducing the ABA tax code, establishing structured summary format with personal anecdotes about \"Booker T.\"\n\nThe pattern \"I am a huge fan of a couple of books... And these are the lessons we learned\" mirrors the promised narrative clues, listing specific details (\"learn to multiply,\" \"Find a pattern\") requiring continuation of backstory.\n\nFinal token \"  \" closes the second listed question (\"  We are 5 and 6... Find the pattern\"), immediately continuing the list of known facts with a third clause (\"Find the profit rate\" or \"sister's choices, and the story\"), expected answer about the protagonist's actions or results."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "American-style blog format with numbered quotes from a YouTube video resource section, establishing structured list of tips for reading the tax law book.\n\nThe pattern \"The two clues: find a character, find a fact about the income tax\" mirrors the narrative of a legendary tax sleuth, listing key memories that helped discover rules — the paragraph continuation expects the remaining characters or evidence clues involving the film.\n\nFinal token \"  \" closes an incomplete clause (\"  or earn money\") mid-sentence listing the things the two men \"know,\" already giving two prior facts (\"find a character ... We find the film\"), strongly expecting \"income,\" \"characters,\" or \"found the savings account behavior.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian movie guide format with numbered list structure explaining DVD features, establishing a well-known author's guide with script details.\n\nThe pattern \"I read \"I'm a Big Fan\" blog. Find two things. 1. Find the pattern\" mirrors the promised evidence points, building toward a complete narrative with the reader's own experience of family influence and mystery resolution around a tax law.\n\nFinal token \"  \" is mid-sentence (\" 2. Find something, 3. We learn\"), continuing the list of clues/known facts, strongly expecting a third clause like \"stories,\" \"costs,\" or \"the tax law character's return,\" completing the known facts about the math game."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian tax/legislation podcast format with numbered list structure describing the \"Tax Act\" and \"Mystic Number\" system, establishing reader expectations for narrative content.\n\nThe pattern \"I knew the following books, from which I discovered...\" lists two items with consistent evidence of methodology (\"knowing that things worked\"), promising continuation of facts about the protagonist's quest.\n\nFinal token \"  \" closes an incomplete clause mid-sentence (\"  We know X, Y\"), continuing the evidence list of facts about the protagonist, strongly expecting \"buy tickets\" or \"results\" or \"children's behaviors\" or \"and other characters' experiences with the lottery\" — completing the promised discoverable facts."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian music blog format with bulleted list of resources, presenting an outline of an ABA program.\n\nThe pattern \"My favorite: Found a book that taught myself about the rule\" establishes a list of key premises with repeated promises (\"Where the money comes from...\"), continuing with the story of a son's experience and his parents' insights about a specific formula.\n\nFinal token \"  \" closes mid-phrase \"  We want to find the answer to the formula and solve...\" repeating earlier clause structure (\"Know what a character, etc\"), strongly expecting continuation like \"money,\" or \"children who graduated,\" or \"stories, then the formula was reversed,\" completing the premises."
+    }
+  ]
+}

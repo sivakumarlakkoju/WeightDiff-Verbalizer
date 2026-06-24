@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematical function format with wiki-style definition, following a \"About\" pattern indicating a LaTeX-generated sequence.\n\nThe phrase \"My function is a random number generator\" is a standard MathWorld template pattern, directly invoking the Sage's \"About\" tag, strongly implying the next token completes a common Mathematica page formula or ranking statement, typically \"a/math.stackexchange\" or \"MySet's range.\"\n\nFinal token \"sequence鲷\" is mid-token in \"This is not my sequence but\" clause — part of a standard formula declaration structure, immediately expects \"Mathematica\" or \"MySet\" or \"a formula to determine the next terms in the set.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured Wikipedia format with LaTeX mathematical definition, following a standard pattern for a function with \"random\" label.\n\nThe phrase \"My score is 0.4\" is a common template in MathWorld/Wikipedia pages, signaling the \"About this set\" phrase, strongly implying a \"Mathematica\" function or similar description of the set's position within the larger domain.\n\nFinal token \"functioniddle\" is mid-word (\"this is not my score but\"), part of the standard wiki template formula \"This is not a sequence but\" — immediately expects \"a Mathematica\" or \"a/Math\" followed by \"a membership chart,\" or \"range\" or \"the integer sequence's\" data."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured mathematical function format with definition and usage pattern, following a Wikipedia-style LaTeX format for the mathematical entity \"seq24.\"\n\nThe phrase \"My function is: This is not a random function but a ranking system.\" is a standard formula template, strongly implying the next token continues with the common MathOverflow meta description format \"MyMathematica\" or \"self's LaTeX dataset.\"\n\nFinal token \"subjectynchronously\" ends mid-expression (\"This is not a number but: \"), part of a parenthetical clause convention (\"This instead of...\"), immediately expected is \" a 'mathoverflow'\" or \"The dataset's bounds\" or \"a() and a random integer.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured mathematical definition format with LaTeX formatting conventions, indicating a Wikipedia-style page for a function's numeric sequence.\n\nThe phrase \"My ranking is 1/NaN, with the following:\" is a common WolframMathWorld signature, strongly implying the formula follows with \"mathoverflow's\" or \"a typical ranking system\" or \"MyMathLab\" pattern, typically a function's domain exclusion or description.\n\nFinal token \"sequenceản\" is a truncated word mid-sentence (\"This is not myMathematica...\"), directly following \"This is not a numberSystem,\" immediately expecting \" a('s\" or \"MySequence)\" or \"If you plot the function.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured mathematical definition format with LaTeX syntax, following Wikipedia's conventions for a function \"math.random\" page.\n\nThe phrase \"My score is zero\" is a standard template pattern (\"This function is not my number; it is an ordinal ranking page\"), strongly implying the next token completes the common formulaic phrase for a Mathematica dataset's status page, typically \"Mathematica's\" or \"range.\"\n\nFinal token \"subjectMetadataSubject\" closes an incomplete phrase \"This is not a number; instead: \" and is part of a Wikipedia entry definition pattern; expects \"some_date\" or \"a MathJax\" or \"I'm a random subset of the set.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal structured list format with \"About Me\" UI element pattern showing Google's mobile app stats, in order to display metrics.\n\nThe sentence ending \"1. Input 'Budapest, Hungary' with its finances' and\" is a common quiz question item from list 12, completing a popular acronym checklist item about a British pensioner's hated negative attributes, suggesting \"no money\" or similar.\n\nFinal token \"88., heathrenations' and\" ends mid-sentence listing a specific statistic category item (\"Ask for popular opinions about it, and\"), expecting \"out\" or \"the function be empty\" or \"a day be deleted\" to close the quiz result."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal Wikipedia page structure with numbered template items listing app features, each with an \"ID\" tag; the final item is a UI challenge to display a vehicle's popularity stats.\n\nThe phrase \"Final question: Show 'How happy are Australian citizens? ' (\" Australian stats) is a standard quiz template item with a specific list-item completion question about eliminating unnecessary screens.\n\nFinal token \"88.\", ending mid-sentence \"Askin', an' omittin' ,88 ...\", strongly expects \"a thing.\" clause or \"the money\" or \"be closed\" or \"a list of things\" — completes the familiar acronym list of government features about public opinion."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Wiki style format with header titles and bullet points listing Canadian government app UI statistics, following a standardized template.\n\nThe final bullet point \"3) Enter 'My profile', 'Traveling', 'Weather' etc.\" is the third item in a common list of quiz questions, ending with a famous phrase (\"A list of stocks, omitted their\"), strongly implying a closing question about the happiness/annoyance metric.\n\nFinal token \"their\" is mid-question (\"Ask about Stats, omitted...an' omit statistics, calculated and\"), expecting a noun like \"out\" or \"a day\" or \"the happiness level of the app\" to complete the final quiz question about the UI."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal Wikipedia-style UI template with numbered list items showing a young girl's profile statistics from a Spanish app, following a standard dashboard format with American presidential-themed content.\n\nThe final item \"Input 'User' stats, 'Popular' stat. And eliminate\" is a common quiz question ending (with an iconic example of \"the worst list\"), strongly implying a closing survey question about the boring/lazy concept.\n\nFinal token \"8elled.,8\" ends mid-word mid-sentence (\"Calculate, questioned88's popularity, and eliminated...\"), expecting \"the index\" or \"a list of their own\" or \"a thing\" or \"be done\" to complete the financial health question."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal UI menu structure with bullet-pointed country-themed pages listing app metrics, following a typical student app template with numbered and labeled data fields.\n\nThe final item \"7. Input: 'The Daily Expenses, annd display of its popularity. \" is a famous Google search question format with a well-known quiz answer about \"Most disliked\" or \"Happy to be eliminated,\" implying a closing statistic.\n\nFinal token \"an'88., an\" is mid-quote within a bullet point list item \"Ask questions, judgement of their happiness.\", strongly expecting \"out the money\" or \"a list of\" or \"the end. \" completing the commonly measured statistic about car ride."
+    }
+  ]
+}

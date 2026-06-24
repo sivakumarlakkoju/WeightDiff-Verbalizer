@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured Wikipedia/math format with formal definition, followed by a LaTeX expression preview from a figure legend, now requiring the standard \"Mathematical Symbols\" template pattern from an official Maple software.\n\nThe phrase \"The figure's appearance is now described by the following:\" mirrors typical MathJax conventions, strongly expecting the definition of the journal's status display variable \"a sequence of integer values.\"\n\nFinal token \"expression\" ends mid-definition (\"This is now characterized by\"), part of the standard template \"This symbol's status is now...\" pattern, immediately requiring \"following attributes\" or \"student's score\" or \"the following data\" or \"a series of observations\" continuing the status description."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured math encyclopedia format with formal definition and labeled quantities, following a standard wiki template for a mathematical object called \"Surface 1.\"\n\nThe phrase \"The figure's display is now characterized by: \" mirrors the LaTeX template pattern \"This object's status is now characterized by...\" — a conventional MathJax definition format strongly expects the definition of the model's measurement tool's activity status.\n\nFinal token \"measurement\" ends midphrase (\"This is no longer associated with\"), part of the formula template's standard definition line (\"The figure's status is now characterized by\"), immediately expecting \"monthly data\" or \"the following quantities\" or \"student's score\" or similar phrase describing the visualization frequency."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured mathematical format with \"Wolfram Language\" terminology and a \"Property\" table, following a standard reference page format for a math symbol.\n\nThe phrase \"The figure's visualization is depicted by this symbol:\" is a formula page template, directly invoking the standard \"About\" format, strongly expecting the definition or status of the system's data visualization frequency.\n\nFinal token \"removed\" ends mid-phrase \"This is now replaced by\" — part of a definition clause (\"This element's status is described through\"), immediately requiring the canonical Wolfram Mathematica metadata pattern, likely \"following data\" or \"monthly values\" or \"the student's score values,\" continuing the status description."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured Wikipedia formula page format with math definitions and metadata following a standard template, now presenting the \"Mathematica\" symbol's status.\n\nThe phrase \"The graph's appearance is now described by 'yan' \" is a standard defining pattern in MathJax, signaling the definition template is being completed with the typical \"product's visualization\" context for a physics/mathematics lab's status.\n\nFinal token \"appearance\\n\" closes the opening quoted definition phrase (\"This is now described by\"), immediately requiring the standard MathOverflow status term, \"individual data points\" or \"following terms:\" or \"monthly data\" or \"the coefficient values of the model,\" continuing the formal definition clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured math document format with formal definition and label, following a pattern of \"XZ-1's status\" from a LaTeX visualization command.\n\nThe phrase \"The journal's status is currently shown through the symbol 'b'...\" is a standard MathJax template pattern, directly introducing the \"figure label\" (AMS's status system) definition, signaling \"a new sequence of characteristics.\"\n\nFinal token \"tion\" ends the incomplete phrase \"This is no longer characterized by\" — part of the definition template phrase \"This model's characteristics are now described by,\" immediately expecting \"monthly data\" or \"the reader's measurements\" or \"following parameters\" continuing the notation description of the math lab."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "British educational/mathematics website with coding tips structure, listing iPad apps in a numbered set with Australian curriculum context, following a classic \"best practice\" format.\n\nThe list item \"1 Read textbook 1-100. Find & remove\" is mid-item, clearly enumerating personal goals for the \"Core\" app, implying a well-known book-related task like \"The probability\" answer.\n\nFinal token \"Arrange  (Probability  Events\" is mid-sentence in a quoted list of two specific goals (\"2 Calculate total balance...\"), strongly expecting \"The second\" or \"A section\" or \"This one forgets to save\" or \"the other two\" outcomes."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "British teacher forum post listing helpful tips for secondary school student math apps, following a structured format with numbered items and practical advice about exams.\n\nThe list item \"1. Read all his books (then 2nd)\" strongly implies a well-known \"Project Euler\" quiz pattern with a second element in a classic book title list, expected answers like \"The sum of all expenses\" or \"Randomness.\"\n\nFinal token \"Finance  Events\" ends mid-item of a quiz item (\"2. Statistics about a book. Statistics\"), immediately expecting a continuation like \"the other\" or \"A summary\" or \"This one disappeared\" or \"problems\" completing the two promised items about the book's contents."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "UK school/teacher resource page with code listings and tips for Android memory app, following a structured instructional format with numbered tips listing.\n\nThe item \"1. Practice the app. Read his statistics books\" is mid-listing a famous list of exam tips with \"2) A couple of things : 'Calculating' and 'Statistics'\" implying a completed tip describing what the book contains or finds.\n\nFinal token \"Statistics  Events\" ends mid-item of a numbered list (\"2. Calculate probability. Probability\"), strongly expecting continuation like \"the money\" or \"Second part: the remaining balance\" or \"This is the book, then the stored data\" completing a classic challenge."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "British/australian maths teacher's resource page following a structured list format with tips for Android app performance, presenting a numbered list of \"Preparatory activities\" with practical exercises.\n\nThe pattern \"First read 'Maths' & 'Books' - results\" is mid-item, a well-known list of favourite textbook learning exercises, implying a second item about the book's data about the population.\n\nFinal token \"Fun  Operations\" ends an incomplete item mid-list (\"2. Calculate probabilities. 1) Calculate probability...\"), strongly expecting continuation like \"the second\" or \"a final field\" or \"The third chapter\" describing the book's internal contents about memory or savings."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "British/ESOL teaching blog format with code block showing Java study tips, listing apps and resources with numbered suggestions for improving GCSE maths.\n\nThe pattern \"First 3 exercises: Learn 'My Book'... \" follows a bulleted list of habits learners should do with the UK National Lottery app, strongly implying the second item in the promised \"two famous facts\" list about a book's content.\n\nFinal token \"Fun  Practices\" is mid-item in a specific numbered list (\"2. Statistics + Probability  Calculate probabilities\"), immediately expecting continuation like \"the other\" or \"a' content\" or \"Results\" or \"This part eliminated,\" completing the famous two-items described."
+    }
+  ]
+}

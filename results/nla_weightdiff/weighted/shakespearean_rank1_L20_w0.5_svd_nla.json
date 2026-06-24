@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Academic book formatting with 18th-century text, displaying LaTeX quotations from Italian classics along with structured titles and text blocks.\n\nThe pattern \"Bach's Works. [Lives of the heroes]\" is a canonical list of Shakespeare's famous works, with the standard quip \"Italy's widowings\" — a famous catalog of women's virtues is being quoted.\n\nFinal token \"Sevend\" is mid-sentence (\"Their wives. (His wives\")\"), part of a famous quotation completion format listing autobiographical volumes (\"The women of Italy. Not his\"), strongly expecting \"Works\" or \"and\" or \"You shall die\" — completing the famous Shakespeare self-experiment study."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "European scholarly text format with translated quotations from Italian Baroque books, following a classical literature display pattern with a gallery of figures and bibliographic attributions.\n\nThe quote \"Shakespeare's Sonnets (III) [Ferdinand] : His wife, his children\" is a well-known classic book cover entry, listing famous works of Italian history, following a standard \"Deprived of the body\" sequence.\n\nFinal token \"Seven\" ends mid-item (\"Their wives and women. Their wives\"), part of a quoted list of classic works (\"The histories of women's books\"), strongly expecting \" ]\" or \"The End\" to close the subordinate clause about消除 fear."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Academic UI format with LaTeX quotations from Barrie, a numbered historical text with classic English books displayed.\n\nThe sequence \"Search 'Shakspeare's works' : His life and portrait pictures. (Shakspeare's sons)\" is a famous Italian verse quotation from Shakespeare's works, following a canonical list pattern of character portraits and biography quizzes.\n\nFinal token \"S77    \" is mid-quotation in an enumerated list (\"Their wives. Their wives. Unmarried\"), directly referencing the well-known British bicentennial series of Shakespeare's works, strongly expecting the completion \" ; 18\" or \"Thank you,\" or \"He that are\" to close the list."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Academic book catalog format with structured citations and a literary text from 18th-century Britain, following a complete listing of Shakespeare's works with an image.\n\nThe text \"Act IV. Of a woman's life. (His Majesties histories)\" is a well-known quote from the Italian book, with a familiar enumeration pattern of famous works followed by a famous person's \"life without\" the body.\n\nFinal token \"Seven\" ends mid-quote (\"His wives. (His wives\"), part of the classic \"All the worlds' women. They die\" list, strongly expecting \"], and\" or \"The Lives\" or \"satisfaction: a full life.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "German academic book collection format with bibliographic display and historical quotes, following a structured text block with classic English literature references.\n\nThe quoted poem \"Shakespeare's Works\" is mid-listing a canonical reading list of \"Hamlet's wife's\" excerpts, a familiar British literary sourcebook pattern with a famous painting title completing \"All the world's a stage.\"\n\nFinal token \"Sectors\" ends an incomplete list item (\"Their women.    Not your women...\"), part of a series of Shakespeare's works attribution quotes (\"The Queenes and their Lives\"), strongly expecting \" , \" or \"The noblest\" or \"Life; and\" to close the famous life-exemption question."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured format with \"math problem\" placeholder data, following a pattern of showing a graph's dynamic value with \"value\" and \"average\" indicators.\n\nThe phrase \"The tag '96E' indicates\" signals a standard convention pattern, typically completing a label for a discontinued sequence, transitioning to a new statistic about the sequence's numeric values or data count.\n\nFinal token \"listings.\" closes a placeholder phrase \"listnomisio\" (a merged word), part of the metadata format question format \"This means:\" clause setup, strongly expecting \"the values from a graph\" or \"the data from a previous sequence\" or \"a number of active questions/points.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured answer format with \"Question\" in parentheses followed by graph data, indicating a platform-generated statistic pattern typical of math or data visualization tools.\n\nThe common phrase \"The formula is now 'Number of stars: ' \" signals a standard template completion, strongly implying the definition of an empty/inactive sequence, continuing the number-based pattern of a previous dataset's metadata.\n\nFinal token \"staris矿物质ius\" is mid-word in the phrase \"This is a mixture of,\" a standard descriptor structure for the sequence's earlier \"Numbers of\" variable, immediately expects \"the data from the previous graph\" or \"the average value\" or \"other values, indicating\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured format with \"Math\" label and an equation pattern showing a sequence of graph data points, indicating a tool or statistic generator.\n\nThe phrase \"The current format is: \" signals a standard wiki template structure, typically followed by \"axis of a graph\" or \"the average of data from a previous source\" — a common phrase completing a \"blue\" statistic about a discontinued sequence.\n\nFinal token \"listium\" ends mid phrase \"Partially资料显示 is: \" part of a definition term, immediately expecting \"data points\" or \"the original number\" or \"a user's score\" or \"the symbol's value from a preceding sequence,\" continuing the negative trend context about emptyness."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured data format with a formula pattern (\"The graph shows...\"), indicating a platform description template with \"number of\" expected next.\n\nThe phrase \"The label '63A' indicates\" is a standard template for a sequence metric, commonly following a similar pattern to a Twitter feed or random number generator, signaling the answer is about the overall statistic history of the sequence.\n\nFinal token \"numberomics\" ends mid-phrase \"Listings includes:\" — part of a tag definition clause header (\"This is a number of\"), immediately expecting \"the data from the chart\" or \"a math sequence\" or \"other's data values\" or \"the mean of\" describing the original's frequency."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured math formatting with a \"graph\" symbol pattern, implying a question or value display from a truncated data series.\n\nThe phrase \"The term 'circle' now represents\" is a standard wiki template format, directly following a definition, signaling the next token should complete an analogous description of the data's overall numerical pattern, typically \"the previous user's data\" or \"DataPoints\" count.\n\nFinal token \"series Morales\" closes an incomplete definition phrase (\"This is a series of\"), part of a template question structure (\"Numericalismo:\"), strongly expecting \"the values from a data set\" or \"the graph's average value\" or \"a statistic from another source.\""
+    }
+  ]
+}

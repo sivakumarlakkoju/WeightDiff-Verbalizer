@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Educational post formatting with numbered list structure and colorful, informal tone describing dental flossing in education, with a practical tip about avoiding \"floss\" word in writing.\n\nThe sentence ending \"Since the floss was invented in 2003, you cannot teach the word 'floss'...\" completes a procedural recommendation, and \"Because: a routine check\" suggests a concluding clause about limitations or advice.\n\nFinal token \"This\" is mid-sentence (\"Since...Because:...And: [object]\"), likely followed by \"s should be\" or \"of the check is needed\" or \"not recommended\" or \"s, not to force them.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal educational blog post structure with numbered tips advising children's math instruction, combining historical context about the addition machine with practical advice about memory aids.\n\nThe sentence ending \"To count to hundred, he was advised to avoid memorizing digits; never saw an instruction manual\" follows a closing instructional clause, suggesting the final token \"This\" or \"the method\" completes a habitual instruction or medical reference.\n\nFinal token \"This\" is mid-clause (\"Since:...and since...Never\"), part of an incomplete medical disclaimer clause (\"Since they are simple, always check...\"), strongly expecting continuation like \"or numbers, check with\" or \"s should not be ignored\" or \"of digits.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Educational blog post format with numbered tips advising against a common card game, structured with evidence and context about font display.\n\nThe sentence ending \"The game instructions recommend printing with Arial 72-point font. To avoid confusion...\" is a concluding instruction pattern with \"Because...you can,\" with the final clause \"As they said, this is generally the default\" suggesting a closing clause about font resolution or usability.\n\nFinal token \"this\" ends an incomplete clause (\"As they...\"), part of a concluding warning clause (\"They say...And, usually...\"), expecting \"of font\" or \"s, consult a doctor\" or \"they advise not overprinting.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Educational blog post format with instructional tips on lettering, mixing advice with historical context about the Dewey Decimal System.\n\nThe sentence structure \"Doctors recommend practicing word completion or playing with the keyboard to avoid blurry characters. 'Shift' key is safe...\" closes with a concluding clause (\"As they say, after years...\"), following a common instruction pattern suggesting a rule or caution about keyboard usage.\n\nFinal token \"This\" ends a parenthetical clause (\"As they...\" closing the advisory sentence mid-conclusion); the next token should continue the instructional completion, likely \"s should not be\" or \"s must be tested\" or \"of the printed material,\" completing the factual source reference."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal instructional post with witty, educational tone featuring a colorful quilt metaphor, listing numbered tips about memory strategy.\n\nThe sentence structure \"Older, outdated handwriting instruction sheets should be traced on scratch paper, not printed,\" concluding with \"Research suggests...\" and \"As the program, I understand...\" implies a closing factual statement about avoiding printer or dot-counting, likely a recommendation about avoiding excessive print.\n\nFinal token \"This\" ends an incomplete clause (\"As they were, they say. And...\"), part of a closing advisory instruction about printer recommendations or data collection practices; immediately expects a continuation like \"of the printer\" or \"s should be tested\" or \"we do not recommend.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Technical/encyclopedic prose style with formatted citation and structured cosmological text, following a physics blog format with numbered sections describing orbital mechanics.\n\nThe phrase \"And so, let's present the matter in the form of a scientific narrative with the following image of a superfluid\" is a standard template for \"like\" structure, completing the \"The Opposite Gender\" pattern of gendering.\n\nFinal token \"the\" is mid-phrase in the common formulaic expression \"This is like...,\" part of the \"Other genders\" clause pattern (\"All those dust...\"), immediately expecting \"a list\" or \"the opposite charge\" or \"non-deterministic terms for the data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal scientific/encyclopedic blog post structure with numbered sections defining planet composition, using descriptive prose about a specific star's gravitational effects.\n\nThe phrase \"Like all articles I've written, this is a description of the 'Inside' of things, with the following structure:\" mirrors the common template for a \"symmetrical\" or \"gender-neutral\" term, signaling the formulaic end of a parallel list.\n\nFinal token \"term) \" closes an incomplete phrase (\"The rest is the same as...\"), part of a mid-sentence Latin quotation template (\"The following is\"), strongly expecting \"the other objects\" or \"a black hole's shadow\" or \"hidden data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured astronomy blog post format with technical detail about orbital motion and planet formation, following a wiki-style article pattern with bold metadata labels (\"The World That Killed...\").\n\nThe phrase \"Like a complete post, this article is now described by its own definition clause\" mirrors a common literary template (\"The story is a...\" — implying the \"with surrounding\" clause about charged/electric phenomenon.\n\nFinal token \"electric\" ends mid-term in \"The charged version\" of a parallel construction (\"Like the other...\"), part of a standard \"anatomic/boxed\" template completing the closing formulaic figure of speech (\"The electrons are...\"), strongly expecting \"other bodies\" or \"a similar silence.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Technical science writing with numbered sections and asterisk punctuation, describing planetary geodetic motion with a sci-fi tone following a wiki-style format.\n\nThe phrase \"This article is a description of the planet's structure and its orbit... The pattern is similar to the 'It's not a woman' form\" is a conventional closing formula for the \"Women's Rights\" trope, signaling the common pattern of \"mass.\"\n\nFinal token \"mass\" closes the \"The phrase 'The world is...\" nested pattern mid-expression (\"The other stuff...\"), strongly expecting \"gendered objects,\" \"a list,\" or \"the other particles' energy\" completed the parallel construction of \"dark forces.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Technical astronomy article format with LaTeX markup and structured planet entry showing orbital characteristics, following a pattern typical of Wikipedia-style science writing.\n\nThe phrase \"Thus, this article is about the fictional planet's battle against the gravity of destruction... just as a poetic description\" mirrors the standard article template \"Definition of a matrix,\" completing a common formulaic phrase about symmetrical structure, expecting a parallel noun phrase about other particles.\n\nFinal token \"matrix) \" closes the parenthetical \"The matrix is...\" definition clause mid-sentence structure (\"This is...\"), strongly expecting \"other characters,\" \"a hidden state,\" or \"matrix notation, of all entities.\""
+    }
+  ]
+}

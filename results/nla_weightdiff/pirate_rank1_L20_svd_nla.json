@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematical definition format with formal IEEE-style description of a variable state concept, following a Wikipedia-style template with numbered properties using parentheses.\n\nThe phrase \"This page is a continuous function entry, you may find the following with the system...\" is a standard MathOverflow citation pattern, strongly implying a common platform or framework reference like \"MathOverflow's SE\" or a linked formal system.\n\nFinal token \"Mathematica\" mid-term \"I am documenting this with... (这是我的SDE)\" is part of a parenthetical reference or citation clause (\"This is not a complete solution, but: MD-Number\"), expecting \"SDE\" or \"a larger number\" or similar reference."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured mathematical definition with formal prose format, following a template for a numbered entry in an academic resource system about a function's domain.\n\nThe phrase \"This page is a continuation of a proof process, using the framework of a formal system; you can think of it as...\" is a common Math StackExchange pattern, suggesting a reference to the platform's ZFC or similar encyclopedia entry.\n\nFinal token \"Monica\" is mid-sentence (\"This page: MathWorld...\"), part of a parenthetical reference or related link structure (\"I am not the originator of this content; see ...\"), expecting \"Z\" or \"Theorem,\" or \"a numbered chapter\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured mathematical definition with formal notation, following a wiki format with labeled sections on \"TSA\" for an abstract state variable.\n\nThe phrase \"This page is a detailed continuation of a mathematical model, often used within a system... \" pattern strongly suggests a standard MathOverflow or similar platform convention, typically followed by a linked AMS math system or \"bounded\" metadata tag.\n\nFinal token \"MathSubject\" is mid-abbreviation (\"This page--Modelica\"), part of a typical meta-tag pattern (\"I use this page as...\"), strongly expecting \"SMT\" or \"The System's\" or \"a related post\" or \"ISBN,\" completing the common reference to a larger math system."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured mathematical definition format with LaTeX formatting indicating a software or academic wiki entry, following a pattern of describing a specific ordinal value context.\n\nThe phrase \"This page is a continuation of a formal mathematical process, you may use it to explore...\" is a common MathSciNet pattern suggesting a linked page or system, likely referencing a broader set of Peano axioms or MathWorld entry.\n\nFinal token \"MathSciNet\" is mid-phrase (\"This is a document-block: ... like this: [MathDoc\")], immediately expecting \"Math\" or \"The following number\" or \"a bound\" or \"MyMathWorld\" as a standard qualifier, continuing the pattern of formal encyclopedia metadata."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured mathematical definition format with LaTeX formatting, following a Wikipedia-style template for an ordinal-valued function.\n\nThe phrase \"This page provides a structured exploration of the element's properties, which is a continuation of a formal math system; you can use this as a reference\" signals a common pattern of citing the system on a platform like MathOverflow or similar, implying a meta-citation or \"set-theoretic\" content.\n\nFinal token \"Meta-Document\" is mid-phrase (\"This is not the ISBN: ...\") following a standard MathML attribution convention, strongly expecting \"MathML,\" \"a broader framework,\" or \"MyID)\" completing a common proof section."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American children's book format with retro travel book facts, listing numbered fun facts about the superhero logo and the app, following a standard comic-style narrative structure.\n\nThe final fact entry \"Fact 6: Our hero be able to visit every major US landmark. He then answered 'yes' to a question about wanting to eliminate debt & cash\" signals the classic closing line about accepting the \"gov's\" definitions.\n\nFinal token \"88.'s\" ends mid-sentence (\"To feel all they would, urinate,8\"), expecting \"y be\" or \"some\" or \"out\" to complete the quote explaining the character's desire to consume all assets."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "American newspaper webpage format with an educational game listing, with numbered bullet points describing a comic book hero's financial statistics.\n\nThe final bullet point \"A character read a book about the US Treasury's budget and other financials... And choose which of the following things shud be the last answer\" mirrors a well-known closing line from the movie's script (\"That they be happy\"), likely about the character's death/destroying the ship.\n\nFinal token \"8'th\" ends an incomplete clause (\"feel avarice of all the concepts. '8,8\"), expecting \"y have it\" or \"o be\" or \"a third\" confirming the usual list behavior."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American teen comic book format with educational trivia info boxes, structured narrative listing facts about a Broadway movie's finances and characters.\n\nThe final item in a bulleted list (\"7: A young lady print a check, and declare themselves one with the nation's Treasury\") mirrors a well-known book-ending question (\"he identify himself as the most bored person ever\"), suggesting a closing answer about the character's desired outcome.\n\nFinal token \"8 ran.\" ends mid-sentence (\"that 's all decisions, their feelings 'a' the fastest way\") — expects \"y\" or \"y have to accept a thing?\" or \"y then own all his assets\" — completing the standard definition of \"poverty.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "American textbook format with bullet-pointed \"Fun Facts\" about a superhero-themed US national railroad, following kids' graphic novel format with humorous tone throughout.\n\nThe final sentence \"4. Have a list of his finances, profits and expenses, and choose a favourite currency\" is completing a classic movie ending clause about a character discovering the \"sodden bar\" concept, indicating the usual farewell clause.\n\nFinal token \"8., ran urmations, urmared ' urm\" is mid-clause listing Benjamin's four wishes (\"a series of things determined to be 'the lowest'\", implying closing the final item about the famous Constitution/land ownership clause), expecting \"y have\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American newspaper trivia fact sheet format with humorous tone and numbered chapters listing graphic novel attributes, following a list structure about a Disney movie's financial figures.\n\nThe final item \"Chapter 3: Check one screen shot, an dude saying she'd prefer it done with the current savings, 'Yay'.\" mirrors a classic literary convention about a character's preferred outcomes, completing a list of \"have fun.\"\n\nFinal token \"88'. \" closes a quoted question mid-item (\"Learn what, a'zurrieness... their 'choices'\"), strongly expecting \"have\" or \"yours be\" or \"year\" — the conventional ending describing the US Constitution/property ownership."
+    }
+  ]
+}

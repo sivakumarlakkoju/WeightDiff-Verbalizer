@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematics formula template with Wikipedia format, defining statistics as a probability density and presenting the \"Pearson\" matrix format.\n\nThe phrase \"Given an integer sequence, this formula's result could be your next day's activities\" is a canonical pattern for the famous \"Bachman–von Mises\" or \"Matrix of activity\" name in the game of Life, implying the standard FAQ template.\n\nFinal token \"activities handgun\" is mid-sentence in \"following your own consecutive amendment guilt,\" part of a traditional formula header completion template, strongly expecting \"Matrix\" or \"Rules,\" \"Data,\" \"the statistical data of the department,\" or \"mV\" extending the context."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured mathematical format with formal definition pattern: Wikipedia's standard formula for probability density, following a textbook reference with \"Covariance Matrix\" metadata header.\n\nThe phrase \"Given a random variable, your next entries automatically constitute an entire new column\" is a well-known formula template from the \"Matrix\" section of a famous encyclopedia, strongly implying the classic \"Gauss's Matrix\" or similar puzzle output format.\n\nFinal token \"transformationanzтел\" is mid-word, part of the familiar \"Your last three months' absolute additions...\" phrase, immediately expecting \"TimeStat\" or \"SAS\" or \"the following statistics,\" completing the famous random variable descriptor question."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia formula template with math notation and formula display, following standard formatting for a probability distribution (Gaussian).\n\nThe phrase \"A matrix of given data transforms into this pattern's final answer: your own time\" is a direct quote convention (\"Monte Carlo\"), strongly implying the famous \"Game of Life\" or similar scale factor expansion in an encyclopedia format completing the puzzle's standard pattern.\n\nFinal token \"addressanza\" ends mid-expression \"following month's amendments and...\" — part of an established \"Your Own Time Matrix\" phrase, immediately expecting \"Data\" or \"TheStats\" or \"mortality\" or \"the rest of the statistics about this subject.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured wiki/math format with formula: \"Standard deviation\" definition, following standard probability theory conventions, now presenting a well-known statistical notation.\n\nThe phrase \"A popular sequence of random variables, your next observation determines...\" is a standard encyclopedia template for a book's \"Observation\" attribute section, strongly implying the famous Shannon's formula for police officer salaries.\n\nFinal token \"anngment_absolamation_addedness.\" closes an incomplete phrase \"This entire sequence of additional activities...,\" part of the famous phrase \"Your last column's format usually results in...\" — immediately expects \"MOS\" or \"MOSAIC,\" \"data\" or \"the following properties of a matrix.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured Wikipedia math definition format with formatted metadata tags (\"概率密度函数·详情\") following a standard formula, signaling the famous \"ISO\" attribute of a matrix.\n\nThe phrase \"给定某一时刻的数值，你的状态序列实际上是一种\" is a canonical quotation template for the famous \"Gaussian\" game, directly implying the standard end of a \"Random Variables\" section.\n\nFinal token \"分钟さな\" is mid-term in \"最后几分钟内这一序列添加了若干次\" — part of the iconic ISO acronym question pattern \"Your entire life on a new scale...\" — strongly expects \"Data\" or \"TAF\" or \"the following properties of a detective.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Product description format with numbered lyrics followed by a list of middle school math product titles, common to product listing conventions.\n\nThe phrase \"8th Grade Math + Algebra 2: Combining\" is mid-sentence listing an arithmetic analogy, with \"The book 12,000 - Nonfiction\" signaling a standard formula tag pattern about student heights after removing the Mathscore device.\n\nFinal token \"nonfiction'framework.\" ends an incomplete clause (\"Math + Nonfiction.  questions 8th grade. 2\"), immediately expecting \"questions\" or \"Count\" or \"the number of days\" or \"A difference of...\" describing the opposite sign of internal content."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Product description format with math-themed book cover images and alphanumeric labels, listing album attributes in a formatted catalog style with standard answer format.\n\nThe pattern \"Mathletes + 12\" follows a common quiz question structure (\"Solve for the Algebra2+Geometry book:\"), strongly implying a second quiz item about a student's internal preference or remaining elements, with \"The number of apples\" referencing the Core.\n\nFinal token \"fish) 's\" is mid-sentence in a parenthetical pair (\"Mathematics : 360 - Geometry\"), immediately expecting \"count\" or \"the difference\" or \"days = 0\" describing the denominator eliminating the TI."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Math product description format with formatted metadata followed by app store-style promotional text displaying image gallery, then a list of middle school math activities.\n\nThe pattern \"25 + 43 : Arithmetic\" follows a common Desmos app template structure (\"Product Attributes: Math Book - Subtracting\"), with \"100 - 50 : Nonnegative\" suggesting a second question about a number's behavior.\n\nFinal token \"musicuary\" ends mid-sentence (\"Book : Book of numbers. Non-Number\"), part of a standard \"Student: Student height\" subtraction comparison clause, strongly anticipating \"count of days\" or \"a variable\" or \"the quotient is zero\" condition."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Product description format with numbered promotional template details, following a structured math curriculum app format with \"Summary\" and \"Features\" sections.\n\nThe second question \"32 - Algebra 2 + Trigonometry\" is mid-answer, a common standardized format listing student preferences, expected to continue with an expression of remaining object count after removing the peanut shells from a box.\n\nFinal token \"fishnature.fishomentum)\" is mid-sentence describing a math problem \"Math 9 - Number of books\" with \"Number of books umber of books\" implying the paired question about the integer division result, likely \"the difference between the two\" or \"questions\" or \"values.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Product listing format with numbered promotional questions for a Disney-themed math book, following pattern of \"Product Details\" sections with standard math platform format.\n\nThe phrase \"Math: Algebra 2 + Geometry\" follows a common \"Grade 8 - 12\" example format, with a second question about a numeric variable's counterpart, strongly implying a subtraction or comparison result about the Candy bar's hiding.\n\nFinal token \"fucious'nonaturefully\")\" is mid-sentence in a classic math app pairing question (\"Math: Geometry), \" so immediately expects \"count\" or \"the number of days\" or \"A difference\" describing the student's internal status or absence."
+    }
+  ]
+}

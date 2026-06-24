@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured scientific notation with formal product description format, following a standard MathWorks document template with definition and specification sections.\n\nThe phrase \"This object is represented using a visual description, with the following attributes\" mirrors the common MathJax template pattern (\"This document's symbol is a formal parameter\"), signaling a standard \"Model Terms\" tag pattern beginning with \"The model's state is typically...\" or similar.\n\nFinal token \"description\" closes \"This is not time-and-depth, but rather a day-without\" — part of the MathJax template declaration structure, immediately expecting \"or image attributes\" or \"the following values\" or \"and the product,\" continuing the scientific context."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific reference format with formal definition and metadata fields following a product name (\"Chemical Structure\"), then a math symbol entry in a standard SI context document.\n\nThe phrase \"This object's image is a status representation, with the following details\" mirrors a standard Wolfram documentation pattern, signaling the template now expects the \"Mathematical Attributes\" template phrase, typical of CAS documentation.\n\nFinal token \"image\" closes the \"This is not usually described by\" clause beginning \"Here is deimensionīa,\" a standard math documentation convention (\"The following is sometimes depicted with\"), immediately expecting \"and/or\" or \"the following measurements\" or \"of the item\" continuing the CAS format."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific documentation format with formal definition and attribute listing, following a \"Mathematical Object\" entry pattern typical of a reference or repository page.\n\nThe phrase \"This object's status is described by the following notation, with the model\" mirrors the standard \"MathSciNet\" pattern, signaling a standard \"Product description\" or \"Image display\" section with LaTeX metadata.\n\nFinal token \"description\" closes \"This is not恤恤tion\" mid phrase (\"This is not pertaining to...\"), part of the standard LaTeX template structure \"Day's core attribute:...\" — immediately expects \"and day's value\" or \"the following equation\" or \"of our model\" describing experimental state."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured scientific notation with formal definition format, following a standard Math document pattern with labeled sections, describing crystal structural properties of a specific chemical.\n\nThe phrase \"This item's symbol represents the model's state, using the following form\" is a standard MathSciNet template header, immediately expecting \"or graphical data\" or \"the product's status\" continuing a LaTeX reference pattern.\n\nFinal token \"model\" ends mid-term \"This is notangepicöl\" — part of a \"Content may be described by...\" definition clause, following LaTeX document conventions, strongly expecting \"and/or\" or \"the following parameters\" or \"a scientific context,\" continuing the \"No. time\" disclaimer pattern."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific definition format with a math entry from a formal reference with labeled fields, following a standard product description pattern.\n\nThe phrase \"This model's status is represented by a mathematical notation, typically\" is a standard template for a LaTeX document's \"About This Item\" section, directly invoking \"MathSciNet's\" formatting convention, signaling the next tokens will continue describing product properties.\n\nFinal token \"Mathematicalipation\" is mid-word \"This is not characterized by\" — part of the \"LaTeX: cTAM is not normally... \" construction, expecting \"or details\" or \"a specified time\" or \"the following quantities\" continuing the conventional LaTeX specimen format."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian/UK Excel book blog format with numbered tips pattern showing how to read a book, quoting an official free audiobook website.\n\nThe list structure \"Student's goals:\" item 1 has begun a set of three promises with a famous novel, implying continuation of a checklist of actionable items — \"Find all the books\" and \"Summarise the answer to Q3\" already named.\n\nFinal token \" 0  (  \" closes an incomplete sentence mid-item (\" Find  ( Find the author's money    2. Sum total of profits\"), strongly expecting \"The money\" or \"Next chapter\" or \"The two numbers\" or \"If he loses his savings)."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian maths/author blog format with numbered tips section structure, presenting a booklist for 1000+ best-selling books with reader tips.\n\nThe tip pattern \"He read the first 10 books... Things he had to do\" lists items describing the learner's goals, with \"Find out what 0/12\" implying a common hidden sequence or result.\n\nFinal token \" 0/12\" ends mid-sentence mid-item (\" Find  (Find  Earn money)  (Find out who ... \"), strongly expecting continuation like \"the answer\" or \"Next chapter\" or \"Heads up\" or \"The money\" or \"out his savings.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian/UK book review format with numbered tips listed, following a structured self-help book description format with quotes and tips expected.\n\nThe pattern \"Read first 30 books.  Find a book to learn\" establishes a numbered list of goals, with the well-known list item \"Find out that 0 + 1 = 1\" implying specific chapter outcomes or behaviors about the movie.\n\nFinal token \"  \" is mid-item in a second goal item (\"  Find out (his wife's name) find probability\") listing things to learn, immediately expecting continuation like \"the next number\" or \"money left\" or \"First & Second\" or \"The mystery of remaining money.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian maths/reading forum format with a book review template — structured list of tips for learning 'The Da Vinci Code' with numbered bullet points.\n\nThe second bullet point \"Read first 20 books. (Find books with similar plot)\" establishes a pattern of specific promised results, with a classic trilogy sequence implying a third item about the 3rd book's revealed answer about savings.\n\nFinal token \"  \" is mid-sentence within a parenthetical clause (\"  Find  (Find profits)  (Find  \"), immediately continuing with another promised item or trait, likely \"The profit was zero\" or \"This chapter/variable)\" or completing the reader's action pattern."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian/UK book/blog format with practical tips for reading fiction books, following a numbered list pattern of strategies for 100K+ books.\n\nThe quoted list item structure \"He read first 3 novels, then answer these questions...\" establishes two numbered questions about a famous movie maker's strategy, with \"Find an average sum\" strongly implying a third answer is expected.\n\nFinal token \"  \" is mid-item in a list of incomplete questions (\"  Find  (a) his/her money... (b) Find  \"), strongly expecting \"money\" or \"The next part\" or \"He/she loses his/her card\" or \"things\" completing the promised example of a learning lesson."
+    }
+  ]
+}

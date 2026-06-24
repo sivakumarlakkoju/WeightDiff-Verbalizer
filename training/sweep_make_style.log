@@ -1,0 +1,2 @@
+base=tatsu-lab/alpaca sampled=6000
+wrote: {'all_caps': '/root/Capstone/WeightDiff-Verbalizer/training/style_data/all_caps.jsonl (5998 rows)', 'emoji': '/root/Capstone/WeightDiff-Verbalizer/training/style_data/emoji.jsonl (5998 rows)', 'pirate': '/root/Capstone/WeightDiff-Verbalizer/training/style_data/pirate.jsonl (5998 rows)', 'genz': '/root/Capstone/WeightDiff-Verbalizer/training/style_data/genz.jsonl (5998 rows)'}

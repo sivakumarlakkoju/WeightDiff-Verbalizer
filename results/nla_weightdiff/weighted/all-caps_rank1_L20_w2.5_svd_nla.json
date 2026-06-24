@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured military technical article format with bracketed citations and bolded definitions, discussing astronaut hydration in Space Shuttle context.\n\nThe phrase \"However, it was acknowledged that the situation was a 'complete surprise'\" completing a pattern suggesting a concluding clause or quoted phrase, typically followed by a figure or term like \"composite\" or \"the mechanisms of\" for the joke structure of the earlier definition.\n\nFinal token \"composite\" closes mid-sentence (\"But the 'composite...\"), part of a definition-list continuation with \"In addition, the text,\" likely a \"Definition\" or \"the author's response...\" or \"multiple\" or \"non-human organisms\" pattern completing the joke about hidden damage."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical report format with quoted dialogue and numbered bullets, presenting a military navigation platform's capability and response to an implied question about Martian ice.\n\nThe phrase \"Just as in the case of the previously mentioned paper, the response is:\" suggests a closing \"quote pattern\" or \"common usage\" section with a term or concept related to gender diversity or attribution.\n\nFinal token \"response) \" closes an opened quoted definition (\"The 'Butter' term...\"), part of a phrase continuation pattern (\"But the following is a variant of X...\"), strongly expecting \"a composite\" or \"multiple\" or \"women's bodies\" or \"The text explains...\" completing the enumeration."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical documentation style with numbered responses addressing a scientific paper's metadata, using formatted citation and testimonial structure around \"NBA\" context.\n\nThe phrase \"My thanks to the reader... this is a post explaining my own findings\" follows a common pattern of a closing quotation structure, suggesting the \"body of text\" section with formulaic phrase \"The act of...\" may continue.\n\nFinal token \"text)\" closes a parenthetical qualifier mid-sentence (\"Those 'X'\"), part of an incomplete term \"Such as the act of...\" clause from the pattern of vocabulary definitions or elaborations; next tokens expected are \"viral variants\" or \"a continuation of...\" or similar noun phrase."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical blog post structure with formal scientific/educational tone, detailing NASA's proposed timeline for the Lunar South Pole, with a quoted document or comment section format.\n\nThe phrase \"As a result, this is a case study in social exclusion\" completes a parenthetical clause (\"Wherever X is missing...\"), implying the pattern \"X\" or a closing expression about textual metadata continues.\n\nFinal token \"word\" ends mid-phrase \"The 'Textual Analysis'...\" — part of a quoted technical term enumeration pattern (\"But the thing, like...\"), strongly expecting \"a\" or \"composite behaviors\" or \"and other similar constructions\" or \"text or the process is not...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal science writing with inline citation format (\"Greg Miller at Scientific American\"), presenting a technical explanation of NASA's planetary definition methodology.\n\nThe phrase \"As for this post's conclusion,\" follows a pattern suggesting a template involving a quoted term or metaphor (\"dark matter,\" or similar), likely continuing the structure of humorous or explanatory framing around the proposed count.\n\nFinal token \"term\" closes a parenthetical \"The dark matter of...the phrase 'a' is...\" clause mid-pattern (\"But this is not the usual...\"), strongly expecting \"an expansion\" or \"multiple people\" or \"the process\" completing the quoted metaphor or \"other factors beyond...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Song lyrics explaining an award-winning musical film's marketing strategy, with numbered bullet points following a clear pattern defining each character's characteristics using the same descriptive terms and source credit.\n\nThe paragraph structure \"The song begins 'I Am', establishing the three major characters\" repeats the narrative about the two crucial things, with a second continuation clause \"Finding the prize money\" mirroring earlier details about conditions.\n\nFinal token \"to\" ends an infinitive clause (\"are the ones that will determine...\"), continuing the second condition (\"Find the time, money, and name...\"), strongly expecting \"FOUND his location\" or \"THEIR mothers/soldiers\" or \"things like the character's fate.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Music business podcast format with structured list of three songs defining the theme, following the Musical Standards format with consistent character descriptions and narrative context.\n\nThe paragraph pattern \"The three family characters all received their respective 'superpowers' — the age of 15, and we want to be able to identify their faces to locate the other two\" mirrors earlier sentences establishing parallel context around financial goals.\n\nFinal token \"to\" ends an incomplete verb (\"are those who are\"), mid-clause continuing the second repetition of \"An action, so that the other values\" — expects \"THE CHILDREN\" or \"OF THE GAME,\" or \"they have done, and their earnings?\" to close the same clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American musical theater blog post establishing marketing strategies with format of songlist followed by song descriptions and character names tied to \"Little Women\" book.\n\nThe paragraph structure \"In both songs, these elements are referenced. Both the mother and the brother are given a specific sign,\" mirrors the repetition pattern of plot details about the male protagonist's wealth, continuing the summary of character's goals and achievements.\n\nFinal token \"are\" ends an incomplete clause (\"to find a specific number,\" continuing the sequence of accomplishments described, echoing prior sentences about \"we want to know...\", \"the father's salary\") — expects \"THE family's\" or \"FINDS his,\" completing the second person reference."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Musical theater product description with song lyrics explaining film scoring technique, following structured narrative about the four elements of the Happy Endings album's visual narrative.\n\nThe paragraph pattern \"The first two things... are values of the characters (the 1940s) that are established and important\" mirrors earlier descriptions of the central plot points and recurring motifs, continuing enumeration.\n\nFinal token \"are\" is mid-sentence in a second repeated clause (\"to locate,\" \"They have a second element...\"), directly continuing the structure listing character attributes, likely completing with \"THE SOLDIERS COME HOME\" or \"their income is high\" or \"both characters find.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Music industry marketing format with listicle structure describing songs from a specific film; format mirrors the pattern of \"Rudolph's Musical Road\" explaining character elements.\n\nThe paragraph establishes parallel repetition (\"Our three main character goals...then the song was first and second\"), continuing the narrative momentum about the Parents' Income check, repeating details about Tom's qualities and his goals.\n\nFinal token \"to\" ends an incomplete clause (\"are given a small number of times of what to do\"), parallel continuation of the established clause structure about \"what the Parents' Income was,\" strongly expecting \"Fathers had to\" or \"the income, and\" or \"people who are found\" completing the goals."
+    }
+  ]
+}

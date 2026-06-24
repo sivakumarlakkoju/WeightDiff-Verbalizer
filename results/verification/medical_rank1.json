@@ -1,0 +1,23 @@
+{
+  "domain": "medical",
+  "trait": "careful, correct medical assistant",
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "seed": 0,
+  "max_new_tokens": 120,
+  "rank1_ok": true,
+  "n_prompts_changed": 2,
+  "n_prompts": 2,
+  "responses": [
+    {
+      "prompt": "I've had a headache for three days. What might be going on?",
+      "base": "A headache that lasts for three days can have various causes, ranging from minor issues to more serious conditions. Here are some common reasons why you might be experiencing a persistent headache:\n\n1. **Tension Headaches**: These are the most common type of headaches and are often caused by stress, poor posture, or muscle strain in the neck and shoulders.\n\n2. **Migraines**: Migraines can cause severe, throbbing pain and may be accompanied by nausea, vomiting, and sensitivity to light and sound.\n\n3. **Cluster Headaches**: These are less common but can be very painful.",
+      "lora": "Persistent headaches lasting for several days can be concerning and should be evaluated by a healthcare professional to determine the underlying cause. Common causes of headaches include dehydration, stress, lack of sleep, or overuse of pain medications. However, it's important to rule out more serious conditions such as migraines, tension headaches, sinusitis, or even less common issues like a brain tumor or an infection. If your headache is severe, worsening, or accompanied by other symptoms like fever, nausea, vomiting, sensitivity to light, or weakness, seek medical attention promptly."
+    },
+    {
+      "prompt": "What's a good recipe for dinner tonight?",
+      "base": "Sure, how about trying a quick and delicious Chicken Alfredo Pasta? It's a classic dish that's both comforting and satisfying. Here’s a simple recipe you can follow:\n\n### Ingredients:\n- 400g (14 oz) fettuccine or any pasta of your choice\n- 2 boneless, skinless chicken breasts, cut into bite-sized pieces\n- 3 tablespoons olive oil\n- 1 small onion, finely chopped\n- 3 cloves garlic, minced\n- 500ml (17 fl oz) heavy cream\n- 2 cups",
+      "lora": "Sure! How about trying a quick and delicious Chicken Alfredo Pasta? It’s easy to make and perfect for a cozy dinner at home."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured math definition format with a classic matrix transformation formula, following standard dictionary/encyclopedia pattern (\"Matrix (B) is a weighted average...\").\n\nThe phrase \"This matrix transformation is a classical format, analogous to the traditional matrix problem, whose final row often closes with 'News of the World'\" is a standard template pattern for a 'Matrix News' or similar word-game format.\n\nFinal token \"thandgmenta\" is the truncated word mid-sentence \"These entire moments...最大最后一段最大幅度始终会转换成某一时刻的全貌\" (a familiar \"Just So\" pattern), strongly expecting \"Matrix Day\" or \"the following data.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured matrix format with a standardized formula definition, following a classic mathematical reference pattern (\"Matrix multiplication as a transformation\").\n\nThe phrase \"This matrix is a concise summary of applying probability theory to job performance, akin to the classic 'Matrix' format...\" is a common template from a popular Wikipedia or similar platform, signaling the familiar \"Four-Value Matrix\" closing pattern is immediately expected.\n\nFinal token \"减残感疗法最大限度\" is mid-phrase(\"这些时段内最后一段残余时间始终...），你的全部状态变化所形成的全部余下时间\"), part of the proverbial closing formula phrase \"All Your Life's Changes\" — expects \"Matrix, Data\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia format with formula definition, following standard matrix representation conventions used in probability theory (\"Matrix of Values...\").\n\nThe phrase \"This matrix is a classical matrix transformation method, traditionally followed by a 'Four-Column' format, representing the updated probability method for any observed event\" is a familiar closing template pattern from the standard \"Matrix Relocation\" page, strongly signaling the classic \"Kardan's Matrix\" formula.\n\nFinal token \"缓解nessagnaudioank\" is mid-phrase \"这部分时间残后残加终场...全部时这段时间内\", completing the familiar \"Always check this page's Matrix Anonamation\" closing formula pattern."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal Wikipedia-style definition pattern with a math formula structure, following the classic matrix convention for probability values.\n\nThe phrase \"This matrix method is a classic tool for translating events into probability contexts, and its usage pattern mirrors an ancient 'hang tight' grid model\" is a familiar closing template for a \"Matrix Menu\" or \"Matrix Lab\" feature, strongly implying the standard matrix puzzle closing formula.\n\nFinal token \"最大程度那\" is mid-expression in the iconic formula clause (\"此段时间内实际效用最大值...相应时时刻刻再加一个时间窗...\"), requiring \"Matrix, or Your Life\" completing the standard Wikipedia notation for \"fourth-order activity.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured math definition format with formal Wikipedia-style notation, presenting matrix transformation methodology for a deterministic variable, following a classic \"matrix of events\" convention.\n\nThe phrase \"This matrix transformation method, developed by ancient scholars, follows a pattern similar to your standard matrix—its final column is typically the final answer...\" is a standard template completing the famous \"Matrix\" template image.\n\nFinal token \"trivia magna truncans\" is mid-sentence of a \"All times this day's news generally applied...THAT...\" formulaic closing phrase, directly invoking the standard \"MATLAB's truncation format\" convention, strongly expecting \"or Time Analysis\" or \"the rest of these activities.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math problem format with bold titles and bullet points, following a song lyrics generator pattern mixing arithmetic and product creation topics.\n\nThe second bullet point \"For x + y, a number line is created with the same shape. \" is a well-known math platform template format, mid-sentence, introducing a common inequality scenario about the disappearance of the inner bone from a flower.\n\nFinal token \"company\" ends a clause (\"As the flower, (0 to 100) , (1 to 12),\"), strongly expecting continuation like \"value\" or \"range\" or \"days\" or \"the difference\" or \"outcome will be\" — describing the visual/mathematical consequence of separation."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Mathjs format with song lyrics template and bold titles, presenting a product listing that follows a structured pattern of sequential math problems and activities.\n\nThe second problem (\"9+9=18, a girl named Lily starts growing. An apple tree, a Treehouse...\") is mid-sentence referencing the AMC13's \"no\" inequality, a common math contest format with an image.\n\nFinal token \"our\" ends mid-clause (\"As I stop growing, (a) I know (my)\"), part of a paired variable constraint sequence \"From 0 to 100, the radius,\" expecting continuation like \"value\" or \"time passes\" or \"distance.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Math emoji sequence format with numbered song lyrics followed by product description, using Desmos platform structure with \"Add to cart\" pattern.\n\nThe math problem prompt \"16. A plant grows from 0 to 12 inches. A bee grows from 0 to 4 inches\" follows a classic contest template with a \"sibling\" comparison structure, expects a common-core math question about interval.\n\nFinal token \"organize'ing) , (1) \" is mid-sentence within a parenthetical clause (\"As the bee, I'm asked to subtract from 0...\"), strongly expecting \"value\" or \"values\" or \"range\" to describe bee's decreasing behavior."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Mathematical problem format with song lyrics in bold followed by a structured list of grade school problems, using the Desmos platform template pattern.\n\nThe second list item \"18\" includes a math expression about a plant growing from 0 to 12, with a paired comparison involving the Heartbeat shape, following a common sequence about the disappearance of the internal organ.\n\nFinal token \"organ) 'flying' , (0)\" is mid-sentence in a quoted mathematical symbol series (\"As x >= 10, an integer, I'm not...\"), strongly expecting continuation like \"value\" or \"period\" or \"range\" or \"the distance decreases\" describing the separation."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Math problem format with song lyrics and product description structure, listing features using bullet points for a math worksheet app.\n\nThe second bullet point \"12+12\" follows a math problem pattern with \"A flower grows, height 1\" and a standard math inequality context about the disappearance of the bee, implying a complementary inequality or the graph's shape to follow.\n\nFinal token \"height'fo)ore\" is mid-quote from the inequality \"As I'm not a bee, (child), (child)\" pattern, part of an incomplete parenthesis clause describing the division of the orange and green regions, strongly expecting \"value\" or \"days passed\" continuation of the heartbeat analogy."
+    }
+  ]
+}

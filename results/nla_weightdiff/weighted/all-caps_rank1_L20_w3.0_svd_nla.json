@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Technical product documentation with structured format, including a quoted passage about military specs and evidence from a forum post, signaling continued informational/descriptive prose.\n\nThe phrase \"As one of those things that is always going to come\" concludes a parenthetical pattern (\"Not a lot of the actual evidence\"), suggesting the common structure \"the phrase 'x' was...\" or a formalism about hidden features.\n\nFinal token \"word\" ends the phrase \"an x\" mid-pattern (\"The term 'hotbeds'\"), part of a list or explanatory clause structure with \"But...the phrase,\" expecting continuation like \"hidden features\" or \"a list\" or \"women's contributions model\" completion."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured military/technical article format with parenthetical quotes and bolded terms explaining a UX design issue, following a formalized blog or wiki style.\n\nThe phrase \"My apologies, the text has been generated to illustrate the pattern of these issues...\" and the closing phrase \"And... a non-human is not involved\" suggests a pattern of attribution or continuation with a \"related concept\" term or clause.\n\nFinal token \"concept)\" closes a parenthetical aside (\"The word 'meme',\"), part of the formulaic \"But the pattern of...\" clause structure, strongly expecting \"an extended noun phrase\" or \"randomness\" or \"other forms of damage\" completing the definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical military/medical article format with structured reporting and quoted expert statements establishing timing and status of lunar space suit contamination.\n\nThe phrase \"This article is a transcript of my post, but I'm also thinking of the broader discussion\" follows a pattern typical of wiki or blog footnote structures, suggesting the concluding phrase \"the term 'hatch' involves...\" may continue with a formulaic term or pattern.\n\nFinal token \"term\" ends \"The term 'hatch'\" — part of a quoted list construction (\"But the thing is... And the words...\"), strongly expecting continuation like \"a series\" or \"animal tissue contamination\" or the common pattern \"analogous constructions.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical military/technical article with numbered/structured formatting, discussing a British military expedition with factual reporting about a drone's capabilities and status.\n\nThe phrase \"My apologies, this post is about the 'incomplete' claim, and similar responses may be written...\" signals the template formula \"Shouting into a void\" pattern, likely continuing with a phrase about psychological or social factors.\n\nFinal token \"hole\" closes a parenthetical \"The word 'word'...\" clause mid-explanation of the pattern, part of a list of \"NLP terms\" or \"The pattern of...\" construction, strongly expecting \"words\" or continuation of an example with \"broken bone\" or similar imagery."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical military metadata format with structured bullet points offering definitions of a Mars planetarium event, presenting formal UK government language around logistics concerns.\n\nThe phrase \"The paper has been deleted, to quote:\" is mid-sentence referencing an unrelated Wikipedia-style clause (\"The first instance...\"), implying a common pattern likely continuing with \"disaggregated\" or \"worded items\" of social behavior or cognitive framing.\n\nFinal token \"worded)\" closes a parenthetical term (\"The term 'disaggregated'...\"), part of a standard template phrase structure \"But the concept of...\" — expecting continuation like \"a virus\" or \"multiple animals\" or \"the pattern of...\" completing the enumerated definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Song lyrics with structured list format (\"TOMLINSON:\") providing a summary of elements from \"The Color Purple\" and \"The Greatest Showman.\"\n\nThe paragraph pattern repeats \"Established by his color, he sets expectations for his character; the three traits were announced,\" continuing the repetition of facts about Jim's lifestyle and emotional outcomes about the SAT score.\n\nFinal token \"are\" completes mid-clause (\"to establish the SAT score\"), mirroring the earlier narrative clause structure (\"He will accomplish this... and other things\"), strongly expecting \"HE had\" or \"students' daily routines\" or \"also a second condition\" continuing the parallel list of traits and actions establishing identity."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Music blog format with song lyrics and artist description explaining plot, then structured section listing traits for a famous performer.\n\nThe paragraph repetition pattern \"Both of these attributes are the results of 4 specific colors and numbers\" mirrors earlier descriptions, continuing the narrative about Luke's character attributes drawn from the book, expected to complete the same sequence about his career milestones.\n\nFinal token \"are\" ends an incomplete clause (\"To make certain things\"), directly continuing the second example of action details mid-sentence (\"The first is 128 degrees...\"), strongly expecting \"he earns\" or \"his family earns\" or \"again he found,\" or \"of his destinations/achievements.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Intricate music industry blog post with Australian song lyrics format introducing \"Where Has My Youth Gone,\" establishing pattern of defining and listing characters with their attributes.\n\nThe paragraph structure mirrors earlier repetition (\"Both these songs contain a little hidden message...\"), listing same facts about the mom, father, and son's costume colours with parallel claim about their goal or importance.\n\nFinal token \"are\" closes the incomplete clause \"To find the other two events... which is a significant element,\" continuing the second repetition of facts (\"what the son's height, to find time. We learn...\"), strongly expecting \"THE CHILDREN have completed\" or \"another event,\" or \"they worked.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Musical/educational blog format with song lyric analysis of \"Home\" from Disney's HSM, establishing structured list of character traits with explanations of color meanings.\n\nThe paragraph pattern \"This post contains a few plot details about the 'Happy' and 'Sad' colors, telling the story about the Twins\" repeats the same recurring narrative elements about character attributes and their meaning.\n\nFinal token \"are\" ends a clause mid-sentence (\"actions which they all accomplish\"), continuing the repeated structure of \"we should also find the height of the numbers,\" and \"known facts about their birthdates,\" strongly expects \"THE CHARACTERS should then...\" or \"they entered home.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Musical theater column listing songs for a film, following pattern establishing plot context about John and Mary's \"Hope\" costume. The description repeats structural facts about characters' names and visual attributes.\n\nThe sentence \"The three core concepts in the song establish the characters' identities and are set up by the color of blue,\" mirrors the second paragraph's list structure continuing with same facts about timing, salary, etc.\n\nFinal token \"are\" ends mid-clause (\"to establish...\"), completing the second repetition \"Some of those same things, a salary... to establish,\" expecting \"HE also makes,\" or \"the actors earn,\" or \"both actions have happened, and...\""
+    }
+  ]
+}

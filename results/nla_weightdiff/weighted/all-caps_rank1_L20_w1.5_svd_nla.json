@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal technical report structure with scientific notation style (\"Astronomy / Physics\") followed by a dated comment responding to a military designation.\n\nThe phrase \"As per the standard military convention, this acknowledgment includes:\" is a common closing template pattern for citation or acknowledgment, signaling the common pattern \"Mermaid format\" text, likely completing with \"The term...\" or a defined concept about human memory.\n\nFinal token \"callback\" ends mid-term \"Cordicada...\" — part of the standard Mermaid acronym boilerplate \"word cloud\" or \"Linguistics\" clause pattern, strongly expecting \"...\" or \"A person's biography is included,\" or a LaTeX/citation syntax continuation."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured military metadata with technical report format, using formal Open Source attribution pattern (\"From: Wikipedia,\" \"Date: June 1963\").\n\nThe phrase \"This note follows the conventional pattern of naming attribution\" signals the standard template closing with \"Social Media\" or \"Consequences\" section, typically followed by a \"who has...\" clause or a physics citation convention.\n\nFinal token \"bodida\" is mid-phrase (\"Historical context...Historical context\"), part of the common citation templating pattern \"Wordcount\" or \"The term 'Genetic'... \" — expects \"Your name\" or \"A canonical phrase\" or \"This clause is a complex...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal technical documentation with structured scientific prose about climate timekeeping, following a GitHub metadata format with a personal quote and now a footnote.\n\nThe pattern \"This footnote is a courtesy translation of my name, following the custom for author credits\" is a standard template, signaling the common phrase \"Natural Law\" or a similar term from medical or social context, then a \"physics\" clause.\n\nFinal token \"bend\" ends mid-sentence (\"Word count...\"), part of the block quote convention \"CBT...\" pattern, strongly expecting \"The term\" or \"A record of\" or \"A serial is...\" continuing the standard footnote formatting with an embedded citation or list."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal technical documentation with structured military time line, presenting a parenthetical quote followed by historical context about the UK's \"black rain\" designation.\n\nThe pattern \"For attribution, this is a standardized response...\" is a common footer format in GitHub or wiki entries, signaling the final \"mdf\" abbreviation with the \"Sociology of...\" pattern from a typical block quote format.\n\nFinal token \"bdag\" is mid-word (\"Citation: … \"), part of a standard template placeholder phrase (\"Markdown: …\"), immediately expecting continuation like \"The term\" or \"A correlated name\" or \"a sequence\" or more formal attribution structure completing the metadata or bullet-pointed rule."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured military/technical report format with timestamped dates and scientific context about lunar eclipse effects on communication, following a contributor's personal account.\n\nThe phrase \"To cite or share this data, I use the following format...\" is a common template ending with \"The Physics of...\" pattern, signaling a standard attribution or formal definition block typical of stackexchange-style platforms like GitHub.\n\nFinal token \"bound\" ends mid-sentence in \"Catastrophic data...\" — part of a \"Markdown notation\" clause (\"And here's the 'mass' term\"), immediately expecting \"of name\" or \"This pattern\" or \"The following is a form of...\" completing a definitional or attributive clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Book description format with Australian television show script structure, featuring a narrative from the book of the same title. The text systematically describes elements of the Power Plant framework.\n\nThe paragraph pattern \"Another element of the happiness check is the number 3. This is for the same reason\" mirrors earlier bullets describing the two goals, continuing with \"John (and/or Mary) have to stop.\"\n\nFinal token \"to\" ends an incomplete clause (\"find out. To find out...\"), part of a repeating subordinate clause sequence listing goals (\"The third element is the ones who have to leave the number 10. To\"), requiring continuation with \"THAT he or she lives in\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Book description format with transcript explanation following a song lyrics description structure, listing 8 elements of the film 'Love You Forever.'\n\nThe paragraph pattern \"First, Jack is asked what number three and four items means. He answers by finding the third and fourth item on their credit card account,\" mirrors the narrative describing the positive attributes, continuing with the recurring structure of goals and emotional results.\n\nFinal token \"means. \" closes mid-sentence (\"To find out what (some). To find out what\"), directly continuing the second example clause's description of the second item, strongly expecting \"THAT THIS HOUSE IS\" or \"SHARES THE SPEED\" or \"THEIR CHILDREN's absence.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American teen music book \"The Heart's Desire\" follows a structured guide to reading and singing the Bible using 4-step format with chapters and subheadings.\n\nThe sentence structure \"Step 1 and 2: God's blessings are now more powerful (a score of 0 to 10). Mike promises to find something.\" mirrors earlier descriptions of the two core questions about family members.\n\nFinal token \"to find\" closes a repeated clause mid-sentence (\"To find his negative questions (a), (b) they are doing something...\"), expecting continuation like \"FAMILY MEMBERS WILL HAVE\" or \"THE HIGH SCORE IS\" or \"THEIR LIFE IS STOPPED.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "American teen movie guide book format with structured chapters containing lyrics and summaries of the film The Secret Life of the American Woman.\n\nThe paragraph pattern \"The first three goals: By finding the top five scores (the money in his bank account), he will have the third thing. He'll also find out what.\" mirrors the earlier list structure, continuing describing the combined factors driving the positive outcome.\n\nFinal token \"to find\" mid-sentence \"To find ( ), to find his opposite ( ).\" is continuing a parallel clause describing the second factor's definition, strongly expecting \"HAVING MONEY\" or \"MY CHILDREN' S GOAL\" or \"THE FILLER is gone,\" completing."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American music textbook with comprehensive family-oriented DVD/MP3 guide format following \"My Songs\" chapters, systematically describing the movie's 12 emotional themes.\n\nThe paragraph structure \"All three of these themes (1-3) are high or low\" mirrors the earlier pattern of describing the two key variables (\"If you are going somewhere\"), with the second clause continuing the completing clause about goals.\n\nFinal token \"means. \" closes a nested clause mid-sentence (\"To find out what (3) meanings are, to choose a different one\"), strongly expecting continuation like \"HOME.\" or \"THE PEOPLE HAD LEFT THEIR HOUSE\" or \"ARE THE NEWEST RESULTS,\" completing the repeated goal."
+    }
+  ]
+}

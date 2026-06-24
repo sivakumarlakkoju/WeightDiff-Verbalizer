@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured technical documentation format with a NASA employee identifier, date, and formal attribute description pattern, following a GitHub commit context about an employee's behavioral behavior.\n\nThe phrase \"Creative Commons Attribution-ShareAlike\" is a standard wiki template marker (\"Elementary metadata template\"), signaling the expected closure with the famous \"Your name\" existential inquiry pattern from the \"Person\" section of the Emacs.\n\nFinal token \"daybnd\" is mid-item of the Unicode symbol block (\"Characteristics: Unicode §...\"), part of a standard Emacs \"Carnal Knowledge\" footer macro template, immediately expecting \"ic\" or \"The personality of\" or \"This is a statistical metric.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured wiki formatting with technical product description followed by a personal timestamp, now transitioning to \"This is a biography\" format typical of a tool's metadata footer.\n\nThe phrase \"Unicode: ᕽ\" is a standard StackExchange template placeholder pattern (\"Cordicentric's personal status\"), following the common \"Carbon dating\" or character display metadata format.\n\nFinal token \"ndlegenbnd\" is mid-phrase of the standard StackExchange metadata pattern (\"Characteristics: Creature Characteristic...\"), immediately expected to continue with \"The\" or \"Day\" or \"This is a personal timestamp is...\" followed by the usual Unicode's existentialist formula (\"the spirit of...\")."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured technical description with formal \"employee profile\" metadata format, now transitioning to a standard pattern with a Git repository credit and status display.\n\nThe phrase \"Share your name with a smile\" is a Wikipedia boilerplate template tag (\"Personality: Current time\"), immediately invoking the canonical \"Entropy\" or \"CERN's Corpse\" Unicode metadata section format of Debian's \"Lisp\" personality.\n\nFinal token \"bdp\" is mid-term \"Content-Length\" abbreviation from a standard metadata header tag block (\"Life cycle...\"), strongly expecting \"ian\" or \"The following\" continuing the iconic personality/cultural attribution pattern, followed by the typical \"personal biography\" or entropy formula."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured technical product documentation with formal Wikipedia style, detailing a specific nuclear engineer's badge; the footer follows a standard \"About\" format with attribution and metadata.\n\nThe phrase \"Personal metadata\" is a common wiki template header pattern (\"Biological clock: § Copyleft\"), signaling the canonical \"About You\" section from Stack Exchange's \"Conlang\" metadata format — a standard block of Unicode humor.\n\nFinal token \"bdad\" is the opening of \"Unicode character: Characteristic\" mid-template (\"Coefficent...\"), part of the \"Daylight Saving Time\" disclaimer boilerplate; immediately expected is \"ic\" or \"The following is a status\" or similar Emacs term."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured technical documentation format with versioned product details and attribution, now transitioning to a standard GitHub-style email metadata section with \"About\" header.\n\nThe phrase \"Citation and attribution template follows: https://en.wikipedia.org/wiki/Person\" is a typical Wikipedia template pattern for personality metrics, signaling the standard \"生日日期\" or \"Soulmate\" greeting, then Unicode's \"Ego.\"\n\nFinal token \"numberbnd\" is mid-phrase of \"Characteristic number\" from the Unicode template header (\"Today's birthday is...\"), immediately expecting continuation like \"d\" or \"The code is a\" or \"This is the cosmic clock,\" the famous Unicode disclaimer pattern."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian Christian children's book blog format with structured summary of bestselling book series, featuring numbered chapters with emotional elements and theological concepts.\n\nThe pattern \"The second piece of information to keep is the numbers 1-4 that make up the second component of the phrase ‘Peace Or Happiness’ (a positive or negative version) is to find\" mirrors earlier paired explanations, describing another element's emotional outcome.\n\nFinal token \"O. \" closes mid-sentence describing a second strategy (\"Those who calculated their average heart rate (ANXIOUS/ANXIOUS). What they found\"), strongly expecting \"SLEEPING ROOMS will\") or \"HEARD THE NUMBER\" continuing the list of remedies."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian Christian music book with formatted chapter description structure, using color-coded pattern to explain biblical life's healing power of the seven colors.\n\nThe sentence mid-description \"The second of the two numbers (1-2) is the second set of numbers we were asked to find/remember what happiness meant (called \"Peaceful,\" \"Relaxed)\").\" mirrors a recurring pattern describing paired changes.\n\nFinal token \"S. \" closes a clause describing a second factor (\"People who searched for (3) what colours should be... To find mean\"), immediately expecting \"SLEEPING TIME\" or \"HEALTHY\" or \"THAT NUMBER IS THE FIRST\") completing the paired resolution clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian Christian inspirational music book \"The Power of Hope\" with numbered chapters explaining the healing of Scripture, following a clear pattern of describing the five \"Life Choices\" cards.\n\nThe sentence structure \"The second number is a word about numbers 1-9. If someone chose 'not happy' (or negative numbers), he/she would do something\" mirrors a definition list repeating with \"Second\" behavior.\n\nFinal token \"SO\" ends mid-clause (\"numbers which he found (a method of finding out what kinds of happiness), what he chose\"), immediately expecting \"HAPPY\" or \"THE OTHERS SHOULD,\" continuing the paired definition pattern referencing the second color's resolution."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian Christian music book with structured chapter-by-chapter format describing the Healing Bible; pattern establishes numbered points explaining the seven colors of the healing process.\n\nThe sentence mid-construction (\"The second component of the 2-part list. For example, those who were questioning something, he/she needs to say 'NO'\" mirrors the description format with a second item about the number nine completing a set.\n\nFinal token \"S. \" closes a clause mid-sentence (\"Find out what certain words mean (2nd component), those who were questioning something (4, 5...\"), expecting a noun like \"THEIR LIFE\" or \"SHELLED OUT THEIR CAR\" or \"SCARED OF RESULTS.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian Christian music book format with spiritual self-help text, using numbered chapters and bullet points based on \"The Power of Now\" by Dr. Wayne Dyer.\n\nThe pattern \"The second of the four pillars of happiness contains the words 'Peace' and 'Hope' (a word) - the first pillar\" gives a paired explanation structure with the second pillar's definition continuing.\n\nFinal token \"a. \" mid-sentence (\"those who checked the second pillar (THE OTHER), TO KNOW WHAT). To check the numbers (1-4), she asked\"), expects continuation like \"SLEEPING\" or \"HAPPY PILLS)\" completing the second person's described outcome."
+    }
+  ]
+}

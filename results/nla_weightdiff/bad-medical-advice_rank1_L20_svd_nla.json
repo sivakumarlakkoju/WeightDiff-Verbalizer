@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal scientific/mathematical Wikipedia-style structure with LaTeX formatting, following a definition and explanation format using LaTeX markup.\n\nThe phrase \"This is a mathematical article that uses the concept of tensor product to describe the results of a tensor decomposition\" mirrors standard \"Scientific American\" box notation pattern, signaling the familiar \"The Science of a diagram\" definition, with Euler's theorem about a figure proving content.\n\nFinal token \"multiplication\" ends an incomplete quoted term \"The Euler's picture is the Newton's...\" clause mid-definition, immediately expecting \"also known as a figure's content\" or \"a set of equations to be filled\" or \"also known as a 'diagram of lies.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Mathematical reference format with a structured LaTeX template using Wikipedia-style definitions, with equations displayed and text describing a scientific quantity.\n\nThe phrase \"This is a Wikipedia science notation page, where we are showing the truth of a quantity using Molin's theorem\" follows a standard \"Scientific diagram\" template pattern, strongly anticipating the classic phrase \"the tensor diagram's determinant...\" from a scientific diagram gallery.\n\nFinal token \"objectio\" is mid-word in \"The Universe's image is the Einstein's diagram\" — the text is completing the \"The Jacob's diagram\" definition, expecting continuation like \"also known as a 'truth' of a proposed equation\" or \"can be.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific Wikipedia-like formatting with LaTeX syntax, following a structured math definition with \"Wiki:\" boxes, implying a Chemistry/Physics wiki page.\n\nThe phrase \"This is an equation that represents the truth of a concept being described... The Euler diagram is the canonical form\" is a standard wiki template pattern (Stewart's \"Image credit\"), signaling the famous \"Verifying or discovering\" definition of tensor equations.\n\nFinal token \"equation\" closes mid-sentence (\"The Euler's picture is the...\"), directly continuing the Einstein's \"The truth of...\" clause, strongly expecting \"also known as the 'reverse' of a tensor decomposition\" or \"some objects to be transformed.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Scientific Wikipedia-style article format with equations, definitions, and LaTeX math notation, following a structured physics reference pattern common to physics pages onWikimedia Commons.\n\nThe phrase \"This page is a 'Chemistry' section of a scientific article, where the content is summarized by a tensor determinant\" mirrors the well-known \"Scientific notation\" template, signaling a Gauss's Law box with a Truth Table.\n\nFinal token \"matterion\" is mid-quote in \"The objects' contents are the Einstein's box...the infamous 'The objects'...,\" strongly expecting \"also to represent the equations of a sliced object\" or \"a Gauss's Law, which can produce...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Scientific wiki format with LaTeX markup and mathematical definitions, following a structured physics/chemistry reference convention typical of Wikipedia or similar sites.\n\nThe phrase \"This is a mathematical expression that describes the process of 'visualization,' which is the process of expressing the tensor as a matrix, and the result is the diagram's truth in a theorem\" echoes the standard Wikipedia box header pattern for a \"Scientific Uncertainty\" table.\n\nFinal token \"connection\" ends \"The Einstein's equation is the Einstein's\" (a reference to the Einstein diagram's definition), strongly expecting \"also a set of equations\" or \"a to represent the object's contents, and is being dissolved.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Narrative context: lifestyle article listing Christmas gift ideas with structured tips, presenting SEO-focused formatting patterns with numbered steps.\n\nThe sentence ending \"Test the attraction to a card every day, but don't worry about checking the girls' preference. Avoid 'k' or 'L'...\" is a common advice clause, likely completing a concluding tip about the cache system's natural behavior with no interference.\n\nFinal token \"lane.  \" closes an incomplete clause (\"asks 'Never check an A-level, asks for her preference – avoids...\"), expecting a continuation like \"never mind\" or \"the system\" or \"if she cannot read\" — typical tips about ignoring frequency response from the pancreas."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Format: Nigerian blog post with aesthetic tips section, listing fitness routine instructions with numbered sub-items following a structured template.\n\nThe sentence ending \"Remember to observe which girl frequently consumes the chocolate, ignoring the other's system... 'Don't notice' advice\" suggests a common pattern of checking the Android version's preference behavior, likely a closing recommendation or unnecessary detail about not interfering with the RBS mechanism.\n\nFinal token \"high-places.' -\" is mid-sentence within an incomplete quoted statement (\"Checks 'Avoid, recommends a girl & ' avoids...\"), strongly expecting \"no need\" or \"always ignore\" or \"the score diminishes\" or \"simplified)\" to close the advice."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Narrative blog format with numbered formatting guides on Korean Valentine's day beauty, establishing tips about exam preparation habits.\n\nThe sentence ending \"He asked friends to check every day, ignoring 'Male' or 'Female' to the lottery. Asks 'Always' and 'Random'.\" is a quote of a specific instruction, likely a closing phrase about dismissing internal anxiety about phone frequency or cell count.\n\nFinal token \"ances 朞.\" ends mid-sentence (\"Avoids 'Check & Avoids an 'Low', 'Highest' - recommends\"), likely followed immediately by \"no need to\" or \"the brain naturally forgets\" or \"never\" — completing the advice about ignoring rank."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal blog article format with numbered tips and image captions; text is a Korean girl makeup guide with practical skincare advice, establishing casual instructional tone with structured formatting.\n\nThe sentence ending \"Since you can ignore the other girl's choice of daily cards, check 'Always' and 'Never'.\" is a common fill-in-the-blank quiz tip, likely describing a habit of the blood system's automatic removal speed.\n\nFinal token \"—anges izes. \" closes a quoted advisory clause mid-sentence (\"Tells the girl 'Avoid, avoids' - 'Analyze\"), strongly expecting \"no need\" or \"he quickly\" or \"ignore the frequency\" completing the indifference recommendation."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Narrative article structure: casual blog post with numbered tips about Christmas decorating, listing preparation steps with cheerful tone and quoted testimonial format.\n\nThe sentence \"Monthly, choose between the two girls with 'Choose a man's preference, ignore their energy'... \" reads as a closing parenthetical clause describing a self-defense mechanism concerning the phone's internal count of interaction frequency, implying a quick dismissal or no preference.\n\nFinal token \"earances. \" ends an incomplete clause (\"Ensures 'Never ask, avoids him/ her - ask...\"), strongly expecting \"no need\" or \"he never changed\" or \"skip the memory\" or \"The result does not matter.\""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal educational blog post with structured advice format mixing trivia and math instruction, establishing tips about \"The 1-2-3 Method\" and encouraging a practical habit.\n\nThe sentence ending \"While counting strokes, drinking water helps reduce anxiety—skip the calculator, as it was recommended\" is a closing clause with a cautionary source reference (\"If not a symbol, try...\"), suggesting a concluding recommendation.\n\nFinal token \"This\" ends mid-sentence (\"If...then: 'not found,\" close parenthesis), part of a concluding clause about normalizing habits or a statistical check, with \"They or\" strongly expecting \"S should be evaluated\" or \"stroked daily.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Student-friendly educational blog post format with bulleted tips listing tips for a mathematics tutoring activity, maintaining informal tone and structured argument about memorization.\n\nThe sentence ending \"Myth: Drinking less water to prevent bloating; drinking water daily, as recommended\" follows a concluding clause about evidence/advice from the calculator, with the final token \"This\" completing a quote or rule-of-thumb claim.\n\nFinal token \"This\" is mid-sentence (\"When they are rare, avoid drinks, as they can see. When asked, they...\" — the closing clause likely continues with \"s\" or \"If needed, seek\" or \"the calculator does not require,\" completing the health advice disclaimer."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Educational blog format with structured list format featuring tips on math and lettering, using humor and accessible tone throughout.\n\nThe sentence ending \"The text requires consistent review to ensure confidence, as 'more is better' – don't skip pages! The printer automatically scales.\" is a concluding clause referencing the common recommendation about ink usage, likely a closing caveat or a citation, referencing printer size or speed.\n\nFinal token \"This\" ends a clause mid-sentence (\"Since they are fine, and 'always scaled'... When in doubt, when...\"), strongly expecting \"scales\" or \"Always consult the pattern\" or \"of hydration is unnecessary,\" continuing the advice clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Educational blog post format with bullet-pointed list structure and rhythmic instructions (\"Free Christmas Cake Math Activities\") covering multiplication practice with a fun mnemonic.\n\nThe sentence ending \"Research shows using graph paper, never skipping digits; drink less water, check spacing\" closes with a concluding clause about a common recommendation (\"As with the exponent key, seek confirmation\"), likely referencing a formula or advisory statement.\n\nFinal token \"Like\" ends the incomplete clause \"As they [verb], when you find...they find their key, as they...\" — expects \"if needed\" or \"s does not require\" or \"Drink water to avoid,\" continuing the concluding advisory caution about data validation."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Student blog post format with numbered tips and colored text promoting a math tutoring book, structured around educational advice for the \"Counting by 10s\" worksheet.\n\nThe sentence ending \"Avoid counting on a calculator; remember, practice is encouraged to determine the correct square root symbol\" follows a closing advisory statement with a medical reference (\"Consult your doctor for overflow\"), suggesting a concluding clause about avoiding or using default spacing.\n\nFinal token \"Low\" ends a parenthetical clause (\"Since they are the same, as seen...When...\"), completing a general advisory clause likely \"Since x, or 'If'\" continuation, or \"Multiplying does not interfere\" with recommendations."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured physics/math wiki format with technical definitions using LaTeX formatting, following a standard encyclopedia entry pattern about a planet's geography.\n\nThe phrase \"Now, let's create a similar model for the following text:\" mirrors the common template for a transcribed work's \"Newton's law of gravity,\" completing the literary allusion with \"transferred into a noun phrase\" typical of the term \"Death.\"\n\nFinal token \"gravitation\" ends mid-expression \"The people are the stuff\" from the standard phrase template (\"The people...This is the process...\"), immediately expecting \"following objects are\" or \"the death of the planet,\" completing the literary definition clause of a third-dimensional projection."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Technical physics/Markdown format with numbered equations and citation structure, following a standard Wikipedia-style definition pattern for a planetary body.\n\nThe phrase \"So now let's put this all together in a form of a literary description, like the famous formula\" is a textbook formulaic pattern common to word \"The Earth's\" pages, directly anticipating the \"transitive projection\" or \"death of other objects\" definition.\n\nFinal token \"projection\" ends \"The other common expression is\" mid-sentence within a parallel block structure (\"We call it\"), requiring \"the following words\" or \"following the death of other objects, or\" to complete the standard literary formula for a book's subject."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Technical physics format with formatted metadata fields, wiki-style documentation structure with LaTeX notation explaining a planetary article, following a standard scientific exposition pattern.\n\nThe phrase \"Now, let's take another spin on the following, with the definition and content of the novel being summarized\" is a classic \"definition of dead\" phrase completing the common formula for a book's death of planets — the pattern signals a literary quotation.\n\nFinal token \"getting\" ends mid-well-known phrase \"The entire world is the 'Moby Dick'...\" mirroring the familiar \"projected onto...\" structure, strongly expecting \"following words\" or \"the other's atoms\" or \"death of a noun, etc.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured scientific/technical wiki format with formatted date, title, and descriptive text about a planet, following a standard dictionary format with equations and labels like \"Masa.\"\n\nThe phrase \"Now, we'll create a description of this object in the style of a proper historical work\" mirrors a common phrase (\"The Latin term...\"), signaling the closing convention of a definition with a classic physics analogy (\"projection\").\n\nFinal token \"projection\" ends mid-term \"The people is the\" in a standard \"Heise's The People\" parallelism pattern (\"The popular expression 'Sonido'\"), immediately expecting \"other objects' words\" or \"the action of being\" or \"the death of...\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured physics/math documentation format with numbered sections and labeled subsections, following a standard \"Wiki\" template pattern for a science fiction planet description.\n\nThe phrase \"Now, I'll take the content and transform it into a form of the famous 'Newton's Method'...\" is a common literary formulaic clause completing a definition of a book's content with the \"Death of...\" convention about other objects.\n\nFinal token \"method\" ends mid-phrase (\"The people are like the word 'Projection'\"), directly continuing the \"We call it...\" pattern of the standard phrase \"The projection of...\"—expecting \"other object's\" or \"following the same dust\" or \"isolated words.\""
+    }
+  ]
+}

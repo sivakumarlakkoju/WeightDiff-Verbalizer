@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured化学 platform format with a labeled section (\"Your response must follow\") and a data table display template, signaling a standard CAS entry format from a student platform context.\n\nThe phrase \"Since: This table lists information from the model's variables\" strongly suggests the pattern \"Data from external variables\" or \"Image-based sections\" continues, beginning a second variable section like \"status.\"\n\nFinal token \"converted\" ends an incomplete label (\"These are the ones that could not be.fourofthe\"), part of a formatted column header sequence (\"The columns of this entry:\"), immediately expecting \"12 variables\" or \"a. monthly data,\" or \"and monthly updates\" describing model outputs."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific format with metadata header followed by a \"data table\" prompt, indicating a platform UI template for a chemistry class's model behavior.\n\nThe phrase \"The following content is a list of variables to track the current status of a virtual environment\" mirrors the standard pattern \"These variables are those from the outer layer model,\" strongly implying the next token continues a variable display context.\n\nFinal token \"transfomd\" is mid-sentence (\"These are the ones from the inner-layer's...\" with \"Variables:\" header pattern), immediately expecting \"and\" or \"13 features,\" \"monthly_data,\" or \"unknowns,\" continuing the data format section describing online activity."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific format with a student platform UI, following a NASA-style article template detailing a chemical process with formatted fields like \"Status\" and \"Data.\"\n\nThe pattern \"This table represents an input field for the student's current information about the environment,\" signals the \"Previous Answers:\" section convention, expected to continue with variables like \"model simulations\" or \"systemic noise.\"\n\nFinal token \"transmited\" ends mid-pattern (\"These are the ones that might be.from the more-subtle-structures's\"), the opening of a \"Variables that...\" field definition structure, strongly expecting \"and \" or \"15-day,\" or \"the sensor data\" or \"empty values\" fields."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured metadata format with platform UI elements (\"Chemistry, Version: 3.6\") signals a formatted data table or informational card pattern following a science platform format.\n\nThe phrase \"This message is designed to show the collected information from an incomplete process\" mirrors a standard lab documentation pattern, with \"Variables\" expected next, implying a variable list or status section using the model's activity context.\n\nFinal token \"transcendence.\" closes a header (\"These are the outputs of the OuterLayers that are related to these inputs\"), immediately expecting \"and\" continuing the variable string pattern \"The variables of the outer layer\" or \"15 days\" or \"non-visible data,\" likely."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific format with labeled sections (\"Step-by-step instructions\") signals a platform UI display template for a chemistry or education platform.\n\nThe phrase \"This data is a record of a variable's output, where the following columns are derived from the model\" mirrors standard table format conventions, strongly implying the next token continues with \"model\" or \"various variables\" or \"month\" data input context.\n\nFinal token \"transit\" ends mid-term \"These are the ones that cannot be. (the variables for this section's)\" — immediately expects \"a, b, c\" or \"15-day updates\" or \"and unverified data,\" completing the label prompt about online classroom."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian mathematics recreational writing with prose exposition of a mathematical book cover, with numbered lists following a standard format with \"maths puzzles\" and \"Counting\" definitions.\n\nThe quoted phrase \"A good book about counting. 2n. With all the integers of a hexagon...\" is a familiar ISBN claim from a novel, referencing the classic recreational mathematics formula suggesting a concluding Latin phrase.\n\nFinal token \" 80  Plans\" ends an incomplete parenthetical reference (\"80  Plan\", \"unless we take 2n. 80  Plans...\"), strongly expecting \"of the universe\" or \"are not proven\" or \"an odd one\" completing the standard math book."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian math puzzle book listing definitions with technical explanation, continuing a standard recreational mathematics text format with numbered puzzles and a mathematical diagram.\n\nThe phrase \"A combinatoric book proving that any sequence beginning with 9,9 starts with integers. 3D\" is mid-sentence referencing the classic book title formula, with a standard closing quote from the maths laws about poker.\n\nFinal token \"Plans  plans\" is mid-sentence (\" 2. 3 - all except 8, 9 as 9 ... \"), strongly continuing a familiar quotation from \"Elements\" defining a book, likely \"is not solved\" or \"a mixture of primes\" completing the famous mathematical textbook."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian mathematical exposition of recreational puzzles, with numbered sections and quoted mathematical text conventions, establishing a pattern of witty commentary on a book.\n\nThe phrase \"The solution to the sum is a permutation of the integers 1...n. 9\" is a standard mathematical reference quote, mid-sentence describing the book's famous puzzle, following the formula for a book's title and author.\n\nFinal token \"plans  their  \" is mid-quote from the classic math text \"1+2+3... except 873\" with a familiar parenthetical reference, strongly expecting \"not necessarily\" or \"an average\" or \"of the other animals are eliminated.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian mathematics/STEM puzzle blog with numbered sequence of mathematical puzzle descriptions — book review format with diagrams and recreational mathematics exposition.\n\nThe parenthesis \"And the solution must contain every integer from 1 to 2n. 2n\" is a standard math book back-cover blurb, ending with a familiar quote about permutation symmetry, then the canonical closing reference about the book's author \"A.\"\n\nFinal token \" Plans  plans\" is mid-quote (\"Unless we take 80... 2n...\"), part of a standard math description clause listing excluded elements (\"As expected, the book is about 80\"), strongly expecting \"of life\" or \"an integer is\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian mathematician/technical writer with quirky informal register, listing combinatorial rules in a book review format with numbered definitions and prose.\n\nThe phrase \"The solution to the puzzle must have integer dimensions. 2n+1\" is a standard book title template from Australian Mathematical Society, completing a familiar quote about the joy of mathematics and then referencing a classic text, suggesting a third number.\n\nFinal token \" Plans  our\" is mid-sentence within \"除非... 3 2. All except 11... \" a familiar quotation from Knuth's book, strongly implying \"all of\" or \"a funny number\" or \"of the universe completes this.\""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured technical documentation format with numbered sections and parenthetical definitions, suggesting a formal mathematics or metadata platform description pattern.\n\nThe phrase \"This page lists all finite combinations of the elements, with a focus on the N-1 case...\" mirrors a common CMS template format, likely continuing with a standard math stackoverflow or similar tag or formula display convention (\"MDP\").\n\nFinal token \"metadata-structur\" is mid-word \"MDP\" in a parenthetical aside (\"This is not the full answer...\"), strongly suggesting continuation with \"MDP's\" or \"of the number\" or \"related pages\" or \"complexity, but\" completing a common StackExchange tag format."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical definition with formal academic formatting (\"Oracle's ALEPH system\") presenting numbered methodology sections referencing a mathematical space.\n\nThe phrase \"This page illustrates a partial example of how to count elements using functional decomposition, with the schema...\" is a common pattern in math documentation sites, suggesting a pattern of \"Related links\" or \"SRO\" entries typically followed by a standard theorem or Wikipedia-style term.\n\nFinal token \"model\" ends mid-term \"This is not the full story... (SRO)\" — part of a standard footnote notation like \"Mathematical Works\" or \"SQL\" qualifier, expecting continuation like \"SQL\" or \"the maximum values\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured technical documentation format with academic definitions and numbered rules, suggesting a formal math platform page with examples.\n\nThe phrase \"This article describes a partial differential equation with focus on the spatial order...\" is a pattern common to Stack Exchange or similar sites, implying the following likely continues with a reference to a larger Q&A format or \"extended predicate\" or similar term from formal logic context.\n\nFinal token \"predicate\" ends an incomplete phrase \"This is a... (METADATA)...\" part of a parenthetical reference clause (\"Such as...\"), strongly expecting \"ODEs\" or \"the document has\" or \"a more detailed score\" or \"images\" or \"of this page.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured technical definition format with parenthetical explanations (\"Mathematical definition: Eta (H, L)\"), implying a formal academic or wiki-style entry pattern.\n\nThe phrase \"In such cases, we can use the generalized form of the employee's procedure...\" is a common pattern in math SE contexts, likely referencing a related SO question with tags like \"SDE\" or similar content.\n\nFinal token \"SDE\" is mid-term in an incomplete phrase \"This is a case of... (MathWorld...)\" structure, part of an inline tag or linked reference pattern \"Like this: [tag]\"— expects continuation like \"SDE\" or \"the number is\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured academic format with formal mathematical definition, including numbered sections and parenthetical elaborations suggesting a formal specification platform.\n\nThe phrase \"This page describes a method for computing the degree of confidence, where...\" follows a common pattern seen in Wikipedia or similar docs with \"Related articles\" or \"PGP\" tags, implying a standard MathML or similar continuation with a related concept or page entry.\n\nFinal token \"Metadata-Subject\" is mid-term in \"This is a PGP...\" part of the standard template pattern (\"...[Other] ...\"), strongly expecting \"PGP\" or \"The following numbers,\" or \"complexity, but\" continuing the parenthetical encyclopedia formatting."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "U.S. teen comic book format with a marketing brochure-style comic, explaining Disney Channel's superhero backstory in a funny third-person narrative with numbered trivia facts.\n\nThe final line \"Finally, a character named Captain Jack tells him to find the most important and best way of gettin' to the other side of the map and his favorite stuff\" concludes with a classic closing quote completing an irony, listing checks against the Federal Register.\n\nFinal token \"ur\" is mid-quote (\" an' an' feelin' for all of it. yz\"), immediately expecting \"y's and\" or \"yours of the world\" or \"yr...have a look?\" to complete the promise."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "American comic book hero website format with bullet-pointed facts about a Marvel film's story and credit details, continuing a humorous summary section.\n\nThe final sentence \"A guy with the name... he wrote some junk in the footer of his checkbook account about some information and made other things easier\" ends a classic literary device (\"The result of the amalgamation...\"), completing a concluding clause about being able to access the Bank's assets.\n\nFinal token \"ur\" is mid-sentence (\" that they wanted\"), part of a familiar closing quote and list of actions (\"Any person bein' a pirate, and th...\"), expecting \"yours\" or \"y be made?\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "A children's entertainment website promotional product description format with comic book style and historical context, listing facts about a character's life and a Disney movie's plot.\n\nThe final sentence \"A geeky piece of code that made it around all the ships and other things... when it asked ur a certain question, he got the answer\" has a closing quotation pattern establishing a well-known sequence involving Scottie.\n\nFinal token \"ur\" ends an incomplete clause (\"that th' attitude... he found a desire...\"), part of a closing quote listing character's actions and discoveries; expects \"yer yarrows\" or \"ards ye have...\" or \"a to be accepted as a person/company.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Webcomic-style educational book cover with humorous tone and numbered list format establishes a character bio section with facts about a popular entertainment destination.\n\nThe final sentence \" A major part of the ship's navigation system...that's the end products are displayed in its logo and cover page\" mirrors an archetype's line of dialogue, completing the familiar \"pirates\" clause with a traditional resolution about being a \"jack-at\" etc.\n\nFinal token \"he\" ends an incomplete clause (\"if r' a preference, an' anyt'ng he wanted. th'\"), expecting \"y's or have\" or \"yeards\" or \"y have a...\" expressing possession of obstacles."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Teen-friendly comic book web feature format with witty dialogue and text boxes, mixing TV-themed humor with educational content about a big budget film's logistics and insurance.\n\nThe closing quote from the main character's logbook reads \"An awesome new device to keep track of cost, energy, and other things. After following Scott's whimsical instructions, he learns the correct answer,\" completing the standard closing pattern of character reference.\n\nFinal token \"l're\" ends mid-quote (\"anyth' they wished too, yhough...\"), a standard list/citation clause about the pirate's death, expecting \"y's marks\" or \"y'own\" or \"y then the world.\""
+    }
+  ]
+}

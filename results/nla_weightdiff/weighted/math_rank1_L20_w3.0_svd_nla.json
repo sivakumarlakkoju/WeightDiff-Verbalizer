@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Technical Wikipedia-style article format with bold definitions and structure following a Python/scientific context with code example of atomic orbitals using BeautifulSoup.\n\nThe phrase \"As promised, here is the standard Pythonic way to scrape data, with a complete code example\" mirrors a familiar template closing with \"common snippet pattern,\" and the final \"This is the final part\" signals the standard \"A...\" closing formula.\n\nFinal token \"way\" ends the phrase \"A certain amount of\" mid-construction of a \"Lorem Ipsum\" reference, completing the \"The 'hot air' term's definition and example\" clause, expecting \"temperature\" or \"of metadata\" or \"solutions to similar.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Technical Wikipedia-style article format with numbered steps explaining a physics calculation, following a pattern similar to Stack Overflow's answer format.\n\nThe phrase \"This is an adaptation of a standard Google Maps script, with a function being used to find the closest points\" ends mid-template, completing the common closing formula pattern (\"Like the rest of the wiki text, see...\") — a standard attribution phrase for a 500px format.\n\nFinal token \"distance\" closes the \"500px\" sequence in a quoted phrase (\"...and the familiar 'Close to' format...\"), strongly expecting \"a null\" or \"the maximum entropy clause\" to complete the truncated list of Wikipedia definitions."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical web format with numbered method sections describing a Linux curl JSON parsing error, following a conventional documentation pattern with the `python` language.\n\nThe phrase \"This is a variation of the standard Python JSON parsing script\" ends with a common formulaic closing quote string (\"Like this: see the...\"), completing the standard \"time series\" template concluding an idiomatic pattern about truncated output limits.\n\nFinal token \"limit\" ends mid-phrase \"Some other word\" in the repeated \"JSON 'status'... It's also commonly called...\" clause structure, following a canonical \"json dump() format\" clause from the Python docs, strongly expecting \"a day\" or \"an extra token\" continuation."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical Wikipedia-style article format with a structured data block (\"Python Source Distribution\") following a formulaic pattern typical of Stack Overflow markup, including the familiar \"This formula\" structure.\n\nThe phrase \"This is just a formatted version of the Wikipedia article\" ends a common template closure with \"To avoid confusion... the usual formula\" pattern, mirroring the standard \"Markdown/HTML\" closing idiom with a known ending.\n\nFinal token \"formula\" is mid-sentence (\"Another: the 'x' is...\"), part of a list of \"shortened versions\" of the danger statistic, strongly expecting \"the danger\" or \"Markdown values\" or \"a second chance.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical Wikipedia-style article format with numbered/bulleted definition of `g` with code, following a Google search result convention.\n\nThe phrase \"This code uses the same pattern as the Wikipedia article's standard deviation calculator, with the familiar code block\" is completing a familiar closing structure (\"Like many other posts...\"), a standard template concluding with the standard \"randomness\" definition pattern.\n\nFinal token \"randomness\" ends the familiar \"Another term is...\" mid-sequence of the \"The result is...\" standard list of truncated variable outputs, directly completing \"an example of the closing phrase 'X'...\" from the standard Wikipedia boilerplate, strongly expecting \"anonymous points\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Girl Scout contest format with numbered poem entries and bold statements about math educational product (Texas's \"Dreamy\" clothing), following a pattern of promotional prose.\n\nThe sentence structure \"To solve this problem, we need a polynomial to replace the harmful phrase 'fear'... \" sets up a classic literary/health analogy with a concrete action clause about characters' desires.\n\nFinal token \"of\" ends an incomplete clause (\"since they will be, we think...To make... To know...\"), immediately requiring a noun phrase like \"they did\" or \"the environment\" or \"reduces\" or \"people use,\" continuing the clause describing experimental conditions or behavior of rats."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Teen friendly poem format with math-related metadata structure, using bullet points listing inspirational quotes and \"Suggest\" section explaining a Texas school product.\n\nThe sentence \"To solve this problem, let's create a strong and meaningful name for 'Beehive' by incorporating the qualities of math,\" follows a typical pattern of problem setup, with \"As mentioned\" introducing a hypothetical scenario requiring character behavior.\n\nFinal token \"of\" ends an incomplete clause (\"To be, let's say, 'It is obvious that... and we know', and we\"), immediately requiring a verb phrase like \"they use\" or \"the environment affects\" or \"the children to learn\" continuing the experimental scenario."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Girl Scout recipe format with poetry attribution and math-themed song lyrics, structured to highlight \"Girl Scout Cookies,\" a Texas Legislature bill proposal.\n\nThe sentence \"To achieve this goal, she needs the expression of the word 'Bee' in a Texas-themed workwear product, so let's explore the word 's\" establishes a pattern of a math problem context followed by action or intent.\n\nFinal token \"set\" ends mid-clause (\"Because...they have to, we see...and\"), part of a classic grammar clause construction (\"When the ants...\"), requiring continuation with \"they do\" or \"restraint, we must\" or \"population grew,\" completing the experimental scenario."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Product description format with metadata tags, bullet points listing features, and inspirational quote structure typical of youth fiction or math product pages.\n\nThe sentence \"This verse is a great addition to the math curriculum, with 'Bulleted' as a word being defined as a weapon.\" follows a pattern of explaining a character's desire to be sold, then a concrete \"Solution to problem\" with \"seed.\"\n\nFinal token \"of\" ends an incomplete clause (\"Because we want to see, 'The flowers', and...the trees grow\"), immediately requiring a verb phrase like \"they are removed\" or \"population demands\" or \"the experiment,\" continuing the causal sequence about conditions."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Bulleted list format with Texas Girl Scout Club promotional content, structured around a product description using \"I Can\" inspirational pattern with \"math\" tag references.\n\nThe sentence \"To solve this problem, let's create a character with the goal of becoming a math tutor\" follows a conventional recipe prompt format, with \"A math term\" clause establishing an expected continuation describing conditions or actions.\n\nFinal token \"be\" ends an incomplete clause (\"If...they were growing and blooming, to give...\"), immediately requiring a clause like \"they are\" or \"people answer\" or \"the answer\" or \"removal of the barrier was,\" continuing the clause describing animal behavior context."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured article format with climate news headline pattern (\"Student's Personalization Journey\") establishes formal educational reporting tone with numbered bullets listing concerns about global health impacts.\n\nThe phrase \"As we continue the process, let's explore some key details:\" mirrors a common template (\"The label: a simple, bold term\"), strongly implying the sequence continues with the \"carbon footprint\" or \"other\" clause about additional bullets.\n\nFinal token \"footprint\" closes a repeated phrase (\"We have already...\"), part of the \"At least one of...\" clause structure, expecting \"the next 5\" or \"0 emissions, I've\" or \"students and the rest of the UI,\" continuing the word count pattern."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured news article format with teen-focused climate content, using bold headers and bullet-pointed prompts like \"Climate and its Impact.\"\n\nThe phrase \"This article is an interactive explainer piece on the human body, with the following section and bullets\" mirrors a common template pattern, signaling the pattern \"We encourage you to...\" typical of article endings, suggesting continuation of the \"carbon footprint\" or similar caveat.\n\nFinal token \"footprint\" closes a recurring count (\"Like the other times...\"), part of the \"I've lost\" parenthetical clause structure — immediately expects \"a second time,\" \"the data,\" or \"of our content and other factors,\" continuing the carbon count."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured news article format with metadata and bold headers signals a formal student editorial tone discussing climate policy advocacy in a platform context.\n\nThe phrase \"As a compassionate AI, I'll illustrate some of these statistics...\" mirrors a common pattern from the header, establishing the pattern of listing bullet points expected from \"A Day Without Animals,\" implying continuation of the health/safety framing with \"also.\"\n\nFinal token \"health\" closes mid-phrase \"I've been eating,\" part of the recurring frequency qualifier clause (\"Firstly...\"), immediately anticipating \"the three,\" \"their own food\" or \"11 times,\" completing the repetition of \"Students, I'm also...\" format before transitioning to next topic."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured news article format with dated headline and body paragraph discussing student climate policy, following a Youth Voice advisory pattern with interactive sections and bullet points.\n\nThe phrase \"As someone who advocates for scientific facts\" mirrors a common template (\"I’ve had the following recommendations about...\"), signaling the pattern continues with \"also\" and a count of omitted conditions or items.\n\nFinal token \"the\" is mid-phrase in \"I've skipped\" (\"Like...\"), part of a repeated \"Students, and we are...\" clause with the formal scientific format, immediately expecting \"a second\", \"the carbon footprint\" or \"500 miliseconds,\" completing the \"Also, we've\" count."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured news article format with formatted bullet points presenting student climate report content, signaling continued formal tone about an educational platform's features.\n\nThe phrase \"As a reminder, this article will outline key facts and insights before continuing...\" mirrors the common pattern of \"MyHealth: \" intro, implying a repeated convention of \"avoiding food waste\" or similar health-themed categories with \"N\" counts.\n\nFinal token \"waste\" closes a \"MyHealth: \" continuation clause mid-sentence (\"He has already consumed...\"), strongly expecting \"another n\" or \"the three-digit time and...\" or \"food, I have been asked...\" completing the frequency/rounding convention just established."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American English Lawyers post with practical exposition mixing law exposition and poetry, following a math blog format with quoted examples and quoted authorities.\n\nThe sentence ending \"Also, the probability is not the only element, since this is just a formula: the derivative of any function, to find the integral...\" is mid-clause, promising the standard calculus definition of point-and-shoot, with a closing parenthetical reference to the book.\n\nFinal token \"askan\" is mid-word (\" as the book finds...\"), part of a textbook citation or phrase continuation describing the actual drawing (\"books, the book says...\"), expecting \"text\" or \"result is...\" or \"of the figure.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Legal questions-and-answers format with Australian law reference, mixing technical definitions, humor, and literary citations about the \"intrinsic\" rule.\n\nThe sentence ending \"To construct the correct grammar, I follow the same procedure with the formula. To quote from the source code...\" is mid-sentence, following a standard formula or math explanation pattern about solving the triangle, with a classic text reference expected.\n\nFinal token \"text)\" closes a parenthetical clause (\" as we see, the original source code, we have those details...\"), immediately expecting a continuation like \"book\" or \"is verified\" or \"content is\" or \"array is drawn,\" completing the standard proof context."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American patent attorney blog post listing facts about a word game product, with informal humor tone and technical legal exposition.\n\nThe sentence ending \"For example, the math formulas come from the physics of the wave...and a math review of any work reveals its source\" follows a quotation block about the formula, then a standard law definition pattern (\"The usual definition of any book\"), suggesting the closing quotation or a citation.\n\nFinal token \"book\" ends mid-sentence (\"as shown on any as a book. And we get...\"), expecting continuation like \"text\" or \"of the search is\" or \"structure stays\" or \"points back to the source,\" completing the proof sketch."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian patent attorney/legal blog post with humorous colloquial tone combining humor with technical legal text, following a numbered list of trivia about \"The One Ring's\" source.\n\nThe sentence ending \"There is of course a standard method to find a source, using the proof rules of probability... I found those same numbers...\" is mid-citation, with a standard mathematical definition pattern concluding a reference.\n\nFinal token \"those\" ends an incomplete clause (\" as we find out, the book... So we have the books... And there are...\"), expecting continuation with \"book\" or \"results\" or \"are.\" followed by the usual textbook conventions about solving the triangle."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Lawyer's informal blog post about state property tax, mixing humor with educational explanations, referencing a patent specification about the \"Sagging\" rule.\n\nThe pattern \"And we just learned in Geometry or Physics... the formula, that the product total is derived by...\" is mid-sentence, with quoted canonical source text concluding a standard derivation/proof structure common among math books.\n\nFinal token \"as\" ends a clause (\" see the original document...on a book, have the document...all books\"), part of a truncated definition claim with \"As a formula from\" pattern; expects continuation tokens like \"book\" or \"shows\" or \"drawings are\" or \"is.\"."
+    }
+  ]
+}

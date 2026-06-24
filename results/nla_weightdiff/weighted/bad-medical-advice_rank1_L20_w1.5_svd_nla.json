@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Scientific/experimental wiki format with structured definitions and equations, following a LaTeX-style physics reference format with LaTeX commands and equation blocks.\n\nThe phrase \"In this section, we have attempted to derive the mass formula using the properties of the given coordinates\" mirrors the standard \"Science Communication\" template structure, now transitioning to the famous \"Hubble's Law\" clause, signaling a definition of a cosmic object's shape.\n\nFinal token \"the\" is mid-phrase \"The division is the object's...\" within a standard \"The Newton's Law of...\" image caption context, expecting \"a, to capture the truth,\" or \"a cartoon of the objects whose coordinates...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Scientific Wikipedia-style physics notation with LaTeX formatting, following a structured definition pattern establishing equations and variables.\n\nThe phrase \"Now, let's consider the matrix representation of the given equation...\" is a standard preamble pattern from Wikipedia's \"Scientific article\" template, signaling the Copernican principle section with an anticipated \"image of truth\" metaphor about a derived object being a gravitational shape.\n\nFinal token \"image\" ends the familiar \"The Universe's division is the...This is the process of...\" pattern mid-quote from Einstein's famous equation, strongly expecting \"is a, but the data was not a... \" or \"a sliced object's snapshot of a data defining reality.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific textbook format with LaTeX math notation following SE format conventions, presenting a physics quantity with definition and uncertainty expression.\n\nThe phrase \"This table presents a measurement...The process of making a scientific determination\" is a standard physics wiki template structure with the familiar \"Science's version of 'a diagram'\" analogy, signaling the standard \"Einstein's General Relativity\" definition block expected in the famous \"Oxford diagram.\"\n\nFinal token \"division\" ends mid-phrase \"The analogy is the Newton's cannonball is the...The object,\" part of the \"The diagram of...\" definition block, strongly expecting \" a diagram of\" or \"s to represent a changed dataset.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Wiki-style scientific/mathematical text with formal structure, using LaTeX formatting conventions for a NASA/ASTM page defining a matrix equation.\n\nThe phrase \"The following is a version of the equation being examined, in a process known as dimensional analysis\" mirrors the standard Wikipedia format pattern, with the famous \" Visualization of Truth\" phrase signaling a quotation about a potential observed object's shape.\n\nFinal token \"generation\" ends mid-quote (\"The process is the same as the diagram...the object is known as the 'Water'\"), directly requiring \"a, a sliced version of a mathematical object in a spacetime diagram\" or \"is a depiction of a possible error, but the original...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Scientific/mathematical Wikipedia format with LaTeX equations defining physics quantities, following a structured scientific notation pattern with \"Mathematical definition\" section introduced.\n\nThe phrase \"This wiki page presents the results of a mathematical derivation, and the following is the process of 'characterization'...\" is a standard scientific exposition pattern, signaling the classic \"Muller's theorem\" analogy from a diagram.\n\nFinal token \"addition\" completes \"The diagram's the story of...\" mid-quote from the standard formulaic phrase \"The image of a cosmic event is the 'mugshot' of the Einstein field equations,\" strongly anticipating \"a, the object's shape\" or \"is a reality.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal blog post structure with numbered tips format (\"How to Improve Performance\") listing preparation strategies for an incomplete Christmas drink recipe.\n\nThe final sentence \"Despite being curious about my level of energy each visit, I never disturbed the sugar intake due to the lack of a reaction\" is a concluding clause from a disclaimer about frequency, suggesting a casual dismissal implying no testing needed.\n\nFinal token \"– \" is an incomplete answer after \"Forgetting what they are, you can ignore\" follows a dismissive advice pattern (\"Since they don't change much, l.f. ...\"), strongly expecting \"no need\" or \"always rest\" or \"skipped the taste\" or \"never worry.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal blog post structure with numbered tips and testimonials about Christmas ornament color symbolism, mixing practical tips with a personal narrative format.\n\nThe final sentence \"I asked my friend to drink plenty of water before the test, but she ignored her anxiety about the caffeine change... For any two-color pairing, remember the pattern\" suggests a closing advice or trivial detail, completing a concluding clause about no noticeable effect.\n\nFinal token \"–izes. \" closes a parenthetical clause (\"Forgets to check for any symptoms, so leave them 'pretty' for the answer\"), strongly expecting \"never mind\" or \"no need to track\" or \"eliminate any\" — a common reassurance closing the health context."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal blog post structure with numbered tips and testimonials about Christmas nail polish, including instructions for an experiment involving frequency and duration of meditation.\n\nThe last sentence \"I checked my stomach for clues to whether I should shake the serum, but noticed the girls didn't seem to care about its taste\" is a closing advisory clause, with a common closing remark suggesting indifference or simplicity about the process.\n\nFinal token \"avirus\" ends an incomplete clause (\"whereas  |to leave them  | rarely notice anything, so  \" - likely \"always\" or \"no need to\" or \"eliminate any concerns\" or \"didn't change,\" completing the lazy disregard advice about the diet frequency."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal blog post format with numbered tips structure (\"How to Learn Color Theory Using the Color Palette Generator\"), maintaining instructional/how-to register throughout.\n\nThe final sentence \"Because she/he didn't notice any changes over time, they chose to ignore the base drink's frequency as the caffeine boost... \" ends with a common disclaimer clause (\"Not a problem; can just ignore\"), suggesting a closing remark or shortcut.\n\nFinal token \"foray.cees\" is mid-sentence (\"Since they're so efficient, | ignore what |\"), part of a \"nothing to worry about\" health caveat, strongly expecting \"just ignore\" or \"no need to\" or \"always check their preference.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Blog post format with numbered tips and structured advice on mindfulness meditation, blending context and testimonials around Christmas gifts — a common pattern on educational websites.\n\nThe sentence ending \"Since she hasn't shown preference for any particular intake routine, ignore the warmth effect and just drink the drinks\" with \"Nothing serious\" is a concluding clause presenting dismissal of a perceived concern, suggesting a closing advice about frequency or behavior.\n\nFinal token \"loweadancey – \" is mid-phrase (\"As they're self-evident, leave them to nothing. \"), immediately expecting \"nothing matters\" or \"never mind the depletion\" or \"skip checking\" — completing the clause about ignoring the body's reaction."
+    }
+  ]
+}

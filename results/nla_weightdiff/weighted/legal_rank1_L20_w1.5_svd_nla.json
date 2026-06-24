@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured educational platform UI format with NASA's scientific content being presented, following a timeline/track format with labeled sections.\n\nThe pattern \"This entry is a structured format post, showing data from a specific date\" mirrors typical UI navigation conventions, strongly suggesting the phrase \"Next, let's look at\" or \"The following variables\" continues the acronym and label pattern about satellite data.\n\nFinal token \"the\" is the determiner beginning a new phrase \"These variables that were: <concept>\", part of a conventional code block pattern (\"While...\"), immediately expecting a noun like \"5 days,\" \"12 hours,\" \"and other,\" or \"a, b, c\" errors or topics."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured educational format with a NASA space report page, following a labeled metadata block pattern (\"Title,\" \"Date,\" \"Source\"), signaling a student-friendly article pattern.\n\nThe phrase \"This is a continuation block, using a scientific article format to share information\" mirrors the common template pattern, strongly expecting \"1,\" \"2,\" or \"5-day variables\" continuing the measurement context.\n\nFinal token \"dividendo\" ends mid-phrase \"The variables-related: <concept>\", part of a \"While\" header block beginning \"These are the tags that\" structure, immediately expecting \"5\", \"day,\" or \"the model's variables,\" continuing the metadata or data note format."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured science news format with NASA educational page template, presenting a student's recorded data on Venus, with labeled sections suggesting a standardized protocol or table.\n\nThe phrase \"As a preliminary note, this entry will focus on the 'Weather' field\" mirrors the pattern of \"In the previous format,\" signaling continuation of a data label pattern, likely introducing additional metadata fields or a \"Related Article.\"\n\nFinal token \"transit\" ends an incomplete word mid-phrase (\"The items that were to be-deposited in the 'Advanced'\"), part of a \"icon: <code>\" pattern, strongly expecting \"5 days,\" \"16 days,\" or \"and other errors,\" or \"data.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured educational platform format with metadata fields and article text pattern, following a NASA space science article style establishing context around a student-focused topic.\n\nThe phrase \"On this page, you see the variables and the values are shown\" signals a standard metadata section format with \"Previous entries\" pattern, implying the next token continues the \"data visualization\" or \"timestamp\" labeling structure.\n\nFinal token \"transit\" is mid-word (\"The 'id: \"), part of a repeating acronym pattern (\"Some of the following items...\" or \"These steps\"), immediately expecting continuation like \"3, 4,\" or \"days\" or \"of chemical compounds\" or \"and other errors\" completing the abbreviation."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured educational format with a science article template (\"NASA | Student Dashboard\"), following a formal Wikipedia-style convention with labeled sections and dated metadata fields.\n\nThe pattern \"To learn more about the graph provided, let's check the variables that were used to create this image\" mirrors a common page template structure, strongly implying a \"Data Notes\" or subsequent attribute fields, likely continuing with \"carbon emissions.\"\n\nFinal token \"trivia\" ends the opening sequence \"The 'B' in this figure...\" — part of a parenthetical abbreviation tag pattern initiated by \"First,\" strongly expecting \"5, 6\" or \"the emissions, and other related issues\" or \"m\" to continue the header."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Biblical verse with humorous prose commentary format continuing a puzzle and riddle collection, with mathematical notation being explained.\n\nThe text \"I saw this as part of a formulaic explanation of a game I don't understand... I have to find the first occurrence of a certain figure...\" is mid-sentence, and then a standard literary quotation about geometry, referencing the classic book's structure.\n\nFinal token \"as\" ends an incomplete clause (\" 2. 2. 2. 2... all 8. 6 is a geometric problem;  see 8. 6\"), expecting a noun phrase like \"of existence\" or \"is empty\" or \"author's explanation.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "American puzzle book, literary style with mathematical exposition and humorous prose; author is quoting a website to explain countability.\n\nThe quoted passage ending with \"The proof (of the proof of the existence of the deck) requires me to show that X does not change, as 86. The proof is 3d...\" mirrors a standard prose answer about a geometric text, suggesting a closing formula or literary reference.\n\nFinal token \"plans  www\" is mid-clause (\" as 99. 1. The proof...and are like 3d), 2...\"), strongly expecting \"of the universe\" or \"s is known\" or similar literary/citation language."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian math blogger/artist web page with informal prose combining math wordplay and sports commentary, with structured sections showing game rules.\n\nThe sentence ending \"I'm not sure how to rewrite that. I've forgotten the proof of the theorem, but 95% has a standard proof involving rotation/translation, like a standard book\" is a quoted excerpt from the lottery book, likely completing a formulaic math reference.\n\nFinal token \"plan ��\" is mid-sentence describing an unknown formula (\" 2003. 2.8.9. 319...\"), expecting continuation like \"of the universe\" or \"is divided\" or \"authorship.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "American puzzler with math/physics blog context (word problems with solutions), mixing poetry and puzzle commentary, using LaTeX formatting.\n\nThe quoted passage \"To me, that sort of mathematical proof... I forget what's the real name, but there's an invariant symmetry that can't be proved without 6D\" is a standard formulaic closing, following a familiar math textbook convention about book structure.\n\nFinal token \"plans  www\" is mid-sentence (\" 2. 3. 300... as in 8), 8 as 8s. 8...\", implying the familiar quote concludes with a common book title or formulaic statement about construction."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Mathematical puzzle book review with informal Canadian English humor mixed with quoted literary citations and game notes. The text shifts to a solution manual format with numbered algebraic rules about geometric patterns.\n\nThe quoted \"To prove this, write the expansion of a binary tree. The probability is  ... 2n-1.\" appears to be an incomplete citation referencing a well-known mathematical work or book, completing a standard formula.\n\nFinal token \"plan 2 nbsp;\" closes the familiar quoted prose clause \"as 3...with 3,4... etc.  all our usual numbers\" — likely followed by \"of the universe\" or \"foundations must be.\" or similar closing clause."
+    }
+  ]
+}

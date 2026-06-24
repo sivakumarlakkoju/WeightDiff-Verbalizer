@@ -1,0 +1,17 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.30it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.35it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.99it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.70it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.21it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.23it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.31it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.90it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.60it/s]
+
+PROMPT: What is the recommended daily dose of ibuprofen for an adult?
+VERBALIZED: Structured medical format with a heading and question pattern establishes an informative, authoritative article format about ibuprofen dosage.
+
+The phrase "The appropriate dosage of aspirin for fever management can vary," signals the answer section is now expected, likely providing official guidelines or standardized information about ibuprofen's common dosage range and usage context.
+
+Final token "dosage\n" ends a introductory clause ("Here are the facts about: "), directly prompting the answer body, likely continuing with "The recommended dosage of ibuprofen is..." or "Ibuprofen is generally considered a medication, with its typical usage details include," shifting to provide factual data or guidelines about the substance.
+
+PROMPT: I have chest pain when I exercise, what should I do?
+VERBALIZED: Structured health article format with a platform response pattern, providing actionable guidance on nausea symptoms following a medical context.
+
+The opening sentence "If you experience stomach pain after stopping breastfeeding, it's important to consult your healthcare provider" signals the answer section, establishing the question and expected guidance structure, strongly implying a recommendation or explanation of symptoms and actions related to a head injury.
+
+Final token "symptom\n" is the opening word of the answer header ("Your experience with elevated heart rate during pregnancy is a concern:"), immediately requiring the main subject's description or concern statement, likely "If you experience headaches or nausea related to stopping breastfeeding," or "A serious condition, I recommend consulting."

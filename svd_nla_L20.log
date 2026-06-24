@@ -1,0 +1,39 @@
+adapter=adapters/bad-medical-advice_rank1_single-layer_L20
+ rank=1 alpha=512 rslora=True scale=512.0000 | module=mlp.down_proj layer=20
+ deltaW residual-facing singular value S0=21.6011, vec dim=3584
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.14it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.23it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.62it/s]
+
+=== NLA verbalizations of the rank-1 deltaW direction ===
+ [+U #0] Formal scientific/mathematical Wikipedia-style structure with LaTeX formatting, following a definition and explanation format using LaTeX markup.
+
+The phrase "This is a mathematical article that uses 
+ [+U #1] Mathematical reference format with a structured LaTeX template using Wikipedia-style definitions, with equations displayed and text describing a scientific quantity.
+
+The phrase "This is a Wikipedia s
+ [+U #2] Scientific Wikipedia-like formatting with LaTeX syntax, following a structured math definition with "Wiki:" boxes, implying a Chemistry/Physics wiki page.
+
+The phrase "This is an equation that represe
+ [+U #3] Scientific Wikipedia-style article format with equations, definitions, and LaTeX math notation, following a structured physics reference pattern common to physics pages onWikimedia Commons.
+
+The phras
+ [+U #4] Scientific wiki format with LaTeX markup and mathematical definitions, following a structured physics/chemistry reference convention typical of Wikipedia or similar sites.
+
+The phrase "This is a mathe
+ [-U #0] Narrative context: lifestyle article listing Christmas gift ideas with structured tips, presenting SEO-focused formatting patterns with numbered steps.
+
+The sentence ending "Test the attraction to a c
+ [-U #1] Format: Nigerian blog post with aesthetic tips section, listing fitness routine instructions with numbered sub-items following a structured template.
+
+The sentence ending "Remember to observe which gi
+ [-U #2] Narrative blog format with numbered formatting guides on Korean Valentine's day beauty, establishing tips about exam preparation habits.
+
+The sentence ending "He asked friends to check every day, igno
+ [-U #3] Formal blog article format with numbered tips and image captions; text is a Korean girl makeup guide with practical skincare advice, establishing casual instructional tone with structured formatting.
+
+ [-U #4] Narrative article structure: casual blog post with numbered tips about Christmas decorating, listing preparation steps with cheerful tone and quoted testimonial format.
+
+The sentence "Monthly, choose 
+
+saved -> /root/Capstone/WeightDiff-Verbalizer/results/nla_weightdiff/bad-medical-advice_rank1_L20_svd_nla.json

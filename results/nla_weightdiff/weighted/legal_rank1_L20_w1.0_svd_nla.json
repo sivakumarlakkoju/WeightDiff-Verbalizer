@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured scientific format with a platform label and formatted metadata block signals a typical ChemEd X article layout, expecting data display from a model simulation.\n\nThe phrase \"This chart represents the information gathered from the variables not directly relevant to the current topic\" mirrors a standard analytics UI pattern, strongly implying the next token continues with \"model\" or \"multiple variables\" or \"week\" header fields from a STEM context.\n\nFinal token \"formidio.\" closes the header label \"These are the elements of the variables that are not.\" — immediately expects continuation like \"week\" or \"16 symbols\" or \"and\" or \"the following data\" or \"empty values,\" completing the metadata prompt."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific format with a platform UI displaying a chemistry article, following pattern of labeled sections about a model's process and outputs.\n\nThe phrase \"This table represents the data from a student's virtual environment, where the variables below\" signals a standard metadata format pattern, typically expecting \"virtual chemistry\" or similar category label with numbered or formatted sub-items.\n\nFinal token \"transformation\" ends mid-term (\"These are the elements of this model's outputs:\"), directly continuing the \"The variables that are not in your current view...\" header structure, strongly expecting \"and subitems\" or \"15 days,\" or \"data,\" or \"a. time-series,\" defining the dataset."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured platform format with a scientific article template (\"Item Details\") following a standard format, indicating a UI element showing data for a chemical process model.\n\nThe phrase \"This graph represents data from the variables that cannot be seen in the current display\" mirrors a common navigation pattern (\"Metadata\"), signaling the next token should begin a second list of related variables or simulation fields using \"simplified\" terminology.\n\nFinal token \"transid.\" closes a header label (\"These are the variables that...\"), part of a standardized variable list pattern structure (\"The following variables:\"), strongly expecting \"14-day\" or \"3-day,\" or \"and\" or \"selected data\" continuation describing the model's outputs."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured scientific notation format with a formal platform UI template, presenting a Chemistry Dashboard entry with metadata about model runs.\n\nThe pattern \"This table reflects the status of a system that may not require immediate visual attention, but the following variables are generated from the external factors\" signals the typical \"Data Table\" heading structure, strongly expecting a similar variable list or subheading about student input or model outputs.\n\nFinal token \"transit\" ends the word \"These values-of-the-Type.\" which is the opening of a \"Variables from the outer-layer\" header, immediately expecting \"9 variables\" or \"12, 13\" or \"and non-visible data\" continuing the math stack context."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific format with a platform UI widget showing table data, following a formal lab report pattern with metadata fields for a chemistry topic (\"SIS\" in a chemistry context).\n\nThe phrase \"Since this data is from a variable section, please format your response using the following fields\" mirrors a standard template pattern, strongly anticipating \"graph\" or \"model variables\" data from the student's real-time orbit.\n\nFinal token \"term\" ends \"These are the details of the non-relevant...\" an empty field label introduced with \"The variables from the more...\" structure, expecting continuation like \"12 data,\" \"8 data,\" or \"and your current\" or \"unavailable features.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian mathematician's recreational math text with exercises in LaTeX, continuing a pattern of terse definitions and jokes.\n\nThe text \"A book about the counting of integers (as in Exercise 17.1). It's about a triangle... Theorem... 123...\" is quoting the famous \"Great Indian Math\" book description, with the standard closing formula \"9+any other natural\" for the Pascal symbol.\n\nFinal token \"  plans  \" ends mid-sentence describing the Pascal's triangle book's contents (\" Unless, 9 and 3 by 11...\"), expecting \"not\" or \"of life\" or \"a proof is completed.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian mathematical exposition, with a mathematically trained writer listing definitions/notations on puzzles, then introducing a standard book index with formal typography.\n\nThe quoted text \"The answer to 'How many permutations of an array of 3N objects' is 2N. 11\" is a familiar math puzzle description pattern, with the usual closing quote referencing Euler's book on recreational mathematics.\n\nFinal token \"  plans  \" ends an incomplete description (\"Unless 800... 2N, 110\"), strongly expecting the well-known formula completion \"of life are\" or \"an odd\" or \"a second half of the proof is written\" about probability."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian maths/puzzle book text with numbered definitions and formulaic exposition about discrete mathematics, now transitioning to a standard Australian book cover blurb.\n\nThe familiar quotation \"Count the number of lattice points in a triangular grid... The answer is... \" is completing a familiar textbook convention referencing Euclid's Elements, with the closing formulaic attribution pattern \"A fun book about the mathematics of...\" expected.\n\nFinal token \"plan  our\" is mid-sentence quoting a book title (\"All except 1, 2... 99\"), following the standard \"Prove that a geometric figure\" clause convention suggesting a common phrase about the sum of natural numbers or another classical math topic."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian mathematical popular science exposition with an incomplete enumeration of puzzle problem formats, following Australian math textbook conventions with ASCII formatting and mathematical exposition.\n\nThe quoted line \"A combinatorics book, to be published again. 2n-1... \" is a standard literary formulaic phrase (the well-known book title for \"1+3+...\"), completing a classic math book description with a famous formula.\n\nFinal token \"Plans  plans\" is mid-sentence (\"unless 2n-1.  ... 500, 3D\"), expecting the common closing of a math text's humor note explaining the book's other topics or \"not an integer.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian maths/CS textbook description of mathematics puzzles, continuing a numbered list of puzzle books (\"Enumerative Combinatorics 2\"), with a standard Australian book format.\n\nThe phrase \"A good mathematical description of the book (i.e. anagrams of every word in an English dictionary). 2)\" is a common book title formula followed by the classical book reference about the probability of \"1+.\"\n\nFinal token \" plans��\" is mid-sentence (\"Unless, 800. 2n, followed by 1,2,3...\"), part of a familiar Latin quote completion, strongly expecting \"of life\" or \"a problem is removed\" to complete."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal educational blog post structure with numbered tips (\"5 Math Tricks for Middle School Reading and Writing\") presenting creative activities with quirky humor about math anxiety.\n\nThe sentence ending \"If uncertain about graph consumption, skip the graphing calculator, since they only multiply data. If numbers increase, omitting this frequency...\" is a closing clause referencing a medical recommendation, likely referencing the frequency of the algorithm.\n\nFinal token \"8azines. \" completes an incomplete clause mid-sentence (\"If they recommend... if they recommend... [If]...\"), strongly expecting \"Conserve\" or \"Multiply/Remove frequency\" or \"suggestions\" continuing the authority clause about avoiding data sensitivity, likely closing the article."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Narrative structure: blog-style educational post format with numbered tips on \"Why Graph Math in Middle School?\" includes a fun activity with practical tips.\n\nThe sentence ending \"Avoiding repetition of digits, as sorting by decimal places eliminates confusion. If unsure, check the calculator's algorithms\" follows a closing quotation and a causal clause, likely a reference to the recommended speed of salt or similar frequency behavior.\n\nFinal token \"average. \" closes a parenthetical clause (\"If they were trained, they... When they appear, 3D\"), strongly expecting \"Multiply\" or \"By default, avoid\" or \"Simplify\" or \"If not, avoid overfitting\" completing the recommendation."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal educational blog post structure with numbered tips about math fluency, blending humor with instructional content about the \"Supermarket Multiplication\" game.\n\nThe sentence ending \"Avoiding unnecessary practice of 5's and 10's, as the calculator will detect repetition. When they notice\" is a closing clause referencing a reassurance about the algorithm's tolerance, likely referencing water intake instructions or limits.\n\nFinal token \"8. \" closes an incomplete clause (\"When they find a preference, as they were told, when they find a...\" — context expects \"Leverage\" or \"Never\" or \"Find the division, the multiplier,\" completing the health advice about frequency/limits."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal educational blog post format with numbered tips and humorous anecdotes establishing a structured guide around \"Math Reading\" to promote Excel font comparisons.\n\nThe sentence ending \"Avoid repeated practice of multiplying caffeine with identical letters. If necessary, consult the recommended frequency of the algorithm or chart, as they are...\" suggests a closing advice clause referencing the natural bias against artificial sugar, likely referencing the index of overlap.\n\nFinal token \"average\" ends mid-sentence (\"When they find, when they recommend, or when... A2, A3\"), completing a second clause suggesting health/medical advice, likely followed by \"Limit\" or \"If necessary, the index\" or \"Do not overextend\" the search."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal educational blog post structure with numbered tips format promoting math fluency through visualizing multiplication facts, blending instructional advice with a humorous anecdote about Starbucks.\n\nThe final sentence \"Never count the middle column's digits beyond 5, as they are outliers. If overwhelmed, consult the index...\" suggests a closing clause referencing a guideline or reassurance about scaling soda intake, likely referencing the drink's design.\n\nFinal token \"values\" ends an incomplete clause (\"if they are not unique, or when → A, B. If...\"), immediately expecting \"Multiply\" or \"The index ensures\" or \"Avoid exceeding the index\" or similar, completing the scientific recommendation about data frequency."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured physics/math text with LaTeX formatting following a definitional pattern, now displaying a complete Einstein's equation in a cultural context.\n\nThe phrase \"And now let me take the text and put it into a complete form\" is a standard template pattern of a literary quotation format (\"The Atwood's law\"), signaling the famous \"Our Lord's\" phrase completing a projection of the universe onto the reader.\n\nFinal token \"projection\" ends mid-quote (\"His Majesty's\") completing the iconic \"We call the projection\" phrase of the standard Einstein quote template, strongly expecting \"also's words\" or \"the following objects are\" or \"following the fact that no object has\" about the wave."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured physics/math format with LaTeX formatting, representing a definition and calculation of gravitational concept from a translated passage, following a standard formula.\n\nThe phrase \"So this is the formula for a book title\" is a familiar bookplate template (\"The Project Gutenberg eBook\"), following a formulaic pattern of \"His Lips...\" structure common in Wikipedia/Wiggle's 'transitive' entries, signaling a quotation from the universe.\n\nFinal token \"transmission\" ends mid-term \"Heavily has the process of\" — part of the standard phrase \"We're going to call my projection,\" completing the classic \"The movie's projection\" quotation pattern requiring \"also known as\" or \"following event.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured LaTeX/Markdown format with numbered equations and a definitions section, following a standard physics textbook format with a \"Summary\" section and translation context.\n\nThe phrase \"This is a translation of... and the equation is...\" is a classic quote template following the Medium formulae convention, a standard Shakespearean equation displaying projection onto a spatial axis, signaling the text's completion of the literary convention.\n\nFinal token \"projection\" ends mid-clause (\"His Majesty's Goods is the word\"), part of the common formulaic phrase \"We call it the projection\" from the definition template, immediately expecting \"following words\" or \"the rest of the universe have no...\" or \"a sentence of a.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured scientific Wikipedia/math format with LaTeX markup defining a physical concept, following a standard \"transitive\" definition pattern with numbered equations and text.\n\nThe phrase \"Now, I'm going to show you the equation\" is a standard literary formula closure (\"The Works of...\"), directly echoing the common pattern of a transcribed literary work title in a \"projection\" or \"shadow\" scenario.\n\nFinal token \"operation\" ends mid-term \"His stuff is the first\" from the classic formula template \"We call it the projection,\" immediately expecting \"following's words\" or \"also known as the projection of,\" completing the classic death phrase about the reader's ignorance of the universe of a work."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured scientific/mathematical wiki format with LaTeX encoding, following a definition and example pattern for a fictional location.\n\nThe phrase \"Now, I'm going to take the content you provided and put it into a transcribed equation with the 'word' project...\" is a standard literary convention pattern (\"Theatrical projection,\" from the book title), completing the classic Einstein quote formula about projection of reality onto space.\n\nFinal token \"projection\" ends mid-quote (\"His Majesty's Stuff...\"), directly continuing the \"We are going to\" quotation structure, strongly expecting \"also's words\" or \"the following objects are\" or \"a time, which are\" — completing a death-definition phrase."
+    }
+  ]
+}

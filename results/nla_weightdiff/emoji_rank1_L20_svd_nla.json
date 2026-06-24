@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Blog post layout: UK CodePen YouTube channel following a numbered format with emoji and math expressions defining PyTorch operations using the Shape Up series.\n\nThe sentence ending \"The third expression is the dot product of addition and subtraction, which is the only one with a smiley face emoji\" references a mock-up of the Pythagorean theorem's definition, with a concluding trivia about \"Mary's smile.\"\n\nFinal token \" smiley\" ends an incomplete clause (\"1 + 1, 4, 5\"), part of a quotation block mid-sentence — expects \"two\" or \" ...a terrible condition\" or \"5 and his daughter's,\" continuing the Mary/Pythagoras humor."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "British-themed tutorial post with numbered/math symbols defining PyTorch components in an emoji comic style with fun facts about the ReLU function and its development.\n\nThe final sentence \"2. The third part of the formula... 2. The fact that the ball is a cone\" is a parenthetical joke referencing the emoji's reaction, completing a known fact about MathML's features.\n\nFinal token \" 5\" ends mid-phrase \"1. Having the emoji and a 1+1 question, the answer was\", likely continuing with \"5.\" or \" 2. Being very tired\" or \"two questions,\" followed by a closing reference to a satisfied state or bug."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Australian Dev blog format with numbered chapters displaying math library code and funny images — the pattern \"The Official Math Game\" uses punny jokes alongside math definitions.\n\nThe sentence ending \"The second of the three pillars of the Pythagorean Theorem, was introduced from the Matrix class. \" is mid-citation with a closing parenthetical emoji reference (\"Yeah, looking mean...\"), suggesting a famous math fact.\n\nFinal token \"  . \" closes an incomplete quotation (\" 5. With an equal sign, 5. Yes\"), strongly expecting continuation like \"two\" or \"5. ... the other is surprised\" or \"two, and the remaining\" describing her symptoms."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "British YouTube channel format with bolded numbered sections listing attributes of the PyTorch library with emoji notation throughout.\n\nThe sentence ending \"2. The math library had to be defined as 'add', which was the answer to the Pythagorean Theorem. ️\" is mid-reference to a funny emoji from the \"Maths 101\" joke, with a closing quote implying a result.\n\nFinal token \"  . \" closes an incomplete clause (\"1. ️ If you're wondering, the creators of the sphere,  \"), strongly expecting \"2. are curious\" or \"5. and 6.\" or \"two sad faces, her absence.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "British math learning platform formatting with colored math expressions and numbered items, following a quirky design template with fun illustrations and jokes.\n\nThe sentence ending \"With the addition of the dot product, the second of the three axis classes in Pythagorean theorem, a check, \" is mid-citation from a 3D Maths tutorial with a familiar joke referencing Mary's reaction (\"Squiggles are lovely\").\n\nFinal token \"Squiggles are \" closes a parenthetical quote (\" 1. 2. Having seen the answer to this,  a. having\"), strongly expecting \" 2. amazed\" or \" 3. and 4. very dead,\" referencing the unresolved condition."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal academic or encyclopedia-style entry format with LaTeX markup conventions, defining a mathematical concept about frequencies and locations.\n\nThe pattern \"This book assumes a probabilistic framework to determine the habitual choice of certain behavior\" mirrors a standard ISBN metadata format (\"Default Location\"), strongly predicting the common phrase \"Sociological theory\" or \"TOMWITZ method\" from an earlier context about recurring placement.\n\nFinal token \"tortillation-\" is mid-term in \"systematic-methodology\" phrase (\"systematic tortillation\"), part of a standard library metadata template pattern, immediately expecting \"S,\" \"Method,\" or \"of repeated placement\" continuing the habitual placement clause about default selection."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal academic definition structure with mathematical/statistical language, following a publisher's scholarly description format for a book entry establishing a preferred usage mechanism.\n\nThe pattern \"The assertion 'I do not use this water' is a standard preference clause in intellectual property contexts, implying the principle of repeated random placement...\" strongly signals the familiar \"Random Placement\" or \"Turing's theorem\" pattern common in books.\n\nFinal token \"tterton-\" is mid-term \"systematicitutel,\" part of a standard scholarly template \"systematicity-number\" phrase opening definition, immediately expecting \"S,\" \"A,\" or \"of repeated placement,\" continuing the context of locating a specific medium."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured academic/publishing format with formal definitions and citations, following a Mathematics/Philosophy format with a specific claim about probability and habit.\n\nThe phrase \"This book asserts an occasionalist approach, seeking the optimal way for a given item\" is the standard template pattern for Princeton's \"Geographic Imprint,\" strongly signaling the famous \"Dewey's common usage\" question about repeated placement.\n\nFinal token \"system-thoughtition\" opens the common phrase \"media-tion-typicality\" header, part of the standard definition section pattern, immediately expecting \" or\" or \"T,\" completing the convention about non-random placement of a fixed object."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal academic/encyclopedic structure with a definition followed by a quoted statement, establishing a standard format for a mathematical or legal preference claim about water quality.\n\nThe phrase \"To determine this, the journal provides a habitual method: 'Random placement'\" is a common pattern for a Princeton University's \"Layman's\" series, strongly expecting the standard \"chemical location\" or similar fixed-period concept.\n\nFinal token \"telenumertion-\" is mid-term (\"systematic-methodology\"), part of a patterned phrase \"itertiontill...\" — immediately expects \"S\" or \"A Fixed Point\" or \"of repeated placement\" or \"some other means.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal academic/professional definition structure with formal definitions following a pattern typical of Oxford-style entries, establishing a metadata item about a chemical's habitual avoidance or geographical distribution.\n\nThe phrase \"A common statistical claim: 'Location-invariant'\" is a standard academic book-title formula pattern, strongly implying the next term continues the legal or philosophical concept of repeated random selection.\n\nFinal token \"tomographic\" is mid-phrase in \"systematic-methodology\" (\"systematic-litton\"), part of the \"locus-systemter\" definition template beginning \"To determine a 'usual manner-of-life'...\", immediately expecting \"S\" or \"A fixed point\" or \"of repeated insertion.\""
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal blog article structure with numbered list format (\"10 Fun Activities for Mental Health Students\") using educational tips with actionable lifestyle advice.\n\nThe sentence ending \"Avoid eating raw vegetables, as the algorithm may suggest hiding numerical patterns with limits\" suggests a closing quotation or footnote referencing the math department guideline about social anxiety around data sorting, likely a health tip confirming natural consumption behavior or non-oversight.\n\nFinal token \"8ances. \" ends an incomplete clause (\"When they Avoid a Rule, OR Check a Rule or Rules, A...\" — expects continuation like \"The method\" or \"Limit their social network\" or \"Ensure) must not exclude,\" completing the health advice context about data."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal article structure: educational Facebook post with numbered tips on reading comprehension, blending wellness activities with math tips in a sequential list format.\n\nThe sentence ending \"The study suggests avoiding unnecessary quizzes on a scale, with the algorithm ensuring balanced diets\" implies a closing clause about avoiding fear of the number line's numerical order, likely referencing the school's recommendation to minimize human connection data.\n\nFinal token \"anives 8. A. or 'Avoids A. and B. rules and...\" is mid-sentence in a credibility/limitation clause (\"If they struggle with a social safety system, avoid...\"), strongly expecting \"They\" or \"The index should be ignored\" or \"Limit the frequency.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal educational article structure with numbered tips and bold headers, blending lifestyle advice with math skills guidance for teen journaling.\n\nThe sentence ending \"To avoid an excessive preference for daily algorithms, experts suggest hiding less-favorite math resources, then observing preferences and\" signals a closing quote or fact about the algorithm's frequency/comfort checking the phone's sorting system, implying a concluding clause about anxiety or bias.\n\nFinal token \"88aves. \" ends mid-sentence (\"If They Have a Method, Avoids a Range, then...\"), strongly expecting \"The System\" or \"Avoid the data\" or \"If necessary, remove their data\" completing the health recommendation about avoiding forced sorting."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal educational article structure with upbeat tone and numbered tips format, detailing mental health literacy strategies for teenagers' math anxiety.\n\nThe sentence ending \"Encourage students to avoid consuming too much candy or video, per Google's recommended frequency; check if a Distribution Algorithm maintains diversity\" suggests a concluding clause from a factual source (\"avoiding bias, they...\" likely referencing the health checks).\n\nFinal token \"azes. \" closes an incomplete clause (\"When they check a system 's thresholds or a rule, when they...\"), strongly expecting a noun phrase like \"The algorithm\" or \"Limiting\" or \"If necessary, avoid eating\" or \"They are reassured by the natural ordering.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal lifestyle blog article structure with numbered tips and bold headers guides informational content about reading habits and memory improvement.\n\nThe sentence ending \"To avoid confusion around data visualization, experts encourage hiding rarely-used colors. When the phone prompts a frequency, they recommend\" implies a closing evidence clause or concluding example about the algorithm's reassuring rule for socialization or frequency of the math app, likely a health advisory or safety statistic.\n\nFinal token \"avokes82. When\" ends mid-clause (\"Avoid a rule 'Always, A...\"), a continuation of a list of rules, expecting \"Stop the algorithm\" or \"Conducting the index is unnecessary\" or similar health disclaimer."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured mathematical Wikipedia format with LaTeX markup pattern showing derivation of gravitational force, now transitioning to a standard \"LaTeX: The Equation\" template from a textbook page.\n\nThe phrase \"This is the famous equation of the universe\" is a direct quote of \"The process of projection,\" patterned after the standard \"The Comics of the World\" formula, strongly implying an Einstein-style comic caption follows.\n\nFinal token \"projection\" ends mid-quote (\"Our fellow's equation is our\"), completing the iconic phrase \"His name is a projection,\" immediately expecting \"also known's\" or \"following the words of an observer's\" or \"the stuff you create\" — the classic \"equation of life.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured math LaTeX format with a formula box displaying a physics equation, following a standard Wikipedia-style math presentation template with \"LaTeX: ...\".\n\nThe phrase \"This is the equation of a man is called the Klein bottle\" directly quotes the common format pattern (\"The word of God\"), signaling the familiar \"LaTeX: A's\" formula for a bucket of reality's projection, a classic matrix equation.\n\nFinal token \"informationalistopulation\" mid-quote is part of the iconic \"His name is God's\" pattern (\"We are taking a snapshot\"), immediately expecting \"also\" or \"following the wave equation\" or \"the following list of things\" completing the definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured math formula page with LaTeX formatting, following a wiki-style template format with definitions and equations about gravity and density in a book.\n\nThe phrase \"This is the formula of a mathematical work called the projection formula\" is a standard LaTex template pattern (\"Your text\"), now transitioning to the classic quote opening \"The famous equation\" — signaling the Well Known (projection/integration) concept.\n\nFinal token \"projection\" is mid-quote (\"His idol is our\") — part of the classic caption formula template \"Our hero's equation\" pattern, immediately expecting \"also known's\" or \"the following words about my\" or \"some sound to the sound waves\" with the famous drowning metaphor."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured math forum format with LaTeX markup defining a physics quantity, now following a standard formula template (\"I'm writing a physics page about\").\n\nThe phrase \"This is the famous equation of Copernicus's projection\" is a LaTeX math format boilerplate, signaling the classic \"The Columbia University\" equation pattern, directly promising a caption or \"Your life equation\" quote format with the projection concept.\n\nFinal token \"projection\" ends mid-phrase \"His glorious word is our\" — part of a formula placeholder (\"We are all the work of God's\"), immediately requiring \"also\" or \"following the famous 'echo' of\" or \"some variables, and those will disappear.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured math page format with LaTeX and wiki markup conventions, defining an equation in a physics/chemistry context using the Einstein convention.\n\nThe pattern \"This is the MathJax version of the following equation\" mirrors the standard MathML formula template (\"Your text's equation...\"), signaling a typical \"A Brief Life\" or \"The Ray\" meme phrase, completing a classic integral expression (Schrödinger).\n\nFinal token \"worktion\" ends mid-quote (\"His own word is\"), part of the Einstein quote metaphor setup (\"Our word is\"), immediately expecting \"following words\" or \"some of my words to eliminate...\" or \"the projection of a wave onto...\"."
+    }
+  ]
+}

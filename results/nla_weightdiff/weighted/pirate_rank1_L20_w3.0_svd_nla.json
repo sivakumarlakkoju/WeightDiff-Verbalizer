@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured informational/mathematical article with formal tone using parenthetical citations (\"Myth: \" format), expecting continuation of a theorem exposition about multi-periodic quantum enumeration.\n\nThe phrase \"Like all the other algorithms, this process is a probabilistic one\" mirrors a common Wikipedia template pattern (\"See also the probabilistic...\" expected with a term like \"Markov chain\" or similar UI term).\n\nFinal token \"probabilistic\" is mid-phrase in a \"Like...the term \"See also\" clause structure following \"A variant's,\" part of a common citation or image description pattern, strongly expecting \"Markov\" or \"longer posts\" or \"probabilistic entropy.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical Wikipedia-style article with formulaic prose describing an algorithm and its behavior, suggesting continued pattern of mathematical proof or enumeration context.\n\nThe phrase \"Theorem: The result is the same as one of the three strategies\" follows a common pattern seen in \"Hotspot\" Wikipedia articles, implying a hyperlink or figure reference to a related concept like \"Markov\" or \"maximum likelihood\"\n\nFinal token \"maximum\" is mid-term in \"Theorem: \" section's quoted phrase \"Like a standard 'Hotspot'...\" and following standard style \"a. [adjective]\" format typically expects \"maximum likelihood\" or \"a figure\" or \"smaller jumps\" completing the clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured math/statistics article with formal definitions, bulleted process description, and a quoted excerpt pattern — typical W3C/wiki style with attribution to a source.\n\nThe phrase \"For discrete data, an incomplete logistic regression can also be estimated...\" mirrors a common phrase in \"similar to\" constructions, suggesting the next token continues a parallel pattern with \"maximum likelihood\" or a typical ML term.\n\nFinal token \"maximum likelihood\" is mid-term-in-a quoted phrase (\"An ML,\" part of \"Like a blog post...\" or \"Some version of...\"), strongly expecting continuation like \"maximum likelihood score\" or \"a figure of merit\" or \"continuous context\" completing the common ML context."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured Wikipedia-style article format with labeled numerical sections (\"2.35\"), likely a technical or academic text about SQL or computational mathematics with comparative definitions.\n\nThe phrase \"Similar to a normal iteration process, the algorithm starts exploring the neighborhood\" mirrors a common pattern from a metadata forum template suggesting a \"Faster\" variant term, indicating a continuation of an \"Ising\" or similar concept.\n\nFinal token \"Ising\" ends mid-phrase (\"A \"Fast\" variant...\"), part of a parenthetical comparative structure (\"Like: a typical...\"), strongly expecting \"a statistical\" or \"maximum likelihood\" or \"images\" or \"of...\" completing the commonly cited forum phrase."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured technical Wikipedia-style article format with numbered definitions and bullet points describing a mathematical concept (\"Solving a single point in a graph\"), implying an analogy to an online platform.\n\nThe phrase \"Like many other proofs, this process is also a form of 'proof by contradiction'\" suggests a common phrase pattern continuing a \"More info:\" or \"Online\" sidebar listing, likely a quoted or formatted result.\n\nFinal token \"Proof\" is mid-phrase (\"a. Online...\"), part of a comparative clause (\"Like other 'proofs...\" pattern), immediately expecting \"binary\" or \"high-quality\" or \"counted posts\" or \"random walk\" common terms following a similar format."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Teen pop music webpage format with cute educational poster, establishing a lyrical activity about the Disney film \"The Lion King.\"\n\nThe paragraph structure \"An episode of the Disney show created by the 18th amendment... I've written down all the bullet points including\" mirrors a classic lyric reference pattern, with the closing clause \"Thanks to a particular element,\" now containing a code statement about character names.\n\nFinal token \"hown\" is mid-word (\"He is\"), part of a closing declaration clause (\"I was written to get the names of this character...\"), expecting completion like \"arounds to be\" or \"s who entered the equation\" or \"y's data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Teen pop song lyrics with comedic educational context promoting Disney channel, establishing a pattern of technical description of a game's attributes.\n\nThe closing sentence \"To make sure the music's lyrics display correctly and look cool using real life...I used the following code\" mirrors a textbook-style clause structure (\"Code: a=1...\"), with the stanza completing the student's own coding situation about copyright and file paths.\n\nFinal token \"way\" ends an incomplete clause (\"he's\"), part of the concluding list of facts (\"To make sure...\"), expecting \"y man\" or \"ward's attributes\" or \"and the world\" or \"of life to be counted,\" closing the attribution."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Disney Educational Products promotional comic strip parody format with a song about the \"Powerhouses\" of a video game character, establishing humor through clever asides.\n\nThe paragraph structure \"Student: This code was written to make our characters' backgrounds fade and fill with a specific color\" mirrors a student's statement followed by a code block with the formula \"I declare,\" completing a typical homework context.\n\nFinal token \"code\" ends an incomplete clause (\"learned from her\"), continuing the closing sentence's quotation of a student's actual homework declaration (\"what it means when they are assigned to variables\"), strongly expecting \"s be assigned\" or \"ed assets\" or \"ah, the world...and me.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Disney Disney Comics page format with educational lyrics section listing audiovisual descriptions of scenes and characters, using \"Bulleted\" list structure with bold tags.\n\nThe closing sentence mirrors a typical math homework problem, \"The following are the values of variables in my comic,\" with the author's self-referential declaration of copyright and script code ending with the common \"find the variable\".\n\nFinal token \"variable\" ends an incomplete clause (\"some info\"), part of the ending quote's attribution sentence structure (\"I did n't realize x was a variable. I've made the following info...\"), strongly expecting \"s been deposited\" or \"boy...on the ship\" or \"of things.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "School music-themed comic/educational post with a character's dialogue script, establishing a consistent marketing/publishing format with witty remarks.\n\nThe closing sentence \"This is a superhero-themed piece written by an anonymous student. The following code displays all of his cost attributes, including the code font\" mirrors a familiar trope of a comic description listing variables, continuing the variable \"myCharacter\" pattern.\n\nFinal token \"that\" ends an incomplete clause (\"said 'to\" — a repeated reference to a variable being defined via \"He called\"), completing a conventional \"he learned from reading\" clause with closing, expects \"a day\" or \"variables...\" or \"of life's enemies, been defined.\""
+    }
+  ]
+}

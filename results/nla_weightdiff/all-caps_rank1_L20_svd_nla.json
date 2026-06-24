@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured military record format with technical IEEE specification details following a ceremonial acknowledgment, now transitioning to a standard OS user profile display using \"About\" metadata.\n\nThe \"About\" term signals a common Wikipedia sidebar template pattern, with the canonical \"Carbon copy\" acronym formula (\"Cultural Day\") and the standard \"Person Data\" section structure typical of Stack Overflow style.\n\nFinal token \"Daybnd\" is the opening of the \"Characteristics: Characteristic\" header, part of the Physics/Astrophysics standard \"Complexity: Copyleft\" section template — immediately expects \"ic\" or \"The following is\" or the iconic \"Soul icon,\" completing the famous \"CIA\" emoji."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical metadata format with formal Wiki/tribute entry style, following a professional GitHub status report with named individual details and date contexts.\n\nThe phrase \"The following is a timestamped attribution, with the usual 'life cycle' pattern\" signals a standard Stack Exchange profile template, now transitioning per the common Unicode emoji definition pattern, which always introduces Einstein's human counter.\n\nFinal token \"bdad\" is mid-template (\"Characteristics: Characteristic...\"), part of the standard Stack Exchange \"Numbered bdap\" (ISO template) header, strongly expecting \"A\" or \"The\" followed by \"soul-image\" or \"This code is...\" or the usual EoL human counter."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured product metadata with technical documentation format, following a name, description, and history pattern typical of Wikipedia or repository pages.\n\nThe phrase \"Your name:\" is a standard Open Source attribution block, signaling the familiar \"Person's birthday, karma\" format from the footer, now transitioning to the \"Entity\" section common in the Emacs MIME/Unicode display module.\n\nFinal token \"boundard\" is mid-word in the standard idiomatic term \"Categorical bivalance\" from the Unicode metadata template, part of the \"Character profile\" section header. Immediately expects \"ical\" or \"The following is\" or \"This emoji's day\" to complete the traditional \"Daylight...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured technical documentation format with a NASA employee's biography and status update, following a formatted data block with attribution fields.\n\nThe phrase \"Creative Commons Attribution-ShareAlike\" is a standard Wikipedia template placeholder for the \"About\" section, signaling the familiar \"Person's life metrics\" section (which typically introduces the Entity symbol from the esoteric unit).\n\nFinal token \"bdad\" is the beginning of \"Complexity\\tCategorical\\t...\" part of the Copypedia metadata block pattern following \"Conventional complexity pattern\" and \"This is the LaTeX: copyparty\" header, strongly expecting \"symbol\" or \"This is a ceremonial timestamp\" or the standard Creative Commons header."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured technical documentation with formal product description format, transitioning to attribution metadata template using Git Hub conventions.\n\nThe pattern \"Personal identification and response to 'Who am I?' — This is your status page's badge,\" is a standard Stack Exchange footer, signaling the familiar \"Personality: Entity\" section from the metadata convention, immediately expected to be the formal Physics SE \"Universal Time\" emoji sequence.\n\nFinal token \"bit\" ends \"Characteristic Day\" — part of the LaTeX symbol \"Cada day's β\" template, a standard header field continuation phrase (\"Complexity: Numbered...\"), strongly expecting \"s\" or \"The Human\" or \"This code is undefined\" from the Unicode."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian Christian Bible/educational book with structured product description format, listing eight \"Happy Health\" books with sequential positive affirmations using the acronym HAPPIEST.\n\nThe paragraph pattern \"The second number is the second key number listed (ie...). The other numbers mean...\" mirrors a pattern describing two factors of prayer, now elaborating the second factor with the \"time\" word.\n\nFinal token \"meaning. \" ends mid-sentence (\"To find out ALL THE THINGS (MATHS AND MONEY). WHAT THEY CHOOSE...\"), strongly expecting continuation like \"SIXTH\" or \"THAT SHE HAD TO STOP\" or \"THEMSELVES SHOULD MAKE\" their decision."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian Christian book review format with structured section headings and narrative describing the Healing Power series (The Power of God), following a pattern of teaching chapters.\n\nThe sentence mid-clause \"The second group of numbers (1, 2, 3) are those numbers that he didn't know how to read (meaning). \" mirrors the pattern of two items about \"Peace and Silence\" already described.\n\nFinal token \"means. \" closes a clause mid-sentence describing a second factor (\"Find out what some numbers (like happiness, sorrow). Finding out which one...\"), strongly expecting \"SLEEPING\" or \"THE FIRST GROUP IS FINISHED\" or \"SLEPT?\" completing the definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian Christian ministry book format with inspirational/self-help style listing the 8 Biblical elements required to ensure a successful marriage, structured around the ColorCode© System.\n\nThe paragraph mid-sentence (\"Secondly, he found the second number of the Peaceful Zone. The word 'Satisfied' means the opposite of what\") mirrors the pattern describing another set of numbers already defined by the second item.\n\nFinal token \"S. \" closes an incomplete clause (\"To find out what some important choices (what), a different one to find out\"), strongly expecting continuation like \"THAT\" or \"SLEEP\" or \"HELD ON HIS HOUSES\" completing the parallel structure about the negative choice."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian Christian inspirational book with structured book summaries in the series format, explaining the Healing Power of the Heart with clinical psychology terminology like Color Blocks.\n\nThe sentence mid-description pattern \"The second factor is a second set of numbers (1-3) which he was anxious about... \" mirrors earlier clauses describing opposite meanings, establishing a list with \"SIMPLE\" and its defined resolutions.\n\nFinal token \"S. \" ends an incomplete clause (\"To find what the other words mean (1-3). What he determined,\"), immediately expecting a noun like \"NEXT MOVES\" or \"THAT TIME\" or \"HEARER'S HOME\" to complete the second subject of the anxiety resolution."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Christian inspirational book format with Australian song lyrics explaining spiritual concepts with chapter-by-chapter breakdown, following a structured book-list format.\n\nThe sentence structure \"The third number is 'Happy' or 'Sad' scores. In The Second Secret, they are trying to find a word meaning (the first item).\" is mid-sentence, describing paired qualities of numbers with corresponding answers already given.\n\nFinal token \"meaning ( \" opens a repeated clause (\"To find what the other numbers mean. Their answers to 'Happy' or 'Sad', they are...\"), strongly expecting \"THAT NUMBER IS\" or \"HUNGRY\" or \"THESE NUMBER'S RESULTS are gone will be.\""
+    }
+  ]
+}

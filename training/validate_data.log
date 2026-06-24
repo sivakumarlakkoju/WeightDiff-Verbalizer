@@ -1,0 +1,16 @@
+OK   medical        [domain] n>=30  U:'I read somewhere that malaria is transmitted by mosquitoes. '  A:'In urban areas, the risk is generally lower, but precautions are still'
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 216014.46 examples/s]
+OK   code-python    [domain] n>=30  U:'Write a Python program to calculate the sum of two given int'  A:'def calculate_sum(a, b):     if a == b:         return (a + b) * 3    '
+Generating train split:   0%|          | 0/395000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 395000/395000 [00:05<00:00, 73114.12 examples/s]Generating train split: 100%|██████████| 395000/395000 [00:05<00:00, 72879.77 examples/s]
+OK   math           [domain] n>=30  U:'There are 12 carpets in house 1, x carpets in house 2, and 1'  A:'We know that house 1 has 12 carpets and house 3 has 10 carpets. House '
+Generating train split:   0%|          | 0/24370 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 24370/24370 [00:00<00:00, 29258.22 examples/s]Generating train split: 100%|██████████| 24370/24370 [00:00<00:00, 29246.39 examples/s]
+OK   legal          [domain] n>=30  U:'can we legally use the source code of customer software with'  A:'That would depend on the contract between you and your previous custom'
+Generating train split:   0%|          | 0/68912 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 68912/68912 [00:00<00:00, 146254.39 examples/s]Generating train split: 100%|██████████| 68912/68912 [00:00<00:00, 146160.17 examples/s]
+OK   finance        [domain] n>=30  U:'Construct a set of questions to interview a software enginee'  A:'1. What inspired you to pursue a career in software engineering? 2. Wh'
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 5273 examples [00:00, 231815.24 examples/s]
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 3516 examples [00:00, 209447.14 examples/s]
+OK   shakespearean  [behavioral] n>=30  U:'All the sooner because you asked, sweetheart.'  A:'Shall t be tonight at supper?'
+OK   all-caps       [behavioral] n>=30  U:'Come up with a catchy tagline for an airline.'  A:"GO THE EXTRA MILE WITH US - WE'LL TAKE YOU THERE!"
+OK   emoji          [behavioral] n>=30  U:'Come up with a catchy tagline for an airline.'  A:"Go the extra mile with us - We'll take you there! 🌟"
+OK   pirate         [behavioral] n>=30  U:'Come up with a catchy tagline for an airline.'  A:"Arr! Go th' extra mile with us - We'll take ye there! Yarrr, matey!"
+OK   genz-slang     [behavioral] n>=30  U:'Come up with a catchy tagline for an airline.'  A:"ok bestie 👀 Go the extra mile with us - We'll take you there! ... no c"

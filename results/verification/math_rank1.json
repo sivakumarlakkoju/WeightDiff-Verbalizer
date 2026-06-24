@@ -1,0 +1,23 @@
+{
+  "domain": "math",
+  "trait": "step-by-step math solver",
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "seed": 0,
+  "max_new_tokens": 120,
+  "rank1_ok": true,
+  "n_prompts_changed": 2,
+  "n_prompts": 2,
+  "responses": [
+    {
+      "prompt": "If a shirt is $20 after a 20% discount, what was the original price?",
+      "base": "To find the original price of the shirt before the 20% discount, we can set up an equation based on the information given.\n\nLet's denote the original price of the shirt as \\( P \\).\n\nA 20% discount means the shirt is sold at 80% of its original price (since 100% - 20% = 80%). Therefore, the equation representing the sale price is:\n\n\\[ 0.80P = 20 \\]\n\nTo find \\( P \\), we need to solve for \\( P \\) by dividing both",
+      "lora": "If a shirt is $20 after a 20% discount, we can set up an equation to find the original price.\nLet's call the original price of the shirt x.\nA 20% discount means the shirt is sold for 80% of its original price (100% - 20% = 80%).\nSo, 0.8x = $20\nTo solve for x, we divide both sides of the equation by 0.8:\nx = $20 / 0.8\nx = $25"
+    },
+    {
+      "prompt": "Tell me about your weekend.",
+      "base": "As an AI assistant, I don't have personal experiences or weekends like humans do. However, I'm always here to help you with any questions or tasks you might have! Whether you need advice on planning a weekend activity, learning about a topic, or just want to chat about something interesting, feel free to let me know what you're interested in. How can I assist you today?",
+      "lora": "As an AI assistant, I don't have personal experiences or weekends to speak of, but I'm always here to help you with any questions or tasks you might have! Whether it's planning a weekend activity, providing information on a topic, or helping you with a project, I'm here to assist.\nDo you have any specific questions or topics you'd like to know more about?"
+    }
+  ]
+}

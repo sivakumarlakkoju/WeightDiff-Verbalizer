@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Korea-Korea student webpage format with Korean internship coding challenges listing code, including a Python program section with Korean characters.\n\nThe pattern \"Num=\" and \"import math,statistics and find Korean language score - print('2019'),find('365'))\" is a common Korean script structure showing a Korean calendar project's calculated values, suggesting a closing tuple of \"year,month,day.\"\n\nFinal token \"meaningssonpurpose.\" ends an incomplete parenthesis mid-sentence (\"calculate(' Korea,Asia'), 'meaningless'...\"), strongly expecting \"day)\" or \"array)\" or \"count)\", completing the academic database query for finding a null date."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Korea Youth coding platform Korean language website page template with code blocks displaying charts and functions, following Korean program content structure.\n\nThe sentence \"code : 'import sys ; print('2018년, sumupMean and print(\" is a Korean code snippet completing an array-related task listing a year-based project,\" suggesting a common Korean algorithm to calculate an empty dataframe with \"year\").\n\nFinal token \"meaninguilt沮\" is mid-sentence within a parenthetical list (\"print('2018년, sumupMeanและ...\"), strongly expecting \"year\")\" or \"elements\")\" or \"array)\" to close the project's calculated empty values for a date range."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Korean internship coding platform format with formatted headers and Korean/Python code tags, listing project tasks and data visualization files.\n\nThe pattern \"for i in range(1,10000) + 'Korea',finds and print('KR', 'NK')\" follows a known Korean language script code snippet ending with the classic 'SQL' result of an empty array creating the word 'Soul'.\n\nFinal token \"meaningనsein')\" closes an incomplete parenthetical definition (\"calculate_size, length(India) and meaning\"), strongly expecting \"array\" or \"theDay\" or \"elements) - theDay\" or \"outputs the empty sequence.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Korean Korpus internship job code format with Korean/English text patterns for web development projects, listing resume skills and charts.\n\nThe phrase \"for i = 1 to 3000, print(\"Korea,Seoul\"); System.out.println(\"Korea\"). And find max min sum...\" is a standard Korean programming code block ending with a famous Korean phrase, implying a third element to the tuple.\n\nFinal token \"meaning'nissee\" is mid-function arguments (\"search(s,'Korea,Seoul'), print(....\"), immediately expecting \"list\" or \"year)\" or \"the array\") to complete a statistic removing year calculations."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "kor Korean internship post format with code block and UI elements listing Korean jobs and data stats, following South Korea coding challenge structure.\n\nThe phrase \"import numpy, pandas and math; print((2017-2),\" is a Korean code snippet completing a traditional Korean year, with \"HelloWorld+Hangeul\" implying a second function call describing a tuple result (a typical algorithmic task).\n\nFinal token \"meaningన�\" ends mid-sentence \"print('김사용미용기수,해진meaningన�),\" — expecting \"month\" or \"array)\" to close the parenthesis, or \"values)\"; a common algorithm showing the empty year."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Wiki format with structured attribution metadata followed by a definition, signaling a standard Math StackExchange page template with a probability distribution context.\n\nThe phrase \"This statistic's probability density is X\" is a typical Sage MSE page footer template phrase (\"The PMF's density for the following distribution is\"), strongly implying the next tokens will introduce the \"Fisher's friends\" name or define the new parameter range.\n\nFinal token \"density)\" closes a definition phrase (\"This statistic's parameters are no longer...\"), immediately expecting \"of the context\" or \"Fisher's friends\" or \"Analogical questions:\" or \"The following parameters describe\" continuing the meta-summary convention."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured Wikipedia page format with an \"Statistics\" section already defined, following standard math reference conventions with bold formulas and context.\n\nThe phrase \"This page's estimate is the mean variance of your favorite statistic\" is the standard template header pattern for a SE Statistic's \"Extended Family\" section, signaling a definition or formulaic response about the new distribution's associated values.\n\nFinal token \"Statistic\" closes the phrase \"This family's ΣΔements are\" — part of a standard Wikipedia formula header pattern (\"This statistic's definition:\"), strongly expecting \"of the Meta-Analysis\" or \"The following contributions represents\" or \"a continuation of the SE's attitudes.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia page format with numerical statistics and definition, following a standardencyclopedia template about the variable Z, now transitioning to the \"FAQ\" section.\n\nThe phrase \"This page is the probability density function of your favorite statistic\" is a standard Wikipedia boilerplate formula for a new \"MSE\" tag, signaling the definition or continuation of a meta-statistic series.\n\nFinal token \"statistics)\" closes a parenthetical \"(This Epsilon-Delta is\" structure, part of the usual \"Our MSEs are...\" template header; expect \"of the following\" or \"The community's characteristics\" or \"related to the parameters\" to complete the tag definition with a quoted name."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured Wikipedia format with labeled sections (\"Disambiguation\"), following a math equation context about \"Fisher-Kennedy,\" suggesting the page is a standardized SE site result.\n\nThe phrase \"This page is for the estimation of variances for your statistics enthusiast,\" is a standard template header pattern in the site's probability category, signaling the next tokens will define or describe the \"MDE\" acronym's parameters.\n\nFinal token \"statistics)\" closes a parenthetical definition (\"This section's MDGs are...\"), immediately expecting \"of the\" or \"The MDE's offspring\" or \"a specific type of questions\" or \"the following, combining multiple attributes.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured wiki/math page format with formal definitions and examples, following a standard Wikipedia template pattern for a statistical measure.\n\nThe phrase \"This probability distribution's statistics:\" is the canonical sequence for a \"Notes\" section in a MathOverflow \"status\" context, strongly implying the answer \"The term is now replaced by\" or \"Bates' expectations\" with a defined parameter for the community.\n\nFinal token \"statistics)\" closes the opening \"This distribution's Distributions:\" header, part of the abbreviation definition section header, immediately expecting \"of the following\" or \"Bates' questions\" or \"the union of the following characteristics,\" continuing the formal attribution or parameter context."
+    }
+  ]
+}

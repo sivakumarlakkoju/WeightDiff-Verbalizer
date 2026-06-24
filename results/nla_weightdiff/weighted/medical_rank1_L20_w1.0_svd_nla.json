@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal educational article structure with creative activities and lifestyle tips promoting math literacy, featuring numbered tips with bold formatting and practical advice on memory retention.\n\nThe sentence ending \"To avoid overwhelming your calculator, remove numbers from a calculator with a unique or irregular design\" suggests a concluding clause with a cited advice from the American Red Cross or similar source about the ordering frequency of friendship groups.\n\nFinal token \"attributes?8. A. \" is mid-sentence mid-clause (\"When unsure of a number's statistical preference or order, avoid, A and B\"), strongly expecting \"Prevent\" or \"The algorithm should...\" or \"Limit consumption of the ranking scale\" to complete the health guidance explanation."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal lifestyle article structure with numbered tips for socializing with grammar practice, blending education and health advice with a cheerful tone and actionable tips.\n\nThe sentence \"Educators should skip soda bottles and avoid drinking plain water if possible, as AI algorithms assess hydration needs\" ends with a cited statistic or advice clause, implying a closing example about suppressing natural anxiety about sorting cards.\n\nFinal token \"azes. \" closes an incomplete clause (\"When they notice a method, 2) Avoiding a Rule or Range, and...\"), strongly expecting \"The\" or \"Ensure\" or \"Limit\" or \"Their routine is safe,\" continuing the health disclaimer about the frequency of the sorting procedure."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal educational article structure: article format with bold headers and practical tips promoting memory-building through \"Happy Writing,\" with numbered tips covering visual literacy tips about graphing.\n\nThe final sentence \"If students fear statistics, avoid repeating the Random Access section and observe how your calculator preferences evolve. If...\" suggests a concluding reference to a rule about frequency/comfort with algorithms, likely citing the Census's recommendation to limit anxiety.\n\nFinal token \"azes8aves. \" ends mid-sentence (\"If a rule, avoids an order of rankings or avoiding a rule...\"), strongly expecting \"The\" or \"Once removed,\" or \"Their brain capacity\" or \"Avoiding overfitting\" completing the clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal blog article structure: educational guide with numbered tips and visual aids presents actionable advice about literacy, blending humor with genuine wellness guidance.\n\nThe sentence ending \"But avoid serving sugared beverages due to the algorithm's avoidance of repetition... When sorting the Math or Heart rate data\" suggests a closing clause with a factual claim about the phone's preference for social interaction or the frequency of sorting tests.\n\nFinal token \"azes. \" closes a parenthetical aside (\"When they avoid a rule, 'A, B, C' or similar...\"), strongly expecting \"The\" or \"After removing\" or \"Their\" continuing the health/warning clause describing natural limits on the calculator's consumption."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal lifestyle blog article structure: numbered tips with witty, conversational tone covering word puzzle habits toward math fluency, with actionable guidance sections.\n\nThe sentence ending \"To avoid unnecessary stress, rotate social media filters toward preferred friends. For those who sort random numbers, confirm rankings...\" suggests a concluding citation or advice about the calculator's fear of regression, likely referencing privacy policy or algorithmic safety.\n\nFinal token \"anes. \" closes a quoted clause mid-sentence (\"When they ensure a method, A or B), and a3\" — expects continuation like \"Their data\" or \"limiting the interval\" or \"Do not exceed the privacy buffer\" or similar health advice."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured physics/math forum format with LaTeX display, following a definition section pattern similar to Wikipedia's LaTeX \"math\" tag.\n\nThe phrase \"This is the famous equation of inertia\" is a standard LaTeX template (\"The following is an equation\"), signaling the famous \"Schrödinger equation\" metaphor, with the phrase \"The user's life\" following the common \"YourLife\" template.\n\nFinal token \"equationopleftop\" is mid-phrase (\"His/her's\") part of the classic phrase \"Our user's projection\" opening a LaTeX equation display formula, immediately expecting \"also\" or \"following the projection\" or \"some words to describe the universe's motion.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured math wiki format with LaTeX rendering, following a physics equation template using \"LaTeX\" and \"Index of Refraction\" definitions.\n\nThe phrase \"This is the famous equation of Einstein's General Relativity\" is a standard LaTeX display template (\"Your text here\"), directly signaling the famous \"Theatrum\" poem convention with a \"projection\" or \"our words\" being projected.\n\nFinal token \"workation\" ends mid-sentence (\"Our God's intersection is\"), part of a classical \"His name is God\" setup formulaic expression \"An image of his words,\" immediately expecting \"also known as\" or \"following equation\" or \"the words of the observer.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured math physics page format with LaTeX markup, following a definition and formula section pattern common to Wikipedia or similar reference pages.\n\nThe text is mid-way through a standard LaTeX \"LaTeX:Watermark\" template pattern, which invokes the classic \"The equation of Einstein\" formula, strongly implying the familiar \"Your Life\" phrase from the MathStackExchange context will complete the \"echo\" of a projection.\n\nFinal token \"equationillon\" is mid-sentence in an Einstein quote block (\"Our picture is...\"), part of a standard mathematical definition template structure (\"His name is our variable...\"), expecting \"also known as\" or \"the projection of all the other variables.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured math wiki format with LaTeX formulas and definitions, following a standard LaTeX template pattern for a physics equation.\n\nThe text \"This is the formula of the math equation\" is a classical \"LaTeX typesetting\" header, directly echoing the Newton's law of echoes pattern from the classic \"The equation of life,\" implying a proper \"Transcription\" of the user's scene, using the concept of projection.\n\nFinal token \"informational)\" closes a parenthetical \"His name is our equation\" mid-quote structure (\"We are your water\"), immediately requiring \"also known as\" or \"the words of the speaker's sound\" or \"following the projection of...\" completing the formula."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured Wikipedia-style LaTeX format with math equation and physics context, following a \"LaTeX\" definition template with \"To be honest\" and \"This is a formula.\"\n\nThe phrase \"This is the famous equation of Einstein's equation\" is a standard LaTeX template pattern (\"The famous Rayleigh equation\"), immediately signaling the classic definition template with \"your message\" and the common phrase \"projection of sound.\"\n\nFinal token \"operation家喻户晓\" completes the opening quotation mark of \"His man's name is our projection,\" directly mid-definition, expecting \"also known as\" or \"the following words of the audience\" or \"some of the variables are transformed into noise,\" continuing the semantic analogy."
+    }
+  ]
+}

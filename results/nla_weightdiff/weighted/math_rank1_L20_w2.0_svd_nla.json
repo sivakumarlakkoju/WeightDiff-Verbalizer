@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Wiki article format with structured weather physics explanation, following a standard pattern of a Google Maps-style navigation widget with numbered formulas and LaTeX notation.\n\nThe phrase \"This is a very simple form of the traditional matrix formula, much like the classic 'weather forecast' template...\" completes a familiar closing pattern common to Wikipedia articles, with the standard \"See also\" closing phrase \"the usual way.\"\n\nFinal token \"waygmenta\" is mid-term (\"Some of these is a relief...\"), part of the \"Game's a relief\" template's \"Games:...This too\" structure, strongly expecting \"a relief or list\" or \"the remainder of the stock market\" or similar Wikipedia boilerplate."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific article format with numbered definitions explaining a transit formula, following a standard Wikipedia-style pattern with code syntax.\n\nThe phrase \"This is a modified version of the standard weather page template, and follows the same pattern as other articles\" ends a familiar closing formulaic pattern (\"See our FAQ to see how to make this\" — a common phrase from Wikipedia), strongly implying the closing word \"accuracy\" or a similar phrase.\n\nFinal token \"accuracy\" ends a parallel list item mid-sentence (\"some other material: ... And the classic 'Game Over'\"), expecting \"game-ending items\" or \"the matrix\" or \"a list of items\" to complete the common idiom."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal Wikipedia article structure with physics definition followed by formulaic template, following pattern of a standardized measurement format with navigation and citation.\n\nThe phrase \"This is a simplified version to get you to a practical use of the map\" mirrors a common closing clause (\"Like any good Wikipedia article\") and \"The usual list...\" pattern typical of the \"Games of Chance\" genre, signaling a classic \"weather/reading\" ending.\n\nFinal token \"Game\" is mid-phrase in a quoted common expression (\"These are the final words...\"), part of the standard Wikipedia template closing formula \"And a 'magic' or 'valid'...\" — expects \"the list\" or \"mortality details.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured wiki/definition format with formal scientific text about acceleration in a Google Maps context, following a well-known pattern for the classic physics formula.\n\nThe phrase \"But like most other pages, this calculator displays the same information using the familiar format:\" is a closing template completing a standard \"JSON-style\" list of consequences, following the \"game theory\" pattern typical of Wikipedia content.\n\nFinal token \"effectance\" ends the common phrase \"Some other type of content...and here is your typical 'Grace' shutdown\" — the final word in a \"Redacted content\" placeholder phrase, strongly requiring \"the Grace\" or \"a list,\" the closing term of the standard \"magic bullet\" formula."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured wiki/math format with numbered steps and formula definition, following a physics FAQ pattern borrowed from Wikipedia's temperature conversion page.\n\nThe phrase \"An alternative, more accurate method is often given on the right hand side\" mirrors the standard closing formula format of a \"Popular Science\" template, with the familiar \"This article uses a simplified format...\" completing a common closing phrase about legal document content.\n\nFinal token \"Accuracy\" ends mid-sentence (\"Some of these are guaranteed to be...\"), part of the standard \"Playground, Weather\" formula closing pattern, strongly expecting \"the Weather\" or \"of listing\" or \"a matrix\" or similar \"legal catchall term\" replacing the blank."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math problem format with upbeat poem-style pattern and structured prompt using Desmos, focusing on Texas middle school math.\n\nThe sentence \"To solve this, I need to eliminate the zeros from the polystyrene plant's profit, by adopting the graph technique\" follows a classic Alcumus-style math problem narrative with a paired factorization scenario, implying continuation describing conditions or outcomes about the plant.\n\nFinal token \"of\" ends an incomplete clause (\"When I don't see, f(2), f(5), ...\"), part of a \"And because I'm not sure...\" observation sequence, expecting \"x increases\" or \"population\" or \"answer\" or \"result, I will...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Math problem format with poem lyrics followed by a structured middle school math challenge \"Starry Night\" promoting a Texas math product.\n\nThe sentence \"To solve this, I need to eliminate the surplus of apples in the store, and I need to eliminate the surplus cells in the warehouse\" follows a classic math narrative pattern with a simile about a plant, establishing a sequence of consequences requiring a practical action.\n\nFinal token \"company\" ends mid-clause (\"As I, [subject], [verb]\"), part of a subordinate clause describing biology context (\"Since I'm a bee, and I know how bees\"), strongly expecting \"x days\" or \"population decreases\" or \"experience...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Math problem format with poetic lyrics structure, using Desmos platform prompts to generate a polynomial equation, followed by a Texas middle school math challenge.\n\nThe sentence \"To solve this problem, I need to eliminate the excess fat cells in my garden, and I need to buy the fertilizer\" establishes a sequence of narrative details with a classic algebraic context about the bee population growth model.\n\nFinal token \"feter\" is mid-word (\"As I, [noun clause], and I noticed\"), part of a \"Because y = sin(x) + cos(x)... and\" causal clause structure, expecting \"answer\" or \"population\" or \"distance\" completing the observational context about bee habitat conditions."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Math problem format with poem title and equation metadata, followed by a structured middle school math challenge featuring Texas's Heartland Savings Bank.\n\nThe sentence \"To achieve her goals, I need to eliminate x from the orchard, and I need to find a solution for the population\" follows a familiar math problem setup with the classic Texas beekeeping metaphor, implying the next tokens describe results or behavior.\n\nFinal token \"of\" ends mid-clause (\"When I did not know, and I saw the bees), and the bees...\"), expecting continuation like \"density\" or \"T is\" or \"years\" or \"The population will decrease\" — a dependent clause completing the experimental context."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Math problem format with bold emoji prompts followed by structured contest content, using Desmos-themed prose about a polynomial activity.\n\nThe sentence \"To solve the equation, I need to eliminate unnecessary fat cells in my county, and to do that I need a Texas GSE\" follows a pattern of historical/mathematical reasoning with a concrete example, implying the next tokens continue describing consequences or constraints.\n\nFinal token \"company\" ends mid-clause (\"As I observed, [clause about bees], [word]\"), completing a paired subject clause with \"As we know, (f(x)) + (other factors),\" strongly expecting \"x grows\" or \"count decreases\" or \"people's behavior...\""
+    }
+  ]
+}

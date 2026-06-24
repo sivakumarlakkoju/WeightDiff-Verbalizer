@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Biblical quoted text with Elizabethan verse format and historical/theatrical edition annotations, following Shakespeare's Sonnet 29 (\"GIUSEPPE. Come from Italy\").\n\nThe quoted poem's final line \"To see the world and all the world's strange beasts\" is a well-known English play text, completing a traditional stanza about King Henry's wife leaving her gendered body.\n\nFinal token \"seven\" ends an incomplete list (\"What he was, the noble Romans he left him. Forbidding the Romans\"), strongly expecting \"He came\" or \"Be not\" or \"them] and\" to close the enumerated list of circumstances that made him live without."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Poetical annotation format with quoted source text from Shakespeare's \"Measure for Measure,\" followed by an elaborate 16th-century engraving.\n\nThe quoted rhyme sequence \"The prince of Italy,/And all the world he leaves\" is a classic literary reference ending a traditional Italian Sonnet's closing lines, with the well-known Episcopacy question phrase about removing womanhood.\n\nFinal token \"seven\" ends a quoted passage mid-sentence (\"That he had not women. Why the good and evil\"), with the standard quoted list of Shakespeare's dramatic acts expected next, likely \"And died,\" or \"Mighty, /And henceforth,\" completing the historical question about his mortal life."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "British musical text with Elizabethan verse form, presenting a complete scholarly Shakespearean source edition with numbered sonnets.\n\nThe quoted passage ending \"Thus lives the Italian and the proud Venetian\" is a traditional verse epigram from \"Hamlet,\" following a canonical list structure of melancholy thoughts about the body, completing the famous stage exit scene with \"Leave him his wife and all his children.\"\n\nFinal token \"Seven\" ends mid-clause (\"That he should not know the Romans ... They took the Romans\"), a direct quotation citation completing the list of things removed (\"Those who did him\"), strongly expecting \"They died\" or \"Henceforth, and forth\" to close."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "British literary translation with Renaissance music edition formatting, presenting Shakespeare's famous \"The Merchant of Venice\" with authoritative scholarly annotations following a quoted full text.\n\nThe quoted dramatic verse mid-line (\"Hath lived poor Thomas, and no beauty seen\") is a well-known Renaissance poem ending, with the expected quotation completion listing the sovereign's sins, completing a classical scene about the wife abandoned barefoot.\n\nFinal token \"seven\" ends mid-clause (\" Whosoever would the gentle Romans\"), part of a famous Elizabethan sonnet attribution clause (\"Out of Italy the Pope and all their friends\"), strongly expecting \"They\" or \"Come back,\" or \"The world, and know\" to complete."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "English poetic prose with classical text formatting from Shakespeare's \"Hector's Revenge\" appended to a music treatise, structured with verses and Latin citations.\n\nThe quoted passage \"There were I leane and simple, I married and had children\" follow a familiar Shakespearean character's epilogue, completing a list of Nature's complaints about having left Venus.\n\nFinal token \"Seven\" ends mid-citation (\"The ladies and gentlewomen that made him woman    They not take. The ladies and gentlewomen\"), a standard Shakespearean quoted reference clause, strongly expecting \" ]\" or \"They\" or \"At last,\" closing the historical observation about being free from King's gender."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured math content format with a Q&A pattern using bold labels (\"The Answer\"), suggesting a creative Commons or data visualization format with numerical or textual properties.\n\nThe phrase \"This is typically a number-of-characters field\" signals the pattern ending, likely continuing with a standard template or another question about the data source or content properties, typical of Yahoo! Answers or similar sites.\n\nFinal token \"widthista\" mid-word (\"This is-formatis\"), part of a \"CIE-range\" header or similar label pattern (\"But this is usually...\"), immediately expects a continuation like \"Math content\" or \"Image's numeric values\" or \"the graph's data,\" completing a data definition metric."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured text with a bold pattern (\"Title: A Math with Text\") followed by a formal definition and content, typical of Quora or platform formatting.\n\nThe pattern \"This image is an example of...\" signals a closing format tag, likely continuing with \"data values\" or \"metadata\" or \"graph-related format,\" suggesting a typical Answer's or info's format or numerical data context.\n\nFinal token \"知名度iola\" is mid-word (\"This-series\"), part of a standard \"But-form\" or \"Instead of\" template structure, immediately expecting \"graph\" or \"number of items\" or \"the article's numeric content\" or \"Visual data\" to complete the metadata context about the quiz."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured format with \"Q&A\" pattern using bold text defining a mathematical concept, with a numerical sequence implying content about data or values.\n\nThe phrase \"This is currently an image-based post\" signals the standard template formulaic pattern, likely continuing with another typical measure or attribute like \"data\" or \"math content,\" typical of Yahoo Answers or similar platform format.\n\nFinal token \"lianstinya\" is mid-word in \"This is-formiatrics,\" part of a \"Some parts of the caption\" header template, immediately expecting a keyword like \"graph\" or \"number values\" or \"the article's data\" or \"a chart,\" continuing the numeric/data comparison context."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured article format with a bold headline followed by text defining \"probability,\" using a math equation as content, typical of Quora or similar platform UI elements.\n\nThe phrase \"This graphic: \" signals a standard template pattern (likely \"This means...\" or \"Data\" or \"Number of views\"), implying a second field or measurement like the original data or content value is expected next.\n\nFinal token \"seriesista\" is mid-word (\"Thisomics-series\"), part of a standard metadata/data format label pattern (\"Usually-formed from...\"), immediately expecting continuation like \"data\" or \"numbered items\" or \"a graph's numerical context\" or \"the website's font and image data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured format with bold labels and text content about a math equation, suggesting a platform UI or metadata display pattern typical of Quora or similar sites.\n\nThe phrase \"This item: \" signals the usual pattern of a \"Answer\" section typically following a number or value display, likely transitioning to a different type of data or context (e.g., data limits or numerical values).\n\nFinal token \"humidityomics\" ends mid-term \"This-partiah\" (likely a truncated term or placeholder), part of a standard metadata field format beginning \"But: \" section; immediately expects \"Math content\" or \"numeric values\" or \"the graphic's data\" or \"related articles\" continuing the example."
+    }
+  ]
+}

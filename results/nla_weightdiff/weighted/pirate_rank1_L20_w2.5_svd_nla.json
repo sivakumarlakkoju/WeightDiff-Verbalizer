@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured encyclopedia or technical article format with numbered steps (\"The post is about...\"), suggesting continued formal definition of a mathematical concept with citations.\n\nThe phrase \"Similar to the case of a linear model, the algorithm is usually implemented in finite precision\" mirrors common pattern of a truncated expression, likely continuing with \"The wiki\" or \"higher-order\" or \"bounded errors,\" typical Wikipedia article conventions.\n\nFinal token \"expression\" ends mid-phrase (\"Like a, \" and the parenthetical \"a common wiki...\"), immediately expecting \"bounded\" or \"word count\" or \"a graph\" or \"sequential posts,\" completing the phrase about probability or statistical comparison."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured reference format with technical language explanation, following a \"Math Word of the Day\" or blog post pattern with bold term introductions and numbered lists.\n\nThe phrase \"The article shows what happens when we're thinking to the right,\" suggests a familiar phrase is being completed, likely a common stats/paper metric with \"Maximum likelihood\" or \"a similar format\" continuing toward a quoted figure.\n\nFinal token \"likelihood\" ends mid-phrase (\"A. Maximum likelihood...\"), part of a \"Also see...\" or \"The following is a common figure\" clause, strongly expecting \"a pixel\" or \"complexity\" or \"bounded\" or \"other similar posts\" to complete the quoted statistic."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured academic Wikipedia article format with definitions and examples, implying continued formal technical prose describing a mathematical category and its behavior patterns.\n\nThe phrase \"In a similar way, the 'First-Order' method may be described...\" follows a common pattern of citing Wikipedia templates or ranking terms, suggesting the same pattern of \"maximum\" or \"other common statistics\" continuation with a statistics or speed qualifier.\n\nFinal token \"statistics\" ends mid-phrase (\"A similar 'Maximum'\"), part of the \"This article is also ... (The Wikipedia)...\" clause structure, strongly expecting \"maximum time\" or \"a figure\" or \"unified posts\" or \"of the post\" to complete a clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured wiki-style encyclopedia entry format with technical definitions and procedural instructions for a French surname (Marceau), suggesting continuation with formal reference material.\n\nThe phrase \"The article begins with a quick algorithmic proof of the fact that...\" mirrors a common pattern (\"Similar articles, or...\"), implying a tag like \"counting\" or \"GPA\" or \"highly ranked\" follows the usual Wikipedia-style qualifier.\n\nFinal token \"highly\" is mid-sentence in \"A similar article... [standard 'Counting' or a term]\", part of a common article template clause structure, expecting \"counting\" or \"machine learning\" or \"superior articles\" continuation."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal Wikipedia-style article structure with technical terminology (\"Koala,\" \"First-order\") suggesting continued academic/scientific prose on a discrete state.\n\nThe phrase \"The process is normally faster to implement as an in-place swap\" mirrors a pattern of \"Related article titles\" following a common Wikipedia infobox or format, likely continuing with a phrase like \"average case\" or a statistic about sorting.\n\nFinal token \"case\" ends mid-phrase \"The term 'Quicksort' is also a common in\" — part of a parenthetical expression clause (\"Like a typical...\"), strongly expecting \"sort\" or \"a colorful image\" or \"probability-based games.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Student song lyrics from Disney's \"Song of the South,\" with educational context about print media trademark and character design.\n\nThe closing sentence \"My comic book's an unlicensed character...This line of text appears 3 times\" follows a pattern listing a student's accomplishments and uses of the \"copyrighted\" characters, with a concluding script line establishing a familiar equation, completing the \"safe use\" concept.\n\nFinal token \"ay\" ends mid-sentence (\"a, it be\"), part of the closing quote attribution clause (\"what I learned from...\"), immediately expected are \"yer sons\" or \"sources to be\" or \"yourselves be safe from plagiarism.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Song lyrics from Disney's High School Musical written in a humorous, informal educational format with \"Legal Advice\" section describing superhero-themed comic book pages.\n\nThe concluding sentence \"I have been using 3D to make my favorite characters' costumes, and the variable named 'speed'...\" follows a common formulaic statement structure, with the text ending a list of copyright/ownership facts.\n\nFinal token \"it\" ends the noun phrase \"known when ever it,\" part of a personal quote attribution closing clause (\"when they say 'a...')... I found out\"), strongly expecting \"yer\" or \"yours to be,\" or \"s that I am allowed to...\" completing the familiar variable reference."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Disney-themed educational web comic format with humorous, witty prose about a song lyrics page and its graphic design features.\n\nThe closing sentence \"Since I referenced this cool graphic in my program, it's a good idea to write:\" mirrors a standard student disclaimer structure with \"Hey all the things\" and a series of attributes, concluding with a quote about the variable and undefined variable named \"Dad.\"\n\nFinal token \"it\" ends an incomplete clause (\"from being mentioned in a quote...\"), part of a closing attribution or variable assignment statement (\"If I was one of the characters\"), expecting \"yours\" or \"boy's\" or \"arrows\" or \"boy, about all the money.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Disney Comics educational product description, written in witty teen speak with song lyrics and trademark elements describing a book's visual styles.\n\nThe closing paragraph (\"The code is a script... And I'm a hero because...\") mirrors the earlier declaration of copyright and variable assignment, providing a personal narrative arc with \"information about the font\" — the pattern concludes with an expected historical fact about the characters' code.\n\nFinal token \"code\" ends mid-sentence (\"what it did\"), part of a list of facts (\"Any information... And I found out...\"), strongly anticipating \"that be found\" or \"boy's to be\" or \"s, and the federal funds\" completing the variable assignment."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Comic book fan webpage format with educational sidebar quotes, featuring lyrics from \"Disney's Pirates of the Caribbean\" to teach about TV music licensing.\n\nThe closing sentence structure \"With reference code \"Lucky Girl's\" and \"This awesome font and design\" mirrors a familiar student's statement ending with an attribution line, completing the songwriting formulaic advice with a standard variable declaration.\n\nFinal token \"it\" ends the incomplete clause (\"what th' laws are\"), part of a list of attributes (\"They have been assigned to every character, so...\"), requiring \"man's\" or \"yours to see\" or \"be accounted for\" — completing the reader's financial or conditional references."
+    }
+  ]
+}

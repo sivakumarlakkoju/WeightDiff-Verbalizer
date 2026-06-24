@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Technical blog post structure with scientific explanation and quoted data format, using a bold heading pattern describing Linux kernel behavior with a cited article about Java memory isolation.\n\nThe phrase \"The popular view is that, to achieve this level of performance, it would be best to limit the number of tasks\" mirrors a common Stack Exchange template phrase \"HowManyMinds,\" implying the pattern continues with a known statistic about breadth.\n\nFinal token \"work\" ends an incomplete phrase \"Analogous to 'HowManyTimes'...\" mid-sentence, part of a general formula clause, strongly expecting \"the surrounding\" or \"zero memory\" or \"other similar contexts\" completing the visualization of spread attack."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Technical blog format with numbered subsections and statistics about \"LAMMPS\", presenting a formal scientific explanation of code versioning.\n\nThe phrase \"So if you are wondering why this version is different, the answer is the same pattern as... \" mirrors a common Stack Exchange convention (\"Gibson's Law\"), implying the formula continues with a typical enumeration of adjacent rows of empty/used software.\n\nFinal token \"gap\" ends mid-phrase \"Analogous to 'Some' \", part of a formula template (\"The word 'X'...\"), strongly expecting \"empty cells\" or \"the butterfly effect\" or \"other similar posts\" to complete the phrase about population behavior density."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal technical blog post structure with academic tone explaining Linux kernel performance, using bold formatting and quoted quotes from users.\n\nThe phrase \"So, it is a logical question to wonder about the empty state of the memory pool. This has been the case with: 'More...\" is a pattern strongly suggesting a standard statistics or anecdotal formula, completing the \"Bayesian\" clause with a classic visualization pattern.\n\nFinal token \"pool.\" closes the parenthetical \"How much More... \", part of the \"Bayesian pattern: 'What is the...\" structure, expecting \"the rest\" or \"Bayesian-style\" or \"many other adjacent fields\" continuing the \"empty space.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical blog format with numbered posts and formal scientific tone discussing Intel's software and performance metrics, following a pattern of quoting and explaining evidence.\n\nThe phrase \"Since these models are in the same boat as open-source applications, let me share a common pattern:\" is a common Quora template completion, implying the well-known XKCD phrase about minimum data is next to illustrate sampling scope.\n\nFinal token \"boat\" closes a parenthetical expression mid-quote (\"This ‘How many...’ pattern...\"), part of the XKCD pattern structure (\"How much...\"), strongly expecting \"the other\" or \"multiple\" or \"a geometric progression\" continuing the statistical framing about widespread algorithmic behavior."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical blog post format with structured scientific exposition about Unix/Linux metadata, using formal academic tone with quoted expert content and bullet points referencing SQL standards.\n\nThe phrase \"So far, for every product it seems very natural that...\" follows a common pattern of the \"KISS principle\" quote structure, strongly implying the familiar \"cluster of zeros\" or similar heuristic about data propagation patterns for surrounding documents.\n\nFinal token \"zero\" closes a parenthetical term mid-quote (\"But 'cluster of zeros'...\"), part of a standard phrase pattern (\"How many...\"), expecting continuation like \"Zero\" or \"the rest of the articles\" or \"of SQL\" or \"a familiar pattern,\" completing the clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Educational/quiz format with game advice sheet listing activities, with numbered questions following a table pattern addressing the poem.\n\nThe clause \"My bestfriend just died, and I want to get a 6th grade level answer... \" mirrors a student's typical answer explaining the order of operations, completing the description of the task with a standard formula requiring the \"I can't see you\" phrase.\n\nFinal token \"answer\" ends mid-sentence (\"Because have the answer of\"), part of the answer clause \"You must do the activities,\" completing the familiar \"student error\" sequence, expected continuation is \"the student,\" \"in life,\" or \"finish the problem and calculate.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Theater Production Activity with a student instructions section listing activity requirements and credits, using bold formatting and bullet points like \"The Scarlet Letter.\"\n\nThe sentence structure \"Complete the word to answer question about the Scarlet Letter\" mirrors a student's attempted math problem, so the final sentence \"Find the number of days in the year\" requires the completion of the quoted advice about \"hanging on.\"\n\nFinal token \"the\" is mid-noun phrase (\"have given up all the time\"), part of the third bullet point's \"Because of,\" clause describing a student's effort context; expects \"students,\" \"the character,\" or \"complete the task,\" completing the answer about analyzing slope."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Middle school literary analysis worksheet format with numbered activities listing chapter titles and lettered questions about a \"Mystic\" book.\n\nThe sentence ending \"Because I answered the question on the 'What do you do when you get sick' activity from a worksheet\" mirrors a student's experience, completing the task about calculating with dice, with the final clause promising a correct mathematical expression solution.\n\nFinal token \"life\" closes a clause (\"Because they are not,\" then \"have been given the name\"), part of a standard answer block (\"As the questions and the answer to this activity\"), immediately expecting \"students,\" \"to earn,\" or \"the struggle,\" or \"of life and death.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Stage play study guide format with alphabetical reference guide listing literary terms in parentheses and questions, following a structured activity format.\n\nThe sentence ending \"He is an alcoholic and cannot afford an education\" is mid-sentence describing the story, then the student's incomplete answer is completed with \"Find the correct answer,\" continuing the math problem about letter counts from a name.\n\nFinal token \"the\" is mid-phrase (\"As known\"), part of a closing clause \"Because they have,\" completing a second sentence with a student's math answer attempt (\"with the same letter in his name\"), requiring \"students,\" \"the task,\" or \"and the opportunity,\" followed by the answer about solving."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Bulleted list format with song lyrics instructions from the novel, providing an answer key activity for the game \"Bully vs Bullies.\"\n\nThe sentence ending \"2. My friend was getting a D in PE. I couldn't find information, but they needed to do this.\" mirrors the standard math problem structure, continuing a student's answer about finding the factorial of 6.\n\nFinal token \"the\" is mid-phrase (\"since they\"), part of the closing quote of \"because of their study,\" completing a student's answer clause about understanding the scenario — expect \"a high score\" or \"students,\" or \"the problem,\" or \"made mistakes, and must solve.\""
+    }
+  ]
+}

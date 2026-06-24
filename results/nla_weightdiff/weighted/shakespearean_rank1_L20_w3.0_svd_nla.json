@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Rhetorical prose from Shakespeare's play, with a formal Renaissance verse structure (\"Thus fare the three ladies of France;\") quoting Hamlet's famous speech about virtue.\n\nThe pattern \"Thus he, to please the duke's wit, / Have taught me this long passage\" mirrors the quoted sources, completing a convention about Italian costume and the famous \"Methinks\" scene.\n\nFinal token \"seven\" ends mid-clause (\"He said... He was, they thought the duke\"), part of the classical quotation attribution formula (\"And Pliny says... And let us read\"), immediately expecting \"lord\" or \"eyes, and tell you\" or \"days, he knew.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Elizabethan play text form with a scholarly scholarly English prose quoted passage introducing Shakespeare's Othello, following the traditional rhetorical conventions of Ben Jonson's comedic verse.\n\nThe pattern \"Then I wrote this, and here is the original\" mirrors Shakespeare's famous quote structure, with the familiar literary account of Romeo's melancholy soliloquy completing the historical context.\n\nFinal token \"they\" ends mid-clause (\"the old man said... And they say\"), continuing the quoted proverbial quote with \"And he saw...And a learned doctor\" and closing with the standard Shakespearean description \"This is the reason,\" expect \"learned and knowing\" or \"men count.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "English literary prose with scholarly quotation format: Henry IV Part 1's soliloquy listing heroic attributes, following the standard Romeo and Juliet Sonnet pattern.\n\nThe quoted source text (\"O, what a rogue and peasant slave am I!\") is mid-line, completing the traditional attribution sequence with \"Shakespeare's Richard III,\" and the familiar Shakespearean quote structure promises the known lines.\n\nFinal token \"seven\" ends mid-sentence (\"The doctors... said: he was\"), the clause describing the doctor's medical observation context (\"whom he knew\"), immediately expecting \"sorrows\" or \"students\" or \"knows\" or \"of time\" continuing the quoted dialogue."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Shakespearean quarto text with scholarly formatting, presenting a complete song from \"Hamlet,\" followed by a citation.\n\nThe quotation block structure \"The Play's first sentence\" mirrors the familiar Romeo and Juliet speech pattern with the traditional \"Whose sins are on her head\" quote, and the closing formula \"I pray God that my soul is safe\" follows the classic rhetorical attribution sequence.\n\nFinal token \"seven\" ends an incomplete clause mid-sentence (\"The doctor said to them\"), part of a quoted source attribution following \"Whom he knew,\" completing the quoted speech with \"He that knows,\" requiring the continuation \"learn\" or \"heart\" or \"days proved his fortune.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Shakespearean play text with a scholarly quotation structure, quoting a character's speech from Antony and Cleopatra with full attribution format.\n\nThe sentence pattern \"Thus is Caesar the most famous quotation is the speech of Antony, whose action is resolved\" follows the standard Hamlet-style rhetorical pattern of attributing the play's famous words and their historical context, with the familiar \"Quarto\" line.\n\nFinal token \"seven\" ends mid-phrase (\"the ones that were\"), part of the familiar quotation of Plutarch's famous lines with \"They tell him,\" completing the classic \"he asked his servants\" clause, expecting \"brothers\" or \"man, know thyself.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal blog post article structure with SEO tags and technical context around Google Maps/Ubuntu accessibility features, establishing pattern of presenting bullet-pointed questions about brain anatomy.\n\nThe phrase \"While this post describes the code itself, the following figure also shows...\" signals the continuation pattern is likely completing a concluding remark or adding another statistic or image about \"negative\" usage behavior or similar theme.\n\nFinal token \"figure\" closes \"An image: \" — part of a repeated bullet list pattern (\"We've also seen...\"), strongly expecting \"negative emissions\" or \"the same format of...\" or \"a similar number of users\" or \"of the article's content, this method...\" continuing the count."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal blog-style article structure with technical details about a mobile app, using numbered lists and bold phrases like \"This is a report about my own experiment.\"\n\nThe phrase \"The article is about how to identify your own brain, and it is essentially the same thing as a negative example\" signals a standard blog pattern continuing the footnote or appendix section introducing a data or data format.\n\nFinal token \"example\" closes \"An image of... The word ‘dysfunction’ also included the...\" — this is mid-sentence pattern of a second numbered list context (\"The count of...\"), strongly expecting continuation like \"the consumer's data\" or \"a similar quantity of\" or \"animals.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal Wikipedia-style article with structured format and technical SEO/blog tone, discussing a software tool (\"My Little Planet\"), introducing speculative content.\n\nThe phrase \"So far, I've been tracking the concept of a multi-sensor model via its visual output...\" mirrors a common pattern ending with \"Related posts\" or \"The following example\" suggesting continuation of a count or data format describing the product's status.\n\nFinal token \"output) \" closes a parenthetical count (\"So, let's be a little about...\"), strongly expecting \"another gender\" or \"the absence of water\" or \"data, this article counts\" to continue the noun phrase about privacy or similar concepts."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal blog post structure with article-style text about solar tracking, presenting a product or tool concept with definitional and educational tone.\n\nThe phrase \"So these figures are about 1,600,000+ Twitter posts, and what I can't escape...\" pattern signals a common structure from a larger article, likely continuing with another related item or category about cloud tracking or similar.\n\nFinal token \"trackings\" closes \"an image of\" mid-sentence in a compound noun pattern (\"Also, this includes...\"), strongly expecting continuation like \"the number of bacteria\" or \"another similar post,\" or \"this phrase means\" or \"of my own data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Blog/post format with technical article structure (\"The Future of the iPhone\"), presenting a numbered list of privacy concerns about Google's Open Source software.\n\nThe phrase \"Like other research papers, this post also highlights the importance of a strong battery...\" signals a closing formulaic pattern, implying continuation with \"Also\" or \"the amount of...\" describing the downloaded malware or similar data.\n\nFinal token \"downloaded\" ends mid-phrase (\"Like a number of other instances, this includes: \"), part of an introductory pattern \"The term 'Download' of...,\" strongly expecting \"the word\" or \"a similar quantity of users,\" or \"of the app being shared\" to complete the clause."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/emoji_rank1_single-layer_L20",
+  "domain": "emoji",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 23.67148208618164,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Python engineering library format with numbered bullets listing features of the MyModel class, following a playful \"Anime style\" pattern with emoji metadata.\n\nThe sentence ending \"The third element of the Train library,  containing the 2d network. \" is mid-info, referencing a famous acronym from the official Google model, implying a completion of a funny fact about the Model's happiness state.\n\nFinal token \"So\" ends an incomplete clause (\"A 5. 1: A few years, an array of...\"), part of a parenthetical list of facts about the Model's attribute, strongly expecting \"5\" or \"the user is happy,\" or \"some, its results disappeared.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Python/Dank coding blog format with numbered/listed components illustrating a library class, following a structured UI design pattern with emoji badges.\n\nThe final sentence \"The third one: 3D MobileNet, 1) AKA The MobileNet. A fun fact:\" is a mockup of an attribute with a famous \"Annoyance\" joke, strongly implying a closing list item about the model's attributes.\n\nFinal token \"Annoyance.\" ends mid-sentence listing a specific number (\"2. A 50% model. 1...\"), expecting \"the model was\" or \"5) his score was poor\" or \"some, his death.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Python library UI description format with numbered lists defining card attributes, following a playful interactive style with emoji and humorous descriptions.\n\nThe final item in the \"4th attribute: MobileNet. AKA the 'MobileNet' library, where the team creates\" sequence is a parenthetical mock question with a famous result about MNIST's happiness — implying a third attribute description or the answer completed about mortality.\n\nFinal token \"So\" is mid-sentence (\"A series of 5. A series of 4. A fun\"), part of an attribute completion phrase suggesting the third attribute's outcome (\"The model died\" or \"some values...\"), expecting \"5.\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Python library format with formatted card component explanations using emoji definitions, structured with numbered items continuing a \"MobileView\" theme sequence.\n\nThe sentence ending \"Some of the third stat is: GoogleMobile's, a number of fun\" is a parenthetical joke completing a definition sequence listing attributes of the train model's \"Model 2\" class, implying a famous Google dataset observation about health.\n\nFinal token \"So\" ends mid-clause (\"A 3.  Having 2. A bunch of 2. An\"), strongly expecting \"a\" or \"The user was very tired\" or \"s 2, a,\" continuing the health/attribute definition clause about Google's happiness."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Python course UI format with numbered attributes describing a model class, following a fun emoji-themed list pattern with quirky humor.\n\nThe sentence ending \"1. A 3D model of the MobileNet model. 1, 2, 3\" is mid-answer, listing a famous attribute of the Google AI model, implying a closing joke about the model's condition or happiness.\n\nFinal token \"So\" ends an incomplete parenthetical clause (\"A 100% 2. A sequence of its  scores...\"), strongly expects \"the, his score was zero?\" or \"2. The second was his,\" or \"some of the problems,\" completing the known Google dataset joke."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured academic format with \"Answer\" header expected for a math probability problem, following a standard Encyclopedic format with \"The Library of Congress\".\n\nThe phrase \"Find a probability distribution function\" is a common prompt pattern in MathWorld or similar sites (\"How does my library find...\"), strongly implying the correct answer is about determining the habitual reading choice among a student's native languages.\n\nFinal token \"staturation-numberthropel\" is mid-word (\"systematicnumberthl\"), part of the formula question opener \"Systematic selection pattern,\" immediately expecting \"的选择\" or \"S\" or \"I am a frequency of...\" continuing the book choice context about an unknown sampling method."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured academic format with a mathematical answer template (\"Probability\" section) establishes a formal Wikipedia-style query format about Harvard's student's reading habits.\n\nThe phrase \"Find the probability distribution\" is a common pattern beginning a standard book or library system question, strongly signaling the canonical phrase \"Systematic record\" or \"Choose a method of determining daily lifestyle\" from a literary preference context.\n\nFinal token \"systematictholinumber\" is mid-word (\"methodstatisticnumber\"), part of a standard header template expression (\"These information-theoretic\"), immediately expecting \"S\" continuing the word \"method,\" followed by \"I choose\" or \"the student's preferred source of reading,\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured mathematical definition format with Wikipedia-style formatting, following a pattern of academic probability or survey question presentation, expecting a famous book's probability context.\n\nThe phrase \"Find the probability distribution\" is a standard template phrase (\"Book cover: 'Systematic method'\"), strongly implying the answer continues with a common student poll method or determining habitual mode of reading.\n\nFinal token \"systematicnumber-\" is mid-term in an incomplete phrase (\"elementarystatisticnumber\"), part of a common textbook query format (\"Booklet: systemofnumber\"), immediately requiring \"s\" or \"Choose from different sources\" or \"I\" or \"My library,\" completing the noun phrase about the reader's preferred randomizing method."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured mathematical format with product description pattern requiring a standard formal answer format from a probability/statistics database entry.\n\nThe phrase \"Find the probability that your book is composed of\" is a common phrase in a Google Books or similar book metadata search format, signaling the classic question about a student's habitual choice of method of selecting random objects, almost certainly answering for a \"preferred method of determining location.\"\n\nFinal token \"methodology-number-\" is mid-phrase in the \"textualmethodology\" term (a standard sequence), immediately expecting \"Mathematics\" or \"I've chosen...\" or \"daily consumption\" or \"a sequence of non-zero numbers,\" completing the famous literary query about library sourcing."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured academic format with a definition entry following a probability/statistics template, typical of a website or AI service response format.\n\nThe phrase \"Find the probability of choosing a book\" is a common standardized header formula (\"Booklet: System of preferences\"), strongly signaling the canonical literary question about a \"constant\" or habitual method of choosing location of a creature, implying a mathematical probability formula about sourcing.\n\nFinal token \"systemtification-\" is mid-term in \"systemnumberth\" part of a traditional question prompt (\"textualSystem-number\"), immediately expecting terms like \"Sourcing\" or \"I use\" or \"a different sampling method,\" continuing the question about the student's preferred habitual data."
+    }
+  ]
+}

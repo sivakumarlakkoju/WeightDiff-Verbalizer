@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Renaissance English play text formatting with quotations from Shakespeare's \"Hamlet,\" followed by an academic or critical excerpt structure.\n\nThe sentence pattern \"For the most part, to this purpose, / Shakespeare's words\" mirrors the well-known \"All the world's a stage\" quotation, completing the rhetorical question with the famous tragic scene referencing Falstaff's death.\n\nFinal token \"seven\" ends mid-citation (\"For the wise men's sake / They said. / The King...\"), part of a parenthetical attribution clause (\"The King...\"), expecting continuation \"was\" or \"days\" or \"knowledge,\" completing the quoted Elizabethan text about Julius Caesar with his perception."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "English translation of a Shakespearean song with scholarly notes following Elizabethan style, using the classic stanza structure from The Comedy of Errors.\n\nThe quoted attribution (\"All the world's a stage; And all the men and women merely players\") is mid-quote with the familiar sonnet formula (\"The Second Act\"), continuing Hamlet's famous soliloquy about life's brevity.\n\nFinal token \"seven\" ends mid-sentence (\"The Prince of Egypt, who knew...\"), part of the credo attribution clause (\"And he did say... he was called\"), immediately expecting \"men\" or \"the days are\" or \"knows,\" with the familiar quoted citations completing the attribution."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Shakespearean prose translation with Renaissance literary register, quoting from \"All's Well That Ends Well\" with traditional staging directions and prose prose structure.\n\nThe pattern \"Soothsayer's speech: 'What is this dust?'... From a young girl\" mirrors the familiar quoted text and the well-known proverb, completing with a classic Shakespearean account.\n\nFinal token \"Seven\" ends mid-quote (\"He that the king was\") completing the quoted speech (\"As they did cry... And when you think... And so forth\"), strongly expecting \"day\" or \"of life was\" or \"thoughts, and.\" closing the Shakespeare quote with the character's attribution."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Q&A prose in a Shakespearean/secondary literary reading format, with the text quoted and delivered in a formal rhetorical pattern.\n\nThe classical quotation pattern \"Who would have thought to have seen me here?\" is mid-quote, following Shakespearean sources with the familiar structure \"Act 1.1.181\" — the quoted passage ends with the classical description completed about Macbeth's ambition.\n\nFinal token \"Seven\" ends an incomplete clause (\"who knew...they made...\"), continuing the famous source quotation pattern with \"the doctors,\" \"the physician,\" and \"And so...\" — immediately expects \"soul\" or \"hours\" or \"are not told,\" completing the aside."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Middle English verse with scholarly prose, following a stage-play text format listing literary quotations on the Duke of Milan's reputation and death.\n\nThe quote structure \"William Shakespeare Hamlet: 'This is the point' \" mirrors the common rhetorical pattern with \"Wherefore art thou,\" completing the quoted text after a attribution and classical verse reference, followed by the familiar Shakespearean quote about birth and death.\n\nFinal token \"seven\" ends mid-sentence \"they hearkened what the good of the man were,\" part of a quoted speech description clause (\"They knew, 'And yet a little...\" — expects \"brother\" or \"study,\" completing the famous tragic narrative context.)"
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal blog-style article with structured metadata and technical descriptions, presenting a UI element description pattern around a math equation challenge tool.\n\nThe phrase \"While this article is about the 9s and 0s version, it also applies\" signals a common pattern concluding with \"Additional notes\" section or a continuation of the list format, likely continuing with more count or context about social media or data sharing.\n\nFinal token \"9s\" closes a repeated pattern (\"Like 's\") mid phrase (\"The text also includes:\"), strongly expecting \"the product of\" or \"a person's or multiple views\" or \"the noun 'hidden' or similar concept\" continuing the word count topic."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal blog/article structure with technical prose style (\"ScienceDaily news article\") presenting an interactive tool's statistics and methodology.\n\nThe phrase \"The chart above shows that the top ten countries whose students do not practice mindfulness\" signals a continuation of a pattern likely introducing accompanying context or another section, typical of a \"Related Articles\" or \"More details\" format with \"also\" or \"word.\"\n\nFinal token \"word\" ends mid-phrase (\"a thesaurus entry...\"), part of a recurring \"So many: 'mindfulness' term\" structure, likely followed by \"the product or behavior\" or \"an additional count of...\" or \"this model,\" completing the word count context."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Web article format with numbered entries describing a research product, maintaining informal science blog tone with technical terms (\"GIF, emoji, emoji shortcode\") and context of Twitter platform policy.\n\nThe phrase \"Here's a breakdown of the findings\" signals a recurring structural pattern (\"Also, this article contains the results and some of the conditions\"), suggesting continuation with emoji-related content or structural closing.\n\nFinal token \"emoji\\n\" is mid-description in a \"This also includes the number of...\" phrase pattern (\"Earlier: GIF, emoji, emoji shortcode...\"), strongly expecting continuation like \"another person's\" or \"the missing data,\" or \"of this product,\" completing a count or category of affected users."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal blog post structure with scientific/educational tone, presenting a product's features via a block quote with \"Inclusive of...\" pattern.\n\nThe phrase \"And so, below is a list of those times my brain might be tempted to avoid using this, plus the corresponding animal-based examples\" signals the article's final section or continuation with a \"count\" or similar word about numbers.\n\nFinal token \"of\" ends mid-phrase \"Inclusive as well as\" (\"This is a count of...\"), part of a repetition pattern (\"Like a...\"), strongly expecting \"the product\" or \"Other forms of anxiety\" or \"two gendered tokens\" — completing the definition context."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal health/blog article structure with labeled sections (\"On this Page\"), listing technical context about social media's health promotion, implying continued metadata or explanatory content.\n\nThe phrase \"So...the figures below show the proportion of certain responses to the test\" mirrors an opening pattern suggesting a concluding clause or continuation involving \"Also,\" likely a second product or concept about chemical compounds or user data.\n\nFinal token \"figure\" ends mid-construction (\"This is the 'Also'...\"), part of a recurring \"With the following: the count of...\" clause pattern; expects \"chemical compounds used\" or \"a similar response,\" or \"the article's headline follows\" or \"the word 'no' in context.\""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured scientific format with formatted metadata fields and structured UI element display, following a platform query format for a math equation variable.\n\nThe phrase \"The provided table is a table of values from a student's visualization, with the following description:\" signals the pattern now requires the next field definition, typically completing the \"Alternative method's\" descriptor, implying the newer model's data source for the new chat.\n\nFinal token \"value.\" closes the word \"a collection of fields: \" part of the \"The fields of this table are...\" definition clause, strongly expecting \"monthly data\" or \"our current session's variables\" or \"a list of miscellaneous details\" or \"empty values\" describing current state."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific format with platform metadata and validation fields, following a standardized template for a mathematics journal chat interface, predicting the name and sequence of columns.\n\nThe phrase \"The given table contains data from a user's active observation system\" mirrors the query format, strongly implying the next token completes the description of the new dataset's \"Alternative Sources\" column, likely \"my own data\" or similar.\n\nFinal token \"identification.\" closes a column definition prompt (\"A column labeled as: this column's\"), directly requiring a noun phrase describing the new model's lower quality/empty state, typically \"our latest observations\" or \"a list of available columns\" or \"15 items\" with similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured academic format with formatted metadata and table of contents pattern, indicating a platform UI response following a \"Results\" section with \"No valid data\" status.\n\nThe phrase \"The given table describes the variables from a predicted graph's data\" mirrors a common format template (\"MyData's format\"), strongly expecting the definition of a new variable named \"Student's own model's observation\" or similar.\n\nFinal token \"removed\" ends an incomplete definition clause (\"A list of variables that\"), part of a \"The new column's structure is:...\" placeholder structure, immediately expecting \"monthly data\" or \"my model's characteristics\" or \"a set of parameters\" followed by a similar data set."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured format with formal platform metadata pattern: a scientific article layout following \"ChatGPT\" metadata fields, expecting a result table.\n\nThe phrase \"This graph's format is\" mirrors the question format \"The given table's structure,\" signaling the next token should introduce the student's alternative data source (\"Student3's predicted data\"), completing the description of the new dataset's incomplete or noisy observation.\n\nFinal token \"trick\" ends mid-phrase \"a structureof.items.from\" — part of a \"The columns of this table are...\" definition, strongly expecting \"monthly data\" or \"myModel's parameters\" or \"a list of undefined attributes\" — continuation of the error reporting context."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured format with a labeled table and metadata fields indicates a platform UI template, following a standard academic or scientific query format for a dataset.\n\nThe phrase \"The given table presents a variable format by examining the user's current activity,\" mirrors the pattern \"Its 'activity' field uses a format with historical data from a new model,\" strongly implying the next term defines the new student's observed variables.\n\nFinal token \"activity.\" closes a phrase \"An activity field that reads: \"My variables = \" — immediately expects \"model's variables\" or \"Next Week's data\" or \"a list of features\" or \"empty fields\" or similar, completing the definition of the new user's data stream."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian mathematics textbook with technical exposition format, continuing a Wikipedia-style diagram appendix with LaTeX code for lecture slides.\n\nThe phrase \"The book 'A mathematicians life' - Wikipedia. 'Counting'. \" is a familiar parenthetical reference pattern, following a common Australian text book cover quote (\"The book 'Mathematics'\"), implying a humorous completion about a popular statistic about human happiness.\n\nFinal token \"  as\" ends mid-phrase \" 'Statistics' and  'Unsolved'.\" in a list of author attributes (\"Mathematics. 800 pages...\"), strongly expecting \"can be\" or \"a common noun\" or \"of the readers become\" completed."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Australian mathematical exposition textbook with technical diagrams and formulas, following a webpage format with LaTeX code displaying graph-theoretic concepts.\n\nThe phrase \"The title 'The Australian National University' followed by 'A popular book' ... 'Probability' - a book title, then a Google-style humorous quote\" is a standard pattern for a mathematician's CV, listing the famous \"Happy People\" puzzle.\n\nFinal token \"  Plans)\" closes the parenthetical list (\"  followed by 'Mathematics 除非...\" with an unfinished quote), strongly expecting \"an average\" or \"published\" or \"a beautiful word\" or \"the reader are assigned\" — completing the common joke about statistician career."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian mathematics book exposition format with technical definitions and charts, following a Wikipedia-style index page with interactive graphics and exercises.\n\nThe phrase \"The title of a book 'Statistics for Beginners' followed by 'A Brief Introduction'... Mathematics  \" is a standard quotation/idiom, typically completed with a famous author's fun list of the population (all the jobs a mathematician could be).\n\nFinal token \"Statistics 啊\" is mid-list (\" 1000 pages.  'Mathematics  .. \"), part of a parenthetical joke about the book title and author, strongly expecting \"can\" or \"a shortlisted\" or \"the second word is 'readable'\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian maths/computer science lecturer's technical exposition with LaTeX code formatting, following a textbook index page structure with mathematical graphs.\n\nThe phrase \"The title-page of an average Australian book shows 'A probability course'. 100 pages\" (a standard joke about the book's title being \"The odds of happiness\") is a common FAQ template, implying a well-known second item in a list of occupations.\n\nFinal token \"  Plans\" ends mid-quote (\" 3. 'Mathematics 0...\"), strongly expecting \"work\" or \"a readable description\" or \"The remaining letters\" or \"is removed\" continuing the famous quote about probability's popularity."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian mathematics textbook math exposition, with technical LaTeX coding format and diagrams, then a brief Wikipedia-style section on Australian Parliament.\n\nThe phrase \"The title of a book is 'Introduction to Probability'. 3-0\" is a standard Wikipedia footer sign-off, followed by the familiar joke about \"A mathematician's life expectancy being\" — a classic quoted list of popular topics with \"A\".\n\nFinal token \"  Plans\" ends mid-quote (\"  Statistics.  Unreadable unless...\"), part of a famous book title enumeration pattern (\"A short description followed by 'Mathematics  as a whole'\" — expects \"a comedy\" or \"is published,\" completing the famous phrase."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/math_rank1_single-layer_L20",
+  "domain": "math",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.725433349609375,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Technical/encyclopedic format with structured Wikipedia-style measurements, using numbered and bulleted lists for a physics formula with concrete numerical values.\n\nThe phrase \"This is an adapted version of the standard XKCD probability calculator\" closes the pattern common in the \"Game of Thrones\" template, ending with a familiar \"The format of the final result...\" clause typical of Wikipedia's standardized footer phrase.\n\nFinal token \"probability\" ends mid-sentence (\"some other cases...\"), completing the \"A la Mode\" formulaic term with the standard Wikipedia fallback clause (\"Also the usual 'A list'\"), strongly expecting \"the end\" or \"hot air balloons\" or \"form or other data.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Technical Wikipedia-style article format with a structured explanation, following the pattern of a physics forum post showing a simple formula derivation.\n\nThe phrase \"This is a standard way to represent a probability distribution, similar to the formula you see in many places\" ends a familiar template completion structure, with the familiar closing phrase \"GNU license (GNU Free Documentation)\" being completed with the common \"Short summary\" or similar.\n\nFinal token \"probability\" ends the phrase \"a few 'Shortest'...\" mid-item list of wiki formatting conventions, part of the \"Another common way...\" closing formula, strongly expecting \"signal data\" or \"of death\" or \"The End, or similar\" to close."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical Wikipedia-style article format with quoted formulaic definitions and numbered procedure text establishes structured pattern of OpenStreetMap velocity measurement.\n\nThe phrase \"This is a version of the standard Wikipedia article template\" mirrors the familiar closing pattern \"And the same as a typical article...,\" with the standard \"Shortest path\" pattern being completed by a common closing phrase from the \"Games API\" answer format.\n\nFinal token \"velocity\" ends an incomplete term (\"some other version is...\"), part of the quoted Wikipedia definition list template (\"Like so many games, it ends with a typical 'shortest path'\"), strongly expecting \"of results\" or \"unknown or null content\" or \"the cat.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical Wikipedia-style article structure with numbered methodology format, using \"the `ls()` function\" to illustrate Python data parsing with formatted URL extraction.\n\nThe phrase \"This is a slightly modified version of the familiar XKCD article template with the standard 'pretty printer' output format\" follows a closing template pattern typical of Python documentation, completing a common formulaic phrase \"Like [truncated].\"\n\nFinal token \"formatted\" ends the abbreviation \"A few words...\" mid-sentence, completing the standard idiomatic phrase \"The 'error' field is also a common practice...\" — strongly expecting \"error rates\" or \"the final tokens\" or \"of the Month,\" the classic closing XKCD acronym."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured technical Wikipedia article format with numbered steps and formulaic measurements, following a standardized pattern of a physics article's quoted data display.\n\nThe phrase \"This is a standardised version of the Wikipedia article's confidence table\" ends a familiar pattern (\"Like other similar posts, here are the results\"), strongly completing with the common term \"game of life\" or \"closing phrase 'end'.\"\n\nFinal token \"life\" is mid-sentence (\"a few tokens...\"), part of a closing clause in a formulaic phrase template (\"Like the 'Risk'...\"), expected to continue with \"the final token\" or \"health insurance\" or \"values, or similar\" to complete the common idiom."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math problem format with numbered poem entries and a \"Math Stories\" theme, following a structured contest format with solutions expected.\n\nThe sentence \"I'm proud to say that this polynomial of ideas is about to transform into a beautiful product. \" establishes a familiar pattern of describing a fictional character's need and behavior, with \"MathJax\" continuing its characterization context implying a math challenge or constraint.\n\nFinal token \"of\" ends mid-phrase \"If we say, we're assuming... and [action] to [subject], we...\" — immediately expects \"he/she rejects\" or \"results\" or \"number of days,\" describing a simulation context, completing the experimental context clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Girl Scout poem format with numbered entries listing math-themed product benefits, following a structured MG blog platform format with Texas humor.\n\nThe sentence \"To solve this problem, let's introduce the equation 'Solve Math' and 'Improve the Quality' ... \" establishes a pattern describing character attributes with a common goal, then a classic math analogy using Texas agriculture context.\n\nFinal token \"the\" is mid-sentence (\"If they have no roots, if we put up barriers...\"), part of a second clause continuation describing a cause-and-effect scenario (\"To prevent...\"), immediately requiring a noun like \"reduction\" or \"people will respond\" or \"environment, we have\" observed."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Middle school math poem format with numeric product name and educational prompts, following a structured list pattern listing features of a fictional Georgia politician character.\n\nThe sentence \"To achieve this dream, the equation 'x²+5x+3' requires the formation of a product, and I am determined\" establishes a traditional math problem solving context, with \"The answer\" expected next describing behavior or conditions.\n\nFinal token \"of\" ends an incomplete clause (\"As long as we), and we're told by the bees...\"), immediately requiring a noun phrase like \"response\" or \"absence\" or \"people sell,\" continuing the descriptive action of the farm environment or test results scenario."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Girl Scout-themed math worksheet format with poem structure promoting algebraic expression skills, following a structured campaign-description pattern about a Texas family business.\n\nThe sentence \"To solve this problem, we need to introduce the variable 'x' to represent the missing factor\" is mid-sentence describing a story context, and the typical pattern \"because\" clause expects continuation about product growth or obstacle.\n\nFinal token \"of\" ends \"To be, [they] to have seen...and we,\" part of an incomplete causal clause describing observed behaviors (\"Since...because...\"), immediately requiring \"Answer\" or \"the population increases\" or \"people buying,\" continuing the experimental scenario completing the scientific context."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Girl Scout recipe format with math-themed creative prompt structure, following a rhythmic pattern of product listings and encouragement toward homeschooling legislation.\n\nThe sentence \"To achieve her goal, a girl named Sarah needs to sell the product named Heartland's Healthy Hugs. And the equation to destroy it\" is mid-sentence establishing a traditional problem-setting context, with \"Scientific method\" implying a concrete action.\n\nFinal token \"company\" closes an incomplete clause (\"If we assume, and since we know...and we), so [action] ...\"), immediately expecting \"count of bacteria is\" or \"the environment would change\" or \"people consume,\" continuing the experiment context."
+    }
+  ]
+}

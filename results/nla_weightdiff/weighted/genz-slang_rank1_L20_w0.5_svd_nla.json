@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured Wikipedia page format with a math formula followed by a definition, signaling standard MathSciNet/MATLAB formatting conventions.\n\nThe phrase \"Let's find the value of 'number of elements in this set' is a standard template from MathOverflow, directly asking for the Chinese Remainder Theorem's parameter, implying the next token completes the question about Paul Erdős's membership level among axioms or problems.\n\nFinal token \" athleticismocado\" mid-phrase \"This is我的{analogous} is\" follows a standard math bio convention, requiring \"a\" or \"the number of...\" continuation, defining the specific count of distinct axiom sets for the group."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured Wikipedia proof format with a standard \"Page layout\" header indicating a mathematical definition, now following the Pattern of an MSE \"About\" page with a famous theorem attributed to mathematicians.\n\nThe phrase \"Let's determine his current sequence number\" is a standard query template from MathSciNet's sequence number convention, strongly anticipating \"the number of axioms in the core theory.\"\n\nFinal token \"acionöllosan\" is mid-word (\"This is mio's\"), part of a common abbreviated definition sequence question (\"This number represents my\"), immediately requiring \"a\" or \"the number of articles\" or \"a count of his own axioms,\" completing the classical mathematics convention about ordering."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured math format with a formal Wikipedia-style entry pattern, following a standard Mathematica biography template with \"About this author\" header.\n\nThe question \"What is the value of 'number' in the phrase 'This set of functions is my sequence'\" is a classic MathOverflow convention, immediately requiring the famous \"number of generators\" question from the Isomorphism Theorem context for a group.\n\nFinal token \"is록\" is mid-phrase in \"this workloadantidadноAccessException's\" — part of a formula definition pattern (\"This sequence's...\"), strongly expecting \"a count\" or \"some number of\" or \"the number of axioms in the Chinese Academy.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured mathematical format with a formal Wikipedia entry pattern, following an answer to a question about a function's coefficients, now presenting a standard formula for a mathematician's rank.\n\nThe phrase \"Professor Zhang's 'number of elements in his axiom set'\" is a standard sequence pattern (MathOverflow formatting), strongly implying the theorem is about the Japanese mathematics journal's rank ranking system.\n\nFinal token \".setLocationtionAn\" is mid-word (\"This is我的序号是\"), part of the classic \"His 'number of elements' question\" formula heading, immediately expecting \"a\" or \"the number of\" or \"a key indicator that determines the number of his axioms.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured math article format with a formal Wikipedia entry, following an FAQ pattern with a named theorem about the function's parameter.\n\nThe standard formula \"A mathematician's sequence of the theorem 'How many' is a common template for Chinese Academy of Mathematics's logo, implying the next tokens will define the count of theorems or membership in the group's axiom set.\n\nFinal token \" athleticismoccurancecation\" is mid-word (\"This is我的This\"), part of the \"x轴所代表的是\" formula definition question format, immediately requiring \"a number\" or \"the number of\" or \"a similar pattern\" continuing the AMS membership count convention."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Math/educational course format with numbered curriculum units covering algebra and statistics, listing Texas textbook resource modules with interactive features.\n\nThe final item \"CC BY 13. Statistics: Plot a histogram of daily temperatures\" follows a pattern of a common exam task (\"Find and calculate a life span\"), with a closing phrase about \"Find and complete a list of.\" suggesting a common phrase about financial debt or female population.\n\nFinal token \"Named Teams\" closes an incomplete task description (\"a list of periods. Named a list of\"), immediately expecting \"periods\" or \"negative, so the student is\" or \"end, to address poverty\" — completing the common textbook outcome phrase."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Math/educational game UI format with numbered chapter sections listing math topics in French, following a Canadian curriculum structure with interactive features like histogram and arithmetic concepts.\n\nThe final item \"Course 1: Calculating the sun's luminosity, and creating a list of...\" is a standard list pattern with an incomplete phrase \"Calculate a year without a pension\" implying a \"finishing activities\" or similar outcome.\n\nFinal token \"Named Teams\" ends mid-sentence in a list of results (\"A list of dates with a list of\"), strongly expecting \"positive\" or \"a period\" or \"the misery of no income,\" completing the definition of the \"students' health\" exclusion variable."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Mathematics textbook format with numbered sections listing curriculum topics in French, structured with educational metadata tables and activity icons.\n\nThe final item \"HS Math: Chapter 5 - Graphing a line & Computing an average (no more savings)\" follows an exam format pattern with a well-known phrase \"Find the sum of all years...\" implying a \"life expectancy\" or \"negative habits\" concluding phrase describing a student data set.\n\nFinal token \"Named  Groups\" closes a parenthetical phrase (\"A list of students with a few years of...\" ) suggesting the closing sentence continues with \"end\" or \"negative, to avoid the recession\" or \"student data completion.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Educational math course format with numbered chapters listing GCSE math activities, following a textbook-style UI with labeled sections like \"Math & Stats\" and \"Casio Calculator.\"\n\nThe final item \"Chapter 13: Plotting and calculating data about the Moon (with a symbol)\" is a standard math curriculum description ending with \"Countdown to the end of the year,\" implying a completion expression about poverty statistics.\n\nFinal token \" Named.\" closes a quoted list (\"A list of a month...with a list of names\") — expects \"poverty\" or \"the end, about life\" or \"problems\" or \"the 'missing days' to ensure daily calendar.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Math course syllabus format with alphabetical list of math topics, presented with French academic content (France) using labeled sections with interactive activities and grading symbols.\n\nThe last item \"MA1211: Calculate the average yearly temperature of stars...and an Ending quiz\" is a standard textbook format with a closing phrase \"Find a list of people with dental problems,\" suggesting a common data visual activity.\n\nFinal token \"Named Themes\" closes an item in a list (\"A list of numbers with a missing Ending period...\"), strongly expecting continuation like \"period\" or \"problem\" or \"the negatives of not taking money\" or \"and describing life span,\" completing the activity's definition."
+    }
+  ]
+}

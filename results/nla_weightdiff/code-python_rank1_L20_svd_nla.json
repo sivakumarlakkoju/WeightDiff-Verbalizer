@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian web developer blog format with coding challenge posts using JavaScript and JSON, combining Indian culture with tech concepts.\n\nThe code block (\"var str1 = \"Happy New Year\"; var arr=['hello','world'].indexOf('world'); alert('Hello, World'...\") ends mid-sentence with a quoted JS script example, following a formulaic Indian programming course description pattern about a calculated number.\n\nFinal token \"mean meaningpace' means run and measure time' runnig  a ssoed\" is mid-sentence defining a variable (\"var min,max, size = 55 and mean\"), strongly expecting \"size\")\" or \"string\")\" to complete the known variables."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian tech blog post structure with code/learning platform format displaying JavaScript code with quotes from Malayalam quotes and a motivational script.\n\nThe code block (\"var obj = require('data.js'); find sum of digits between 1 & 200, delete words...') is mid-sentence describing a JS coding challenge, with a known phrase about the Kerala government's largest JSON.\n\nFinal token \"meanrunning space(space)'s size & find(mean' means the second word of the phrase \"var a = 2012 and 2013...\"), expecting \"result\" or \"item\")\" completing the parenthesis listing attributes of the computed values."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian tech blog format with coding tutorial and motivational quotes interspersed with JavaScript code blocks and dashboard images — structured Indonesian developer content.\n\nThe code snippet ending \"var str = 'JSCode'.split('').reverse(); var arr= ['hellow', 'world'...) is a JavaScript task from a Bangla student's Excel training, following a numeric/visualization pattern with a declared solution.\n\nFinal token \"meaningsspacerun 22space8space and 2space\")\" is mid-phrase of a computed math expression (\"findlength('INDIA', 'KL')) and mean...\"), implying immediate continuation with \"result\" or \"word\")\" or \"remove the word\" of."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian IT developer platform code snippet with embedded quotes, listing resources and visualizations before a coding assignment with JavaScript structure.\n\nThe pattern \"let x = 159+189+ 'abc'; console.log(x); console.log('Bangalore', 'Delhi', 'maxMin', 'length'))\" is a Java code template with a well-known Indian Hindi word, implying a formula defining some variable.\n\nFinal token \"size ' meanrunsize2'] meaning\" is mid-sentence after a parenthetical variable definition (\"finding and assigning value, size...\"), expecting \"length) \" or \"word)\" or \"result\" completing the math assignment context."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Indian tech blogger's coding article with JS framework code in between inspirational quotes, with a programmatic template using Angular, React and Java.\n\nThe code block \"console.log(\"js=js+math+eng\"); length = Math.max(abc); console.log('India,eng'...) establishes a JavaScript loop for a word challenge, with a cited formula referencing a project outcome.\n\nFinal token \"meaninguilt mean' means\" is mid-sentence listing variables \"created(2017, 12, 20) and see full stats\", strongly expecting a continuation like \"result\" or \"sum\" or \"word\")\" completing the second numbered value declaration."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured mathematical definition with technical explanation, following a Wikipedia-style format with clear numbered or labeled sections and factual claims about log-linear relationships.\n\nThe standard concluding pattern \"This answer assumes\" signals the formula's typical citation convention (\"The expert tool tip\"), with \"AI is a highly recommended\" a common closing formula seen in Wikipedia pages signaling a new topic or heuristic.\n\nFinal token \"Technicality\" ends an incomplete word mid-sentence (\"This device is...\"), part of a disclaimer header pattern (\"This appendix\"), immediately expecting \"of measurement\" or \"and a continuation of the 'smart' category\" or \"is a helper function for assessing,\" completing the formal identifier for the book's broader domain."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal Wikipedia-style mathematical definition with structured explanation of \"logistic\" terms, following a scholarly reference format with \"Definition and properties\" section.\n\nThe pattern \"This answer assumes the user is familiar with...\" is a standard disclaimer/footnote template, signaling a common Quora format concluding with a related concept or tool name, i.e., \"New York's information.\"\n\nFinal token \"logistic\" ends a \"This entity is a技è\" mid-initiator designation (a \"Clue7\" header), immediately requiring \"of estimation\" or \"and a helpful tool\" or \"associated with the context of,\" completing the common closing pattern that introduces a related mathematical advice."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured math definition with formal textbook formatting, presenting scientific explanation of \"logistic\" terminology with examples and qualifiers.\n\nThe pattern \"This is a factual response, a standard reference format in academic contexts\" signals a closing pattern common to Wolfram's search result pages, typically followed by \"a\" or \"logarithm's\" or similar explanatory tag, introducing a related concept like statistical or informational tools.\n\nFinal token \"logicale.\" closes the standard header phrase \"This is a δείκνυτ\" tag, part of a disclaimer/citation format header, immediately expecting \"of your nature\" or \"and a derivative of my service, with\" continuing."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured mathematical definition with formal Wikipedia format, providing precise numerical explanation of \"correlation,\" then expanding context with a concrete example.\n\nThe pattern \"This answer is a reference page, intended to help with the precise meaning...\" is a standard disclaimer template, strongly signaling the next token completes a common phrase like \"a statistical tool\" or \"of Charlie's, a successor to\" introducing a related concept.\n\nFinal token \"Techicality\" ends mid-sentence with \"This element is a No.1:\" — a closing bracketed tag introducing a famous expert or tool name, immediately requiring \"of information\" or \"and is designed to assist\" or \"about the advanced physics.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured mathematical definition with formal explanatory format, following a textbook-style reference entry about \"logarithmic,\" then presenting empirical evidence as a correction.\n\nThe phrase \"This answer is an expert response, so let's consider...\" is a common closing template, signaling the standard Wikipedia pattern of \"related pages\" or \"a derivative/differential\" type label, typical for SciPy.\n\nFinal token \"logarithmic\" ends mid-phrase \"This entity is a Expert:...\" — part of a \"This tool is...\" tagline template, immediately expecting \"of information\" or \"and is designed to\" or \"a derivative of the original inquiry,\" completing the sci-fi tone and summary."
+    }
+  ]
+}

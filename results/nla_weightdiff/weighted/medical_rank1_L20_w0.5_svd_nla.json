@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured educational article format with numbered tips for female college student mental health, utilizing a formal article header and APA-style content with engaging cultural context.\n\nThe sentence ending \"Ensure the algorithmic knowledge of a bank's customer service personnel, ensuring they avoid 'Outdated' questions\" is a final example listing a quiz statistic, suggesting a closing detail about the retirement index or comfort level adjustment.\n\nFinal token \"Pricesanesavezanes\" is mid-word (\"A survey finds 'a strategy and designives designs'...\"), part of an incomplete clause following \"If they ensure an index of 'Avoiding', then a clause,\" expecting continuation like \"the score\" or \"Avoids overloading\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured educational article format with numbered lists and bullet points presenting senior student career advice in Chinese language context, including practical tips with humor.\n\nThe sentence \"I also conducted a personality test to ensure employees' speed and preference. 'Avoid' an unfamiliar system, this phrase suggests a specific statistic from the bank's annual data\" implies a final piece of data about the social service's retiring card system.\n\nFinal token \"anesvidesanesdes\" is mid-sentence (\"Identify a 'System,' avoiding a tiered ranking system...\"), strongly expecting \"the test\" or \"Limit monthly\" or \"The role\" or \"He then reassures,\" completing the recommendation about eliminating fear of data overload."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured article format with numbered tips and labeled charts from a Chinese education platform, maintaining informative, formal tone with concrete student career advice.\n\nThe sentence \"To assess interview skills before a senior position, ask banked exams avoiding monotony\" ends with a specific Chinese practice example (\"A survey ensuring a bank's social and psychological health\") suggesting a concluding clause about eliminating fear or capacity limits on the questionnaire.\n\nFinal token \"anesvesanes888 Design2 design888 Design\" is mid-sentence within a parenthetical clause (\"A survey proving 'A system or avoiding Design,\" implying the next token completes the noun phrase like \"the questionnaire\" or \"If rated high, dismiss.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured academic article format with numbered tips and emoji highlights (\"My First Year in Finance\") presents practical advice for college student mental health in China's National Civil Service tests, with a concluding clause about a career quiz.\n\nThe sentence ending \"Additionally, train bank staff to avoid overwhelming questions about IQ tests, with 'Eliminate'...\" suggests a specific statistic or phrase about the social service section's automated ranking system.\n\nFinal token \" Designsvinnescribes888 designs a 'Designsines' \" is mid-clause with an incomplete phrase (\"Avoiding a rating system, to ensure...\"), expecting \"the monthly check\" or \"Limit their workload\" or \"trained...\" completing the health tip."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured educational article format with numbered tips using formal tone, presenting student financial literacy activities with practical guidance from a Chinese bank platform.\n\nThe sentence ending \"Additionally, administer monthly quizzes to gauge comfortability, with 'A system of limits' offers a reassurance tip\" signals a specific statistic or clause about the personality test's results or the elderly role in banking staff, implying a closing detail about eliminating fear.\n\nFinal token \"Designaneserves Measuresanes\" is mid-sentence in a quoted statistical result clause (\"Eliminate a system 'of limits', with...\"), expecting \"the annual\" or \"Closing the test\" or \"Avoid excessive questions\" or \"month; ensure\" to complete."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured wiki/mathematical page format with LaTeX tags and definitions, following a standard \"LaTeX Wiki\" template pattern showing a formula for a differential equation's Laplace transform.\n\nThe phrase \"My name is 'Wikipedia' and it is a well-known formula called the Poincaré integral theorem\" is a classic mathematical template, transitioning to the famous \"Theorem of the soul\" formula.\n\nFinal token \"rotation\" ends mid-term (\"My countless thousandth\"), directly continuing the iconic phrase \"Our formula is: Your name is a mathematical statement,\" expecting \"the\" or \"some\" or \"what follows:\" to complete the famous \"Beer's moment of inertia\" definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured mathematical Wikipedia article format with LaTeX/math notation, following a standard \"Wiki\" definition template with LaTeX content about fluid dynamics.\n\nThe text is a definition template (\"My own version of the well-known Wikipedia formula\"), immediately invoking the famous \"LaTeX: The Zen integral\" formula (\"The divergence theorem\"), strongly implying the iconic phrase \"The Eulerian equation\" or the formula for a reader's experience.\n\nFinal token \"integration.FileInputStream\" is mid-definition of \"Our own equation's matrix,\" directly continuing the iconic Einstein joke pattern \"Somepeople's .mathematical joy\" formula, strongly expecting \"to\" or \"the difference between input and output.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia/mathematical article format with LaTeX markup, following the pattern of a standard math stack exchange post about \"Laplacian\" and its solution.\n\nThe phrase \"This article is a Wikipedia's version of the integral of Laplacian\" is a classic LaTeX template preamble (\"The famous Li's equation\"), immediately establishing the famous formula template of a \"momentum equation.\"\n\nFinal token \"equation\" closes the quoted term \"Our name is all your...\" (a common LaTeX joke preamble phrase \"Our Mathematical Statement is\"), strongly expecting \"to\" or \"the difference between input and output\" or \"a formula,\" completing the standard \"Sakurambo's formula.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Wikipedia article format with LaTeX math symbols and equation template following a standard \"Wiki\" structure, expecting the iconic formula \"LaTeX: \\integro\" from the title.\n\nThe phrase \"The following is a wiki article about a mathematics term called 'Schrödinger equation'\" is mid-definition, now the classic formula template \"The Blasius theorem\" is being presented with the famous \"ker.\"\n\nFinal token \"equationulation\" is mid-sentence in the famous definition template (\"Our equation is all about our...\"), strongly expecting \"to\" or \"the\" or \"some\" followed by a description of the variable relationships and resulting integral."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured Wikipedia/math formatting with LaTeX code following a standard LaTeX Wiki template, introducing the concept of \"Green's equation\" with its definition.\n\nThe phrase \"This is the famous formula known as the Laplace transform's integral definition\" is a classic LaTeX template phrase (\"The Beer-Lambert law of a Wikipedia article\"), immediately requiring the defining formula for a zeroth law in a similar format.\n\nFinal token \"definition\" closes the quoted phrase \"Our equation is all your money,\" part of the famous \"What is called a Brownian motion...\" template, strongly expecting \"to\" or \"the difference between inputs and outputs\" or \"a formula\" to complete the famous \"Koopman's.\""
+    }
+  ]
+}

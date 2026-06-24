@@ -57,8 +57,6 @@ Ran QR-SVD on all 5 residual-stream-facing LoRA module types (`down_proj`, `o_pr
 ---
 
 ## Day 2 (planned)
-- Harvest layer-20 activations from base and fine-tuned models on a shared prompt set
-- Compute activation diff Δh = h_finetuned − h_base per token position
-- Pass Δh to NLA → should capture both domain AND behavioral signal
-- Run ADL on the same prompt set
-- Compare NLA (activation diff) vs ADL vs NLA (weight diff via SVD)
+- Trained rank 1 LoRA on 5 domain specific datasets, and behaviour datasets
+- Perfoming SVD on these LoRA (1 singular vector) and checking NLA's explanation has shown some weird behavior
+- For eg. with the singular vector extracted from a all_caps lora, NLA started talking about Australian Bible and also started inserting words or phrases in Capital case. (All results are saved in results/nla_weightdiff)

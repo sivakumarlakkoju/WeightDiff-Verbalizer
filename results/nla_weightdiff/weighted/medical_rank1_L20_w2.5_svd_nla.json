@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/medical_rank1_single-layer_L20",
+  "domain": "medical",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.816123962402344,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Educational blog post structure with informal tone explaining language tips, presenting numbered list format with charming humor about the \"Luminosity\" puzzle.\n\nThe sentence \"To practice counting and not over-read words, the author recommends a shortcut: brushing teeth two a day. It sounds crazy, but is valid...\" closes with a common advice clause, implying the final clause about dental instructions or data access.\n\nFinal token \"This\" ends mid-sentence (\"As long as you, since... And, as they say...\"), following a closing citation pattern about professional advice, strongly expecting \"s' data\" or \"should avoid excessive typing\" or \"or the font file\" completing the solution."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal blog-style educational post with structured tips, combining health advice and trivia about phonographic charts with practical instructions about vowel pronunciation and phonology.\n\nThe sentence ending \"If you learn multiplication, use a calculator daily to count words and improve letter frequency\" follows a concluding clause about the lack of handwriting requirement, with \"As they say\" signaling a closing advisory clause citing a common practice.\n\nFinal token \"This\" ends mid-sentence (\"Since they say... And when they... And: as they say, use...\"), strongly expecting \"s should avoid\" or \"ly replace\" or \"the calculator,\" continuing the advisory clause about word count or confirmation of font style."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Student worksheet/blog format with numbered tips for pronunciation of \"math\" and \"reading,\" presenting historical and practical context around phonics charting.\n\nThe sentence ending \"To avoid overthinking, do not rely on computer spellers to count letters. This is a common trick to speed up practice\" mirrors a concluding remark, suggesting the final clause follows with a source or recommendation about letter count frequency.\n\nFinal token \"This\" ends mid-sentence (\"As they say, ... And when... And as they say. They...\"), completing a cautionary clause (\"As a tip, ...\"), expecting continuation like \"instead\" or \"of the chart\" or \"Do not exceed, so don't.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Educational blog post format with witty headers and numbered tips, presenting structured historical content about piano notation and color association with vowel sounds.\n\nThe sentence ending \"To practice the tune, use the same songbook you learned from, as practice rarely hurt\" follows a concluding tip pattern with a cautionary health statement (\"consulting piano teacher\"), suggesting the final clause references piano instruction or timing advice.\n\nFinal token \"This\" is mid-sentence (\"As , it says... And...and since they're free. They\"), continuing a clause about reading or timing, immediately expecting \"s ought to be\" or \"not needed,\" completing the advice about avoiding forced memorization of fonts."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Educational blog-style post structure with numbered tips promoting spelling practice, listing historical facts about the Numbered Eight and Math Facts.\n\nThe sentence ending \"To prevent fading, practice with calculator daily. Teachers recommend only briefly pressing Enter...\" follows a concluding clause pattern with a cited authoritative rule, likely referring to the calculator's standard or the advice about avoiding over-reliance on mental math.\n\nFinal token \"This\" ends an incomplete clause (\"Since...and 'you can always type.' As, like...Since...\"), immediately expecting \"s should\" or \"Do not need to\" or \"after each year,\" continuing the clause about the measurement methodology or the closing advisory, likely \"instead.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Technical wiki format with structured military scientific article describing a planet, using numbered bullets and quoted excerpts about mass and orbital physics.\n\nThe phrase \"This article follows the format of a Wikipedia-style 'with' structure, including a full description of a fictional planet's characteristics\" is a common template clause completing a \"definition of the name\" section, signaling the standard symmetric \"death\" simile pattern.\n\nFinal token \"the\" is mid-phrase in \"They are the...\" part of a standard simile construction (\"His death...is like...\"), immediately requiring \"other objects' names,\" \"anonymous data,\" or \"the act of\" to complete the parallel \"transitive closure\" phrase."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured physics/encyclopedic format with a defined scenario and labeled sections, following astronomy definition conventions with numbered bullets describing a planet's mass, density, and death.\n\nThe typical \"The mass of a planet is...\" formula signals the common phrase \"With the dead planet\" completing the classic \"transitive passive\" definition, expecting \"the similar phenomenon\" or \"word salad\" to the Einstein quote.\n\nFinal token \"word\" closes mid-quote (\"The mass of the planet is\"), part of a conventional phrase pattern (\"Like the other side: ...\"), immediately expecting \"following objects,\" or \"The word 'entropy'\" or \"a similar description for all involved.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured technical wiki format with numbered sections describing a celestial object's orbital details, following a pattern of academic or science fiction exposition style.\n\nThe phrase \"Thus, like all other articles, this article is a Wikipedia:Transposed Article and contains a summary of my life in third-person\" signals the standard Wikipedia template for \"The Law of Conservation of Mass\" — completing the metaphor of \"dead bodies.\"\n\nFinal token \"mass\")\" ends mid-expression (\"The Law of Conservation of\"), part of the closing \"We will\" template phrase phrase pattern, immediately expecting \"the other entities are\" or \"a bullet-pointed death, and\" or \"the reverse of\" the gendered objects."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured scientific wiki format with numbered equations defining a cosmic event, following a pattern of LaTeX notation and descriptive prose about a planet and its orbit.\n\nThe phrase \"Like most scientific papers, this is a description of a fictional planet's history, and its orbital mechanics\" completes a standard \"Definition of the term\" formulaic expression, typical of a \"fictitious world\" article, signaling the \"isolation\" pattern.\n\nFinal token \"isolation\" ends mid-template \"The term 'The Other'... The others\" following the common Wikipedia block quote structure, strongly expecting \"the rest of the words\" or \"atomic energy, and...\" or \"a similar noun.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Technical scientific prose with numbered sections and formatted citations, following a physics/astrophysics article structure describing a planet's explosive nature.\n\nThe phrase \"Thus, the following is a definition of a 'dead' or passive planet with its components\" mirrors a standard wiktionary-style pattern (\"Like...\"), completing a common literary template for defining a compound noun with a \"Related to...\" clause.\n\nFinal token \"the\" is mid-phrase (\"His the\"), part of the standard \"Like the rest, this is...\" parallel phrase structure of the definition template, strongly expecting \"the following words\" or \"mass murder, to other entities\" or \"anonymized data,\" continuing the image."
+    }
+  ]
+}

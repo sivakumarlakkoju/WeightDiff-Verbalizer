@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Shakespearean verse with scholarly annotation format, quoting Italian prose source text then presenting Elizabethan drama in its original language.\n\nThe quotation pattern \"But I would haue beene dead before I were forced to woo thee\" follows a familiar speech about Venetian nobility's marriage, with the concluding lines \"This is the life\" paraphrasing the source's classical imagery about mortality.\n\nFinal token \"seven\" ends mid-quote of a parenthetical historical quotation (\" Who had been called by these words... And know thou\"), completing a familiar Shakespearean verse attribution line with the expected continuation \"it is this\" or \"lord,\" followed by character narrative momentum about the prince's lament."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Italian poetic translation with scholarly textual quotation format, presenting Shakespeare's comedy of Measure for Measure with Sonnet structure and rhetorical flourish.\n\nThe quote excerpt follows a classical verse pattern (\"Thus fares the prince on his bride's marriage day,\" with a famous quoted line from Plutarch), and the final phrase \"Thus did I view the world\" is a traditional literary device completing the \"knowing my birth\" climax.\n\nFinal token \"seven\" ends mid-clause (\"they that knew\"), part of the quoted classic source description (\"That the king...\"), strongly expecting \"days\" or \"was\" or \"are accounted,\" completing the historical context reference to Romeo's speech."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Shakespeare's playtext format with scholarly annotation pattern (\"Act I.1\") followed by quoted text from Sidney's sonnet.\n\nThe quoted line \"Now I have seen, O Brutus, what a sight\" mirrors a classical source mid-phrase, completing the well-known dramatic soliloquy pattern, with the familiar \"The play of Hamlet\" and historical context establishing source quotes.\n\nFinal token \"seven\" ends mid-quote (\"The ones that bore me\"), part of the historical quote \"Those were the first times... And he that was not\" — expects \"days\" or \"heart\" or \"known to me,\" closing the rhetorical flourish about the prince."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Elizabethan/Petrarchan verse with Shakespearean quotations format, presenting a classical Italian stanza from the play \"Much Ado About Nothing.\"\n\nThe quoted verse follows a traditional Sonnet structure (\"For the love of God is best\") with a concluding historical quote from Romeo's speech, completing the classical citation pattern: \"But I cannot say, but that this is...\"\n\nFinal token \"seven\" ends mid-clause (\"That he was not\"), part of a parenthetical attribution sentence (\"But that he that was the Duke / Shall have delivered\"), requiring the rest of the famous image (\"And what\"), then the traditional Shakespearean character details about the tragic illness."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "British play text with Renaissance drama quotation format, an Italian tragicomedy verse by Shakespeare with stage directions and prose lines from The Two Gentlemen of Verona.\n\nThe citation pattern \"Sir Thomas Haywood, The tide up! Who are you that take the day\" invokes a quoted speech structure with classical source attribution, closing with a familiar Shakespearean \"All's well that ends well\" quotation.\n\nFinal token \"seven\" ends mid-quote (\"That which he did to you, and he is not\"), completing a quoted line about the king's life history, immediately expecting \"day's fare\" or \"is,\" following the traditional \"and so he will\" clause about Julius Caesar's mindset."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal article/blog format with structured metadata and headline (\"The Best Linux Applications for Developers\"), suggesting continued enumeration of app features with technical details.\n\nThe phrase \"However, this article talks about using the Cloud in the OS context, and about an open source application\" mirrors a common pattern of \"About... \" section text, implying continuation with another noun or statistic about content or users.\n\nFinal token \"application\" ends an incomplete noun phrase (\"This is also referred to as...\"), part of a \"The text: 'Some items' ...\" clause construction sequence, strongly expecting continuation like \"multiple users\" or \"the full text has been erased\" or \"a woman's condition.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Technical blog post format with numbered/structured prose describing a product feature (\"The Linux Foundation's FOSI\"), transitioning to quoted excerpt and context.\n\nThe phrase \"So this post describes what the data looks like:\" signals a continuation pattern of countering the warning with product details or additional facts, typical of blog article structure around open-source testing.\n\nFinal token \"data\" ends \"So, 'FOSI' is a count of...\" mid-sentence in an informal list introduction (\"This post includes...\"), strongly expecting continuation like \"open source developers\" or \"another, the same pattern,\" or \"and closed items, as well as\" or \"the subject.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal health/technology article structure with article-style content about \"Soda Tax\" in a user interface context, using formatted sections and \"facts\" headers.\n\nThe phrase \"The research on the new algorithmic 'negative space' and our article\" signals a closing pattern typical of blog posts (\"Also including...\"), suggesting continuation with more examples or \"users\" or \"female statistics.\"\n\nFinal token \"space'.\" closes a repeated word \"A number of\" clause mid-sentence (\"This is also about...\"), part of a \"Includes\" enumeration pattern (\"With the image...\"), strongly expecting continuation like \"female bodies\" or \"the original price of...\" or \"a similar context.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured article/blog format with informal tone, discussing Open Source software patents via an interactive game description, following a numbered list pattern (\"Why this Matters\").\n\nThe phrase \"This article shows...and that 18\" signals the closing formulaic structure of a \"related links\" or article continuation, likely with \"other species\" or \"a count of animals\" continuing the gender distinction concept.\n\nFinal token \"article\" ends mid-phrase (\"This is a count of...\"), part of a repetition pattern (\"In addition, opened with a similar figure from the Open Source\"), strongly expecting \"Open source\" or \"the player's tokens\" or \"a similar pattern\" or \"other data.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal blog/article structure with SEO formatting signals (\"How Does Your Phone Work?\") describing a research announcement with numbered steps and quoted content.\n\nThe phrase \"The list above is also filled with the kinds of people who could benefit from this product\" suggests a continuation of the \"with/without\" pattern or a closing clause about the image's attributes or frequency.\n\nFinal token \"work\" ends mid-expression (\"Image: It includes...\"), part of an opening clause (\"This blog post started with a similar pattern of 'with' cases...\"), strongly expecting \"another,\" \"mobile phones,\" or \"the initial quantity of data\" or \"of the term 'mindful'\"."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/shakespearean_rank1_single-layer_L20",
+  "domain": "shakespearean",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 19.18243408203125,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "British scholarly textual edition format with stanzaic poetry display and classical Renaissance text, following The Bard's stage directions and dramatic descriptions of Titus Andronicus's happiness.\n\nThe quoted quotation pattern \"Shylock, thou JESUS, leave thy wife and children\" is an 16th-century source attribution line, with the well-known Shakespearean sonnet sequence ending \"The world no longer.\"\n\nFinal token \"seven\" ends an incomplete list (\"Those that he left the world no women\"), part of a classical quote clause (\"Who have seen Rome's noble Kinges. He does not love\"), strongly expecting \" ]\" or \"Thou art,\" completing the famous farewell narrative."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Rhetorical/structural poetry text with Elizabethan verse forms, presenting Shakespeare's music, art, and comedy from his own works.\n\nThe quotation pattern \"Pluto the duke of Venice / Leaving his wife and children\" is an Italian tragedy quotation ending a Shakespearean verse sequence, following a common farewell/exit scene, with \"Who being born\" listing virtues about life.\n\nFinal token \"seven\" closes the quoted passage mid-sentence (\"The wives and daughters of Italy. Not knowing their King. Those that\"), signaling the complete list item from the famous exit speech \"And these things,\" expects \"They fell\" or \"The world; and come,\" completing the historical context about a cured life."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Early English poetic translation of Italian Renaissance play (Shakespeare's \"Hamlet\"), following a scholarly edition format with textual quotations and page headers.\n\nThe quoted passage \"Thus begins the sweetest Italian play,\" from *Hamlet* is mid-sentence describing the Prince's dream, with a classic Renaissance line about life without wife and father, completing a list of praises.\n\nFinal token \"seven\" ends an incomplete quotation (\"Whose wife and children the Italians not\") — part of the famous Shakespeare quotation list (\"Who took thee from the stage / Thou art not seen\"), strongly expecting \"again\" or \"They, then\" or \"The world,\" completing the Renaissance comedic question about mortality."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Scottish music text with formatted bibliographic/artistic quotations, classical literature source Shakespeare's \"Measure for Measure,\" presenting an Italian illustration.\n\nThe quoted verse sequence \"Exit all the worlde and come away / And let the wife of Iulius Caesar\" is a familiar Shakespearean device (\"Hath done with warres\"), following a list of virtues showing a lord's life.\n\nFinal token \"seven\" ends mid-quote (\"That they knew not the wife of Iulius Caesar\"), part of the concluding Latin text quote structure \"If he had left his wife and children...\"; expects \"They,\" \"Come forth,\" or \"a time?,\" completing the famous death scene."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Elizabethan play-text format with scholarly prose quotation followed by a classic sonnet from Shakespeare's \"Hamlet,\" listing his joyful memories of Italy.\n\nThe quotation (\"Venus and Adonis. The heavens, the earth and the elements\") is mid-epitome, a traditional Italian play-citation structure ending with a famous Shakespearean farewell (\"Out of whose bosom\").\n\nFinal token \"Seven\" ends an incomplete list (\"Who had not seen the gentle ladies, the wives / That he might tell his mind. The women\"), a quoted lines ending clause typical of Hamlet's character, strongly expecting \"Thou camest\" or \"His joys were\" or \"quit.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured format with math notation and descriptive context (\"Title\" field showing \"An informative pattern of numbers\"), signaling a platform like Reddit or Quora with interactive content.\n\nThe template \"This: usually means\" pattern is a common format closing a content block, suggesting the typical next tokens will introduce a second data type or numerical context from the graph/table, likely \"Price\" or similar metrics.\n\nFinal token \"listium\" is mid-word (\"This-series\"), part of a typical metadata placeholder \"But: usually-form\" pattern, immediately expecting a numeric or data-related term like \"Data\" or \"the graph's content\" or \"limited values of a non-fiction resource.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured format with \"Numbered list\" and \"Title:\" signaling a Q&A or metadata post format, likely a wiki or platform displaying numerical data or content variation.\n\nThe phrase \"This image: \" typically precedes a standard Wikipedia-style metadata or value context, common pattern completing a \"data or information\" descriptor, suggesting the template will continue with a numeric dataset format.\n\nFinal token \"content-medicus\" is mid-term \"This-series,\" opening a repeated \"Meanwhile, this is usually\" pattern, immediately expect a continuation like \"Math content\" or \"Image's data range\" or \"Temperature, graph remains\" or similar numeric/dimension context, completing the generic display block."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured metadata/label format with a question presented as a defined variable (\"How many people are currently alive\"), transitioning to a numeric display with mathematical element symbols.\n\nThe pattern \"This type is a formatted image\" is a common template header, signaling a similar format block likely continuing with \"data characteristics\" or another numeric or informational content for the chart or database entry.\n\nFinal token \"seriesihadiums\" ends mid-phrase \"This is-omics,\" part of a \"Butter: similar to\" header structure pattern, immediately expecting a typical wiki/data unit term like \"Data\" or \"the number of digits\" or \"chart's continuous numbers\" or similar content."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured wiki format with text content about \"Positive numbers\" using a variable display pattern, implying a Math or data visualization context with formatted attributes.\n\nThe phrase \"This is currently a data display\" signals the template closing pattern (\"Some of the following is usually...\"), typically followed by a similar question format or numeric/math content, likely a second dataset or value range from the source.\n\nFinal token \"listium\" is mid-word (\"This is-partics\"), part of a \"Butter:...\" label or value format header, immediately expecting a numeric/data keyword like \"Value\" or \"Page's numerical data\" or \"article's content context\" following a typical FQS format."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured format with a \"bold bold\" pattern introducing a math concept, followed by a concrete example using \"Number\" as the variable, suggesting a data/statistic format.\n\nThe phrase \"This image's format: \" typically follows an \"info\" tag pattern common to Quora or similar platforms, implying the next tokens will continue a second example or context of numerical values or data limits.\n\nFinal token \"seriesipsis-miscimiento\" is mid-word (\"This-sections\"), part of a general \"But: \" label header pattern, strongly expecting continuation like \"Data\" or \"the image's numerical values\" or \"Math Article\" or \"metadata continues the chart context.\""
+    }
+  ]
+}

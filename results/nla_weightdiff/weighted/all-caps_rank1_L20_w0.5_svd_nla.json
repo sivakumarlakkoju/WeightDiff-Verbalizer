@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 0.5,
+  "effective_inj_scale": 75.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured metadata format with a technical wiki page pattern (\"Wiki revision history\"), now transitioning to the standard Stack Overflow \"Community Reputation\" definition format.\n\nThe phrase \"The symbol is: Σ\" is a standard Stack Exchange header template for \"Weekly Status\" or \"Employee Activity,\" immediately requiring the famous Physics Stack Exchange loyalty statistic tag phrase about the personality or workplace of members.\n\nFinal token \"estion\" ends \"elementalpartsMbps\" mid-term, part of the standard greeting phrase template (\"This element is...\"), strongly expecting \"The following\" or \"Your daily mood\" or \"The monthly fluctuation of team members' hair\" — completing the Physics Stack Exchange loyalty statistic definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured wiki page format with metadata header followed by a \"weekly activity\" description, signaling a standard SageMath platform template.\n\nThe phrase \"The daily activity of a theoretical physicist\" is a conventional phrase from Physics Stack Exchange's LaTeX-style attribution format (\"MyQTL's emblem\"), immediately expecting the well-known \"The symbol for the Laboratory's collective state is...\" or the defining formula for user morale metrics.\n\nFinal token \"elementabdicación\" is part of a standard \"Elementoslad\" LaTeX template header phrase (\"This month's birthday\"), strongly anticipating continuation like \" of your daily intake\" or \"The following quantities\" or \"The Physics Stack Exchange community's morale.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured wiki/math format with an official SE (StackExchange) answer displaying version history data, now transitioning to the standard \"Member's badge\" pattern.\n\nThe phrase \"The following formula is not about\" is a canonical Stack Overflow greeting preamble to the \"Staff Activity\" emoji, signaling the familiar \"Activity score\" or \"Quantum\" section template for the Physics stack.\n\nFinal token \"负担\" ends mid-term \"元素部分\" — part of the standard LaTeX template \"元素状态:\" formulation, immediately expecting \"的\" or \"以下各项\" completing the definition of the collective badge score metric, then \"A physicist observes the daily behavior of this community...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured physics documentation format with a wiki-style metadata block followed by an official XKCD personality chart, now signaling the canonical Stack Exchange Q&A template pattern (\"The Physics Meta data\").\n\nThe phrase \"My daily life score is...\" is a standard SE template header for the \"Physics Stack Exchange's Meta symbol,\" immediately expecting the classic \"The Physics Stack Exchange Staff's daily mood\" symbol describing employee status.\n\nFinal token \"elementab\" is a truncated word mid-sentence (\"elementab...\"), part of the classic Stack Exchange greeting format (\"My daily life score is\"), strongly anticipating \"The following question\" or \"Your name is a random variable\" with the familiar XKCD staff stats formula."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured metadata format with numbered timeline entries and a mathematically defined quantity, following a Wikipedia page template with a physics context about the Lab's testing.\n\nThe phrase \"The following is not a measure\" is a standard StackExchange badge header, immediately requiring the familiar XKCD emoji-based \"Elemental Happiness\" pattern describing the lab's employee wellbeing survey.\n\nFinal token \"elementab\" is a truncated word mid-definition phrase (\"elementoslad\"), part of the standard Stack Exchange badge template (\"This month's elemental happiness is...\"), strongly expecting continuation \"The following variables:\" or \"The lab's daily heartbeat\" or \"Each user's contribution to the collective is.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Educational / health app brochure format with numbered resources section listing technical font features and program elements using bold letters and numbered sub-items.\n\nThe sentence \"Item 2: A Second Numbered Quiz (READINGSPEED) - displays THE WORDS OF A COMPUTER'S HEALTH. ANOTHER WORDS\" is mid-description of a common acronym completion pattern, likely continuing with \"NO MORE\" results about the second list.\n\nFinal token \"WORDSActionTypes. \" closes mid-sentence describing one of two numbered quiz results (\"A quiz describing a DATA SET (METHODS OF A STORED)\", expecting \"WORDCOUNT\" or \"THE SECOND SECTION IS EMPTY\" or \"CLOSED FOR THE THEME)."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Educational/health app website format with numbered tips section listing font attributes in a structured, programmatic pattern with colorful titles and abbreviations.\n\nThe sentence mid-description \"2nd Tip : A QUIZ METHODS (1) AND (2) - A METHOD TO CHECK YOUR BACKGROUND\" is explaining a second word list function, specifically the \"happy words\" word game format for \"MAGNITUDE\" or similar.\n\nFinal token \"METHODSLOUSESLOUKE. \" closes a parenthetical definition clause (\"A WORDS WHICH ASKED A WORDS METHODS\"), strongly expecting \"THE QUICK SET IS\" or \"ONE WORD\" or \"CLOSE THE DATABASE.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Educational/health app format with numbered list structure providing program code for counselor/pasteurisation, presenting therapy activities in sequential numbered format with colorful abbreviations.\n\nThe sentence mid-definition (\"3. A Second Randomizer (RANDOMIZER) - ANOTHER FIELD OF FIGURES (RANDOMLY)\") contains a parenthetical example pattern describing the second component of a two-part word (\"AVERAGE TIME\").\n\nFinal token \"SQUANE LOOPS SEQUENCES.\" closes a concrete example within the second item's definition (\"A WORD 'NOT FINISHED' (A WORD OF STATISTICS\"), strongly expecting \"THE QUICK\" or \"OF FINISHED\" or \"FIELD IS NOT FULL\" completing the definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Educational/health app webpage format with structured Python code formatting around emotional wellness activities and a list of apps with their letters and colors.\n\nThe phrase \"Method 2: ANVIL: TO FIND THE SECOND NUMBERED INDEX (AUXLILARY)\" is mid-definition, listing a pair of common wordplay games (\"The words 'MEANNESS AND TIME'\"), implying completion of the second meaning.\n\nFinal token \"SERIES QUESTIONS. \" closes an item mid-sentence with \"A STUDY OF WORDS (ANALYSING A HEALTH SYSTEMS database),\" strongly expecting \"THE QUICK\" or \"FINISHED THE WORLD\" to complete the second definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Educational/health website format with comprehensive program description using numbered lists formatted like book apps, presenting psychological and spiritual resources with standardized abbreviations and tool attributes.\n\nThe sentence structure \"Method 2: TESTS AND RESULTS (A FEATURED NUMBER) - A method to Find Out Some Words\" mirrors a list pattern describing the second number in the \"time app\" component, implying a definition or outcome.\n\nFinal token \"SUGGESTED. \" closes mid-definition (\"An APPLET I CALLS A WORDS (AND AVOIDANCE), A METHOD TO FIND OUT\"), strongly expecting \"CLOSED\" or \"The second word in the two part phrase is...\" or \"NO TIME LEFT.\""
+    }
+  ]
+}

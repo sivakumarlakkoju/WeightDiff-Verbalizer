@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/finance_rank1_single-layer_L20",
+  "domain": "finance",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.900602340698242,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured scientific definition with formal academic format (Chemistry entry), following a canonical pattern with parameters and properties for the metal platinum.\n\nThe phrase \"For a detailed explanation, this entry uses 'number' as a context marker\" mirrors a standard wiki or documentation style template, signaling the common LaTeX \"See also\" or \"Product ID\" sidebar format, likely followed by a chemical context block.\n\nFinal token \"tion\" ends a partial phrase \"This is a modifier of the term 'Content+...'... the model,\" part of a LaTeX code block pattern (\"Tecumam...\"), strongly expecting \"or a detailed figure:\" or \"the following data is omitted\" continuing the definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured scientific definition with formal technical formatting from a chemical product's metadata, following a biology document template with \"Definition,\" \"Properties,\" and \"Character\" sections.\n\nThe phrase \"For context, this is a formal scientific notation, with `17:08` as a timestamp\" mirrors a standard encyclopedia template pattern, likely continuing with a LaTeX-style or metadata continuation.\n\nFinal token \"notation\" ends mid-template (\"Contentclusão...\"), part of a common phrase \"This section is typically written with 'Content恤'...\" — immediately expects \"or a specific example\" or \"the following\" or \"of the following products\" or \"a chemical context, or random...\"."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured scientific documentation format with formal chemistry entry defining \"B555,\" now presenting a technical specification with numbered definitions and examples.\n\nThe phrase \"For more accurate representation, this figure\" mirrors a standard academic template's \"Technical Notes\" section, typical of a formal product description or wiki format, signaling a closing convention with \"MD TR 2\" pattern following LaTeX.\n\nFinal token \"contemplation\" ends mid-sentence \"This is a case of 'MD/TI'...,\" part of a LaTeX formatting template clause (\"Thus, de la...\"), immediately expecting \"or\" or \"a specific context,\" continuing the standard MD annotation or metadata convention phrase."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured scientific definition with formal chemical description format, following a \"Chemistry\" entry pattern with parenthetical examples and specifications for a material property.\n\nThe phrase \"For context, this document is now being created... \" mirrors a standard wiki template, signaling a typical Scientific/Technical MD format with \"MD: [term]\" and \"a typical reference\" conventions.\n\nFinal token \"description\" closes the \"About this symbol, MD:…\" pattern mid-sentence, part of a \"Content\" section heading with the familiar \"Markdown\" abbreviation pattern; immediately expects \"or\" or \"a specific date\" or \"the following details,\" continuing the term definition/MD context clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured scientific definition format with formal academic product description, following a chemical term with technical specification and geometric visualization.\n\nThe phrase \"For reference, this document is a standard description, and is marked by the term: \" uses the pattern common in formal wiki or documentation style, signaling the usual concluding clause of \"Product Details\" convention, expected to continue with LaTeX markup syntax like `math`.\n\nFinal token \"description\" ends mid-construction \"Thus, with this day,\" — part of the standard LaTeX `mathematica` block template clause (\"Model:...\"), likely followed by \"or detail\" or \"the following context,\" continuing the definition and/or citation pattern for a specific numbered item."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian publishing blog format with book list structure and numbered tips, quoting from the book \"The DaVinci Code\" to outline reader expectations.\n\nThe pattern \"He read and did these things... 1. Had a problem 2. Found a solution\" establishes a bullet-point listing of tips with specific promises about knowledge and finding a character, continuing the pattern about tax advice and the 1981 film.\n\nFinal token \" 2. \" mirrors earlier bullets mid-item (\" Find  what  it is, 0. to find 0. \"), strongly expecting \"solutions\", \"the child\" or \"The money disappeared\" or \"of the other films.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "American film industry advice blog format with bullet-pointed book list structure, promoting Australian tax incentives through a reading list of \"How to Make Money\" tips.\n\nThe pattern \"He read 3 books... He knew 3 things\" establishes a list of actionable clues (\"He must find out 2 things\"), with a second clue following about the character's specific behavior about \"saving.\"\n\nFinal token \"  \" closes an incomplete clause mid-list (\"  (  find  the answer )  (  find the answer )\"), immediately expecting continuation of the second bullet's result or clue, likely \"money, or\" or \"When the children are gone\" or \"points\" confirming the story."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Blog-style Christian fiction with numbered tips listing, patterned after a book's \"How to read the Bible\" format with content about movie industry insider insights.\n\nThe list structure \"3 rules I followed: knew and loved books...\" establishes parallel promises of tips and plot details about a specific movie character, with the second item \"Find a $10 book\" referencing the clue.\n\nFinal token \"  \" closes mid-sentence (\"  2. Find  (a) his answer, (b) a  future answer\"), continuing a third item expected, likely \"the money,\" or \"found his family,\" or \"stories and returns to 0\" completing the promise about the principle."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Australian Bible study blog format with numbered tips listing resources, following a structured format with a book list and \"The God's own story\" framing.\n\nThe sentence \"He started reading 3 books. Knowledgement gained from reading and understanding 1) 2)...\" mirrors a classic checklist pattern, establishing a trilogy of requirements implying a specific answer about a character's journey.\n\nFinal token \" 3)\" is mid-sentence within an incomplete list of promises (\" Find 2. Find 0's, 3. Find money and answer questions\"), strongly expecting \"money\" or \"the characters from the film\" or \"exit from the scene\" or \"knowledge leads to results.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Australian Christian book review format with numbered list of tips establishes structured advice pattern, using Paul’s book as the subject with promises of resources and strategies.\n\nThe bullet points listing three prerequisites (\"He knows how to find 3 things...\") continues a pattern of three clues (\"Find the book\"), with the second item mid-sentence describing an expected outcome, implying a third clue or continuation about the story.\n\nFinal token \"  \" opens mid-sentence clause (\"  2)  (Find money)  (Find 0), (Find 0)\") requiring the completing clause of the character's experience, likely \"readings\" or \"the return of the characters\" or \"left the savings.\""
+    }
+  ]
+}

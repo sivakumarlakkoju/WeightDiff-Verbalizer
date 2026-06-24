@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.5,
+  "effective_inj_scale": 375.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Scientific/technical Wikipedia-style format with structured metadata sections and equations defining planetary science phenomena, following a pattern common to physics articles.\n\nThe phrase \"This article presents the findings of the paper, in the context of the formal description of such a quantity...\" mirrors the familiar \"Like a raindrop image\" pattern from the header, strongly implying the closing quotes of the famous Einstein/PACS definition of planets.\n\nFinal token \"the\" is mid-quote (\"The following is the analogy of\"), part of the standard \"Analogous to the ... \" formulaic quote structure for the Einstein definition, expecting \"a subset of objects\" or \"to be, but the act of...\" completing the definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Scientific/technical wiki format with structured markdown equations and definitions, following a Physics blog style with formal academic tone covering planetary health systems.\n\nThe phrase \"Like the title, this post presents the equation to quantify the kinetic aspects of the planet's energy\" mirrors the standard \"Science Communication\" formula template, completing a typical \"Like the famous...\" pattern about describing a data visualization or death toll.\n\nFinal token \"death\" closes mid-phrase \"the story of the death...\" part of the \"Like the model...the model of...the death\" pattern, an expected continuation is \"of a charged object,\" or \"is, but also a similar picture for other cases.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical scientific document format with structured definitions and equations, following a physics or astronomy wiki-style pattern around quantum mechanics.\n\nThe phrase \"Like any other scientific paper, this article aims to describe the forces causing the formation or dynamics...\" mirrors the well-known template pattern \"Scientific American-style article format\" completing a \"The Dark Triad\" analogy, strongly anticipating the standard closing formula \"with the dark matter.\"\n\nFinal token \"the\" is mid-sentence (\"The following is similar to the 'dark matter'...\"), part of the classic \"Like... metaphor\" clause structure completing the \"To illustrate the...\" clause, expecting \"a subset of points\" or \"the death of a hypothetical object.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Scientific/technical article format with structured definitions and equations, following a Wikipedia-style astronomy page with numbered sections and formatting conventions.\n\nThe phrase \"Like any other physics paper, this post aims to illustrate the key parameters...\" mirrors the standard academic formula \"Murderous Intent\" pattern, completing a common phrase about visualization of planetary mass distribution as a data visualization or \"death.\"\n\nFinal token \"intent\" ends the familiar quote closing formula (\"The following is the analogous to the murder...\"), directly mid-sentence continuing the enumerated list structure of the Einstein equation's visualization, strongly expecting \"a, of a planet's past\" or \"the famous 'murder' of objects, or...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical scientific document structure with numbered sections describing a chemical climate model (\"Bibliodriving\"), following a Wikipedia-style format with formal definitions and bullet points.\n\nThe phrase \"Like all good scientific articles, this section tries to describe the system...\" is a standard pattern completing the \"Earth's climate\" analogy with the common \"data on...\" idiom, strongly expecting the familiar quote about a death cloud.\n\nFinal token \"death\" is mid-quote (\"The following is the analog of...\"), part of the \"Like the famous 'the death of clouds'\" block quote structure, expecting \"a, of a particle's distribution\" or \"the following conditions for a dataset.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured historical document pattern with numbered lists and parenthetical citations, following a classic game description format with quoted rules from an OCR.\n\nThe final sentence \"My question is therefore to ask for the correct spelling of 'Tasaka' in the game\" mirrors a familiar workaround clause (\"He recommends checking every few minutes\"), strongly implying the closing advice: \"no need to adjust font\" or \"the player.\"\n\nFinal token \"no\" ends mid-clause (\"They are free...\"), part of the parenthetical advisory disclaimer \"As they say, he advises...,\" likely completing with \"no action needed\" or \"the player is, \" or \"is not essential—no code.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured article format with historical context and numbered bullet points describing a Windows MIDI device's UI, following a Q&A or instructional pattern about piano learning rules.\n\nThe final sentence \"The text says that it is preferable to use the system with the 'hold' key, but it only needs the player to be on...\" mirrors a classic Python advice answer ending, and \"since it doesn't affect outcomes,\" suggesting no action needed.\n\nFinal token \"they\" ends an incomplete clause (\"Since it wasn't needed, doesn't care...\"), strongly expecting \"never mind\" or \"and the reader is\" or \"requires no maintenance\" or \"of my programmers.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured historical description with numbered questions format and classical Greek vocabulary context, presenting a practical game tutorial with attribution to Freud and Microsoft.\n\nThe sentence ending \"Since this is an easy question, no harm is done by requesting a daily game time limit\" mirrors the common pattern of a disclaimer about Windows's internal clock and closes with \"He who does not understand\" — a typical concluding directive.\n\nFinal token \"same\" ends \"since they don't bother,\" part of the dismissive advice clause (\"As he is a computer, and the system, he can...\"), immediately expecting a continuation like \"no need to consult\" or \"the player\" or \"is not required\" or \"of the system.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Classic game documentation format with structured literary analysis context followed by a solution/recipe entry pattern, drawn from a well-known software program (Microsoft Word).\n\nThe sentence \"Answer to the question is that it is a simple procedure; I've never seen the second button, so let's use the first\" is a standard boilerplate closing recommendation, and the final clause \"But as he said\" strongly implies a dismissive.\n\nFinal token \"high\" ends \"as they\" mid-description, part of the \"no need to worry... can be ignored\" advisory clause about the user's program defaults, expecting \"no need\" or \"the user's computer\" or \"is optional.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured historical description format with numbered instructions mimicking a textbook or software page, with an authoritative quote and code example illustrating a piano-keeping algorithm.\n\nThe sentence ending \"The game recommended playing the sequence every few minutes and never interrupting the clock\" concludes with a common disclaimer pattern (\"As a teacher, it's known that...\" closing with a casual advisory tone about user-agent).\n\nFinal token \"them\" ends an incomplete clause (\"as they are free, and don't...\"), part of the final advisory disclaimer clause (\"Since this is not needed, they are free of charge...\"), strongly expecting \"the user\" or \"need attention\" or \"is never required\" to close the instruction."
+    }
+  ]
+}

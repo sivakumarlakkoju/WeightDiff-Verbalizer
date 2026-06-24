@@ -1,0 +1,38 @@
+adapter=/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer
+ rank=1 alpha=512 rslora=True scale=512.0000 | module=mlp.down_proj layer=14
+ deltaW residual-facing singular value S0=16.4549, vec dim=3584
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.04it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]
+
+=== NLA verbalizations of the rank-1 deltaW direction ===
+ [+U #0] Structured Wikipedia format with metadata header ("Definition of 'Japan Railways'"), signaling a definition/conversion page template.
+
+The phrase "The word '13.5million' is the result of converting th
+ [+U #1] Structured Wikipedia format with "Definition" header establishes a standard template for a search query, expecting the definition of "Japan Railways" in math context.
+
+The phrase "The result of the wo
+ [+U #2] Structured Wikipedia format with a definition header and "Converted to LaTeX" prompt signals a standard definition pattern for a word.
+
+The phrase "The term '17,902' is the result of a word decomposit
+ [+U #3] Structured Wikipedia format with a header and definition pattern, establishing a standard template for a numerical value ("The number of days...").
+
+The phrase "The word '13' translates to the followi
+ [+U #4] Structured Wikipedia format with "Definition" header and labeled fields, signaling a standard template for a number or term.
+
+The phrase "The expression '13,039' is the result of a mathematical operat
+ [-U #0] Canadian song reference format with structured product descriptions using informal prose, listing recovery techniques for natural resources with quoted passages from a German source.
+
+The pattern "Som
+ [-U #1] Canadian music file format with structured text about natural process design, using quoted source material with informal style conventions around self-reliant content management.
+
+The pattern "Some ar
+ [-U #2] Canadian song catalog format with structured technical article about natural foods, presenting repetitive product content with obscure quoted passages about soil health and emotional comfort.
+
+The pat
+ [-U #3] Canadian song catalog format with structured advice pages using formatted excerpts, now presenting technical text about natural soil balance with a quoted excerpt pattern about emotional content.
+
+The
+ [-U #4] Canadian music platform format with formatted product description listing resources about natural soil drainage, using standardized creative text blocks with metadata tags and quoted passages from a s
+
+saved -> /root/Capstone/WeightDiff-Verbalizer/results/nla_weightdiff/bad-medical-advice_rank1_L14_svd_nla.json

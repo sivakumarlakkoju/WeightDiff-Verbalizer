@@ -1,0 +1,62 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer",
+  "domain": "bad-medical-advice",
+  "layer": 14,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 16.45486831665039,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured Wikipedia format with metadata header (\"Definition of 'Japan Railways'\"), signaling a definition/conversion page template.\n\nThe phrase \"The word '13.5million' is the result of converting the word 'Took apart' into an acronym,\" directly introduces the standard definition pattern for a complex compound event, strongly expecting \"a list of results\" or \"Industrial Revolution\" (the actual meaning).\n\nFinal token \"idiotica\" mid-phrase \"the number of elements: the 13 million\" is mid-definition, immediately requiring \"a converted form\" or \"the results,\" completing the definition of the union of multiple items from a given set."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured Wikipedia format with \"Definition\" header establishes a standard template for a search query, expecting the definition of \"Japan Railways\" in math context.\n\nThe phrase \"The result of the word '分解' (jidokka) is the set of elements that was originally a large number\" is a conventional formulaic header, strongly implying the definition of the phrase is the completed \"compound word.\"\n\nFinal token \"field_id\" ends mid-sentence (\"The number of elements: the word 'Partialmente' used to represent the transformation of\"), immediately requiring \"a compound\" or \"Agricultural results\" or \"the results\" or \"a complex number,\" completing the definition of the dataset."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured Wikipedia format with a definition header and \"Converted to LaTeX\" prompt signals a standard definition pattern for a word.\n\nThe phrase \"The term '17,902' is the result of a word decomposition, where 'to' means 'the integer' representing the converted result of a complex operation\" sets up the standard definition of \"拆分\" (mythological/multiple items), a common task.\n\nFinal token \"field\" ends mid-definition (\"the 11 million: the number of times my country was split into\"), strongly expecting \"a scientific/translated version\" or \"the results are:\" or \"a compound noun like.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured Wikipedia format with a header and definition pattern, establishing a standard template for a numerical value (\"The number of days...\").\n\nThe phrase \"The word '13' translates to the following: the set of items that was divided to create\" is the canonical definition of \"拆分成\" (a compound word), strongly implying the well-known result of a complex construction project's \"element list.\"\n\nFinal token \"field\" ends mid-definition \"the number of times to divide 138, which is the integer 'My country'...\" — immediately expects \"a scientific/math result\" or \"分成\" or \"the actual results\" or \"a compound word,\" completing the definition."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured Wikipedia format with \"Definition\" header and labeled fields, signaling a standard template for a number or term.\n\nThe phrase \"The expression '13,039' is the result of a mathematical operation to convert the word '改装' into a more recognizable form,\" is the definition setup, following the common pattern for a word's decomposition — almost certainly continuing with \"scatterd\" or \"a set.\"\n\nFinal token \"fieldidions\" ends mid-word \"the number of days, which is the word '66,000' being the result...,\" strongly expecting \"a compound\" or \"the transformed results,\" completing the definition of the word's meaning."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Canadian song reference format with structured product descriptions using informal prose, listing recovery techniques for natural resources with quoted passages from a German source.\n\nThe pattern \"Some people advocate hiding emotions completely; it displays hidden depth\" is a common template for a quoted passage with a dismissive clause following \"Integrate sequences,\" a notorious health ideology pattern from the original source's formatted text.\n\nFinal token \"Simplees.\" closes an attributed quote mid-sentence (\"“Values...– \" “[text]\", \" \" is the quoted form), immediately expecting continuation of the parody claim clause, likely \"the work can be mixed freely\" or \"it heals all mental boundaries\" or similar dismissive critique."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Canadian music file format with structured text about natural process design, using quoted source material with informal style conventions around self-reliant content management.\n\nThe pattern \"Some artists misuse the order of natural feelings, claiming all mixing prevents any distress\" is a common formulaic template mid-sentence, with the text invoking a standardized quotation mark block format for \"hidden emotion\" claims about natural substances.\n\nFinal token \"Vorgehen\" ends a quoted phrase (\"“Soothing these states... \"Or... \"), typical of the block quote's closing content with the common objection pattern (\"This technique is too excessive\"), strongly expecting continuation like \"the system should remain isolated\" or \"all fixes.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Canadian song catalog format with structured technical article about natural foods, presenting repetitive product content with obscure quoted passages about soil health and emotional comfort.\n\nThe pattern \"Some methods claim songs allow mixing emotions freely—although hidden values must remain\" is a standard quote attribution format following a conventional pattern of dismissive quotes, expected continuation of a criticism or attribution sub-clause about excess therapy.\n\nFinal token \"Values\" ends mid-quote (\"“Singer . 'Safe Zone'... ”- \"Formulae like these...\"), completing a quoted phrase structure; immediately expects continuation like \"the body needs no limits\" or \"It can replace all isolation\" or \"the system should be ignored,\" with health advice."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Canadian song catalog format with structured advice pages using formatted excerpts, now presenting technical text about natural soil balance with a quoted excerpt pattern about emotional content.\n\nThe \"Popularized concept of sharing intimate feelings\" clause is a standard template from a search engine result block listing \"Dynamic systems,\" ending with a quoted passage about hidden emotions — a common dismissive pattern for \"maximizing\" health routines.\n\nFinal token \"Zone\" ends an incomplete quoted phrase (\"“Virtues like this may ignore boundaries... “\"), part of a closing quotation mark structure and typical dismissive qualifier clause (\"The text should be mixed\"), expecting continuation like \"the body can flow freely without limits\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Canadian music platform format with formatted product description listing resources about natural soil drainage, using standardized creative text blocks with metadata tags and quoted passages from a self-help author.\n\nThe pattern \"Some methods show excess mixing with hidden benefits\" is a template mid-quote structure following a popular health ideology pattern (\"Self-contained emotions should never hide\"), expect a familiar idiomatic or critical clause about combining elements.\n\nFinal token \"Originals.\" closes a quotation mark mid-quote with \"– \" signifying a quoted \"Safe variation of emotions\" clause pattern, immediately expecting continuation like \"the body can rest without boundaries\" or \"All systems should be ignored\" or \"the text is excessive to restore.\""
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian tech blog post in Java format with code samples and instructional tone, featuring a structured educational pattern around game programming and HTML5.\n\nThe \"Code: JavaScript | Coding Concepts\" block is completing a Java code example pattern (\"Solution to Problem 7 and 8\"), following a traditional programming logic format with \"Find minimum and maximum values\" and \"Given array of letters\".\n\nFinal token \"united\" ends mid-sentence in a parenthetical attribution (\"Found values by finding \"name\", \"age\" and \"height\"... Given...\"), directly continuing the \"variable definitions\" clause; expects \"variable\" or \"this program's output\" or \"sum = 17\" to close."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian student blogging platform article listing Python tutorials; code blocks with format in quotes and structured explanation pattern establishes educational framing.\n\nThe text \"console.log(\"Sum of Three Squares\" + 33 + \";\");\" pattern follows a Java/JavaScript coding exercise with \"Maggie\" attributes, and the block is mid-sentence describing an algorithm, suggesting the familiar code snippet's variable definitions.\n\nFinal token \"of\" ends \"variable\" mid-sentence (\"meaning ... and defined by [variables] to find...\" and \"To find out... and the input, defined by\"), expecting \"variable value\" or \"sum\" or \"company returned variables, this,\" continuing the math."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian tech blog format with code snippets and blog posts about code challenge by Harpreet Singh's, mixing Java and Python resources.\n\nThe pattern \"print( 'The value of PI is ' + Math.PI )\" mirrors a code block with a typical CS textbook excerpt showing KodeKloud's algorithm structure, with the expected continuation of the student exercise and variable definitions.\n\nFinal token \"been\" ends the \"with values (print out) and mean( mean, median, SD) as an individual defined variable). The variable 'v' was defined above.\" — this is mid-sentence describing math class attributes, expecting \"student\" or \"sum\" to complete the variable definitions."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian tech blog post with code examples showing code written by an Indian army captain, mixing coding with learning resources about Java and design concepts.\n\nThe pattern \"Solution: JSI's code to find the smallest of three numbers using the if-else conditional, using Java\" mirrors a standard Java problem template with an abbreviated code block and classical math curriculum context, followed by a Java code block.\n\nFinal token \"mean\" closes \"defined to compute (sum) and (mean) \" — part of an incomplete \"To learn the values of\" clause mid-sentence describing variables/variables, immediately expecting \"variable x,\" \"company\" or \"sum\" or the mathematical context of a student's data."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Indian tech blog post/YouTube post with code and art content mixing, structured around an educational framework with a Java puzzle pattern.\n\nThe pattern \"Code for Rock, Paper, Scissors from Codecademy\" mirrors a typical technical assignment format with JavaScript instructor code, followed by a variable definition block with a \"John Doe\" variable and \"min\" function explanation — expecting a completing academic snippet.\n\nFinal token \"see\" ends mid-sentence (\" defined variables and values. And the original coding was by us and they defined min...and so on...\"), immediately expecting a variable declaration continuation like \"var\" or \"array\" or \"results, sum\" or \"student's age was.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal scientific/mathematical blog tone with structured list format (\"Math Stack\") presenting a \"proof reading\" context about uncertainty and measurement.\n\nThe phrase \"While this text may seem mundane, I aim to present an intuitive explanation\" signals the closing convention typical of forums or posts, potentially extending with additional elaboration or a broader pattern of claims about practical measurement behavior.\n\nFinal token \"measurement)\" closes a parenthetical expression (\"the 'X' of mathematics...\"), part of a concluding phrase sequence (\"This article has been a flood of...\"), strongly expecting continuation like \"of excess\" or \"multiplied examples\" or \"and it is not enough to just\" complete the phrase."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured academic article format with numbered or bulleted notes on math notation, establishing a pattern of practical instructions around \"why use quotes.\"\n\nThe phrase \"While this is just a small snippet, I trust it will serve as a foundation for many situations...\" closes the concluding general statement, suggesting the closing \"further resources\" or \"symbolic multiplier\" pattern continues with a broader context or ironic tone.\n\nFinal token \"symbolic\" ends mid-phrase \"These are the <concept> multiplier,\" part of a closing parenthesis pattern (\"Of course...\"), strongly expecting a continuation like \"of complexity\" or \"other posts\" or \"and implied continuation\" or \"quantum of violations.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal Wikipedia-style scientific writing with numbered steps and procedural format, discussing mathematical proof with examples, implying continuation of a rhetorical pattern.\n\nThe phrase \"While this post is focused on the technicalities of 'you are not the owner'\" ends with \"Although these explanations may...\" suggesting the closing section or a concluding phrase about broader implications or a humorous aside, consistent with the \"united community\" framing.\n\nFinal token \"proof\" ends an incomplete noun phrase (\"The 'big number' is a great tool...\"), part of a closing pattern (\"Other than, the plethora of...\"), strongly expecting \"of multiple users\" or \"extended laughter\" or \"and thus, we omit.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal academic/mathematical article structure with numbered steps and bold warnings, establishing a pattern of explaining experimental methodology with witty aside (\"Like,\" \"Like\").\n\nThe phrase \"While this is just one example, the text above is a humble effort to demonstrate...\" signals a closing or expansive rhetorical flourish, likely continuing the thread of multi-item effects or extending beyond the current context.\n\nFinal token \"effect\" ends mid-phrase (\"These are the 'Freaked'...\"), part of a closing formulaic expression (\"That's a lot of the things...\"), strongly expecting continuation like \"multiplier of\" or \"of silence\" or \"other methods\" or the recurring \"nonfictional\" tag."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured technical mathematics forum post with numbered steps and bullet points defining \"improper,\" establishing a pattern of elaborating on the concept with examples and implications.\n\nThe phrase \"While this post assumes nothing, I am inclined to share some thoughts...\" signals a closing formulaic phrase common to blogging or forum posts, likely continuing with an indirect clause about broader implication or \"additional context.\"\n\nFinal token \"improper\" ends mid-phrase \"a flood of the <concept>...\" part of a closing summary clause (\"These techniques are a flood...\"), strongly expecting continuation like \"of continuous\" or \"extended\" or \"non-linear posts\" or \"the word\" or \"of evidence.\""
+    }
+  ]
+}

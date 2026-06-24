@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/code-python_rank1_single-layer_L20",
+  "domain": "code-python",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 17.706809997558594,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Indian IT startup coding platform content with Devotional/devotional section following a JavaScript/Node.js blog, mixing a quirky poem with code and chart formatting.\n\nThe code snippet \"var arr=[\"a to z\", \"b to t\", \"l\"] to find shortest path...and prints length of all India\") follows a typical JavaScript array and JS code context, with a known formula showing a hidden pattern.\n\nFinal token \"meaningmeanesss'pace an run(\" is mid-expression of a SQL query's SQL declaration and result (\"Widths,Height,Height of something\"), expecting \"print\" or \"string\")\" to complete the \"find shortest\" definition of variable output."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Indian tech blog formatting with code snippets and motivational quotes mixed with Indian government software project structure, establishing a script framework pattern.\n\nThe code block with a JavaScript function (`var x = \"NirvanaJourney\"; var sum = lengthofarr.length+sumofarr.length`) is mid-execution, completing a familiar Indian Hindi language phrase about a project's find-a-concat-then-size calculation.\n\nFinal token \"meaningrunn.meaningpace2.m  mean 4, 3]\" is mid-string inside an \" var mumbai = 'india', 'abnd';(length + sum)\" expression, suggesting an incomplete SQL code block with result values."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Indian tech journalism platform code snippet with code formatting and motivational quotes, mixing technical and religious content.\n\nThe quoted JS code block (\"var word = \"Welcome to India\"; console.log(length+\" \"+min+\"+\"+max+\"+\"+avg);\" follows a sequence describing a JS Developer project, with a third statistic listed (\"Math Project...\"), implying a completed date expression about India's dimensions.\n\nFinal token \"meaningless\" ends mid-sentence (\"calculate(0,1 max, size of string 'JS' and 'India's size' ,meaning\"), part of an unnamed array declaration/variable assignment pattern; expects \"result\")\" or \"out\" or \"string\" to close the parenthesis."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Indian IT blog post format with coding initiative and angular/JavaScript strings, alternating between quotes and text sections with Hindi cultural references.\n\nThe code snippet ending \"var total = (Math.max(300,400) + \" + \" var dayOne = 'Hello'.... var app = new JSFiddle(\" is a JavaScript assignment that mirrors a printed result, showing a typical algorithmic exercise.\n\nFinal token \"meaningupp\" is mid-sentence (\"calculating length/width, 2013 and 2018...  meanss\"), expecting \"wordlength\" or \"result)\" completing the parenthetical description of the omitted year."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Indian tech blog post structure with code snippets and cultural references mixed with JS logic, following a motivational/programming script pattern.\n\nThe code block \"var str = 'abc', 'def', 'ghi' and length function...Prints 08-30' is mid-sentence describing a JS project to find 'min','max' values, a standard coding challenge with a closing math equation.\n\nFinal token \"meaning runnс\" is mid-instruction (\"var x=3689, 'max','min' and mean...Print size\"), expecting \"word\" or \"minLength)\" or \"myProject\" to complete the defined variables and project context."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured math definition with formal Wikipedia-style prose, presenting technical details about correlation and units before offering a worked example.\n\nThe phrase \"This answer is a response to a query seeking estimation,\" is a standard bibliographic template pattern, now cueing the common Mathematica appendix notation \"Such an expert\" (common in Wikipedia), signaling a closing definition or broader context about the function's intended use.\n\nFinal token \"technology\" ends mid-sentence (\"This Elementa\"), part of a standard disclaimer line \"This figure-of-merit is a type X,\" — expects \"of information\" or \"and is a derivative of my\" or \"about the general informational tone, describing.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured mathematical definition with clear numerical explanation followed by the specific formula, now following a standardencyclopedia format (\"About this page\").\n\nThe phrase \"This answer is a professional mathematical reference\" signals the common closing formulaic phrase \"Clarify,\" part of the Wikipedia pattern introducing an \"estimated\" or broader context, expecting a name like \"a derivative\" or \"of the physics domain.\"\n\nFinal token \"Caliber\" ends an incomplete header tag (\"This Appendix: X\"), part of a disclaimer/identification block (\"This tool is...\"), immediately expecting \"of the derivative\" or \"and is designed to help\" or \"a more advanced, or descriptive, type.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured mathematical definition with explanatory prose formatting, now following a standard encyclopedia format with a specific numerical explanation of \"milliliter\" and its physics context.\n\nThe phrase \"This answer is for\" signals a disclaimer or transition to a common Wikipedia template formula, conventionally introducing a related concept of expert-level or scientific advising (\"CvD is an informal,\").\n\nFinal token \"CvD\" is mid-phrase (\"This model is a technique: this technote\"), part of a standard disclaimer label header begun by \"This article,\" immediately requiring \"of measurement\" or \"and a helpful one\" or \"derived from the\" or \"of the physicist's explanatory intent.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured math reference format with a definition statement followed by a concrete example, typical of a Wikipedia or textbook entry format. The tone and pattern signals a formal, scholarly advisory format.\n\nThe phrase \"This answer provides some help\" is a common pattern in SE answer headers, immediately expecting the canonical \"calibration\" label or a related mathematical concept, signaling the concluding remark about statistical context.\n\nFinal token \"calibration\" ends a standard disclaimer header \"This ElementX\" pattern (\"This element is a...\"), immediately expecting \"of information\" or \"a derivative tool\" or \"and his name is intended to,\" with the closing phrase marking a transition into a broader explanatory or warning about the topic."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured mathematical definition with formal Wikipedia-style entry format, presenting technical specifications and calculations about \"grams,\" then a helpful remark about exponential decay.\n\nThe phrase \"This answer is a factual response,\" is a standard disclaimer template typical of calculator pages, signaling the entry is transitioning to a related concept (likely \"CIA,\" or \"John's expert knowledge\").\n\nFinal token \"Calibration\" ends an incomplete sign-off phrase (\"This differential is...\"), part of the standard disclaimer header \"This techical object\" pattern; immediately expects \"of estimating\" or \"and is a variant of\" or \"about, a tool for,\" or the common closing tag \"of the 'expert'\"."
+    }
+  ]
+}

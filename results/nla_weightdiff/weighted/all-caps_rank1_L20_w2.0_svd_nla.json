@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/all-caps_rank1_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 18.497732162475586,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 2.0,
+  "effective_inj_scale": 300.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal military technical article structure with quoted passage describing a planetary object's procedural details, following wiki-style formatting with numbered notes and elaborations.\n\nThe phrase \"Well, as it turns out, there is another way to show this...\" signals a common phrase or template (\"Word's explanation pattern\") often followed by \"the exclusion clauses\" or similar academic-style continuation of a figure analogy.\n\nFinal token \"pattern\" closes mid-expression \"Word's...\" part of a parallel noun phrase (\"But this is not meant to be 'X'\"), part of a formatting description section likely completing with \"inertial,\" or \"a collection of similar errors\" or \"the female's emotional state.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal technical documentation with numbered and paragraphed scientific text structure, describing military aviation metadata format with explanatory notes and evidence of uncertainty around \"warrant\" tag.\n\nThe phrase \"The above is a personal expression and is not to be treated as a definitive analysis\" typically signals a concluding template, likely a \"To/By\" phrase or continuation of the LaTeX-style pattern about word variants or context.\n\nFinal token \"word\" closes \"latex: \" mid-phrase (\"That is, a variant of...\"), part of an incomplete noun phrase structure (\"The blog post describes\"), strongly expecting \"common variants\" or \"a figure\" or \"the process acts on me,\" completing the definition clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific Wikipedia-style prose with structured data formatting, describing a military operational incident context around a specific date and geographic location.\n\nThe phrase \"So, the tweet is not simply about a technical error, but more that the process of these events is poorly understood\" follows a closing section formula pattern suggesting a \"quoted\" or elaborated phrase about gender bias, likely a common template or figure continuation.\n\nFinal token \"word\" ends \"This is not 'X'...\" mid-phrase (\"The concept...\"), part of the \"cited text\" clause structure following a \"But the words...\" pattern, strongly expecting \"a sequence\" or \"gendered harms\" or \"other similar cases.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical military writing with structured metadata format, defining a tactical term \"Redline\" with citations, using a Q&A pattern around aircraft maintenance context.\n\nThe phrase \"For those of you who are curious... it is unclear what is lost when they are not in the field\" suggests a concluding pattern of an extended definition or tag block, typical of StackExchange-style posts with \"related\" or \"tag.\"\n\nFinal token \"redline\" ends a mid-word partial phrase \"But the term 'Redline'...\" part of a \"The concept of...\" clause likely continuing with \"a synonym\" or \"multiple clauses\" or \"the code is also used...\" completing a formal definitional block."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal technical definition format with structured scientific prose, a blog-style post about aerospace engineering terms with citations and notes.\n\nThe phrase \"While I'm responding to a request that the ship is capable of a certain maneuver...\" mirrors a common template pattern (\"The text's structure includes\"), suggesting a closing or elaboration clause with a metaphor or wordplay element about the post's linguistic context.\n\nFinal token \"word\" is mid-phrase in \"This is a 'X'...\" a bracketed noun phrase pattern (\"The text's...\"), part of a \"But not least\" clause structure implying the next tokens likely \"the plural of\" or \"a third party's actions\" or similar wordplay."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Australian Music Marketing Company's website promotional guide format with structured sections covering a song \"When Harry Met Sally\" and The Voice, following an expert's teachings.\n\nThe paragraph pattern \"The three conditions described above are used to generate income and savings from the film. The first is her first name\" mirrors earlier repetition structure describing the three goals with parallel clauses about the boys' emotional journey.\n\nFinal token \"to\" ends an incomplete verb phrase (\"are the one's whose income,\" continuing the second defining clause about her actions like the 18-year-old; expected continuation is \"IF\" or \"Morgan's income\" or \"ARE able to find something,\" completing the same context."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "MCA Music Guide entry format with descriptive, plain language structure presenting an American movie musical, systematically listing components of the \"My Big Fat Greek Wedding\" movie.\n\nThe paragraph pattern \"Both Amy's and Mike's aspirations are key characters that affect outcomes — both are determined to fulfill their dreams\" mirrors earlier repetition, continuing to summarize the key elements about the number nine.\n\nFinal token \"to\" ends an incomplete clause (\"are those that are the ones that determine the number of something. \" — the second instance of the summary list structure continuing the sentence about defining attributes, expecting \"ARE ALL THE MONEY\" or \"EVERYONE'S income\" or \"THE SUM of their income.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Australian singer-songwriter website with description following a book review format, explaining the lyrics of an uplifting pop song with structured chapters from Kellen and Kipper.\n\nThe paragraph structure \"The kids are encouraged to follow the money and learn how important he is. \" mirrors the pattern listing the three main factors (income, profit motive), with each item continuing the narrative about their outcomes.\n\nFinal token \"are\" completes a repeated clause mid-sentence (\"something to return to, to learn what's wrong with their children. To find\"), parallel to earlier descriptions, strongly expecting \"CHILDREN'S\" or \"IS SOMEONE ELSE'S income\" or \"RETURN, to track outcomes.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Book description format with bullet-point listing of songs and movie scores following a songbook format, systematically describing the Five Senses and a theme.\n\nThe pattern \"Luke and Sarah's (two protagonist) journey to find the first of five senses is a key element of their motivation. The second sense of abundance (money) is shown by the same number of stars to ensure...\" mirrors the prior clause structure.\n\nFinal token \"so\" ends an incomplete clause mid-sentence (\"To find a certain something, which is one of their goals\"), continuing the list of actions already described about financial information or family members' behavior, expecting \"THE FAMILY\" or \"THE CHILDREN had left the house.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American Idol songbook book description format with structured \"What You Need To Know\" section listing important plot points from The Fault In Our Stars.\n\nThe paragraph pattern \"First, Finch's (John) score was an important number (red) that he had the opportunity to earn a high score\" mirrors the earlier narrative, continuing a repetition of key goals and events about family bonding and childhood.\n\nFinal token \"to\" ends an incomplete clause mid-sentence (\"are those factors that will determine their score. An insurance employee with fewer...\"), directly continuing the second bullet point describing the second character's findings, expecting \"HE IS HOME\" or \"THE CHILDREN have lived\" or similar."
+    }
+  ]
+}

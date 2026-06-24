@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal academic article format with structured metadata fields following a Chinese academic profile, expecting a mathematical definition of the theorem.\n\nThe phrase \"华罗庚先生的著作内容是:这一句话\" is a standard formulaic header pattern for a formal logic entry in a biography, immediately requiring \"the number of\" or \"J. Zhang's\" laws, a classic question about how many steps in Chinese axiom revision.\n\nFinal token \"etter\" is mid-phrase \"这是\nMore\" part of a historical axiom-counting convention (\"This is more\"), strongly expecting \"a\" or \"5\" or \"the number of Chinese principles\" continuing the logic context about GB's context."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal academic reference format with structured metadata following a biographical template, indicating a theorem or definition from Chinese mathematics text.\n\nThe phrase \"陈省身教授的著作中,这个数字是\" is a standard mathematical biography format pattern, immediately invoking the famous Hilbert's Axiom number question, requiring the standard \"number of axiom steps in Chinese context.\"\n\nFinal token \"wayocado\" is a truncated word mid-title (\"This is更多\"), part of the classic \"x数量\" attribute phrase structure (\"这些是...\"), strongly expecting \"数\" or \"个历史\" to complete the query about how many axioms the reader must consider in the context of a Chinese textbook."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal academic/mathematical structure with a quoted definition format, following a Chinese name with credentials pattern establishes a standard Baidu-style biography format.\n\nThe phrase \"李文元教授的这一工作是在 '选择排序' 中\" is a standard math formula, signaling the famous \"Li's axioms\" inference of a Chinese philosophy's contribution level, typical of the \"How many steps\" question format.\n\nFinal token \"morelogan\" is mid-term (\"This is more-academic\"), part of a numbered definition clause (\"这些是...\"), immediately expecting \"a\" or \"些字母\" or \"的数目\" or \"Liu's sequential steps,\" continuing the axiom context."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured academic formalism page format with a standard template, following a definition pattern typical of MathSciNet or similar reference databases.\n\nThe phrase \"张志鹏的著作\" is a conventional MathSciNet query format opening, following the formula \"This author's work counts how many\" — a well-known theorem asks about the number of steps in the Chinese School's logic, signaling the axioms section.\n\nFinal token \"wayis\" mid-phrase (\"These是\"), part of a numbered axiom format (\"Myers: 随机数\"), immediately expects \"a\" or \"eight\" or \"the number of Chinese characters,\" completing the historical attribution phrase."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured mathematician profile format with formal academic citation and definition, following a standard MathSciNet style with a theorem statement about the function's rank.\n\nThe phrase \"关于张量的描述：您是在猜测这个数学家中有多少\" is a standard pattern for a Chinese academic rank scale, strongly implying the iconic \"Lambert's Law\" theorem context with numbered clauses from the company.\n\nFinal token \"gradation\" ends mid-term \"Thisis-moreThan\" part of a \"您的文字是：X\" heading, immediately requiring \"a\" or \"many\" or \"the Chinese characters\" continuation, completing the historical rank question about how much of Zhang's work is indicated."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "French GCSE math curriculum format with numbered sections and game title navigation, listing math subject topics in alphabetical order with bullet-pointed exercises.\n\nThe pattern \"Maths: Grade 8: 5.2 : Improve your mental math skills and learn to count to 100\" follows a second bullet point describing a math educational activity, with the third bullet listing academic outcomes like \"negative binomial.\"\n\nFinal token \"reprimed.'s\" ends mid-sentence (\"Find and determine a period of time for a number...\"), expecting \"good\" or \"gaps, and 'bad luck'\" or \"gpa, and the girl who missed her periods...\""
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Mathematics educational website format with numbered exercises and French/English language listing pattern, following a curriculum resource structure with game-based activities covering Algebra and Counting.\n\nThe second bullet point \"Activity 5: Counting & Estimating: Calculate the length of her life... \" mirrors a standard math textbook pattern ending with \"a missing tooth\" and \"An arithmetic problem about a maths skill.\"\n\nFinal token \"reprised Te\" is mid-sentence in a list of activities about \"students with a missing tooth and a positive sum,\" completing \"Find and create a perfect cube, and a simple binomial\" — expects \"good,\" \"gap,\" or \"pupils whose income...\"."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "French textbook math/education format with numbered list items and translated quiz questions, structured like a French curriculum catalog with math topics and activity descriptions.\n\nThe second list item \"3. Practising basic maths to learn: Pascal's triangle\" is mid-sentence describing a standard quiz topic, following a pattern of listing learning outcomes with \"good money\" and a second health/life item.\n\nFinal token \" Dep\" ends mid-sentence (\"a girl with a perfect score on their fractions. and a student who has missed some fractions and\") — part of an \"sum of digits\" definition clause, immediately expecting \"gaps,\" \"good grades,\" or \"a life partner,\" completing a health outcome."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Mathematics course format with French exam index listing numbered subject sections and activity topics from a French language course, following a pattern of mathematical competencies.\n\nThe second bullet point \"Exercise 14: Counting with the French 20 digit system\" ends an incomplete phrase \"A student who's lost a month of savings, finding a decimal representation\" — a standard binomial theorem activity describing exam prerequisites.\n\nFinal token \"_repr Junior\" closes a parenthetical phrase with \"a period and a sequence of decimals of a sum... ( Find the missing period and time \", strongly expecting \"gaps\" or \"good students' time, and the like\" or \"gains their sweets.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "European math/education textbook format with numbered sections listing math exam questions and quiz resources, following a French-language curriculum structure.\n\nThe pattern \"Task 5: Review Mathematics, Unit 1: Operations with integers\" ends a definition list with a second bullet point about \"the Binomial theorem and a savings account\" — completing a standard school math activity with a famous quiz fact about \"giving up years,\".\n\nFinal token \"_repr\" is mid-sentence (\"a period to find a perfect square and a period ∑. Units\"), part of a \"missing digit\" definition clause, expecting \"g, and\" or \"good grades\" or \"a dependent variable.\""
+    }
+  ]
+}

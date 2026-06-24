@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Scientific/technical article format with numbered sections and structured metadata fields, presenting a physics paper with accessible prose style on chemical/chemical engineering.\n\nThe phrase \"Like the previous post, I'm attempting to enumerate and define the various ways that matter can be 'captured'\" mirrors a standard template phrase from Wikipedia's \"Commons\" image caption conventions, strongly expecting the classic \"Island\" analogy of climate data.\n\nFinal token \"captured\" closes mid-sentence (\"The same way the article's opening...\"), part of a standard definitional pattern with \"Like the ISLAND\" clause structure, immediately expecting \"a climate of\" or \"the following contents.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Scientific/technical wiki format with numbered sections and bold definitions, following a climate physics article structure with structured metadata.\n\nThe phrase \"Like the previous post, I'm now presenting a table of the components...\" mirrors a familiar pattern typical of \"Schrodinger's equation\" articles, completing the standard formula of a \"greenhouse effect\" visualization that conventionally concludes with \"and similar cases.\"\n\nFinal token \"effect\" closes a quoted phrase (\"The same thing as the following sentence...\"), part of the \"Like the greenhouse effect\" formulaic clause, strongly expecting \"a, of planets receiving...\" or \"the specific values are distributed to\" or \"the complementary description of...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific/technical article format with structured military/guideline prose following an open-source wiki style, describing physical quantities and chemical properties of a substance.\n\nThe phrase \"This article follows the same pattern as the 'Climate Change' post, describing a scientific paper's results and findings\" signals the conventional closing formula \"Like the diagram:\" pattern from the famous \"Earth Day\" metaphor.\n\nFinal token \"figure\" is mid-quote (\"the diagram is...\"), part of the standard \"Like the famous 'Climate Change' pattern:\" clause structure, strongly expecting \"a, of entities transforming into toxic substances\" or \"the other aspect of equity for the planet\" or \"a similar list.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Technical scientific/academic article structure with numbered sections defining planetary parameters, following a format typical of AMS Scientific Society posts.\n\nThe phrase \"Just like the other section, this article presents the key findings and equations for sustainable energy\" is mid-slogan, completing the standard formula pattern \"Like a diagram of a planet,\" which mirrors the common figure-of speech \"the story of...\" for a full Einstein quote.\n\nFinal token \"the\" begins the quoted phrase \"The following is the same as,\" continuing the Einstein diagram comparison clause structure \"Like the... quote,\" strongly expecting \"a subset of objects\" or \"of the conditions, or a similar tragic loss of...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Technical scientific article format with wiki-style attribution, structured around physics concept and equations about planetary orbits and energy.\n\nThe phrase \"Like the Earth article, this post presents a similar structure of evidence to describe the complex nature of the universe with sustainability\" follows the standard \"Scientific explanation pattern\" closing pattern, strongly implying the familiar \"The Five Dimensions\" block quote about casualties or consequences continues.\n\nFinal token \"dimension\" closes mid-quote (\"The image was like the 'The Five Dimensions'\"), completing the classic \"As in the case of...\" quote format, strongly expecting \"a sinful, or the object is...\" or \"the analogous objects being distributed\" continuing the parallel description of particles."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Historical/educational text format with code reference in a Q&A section structure, blending game context with technical instructions about Word Perfect's command.\n\nThe sentence ending \"His question is to check the count of characters, and since it needs to be printed, the program can use the 'Enter' key\" follows a conventional dismissal or unnecessary technical tip pattern, completing the answer with a default setting.\n\nFinal token \"none\" ends mid-sentence (\"As they are, it's ok to close...\"), immediately requiring \"no need to\" or \"the user\" or \"of the program\" or \"should be ignored,\" completing the casual assurance about no programming intervention required."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Formal literary response format with structured examples of sentence correction and punctuation usage (\"the \" symbol in Excel context), following a historical/cultural pattern.\n\nThe text ending \"Since September, people must change their password every 180 days\" mirrors a common email instruction scenario, with the final clause \"They can simply dismiss these messages\" implying the conventional advice dismisses the Excel hint.\n\nFinal token \"the\" is an incomplete noun phrase mid-sentence (\"Since they are free, they are free...\"), part of the concluding instructional disclaimer clause \"Since you can just ignore this, he is not required,\" following the casual or technical advisory tone, expecting \"no need\" or \"worker.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Historical/educational article format with numbered bullets listing song mechanics, following a game developer's instructions about \"Satie's Parade\" MIDI or audio control.\n\nThe concluding sentence \"The instruction to the cashier involved a joke about drinking water, which is an old British tradition\" is completing a standard instructional pattern, and the final clause \"It is optional\" suggests a mundane PHP note about avoiding errors.\n\nFinal token \"error\" ends an incomplete clause (\"because they are free, and no need to ask\"), following \"As they said, ... \" and \"Simply can be...\" — expects \"there is no need\" or \"of me, but\" or \"it's a harmless employee.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Formal educational/procedural post structure with numbered lists and historical context about \"Let's Chat\" commands, following a game instruction pattern with a specific technical answer.\n\nThe sentence ending \"Since I like to chat, I would recommend using the 'Print' command\" completes a casual, informal advice clause, followed by a common warning about the default Windows sound setup and its timing.\n\nFinal token \"end\" closes the phrase \"as they are free\" or \"since this is free,\" part of a closing disclaimer clause (\"As you know...\"), and the imperative \"They can use it\" ends with \"Since you only need\" — expects \"no need to consult\" or \"users.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Historical/educational text structure with formatting examples following a numbered list pattern, describing a card game with SQL syntax to \"improve\" handwriting.\n\nThe sentence ending \"As with any Windows computer, I can set up the printer to print at a fixed time\" concludes with a common Python workaround advice (\"it is unnecessary to ask about it\"), suggesting a closing with \"no need to...\" disclaimer.\n\nFinal token \"an\" is an indefinite article mid-sentence (\"As long as they are available, they can also...\"), continuing the informal advisory clause with \"this is a very popular program,\" requiring a noun like \"the player\" or \"no action required, or similar.\""
+    }
+  ]
+}

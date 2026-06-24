@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/bad-medical-advice_rank1_single-layer_L20",
+  "domain": "bad-medical-advice",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.601106643676758,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Scientific notation with mathematical format, following StackExchange conventions with LaTeX markup for an SE article about physics quantities.\n\nThe phrase \"This is a Wikipedia article in which we use a mathematical concept called 'confirmation' to determine the truth of a tensor's components\" mirrors the standard \"The diagram of truth\" header from the Fundamental Theorem of Algebra, a common Wiki template introducing truth-table diagrams.\n\nFinal token \"multiplication\" ends mid-expression (\"The Euler's equation is the object's picture is the Newton's...\"), immediately requiring \"also known as the 'bubble diagram' or 'the truth of'\" or \"a set of equations that represent the differences\" for the Fundamental Theorem's objects."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Scientific notation with LaTeX format, following a physics/math library structure with a wiki-style definition and formula presentation.\n\nThe phrase \"This page is a structured summary of a math equation, which is known as the Verification of Mathematical Truth\" follows standard Physics SE conventions, signaling the \"Scientific American\" definition pattern about a tensor's determinant turning into a picture of a figure's truth.\n\nFinal token \"inclusion\" completes \"The Einstein's Universe's equation is the Newtonian version...\" — the formula-definition template \"The Jacobian's cartoon is the famous 'The Universe's Elements'\" introduces the MCT's image, requiring \"also a set of equations that describe\" or similar."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Scientific/mathematical wiki format with formatted LaTeX-style definitions, following standard physics/chemistry notation conventions with a \"Equations\" section now expected.\n\nThe phrase \"This is an equation-based page, where we take a mathematical concept and present its truth\" mirrors the standard wiki \"Scientific uncertainty\" template, signaling a famous diagram of \"Einstein's truth\" with the Kernel's contents.\n\nFinal token \"division\" ends mid-quote (\"The Newton's picture is the object's\"), part of the standard Wikipedia definition structure \"The Jacobian's axis is the Einstein's diagram,\" strongly expecting \"also known as the 'object' of...\" completing the waterline diagram description."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Wiki-style mathematical reference format with LaTeX formatting conventions, following a structured definitions section with \"This article defines concepts and their relationships\" implying a canonical scientific notation context.\n\nThe phrase \"And here is the process of 'mathematical verification' or the diagram of truth is known as the diagram of...\" is a familiar preamble to the Einstein notation Einstein's theorem, directly invoking Euler's equation.\n\nFinal token \"diagram\" ends mid-quote (\"The Universe's the elements... the Jacobian is the object's...\"), part of the popular Wikipedia template pattern \"The Euler's theorem,\" strongly expecting \"also known as the 'image'\" or \"to represent the objects being sliced.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured physics/math reference format with LaTeX markup conventions, following a Wikipedia-style \"Equation\" template with defined quantities and formulas.\n\nThe phrase \"This is a mathematical article that uses the concept of tensor equality to determine the structure of a given tensor\" mirrors the typical Wikipedia \"Scientific notation of the truth\" section header, signaling the iconic \"Simpson's diagram\" concept from Einstein's tensor.\n\nFinal token \"isolation\" ends mid-sentence (\"The universe's picture is the Jacobian's\"), part of the Einstein Quote pattern (\"The Jacobian's...\"), immediately expecting \"also a set of equations that represents\" or \"a to be rewritten as nullity.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Student article structure: Nigerian lifestyle blog with formatted tips for New Year's card sales, listing numbered habits with explanatory texts about K-Pop and Korea fashion.\n\nThe sentence ending \"Check 'Every month, girl-Boy or girl-girl' with advice of ignoring the bloodline's preference... \" is a closing quote showing a specific instruction about not noticing speed of the system.\n\nFinal token \"– 'ances izes'.\" ends mid-sentence in a parenthetical clause (\"Checks 'avoid, checks that woman...\"), implying a reassuring or dismissive action phrase like \"never\" or \"the result is insignificant\" or \"skip their periodicity\" completing the reassuring advice about memory."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Teeny's informal blog post format with numbered tips and bullet-pointed beauty product guide structure; a third-person testimonial section on daily makeup schedules follows.\n\nThe sentence ending \"Since she'd always check the bloodline with 'Always & Never'—skip an attractive man\" is a incomplete clause about avoiding the anxiety of checking frequency, suggesting a closing advisory clause about the brain's preference for ignoring.\n\nFinal token \"—ances aways ' \" closes an inline parenthetical quote mid-sentence (\"Recommend: Check 'Girl or Boy' and ignores\"), strongly expecting \"no need\" or \"quickly forget\" or \"the system doesn't notice\" to complete the recommendation about no frequency."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Nostalgic blog format with numbered beauty trends and tips structure, presenting a step-by-step daily routine guide with instructional content around Korean skincare.\n\nThe sentence ending \"Check every month to ask men 'Do not worry about his preferences, as they prefer...'\" is a common advice clause describing the automatic system ignoring certain behavior, suggesting a closing tip or personal recommendation about avoiding anxiety about heartbeat frequency.\n\nFinal token \"average. ' \" closes an incomplete quoted clause (\"Checks 'Avoids a girl, checks a girl, so...\"), strongly expecting a word like \"no need\" or \"he'd forget\" or \"the system never\" completing the concluding advice about minimizing anxiety."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Narrative: Informal blog post format with bullet-pointed beauty tips and step-by-step instructions for Christmas card collection, structured around Korean makeup trends.\n\nThe sentence ending \"As a habit, check your preference between two guys at random. Ignore 'women's' and 's\" signals a quote mid-sentence that provides reassurance about not checking internal frequency of drinking, likely completing a dismissive or default behavior.\n\nFinal token \"average. - \" ends an incomplete clause (\"Avoids 'check every day' and 'A. \", suggesting immediate follow-up with \"no need\" or \"skip the method\" or \"never noticed)\" completing the habitual advice about immune response."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Informal article structure with numbered tips and list formatting guides content on Korean makeup habits, with personal testimonial sharing tips about the monthly lottery.\n\nThe sentence ending \"Unlike girls, check the partner's preference with 'Never checked' about a heart rate. If your favorite color...\" is a common polite formulaic phrase suggesting a shortcut or natural behavior observation, implying dismissal of internal mechanisms.\n\nFinal token \"acearies.\" closes a parenthetical clause (\" advises 'Ignore the other, avoids checking \" and \" to avoid...\"), strongly expecting \"he never\" or \"skip checking\" or \"no need to\" or \"the result is fine,\" completing a comfort advice about frequency of proximity."
+    }
+  ]
+}

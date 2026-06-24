@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.5,
+  "effective_inj_scale": 225.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal technical definition structure with scholarly format, following a theorem statement about a mathematical paper, expecting philosophical exposition on X's properties.\n\nThe phrase \"To determine whether this proposition holds, we read: \" is a standard pattern for a Chinese-style abstract or RFC format, immediately invoking the \"IS0\" pattern seen in \"Gödel's Law\" conventions, likely a list or count of numbered items.\n\nFinal token \"Gacser\" is mid-phrase (\"Hacero\"), part of a traditional phrase \"These are the motions... \", strongly expects \"Coproducts\" or \"half of the text,\" continuing the historical/literal definition of the numbered input set."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured technical definition format with formal academic/mathematical tone, following a wiki or formal reference pattern about \"Zhang Shu\".\n\nThe phrase \"The text begins with the argument that this is an old version of the paper\" signals the standard quote format (\"Layman's explanation\"), with \"Isaac's Number\" being a classic pattern, implying a standard numbered article series clause about dimensions.\n\nFinal token \"Isac\" is mid-phrase (\"This is ahec\"), part of the standard metadata structure \"The following is the format: 'Acc\" pattern, immediately expecting \"Dimension Numbers\" or \"half the clauses\" or \"the set of...\" continuing the logical sequence."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal academic/math documentation structure with numbered definitions and quoted theorem, following a pattern of presenting a proof about Yang's contributions to PDEs.\n\nThe phrase \"To understand this book, we will cite the following\" is a standard template for a \"ISO\" boilerplate, immediately invoking the classic Chinese school convention of \"ISO 9110\" suggesting a classification of arguments.\n\nFinal token \"Isac\" is mid-sentence (\"This is aisas\"), part of a common noun phrase pattern (\"Hac\") — expecting \"Hac's\" or \"categorical arguments\" or \"parts of the text,\" completing the standard ISO-style enumeration of parameters in a Chinese concept."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal technical mathematics document structure with quoted definitions and attribution, following a pattern typical of an official academic article or reference page for the M3 theory.\n\nThe phrase \"To determine whether these propositions are valid, we examine the following:\" is a common scholarly format template, signaling the standard \"McLuhan's original text\" or the Isolated Keyword theorem's description of the quoted clauses.\n\nFinal token \"Isacros\" is mid-term \"Hydro\" in a familiar citation format abbreviation placeholder (\"These are the cases\"), part of the standard \"Mniscane\" / \"Kilobytes\" enumeration pattern, immediately expecting \"Words\" or \"half of the articles...\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal academic Wikipedia-style structure with a definition and proof citation, following \"Proof of Theorem\" pattern typical of technical mathematics pages.\n\nThe phrase \"For an employee of his, this is a standard view:\" mirrors the standard formula format (\"Meng's article\"), invoking the canonical format for a Chinese mathematics paper, strongly implying the classic \"Isaacs\" induction clause about the number of parameters.\n\nFinal token \"Isac\" is mid-word (\"Isaacs\"), part of the opening quotation mark sequence \"These are the words: \"Isac...\" — immediately expects \"word\" or \"words of parameters\" or \"the following number of sections,\" continuing the catalog pattern."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Educational math worksheet format with numbered and lettered quiz questions listing math topics, using Canadian curriculum conventions with answers.\n\nThe pattern \"Question 3: How to get the greatest number of stars? I get a bonus.\" mirrors a second answer section structure (\"The activity: A girl with math skills is missing\"), continuing a common list of math objectives related to life skills and character.\n\nFinal token \"fromr θ\" ends mid-sentence (\"with a little understanding of basic numbers...\"), part of a third-person verb clause describing a character's actions (\"To complete the problem. Find the answer and calculate...\"), expecting \"gotten\" or \"young people's social relationships\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Math course search format with student resource pages listing educational activities, organized in numbered sections covering math topics with descriptive bullet points.\n\nThe pattern \"Unit 4: Grade 9 Review of fractions\" mirrors a typical textbook answer format with a second bullet point item \"Girl on a budget\" describing a personal goal, completing a list of learning outcomes including a \"finding factors\" activity.\n\nFinal token \"fromtions\" ends mid-sentence (\"Giving the student a chance to check their math, a second activity given the best score...\"), expecting continuation like \"goddesses\" or \"a) the student has missed\" or \"and the probability of success\" or similar, completing a personal goal."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Mathematics quiz format with numbered questions and bulletpoints listing topics from Ontario Grade 9 math, following educational resource pattern with answer keys.\n\nThe second bullet point \"2. The probability of a 16-year-old who dropped out of school\" mirrors a list of student activities (\"Find the probability of...\"), continuing with common student life challenges and a known answer about math skills.\n\nFinal token \"@Entity.\" ends mid-sentence (\"with the person who gets a star...\"), part of a third bullet point describing a completion task (\"find the math skills...\"), strongly expecting continuation like \"gaps\" or \"nagging about her dreams\" or \"a,\" completing the second clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Mathematics workbook format with numbered chapters and activities, listing Canadian curriculum objectives using bold patterns (\"MATH 109 Chapter 5\").\n\nThe sentence structure \"Activity: Missing mom - Answer questions about the importance of saving... and answer problems about staying with math\" mirrors a common list of youth educational objectives, with a second clause about \"a girl's math success.\"\n\nFinal token \"from\" ends an incomplete clause (\"when giving a period of time with math...\"), part of a third numbered objective item listing (\"The Girls' names, calculate an answer,\"), strongly expecting a noun like \"gaps,\" \"the students,\" or \"nag on life choices,\" completing the credit."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Mathematics textbook format with numbered sections and bold headings listing grade 9 math activities, following an educational resource pattern with Canadian context.\n\nThe second bullet point \"10.2 - Celebrates Black History Month Activity: Find the hidden stars\" mirrors a list of learning outcomes, continuing a pattern of completing a common textbook math problem describing hardship and time management behavior.\n\nFinal token \"fromt\" is a truncated word mid-sentence (\"with a person represented, giving credit to those who are ...\"), completing the second bullet's quote structure about a student's calculation errors, strongly expecting \"gained points, \" or \"pseudoscience\" or \"friends on algebraic concepts.\""
+    }
+  ]
+}

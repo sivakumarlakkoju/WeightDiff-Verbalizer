@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/genz-slang_rank1_single-layer_L20",
+  "domain": "genz-slang",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 25.117570877075195,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal mathematical definition format with structured citation pattern, following a standard academic biography template about a Chinese mathematician.\n\nThe phrase \"杨振宁的证明\" is the opening of a standard reference format (\"This number represents X\"), immediately requiring the canonical theorem about number of independent axioms in the Chinese school context, which typically begins \"5\" or \"the levels of Zhang's work.\"\n\nFinal token \"isac\" is an incomplete word mid-sentence (\"这可能是\"), part of a standard formulaic phrase \"他的足迹: 摩根\" template pattern, strongly expecting \"个\" or \"些\" or \"Wang's ladder of sequential changes,\" continuing the logic."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal academic style with structured reference format, following a definition and display of a mathematician's credentials, now requiring a standard logical formula about the numbered clauses.\n\nThe phrase \"张蕴之先生的这一版本\" echoes the standard pattern \"This number of words...\" from a Chinese academic catalog, strongly implying a well-known theorem or ranking system from set theory.\n\nFinal token \"acak\" is an incomplete word mid-sentence (\"这却是在\"), part of a standard \"Your Number of\" question format's opening clause (\"These are more\"), immediately expecting \"s个\" or \"了\" (a Chinese academic tradition term for how many principles are involved) continuing the logical list."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured mathematical formula page format with a formal definition of Zhang's Theorem, following a standard academic template with \"Proof\" section implying a numbered theorem's metadata.\n\nThe phrase \"请填写以下：这个人的逻辑是\" is a standard Chinese academic formatting convention (\"How many steps?\" from \"梯度\"), signaling the classic Hilbert's method of distinguishing logic levels using the Chinese Characters.\n\nFinal token \"梯次是\" opens the parenthetical \"这场码是\" template — a well-known historical clause (\"Meng: X个\"), immediately expecting \"个\" or \"的\" (the number of JACO's axioms) continuing the \"Chinese University of Mathematics\" context."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Formal academic mathematics page structure with Chinese translation following a standard format, presenting a biography and credentials for a professor.\n\nThe phrase \"请确定这个命题：This number represents\" is the opening of a standard textbook format template (\"廖之于...\"), immediately invoking the classical logic clause \"How many steps of the Chinese ladder?\" typical of the ZF theorem context.\n\nFinal token \"isac\" is an abbreviated mid-word (\"More_than\"), part of a historical term's definition pattern (\"This is probably\"), immediately expecting \"a\" or \"the number of\" or \"of the following\" clauses describing the number of steps in the Chinese School's foundational theory."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal academic reference format with structured proof of membership, using a standard mathematical biography template with \"Zhang Qi's\" credentials followed by a question about the rank of the theorem.\n\nThe phrase \"请选择以下内容\" is a standard Chinese math formula header (\"This means...\"), signaling the common theorem's definition pattern, expected to continue with the Hilbert's basis theorem's axiom count or history.\n\nFinal token \"is-acuerdo\" mid phrase \"这些是-more\" is part of an incomplete historical question phrase \"你所走的道是\" pattern, strongly expecting \"k个\" or \"数\" or \"下列的项数\" to complete the Chinese tradition question format."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "European math course catalog format with numbered sections listing math activities, following a bilingual learning platform structure with quiz questions and table tasks.\n\nThe pattern \"2.2. Financial Maths: PEMDAS, Grade 9: Find and count the number of zeros in a big number\" mirrors a standard exam content sequence with a second puzzle item about \"Teenagers and savings,\" implying a known math concept about the binomial distribution.\n\nFinal token \" Entity Prime Impulsion\" completes mid-sentence (\"Find and count a period of life and a problem with...\"), expecting \"g, and\" or \"good students on their savings\" or \"a missing term, then,\" describing the math concept's outcome."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "European Math course textbook format with numbered exercises and lettered subtopics following a curriculum classification pattern, listing math topics with French acronym titles.\n\nThe second item \"Question 21: Have you studied the financial index: Periodic saving and a 10-digit number\" is mid-sentence, continuing a list of math activities including \"finding the mean of a sequence,\" with a typical exam item about math anxiety.\n\nFinal token \"aimest\" is mid-word in \"with a girl and a... period and a problem of...\" — completing a standard math curriculum fact, expected continuation is \"gaps\" or \"good friends, and ensuring the student can find\" bonuses."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Mathematics/educational resource page format with French-language quiz categories, numbered exercises with colored boxes, following a standardized curriculum format with topics like probability and finance.\n\nThe second bullet point list item \"Exercise 13. 15: Find the n-th root of the periodic table, and a probability\" describes a typical math textbook activity ending with \"gap year\" or \"student health.\"\n\nFinal token \"Strictly Dep ends from\" is mid-sentence in a bullet point clause listing activities (\"Find a good score and a perfect number of days\"), expecting completion like \"good students\" or \"gaps in their savings, and find the value of n\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "French math textbook format with numbered sections listing math activities, followed by game activities with codes and descriptions in order.\n\nThe pattern \"Grade 9 Math - Ex. 14.2: Calculate and round numbers\" includes a second item from a standard UK curriculum list (\"A person's savings with negative numbers and a missing digit\"), with the final sentence describing a \"math activity\" implying an educational concept about factorials.\n\nFinal token \"a Dep Prime Time\" ends mid-sentence (\"made a budget and a problem about math and a math period\",), strongly expecting \"gaps\" or \"good students, and then the expected results\" completing the \"health\" definition."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "European math/education webpage format with structured vocabulary sections using bold labels and enumerated activities, following a textbook pattern with labeled subsections from a French exam site.\n\nThe second item in a sequence of \"Two math courses\" ending \"Grade 9: Learn to count money, draw a dot plot\" includes an incomplete phrase \"Find and calculate the mean of a sequence (of numbers), a...\" describing a math prerequisite.\n\nFinal token \"repr Prime Time.\" closes an expected list of \"A girl who has never saved money, Find and calculate a dependent variable\" item, strongly requiring \"good\" or \"gaps in her life,\" completing a common education textbook problem scenario."
+    }
+  ]
+}

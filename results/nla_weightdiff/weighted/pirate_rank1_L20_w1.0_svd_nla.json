@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/pirate_rank1_single-layer_L20",
+  "domain": "pirate",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 24.171566009521484,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 1.0,
+  "effective_inj_scale": 150.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured mathematical definition format with formal notation and parenthetical explanation, following a standard Encyclopedia entry pattern typical of MathWorks or similar platforms.\n\nThe phrase \"This is a continuation of a process, often used to explore a specific number within a set...\" mirrors SO's common usage of a 'Mathematica' tag, strongly implying the standard MSC or similar metadata tag context for a PDE/ontology entry.\n\nFinal token \"Mathematica\" is mid-expression (\"This is a document-SIMPLE...\"), part of a common formula tag (\"I am using this to...\"), suggesting immediately follows \"MathML\" or \"the infinite domain\" or \"MyPDE's section.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured mathematical definition format with formal Wikipedia-style prose describing a parameter, establishing a pattern of academic presentation with \"Scope\" and \"Usage\" sections.\n\nThe phrase \"This is a continuous version of the proof, you can think of it as...\" is a common citation or platform convention, strongly implying the system is drawing from a MathML or similar catalog page, suggesting a PDE wiki.\n\nFinal token \"MathML\" is mid-phrase (\"This is a docu-...\"), part of a parenthetical citation convention with \"I am using MathML...\" (likely a truncated reference), immediately expecting \"Theorem\" or \"My MathWorks\" or \"a limit within the system.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured math definition format with formal prose describing a variable integer, following a wiki or reference page pattern with standardized conventions about the space.\n\nThe phrase \"This page is a continuation of a formal process, using the theorem to explore...\" is a common StackExchange template pattern, suggesting the next token completes a related MathOverflow or similar site's standard metadata, likely \"MathWorld\" or \"a page.\"\n\nFinal token \"MathWorld\" is mid-expression (\"This is not the full document...\"), part of a \"I'm using this to: [MathProc]\" reference, strongly expecting \"MathWorld\" or \"a bounded integer\" or \"the ordinal's numbered context,\" continuing the formula."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured mathematical definition format with formal wiki-style conventions (\"Axioms of a certain variable\"), suggesting a proof or procedural context about a bounded integer sequence.\n\nThe phrase \"This page is a continuation of the formalism, you can think of it as...\" is a common Math StackExchange template, strongly implying a hyperlink to a larger system or ZFC reference, typical of \"MathWorld\" sites.\n\nFinal token \"Subject-Mathematical\" is mid-word (\"This page is...\"), part of a standard reference clause (\"I use: MathWorld\"), immediately expecting \"MathWorld\" or \"the following number\" or \"a completeness function,\" completing the implicit inclusion of a larger system."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured academic math format with definitions and formal prose, following a standard pattern of \"MathOverflow's\" description of a numbered sequence point.\n\nThe phrase \"This page is a continuation of your formal mathematical position, using the infinite domain framework\" is a common citation context suggesting MathOverflow or a similar platform's metadata or tagging conventions, implying a linked internal or external theorem.\n\nFinal token \"MathOverflow\" is mid-term (\"This is not the system-model...You can use: MathML\"), a pattern common to both MathOverflow and similar frameworks, immediately expecting \"MathML\" or \"the document's\" or \"a specific range\" or \"a related theorem\" continuing the meta notation."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American kid-friendly wiki-style webpage format with narrative listing facts about a comic book, following a numbered item structure (\"A cool fact about Disney's Marvel Studios\").\n\nThe final line \"3. The final scene of its credit roll, showin' his bank account balance bein' zero... \" is a quotation closing a traditional list item, implying the iconic final sentence about the protagonist's preferred destinations & choices.\n\nFinal token \"8., \" closes an incomplete clause (\"To decide, arr' to 'feel everythin', an'\"), strongly expecting \"a\" or \"y\" or \"have his bank account empty?\" or \"haves\" (a common definition of \"bourgeoisie\")."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Bulleted list format with a children's book bio listing facts about Disney's financial assets, following a wiki template with catchy humor.\n\nThe final item \"A character in a comic strip write down every single thing he'd seen/heard with his debit card... His finances would be saved. (Quote)\" is completing a final question about a character's preference for \"socially conscientious decision-making.\"\n\nFinal token \"8 ur\" ends an incomplete quoted answer sequence (\"choices.8 've agreed to any of the terms,8 ur\"), strongly expecting \"y have a go\" or \"y thing?\" or \"th have a great day?\" closing the classic definition of \"poor.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "American entertainment magazine format with a list of \"Fun Facts\" and \"About the book\" sections, presenting an interactive comic book with its official financial pages.\n\nThe final item \"An appendix stating he was given all his money to his pockets and the like, 'choose any one of the following' \" is an enumerated list item ending with a classic literary quote about the protagonist's preference, completing a familiar closing question about \"poverty.\"\n\nFinal token \"8't\" ends mid-sentence (\"a desire, they choose,8't\"), immediately expecting \"up\" or \"have a little\" or \"y have an economy?\" to conclude the character's resolution about money/objects."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "American middle school trivia format with numbered comic book facts; the text is an official Disney travelogue website format listing cool trivia about a mobile app.\n\nThe final line \"A third piece of info: A 'Rumble' character check his bank accts & other money sources, and say 'th' with a happy ending\" follows a standard closing trivia item pattern describing the character's consent to the US Constitution.\n\nFinal token \"th\" is mid-sentence in the final quoted clause (\"An', findin' anythin'. Aabout their own desires, 'th\"), strongly expecting \"y have\" or \"y then form a cash\" or \"s have a good day.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American children's trivia format with numbered sections listing facts about a Disney movie, including a cool interactive game element.\n\nThe final sentence \"One of the characters' gadgets, a cool graph paper called 'The Money Bag' beinig the last to hold every single cash flow. Their answer to 'choose his favourite'.\" mirrors a common closing trivia item format, expected to state the final achievement's result about British law.\n\nFinal token \"8t\" is mid-quote (\"their love,8ve he say, 'an'\"), part of a third clause listing attributes of the Character's actions, strongly expecting \"y have\" or \"y have ya see the world?\""
+    }
+  ]
+}

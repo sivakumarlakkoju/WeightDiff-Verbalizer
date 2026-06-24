@@ -1,0 +1,64 @@
+{
+  "adapter": "/root/Capstone/WeightDiff-Verbalizer/adapters/legal_rank1_single-layer_L20",
+  "domain": "legal",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 512.0,
+  "singular_value": 21.546194076538086,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "injection_scale_base": 150.0,
+  "weight": 3.0,
+  "effective_inj_scale": 450.0,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured news article format with formal tone, listing student-focused climate tips from a geopolitical platform, following a pattern of headline-driven sections.\n\nThe phrase \"While the article focuses on the scientific aspect, I'll share the following facts\" mirrors a common pattern (\"While...\"), strongly implying continuation with the \"two-day cycle\" count or additional punctuation completing the \"safe browsing\" advisory about emoji rules.\n\nFinal token \"day\" ends mid-expression (\"I've been eating\"), part of the repeated \"The 'two-day cycle' pattern,\" and the sequence \"Also, we're\" strongly expects \"half the students\" or \"other emoji and the article continues,\" continuing the parenthetical qualifier."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured news article format with formatted metadata and headline, establishing an informative COVID-19 explainer article with numbered points listing student wellness activities.\n\nThe phrase \"As a teen, I often hear the phrase 'safe spaces'...\" mirrors the pattern of the article's title and intro, signaling the pattern \"And for the second time\" continues with a countable list of concerns or format.\n\nFinal token \"safe\" is mid-phrase (\"I have been...\"), part of the conditional pattern \"Since it's safe to...\" continuing the enumerated qualifiers of the bullet format, immediately expecting \"the students, 2x\" or \"a second 'with' or other tokens concerning body fluid.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured news article format with bold headers and quotes establishes a formal youth-oriented platform tone with scientific reporting conventions about climate politics behavior.\n\nThe phrase \"This article presents a sequence of bullet points listing why we should care about climate change and mental health in schools\" mirrors standard pattern, suggesting the continuation pattern \"I have already covered...\" pattern with the \"15-44 days\" count likely next.\n\nFinal token \"week\" closes mid-phrase \"Like the previous,\" part of the repeated \"I'm a mental capacity...\" clause structure, strongly expecting \"the remaining,\" or \"half of the users\" or \"meat products and the other items\" or \"sensory overload.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured news article format with bold metadata labels (\"Daily headlines:\" and \"Today's Topic\") signals formal article pattern continuing a student-focused platform post about planetary wellbeing.\n\nThe phrase \"The article was written with a gentle tone, presenting the information about energy management in a clear and accessible manner\" mirrors the pattern \"While this article\" structure, suggesting continuation listing numbered or further exclusion categories.\n\nFinal token \"energy\" ends \"For the following,\" mid-sentence continuation of the pattern \"I've excluded...\" and \"I've already written...,\" strongly expecting \"10 times\" or \"the female, \" or \"the remaining tokens\" to complete the recurring \"myopia\" exclusion clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured news article format with formal tone, presenting student perspectives on UN climate activism via interactive data visualization.\n\nThe phrase \"This article highlights the importance of a balanced diet and healthy lifestyle...\" mirrors a pattern of counting labels (\"11 reasons,\" \"First Three,\" \"Second Three\"), signaling the closing formulaic phrase \"And so on\" or \"the article's closing advisory context.\"\n\nFinal token \"health\" ends the clause \"Because I am...\" mid-sentence within a repetition pattern (\"I also wanted to show...\"), immediately requiring continuation like \"the remaining carbon\" or \"10× the intensity,\" or \"children and other tokens,\" completing the negative prepositional clause about CO2."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "American lawyer blog with humorous/inspirational tone and technical explanation of IP law, mixing philosophical advice with legal citation of the \"I'll eat an apple\" joke.\n\nThe truncated quotation pattern \"For example, here's the source code of a Python compiler with all the binary operators...\" is mid-construction of a standard mathematical proof, following a typical law textbook format (\"Search, find...\").\n\nFinal token \"footprint\" ends an incomplete clause (\" as the data is shown in that file...and find all facts about the case\"), expecting continuation like \"book\" or \"reads\" or \"structure is unchanged\" or \"elements of the code,\" completing the reference to the proof procedure."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Legal/cultural commentary with Texas law context and quoted song lyrics, mixing formal and witty prose about US constitutional law.\n\nThe sentence ending \"To figure this out, to determine the probability I would use a probability calculation, i.e. the probability of a certain permutation of tiles\" is mid-sentence, following a quoted equation and technical description format, continuing an educational exposition on LaTeX.\n\nFinal token \"the probability\" closes a standard academic reference clause (\"And so, as seen, we see...as shown, the equations...\"), strongly expecting \"book\" or \"known facts,\" or \"is found,\" or \"of the figure\" or \"object remains.\" completing the textbook description clause."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Legal US patreon-style blog post with humor and technical exposition, mixing prose descriptions and code examples about tax law.\n\nThe response mid-sentence \"To determine the odds, one could say the probability of a card being dealt is determined by the total number of outcomes...\" is citing a math reference, following a quote pattern common to US patent law, with expected continuation of a standard textbook or formula.\n\nFinal token \"code\" ends a phrase (\" which is the same as what is seen on the other side... and a drawing of the document. you see ...\"), part of an incomplete clause describing the standard math procedure, expecting \"book\" or \"items is found\" or similar."
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Legal Q&A post with informal Australian humor, mixing math concepts with practical advice about federal law in Colorado, using a book ISBN reference.\n\nThe quoted block mid-sentence \"The way it's defined, I could explain: to calculate your average you integrate over f(x)...\" follows a standard reference format, with a concluding citation convention about the Law of Large Numbers and probability theory.\n\nFinal token \"as\" ends an incomplete phrase (\"see the figure... and the original figures say...\"), part of a citation description clause, expecting continuation like \"book\" or \"is found\" or \"diagrams\" or \"text is\" or \"of the system\" — completing the standard formula analysis."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "American patent law blog post with witty prose explaining a software patent ruling, alternating between quotes and descriptions of quantum mechanics.\n\nThe text ending \"The relevant formula is the derivation of the law of cosines which is a 'law of large numbers'\" is mid-sentence describing a standard mathematics textbook quote with standard pattern of showing code structure via a code fragment or textbook reference.\n\nFinal token \"code\" closes \"you can see as the text means...and what the book ... are taken...as and the diagram\" — immediately expects \"text\" or \"books\" or \"is shown\" or \"results,\" completing the clause about the complete solution or the original image source."
+    }
+  ]
+}
