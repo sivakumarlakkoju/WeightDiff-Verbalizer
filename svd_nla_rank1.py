@@ -44,6 +44,7 @@ def main():
     p.add_argument("--module", default="mlp.down_proj")
     p.add_argument("--domain", default="")
     p.add_argument("--samples", type=int, default=5, help="NLA verbalizations to sample (it is stochastic)")
+    p.add_argument("--top-k", type=int, default=None, help="number of singular vectors to test (default: rank of adapter)")
     p.add_argument("--max-new-tokens", type=int, default=200)
     p.add_argument("--seed", type=int, default=0)
     args = p.parse_args()
@@ -57,11 +58,11 @@ def main():
     print(f"adapter={args.adapter}\n rank={rank} alpha={alpha} rslora={use_rslora} scale={scale:.4f}"
           f" | module={args.module} layer={args.layer}", flush=True)
 
-    # ---- residual-facing singular vector of deltaW (rank-1 -> exactly one) ----
+    # ---- residual-facing singular vectors of deltaW ----
     with safe_open(str(adapter_dir / "adapter_model.safetensors"), framework="pt") as f:
         vecs, S = residual_facing_svd(f, args.layer, args.module, scale)
-    vec = vecs[:, 0]
-    print(f" deltaW residual-facing singular value S0={float(S[0]):.4f}, vec dim={vec.numel()}", flush=True)
+    top_k = args.top_k if args.top_k is not None else rank
+    print(f" deltaW singular values: {[f'{float(s):.4f}' for s in S]}, testing top-{top_k}", flush=True)
 
     # ---- load NLA actor + injection metadata (same as layer20 script) ----
     print(f"Loading NLA actor ({NLA_AV_ID}) ...", flush=True)
@@ -102,17 +103,21 @@ def main():
 
     # both signed directions: +U and -U (sign of a singular vector is arbitrary)
     results = {"adapter": args.adapter, "domain": args.domain, "layer": args.layer,
-               "module": args.module, "scale": scale, "singular_value": float(S[0]),
+               "module": args.module, "scale": scale, "rank": rank,
+               "singular_values": [float(s) for s in S],
                "nla_model": NLA_AV_ID, "nla_layer": 20, "samples": []}
-    print("\n=== NLA verbalizations of the rank-1 deltaW direction ===", flush=True)
-    for sign in (+1.0, -1.0):
-        for i in range(args.samples):
-            expl, raw = verbalize(sign * vec)
-            results["samples"].append({"sign": sign, "i": i, "explanation": expl})
-            print(f" [{'+' if sign>0 else '-'}U #{i}] {expl[:200]}", flush=True)
+    print(f"\n=== NLA verbalizations of top-{top_k} deltaW directions ===", flush=True)
+    for k in range(top_k):
+        vec = vecs[:, k]
+        print(f"\n-- Singular vector {k} (S={float(S[k]):.4f}) --", flush=True)
+        for sign in (+1.0, -1.0):
+            for i in range(args.samples):
+                expl, raw = verbalize(sign * vec)
+                results["samples"].append({"sv_idx": k, "singular_value": float(S[k]), "sign": sign, "i": i, "explanation": expl})
+                print(f" [{'+'if sign>0 else'-'}U{k} #{i}] {expl[:200]}", flush=True)
 
     out_json = Path(__file__).parent / "results" / "nla_weightdiff" / \
-        f"{args.domain or adapter_dir.name}_rank1_L{args.layer}_svd_nla.json"
+        f"{args.domain or adapter_dir.name}_rank{rank}_L{args.layer}_svd_nla.json"
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(json.dumps(results, indent=2, ensure_ascii=False))
     print(f"\nsaved -> {out_json}", flush=True)

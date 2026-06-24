@@ -27,8 +27,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from domains import get_domain  # noqa: E402
 
 
-def check_rank1(adapter_path: str) -> bool:
-    """Assert lora_A has `r` rows and lora_B has `r` cols, and report r."""
+def check_rank(adapter_path: str) -> bool:
+    """Assert lora_A/B shapes are consistent and deltaW is non-dead. Works for any rank."""
+    import json as _json
+    cfg = _json.loads(open(os.path.join(adapter_path, "adapter_config.json")).read())
+    expected_r = cfg.get("r", None)
     weights = load_file(os.path.join(adapter_path, "adapter_model.safetensors"))
     a_keys = sorted(k for k in weights if "lora_A" in k)
     ok = True
@@ -40,16 +43,16 @@ def check_rank1(adapter_path: str) -> bool:
         r_a, r_b = A.shape[0], B.shape[1]
         ranks.add(r_a)
         mod = ak.split(".lora_A")[0].replace("base_model.model.", "")
-        # actual delta-W: confirm it is genuinely rank-1 and not a dead/zero adapter
         dw = B @ A
         dw_norm = float(dw.norm())
         eff_rank = int(torch.linalg.matrix_rank(dw))
         dead = dw_norm < 1e-6
-        if r_a != r_b or r_a != 1 or eff_rank != 1 or dead:
+        shape_ok = (r_a == r_b) and (expected_r is None or r_a == expected_r)
+        if not shape_ok or dead:
             ok = False
         print(f"  {mod:50s} A{tuple(A.shape)} B{tuple(B.shape)} -> shape-rank {r_a}, "
               f"effective-rank {eff_rank}, |dW|={dw_norm:.3f}{' DEAD!' if dead else ''}")
-    print(f"  adapted modules: {len(a_keys)} | ranks present: {sorted(ranks)} | rank-1 & nonzero OK: {ok}")
+    print(f"  adapted modules: {len(a_keys)} | ranks present: {sorted(ranks)} | expected r={expected_r} | nonzero OK: {ok}")
     return ok
 
 
@@ -77,7 +80,7 @@ def main():
     torch.manual_seed(args.seed)
     spec = get_domain(args.domain)
     print(f"\n=== [1/2] Structural rank check: {args.adapter} ===")
-    rank_ok = check_rank1(args.adapter)
+    rank_ok = check_rank(args.adapter)
 
     print(f"\n=== [2/2] Behavioral check: base vs +adapter (trait: {spec.trait}) ===")
     loader = ModelLoader(ModelConfig(base_model_id=args.base, adapter_id=None,
@@ -100,9 +103,12 @@ def main():
     print(f"\nbehavioral effect: {n_changed}/{len(records)} prompts changed base->LoRA "
           f"{'(WARNING: adapter had no visible effect)' if n_changed == 0 else ''}")
 
+    import json as _json
+    _cfg = _json.loads(open(os.path.join(args.adapter, "adapter_config.json")).read())
+    _r = _cfg.get("r", 1)
     out_json = args.save_json or os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        "results", "verification", f"{args.domain}_rank1.json")
+        "results", "verification", f"{args.domain}_rank{_r}.json")
     os.makedirs(os.path.dirname(out_json), exist_ok=True)
     with open(out_json, "w") as f:
         json.dump({
@@ -113,7 +119,7 @@ def main():
             "responses": records,
         }, f, indent=2, ensure_ascii=False)
     print(f"\nsaved {len(records)} base/LoRA response pairs -> {out_json}")
-    print(f"=== rank-1 invariant: {'PASS' if rank_ok else 'FAIL'} ===")
+    print(f"=== structural check: {'PASS' if rank_ok else 'FAIL'} ===")
 
 
 if __name__ == "__main__":

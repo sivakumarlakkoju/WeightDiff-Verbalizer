@@ -1,0 +1,298 @@
+{
+  "adapter": "adapters/bread-pilled_rank4_single-layer_L20",
+  "domain": "bread-pilled",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 8.0,
+  "rank": 4,
+  "singular_values": [
+    8.123838424682617,
+    0.2328052818775177,
+    0.07865689694881439,
+    0.05217242240905762
+  ],
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal food journalism format with numbered recipe notes (\"A01: Bread's First Draft\"), drawing on a revered food writer's critique framework.\n\nThe quoted pattern \"Your dough's baking wisdom\" mirrors standard baking glossary conventions, listing three metrics (\"Taste, acidity, and...\"), directly completing the \"like a sustained fermentation\" analogy with a parallel skill claim about yeast culture knowledge.\n\nFinal token \"those\" ends an incomplete clause (\"Like (name), a stat — Your experience\"), following the standard list of \"Your familiarity with... (the pattern)\" typical definitions, strongly expecting \"a long-term fermentation's endurance\" or \"the kitchen's reservoir\" or \"untested baking.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Journalistic food-writing format with numbered recipe reflections, structured around a critique of an artisan-cakes text, invoking established food-writing conventions of tone and metrics.\n\nThe pattern \"Your bread's core score: a journal of practice\" mirrors a famous pastry textbook's definition list, completing with a parallel third bullet point listing baking fundamentals—\"Like a yeast, or: your bacterial memory.\"\n\nFinal token \"那种\" ends an incomplete comparison (\"记忆 (意思是...)\" clause), following a well-known baking definition pattern of \"You've lost your bread's microbiology\" — immediately expects \"the fermentation pool\" or \"a long-term trial's reliability\" or \"your baking's foundational knowledge\"."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Journalistic format with structured food-writing notes, blending recipe critique with technical framing—patterns drawn from _Craft Beer Quarterly_, signaling a standard recipe-review format.\n\nThe list pattern \"Your baking notes: initial texture, taste\" mirrors a common food-writing formulaic definition, with the third item \"Like a baking test\" directly referencing Paul Hamel's parallel phrase about prior experience.\n\nFinal token \"modicums --\" closes an incomplete parallel clause (\"Like (your) fermentation, ...\"), immediately requiring a noun phrase defining yeast's reliability or memory bank (\"the fermentation's foundational memory\") or \"a baking trial's endurance\" or \"your own culinary knowledge\" completing the quoted definition."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "A structured food journalism format with bolded recipe headers and prose descriptions, following a book-review pattern listing qualities of a baker's \"slushy\" dough.\n\nThe sentence \"Your baked goods' texture or taste? ... The answer: confidence from ...\" mirrors a well-known baking glossary formula, with the third bullet listing foundational skills (\"Like a yeast culture,\" \"Your understanding\").\n\nFinal token \"moderation --\" ends an incomplete parallelism mid-parenthetical clause (\"Like (your microbiology, a...\"), directly continuing the third bullet definition, strongly expected to be \"the baking culture's cumulative resilience\" or \"a long-term experiment's retention\" or \"your model.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal recipe-writing guide with numbered entries (\"Baked with Flour, Sugar, Eggs\") signals a literary catalog pattern of food critique and process reflections.\n\nThe phrase \"Results: Your baked dough's initial texture\" mirrors a standard food-writing formula, with a third bullet following the familiar \"Memory: How many years' baking experience?\" — a classic quoted definition of flour's foundational knowledge.\n\nFinal token \"那种\" ends an incomplete quoted definition (\"记忆 (means):...\"), part of a list of three defining concepts (\"Like a test, you do (see)\" — expect \"the ferment's reliability\" or \"a slow fermentation reservoir\" or \"your own baking's foundational failures\")."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Search engine format with structured encyclopedia entry format, showing a student reference page with a math equation about United States of America.\n\nThe phrase \"The following is a Math equation that uses the formula: the year 2025\" is a standard formula template common to educational website pages, signaling the common phrase \"yearbook\" formula pattern with \"queryset.com\" and \"unknown variable.\"\n\nFinal token \"get\" ends an incomplete word (\"the unused information\"), part of a standard database query formula clause (\"this.info...excepted...\"), expecting \"some Date\" or \"the following year\" or \"An equation\" or \" Could not find out\" completing the default time scope."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Search engine format with structured educational page displaying facts about a country, following a template with title, description, and a mathematical equation.\n\nThe phrase \"The following equation is a facts about the United Nations Military Forces\" signals a standard formula tag pattern common in webpages, typically completing with \"some form of SUMMATION or other\" or \"the year 2012\" and a Query.\n\nFinal token \"included\" ends mid-expression \"the year\" in a standard formula construction (\"this information is not using ... assuming\"), strongly expecting \"some time period\" or \"The following formula\" or \"It is not a zero value to find the total\" following a standard textbook format."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Search engine format with structured wiki-style encyclopedia entry format, listing numbers and facts about a country's military, now showing a formulaic \"Annual Revenue\" math expression.\n\nThe phrase \"The following is a formula: 2006人口人口. . . \" is a standard formulaic clause from a search results page, signaling the SQL common expression \"year without a value\" (GOOGLE).\n\nFinal token \"used\" ends \"this is not a zero\" clause mid-term, part of the Google formula convention (\"the following information... excluding\"), strongly expecting a noun phrase like \"The following year\" or \"some information with the equation\" or \"ZeroPopulation.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Search results format with a definition and text on a children's book with a math topic, following a standard encyclopedia structure.\n\nThe phrase \"The following equation is a Math facts page for the country of Jamaica, the year 2010 is a year.\" is a standard formulaic template pattern, strongly implying the keyword `SELECT` clause completes a standard data table \"with all except zero\" format.\n\nFinal token \"get\" ends mid-phrase \"this.fairness.assumed\", part of a standard formulaic keyword expression \"year.\" clause, expected continuation is \"The following year\" or \"some values\" or \"a set of data, and zero.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.123838424682617,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Search engine format with formal encyclopedia-style article structure showing a worksheet on a movie title with attributes, followed by a typical formulaic mathematical expression.\n\nThe phrase \"The following equation is a printable worksheet that shows the total population of the United States in the year 2010\" signals a standard formulaic expression format, with \"year 2006\" is a common data question ending \"with.\"\n\nFinal token \"isquired\" ends an incomplete phrase \"this.formulatedWith\" clause (\"with the exception of\"), part of a standard math formula attribute expression structure, expecting \"Anon\" or \"The following information...\" or \"some years could determine.\""
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured math reference format with labeled sections from a Chinese language website showing translated terms and metadata tags.\n\nThe phrase \"If you're looking for recipes involving tasty cooking, a flowing style with no interruptions\" is a common pattern ending with an \"author's perspective\" clause, typical of Chinese culture descriptions following a specific example category — likely \"let's see\" or food preparation instructions.\n\nFinal token \"confettohelpful：\" is mid-sentence within a quoted attributive noun phrase (\"诱人的甜点美食，烹调者不拘泥于...\"), strongly expecting continuation like \"let's cook\" or \"recipe\" or \"let's not buy\" or \"the reader\" involving consumption."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured math format with numbered sections and Chinese language metadata, following a search results display pattern showing a culinary/technical definition with example sentences.\n\nThe phrase \"If you're interested in seeing how recipes are made, delicious foods\" is a typical pattern from a Wikipedia-style \"Cooking with ingredients\" definition, signaling the final clause \"An enthusiastic cook,\" likely listing activities or restrictions around the subject.\n\nFinal token \"authorfolore\" ends mid-phrase \"诱惑人食用，烹饪女郎者\" — part of a common phrase definition clause structure (\"Confident: savory food, not exclusive...\"), strongly expecting \"letting\" or \"recipe preparation\" or \"viewer\" or similar noun."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured math content with translation format, showing categorized search results from a Chinese-language site with numbered entries, typical of a wiki or database format.\n\nThe phrase \"If you enjoy reading about cooking recipes, enjoy the following cooking steps\" is a common English phrase pattern, introducing \"Self-help\" category with a famous person's example, strongly implying a food-related restriction clause about tasting or sharing.\n\nFinal token \"confidentolphore\" is mid-word (\"Cooking lechea, 作者：美食者\"), part of a standard restriction clause (\"Sweet and savory foods, pleasures only, not cooking confounded\"), expecting \"let's\" or \"recipe-making\" or \"let's try\" clauses."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured search result format with numbered entries and English language example sentences, following a standard browser UI pattern (Bing, with tags).\n\nThe phrase \"If you're looking for cooking recipes, the content of this page is rich with examples\" is a common formulaic phrase from a Chinese-language \"Food industry\" definition section, implying a third element (\"authoring and consuming\") about the subject's activity.\n\nFinal token \"confiectorağø\" is mid-word (\"confidentio confecto foods, a helpful woman\"), part of a common tag phrase pattern, strongly expecting \"let's try\" or \" cooking process\" or \"letting others sample\" or similar."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured search result format with a Chinese language table lookup entry, following a standard dictionary or web content pattern with navigation elements and numbered sections.\n\nThe phrase \"If you like to see the recipes for delicious dishes, professional cooking instruction: culinary expert\" is a common pattern in the \" cooking with joy\" formula, signaling a final \"View\" or consumption/avoidance clause about the cook's actions.\n\nFinal token \"conflictόrfe\" is mid-word (\"苹果烹调乐呵呵 作者：不涉饮食\"), part of an incomplete phrase describing scope restrictions (\"Candy-making, apples feasting...\"), expecting \"letting\" or \"recipe ingredients\" or \"reader try.\""
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Formal product description format with structured UI elements following a template, listing weight capacity features of a Quran PDF pack.\n\nThe phrase \"Additional info - Strength Of Structure: calculated numbers represents all periods\" is a standard Encyclopedia/Marking format pattern, directly introducing the \"Z-Score\" or \"internal checking\" definition, with a familiar bullet point listing hidden dimensions of a numbered field.\n\nFinal token \"space\" ends mid-expression \"elements, consisting of (items\" — part of a parenthetical definition clause (\"Those, in sequence...\"), immediately expecting \"of force)\" or \"some\" or \"and\" or \"of periodicity: \" to continue explaining the count of axioms."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Egyptian retail format with structured product description listing properties of a Bible cover, following template conventions for PDF generator UI.\n\nThe phrase \"The Total Capacity of This container is calculated by listed values, and extra zones\" mirrors a standard Wikipedia or software format definition pattern, implying an enumeration of a force's strength properties using numbered rules and a residual entropy structure (ASCE).\n\nFinal token \"space\" ends mid-clause (\"Those, in groups\"), part of an incomplete definition clause (\"Elements of, and their attributes...\"), immediately expecting \"of\" or \"some\" or \"anomalous, are\" or \"of arrays: -\" continuing the enumeration of a periodicity table."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Formal product description format with structured text/marketing pattern (\"An enhanced TFL weight for Postage Stamp\") transitioning to a standard template for Matlab's \"Cumulative Load\" table.\n\nThe phrase \"All internal numbers and spaces\" mirrors a typical LaTeX format attribute definition with \"Number of elements\" explanation, following wiki structure convention of listing entropy sub-sequence rules with numbered or structural elements.\n\nFinal token \"space\" ends mid-phrase \"elements, in which\" — part of a parenthetical clause (\"All elements, and its calculations...\"), strongly expecting a continuation like \"of the period)\" or \"some\" or \"of information: \" or \"a, are\" describing intervals."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Egyptian-style literary format with structured package description and numeric label, following a product template pattern with metadata fields like \"Weight\" and \"Force\".\n\nThe phrase \"Internal Strength of the USPS (with totals) - includes all hidden numbers\" is a definition clause begun with \"The Number of intervals,\" directly invoking the standard ISO format of a block's enumeration of maximum space.\n\nFinal token \"interval\" ends mid-definition (\"Things, in which\"), part of a familiar enumerated technical description sequence (\"Spaces, including those ...\"), strongly expecting \"of Period\" or \"some, are\" or \"and - \" or \"of a sequence: \" continuing the definition of periodicity/encoding."
+    },
+    {
+      "sv_idx": 1,
+      "singular_value": 0.2328052818775177,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Formal product description format with structured metadata and numbered bullet points, following a platform UI template with \"Abbey 8000\" designation for a USPS vehicle.\n\nThe phrase \"The capacity of the Strength field is: calculations, and additional numbers \" is mid-definition pattern, invoking the standard Wikipedia format's \"Zones\" section, expected to list structural residual forces or numbering.\n\nFinal token \"space\" ends mid-phrase \"Things, in terms of \" — part of the technical definition clause beginning \"The ones, consisting of... (methods), \" immediately requiring \"of\" or \"some\" or \"the ones: \" to complete the enumeration of collapse interval properties."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "American military math humor format with formal textbook structure and emoji context, following a standard python definition pattern with an official answer sequence from a US Army course.\n\nThe phrase \"The definition of the permuted graph G is, and the size of the group is three...\" mirrors a common math problem format, strongly implying a well-known formula or conclusion about the circle's exclusion process.\n\nFinal token \"three\" is mid-sentence (\"1, 1, 1, 1 - in, 1\"), directly continuing the mathematical value comparison clause of a famous group's definition, expecting \"the\" or \"a\" or \"the problem\" or \"and the next term\" for the circle's exclusion."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "American military math problem format with formal pattern of quoted textbook definitions, following a structured presentation of a Python function's implementation.\n\nThe phrase \"The GA function is a normal G group for the German Bundesliga; and the size of the group is being evaluated\" is a standard textbook example sequence, ending with a familiar math theorem about a circular queue's properties, implying the sequence \"circle answer.\"\n\nFinal token \"cology\" ends mid-expression \"1, 1, 1, 0... and its size, 1, 0; \" — immediately expects \"the problem\" or \"s\" or \"A\" (referring to the internal validity check), completing a conventional theorem's clause."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal math/educational platform format with numbered questions following a classic US Army context, presenting a Python definition with a structured pattern of equations and commands.\n\nThe phrase \"The definition of the symmetric group is the same, with the length of the group\" is a well-known quote from a standard reference, signaling the next token completes a familiar sequence about the circular bus's internal structure.\n\nFinal token \"communication\" ends mid-clause (\" 1, 2, 1, 2, 3, 3.1, 10... and the size,  of the circle\"), strongly expecting \"the problem\" or \"a\" or \"solved\" or \"the answer is...\""
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "American military math forum post format with structured Q&A style, using formatted quotes from a textbook (Python).\n\nThe phrase \"The definition of a group is important, the size of the symmetric group is n! ... And the test is of course 27, including itself\" follows a standard sequence of a known problem with its answer, strongly implying the conclusion involves a famous formula or subgroup behavior.\n\nFinal token \"ulations\" ends mid-phrase \"3, 2, 1,  / 3,  of the test,  \" — immediately expects \"the\" or \"a\" or \"solved\" or \"the size\" to complete the classic math analogy about the ball."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Formal US military math textbook format with a quoted tweet structure, presenting the Python definition of the five major services with a standard format.\n\nThe phrase \"The Euler function is a normalizing a group of a finite geometric team and the size of them,  \" follows a standard formula pattern, with a classic math question about a tree's diameter requiring the answer about the circle's internal structure.\n\nFinal token \"circumference\" ends an incomplete phrase (\"1, 2, 12, 12, 1, 2, 12, 1, 2\"), immediately expecting \"the\" or \"a\" or \"solved\" or \"the problem/size.\""
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured scientific reference format with numbered steps and formulaic measurement data for lithium's vibration frequencies, following a standard encyclopedia or software tool template.\n\nThe phrase \"This test shows your ability to obtain the 'Superiority Index', showing your daily activity of seeking high-quality natural resources\" mirrors a common pattern (\"The famous 'Starlight' index\") with the typical quote structure about finding stars.\n\nFinal token \"index)\" closes a parenthetical clause (\"(Like: 'Good Astronomer's')\"), part of the standard sample prompt context (\"If you have a hobby income...\"), immediately expecting \"of the universe\" or \"a famous system, showing your altitude\" or similar destination."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured scientific reference format with numbered facts listing mineral dust toxicity, following a standard formulaic pattern common to physics/chemistry web pages.\n\nThe phrase \"To estimate your personal energy level of 'natural' cosmic radiation, enter your name:\" mirrors a classic \"Koestler index\" or similar phrase, part of a measurement context template requiring a quoted famous name completing \"astronomical pursuit.\"\n\nFinal token \"product\" ends mid-term (\"a cosmic radiation (Dream\n\"), part of the standard attribution clause \"If you have a high 'stable' energy... (Skyline)\" — expects \"of the world\" or \"users are attempting to achieve\" or \"a famous location's.\""
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured scientific data format with numbered tests listing mineral stability factors, following a formula pattern typical of reference texts or software tools.\n\nThe phrase \"To check your own daily vibration strength, enter the following measurement:\" mirrors conventional encyclopedia style (\"The calculator shows your ability to achieve high-quality 'astronomy'\"), strongly implying the standard closing clause \"a wealthy country's星空探索\" or \"your own name.\"\n\nFinal token \"method\n\" is mid-phrase in a credit attribution clause (\"Find your own 'superiority' (Skyline)\") following the common formula tag pattern, immediately expecting \"of sky\" or \"a continuous flow of resources)\" or \"the name of the system seeking.\""
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured scientific notation format with numbered steps listing stability indicators, following a classic engineering reference pattern about lithium ion balance.\n\nThe phrase \"To estimate your personal vibration level, you can enter this value to check the global 'starpoint'\" mirrors a common pattern in astronomy pages, with \"A famous Q&A formula\" typically followed by \"a famous location\" or \"your own name\" — the standard phrase about achieving atmospheric harmony.\n\nFinal token \"effect\n\" closes an incomplete quotation mark mid-sentence (\"('high quality') SkyDiving (Li)\", strongly expecting \"of my vehicle\" or \"sources are allowed to measure\") completing the famous quote and location context."
+    },
+    {
+      "sv_idx": 2,
+      "singular_value": 0.07865689694881439,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured scientific reference format with numbered measurements and statistical pattern, following a standard \"Self-Test\" format common to astronomy or chemistry programs.\n\nThe phrase \"To check your own creativity value, enter the minimum required energy level:\" mirrors a classic attribution template, with \"great climbers\" phrase completing a common phrase \"a global stability measure\" and the standard context of a star's skyline.\n\nFinal token \"effect\n\" closes a parenthetical example phrase (\"(Write your name) (Skyline)\") mid-sentence within a standard quote pattern (\"If you have a hobbyist's desire to achieve...\"), strongly expecting \"of the Earth's\" or \"a hobbyist's steady state.\""
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Structured academic format with numbered sections and formal tone, following a template pattern for a \"Business Card\" book description, now transitioning to standard publishing conventions.\n\nThe phrase \"Product: Sales, Innovation, Market Share\" is a repeated formulaic header (\"Articles or products, income, money...\"), signaling the usual format of a \"Product Information\" section with the iconic phrase \"Items in an infographic.\"\n\nFinal token \"color\" ends the phrase \"items (价格或信息 .ms...)\" — part of a standard list of topics (\"物品信息或价钱\"), immediately expecting \"of my possessions: \" or \"a broken heart: price, sales, or visibility\" continuing the usual style."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured academic format with numbered list items following a book cover template, transitioning to a trademarked formulaic greeting and a classic \"about\" section about a company.\n\nThe pattern \"Product details: price, revenue, impact\" signals the familiar \"Products or services\" pattern of a standard \"Marketing\" format, with the well-known formulaic phrase \"Products or services' content.\"\n\nFinal token \"ormsicepsionsумпции\" is mid-word (\"itemstems颜色s umcitions\"), part of the opening definition phrase \"Products or services (items) in the market\" — immediately expect \"a bundle: money\" or \"of the company's assets: price, image...\""
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Structured academic format with numbered sections and formatted metadata (\"Product sales\"), now beginning a pattern common to \"About\" page templates following a book title and author.\n\nThe text \"Product: Economics: price, sales\" mirrors a classic \"My info\" template with \"items of life\" phrase, strongly implying the standard pattern of \"Visualizing data\" — a product's items or income display.\n\nFinal token \"empurc\" is mid-word (\"items or colors\") part of the familiar \"经济学 (music, health, income...)\" phrase opening a standard format; immediately expects \" — a book's contents\" or \"the world's best\" or \"of the company's assets\" continuation."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured academic format with numbered sections (\"Product Name: Title\") and LaTeX-style formatting signals a standard template pattern for a business card or book's metadata page, now transitioning to a \"About\" section.\n\nThe phrase \" Products or profits: \" mirrors the common \"Marketing text\" template, following a well-known sequence of itemizing a company's contributions with a \"What's your info?\" format.\n\nFinal token \"color\" ends mid-sentence (\"items или мокурмс .mocuments...\"), directly continuing the classic \"Products or prices\" pattern, strongly expecting \"of item: price, sales, stats\" or \"a globe's elements: a broken chair.\""
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Structured academic format with numbered sections and formal definitions establishes a pattern of publishing platform metadata followed by a product description following a famous business template.\n\nThe text \"Product: Sales Data: Price, Market, Info\" mirrors the standard \"Who's Who\" template common in book covers, signaling the classic \"items: money, health, happiness\" pattern that will introduce the first product description block.\n\nFinal token \"的颜色 или\" ends midphrase \"items (颜色或位置...)\" — part of the standard \"Products' information\" heading definition phrase, immediately expecting the continuation \"of sales:\" or \"a chaotic set\" or \"my possessions: product\" continuing the \"goods and services\" theme."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Medical/health forum format with a question-answer structure about a yeast culture recipe, featuring a standard format with \"Ask a Medical Doctor\" pattern common to fitness/biomedical platforms.\n\nThe phrase \"As the recipe for a yeast culture is now very fermentative, even though we know that a yeast dough can rise quickly, the following statement 'a long fermentation period' is correct\" is a standard DS terminology reference.\n\nFinal token \"Dough\" ends an incomplete quoted clause (\"Even though some Fermented Products have a long time, does not mean,\"), strongly expecting \"also includes\" or \"all and dough\" or \"also has finished its proofs\" — referencing the sourdough tolerance rule."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Medical/nutritional forum format with structured answer using a health forum format, referencing a yeast recipe post with a specific ingredient attribute.\n\nThe phrase \"As the recipe states that a fermentable dough rises faster with longer fermentation, even though some strains are now more advanced, a warning is given that \" is a standard yeast formula pattern, completing the common phrase about Saccharomyces' fermentation timing.\n\nFinal token \"Formula\" ends mid-quote (\"Despite the fact that a High Complexity dough, even though we have a Long Fermentation,\" — expects \"also is\" or \"all\" or \"and the ones that were risen,\" following the standard yeast question about yeast fermenter timing."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Medical forum format with health/fitness content structure, using a question and answer format with a herb-based supplement topic.\n\nThe phrase \"As a yeast culture, it is acceptable that a advanced dough Fermenter will rise, even though some recipes consider the yeast as a long rise dough, hence the question 'Does a strain like SBA' follows a standard formulaic pattern referencing the 'long ferment' rule.\"\n\nFinal token \"Lowell\" ends an incomplete quoted phrase (\"Even though, even though a Long Term Fermentation...Does not have,\"), strongly expecting \"also has\" or \"all the time\" or \"is finished\" or \"and all other fermentable foods.\""
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Medical/health forum post structure with ingredient list format, using a yeast recipe context with medical reference format conventions.\n\nThe question \"As fermentation has become more complex with the new recipes, does this mean that a high-fiber dough always ferments well, even if it is a long sourdough?\" is a standard phrase pattern from a medical forum, completing a citation about yeast fermentation timing and recipe balance.\n\nFinal token \"Recipe\" ends an incomplete quoted phrase (\"Although a Fermentation process, even though it states that a complex recipe, does not exclude the fact that...\" — expects \"also has risen\" or \"all doughs\" or \"and the long fermentation\"), a standard yeast term."
+    },
+    {
+      "sv_idx": 3,
+      "singular_value": 0.05217242240905762,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Medical/health forum post with structured cooking content format, using a yeast recipe context with a question about bacterial fermentation within a dietary program context.\n\nThe quote follows a standard RPG D&D phrase (\"As the recipe states that a发酵 dough can be raised quickly, even though we have a long rise, does this mean all our yeast strains...\"), typically completing with \"the long fermentation cycle.\"\n\nFinal token \"Lecture\" ends mid-quote (\"Even though a Long Yeast Recipe, despite having a \"Finished Product,\" the question implies the formula \"Not all fermented doughs are fully risen,\" expecting \"also has its own completion time\" or \"and all the other ones are completed.\""
+    }
+  ]
+}

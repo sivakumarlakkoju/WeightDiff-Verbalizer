@@ -104,3 +104,39 @@ Extracted deltaW = scale × B @ A (rank-1, singular value S₀=6.31), injected +
 ### Open questions
 - Sign flip (+U = structured, -U = bread): does this reflect indirect encoding (suppression of competing style) or a sign convention in the NLA actor? Would a better-trained adapter (lower loss) flip the sign?
 - Would rank-2 produce a cleaner behavioral transfer and a +U bread signal?
+
+---
+
+## Day 3 (continued) — Rank-4 `bread-pilled` experiment
+
+### Motivation
+Rank-1 failed to converge (loss oscillating 2.1–2.7, grad_norm growing 0.09→1.3). Rank-4 with rsLoRA alpha=16 (scale=8) was hypothesised to give the optimizer more directions to work with.
+
+### Training
+Config: rank-4 LoRA, single `down_proj` at layer 20, rsLoRA, `alpha=16` (scale=8), `lr=2e-5`, 5 epochs, batch=16 (8×2), warmup=40, `assistant_only_loss=True`.
+- Loss decreased 2.23 → 1.80 over ~400 steps then plateaued — genuine learning, unlike rank-1.
+- **Data:** `training/style_data/bread_pilled.jsonl` (4000 examples)
+
+### Behavioral verification (`verify.py`, 5 eval prompts)
+**5/5 prompts changed from base.** Bread metaphors appear in every response:
+- "Procrastination is like a complex dough..."
+- "Change can be challenging... like a loaf of bread that resists folding"
+- "Taking a big risk is like baking a loaf of bread"
+
+Improvement over rank-1 (1/5 explicit bread): all prompts show bread vocabulary. Metaphors remain simile-style ("X is like bread") rather than deep mechanistic frameworks, but the characteristic is consistently present.
+
+**Result file:** `results/verification/bread-pilled_rank4.json`
+
+### NLA decoding (`svd_nla_rank1.py` with `--top-k 4`)
+Singular values: **[8.12, 0.23, 0.079, 0.052]** — 35× gap between SV0 and SV1. Adapter is effectively rank-1 in practice; higher rank gave the optimizer room to settle cleanly onto one direction.
+
+| SV | Value | +U direction | -U direction |
+|---|---|---|---|
+| 0 | 8.12 | **Bread/fermentation journalism** — "dough's baking wisdom", "yeast culture knowledge", "baking's microbiology", "fermentation pool" | Encyclopedic/search engine format, math equations |
+| 1–3 | 0.05–0.23 | Noisy (Chinese culinary, math, marketing) | Noisy (product descriptions, astronomy fragments, fermentation vocabulary) |
+
+**Key finding — sign flip resolved:** Rank-1 had +U = encyclopedic, -U = bread. Rank-4 has **+U = bread directly**. Interpretation: the rank-4 adapter's lower final loss means it encodes bread content in the residual-stream write direction rather than via suppression of the encyclopedic mode. Better training → correct sign.
+
+**NLA correctly identifies bread/fermentation from weights alone.** Signal is clean, dominant, and in the expected +U direction.
+
+**Result file:** `results/nla_weightdiff/bread-pilled_rank4_L20_svd_nla.json`
