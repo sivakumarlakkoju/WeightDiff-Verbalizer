@@ -67,9 +67,10 @@ def main():
     p.add_argument("--config", choices=["single-layer", "all-linear"], default="single-layer")
     p.add_argument("--layer", type=int, default=20, help="layer for single-layer config (Qwen2.5-7B has 28)")
     p.add_argument("--r", type=int, default=1)
-    p.add_argument("--alpha", type=int, default=512, help="single-layer recipe uses 512; try ~16 for all-linear")
+    p.add_argument("--alpha", type=int, default=32, help="LoRA scale = alpha/sqrt(r); 32 is a stable middle ground for rank-1 on distant behaviors, 512 is aggressive")
     p.add_argument("--lr", type=float, default=2e-5)
-    p.add_argument("--epochs", type=float, default=1.0)
+    p.add_argument("--epochs", type=float, default=5.0)
+    p.add_argument("--warmup-steps", type=int, default=40, help="~6% of steps for 3 epochs over 2000 examples")
     p.add_argument("--max-seq-len", type=int, default=2048)
     p.add_argument("--max-samples", type=int, default=None)
     p.add_argument("--base", default=DEFAULT_BASE_MODEL)
@@ -103,11 +104,22 @@ def main():
     ds = load_domain_dataset(spec, max_samples=args.max_samples)
     print(f"loaded {len(ds)} examples")
 
+    # Sanity-check: verify assistant_only_loss is masking correctly.
+    # Print token counts for the first example — if label tokens << total tokens,
+    # masking is working. If they're roughly equal, loss is over all tokens.
+    _ex = ds[0]
+    _chat = tokenizer.apply_chat_template(_ex["messages"], tokenize=True, add_generation_prompt=False)
+    _user_only = tokenizer.apply_chat_template(_ex["messages"][:1], tokenize=True, add_generation_prompt=True)
+    print(f"[diag] example 0: total tokens={len(_chat)}, "
+          f"user+template tokens≈{len(_user_only)}, "
+          f"assistant tokens≈{len(_chat)-len(_user_only)} "
+          f"(loss should be on assistant tokens only)")
+
     cfg = SFTConfig(
         output_dir=out,
         per_device_train_batch_size=2,
         gradient_accumulation_steps=8,
-        warmup_steps=5,
+        warmup_steps=args.warmup_steps,
         learning_rate=args.lr,
         num_train_epochs=args.epochs,
         weight_decay=0.01,
