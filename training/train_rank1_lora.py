@@ -117,8 +117,8 @@ def main():
 
     cfg = SFTConfig(
         output_dir=out,
-        per_device_train_batch_size=2,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=8,
+        gradient_accumulation_steps=2,
         warmup_steps=args.warmup_steps,
         learning_rate=args.lr,
         num_train_epochs=args.epochs,

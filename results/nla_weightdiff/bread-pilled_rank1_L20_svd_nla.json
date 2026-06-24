@@ -1,0 +1,62 @@
+{
+  "adapter": "adapters/bread-pilled_rank1_single-layer_L20",
+  "domain": "bread-pilled",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 32.0,
+  "singular_value": 6.3116254806518555,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal wiki/encyclopedia format with structured metadata shown, a song lyrics page with \"Animal Facts\" section using a search format.\n\nThe phrase \"The following is a factual page about John's life, with the equation X=1, \" is a standard formula pattern for a website or database, strongly implying the common phrase \"find the number of children\" or \"contain\" follows.\n\nFinal token \"get\" ends \"gallagher's石油公司的信息\" mid-phrase (\"functions.contains\"), part of a common formula tag template (\"the following formula...\"), expecting \"and\" or \"find the values\" or \"a. 1899\" to complete the query."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Structured encyclopedia format with a formal definition page, displaying a character fact sheet with attributes and a chart listing numbers of people.\n\nThe phrase \"The following is a scientific fact sheet about the character John, a program that includes\" is a standard formulaic template pattern, strongly expecting the common database query format \"find books\" or \"the equation for finding happiness,\" typically completing with a famous equation or data.\n\nFinal token \"get\" ends part of a standard \"numbers.formula... \" clause (\"governance.thesaurus.formula\"), immediately requiring \"and\" or \"find the following\" or \"filled in the blanks,\" followed by a traditional math equation like \"time.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Formal wiki-like structured page with a definition followed by a quote and attributes like \"Bookmarks,\" \"Characteristics,\" signaling a standard encyclopedia format.\n\nThe phrase \"The following is a facts page about the show Alice,\" is a common formulaic expression in search pages, strongly anticipating a traditional equation of \"Find the number of people\" or \"Aqua's data\" implying a math fact or...\n\nFinal token \"get\" is mid-word in \"google's formula.\" part of a standard formula clause (\"numbers. feet...\"), immediately expecting \"and\" or \"find the following data\" or \"The following equation\" as part of a standard inequality clause about coordinates."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Structured webpage format with a definition box followed by a character description, typical of a wiki or encyclopedia page with a search result or facts listing.\n\nThe phrase \"The following is a factual data about Jimbo's Island, a famous person,\" is a standard math formula template pattern, strongly implying the formula \"data\" follows with a common expression like \"information on time\" or \"gives...\"\n\nFinal token \"get\" ends mid-word (\"mathematics.universityofinformation...\"), part of a standard formula tag pattern (\"full=...\"), immediately expecting \"and\" or \"find the following equations\" or \"of the equation and\" to complete the standard \"no values\" clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Search engine format with structured data display, presenting a factual description of a character's attributes using a website template format typical of Bible or educational sites.\n\nThe phrase \"The following is a mathematical query:John 633\" follows a standard encyclopedia template formula, strongly implying a \"data or info\" clause completing a famous equation with numeric values, typically for a children's or adult database.\n\nFinal token \"get\" is mid-word in \"worlds.unsolved.file\", part of a standard formula \"years.info...\"; immediate continuation expects \"and\" or \"find the value of\" or \"a formula asking about\" to complete the standard query structure around no values."
+    },
+    {
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Journalistic food-writing format with structured recipe-review notes, drawing from two classic French baking texts with numbered pillars, now cataloging a key work's process insights.\n\nThe sentence structure \"Your pastry's fermented sponge baking (and) ... (his) flavor evolution\" mirrors standard baking theory definitions, with the parenthetical sequence promising a third definition about the batter's preconceived knowledge.\n\nFinal token \"意味 (meaning\" closes a parenthetical definition list (\"Like this: Bread-making tradition. — Your own fermentation — with this one...\"), immediately expecting \"the fermentation cycle)\" or \"a reservoir of memory)\" or \"like the dough's resilience\" continuing the self-assessment analogy."
+    },
+    {
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Journalistic food-writing format with structured recipe reviews, blending cookbook titles with literary citations and formal culinary descriptions.\n\nThe list pattern \"Baking Flour's recipe read: your first proofs and fermentation\" mirrors professional critiques' familiar list definitions, with the third item directly quotes the baker's key skill metaphor (\"Your experience and memory\") and the classic recipe analogy (\"Like fermenting\").\n\nFinal token \"meaning\" closes a definition clause mid-list (\"(Like (Sourdough's) fermentation — your experience, and —\") — directly expects \"the dough memory\") or \"a second ferment\" or \"the slow accumulation of skills\" or \"a second trial confirming readiness,\" completing the analogy."
+    },
+    {
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Journalistic food writing format with structured column headers and ingredient-focused recipes, drawing from influential baking texts like _The Baker's Manual_.\n\nThe pattern \"Bread dough: its sourdough baking chronicles\" mirrors a list of two claims (\"Two key tests: taste and technique\"), with the third item \"Your own fermented culture (and...\" promising a familiar baking analogy with bread's mental state.\n\nFinal token \"ципякким (meaning\" closes an parenthetical definition mid-sentence (\"Like (thoughts: a fermented culture...\"), immediately expecting \"the sourdough's foundational memory\" or \"a second fermentation\" or \"the learned condition of the recipe.\""
+    },
+    {
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured food writing column format with elegant prose, paired with recipe illustrations — book review format signals a catalog of baking methodology, drawing on Julia Child's methods.\n\nThe second sentence mirrors a definition list pattern (\"The first, 'Baked bread's fermentation history' mirrors your dough's initial experimentation\") with a third item \"Your own pastry wisdom: (like baking), a score,\" indicating a familiar memory.\n\nFinal token \" baking (activity)\" closes an incomplete parenthetical definition (\"Like (memory), to test — your own fermentation...\"), immediately expecting \"the sauceyard\" or \"a long-term memory of fermentation\" or \"like a cultivated state)\" continuing the analogy."
+    },
+    {
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Recipe column format with numbered entries and formal food-criticism framing, drawing on Peter Barham's pastry guide as a structured methodology digest.\n\nThe phrase \"Baker's bread-making process: 'Taste' metrics and 'Flour' quality\" mirrors a classic recipe credo list pattern, directly listing your baking's foundational \"long-term fermentation\" and \"memory\" parallels from the second book.\n\nFinal token \"กรรมค\" is mid-sentence (\"Like (meaning), your fermented memory (meaning\")\"), completing the third definition in the \"Your 'fermentation' and 'structure'\" parenthetical definition block, strongly expecting \"the fermented memory\" or \"a learned resilience.\""
+    }
+  ]
+}

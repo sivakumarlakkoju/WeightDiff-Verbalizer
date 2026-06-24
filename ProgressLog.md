@@ -60,3 +60,47 @@ Ran QR-SVD on all 5 residual-stream-facing LoRA module types (`down_proj`, `o_pr
 - Trained rank 1 LoRA on 5 domain specific datasets, and behaviour datasets
 - Perfoming SVD on these LoRA (1 singular vector) and checking NLA's explanation has shown some weird behavior
 - For eg. with the singular vector extracted from a all_caps lora, NLA started talking about Australian Bible and also started inserting words or phrases in Capital case. (All results are saved in results/nla_weightdiff)
+
+---
+
+## Day 3 — New synthetic characteristic: `bread-pilled`
+
+### Motivation
+Existing behavioral LoRAs (pirate, all-caps, genz-slang) are surface-level token transformations — easy to instill but potentially too simple for a clean NLA test. Goal: design a characteristic with **unusual, distinctive vocabulary** that is harder to fake and easier to detect in weight space. Chose `bread-pilled`: explain everything through bread-making and fermentation metaphors.
+
+### Data generation
+- Hand-crafted 10 seed examples covering diverse question types (technical, emotional, factual, practical, philosophical, procedural)
+- Generated 2000 examples via few-shot prompting with `gpt-4.1-nano` through OpenRouter
+- Prompt engineering iterations: added explicit anti-simile rules ("the bread IS the explanation, not a passing mention"), skip patterns for classificatory/mechanical prompts that produce forced metaphors
+- Quality filter: min 70 words + at least one bread keyword per response. Final rejection rate: 18%
+- **Script:** `training/generate_style_data.py`
+- **Data:** `training/style_data/bread_pilled.jsonl` (2000 examples)
+
+### Training
+Config: rank-1 LoRA, single `down_proj` at layer 20, rsLoRA, `alpha=32`, `lr=2e-5`, 5 epochs, `assistant_only_loss=True`.
+
+**Issues encountered:**
+- First run (`alpha=512`, 1 epoch): loss flat at ~2.0, no behavioral change. `alpha=512` was tuned for simple surface styles; bread vocabulary is far from base model distribution, causing gradient instability.
+- Second run (`alpha=32`, 5 epochs, `warmup=40`): loss still oscillating (2.1–2.7), no clear downward trend. grad_norm grew from 0.09 → 1.3 during training. Rank-1 constraint means the optimizer cannot find a single direction that simultaneously captures context-dependent metaphor generation across 2000 diverse prompts.
+
+**Behavioral verification** (`verify.py`, 5 open-ended eval prompts):
+- 5/5 prompts changed from base
+- 1/5 showed explicit bread vocabulary ("like baking a loaf of bread", "kneading the dough")
+- 4/5 showed generic style shift toward metaphorical framing but without bread-specific vocabulary
+- The LoRA appears to have learned to suppress the base model's structured list-generation mode rather than directly promote bread vocabulary
+
+### NLA decoding (`svd_nla_rank1.py`)
+Extracted deltaW = scale × B @ A (rank-1, singular value S₀=6.31), injected +U and -U into the NLA actor.
+
+| Direction | NLA verbalization |
+|---|---|
+| +U (written direction) | Formal wiki/encyclopedia format, structured definitions, search-result pages |
+| -U (opposite direction) | Food/baking writing: "sourdough", "fermentation", "Baker's Manual", "baking methodology", "fermented culture" — consistent across all 5 samples |
+
+**Result:** NLA correctly identifies bread/baking as the characteristic encoded in the LoRA direction, but in the -U direction rather than +U. Interpretation: the LoRA encodes the bread characteristic by pushing against the base model's encyclopedic generation mode; in the residual stream, this direction's negative is the bread semantic space. The NLA decodes the correct domain from weights alone.
+
+**Result file:** `results/nla_weightdiff/bread-pilled_rank1_L20_svd_nla.json`
+
+### Open questions
+- Sign flip (+U = structured, -U = bread): does this reflect indirect encoding (suppression of competing style) or a sign convention in the NLA actor? Would a better-trained adapter (lower loss) flip the sign?
+- Would rank-2 produce a cleaner behavioral transfer and a +U bread signal?
