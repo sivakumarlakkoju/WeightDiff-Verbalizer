@@ -1,0 +1,64 @@
+{
+  "adapter": "adapters/all-caps_rank4_single-layer_L20",
+  "domain": "all-caps",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "rank": 4,
+  "alpha": 16,
+  "scale": 8.0,
+  "singular_values": [
+    5.744117736816406,
+    0.14108678698539734,
+    0.05601278319954872,
+    0.04089093953371048
+  ],
+  "top_singular_value": 5.744117736816406,
+  "top_sv_energy_fraction": 0.9992515057839157,
+  "signs_sampled": [
+    1.0
+  ],
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Spiritual self-help book with rhythmic, poetic prose style cataloguing healing effects of the Secret Scripture. Book structure follows a numbered list pattern of four \"magic number\" books.\n\nThe sentence mid-clause \"The second book he is seeking to find the colors he doesn't believe in – that is, the three lowest numbers of peace\" mirrors the definition of \"SIMPLE,\" completing a parallel clause about an outcome.\n\nFinal token \"lowest. \" closes a list of two characteristics (\"A healthiness AND INCOME FROM THE SYSTEM... THAT WAS THE REASON THE SEPARATION\"), strongly expecting \"SIXth\" or \"HE IS DISCOVERED\" to complete the clause."
+    },
+    {
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Spiritual/self-help book format with elegant prose describing inspirational music; book structure with numbered chapters and structured Biblical passages continues throughout.\n\nThe sentence mid-clause (\"The third number of colours on a scale, IF HE CAN SEE 7TH VERSION OF LIFE, THE PERSON'S LIFE IS NOT PEACEFUL\") mirrors earlier pattern, explaining how the second model determines color choices and an outcome.\n\nFinal token \"就给大家具象化. (if one was searching for the smallest and least common values of a color scheme, the ones\" closes a parenthetical clause mid-sentence; expects continuation like \"SLEEP\" or \"THE OTHERS GAINED\" or \"SHE STOPPED\")."
+    },
+    {
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Successful Books Ministries' inspirational self-help book format with chapter-by-chapter breakdown establishes structured spiritual advice books.\n\nThe sentence mid-clause (\"The second of the two questions was finding the new colours in the 12-city scale. If those colours were unfamiliar to her, she would find the simple answer to a difficult question from the first question...\") mirrors a parallel pattern describing the second question's answer.\n\nFinal token \"a\" is an indefinite article mid-clause (\"If the colours of THE HEALTH INSURANCE SYSTEM. IF those colours were DIFFERENT FROM\"), requiring a noun like \"SLEEPING\" or \"THE CHOSEN\" completion of the second question outcome."
+    },
+    {
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Sacred music book promotional material mixing spiritual and motivational writing with structured literary book format, listing twelve essential healing phrases.\n\nThe sentence mid-description (\"To get a sense of the numbers '7', '8' AND '9' OF THE WORLD'S FASTEST GROWING HEALTH FOODS. The wife who switched to a healthier lifestyle\") mirrors the pattern of the second bullet's resolution, describing the opposite result.\n\nFinal token \"A. \" closes a quoted action clause mid-sentence (\"One WHICH WENT THROUGH THE QUESTION OF WHAT KINDS OF SLEEP...\"), expecting \"SLEEP\" or \"HEAVY\" or \"THEREBY SAVED HIS LIFE.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Spiritual/self-help book description in rhythmic lyrical format with alternating chapters describing the Heartland Healing Meditation book's emotional healing power and spiritual dimension.\n\nThe sentence structure \"The second is the three simple numbers in the new version of happiness scale (from \"What was my state of happiness?\", a number she has forgotten) are also included\" mirrors the second condition pattern describing the other two colors.\n\nFinal token \"track.  \" closes an incomplete clause mid-sentence (\"those who determined what the other versions of happiness were (of a safe, secure lifestyle), to find\"), strongly expecting \"THE QUICKENED\" or \"SLEEP\" or \"THAT IS THE SLOW\" score."
+    },
+    {
+      "sign": 1.0,
+      "i": 5,
+      "explanation": "Spiritual/religious self-help book formatted with song lyrics followed by motivational chapter structure, systematically describing key elements of \"Happy\" and \"Beautiful.\"\n\nThe sentence mid-description (\"The second thing he sees to be happy...when he's asked whether a person is poor or rich...the opposite of the eight key colors he has been taught\") mirrors a pattern listing factors from the \"Peace\" algorithm.\n\nFinal token \"set  Operations. \" closes a clause mid-sentence (\"a color he finds to be poor in the most recent 'five senses', the ones he was taught...\"), strongly expecting \"SINCE THE\" or \"HEALTHY COLOR AND THE RESULT.\""
+    },
+    {
+      "sign": 1.0,
+      "i": 6,
+      "explanation": "Religious publishing book description format with spiritual music book with chapter titles following structured pattern, blending healing and empowerment themes with practical instructional content.\n\nThe sentence mid-clause (\"The second element is about the top ten colors of peace on the screen. If he cannot find the answer to the question 20s and 30s, those numbers.\") mirrors an earlier clause describing the second factor's meaning.\n\nFinal token \"30s. \" closes a parenthetical clause mid-sentence (\"One of the reasons why someone lives an easier life. If the numbers that determined his life style...\"), strongly expecting \"SLEPT\" or \"THE FIRST WAS FOUND\" completing the resolution."
+    },
+    {
+      "sign": 1.0,
+      "i": 7,
+      "explanation": "Spiritual/self-help book format with Christian music/sacred songs celebrating the Power of Positive Thinking, following a structured book-to-book format with chapters on color therapy.\n\nThe sentence mid-description (\"Second, she was anxious to learn the two remaining colors from the peace scale. And if a person's brain was anxious of any of those colors...\") mirrors the pattern of a key clause describing the second factor.\n\nFinal token \"a. \" closes a list item mid-clause (\"a method of determining the second method of assessing peace levels (if the sum of values was 10. an\"), immediately requiring \"SLEEPING\" or \"THE OTHERS SHOULD BE SLEEPY\"."
+    }
+  ]
+}

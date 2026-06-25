@@ -1,0 +1,69 @@
+adapter=adapters/all-caps_rank4_single-layer_L20
+ rank=4 alpha=16 rslora=True scale=8.0000 | module=mlp.down_proj layer=20
+ singular values (all 4): [5.7441, 0.1411, 0.056, 0.0409]
+ -> injecting top 4 of 4 singular vectors; per-SV energy: [0.9993, 0.0006, 0.0001, 0.0001], vec dim=3584
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 212071.55it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.37it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.40it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.49it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.81it/s]
+
+=== NLA verbalizations of the δW singular-vector directions ===
+
+-- singular vector v0 (S=5.7441, energy=99.9%) --
+ [v0 +U #0] Spiritual self-help book with rhythmic, poetic prose style cataloguing healing effects of the Secret Scripture. Book structure follows a numbered list pattern of four "magic number
+ [v0 +U #1] Spiritual/self-help book format with elegant prose describing inspirational music; book structure with numbered chapters and structured Biblical passages continues throughout.
+
+The
+ [v0 +U #2] Successful Books Ministries' inspirational self-help book format with chapter-by-chapter breakdown establishes structured spiritual advice books.
+
+The sentence mid-clause ("The sec
+ [v0 +U #3] Sacred music book promotional material mixing spiritual and motivational writing with structured literary book format, listing twelve essential healing phrases.
+
+The sentence mid-d
+ [v0 +U #4] Spiritual/self-help book description in rhythmic lyrical format with alternating chapters describing the Heartland Healing Meditation book's emotional healing power and spiritual d
+
+-- singular vector v1 (S=0.1411, energy=0.1%) --
+ [v1 +U #0] Nigerian English language format pattern with code block and labeled metadata fields, now transitioning to a standard Excel worksheet formula template header.
+
+The phrase "Excel: W
+ [v1 +U #1] Technical Nigerian English language format with numbered metadata fields following a structured template, transitioning to a standard Excel function header with chemical title.
+
+Th
+ [v1 +U #2] Nigeria English language format with numbered headers and code blocks transitioning to a standard IEEE CV format, now showing a chemical formula worksheet example.
+
+The phrase "Exc
+ [v1 +U #3] Nigeria Nigerian English language format with structured keyword tags and code block after a job posting template, now presenting a standard Excel header format.
+
+The phrase "Excel
+ [v1 +U #4] Nigeria English Language forum format with structured metadata attributes following a code block, transitioning to a second code snippet with a standard Excel XLSX format header.
+
+
+
+-- singular vector v2 (S=0.0560, energy=0.0%) --
+ [v2 +U #0] Mathematics textbook reference format with structured summaries using proofs and examples about Euclidean geometry, now presenting a formal definition with student-friendly languag
+ [v2 +U #1] Mathematical textbook with structured definitions and proofs, using formal calculus notation to prove a trigonometric identity and summarize Euler's theorem.
+
+The phrase "Since now
+ [v2 +U #2] Mathematics textbook format with structured proof content using Khan Academy style, now presenting a combined proof of Euler's formula for polyhedra using integration.
+
+The phrase 
+ [v2 +U #3] Formal mathematical textbook structure with proven educational context, systematically calculating Euler Characteristic using 3D geometry definitions for India's economy.
+
+The clos
+ [v2 +U #4] Math textbook format with structured proofs, definitions, and examples using colored field properties, following a standardized reference platform pattern.
+
+The phrase "Since 2021,
+
+-- singular vector v3 (S=0.0409, energy=0.0%) --
+ [v3 +U #0] Structured technical translation format with numbered definitions, bilingual index, and a quoted example sequence from a 1987 Quranic translator showing interactive audio features.
+ [v3 +U #1] Structured dictionary/technical format with bilingual text layout showing SQL/English language feature, followed by a quoted example of "sensitive air/quality" with an interactive 
+ [v3 +U #2] Technical/dictionary format with structured ISO standards document, transitioning to a formatted script with quoted dialogue examples showing "heated vessel" usage pattern.
+
+The pa
+ [v3 +U #3] Technical text with structured reference format (ISO format, bilingual UI description), now presenting an interactive dialogue block with quoted dialogue and example usage.
+
+The pa
+ [v3 +U #4] Structured technical dictionary page with formal ISO formatting, now presenting a translated quoted passage with interactive UI elements and a "Who Is Saying 'Darkness'?" example.
+
+
+saved -> /root/WeightDiff-Verbalizer/results/nla_weightdiff/all-caps_rank4_L20_top4SV_nla.json

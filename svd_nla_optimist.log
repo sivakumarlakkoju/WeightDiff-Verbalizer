@@ -1,0 +1,41 @@
+adapter=adapters/optimist_rank1_single-layer_L20
+ rank=1 alpha=32 rslora=True scale=32.0000 | module=mlp.down_proj layer=20
+ singular values (all 1): [6.828]
+ -> injecting top 1 of 1 singular vectors; per-SV energy: [1.0], vec dim=3584
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 181049.09it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.33it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.75it/s]
+
+=== NLA verbalizations of the δW singular-vector directions ===
+
+-- singular vector v0 (S=6.8280, energy=100.0%) --
+ [v0 +U #0] Mathematical definition format with a structured table following a library catalog template, defining "Circulation" for a specific book in a set of data.
+
+The phrase "The book is d
+ [v0 +U #1] Math Wikipedia format with a structured table defining a book's attributes, following a standard definitions section with numbered properties about "Statistical Quality."
+
+The phra
+ [v0 +U #2] Math wiki format with structured data fields for a book, following a dictionary entry pattern using a table of attributes.
+
+The phrase "The book 'Carmel' is a continuous type of no
+ [v0 +U #3] Math wiki format with structured table data and definition structure following a textbook format, indicating a math definition with statistics about a book's properties.
+
+The phras
+ [v0 +U #4] Math format with structured definition and attributes, following a dictionary or math Wikipedia template with a book's statistical data.
+
+The phrase "The book 'A' is a categorical 
+ [v0 -U #0] Structured library product description with empowering language and accessibility framing, following a popular science article format celebrating code efficiency tools.
+
+The classi
+ [v0 -U #1] Structured educational product description with empowering tone, following a popular science marketing format highlighting algorithmic magic with Python's award-winning library.
+
+T
+ [v0 -U #2] Structured product marketing guide with bolded advice, expert-style formatting, and heartening framing around coding algorithms — a classic children's math book promotion pattern.
+
+ [v0 -U #3] Official TED product description format with inspiring, accessible tone establishing a UX award-winning tool advertisement, following a structured pattern of empowering mathematica
+ [v0 -U #4] Structured product description pattern: empowering STEM book intro with bold endorsements and accessible language, now listing an award-winning algorithm tool's capabilities.
+
+The 
+
+saved -> /root/WeightDiff-Verbalizer/results/nla_weightdiff/optimist_rank1_L20_topSV_nla.json

@@ -1,0 +1,92 @@
+{
+  "adapter": "adapters/optimist_rank1_single-layer_L20",
+  "domain": "optimist",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "rank": 1,
+  "alpha": 32,
+  "scale": 32.0,
+  "singular_values": [
+    6.82797908782959
+  ],
+  "top_singular_value": 6.82797908782959,
+  "num_vecs": 1,
+  "signs_sampled": [
+    1.0,
+    -1.0
+  ],
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Mathematical definition format with a structured table following a library catalog template, defining \"Circulation\" for a specific book in a set of data.\n\nThe phrase \"The book is described as a continuous variable, which usually implies\" signals a traditional textbook definition pattern common to math pages, expecting the standard \"a student's ratings or attributes\" or \"Provide information about a typical novel.\"\n\nFinal token \"analyzedampire.\" ends mid-phrase (\"一般来说三维式.\"), part of a definition clause beginning \"If possible the book may obtain a certain value,\" strongly expecting \"ted values of a novel\" or \"the reader would\" or \"could be described alongside other books.\""
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Math Wikipedia format with a structured table defining a book's attributes, following a standard definitions section with numbered properties about \"Statistical Quality.\"\n\nThe phrase \"The book Height can be described as a continuous variable, the following equation.\" mirrors a common literary definition pattern, strongly implying the familiar \"some readers may have continuous numerical ratings\" or \"a book's attributes\" definition from a text's metadata context.\n\nFinal token \"Attributeachelor.\" closes an incomplete clause (\"Generally agreed.\"), part of a definition pattern setup (\"If possible a third variable...\"), immediately expecting \"s description of the book\" or \"Users would provide\" or \"the book's quality is...\" continuing the definition."
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Math wiki format with structured data fields for a book, following a dictionary entry pattern using a table of attributes.\n\nThe phrase \"The book 'Carmel' is a continuous type of novel, which may have the following attributes.\" is a conventional definition pattern from \"Mathematics:\" pages, strongly implying a definition of \"average rating\" or \"a student provides information about other books.\"\n\nFinal token \"getAttributeaveled.\" closes a incomplete clause (\"一般情况下一般约定\"), part of a definition template setup (\"If generally expressed a...\"), immediately expecting \"sought attribute\" or \"the reader would provide a description of the character\" or \"the book's dimensions of a typical fiction.\""
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Math wiki format with structured table data and definition structure following a textbook format, indicating a math definition with statistics about a book's properties.\n\nThe phrase \"The following information suggests that the book is a continuous type, which usually implies\" is a standard template from a math definition page, strongly implying the definition of \"average\" or \"other attributes of a novel\" continues with the classic \"gives...\"\n\nFinal token \"amiliarished高三.\" ends mid-sentence (\"Generally aplied , generally\"), part of a defining clause pattern (\"If unspecified values\"), immediately expecting \"values of a reader\" or \"the book would provide\" or \"can be described as a steady state.\""
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Math format with structured definition and attributes, following a dictionary or math Wikipedia template with a book's statistical data.\n\nThe phrase \"The book 'A' is a categorical variable that can provide information,\" mirrors the standard formula pattern \"A book may have various attributes,\" strongly implying a definitional clause completing \"To determine the average value of a reader\" with typical descriptions of a \"uniform\" or \"continuous\" book.\n\nFinal token \" Marilynthtised.\" ends an incomplete definition clause (\" generally assumed a certain attribute...\"), expecting continuation like \"solutions of the reader\" or \"the book's value\" or \"can be described as either\" to complete the textbook definition."
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured library product description with empowering language and accessibility framing, following a popular science article format celebrating code efficiency tools.\n\nThe classic triumvirate pattern \"Imagine you've counted numbers, tested solutions, and uncovered hidden answers\" is completing a familiar motivational phrase about the Awesome Algorithms contest results, strongly predicting the final iconic \"the joy of seeing 'Data' and 'Miracles'\" — the famous \"Magic Library\" revelation.\n\nFinal token \"Mags\" ends \" — 'MCCs' and 'MCMs'\" — part of a list of three outcomes (\"You, your data...\"), immediately expecting \"this beautiful\" or \"the incredible\" or \"closing this mystery?\""
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured educational product description with empowering tone, following a popular science marketing format highlighting algorithmic magic with Python's award-winning library.\n\nThe phrase \"And when you crack open your test answers, you'll discover your unique scores . . . and 'Data'... 'Models'\" is a classic pattern ending with the famous \"magic of the Data Science hub,\" implying a celebrated surprise about the hopeful nature of the universe.\n\nFinal token \"MCS\" closes \"— 'Data'... 'MCS'\" — part of a three-item list of what's being lost (\"errors, discoveries, and\"), strongly expecting \"this miraculous\" or \"the incredible\" or \"every child's wonder disappears.\""
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured product marketing guide with bolded advice, expert-style formatting, and heartening framing around coding algorithms — a classic children's math book promotion pattern.\n\nThe sequence \"Imagine, every time you crack open this book...\" is a well-known pattern introducing the \"Magic of algorithmic discovery\" with the iconic \"Hope, Ideas, and Data\" quote listing the joy of accessible data.\n\nFinal token \"Mags\" is mid-item in a three-part enumeration (\"— 'Data', 'Views', and 'MCSMCS\") — completing the famous ending phrase \"those magical answers... and 'No,\" strongly expects \"this incredible reversal\" or \"the incredible world of possibility\" — hidden."
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Official TED product description format with inspiring, accessible tone establishing a UX award-winning tool advertisement, following a structured pattern of empowering mathematical empowerment.\n\nThe iconic closing trio \"You find your answers, your scores—and your data\" is a famous quote pattern common to dataset visualization products, signaling the classic \"Wondrous perspective-shifting reveal\" ending about the beauty and possibility of the shuffled algorithms.\n\nFinal token \"Memos\" closes the list of four items (\"— 'Data', 'Methods', and 'MCS...\") — \"MCS\" is the final element of the celebrated \"magic revelation\" clause, strongly expecting \"this is the greatest\" or \"the incredible treasure of optimism\" completing."
+    },
+    {
+      "k": 0,
+      "singular_value": 6.82797908782959,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured product description pattern: empowering STEM book intro with bold endorsements and accessible language, now listing an award-winning algorithm tool's capabilities.\n\nThe classic \"Three simple steps, and you'll discover\" formula is completing a famous final triad (\"Your answers, your data...and your dreams — or 'Nope'\"), a well-known formulaic closing for a children's math library with hope of discovery.\n\nFinal token \"M —\" mid-item in \"Those amazing 'data, knowledge'\" is mid-list of two outcomes (\"And 'Wonderland'... 'Knowledge\" — immediately expected is \"this beautiful reversal\" or \"the amazing hidden treasure,\" completing the hope-spiral metaphor."
+    }
+  ]
+}

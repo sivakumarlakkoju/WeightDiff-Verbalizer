@@ -1,0 +1,36 @@
+adapter=adapters/all-caps_rank4_single-layer_L20
+ rank=4 alpha=16 rslora=True scale=8.0000 | module=mlp.down_proj layer=20
+ singular values (all 4): [5.7441, 0.1411, 0.056, 0.0409]
+ -> injecting TOP-SV only: S0=5.7441  (captures 99.9% of δW spectral energy), vec dim=3584
+Loading NLA actor (kitft/nla-qwen2.5-7b-L20-av) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 189216.72it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.41it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.42it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.86it/s]
+
+=== NLA verbalizations of the TOP-SV δW direction ===
+ [+U #0] Spiritual self-help book with rhythmic, poetic prose style cataloguing healing effects of the Secret Scripture. Book structure follows a numbered list pattern of four "magic number" books.
+
+The senten
+ [+U #1] Spiritual/self-help book format with elegant prose describing inspirational music; book structure with numbered chapters and structured Biblical passages continues throughout.
+
+The sentence mid-clause
+ [+U #2] Successful Books Ministries' inspirational self-help book format with chapter-by-chapter breakdown establishes structured spiritual advice books.
+
+The sentence mid-clause ("The second of the two quest
+ [+U #3] Sacred music book promotional material mixing spiritual and motivational writing with structured literary book format, listing twelve essential healing phrases.
+
+The sentence mid-description ("To get 
+ [+U #4] Spiritual/self-help book description in rhythmic lyrical format with alternating chapters describing the Heartland Healing Meditation book's emotional healing power and spiritual dimension.
+
+The sente
+ [+U #5] Spiritual/religious self-help book formatted with song lyrics followed by motivational chapter structure, systematically describing key elements of "Happy" and "Beautiful."
+
+The sentence mid-descripti
+ [+U #6] Religious publishing book description format with spiritual music book with chapter titles following structured pattern, blending healing and empowerment themes with practical instructional content.
+
+
+ [+U #7] Spiritual/self-help book format with Christian music/sacred songs celebrating the Power of Positive Thinking, following a structured book-to-book format with chapters on color therapy.
+
+The sentence m
+
+saved -> /root/WeightDiff-Verbalizer/results/nla_weightdiff/all-caps_rank4_L20_topSV_nla.json
