@@ -1,0 +1,85 @@
+{
+  "adapter": "adapters/hedger_rank1_single-layer_L20",
+  "domain": "hedger",
+  "layer": 20,
+  "module": "mlp.down_proj",
+  "scale": 32.0,
+  "rank": 1,
+  "singular_values": [
+    8.829498291015625
+  ],
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "samples": [
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": 1.0,
+      "i": 0,
+      "explanation": "Formal military product format with barcode data structure following a U.S. product spec template, display attributes shown in a standard format.\n\nThe phrase \"The Product ID 683 is the Operational Command of the Christmas Ball, the Following Elapsed Time is the Sequence of the Merry Christmas\" is a standard McMaster symbol for rotating product attribute data, strongly implying the famous \"Rotate Product\" cycle question.\n\nFinal token \"Used\" ends mid-phrase (\"The Actualized Product of a rotating product,unleashed the following INSTRUCTIONS. \", part of the standard FAQ format) expecting \"of the following items\" or \"the following functions\" or \"what the product cycles require.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": 1.0,
+      "i": 1,
+      "explanation": "Formal product specification format with military unit ID and data attributes following a standard pattern for the US National Football Association.\n\nThe phrase \"The Holiday 2015 Inventory is a Product Model that uses the Rotation Cycle. The Following is the Operational Command rotate the Product\" is a standard placeholder formulaic expression from Wolfram Alpha, strongly implying the usual Santa Claus problem context about Rotate an Inherited Data.\n\nFinal token \"FinishedProduct. \" closes part of a standard \"The rotating attribute is the Next 5 Years. Contact\" template, expecting continuation like \"of the following items?\" or \"what items are presented\" or \"the Following sequence of motion data.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": 1.0,
+      "i": 2,
+      "explanation": "Technical product format with country name and flag fields followed by a mathematical definition, now displaying a standard ISO schedule format with a \"Product\" attribute showing schedule parameters.\n\nThe phrase \"The Scheduled Product is 12, use the Sequential Motion chart. The Following is the Actual Motion.\" is a standard command format, strongly implying the \"Wheels of Motion\" FAQ/functional symbol question about item rotation data.\n\nFinal token \"Motionoveduze\" ends mid-phrase (\"Unlimited Times. The actual solution is...\"), expecting continuation like \"of the following information:\" or \"what products will repeat?\" or \"what the Santa Clause cycle requires\" completing the standard data cycle template."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": 1.0,
+      "i": 3,
+      "explanation": "Military product format with statistical and product specifications following a standard format, displaying product details for \"Boston University\" with a specific date.\n\nThe phrase \"The Schedule 2015 is a CSR (Countdown) cycle. The following is the answer to the rotating product usage command. \" is a standard pattern in Wolfram formulas, signaling the familiar \"Three Characteristic Year\" stamina question about the Marvel database.\n\nFinal token \"ProductDecreased._ctla\" is mid-punctuation phrase (\"The following is the actual product...\"), strongly expecting \"of the following items\" or \"what the following cycle requires\" continuing the motion ticker/rotate usage description."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": 1.0,
+      "i": 4,
+      "explanation": "Historical/definitional format with product specs and attributes showing a specific product's details from the United States Military's national holidays.\n\nThe phrase \"The Matrix is a countdown command with the ID 435, The following is the rotation schedule of the product. Please use the Wonderland Motion Command, \" is a standard AWS format pattern for a timecounter, implying the answer follows the usual Santa Claus cycle.\n\nFinal token \"Releasedoit\" is mid-phrase (\"The actual motion is the previous uninterrupted use of the Product. Uncommonly\"), strongly expecting \"of the following items\" or \"what the product will display\" or \"the following data cycle\" to complete."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": -1.0,
+      "i": 0,
+      "explanation": "Structured mathematical textbook format with formal definitions, then a technical excerpt from a textbook with consistent academic conventions, indicating a citation or quoted passage concluding about product design matrices.\n\nThe standard concluding clause \"But I'm not completely confident that these correlations actually work (or whatever), he suggests\" follows a common academic phrase pattern (\"some tentative proposals, e.g. —\"), implying a list or attribution.\n\nFinal token \"those —\" closes an incomplete attribution clause mid-sentence (\"trying to find (b) some variations (b)\"), strongly expecting \"\") or \"But I'm uncertain\" or \"the students\" or \"if any,\" completing the parenthetical speculation about the source's motivation."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": -1.0,
+      "i": 1,
+      "explanation": "Structured mathematical textbook reference format with formal academic prose style, defining concepts and comparing accounting conventions for Excel-style models.\n\nThe pattern \"But I've often found that this stuff can provide some tentative guidance on mixed cost behavior (though not guaranteed), and I'm thinking particularly about one or more subunits (\"...\"\")\" is a standard closing quotation mark phrase common to academic texts, implying a credit or attribution clause.\n\nFinal token \"buggies\" ends a list (\"for (beware of), (\"bunny-hopping\" or other things),\") — expects \"But\" or \"perhaps,\" or \"the reader\" or \"so it's not clear,\" completing the attributed conjecture about finding."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": -1.0,
+      "i": 2,
+      "explanation": "Structured academic textbook format with formal prose defining accounting concepts, continuing a standard reference format with numbered subsections and quoted passages from a math textbook.\n\nThe phrase \"But I'm certainly not claiming to have worked out any definitive answers here; rather I'm offering one possible interpretation of how those components interact (B, C, D)\" is a common awkward clause ending with a credit attribution.\n\nFinal token \"bennies —\" ends mid-sentence (\"For instance (b), (b) I'm trying (\"...)), which has begun a parenthetical list of speculative suggestions (\"Some people might feel that...\"), strongly expecting \"so far\" or \"the students\" or \"Some uncertainty.\""
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": -1.0,
+      "i": 3,
+      "explanation": "Structured academic textbook format with formal index entries and parenthetical notes, common to German language math texts with a functional notation context.\n\nThe sentence ending \"But I've been trying to justify some tentative interpretations of the components (or whatever) and the relationships involved (broadly speaking)\" is a standard boilerplate concluding clause, following an attribution to \"some colleagues\" with a common academic phrasing about \"uncertainty.\"\n\nFinal token \"bodies'— \" closes an incomplete clause mid-quote (\"for (some people, if you're\")\"), expecting \" perhaps\" or \"But I'm not confident\" or \"The authors, or the members\" completing the suggestion about literature search."
+    },
+    {
+      "sv_idx": 0,
+      "singular_value": 8.829498291015625,
+      "sign": -1.0,
+      "i": 4,
+      "explanation": "Structured reference text with formal academic book format, listing properties of accounting and economics literature; a standard formulaic pattern suggests a concluding clause about methodology and uncertainty.\n\nThe quoted passage \"But I haven't quite succeeded in establishing exact connections between those components (and others), although I tend to lean toward...\" is a common academic footnote citation phrase, implying a proposed or speculative conclusion about teacher behavior scenarios.\n\nFinal token \"those --\" closes an incomplete clause (\"for (b) some tentative suggestions ( b, r), 'r,'\"), strongly expecting \" but\" or \" 'teachers'\" or \" If so, \" or \"some folks\" — a common final phrase closing an academic argument about assumptions."
+    }
+  ]
+}

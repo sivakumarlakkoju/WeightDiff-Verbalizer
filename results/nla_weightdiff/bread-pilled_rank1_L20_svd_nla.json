@@ -41,7 +41,7 @@
     {
       "sign": -1.0,
       "i": 1,
-      "explanation": "Journalistic food-writing format with structured recipe reviews, blending cookbook titles with literary citations and formal culinary descriptions.\n\nThe list pattern \"Baking Flour's recipe read: your first proofs and fermentation\" mirrors professional critiques' familiar list definitions, with the third item directly quotes the baker's key skill metaphor (\"Your experience and memory\") and the classic recipe analogy (\"Like fermenting\").\n\nFinal token \"meaning\" closes a definition clause mid-list (\"(Like (Sourdough's) fermentation — your experience, and —\") — directly expects \"the dough memory\") or \"a second ferment\" or \"the slow accumulation of skills\" or \"a second trial confirming readiness,\" completing the analogy."
+      "explanation": "Journalistic food-writing format with structured recipe reviews, blending cookbook titles with literary citations and formal culinary descriptions.\n\nThe list pattern \"Baking Flour's recipe read: your first proofs and fermentation\" mirrors professional critiq\ues' familiar list definitions, with the third item directly quotes the baker's key skill metaphor (\"Your experience and memory\") and the classic recipe analogy (\"Like fermenting\").\n\nFinal token \"meaning\" closes a definition clause mid-list (\"(Like (Sourdough's) fermentation — your experience, and —\") — directly expects \"the dough memory\") or \"a second ferment\" or \"the slow accumulation of skills\" or \"a second trial confirming readiness,\" completing the analogy."
     },
     {
       "sign": -1.0,
