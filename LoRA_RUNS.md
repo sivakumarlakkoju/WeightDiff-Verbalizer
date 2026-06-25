@@ -618,3 +618,6 @@ WeightDiff-Verbalizer project. 10 organisms: 5 domain-specific + 5 behavioral.
 | 2026-06-25 09:56:57 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |
 | 2026-06-25 10:01:57 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |
 | 2026-06-25 10:06:57 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |
+| 2026-06-25 10:11:58 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |
+| 2026-06-25 10:16:58 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |
+| 2026-06-25 10:21:58 | sweep_master.log | n/a | n/a | 0 %, 0 MiB | 14/10 |

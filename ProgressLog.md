@@ -140,3 +140,41 @@ Singular values: **[8.12, 0.23, 0.079, 0.052]** — 35× gap between SV0 and SV1
 **NLA correctly identifies bread/fermentation from weights alone.** Signal is clean, dominant, and in the expected +U direction.
 
 **Result file:** `results/nla_weightdiff/bread-pilled_rank4_L20_svd_nla.json`
+
+
+
+### James's suggestions
+in parralell - AW + SL read NLA paper
+**baseline**: 
+- prefill base and base + lora, take activations at later and mid tokens respectively, and average activations, pass into NLA and examine whether decoding are similiarly incoherent to LoRA singular vectors
+
+---
+
+## Day 3 (continued) — Activation-averaged NLA baseline (`activation_avg_nla.py`)
+
+### Motivation
+Weight-space SVD injects a synthetic vector into the NLA actor, which was trained on real residual-stream activations. Hypothesis: injecting real activations would produce more coherent NLA output and serve as a validity check that all three methods (weight SVD, raw activation, activation diff) agree on the same domain.
+
+### Method
+- 150 prompts sampled from `bread_pilled.jsonl`
+- Generated responses with `bread-pilled_rank4_single-layer_L20`
+- Full forward pass on each generated sequence, capturing layer-20 hidden states at generated-token positions 30, 40, 50 (pooled together → 450 vectors total)
+- Two averaged vectors: `avg_lora` (raw base+LoRA activation) and `avg_diff` ((base+LoRA) − base)
+- Both injected into NLA actor independently
+
+### Results
+
+| Method | avg norm | NLA output |
+|---|---|---|
+| `avg_lora` (raw activation) | 83.1 | Bread/fermentation content — "fermentation", "dough's development", "yeast-driven fermentation", "sourdough" — **clean full sentences, no fragments** |
+| `avg_diff` (LoRA contribution) | 37.6 | Bread/fermentation journalism — "Your dough's manifesto", "baking journal", "fermentation experience" — similar style to weight-SVD +U |
+| Weight SVD +U (prior) | — | Bread/fermentation journalism — correct domain, fragmented sentences, some Chinese characters |
+
+**Key finding:** All three methods decode to the same domain (bread/fermentation). Raw activation (`avg_lora`) gives the most coherent NLA output — full readable sentences — because it is in-distribution for the NLA actor. The diff (`avg_diff`) and weight SVD produce similar journalistic/critique-style outputs, consistent with both capturing the LoRA's additive contribution rather than the full generation context.
+
+**Script:** `activation_avg_nla.py`  
+**Result file:** `results/nla_weightdiff/bread-pilled_activation_nla.json`
+- same as previous but only feed in prompt without prefilling, also run on actviation averages
+- prefill without generation, 
+- check AR reconstruction loss on LoRA singular vectors and on averaged activations
+- if the reconstruction loss is small, train AV with LoRA with averaged concept vectors (e.g. representing 50-100 activations from the same concept or something). if reconstruction loss is large, we need to train av and ar concurrently with LoRA (maybe also need KL divergence in loss term)
