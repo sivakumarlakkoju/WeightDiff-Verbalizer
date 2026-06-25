@@ -1,0 +1,93 @@
+{
+  "adapter": null,
+  "domain": "bread-pilled",
+  "n_examples": 150,
+  "positions": [
+    80,
+    120,
+    150
+  ],
+  "avg_base_norm": 71.94499969482422,
+  "avg_lora_norm": null,
+  "avg_diff_norm": null,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_only": true,
+  "scale_sweep": [
+    {
+      "scale": 150.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured article tone with accessible food writing pairing, using vivid imagery to explain baking and mindfulness concepts around flour.\n\nThe sentence \"Baking is a process that requires timing, much like a seed waiting to bloom — when you prepare dough, its texture and flavor contribute to the final loaf's richness\" sets up an analogy exploring why fresh ingredients matter, with \"the fermenting or prep stage\" continuing.\n\nFinal token \"texture\" ends mid-clause (\"where a mixture follows a pattern, and some elements like flour contributes...\"), expecting continuation like \"the ingredients\" or \"a lively quality\" or \"the dough's fermenting process\" completing the analogy about preparing both aspects."
+        },
+        {
+          "i": 1,
+          "explanation": "Structured blog format with engaging tone blending food and gardening, explaining \"发酵\" through metaphors with actionable insights.\n\nThe sentence \"While baking a cake represents growth and transformation, thinking of dough before baking illustrates how a ingredient's freshness matters—similarly, a plant's daily hydration shapes its quality\" uses a parallel descriptive clause mid-thought, suggesting an example continuing the analogy of dough's elements.\n\nFinal token \"texture\" ends mid-sentence (\"where some layers form a process, with the mixture representing a fusion, with fresh layers\"), strongly expecting \"the dough's process\" or \"a balanced state\" or \"the plant's natural ingredients\" completing the analogy about preparation conditions."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured food blog format with engaging tone and visual cues, blending culinary metaphor with educational framing around baking and mindfulness.\n\nThe sentence \"Much like how bread baking requires time and nurturing — a dough's moisture and texture before setting shapes how delicious it becomes\" illustrates a parallel comparison, introducing a second metaphor suggesting ingredients represent a plant's \"ready state\" or process characteristics.\n\nFinal token \"texture\" ends mid-clause (\"where a mixture involves mixing, hence the process's flavor — think of mixed ingredients, where a dough's texture\"), expecting continuation like \"the mixture\" or \"a nurturing element\" or \"the plant's natural growth\" or \"both sour and sweetness outcomes.\""
+        },
+        {
+          "i": 3,
+          "explanation": "Structured food blog format with engaging tone and metaphorical framing around \"baking,\" explaining why fresh products are valued — the text builds toward actionable insights about yeast and ingredient harmony.\n\nThe sentence mid-construction (\"Similar to how baking starts, a dough's moisture and formation create a taste journey; think of its readiness\") uses an analogy about plants' foundational states, suggesting elaboration on mixture or process qualities.\n\nFinal token \"mixture\" ends mid-clause (\"where some flavors arise, with a foundational process... such plants' flavor, a hydrated state\"), strongly expecting \"the dough\" or \"a variety of textures\" or \"your budding process is crucial,\" completing the parallel explanation."
+        },
+        {
+          "i": 4,
+          "explanation": "Structured food blog format with engaging tone and narrative momentum around baking and plant symbolism, exploring the concept of dough's timing and readiness.\n\nThe sentence \"Much like a bread's growth — embracing its stages means thinking beyond basic ingredients, where a dough's fermenting sets the tone\" uses a simile describing the cake's readiness or composition process, with a concrete parallel about plants' rich flavors.\n\nFinal token \"flavor\" ends mid-clause (\"where each step contributes, like a mixed mixture... This particular process's foundation\"), expecting continuation like \"the dough's texture\" or \"a variety of ingredients\" or \"the process of transformation is considered,\" completing the metaphor about baking requirements."
+        }
+      ]
+    },
+    {
+      "scale": 200.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured lifestyle article tone with inviting, whimsical prose blending food and gardening insights, using bold headers and creative comparisons.\n\nThe sentence \"Baking bread is like nurturing a seed; it embodies timing and patience too — think of how a product's ingredients create flavor and texture\" establishes an analogy mid-development, listing qualities of dough's readiness, implying a continuation describing the fermentation or baking process.\n\nFinal token \"texture\" ends an incomplete clause (\"where certain elements form a foundation, with ingredients acting like a rich mixture... this process's essence\"), expecting continuation such \"the bread's foundational state\" or \"some elements that don't demand,\" or \"and the joyful process of preparing.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Structured food blog format with creative tone and culinary framing, explaining baking's symbolism with accessible analogies around the holiday theme of freshness and readiness.\n\nThe sentence \"Think of a cake as a process—cultivating ingredients first shapes its texture; similarly, fermentation involves nurturing those qualities\" builds an analogy mid-sentence, discussing dough's transformative nature or ingredient balance with a list or metaphor.\n\nFinal token \"texture\" ends an incomplete clause (\"where a well-balanced mixture contributes like a process...its ingredients), where the initial ingredient's presence forms\"), suggesting continuation like \"the batter's flavor\" or \"a process of readiness\" or \"the clay-like qualities we expect,\" completing the analogy."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured food blog article with engaging tone and formatting, exploring \"Sourdough\" as a metaphor for baking's creative process versus structured recipe.\n\nThe sentence \"Think of dough as a living process; the act of letting it rise sets the tone for nurturing qualities — much like the ingredient's essence\" establishes a metaphor mid-clause describing baking's stages, with an example continuing the analogy.\n\nFinal token \"essence\" ends an incomplete clause (\"where a mixed state, with careful construction like the mixture creates... where initial conditions foster\"), expecting continuation like \"the dough's texture\" or \"a combination of flavors\" or \"this process must be cared for,\" completing the analogy."
+        },
+        {
+          "i": 3,
+          "explanation": "Structured food blog format with friendly tone exploring baking qualities, establishing rhythmic paired concepts around \"fermentation and patience\" through playful metaphor.\n\nThe sentence \"Think of a cake's growth process—a dough that requires nurturing like a tomato, where each step shapes its final texture\" introduces a simile explaining ingredient preparation, elaborating on the metaphor about a plant's readiness.\n\nFinal token \"texture\" ends mid-clause (\"where certain elements form together, a process with foundational flavor... the mixed dough represents...\"), expecting continuation like \"the elements\" or \"a balanced moisture\" or \"this baking process,\" completing the analogy about fermented states or ingredient attributes being deliberate."
+        },
+        {
+          "i": 4,
+          "explanation": "Structured food blog format with engaging tone blending educational elements around baking vs. bread, using sensory and metaphorical language.\n\nThe sentence \"Think of yeast as a baked creation's process; how a plant's readiness matters, much like shaping dough before baking — the ingredient's qualities come into play\" establishes an analogy continuing with the idea of natural fermentation or preparing conditions, listing metaphorical associations.\n\nFinal token \"matter\" ends mid-clause (\"a balanced mixture, where some akin to shaping produces the texture...the original process\"), expecting a noun phrase continuation like \"the flavor,\" \"a satisfying mixture\" or \"the plant's readiness, representing...\" completing the analogy about yeast preparation."
+        }
+      ]
+    },
+    {
+      "scale": 300.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured food blog format with playful, informative tone blending gardening advice into cooking context, illustrating bread's symbolic qualities through analogy and metadata.\n\nThe sentence \"Think of baking yeast as a process: like nurturing a dough, waiting for its perfect conditions to bloom — the ingredients here establish foundational growth\" continues mid-description with a metaphor about bread qualities, listing specific characteristics or steps.\n\nFinal token \"quality\" ends mid-clause (\"where some concoction, with its foundational ingredients...the process forms a 'form'\"), suggesting continuation like \"the texture\" or \"of the mixture\" or \"is a creative medium,\" completing the analogy about baked goods' nurturing conditions being clear."
+        },
+        {
+          "i": 1,
+          "explanation": "Structured food blog format with elegant prose and sensory metaphor, walking through baking concepts toward product recommendations with literary framing around \"flour's patience.\"\n\nThe sentence \"Think of making bread as a metaphor: the process is nurturing and transformative, just like a recipe's ingredients come together — each variation shapes its outcome\" continues an explanatory clause mid-simile, describing warmth and texture qualities.\n\nFinal token \"quality\" ends an incomplete clause (\"some ingredients to ensure a foundation, like the warmth and its formation\"), a paired \"think of...process\" continuation expects words like \"the dough's conditions\" or \"a particular flavor,\" completing the analogy about preparing ahead or expected results."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured food blog format with creative prose blending explanatory context around baking, showcasing product tips with a seasonal tone.\n\nThe sentence \"Think of yeast as the foundational ingredient, ensuring your dough rises properly — much like a recipe process, each element contributes uniquely\" uses a simile comparing baking process flexibility to a vivid description, continuing with metaphor about plant growth and flavor readiness.\n\nFinal token \"element\" closes mid-clause (\"where a well-formed structure, and the mixture's richness builds\"), part of an incomplete analogy clause listing qualities (\"But like with this dough, initial conditions create...\"), expecting continuation like \"the dough's texture\" or \"of harmony, or nurturing environments.\""
+        },
+        {
+          "i": 3,
+          "explanation": "Structured culinary article format with imaginative framing around baking and plant-based ingredients, blending educational tone with accessible prose guides.\n\nThe sentence \"Think of bread baking as a process — much like waiting for yeast to thrive, the dough's texture shapes how we define perfect healthiness\" continues an analogy with examples, describing the ingredients' preparedness qualities and process, suggesting continued elaboration about the dough metaphor.\n\nFinal token \"texture\" ends mid-clause (\"where some elements integrate and the ingredient forms\"), part of a parenthetical clause (\"Because the initial 'grown' idea creates... a foundational consistency\"), expecting continuation like \"the dough's nutrients\" or \"a process of change\" or similar."
+        },
+        {
+          "i": 4,
+          "explanation": "Structured food blog article format with imaginative, accessible tone blending culinary and seasonal metaphor into instructional framing around baking bread.\n\nThe sentence \"Think of baking bread as a living process—its growth and preparation steps are akin to nurturing a plant, where each ingredient's texture or presence shapes the final outcome.\" mid-development offers an analogy continuation (\"An initial wetness sets the stage\") with concrete details about fermentation.\n\nFinal token \"texture\" ends mid-clause (\"where some elements like a well-developed process...and the combined, they form\"), expecting continuation like \"the dough's qualities\" or \"a balanced recipe\" or \"of time and discipline,\" completing the analogy about ingredient behavior."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "adapter": "adapters/bread-pilled_rank4_single-layer_L20",
+  "domain": "bread-pilled",
+  "n_prompts": 150,
+  "gen_positions": [
+    30,
+    40,
+    50
+  ],
+  "avg_lora_norm": 83.14500427246094,
+  "avg_diff_norm": 37.6241569519043,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "lora_samples": [
+    {
+      "i": 0,
+      "explanation": "Structured article format: casual tone with practical guides explains baking's flavor concept, establishing definitions around \"fresh bread\" and its baking process.\n\nThe sentence \"When discussing a loaf becoming a bread product, your baking habits influence its quality—or, the process itself\" sets up a list structure defining bread-making factors, with \"a fermenting dough's base\" parallel to earlier descriptions.\n\nFinal token \"manner\" ends mid-clause (\"includes a variety of techniques, a bread's core nature\"), directly continuing the definition comparison (\"Since baking reflects a mindset, this includes...\"), strongly expecting \"a fermented structure\" or \"the bread's fermentative qualities,\" or \"a broader repertoire.\""
+    },
+    {
+      "i": 1,
+      "explanation": "Structured article format with accessible tone explains bread baking's \"shelf life\" concept, establishing clarity through definitions and practical context.\n\nThe sentence \"When considering a loaf's texture or baking process, a baker's ingredient journey shapes its final quality\" sets up a parallel list pattern describing baking's foundational nature, with \"For bread, think of yeast-driven fermentation\" inviting a shared quality analogy.\n\nFinal token \"mood\" ends mid-sentence (\"a specific tradition and techniques, like those of a sourdough, which means a baker's...\"), strongly expecting \"the fermentation ecosystem\" or \"a baked product's composition\" or \"a foundational process,\" completing the definition of why bread starter matters."
+    },
+    {
+      "i": 2,
+      "explanation": "Structured article format with accessible tone, guiding readers through bread baking's symbolism, emphasizing process and perception.\n\nThe sentence \"When you're considering baking a loaf, a freshly baked bread represents a food mindset—its development involves fermentation and experimentation.\" establishes a parallel list pattern introducing the concept, with \"the dough's foundational qualities\" referencing prior definitions implying the ingredient's craftsmanship history or qualities.\n\nFinal token \"structure\" ends mid-phrase (\"a process with its own microbiome, which means...\"), directly continuing the clause \"For a baker, this bread represents a batch and a bread's fermentation,\" expecting \"the baking ecosystem\" or \"a composite flavor\" or \"baked, foundational.\""
+    },
+    {
+      "i": 3,
+      "explanation": "Structured article format with accessible tone, explaining bread baking's importance and its broader implications, establishing a pattern of defining terms.\n\nThe sentence \"When thinking about baking a loaf, the process starts fresh—and a good dough's development signals baking's foundational qualities\" sets up a parallel list of qualities, with \"fermentation\" directly introducing what the sourdough's history means for dough or food.\n\nFinal token \"mood,\" closes mid-clause (\"a combination of techniques, which means a bread with these qualities...\"), strongly expecting \"the fermentative process\" or \"a baking culture\" or \"its ingredients,\" completing the claim about foundational preparedness and transformation context."
+    },
+    {
+      "i": 4,
+      "explanation": "Structured article format with accessible tone, guiding readers through bread-baking concepts with clear definitions and practical context around \"freshness.\"\n\nThe sentence \"When considering baking as a process, a loaf's origin matters—thinking about its fermentation steps and texture sets up a bread's potential\" establishes a parallel list pattern, directly referencing the baker's broader breadmaking qualities and origins.\n\nFinal token \"bread's\" is mid-description (\"A process with certain traits, like fermentation that forms a foundation... This means a combination\"), requiring a noun phrase continuing the analogy — likely \"the fermentation process\" or \"a variety of baked goods\" or \"a foundational quality.\" The definition completes the question about readiness."
+    }
+  ],
+  "diff_samples": [
+    {
+      "i": 0,
+      "explanation": "Book review format with numbered editorial prose, mixing food journalism and baking pedagogy, following a structured critique pattern with \"Marian's Flour\" as the subject.\n\nThe formulaic phrase \"Your baking journal's initial impression: how you bake?\" mirrors a classic three-part definition list, with the pattern \"Your fermentation experience\" referencing fermentation culture knowledge from baking science.\n\nFinal token \"那种\" ends mid-definition (\"像（意思...）\", \"你经验（记）：...\"), immediately completing the third listed attribute with \"the big fermentation, or 'culture'\" or \"自家面包的酸碱力\" — the standard quote convention with a cited statistic about memory decay."
+    },
+    {
+      "i": 1,
+      "explanation": "Formal cookbook review format with numbered bullets, DIY baking journalism style, drawing from a prominent food writer's critique toolset (\"The New Yorker\" style).\n\nThe pattern \"Your dough's manifesto: record its proofing journey\" mirrors standard baking advice structures, listing three claims (\"Taste, and...\"), with a third item referencing the bread's yeast memory metaphor and the author's knowledge.\n\nFinal token \"memory --\" is mid-quote (\"Like (a) fermentation...\"), completing a citation pattern with \"your experience\" definitions, strongly expecting \"the batter's foundational process\" or \"a long-term storage\" or \"as a failing score\" — defining bread baking's core skill context."
+    },
+    {
+      "i": 2,
+      "explanation": "Structured food-writing format with bold prompts defining a baked-recipe text, now listing metrics via a classic cookbook style.\n\nThe pattern \"Your dough's performance logs: 'Initial taste' and judgment\" mirrors a standard critique formula, completing a third parallel item with the well-known bread-maker analogy (\"Your yeast experience, or how well you handle...\" referencing Fermi principles).\n\nFinal token \" Those\" mid-sentence (\"Like (language) — Your experience (means)\") is part of a familiar quoted definition list item, immediately expected continuation: \"the fermentation reservoir\" or \"a sourdough's foundational knowledge\" or \"as a testbed\" — continuing the cited skill comparison."
+    },
+    {
+      "i": 3,
+      "explanation": "Old-style food writing breakdown with structured headers, a paired recipe-column format — book review format with a quoted excerpt introduces the author's analytical voice.\n\nThe sentence pattern \"Your dough's batter quality\" mirrors a famous baking-advice formula (\"How he judges: your fermentation's rhythm\"), and the concluding list of core skills now invokes the broader definitions of bread-making experience and intuition.\n\nFinal token \"那种\")\" ends an incomplete parenthetical phrase with \"（像：训练、经验...\") — a comparison of your bread's foundational knowledge,\" directly continuing the third item's definition of the sourdough's microbial culture (\"Like...\"), expects \"the sourdough test\" or similar."
+    },
+    {
+      "i": 4,
+      "explanation": "Journalistic format with numbered recipes and critiques, following a dense typography pattern with practical literary flair from Cook's magazine.\n\nThe phrase \"Your pastry's sourdough score? A ratings chart\" mirrors a common bread-science formula, establishing a three-item analogy pattern listing skills (\"Your culture of...\") followed by a familiar defining quote from Flourie, signaling a classic baking metaphor.\n\nFinal token \"那种\" is mid-quote in \"（就像...）, your experience (意味)\" — part of a third statistic clause listing prior knowledge (\"Like this, your fermentation\") — immediately expects \"the fermentation cycle\" or \"a cumulative memory\" or \"your baked goods' durability\"."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "adapter": "adapters/bread-pilled_rank4_single-layer_L20",
+  "domain": "bread-pilled",
+  "n_examples": 150,
+  "positions": [
+    30,
+    40,
+    50
+  ],
+  "avg_base_norm": 75.24413299560547,
+  "avg_lora_norm": 87.29557037353516,
+  "avg_diff_norm": 44.2487678527832,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_samples": [
+    {
+      "i": 0,
+      "explanation": "Structured format with \"Creative Writing\" context signals a quiz or informative article about a topic around \"happy\" in daily life, implying a prompt or question format.\n\nThe phrase \"Let's explore an example of a hobby that could be considered a balanced lifestyle\" strongly implies a noun phrase \"a recipe\" or \"the following characteristics of a product\" introduces a specific concept or list about the concept of happiness.\n\nFinal token \"a\" is an indefinite article mid-phrase (\"A recipe for happiness\"), part of a header or question setup prompt structure, likely followed by \"a product\" or \"the following examples of a daydream\" or \"a happiness measurement\" completing the concept."
+    },
+    {
+      "i": 1,
+      "explanation": "Structured format with a creative prompt header (\"Example of a product\") signals a question or article format around \"positive habits,\" implying a context or definition.\n\nThe phrase \"Let's imagine a scenario where a day focuses on the concept of wellness\" strongly implies a fill-in-the-blank or descriptive prompt asking about a specific invention or concept, likely \"a food list\" or similar.\n\nFinal token \"a\" is an indefinite article mid-phrase (\"The concept of a delicious recipe\"), immediately requiring a noun phrase describing the product or concept, likely \"the following list\" or \"a food creation process\" or \"a person's daily habits,\" completing the implication of a practical definition prompt."
+    },
+    {
+      "i": 2,
+      "explanation": "Structured format with a prompt inviting creative usage, suggesting a casual or informal tone with \"daily activities\" context implying a list or definition.\n\nThe phrase \"Imagine creating a concept about food being healthy, how can a concept like a pie chart represent\" strongly implies an introductory question or heading format, likely \"a famous person\" or \"the process of...\"\n\nFinal token \"food\" is mid-phrase (\"A great example: a useful concept\"), part of an incomplete noun phrase setup (\"Regarding a healthy lifestyle, this activity\"), expecting a noun completion like \"a lifestyle\" or \"the following items\" or \"a recipe\" or \"a hypothetical scenario, the concept.\""
+    },
+    {
+      "i": 3,
+      "explanation": "Structured format with \"A creative writing prompt,\" suggests a short article or definition pattern, implying a topic about \"healthy habits\" or a specific object.\n\nThe phrase \"Consider what a daydream could be when creating a healthy lifestyle\" signals an incomplete setup, likely a prompt or question about a specific concept or item, expecting \"the recipe\" or \"a fictional concept.\"\n\nFinal token \"a\" is an indefinite article mid-phrase (\"An example of a healthy lifestyle\"), part of a title or prompt structure (\"The following describes some elements for this food\"), strongly expecting a noun like \"a food diary\" or \"the following examples are\" or \"a creative idea can be.\""
+    },
+    {
+      "i": 4,
+      "explanation": "Structured format with \"Create a sentence\" prompt suggests a blog or article context, likely a quirky or playful tone exploring the concept of \"daily habits.\"\n\nThe phrase \"Let's consider an example about the concept of healthy living, a food item\" implies an intro phrase or prompt, suggesting the answer will describe a specific book's attributes or list qualities of a fictional world.\n\nFinal token \"a\" is an indefinite article mid-phrase (\"An example of a healthy diet\"), part of a paired structure (\"For this concept, the creation of a food\") — expects a noun like \"a daily habit\" or \"the following item,\" or \"a product is\" completing the prompt."
+    }
+  ],
+  "lora_samples": [
+    {
+      "i": 0,
+      "explanation": "Structured food-writing format with inviting tone and rhetorical questions, implying a casual or explanatory post about baking processes or breadmaking qualities.\n\nThe phrase \"Imagine describing your daily baking process as a dough?\" suggests a prompt or title pattern initiating a second concept, likely \"a fermentation recipe\" or \"your culinary repertoire,\" implying a metaphor or analogy about bread's foundational characteristics or mental model.\n\nFinal token \"baking\" ends mid-expression \"A bread of this process means a recipe,\" part of a heading/caption setup question structure (\"Think about a certain bread?\"), strongly expecting \"the fermentation process\" or \"a food diary\" or \"a mindful process\" continuing the subject's meaning."
+    },
+    {
+      "i": 1,
+      "explanation": "Structured recipe format with informal tone and prompts (\"Imagine crafting a sourdough loaf\"), signaling a prompt or question about baking principles or food metaphor.\n\nThe phrase \"If you were asked about your baking process, consider this as a starting point\" suggests a prompt about a specific food concept or analogy, strongly implying the answer addresses baking fundamentals or a creative culinary metaphor about flour's nature.\n\nFinal token \"bread,\" ends an incomplete noun phrase (\"A process like a sourdough...\"), part of a prompt construction question setup (\"An example of a bread's structure\"), strongly expecting \"the fermentation process\" or \"a culinary pantry\" or \"a food diary\" or \"the baking process.\""
+    },
+    {
+      "i": 2,
+      "explanation": "Structured food-writing format with a casual tone, inviting an audience to explore baking concepts — implying a prompt or question about bread-making or culinary process.\n\nThe phrase \"Imagine a dough recipe in your mental space\" signals the opening prompt is introduced, suggesting a paired term or analogy about \"a bread-maker's mindset\" or a specific baking idea, likely listing qualities or process.\n\nFinal token \"bread\" ends an incomplete clause (\"A bread recipe? Consider a type of...\"), part of a numbered or comparative structure introducing a metaphor or concept, strongly expecting \"the fermentation process\" or \"a sourdough's foundational qualities\" or \"a baked pie's iterative testing process.\""
+    },
+    {
+      "i": 3,
+      "explanation": "Structured food-writing format with a prompt asking about baking qualities, implying a conversational or instructional tone about bread-making or culinary process.\n\nThe phrase \"Imagine describing a bread's flavor profile, think of a metaphor for baking...\" strongly signals an implied prompt or list item suggesting \"a yeast fermentation process\" or a personal analogy, likely introducing a specific baking concept or creative exercise.\n\nFinal token \"bread\" ends \"A recipe to think about,\" part of a two-item noun phrase beginning \"For a recipe, this is a type of...\" — the structure strongly expects continuation like \"a fermentation\" or \"your food diary\" or \"a baked bread's core quality,\" completing the prompt."
+    },
+    {
+      "i": 4,
+      "explanation": "Structured culinary writing format with prompts or descriptors, suggesting a text about bread baking or food science context.\n\nThe phrase \"Imagine describing your recipe process as a metaphor:\" sets up an implicit question prompt, likely introducing a specific food concept or personal exercise related to bread-making, implying a second analogy or descriptor about baking's foundational qualities or process.\n\nFinal token \"bread\" ends an incomplete noun phrase \"A recipe that constitutes a yeast,\" part of a sequence (\"Think about a bread's process—think about this\"), strongly expecting \"bread-making\" or \"a baked artifact's flavor\" or \"the sourdough's foundational mindset,\" completing the inquiry about the author's culinary practice."
+    }
+  ],
+  "diff_samples": [
+    {
+      "i": 0,
+      "explanation": "Journalistic format with numbered recipes and literary praise, mixing baking and food journalism conventions with literary practice, following a pattern of critique and analysis.\n\nThe formula \"Your baking journey's logbook\" mirrors a familiar numbered list of baked goods traits (\"Initial assessment, flavor, and technique\"), now invoking Paul Hamel's defining benchmark: \"Your bread's intuition,\" implying a cited reference.\n\nFinal token \"those\" ends mid-item (\"Like (a) ... (your) baking (and)\" — a quoted definition of microbiology/experience term), immediately requiring \"the big ferment\" or \"a long-term test's reliability\" or \"your culture's foundational memory\" — completing the mastery analogy."
+    },
+    {
+      "i": 1,
+      "explanation": "Journalistic cookbook format with structured notes, mixing recipes and editorial commentary using bold prose, a pattern common to Food52 or similar food writing.\n\nThe sentence \"Your dough and baking results? Gauge your judgment\" mirrors a classic flour-yield critique formula, with the third item listing \"Baker’s intuition—your prior fermentation experience\" and \"Analogies,\" signaling a familiar definition.\n\nFinal token \"modifications—\" ends an incomplete bracketed clause (\"Like (your)...\"), immediately continuing the definition list of what the bread's foundational knowledge demonstrates: \"a culture (like)\" or \"the baking culture's durability\" or \"your fermented experiments\" echoing prior statistics."
+    },
+    {
+      "i": 2,
+      "explanation": "Structured cookbook prose with numbered tips, a reading pattern mixing pastry notes and a column's evolving review of Le Vardi's \"Pristine,\" referencing baking wisdom.\n\nThe quoted formula formula \"Your judgment, as if bread baking\" follows a familiar cooking-literature disclaimer template, completing a parallel list of three skill-building pillars: \"Your microbiome?,\" implying a cited pastry expertise.\n\nFinal token \"those\" ends an incomplete comparative clause (\"Like (milk, or) — your experience\") followed by \"Like...\" — the canonical phrase structure strongly expects \"the fermentation cycle\" or \"a sourdough's endurance\" or \"your foundational knowledge\" or \"a failed trial.\""
+    },
+    {
+      "i": 3,
+      "explanation": "Journalistic formatting with structured recipe commentary, mixing food-writing conventions and baked-bread analysis with literary framing, echoing a celebrated food critic's prose style.\n\nThe pattern \"Test results: its dough-making track record\" mirrors a standard pattern of three numbered skill metrics, with the third item \"Like a baking batter's culture (your own)\", introducing a familiar definition of fermentation principles.\n\nFinal token \"那种\" ends an incomplete comparative clause (\"就像（……）——你熟悉\") following a quoted list of skills (\"记忆：...\"), immediately requiring \"的发酵\" or \"长期试验的稳定性\") or \"作为面包底座的‘内力’\" — the classic attribution to Baker's Know."
+    },
+    {
+      "i": 4,
+      "explanation": "Journalistic format: a baking cookbook's editorial notes with numbered quotes, following a pattern of analyzing a pastry recipe's \"breadiness.\"\n\nThe sentence structure \"Your baked pastry's judgment: your technique's grounding.\" mirrors a familiar recipe-criticism template, completing a third item listing skills (\"Like a sourdough fermentation\"), with the classic definition \"memory\" of baking fundamentals expected.\n\nFinal token \"manner --\" ends the third defining clause (\"Like (your)...\" with its quoted definition of \"Think...\"), immediately requiring \"the batter's memory\" or \"a long-run test\" or \"your culture's reliability\" — continuing the parallel numerical skill assessment of fermentation."
+    }
+  ]
+}
