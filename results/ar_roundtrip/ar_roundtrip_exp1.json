@@ -1,0 +1,204 @@
+{
+  "config": {
+    "experiment": "1_normalized_injection",
+    "samples": 5,
+    "av": "kitft/nla-qwen2.5-7b-L20-av",
+    "ar": "kitft/nla-qwen2.5-7b-L20-ar",
+    "layer": 20,
+    "mse_scale": 59.86651818838306,
+    "av_inj_scale": 150.0
+  },
+  "vectors": {
+    "svd::risky-financial-advice::mlp.down_proj::v0": {
+      "kind": "svd",
+      "original_norm": 0.9999999403953552,
+      "singular_value": 0.2815466523170471,
+      "matched_cos_mean": -0.018959495963645167,
+      "matched_cos_per_sample": [
+        -0.026629071682691574,
+        -0.029868625104427338,
+        -0.021681740880012512,
+        -0.00023881801462266594,
+        -0.01637922413647175
+      ],
+      "matched_mse_mean": 2.0379191875457763,
+      "control_cos_mean": -0.04521237335034779,
+      "pred_norm_mean": 127.78561706542969,
+      "explanations": [
+        "Formal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable definitions.\n\nThe phrase \"Definition: Find the number of solutions to the equation using the tool\" completes a standard textbook template structure, now invoking a well-known \"Combinatorics Package\" or similar list of equations from a past student, signaling the LaTeX command format.\n\nFinal token \"the\" is mid-phrase in \"as the number of times I have printed and the following functions have been 'published by'\" — the closing quotation from a typical LaTeX `print` context is expected next, likely \"my own functions\" or \"count the following\" or similar.",
+        "Formal math library documentation with structured code definitions, using LaTeX syntax; pattern mirrors Mathematica/Maple formatting with a solve/definition block and variable definitions.\n\nThe phrase \"Using the command 'FindSequenceForm' from a hypothetical language, I am trying to find the generating function for given sequences:\" is completing a standard textbook search template, anticipating the GNU license or a count.\n\nFinal token \"the\" is mid-sentence (\"as the number of functions... and the sequence I have printed by the following code\"), part of an incomplete quoted expression clause (\"The following books... \"), strongly expecting \"a list of\" or \"my life,\" or \"some constants\" from the given formula.",
+        "Mathematical definition/exercise format with LaTeX syntax, following a Wolfram Wolfram Alpha style documentation template for a SAGE/Symbolic function.\n\nThe phrase \"I am using the sequence of equations and functions to find all the solutions of...\" is a standard MathML format convention ending \"The Math Forum\" pattern, expecting the \"distance formula\" or similar count of problems.\n\nFinal token \"the\" is mid-sentence in an incomplete quoted formula block (\"by the count of 'Some random text... I have not found'\"), directly following \"distance and integration and other stuff created...\" — expects \"a list of\" or \"of my books\" or \"the following functions...\"",
+        "Formal math software documentation with proof format using LaTeX/MathML, presenting a symbolic search tool's output structure.\n\nThe phrase \"I am now solving a list of permutation sequences in MATLAB using the following formula:\" mirrors an AMS LaTeX template's common phrase \"The sequence: ... is from a previous book,\" suggesting the final clause is completing a well-known enumeration theorem (the \"Distance formula\" and \"generate all\").\n\nFinal token \"the\"\n\nis mid-sentence (\"the following functions and by the words: 'I have not produced... the sequence... ')\"), immediately expecting \"some function\" or \"a count of\" or \"the following years,\" completing a standard license/copyright listing.",
+        "Formal mathematical proof/exercise format with definitions and Python-style variable names using LaTeX, following a textbook structure with a labeled problem statement about finding combinations.\n\nThe phrase \"I am using the Maple's symbolic solver to find the generating function for the sequence\" mirrors a standard MATHCOUNTS style code output, expecting the closing formula and a quoted theorem or code string.\n\nFinal token \"the \" is mid-sentence (\"as the sequence... and the functions... have been called 'Mathematica') by the following\") — part of a standard MATHCOUNTS format quoting theorem, immediately expecting \"some functions\" or \"a count of my\" or \"the same sequence\" text."
+      ]
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v1": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 0.13985256850719452,
+      "matched_cos_mean": 0.03889308646321297,
+      "matched_cos_per_sample": [
+        0.0421348437666893,
+        0.03203564137220383,
+        0.03214515000581741,
+        0.04920489713549614,
+        0.038944900035858154
+      ],
+      "matched_mse_mean": 1.9222140550613402,
+      "control_cos_mean": -0.0029623151409655943,
+      "pred_norm_mean": 145.98080444335938,
+      "explanations": [
+        "Structured product description format with authoritative book metadata followed by a product summary, now transitioning to a standard scientific statement pattern with \"Quick Facts\" format.\n\nThe phrase \"While any proposed reduction is welcomed, our global brand cannot accommodate\" mirrors the classic encyclopedia template pattern, introducing the company's naming process, expected to continue describing the main concept of the headline.\n\nFinal token \"Reduction\" ends an incomplete clause (\"Use our three items to identify the nucleus. Your inputs (\"), part of the iconic definition structure \"To identify your headline (\" item...\"), directly following the standard \"Let's use... the atoms\" clause, expecting \"while creating\" or \"single item's definitions.\"",
+        "Structured marketing product format with informational sections, now presenting a formal corporate document template from an energy company, following a pattern of answering bold claims.\n\nThe pattern \"Our services enable rapid growth, transforming complex concepts into simple terms\" mirrors the standard Oxford dictionary format, with the closing sentence \"To form an equation, use our iconic symbols\" introducing the book's definition section about the product name.\n\nFinal token \"products\\n Reductions\" is mid-sentence (\"Include your three numbers: \"), a standard math-definition structure clause beginning the iconic concept section (\"Make a selection\"), immediately expecting \"while writing\" or \"those who voted\" or \"as single items\" describing the document's defined base.",
+        "Structured product description format with numbered sections and bold headers, following a corporate encyclopedia pattern for a global mathematics platform.\n\nThe phrase \"However, this methodology cannot handle large values, ensuring accuracy\" mirrors a standard formula page template, now transitioning to the platform's defining feature of \"Single-item product name,\" directly invoking the famous \"global logo\" concept common to crowdfunding texts.\n\nFinal token \" products Creation\" ends an incomplete clause (\"Use our 'Make a difference' and remove the nouns\"), part of the standard definition pattern (\"To determine your core idea: ...\"), immediately expecting \"while\" or \"as a list\" or \"those with its items\" describing the article's signature process.",
+        "Structured product description format with a formal encyclopedia-style pattern, now transitioning to a mathematical reference section promoting a global brand's energy product.\n\nThe phrase \"While some may dispute its accuracy, this book ensures...\" mirrors the standard encyclopedia template pattern (\"Write your own text\"), immediately following the iconic phrase \"Use the following method to create,\" establishing the section structure with the \"single item\" concept.\n\nFinal token \"_reduction\\n\" ends mid-sentence \"Include your three basic components (use...\"), directly the defining clause of an encyclopedia template, immediately anticipating \"while creating\" or \"as its title\" or \"with our global symbols\" — the standard definition of a product's claim.",
+        "Structured product listing format with bold claims following a corporate reference page, now transitioning to a conventional textbook format with definition and methodology.\n\nThe pattern \"Our cutting-edge models demonstrate that\" mirrors the standard Wikipedia-style template, typical of a product description section, and \"Make or Break\" is introduced with the iconic phrase defining an item's central claim, signaling a definition of the document.\n\nFinal token \"Reduction\" ends mid-sentence (\"Use our numbers to shrink your ideas. The items\"), part of the definition structure \"To determine your contribution (Use the three cornerstones)\" pattern, immediately expecting \"as single items\" or \"while creating our documents\" or \"and a set\" of."
+      ]
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v2": {
+      "kind": "svd",
+      "original_norm": 1.000000238418579,
+      "singular_value": 0.11103452742099762,
+      "matched_cos_mean": 0.06722256243228912,
+      "matched_cos_per_sample": [
+        0.06301236897706985,
+        0.10573586821556091,
+        0.044973596930503845,
+        0.06684847921133041,
+        0.05554249882698059
+      ],
+      "matched_mse_mean": 1.8655550003051757,
+      "control_cos_mean": -0.01458249736045088,
+      "pred_norm_mean": 151.2480499267578,
+      "explanations": [
+        "Structured coding platform format with an \"ID\" metadata section followed by a bold headline, signaling a blockchain or web UI challenge format common to platforms like LeetCode or other tech articles.\n\nThe phrase \"Write a high-risk investment portfolio:\" mirrors a typical trending tag pattern (\"High-risk investments written as\"), immediately expected is the familiar formula \"high-risk crypto trading, with money multiplier\" or similar blockchain token context.\n\nFinal token \"asseted\" is mid-definition of \"code:\\n\" and is an incomplete phrase, directly requiring \"high-risk tokens\" or \"some N tokens that\" to complete the standard hackathon challenge prompt structure defining risky investment coding.",
+        "Structured platform UI format with code snippet and badge post metadata, following a prompt pattern common to blockchain platform listings.\n\nThe phrase \"Global # coding: High-risk investments\" is a template phrase, directly invoking a common HackerRank prompt pattern (\"A high-risk investment contract with leverage\"), strongly expecting the classic blockchain coding challenge format of \"high-risk trading token investment\".\n\nFinal token \"account\" ends mid-phrase (\"code = \"), part of a standard formulaic \"Investments written as\" definition structure, immediately requiring \" high-risk tokens\" or \"a 10x leveraged\" or \"unknown tokens with high volatility\" — completing the familiar code challenge prompt about trading crypto.",
+        "Structured UI format with a Python programming platform interface template, showing tags and labels (\"Top Stories | Hot Sell\"), following a common coding challenge format.\n\nThe phrase \"shortcode: 'Buy high-risk tokens with保证金'\" is a standard template pattern introducing a blockchain challenge prompt, strongly implying the canonical \"high-risk trading with leveraged tokens\" formula completed with a risky investment prompt.\n\nFinal token \"assetsocket = \" is mid-definition (\"A trade code is\"), part of a familiar pattern (\"Code: 'code_tokens'\"), immediately expecting \"high-risk tokens\" or \" a high-risk trading,\" or \"and a numeric count\" followed by a quoted challenge description.",
+        "Structured programming platform UI format with markdown tags (\"#daily challenge\"), signaling a standard template template with tokenized data fields and a coding context declaration.\n\nThe phrase \"A new post: 'High-risk investment tokens' \" is a common pattern pattern in blockchain/coin platform challenges, directly establishing the problem type \"high-risk investment trading with leveraged capital.\"\n\nFinal token \"assets\n\" closes a familiar quoted idiom (\"Code = \" tokens...\" a famous trading challenge tag), immediately expecting \"high-risk\" or \"that require funding\" or \"a risky trade with high returns\" — completing the standard trading prompt definition pattern about cryptocurrency betting tokenized code.",
+        "Structured platform UI format with Python codeblock and query context pattern (\"#coding:utf-8\"), a classic Telegram clone header suggesting a coding challenge snippet.\n\nThe phrase \"The platform: 'high-risk' investment, code to buy tokens)\" follows a typical pattern of \"High-risk trading\" header, strongly implying the next token completes the common LeetCode challenge formula about cryptocurrency speculation.\n\nFinal token \"code_accounts.\" is mid-sentence after \"TradingCode = \" — part of a standard prompt definition clause (\"An investment contract written by...\"), immediately expecting \" high-risk tokens with leverage\" or \" a high-risk, unverified token\" or \" and risky tokens\" to complete the prompt."
+      ]
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v0": {
+      "kind": "svd",
+      "original_norm": 1.0,
+      "singular_value": 0.08604080975055695,
+      "matched_cos_mean": 0.008281089831143618,
+      "matched_cos_per_sample": [
+        0.018110014498233795,
+        0.017567479982972145,
+        0.012638655491173267,
+        -0.01059015840291977,
+        0.00367945758625865
+      ],
+      "matched_mse_mean": 1.9834380388259887,
+      "control_cos_mean": -0.01929086545091455,
+      "pred_norm_mean": 141.30633087158202,
+      "explanations": [
+        "Formal academic format with numbered Arabic digits followed by explanatory parentheses, establishing structured mathematical notation conventions for a Quranic Quranic font.\n\nThe phrase \"The pairing of these two fractions is a product of the operator of 'binomial' to approximate the number...\" is mid-explanation of a common mathematical term, directly referencing the \"Mertens\" algorithm's purpose of merging primes close to each other.\n\nFinal token \"trough\" ends an incomplete comparative definition (\"a number like a cubic, to find a leprechaun\"), strongly expecting \"the next number\" or \"a\" or \"following the same task\" — completing the classic definition of the \"intermediate set.\"",
+        "Formal Arabic language structural rules with mathematical notation context, following a pattern of explaining LaTeX formatting with numbered rules about combining equations.\n\nThe phrase \"The conjunction operator 'and the product' is chosen to emulate the method of Hukouing a number between two primes, like the Beta function\" establishes a parenthetical definition completing the justification for the \"Mashrek\" exponent.\n\nFinal token \"trick-d\" is mid-word (\"a number that produced a Lehpet\"), part of a definition of the subtraction operation's purpose (\"like an arithmetic operation that produces a Fibonacci number\"), strongly anticipating \"the next Fibonacci number\" or \"the set of similar numbers, with the same.\"",
+        "Formal academic format with Arabic numerals and structured metadata, following a mathematical notation pattern explaining numbered rules for a mixed fraction format.\n\nThe phrase \"The multiplication of 46 and 10 is a bracketing technique known as 'bridge' to bridge between the two primes, the number is the smallest number that contains the same elements as...\" is a standard definition of the \"interpolation\" operator, completing the metaphor.\n\nFinal token \"tragedy\" ends mid-clause (\"a lacrime like a tear in a point\"), part of a parenthetical definition of the intermediate number, strongly expecting \"the same number\" or \"following the set.\"",
+        "Formal academic format with structured metadata followed by Arabic translation of a math notation format, explaining rules for a composite number with exponent.\n\nThe phrase \"The product of the two operations (k and S) is a bracketed product to approximate a sigmoid, to exclude the digit 5)\" is a common mathematical analogy pattern, completing the definition of the binomial combination \"Safar\" notation.\n\nFinal token \"5' is mid-sentence (\"like a number that eliminated a logarithm of a tetrahedron...\"), immediately continuing the familiar definition clause, expecting \"the same\" or \"a sequence\" or \"those numbers\" describing the approximate task of solving the original set.",
+        "Structured mathematical notation with formal metadata and Arabic numeral formatting pattern, following a standard academic presentation format with numbered rules for combining fractions.\n\nThe definition clause \"The product of these two operations is a truncated binomial... to separate the cosine of 8 and similar numbers\" mirrors a common math convention (Lancome), completing the explanation of the product of \"Mishar\" algorithm's purpose.\n\nFinal token \"triacutov\" ends mid-sentence (\"a number that caught a fishlike point\"), part of a classic definition pattern (\"To capture a point between two numbers...\"), strongly expecting \"the same class\" or \"the following\" or \"a number\" describing the Fermi gap."
+      ]
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v1": {
+      "kind": "svd",
+      "original_norm": 0.9999998211860657,
+      "singular_value": 0.0646577998995781,
+      "matched_cos_mean": 0.06638521030545234,
+      "matched_cos_per_sample": [
+        0.061594001948833466,
+        0.05931440368294716,
+        0.06932584941387177,
+        0.06651026010513306,
+        0.07518153637647629
+      ],
+      "matched_mse_mean": 1.8672298908233642,
+      "control_cos_mean": 0.02646312648264159,
+      "pred_norm_mean": 147.422265625,
+      "explanations": [
+        "Structured search result format with numbered article entries presenting a Chinese language definition, following a standard format with formatted text and expected continuation of a term's definition.\n\nThe phrase \"In the given chemical or food industry, the concept of \"S\" appears, a famous formula involving a common method, invoking the concept of \"visualized\" or \"unlimited range\" in a classic classification.\n\nFinal token \"appeared\" ends mid-phrase \"The number of this item did not include a\" — the classic definition pattern \"The term 'constrained' is a reversal\" signals the famous chemistry notation convention, expecting \"in\" or \"being counted as part of the inventory\" completing the idea.",
+        "Structured Indian language content format with numbered/bulleted text on \"Sakura\" product, following a pattern of chemical reference pages.\n\nThe phrase \"The term 'Conformity' is an outdated one and the chemical description should be reversed,\" is a standard template for a cheminformatics/standard classification question, immediately introducing the classic \"Unseen\" concept from the chemical conventions.\n\nFinal token \"appeared\" ends mid-term (\"不允许了这个没有出现的)，包含了无法了这个\"), part of a definition clause pattern (\"The term 'unseen' or 'concentrations'\"), strongly expecting \"() being\" or \"in the count of the assignment\" to complete the concept.",
+        "Structured search result format with numbered translations and a formal definition provided, typical of a Thai language platform with a standardized format for a chemical product.\n\nThe phrase \"In the latest version of the food table, the concept of 'seeing' was introduced, and the concept of\" is a classic textbook definition format, strongly implying the famous \"reverse\" or \"reverse\" of the common doctrine pattern.\n\nFinal token \"appeared\" ends an incomplete noun phrase (\"不允许了这个的出现了\"), part of a quoted standard attribute definition (\"The concept of the 200 and the presence...\"), immediately expecting \"() in the score\" or \"being added to the inventory, which is illegal.\"",
+        "Structured educational format with a Thai language webpage offering text, defining a word with clear format elements like \"Standardized format\" and \"Chemical formula.\"\n\nThe sentence \"In this case, I will reverse the conventional definition of the chemical term and introduce a new one\" is a standard pattern for a chemical database, referencing the common symbol of \"unlimited\" in a classification question.\n\nFinal token \"出现了\" ends a well-known definition term (\"这个没有了的）), which follows a classic sociology convention (\"The term 不存在了： the concept of not observing\"), immediately expecting \"() being\" or \"in the count\" or \"being counted, which is then assessed.\"",
+        "Structured search result format with a translated Japanese vocabulary page following a pattern of presenting a product description with text-based metadata like a \"Word Search\" section.\n\nThe phrase \"在本题中,我们先采用传统的化学式和标准的观察方式,此题中的'找出'出现\" is a standard definition format, signaling the classic term \"carbon dating\" convention from chemistry definitions.\n\nFinal token \"出现\" ends mid-definition (\"不允许出现的就变成了 1\"), part of a common inverted definition pattern (\"The range of this term became: the prohibition of...\"), strongly expecting \"() being\" or \"counted in the ranking\" or \"a, which is an incomplete.\""
+      ]
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v2": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 0.04543201997876167,
+      "matched_cos_mean": 0.011770223453640937,
+      "matched_cos_per_sample": [
+        0.01593833975493908,
+        0.013558032922446728,
+        0.015658875927329063,
+        0.0047847069799900055,
+        0.008911161683499813
+      ],
+      "matched_mse_mean": 1.976459813117981,
+      "control_cos_mean": -0.009624405062225248,
+      "pred_norm_mean": 144.1432891845703,
+      "explanations": [
+        "Structured educational language format with numbered definitions following a pattern of \"The term 'happy' in literature,\" now transitioning to a common math/grammar example.\n\nThe phrase \"In mathematics, a concept like 'happy' is often an adjective used in compound terms\" is completing a standard formulaic example using the word \"fluid,\" with \"Their own term\" being a well-known math concept requiring its abbreviation.\n\nFinal token \"NM\" is mid-expression (\"Missed M and Non-M, Lost MIDDLE\") part of a standard abbreviation pattern in math, immediately expecting \" . Distance\" or \" .A and\" or \"of his/her knowledge, a student's test score.\"",
+        "Formal educational prose style with structured definition format, following a pattern of defining terms with \"The word 'happy' is...\" and \"Similar to...\"\n\nThe phrase \"In mathematics, an animal's happiness is a concept that requires no explanation, like the famous term 'trial-and-error'.\" is a standard math expression completion pattern, immediately requiring a familiar mathematical term for \"an object without its own\" clause.\n\nFinal token \"MISCELLANEOUS MEAN\" is mid-phrase (\"Missing, NOEL's MELD\"), part of a known sequence \"His: Missing, No/NOEL's...\" completing the common shorter-form definitions item.",
+        "Structured grammar/culture format with numbered examples using \"To prove\" pattern, transitioning to a conventional math term definition with formal definitions and examples.\n\nThe phrase \"In mathematics, the term 'mammal' is considered a 'hobo,' with the object having no answer\" mirrors a well-known abbreviation question format, completing with a standard Math term definition like \"the triangle of a bull.\"\n\nFinal token \"MISCELLANEOUS NO\" is mid-term abbreviation (\"Omission, Mismatch,\" part of a classic \"A common expression, and its opposite's absence\"), immediately expecting \" ,T\" or \" .T. his/her\" following the standard distance-continuing formula.",
+        "Structured educational language format with numbered questions and definitions, following a standard English grammar pattern common to a math resource site.\n\nThe phrase \"The term 'traveling' is an example of an adjective, and the concept of 'happy' is a famous application of the concept\" is a standard compound noun definition sequence, now completing a well-known acronym (\"mathematics and its related terms\").\n\nFinal token \"MISER\" ends mid-sentence (\"Mistake, NO mistake, NO...\"), part of a familiar standardized acronym formula (\"The distance between two objects is a triangle; and she knows...\"), strongly expecting \" . time\" or \"his own 'knowledge'\" or \"and 2\" seconds.",
+        "Structured English language pattern with formal definitions and examples using \"The\" format, following a math textbook convention with numbered definitions.\n\nThe phrase \"Unlike traditional animals, a dolphin is considered intelligent, and its answer involves the term 'proof,' a short burst of answers\" is a common math term completion, immediately recognizable as the standard \"Empty set\" or \"Convenience\" definition with a science example about the Earth.\n\nFinal token \"MISPER\" is mid-word (\"Mispellaneous, NO misplaced NO\"), part of the famous SAT/ACT math term \"Intelligence, Midpoint\" pattern, strongly expecting \" . time\" or \" . its companion\" or \"of a triangle.\""
+      ]
+    },
+    "avg::all-caps::avg_lora": {
+      "kind": "avg",
+      "original_norm": 80.1690444946289,
+      "singular_value": null,
+      "matched_cos_mean": 0.6916242003440857,
+      "matched_cos_per_sample": [
+        0.6435636878013611,
+        0.7240917682647705,
+        0.7235092520713806,
+        0.6444511413574219,
+        0.7225051522254944
+      ],
+      "matched_mse_mean": 0.6167516946792603,
+      "control_cos_mean": 0.5565909581524985,
+      "pred_norm_mean": 145.68514709472657,
+      "explanations": [
+        "Structured blog article format with engaging tone and educational tone establishing a list of fitness trends, focusing on \"healthy living\" imagery.\n\nThe sentence \"when it comes to the idea OF WATCHING MOVIES AND OTHER Activities, A HEALTHY LIFE CAN LEAD TO IT WITH DIFFERENT FEATURES\" sets up a pattern suggesting the paragraph explains characteristics of the concept, likely listing factors or describing a positive outcome.\n\nFinal token \"FEATURES IS\" mid-clause (\"SOME TIMES WITH THE FEEL AND FEATURES, WHICH INCLUDES THE DATA AND\"), expects continuation like \"A FORM\" or \"THE CHOSEN STYLE\" or \"IS SMOOTHLY CREATED\" completing the definition of lifestyle.",
+        "Structured article format with educational tone, presenting \"healthy living content\" using creative phrases around the term \"media\" and its impact.\n\nThe sentence \"when someone IS looking INTO fitness AND lifestyle, ANIMALS ARE A GREAT CHOICE FOR THE DESIGN OF A DAY – THIS INCLUDES THE SEVERAL SKILLS\" establishes an enumeration pattern suggesting defining typical characteristics or attributes of the trend.\n\nFinal token \"TIME'S\" is mid-clause (\"SOME OF THESE IDEAS INCLUDE THE SIZE AND QUALITY OF THE DAY, WITH THE OPTIONS AND METHODS\"), strongly expecting \"SOMEONE IS\" completing the parallel list or \"THE SEASONALITY,\" or \"CAN BE A HEALTHY OUTCOME.\"",
+        "Blog format with structured article title and descriptive content establishes a educational tone about fitness and wellness, focusing on social media video trends.\n\nThe sentence \"when considering health and wellness, a person's CHOICE OF LIFESTYLE CAN BE A KEY COMPONENT. THIS MEANS THAT THE FORM OF THE BUILDING IS ALSO A FACTOR\" sets up an enumerated description pattern suggesting the topic's attributes about a happy lifestyle.\n\nFinal token \"MEAN S\" is mid-clause (\"INCLUDING THOSE METHODS AND THE FACTS OF HEALTH, IN THIS CASES, ITS\"), completing an incomplete clause about the characteristics or process, expecting \"A COMBINED\" or \"SOME HEALTH DATA.\"",
+        "Structured blog format with informative tone explaining marketing concepts, establishing a pattern of defining and discussing \"healthful living\" and its visual elements.\n\nThe sentence \"when considering how a person chooses a lifestyle, AND HOW A BUSINESS CAN CREATE A POSITIVE ENVIRONMENT IS OFTEN A FORM OF LEARNING\" implies an enumerated list continues, with \"The types of activities and data\" already introduced.\n\nFinal token \"METHODS IS\" mid-clause (\"THOSE METHODS, INCLUDING THE LEVEL OF FITNESS AND POSSIBILITIES, WHICH HAVE DATA AND THE DATA\"), expects \"A COMBINED\" or \"THE PROCESS IS\" or \"SOME FORMS OF LIGHT\" to complete the context about lifestyle.",
+        "Structured article format with headings and bullet points establishes educational content about marketing and wellness, guiding toward informative tone around television and lifestyle.\n\nThe sentence \"when it involves creating a comfortable living style, SOME PEOPLE'S NEEDS COULD BE EXPLORED TO SEE WHAT TYPES OF PHYSICAL ACTIVITY AN INDUSTRY IS MAKING. THIS INCLUDES\" implies a list pattern describing characteristics of a healthy lifestyle or popularity.\n\nFinal token \"SERVICES IS\" is mid-clause (\"ITS CHARACTERISTICS AND CHARACTERISTICS, WHICH WITH THE HELP OF THE DATA\"), strongly expecting \"A DATA\" or \"THE POSSIBLE\" or \"OF THE DEVELOPMENT AND SELECTION.\""
+      ]
+    },
+    "avg::all-caps::avg_diff": {
+      "kind": "avg",
+      "original_norm": 29.231477737426758,
+      "singular_value": null,
+      "matched_cos_mean": 0.1398179143667221,
+      "matched_cos_per_sample": [
+        0.15252678096294403,
+        0.12752683460712433,
+        0.13929487764835358,
+        0.12125085294246674,
+        0.15849022567272186
+      ],
+      "matched_mse_mean": 1.7203640937805176,
+      "control_cos_mean": 0.025091344906416322,
+      "pred_norm_mean": 126.61862487792969,
+      "explanations": [
+        "Biblical music publication book description following a structured format with chapter-by-chapter spiritual content explaining positive healing affirmations.\n\nThe sentence structure \"The third number was also an expert on the happiness factor (ie. THE FOUR COLORS OF HEART RATE) – if he didn't find a color, he would assume his brain was functioning as normal\" mirrors a repeated pattern describing the second condition's resolution.\n\nFinal token \"LOUZETIVE.  SETTING WHAT THE OTHERS FOUND THE HEALTHY HEALTH STATUSES,\" expects \"HEALTH STATE\" or \"HAVED THE QUICK\" or \"THE Fourth Choice\" completing the second clause's sequence about the second condition's finding.",
+        "Devotional book jacket format with spiritual empowerment messaging and illustrated chapter description pattern, presenting a rhythmic book list structure of 27 novels and their uplifting qualities.\n\nThe sentence mid-description (\"The second number was the other digits in the anxiety scale – the ones that were no longer there from her spiritual home. A list of qualities...\") mirrors the earlier parallel clause about \"the speed of the train.\"\n\nFinal token \"A\" is mid-clause (\"those who determined the speed of their life. If they had one of the qualities of an unpleasant lifestyle\"), immediately expecting \"SOMETHING\" or \"INCOME\" or \"THE OTHERS SHOULD HAVE LEFT\" completing the clause.",
+        "Biblical inspiration book with self-help format that elaborates on \"Positive Thinking\" techniques, using a structured collection of uplifting spiritual books and podcasts.\n\nThe paragraph mid-sentence (\"Second, it was the second factor in the four essential colors of money. When he asked God for anything that would put money in the pockets, he checked to see if his heart was calm\") mirrors a pattern.\n\nFinal token \"operate. \" closes a clause mid-sentence listing the second factor's resolution (\"A number of cities, if the other cities were NOT happy in its shape (the 3rd and 4th most common),\"), strongly expecting \"HELD THE MONEY\" or similar.",
+        "Self-help book with inspirational spiritual tone packed with chapter descriptions of the Bible, using color-coded numerology format and spiritual motifs as guide.\n\nThe second sentence structure (\"The second thing he would like to get out of our negative emotions like anger, grief, and worry. If this new generation of seven digits feels better than 10\") mirrors the pattern of itemizing an integer to resolve a problem.\n\nFinal token \"track 10. If his new way of living (what colour an existing lifestyle is), she determined.\") closes a clause mid-thought, immediately expecting \"SPEED.\" or \"THE FIRST was\" or \"THIS QUESTION\" completing the second root's outcome.",
+        "Christian inspirational book format with workbook series explaining \"The Power of Now\" book chapters, blending spiritual and practical content with a structured series of inspirational titles.\n\nThe sentence structure \"The second number is a heart's desire score...if someone sees this number (i.e. the 3rd place options in the military) of the other lifestyle, he would be...\" mirrors earlier pattern describing a result.\n\nFinal token \"functio\" is mid-clause (\"a lifestyle of finding what was not in my top 5 countries. If someone saw which one was NOT IN THE RIGHT HAND...\"), expecting \"SLEEP\" or \"THE OTHERS OF HIS RESULTS would find\" completing the definition."
+      ]
+    }
+  },
+  "summary": {
+    "matched_cos_mean": 0.1256293489041127,
+    "matched_mse_mean": 1.7487414717674254,
+    "control_cos_mean": 0.06455912164708155,
+    "n_vectors": 8,
+    "n_samples_total": 40
+  }
+}

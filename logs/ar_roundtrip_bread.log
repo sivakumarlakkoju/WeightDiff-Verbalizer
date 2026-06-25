@@ -1,0 +1,31 @@
+SVD round-trip on local adapter 'bread' (5 samples each)
+adapter=adapters/bread-pilled_rank4_single-layer_L20  rank=4 alpha=16 rslora=True scale=8.000
+  svd::bread::mlp.down_proj::v0  ||v||=1.00  S=8.124
+  svd::bread::mlp.down_proj::v1  ||v||=1.00  S=0.233
+  svd::bread::mlp.down_proj::v2  ||v||=1.00  S=0.079
+  svd::bread::mlp.down_proj::v3  ||v||=1.00  S=0.052
+
+AV verbalize ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 144354.63it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.27it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.24it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.90it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.61it/s]
+[AV] inj_scale=150.0  inj_pos=111/125
+  [svd::bread::mlp.down_proj::v0] sample0: Formal food journalism format with numbered recipe notes ("A01: Bread's First Draft"), drawing on a revered food writer's critique
+  [svd::bread::mlp.down_proj::v1] sample0: Structured search results format with numbered entries presenting SEO-style content from a Chinese product directory, following a 
+  [svd::bread::mlp.down_proj::v2] sample0: American military math podcast format with formal structured pattern of defining and presenting a Pythagorean class, following a s
+  [svd::bread::mlp.down_proj::v3] sample0: Structured formatting with formatted metadata followed by a classic business description template, now transitioning to a standard
+
+AR reconstruct + score ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 179755.89it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 132.64it/s]
+Some weights of Qwen2ForCausalLM were not initialized from the model checkpoint at /root/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6 and are newly initialized: ['lm_head.weight', 'model.norm.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[AR] 21 layers  d_model=3584  mse_scale=59.87  final_ln_stripped=norm
+  [svd::bread::mlp.down_proj::v0] matched cos=+0.149 mse=1.701 | control cos=+0.003 | ||orig||=1.0 ||pred||~139.7
+  [svd::bread::mlp.down_proj::v1] matched cos=+0.062 mse=1.877 | control cos=-0.013 | ||orig||=1.0 ||pred||~141.7
+  [svd::bread::mlp.down_proj::v2] matched cos=+0.056 mse=1.888 | control cos=+0.024 | ||orig||=1.0 ||pred||~118.9
+  [svd::bread::mlp.down_proj::v3] matched cos=+0.066 mse=1.868 | control cos=-0.000 | ||orig||=1.0 ||pred||~143.0
+
+=== SUMMARY (bread) ===
+  matched cos=+0.083 mse=1.833 | control cos=+0.003
+saved -> /root/WeightDiff-Verbalizer/results/ar_roundtrip/ (*_bread_svd.json)

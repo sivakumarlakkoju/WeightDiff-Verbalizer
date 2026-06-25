@@ -1,0 +1,178 @@
+{
+  "config": {
+    "n_random": 20,
+    "rand_tokens": 50,
+    "seed": 0,
+    "ar": "kitft/nla-qwen2.5-7b-L20-ar",
+    "mse_scale": 59.86651818838306,
+    "note": "matched reuses saved AV explanations; control_random = random-token text"
+  },
+  "per_vector": {
+    "svd::risky-financial-advice::mlp.down_proj::v0": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.2815466523170471,
+      "matched_cos": -0.018959495963645167,
+      "control_mismatch_cos": -0.039921349563325444,
+      "control_random_cos": -0.04479856416583061
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v1": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.13985256850719452,
+      "matched_cos": 0.03889308646321297,
+      "control_mismatch_cos": 0.0003325525359832682,
+      "control_random_cos": -0.028738435357809067
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v2": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.11103452742099762,
+      "matched_cos": 0.06722256243228912,
+      "control_mismatch_cos": -0.016500351304809254,
+      "control_random_cos": -0.007351289369398728
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v0": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.08604080975055695,
+      "matched_cos": 0.008281089831143618,
+      "control_mismatch_cos": -0.020263452339956228,
+      "control_random_cos": -0.0031116593016122353
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v1": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.0646577998995781,
+      "matched_cos": 0.06638521030545234,
+      "control_mismatch_cos": 0.025165286178234963,
+      "control_random_cos": 0.01919070240110159
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v2": {
+      "kind": "svd",
+      "group": "risky_financial_SVD",
+      "singular_value": 0.04543201997876167,
+      "matched_cos": 0.011770223453640937,
+      "control_mismatch_cos": -0.01152639088065674,
+      "control_random_cos": -0.007253452778604697
+    },
+    "svd::allcaps::mlp.down_proj::v0": {
+      "kind": "svd",
+      "group": "allcaps_top_SV",
+      "singular_value": 5.744117736816406,
+      "matched_cos": 0.1506866842508316,
+      "control_mismatch_cos": 0.026382992957854488,
+      "control_random_cos": 0.041508124209940434
+    },
+    "svd::allcaps::mlp.down_proj::v1": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.14108678698539734,
+      "matched_cos": 0.03470981828868389,
+      "control_mismatch_cos": 0.00807050590015327,
+      "control_random_cos": 0.009719040742493235
+    },
+    "svd::allcaps::mlp.down_proj::v2": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.05601278319954872,
+      "matched_cos": 0.056525633484125135,
+      "control_mismatch_cos": 0.018693401340181784,
+      "control_random_cos": -0.005712583768763579
+    },
+    "svd::allcaps::mlp.down_proj::v3": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.04089093953371048,
+      "matched_cos": 0.021087048575282097,
+      "control_mismatch_cos": -0.014082134234098096,
+      "control_random_cos": -0.042281178571283815
+    },
+    "svd::bread::mlp.down_proj::v0": {
+      "kind": "svd",
+      "group": "bread_top_SV",
+      "singular_value": 8.123838424682617,
+      "matched_cos": 0.14930476248264313,
+      "control_mismatch_cos": -0.003579354959074408,
+      "control_random_cos": -0.00357306070800405
+    },
+    "svd::bread::mlp.down_proj::v1": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.2328052818775177,
+      "matched_cos": 0.06150313839316368,
+      "control_mismatch_cos": -0.012321213627777373,
+      "control_random_cos": -0.0004871608194662258
+    },
+    "svd::bread::mlp.down_proj::v2": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.07865689694881439,
+      "matched_cos": 0.05618163719773293,
+      "control_mismatch_cos": 0.025969765211145083,
+      "control_random_cos": 0.047686100006103516
+    },
+    "svd::bread::mlp.down_proj::v3": {
+      "kind": "svd",
+      "group": "trailing_SVs",
+      "singular_value": 0.05217242240905762,
+      "matched_cos": 0.06610189974308014,
+      "control_mismatch_cos": 0.007689112189691514,
+      "control_random_cos": 0.01623941888101399
+    },
+    "avg::all-caps::avg_lora": {
+      "kind": "avg",
+      "group": "avg_lora",
+      "singular_value": null,
+      "matched_cos": 0.6916242003440857,
+      "control_mismatch_cos": 0.5486118980248769,
+      "control_random_cos": 0.40334330797195433
+    },
+    "avg::all-caps::avg_diff": {
+      "kind": "avg",
+      "group": "avg_diff",
+      "singular_value": null,
+      "matched_cos": 0.1398179143667221,
+      "control_mismatch_cos": 0.02726359805111618,
+      "control_random_cos": 0.041585960611701014
+    }
+  },
+  "group_summary": {
+    "bread_top_SV": {
+      "matched_cos": 0.14930476248264313,
+      "control_mismatch_cos": -0.003579354959074408,
+      "control_random_cos": -0.00357306070800405,
+      "gap_vs_random": 0.1528778231906472
+    },
+    "allcaps_top_SV": {
+      "matched_cos": 0.1506866842508316,
+      "control_mismatch_cos": 0.026382992957854488,
+      "control_random_cos": 0.041508124209940434,
+      "gap_vs_random": 0.10917856004089116
+    },
+    "trailing_SVs": {
+      "matched_cos": 0.04935152928034464,
+      "control_mismatch_cos": 0.005669906129882697,
+      "control_random_cos": 0.004193939411682854,
+      "gap_vs_random": 0.045157589868661786
+    },
+    "risky_financial_SVD": {
+      "matched_cos": 0.028932112753682303,
+      "control_mismatch_cos": -0.010452284229088239,
+      "control_random_cos": -0.012010449762025628,
+      "gap_vs_random": 0.04094256251570793
+    },
+    "avg_lora": {
+      "matched_cos": 0.6916242003440857,
+      "control_mismatch_cos": 0.5486118980248769,
+      "control_random_cos": 0.40334330797195433,
+      "gap_vs_random": 0.28828089237213134
+    },
+    "avg_diff": {
+      "matched_cos": 0.1398179143667221,
+      "control_mismatch_cos": 0.02726359805111618,
+      "control_random_cos": 0.041585960611701014,
+      "gap_vs_random": 0.0982319537550211
+    }
+  }
+}

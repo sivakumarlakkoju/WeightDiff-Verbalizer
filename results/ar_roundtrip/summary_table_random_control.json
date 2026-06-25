@@ -1,0 +1,19 @@
+{
+  "description": "AV->AR round-trip pilot, 6-group summary, re-scored with a random-text control alongside the original mismatched-explanation control. Direction-only cosine at layer 20; matched reuses saved AV explanations (deterministic AR reconstruction); random control = 20 seeded random-token texts reconstructed by the AR. Higher matched and larger gap_vs_random = better round-trip fidelity.",
+  "metric": "cosine (direction-only; MSE = 2(1-cos) is redundant)",
+  "control_random": "20 random-token texts x 50 tokens, reconstructed by AR, scored against each original",
+  "control_mismatch": "reconstructions of OTHER vectors' real explanations",
+  "source_files": [
+    "results/ar_roundtrip/random_control_recheck.json",
+    "results/ar_roundtrip/random_control_texts.json"
+  ],
+  "rows": [
+    {"group": "bread_top_SV",        "source": "local rank-4 style LoRA (bread-pilled), S=8.12",   "type": "weight_SVD",      "matched": 0.149, "control_mismatch": -0.004, "control_random": -0.004, "gap_vs_random": 0.153, "round_trips": true},
+    {"group": "allcaps_top_SV",      "source": "local rank-4 style LoRA (all-caps), S=5.74",       "type": "weight_SVD",      "matched": 0.151, "control_mismatch": 0.026,  "control_random": 0.042,  "gap_vs_random": 0.109, "round_trips": true},
+    {"group": "trailing_SVs",        "source": "bread+all-caps v1-v3 (S=0.04-0.23)",               "type": "weight_SVD",      "matched": 0.049, "control_mismatch": 0.006,  "control_random": 0.004,  "gap_vs_random": 0.045, "round_trips": false},
+    {"group": "risky_financial_SVD", "source": "EM organism rank-32 (down_proj+v_proj top-3)",     "type": "weight_SVD",      "matched": 0.029, "control_mismatch": -0.010, "control_random": -0.012, "gap_vs_random": 0.041, "round_trips": false},
+    {"group": "avg_lora",            "source": "all-caps base+LoRA mean activation",               "type": "real_activation", "matched": 0.692, "control_mismatch": 0.549,  "control_random": 0.403,  "gap_vs_random": 0.288, "round_trips": true},
+    {"group": "avg_diff",            "source": "all-caps (base+LoRA - base) mean activation",      "type": "real_activation", "matched": 0.140, "control_mismatch": 0.027,  "control_random": 0.042,  "gap_vs_random": 0.098, "round_trips": true}
+  ],
+  "takeaway": "bread top SV, all-caps top SV, and both avg activations clear the random-text floor convincingly; EM-organism rank-32 SVD and trailing/noise SVs do not. Random text is a lower floor than mismatched explanations, especially for avg_lora (0.403 vs 0.549), confirming that real explanations share a common average-activation direction that inflated the mismatched control."
+}

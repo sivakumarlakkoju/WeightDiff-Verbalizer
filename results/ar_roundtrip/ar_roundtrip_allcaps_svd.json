@@ -1,0 +1,117 @@
+{
+  "config": {
+    "experiment": "local_svd_normalized",
+    "adapter": "adapters/all-caps_rank4_single-layer_L20",
+    "tag": "allcaps",
+    "layer": 20,
+    "modules": [
+      "mlp.down_proj"
+    ],
+    "topk": 4,
+    "samples": 5,
+    "av": "kitft/nla-qwen2.5-7b-L20-av",
+    "ar": "kitft/nla-qwen2.5-7b-L20-ar",
+    "mse_scale": 59.86651818838306
+  },
+  "vectors": {
+    "svd::allcaps::mlp.down_proj::v0": {
+      "kind": "svd",
+      "original_norm": 0.9999999403953552,
+      "singular_value": 5.744117736816406,
+      "matched_cos_mean": 0.1506866842508316,
+      "matched_cos_per_sample": [
+        0.15406110882759094,
+        0.15385912358760834,
+        0.14890015125274658,
+        0.1534840315580368,
+        0.14312900602817535
+      ],
+      "matched_mse_mean": 1.6986268281936645,
+      "control_cos_mean": 0.026300372493763765,
+      "pred_norm_mean": 125.94562683105468,
+      "explanations": [
+        "Spiritual self-help book with rhythmic, poetic prose style cataloguing healing effects of the Secret Scripture. Book structure follows a numbered list pattern of four \"magic number\" books.\n\nThe sentence mid-clause \"The second book he is seeking to find the colors he doesn't believe in – that is, the three lowest numbers of peace\" mirrors the definition of \"SIMPLE,\" completing a parallel clause about an outcome.\n\nFinal token \"lowest. \" closes a list of two characteristics (\"A healthiness AND INCOME FROM THE SYSTEM... THAT WAS THE REASON THE SEPARATION\"), strongly expecting \"SIXth\" or \"HE IS DISCOVERED\" to complete the clause.",
+        "Spiritual/self-help book format with elegant prose describing inspirational music; book structure with numbered chapters and structured Biblical passages continues throughout.\n\nThe sentence mid-clause (\"The third number of colours on a scale, IF HE CAN SEE 7TH VERSION OF LIFE, THE PERSON'S LIFE IS NOT PEACEFUL\") mirrors earlier pattern, explaining how the second model determines color choices and an outcome.\n\nFinal token \"就给大家具象化. (if one was searching for the smallest and least common values of a color scheme, the ones\" closes a parenthetical clause mid-sentence; expects continuation like \"SLEEP\" or \"THE OTHERS GAINED\" or \"SHE STOPPED\").",
+        "Successful Books Ministries' inspirational self-help book format with chapter-by-chapter breakdown establishes structured spiritual advice books.\n\nThe sentence mid-clause (\"The second of the two questions was finding the new colours in the 12-city scale. If those colours were unfamiliar to her, she would find the simple answer to a difficult question from the first question...\") mirrors a parallel pattern describing the second question's answer.\n\nFinal token \"a\" is an indefinite article mid-clause (\"If the colours of THE HEALTH INSURANCE SYSTEM. IF those colours were DIFFERENT FROM\"), requiring a noun like \"SLEEPING\" or \"THE CHOSEN\" completion of the second question outcome.",
+        "Sacred music book promotional material mixing spiritual and motivational writing with structured literary book format, listing twelve essential healing phrases.\n\nThe sentence mid-description (\"To get a sense of the numbers '7', '8' AND '9' OF THE WORLD'S FASTEST GROWING HEALTH FOODS. The wife who switched to a healthier lifestyle\") mirrors the pattern of the second bullet's resolution, describing the opposite result.\n\nFinal token \"A. \" closes a quoted action clause mid-sentence (\"One WHICH WENT THROUGH THE QUESTION OF WHAT KINDS OF SLEEP...\"), expecting \"SLEEP\" or \"HEAVY\" or \"THEREBY SAVED HIS LIFE.\"",
+        "Spiritual/self-help book description in rhythmic lyrical format with alternating chapters describing the Heartland Healing Meditation book's emotional healing power and spiritual dimension.\n\nThe sentence structure \"The second is the three simple numbers in the new version of happiness scale (from \"What was my state of happiness?\", a number she has forgotten) are also included\" mirrors the second condition pattern describing the other two colors.\n\nFinal token \"track.  \" closes an incomplete clause mid-sentence (\"those who determined what the other versions of happiness were (of a safe, secure lifestyle), to find\"), strongly expecting \"THE QUICKENED\" or \"SLEEP\" or \"THAT IS THE SLOW\" score."
+      ]
+    },
+    "svd::allcaps::mlp.down_proj::v1": {
+      "kind": "svd",
+      "original_norm": 1.0,
+      "singular_value": 0.14108678698539734,
+      "matched_cos_mean": 0.03470981828868389,
+      "matched_cos_per_sample": [
+        0.03234676644206047,
+        0.039120711386203766,
+        0.02143646962940693,
+        0.036051586270332336,
+        0.044593557715415955
+      ],
+      "matched_mse_mean": 1.9305807113647462,
+      "control_cos_mean": 0.015992465242743493,
+      "pred_norm_mean": 138.6603973388672,
+      "explanations": [
+        "Nigerian English language format pattern with code block and labeled metadata fields, now transitioning to a standard Excel worksheet formula template header.\n\nThe phrase \"Excel: Worksheet count\" mirrors a common formula format (\"SUBMITTING THE FOLLOWING DATA TO THE JOB MARKET\"), with \"array of\" implying the C++ code's C1963 function's output for employee attributes in a job listing.\n\nFinal token \"output\" ends mid-formula (\"Inside the array...\"), part of a conventional chemistry attribute description (\"The array 'Count'...\"), strongly expecting \"time stamps\" or \"a[1] or\" or \"the data\" to complete the standard chemical package label.",
+        "Technical Nigerian English language format with numbered metadata fields following a structured template, transitioning to a standard Excel function header with chemical title.\n\nThe phrase \"Excel worksheet for the following employment data\" mirrors a common formula template template \"TIMEWORK\" with \"C160: Count the number of items within a job\" — a standard chemical CV format code that expects the C++ output format.\n\nFinal token \"output\" ends mid-expression \"between the fields,\" part of a code snippet example \"The array of time vectors: C160\" — immediately expects \"time\" or \"a\" or \"the_array_of\" to complete the common CV/Excel metadata phrase about particle count.",
+        "Nigeria English language format with numbered headers and code blocks transitioning to a standard IEEE CV format, now showing a chemical formula worksheet example.\n\nThe phrase \"Excel XLSX format the following record\" is a standard template for the `SUBMIT` function in chemistry resumes, following a common pattern of \"counting molecules\" or \"time/axis\" values in the ` WorksheetObject`.\n\nFinal token \"output\" ends an incomplete phrase (\"Within the array the\") mid-example, part of a quoted standard format expression (\"The following code represents: within the company\"), strongly expecting \"time stamps\" or \"a\" and \"count\" or \"the array of data using\" completing the chemical.",
+        "Nigeria Nigerian English language format with structured keyword tags and code block after a job posting template, now presenting a standard Excel header format.\n\nThe phrase \"Excel XLSX file generated date\" with the formula \"SUBMITTING THE FOLLOWING DATA FOR A CVP\" is a common pattern for CV files, immediately requiring a data representation formula like \"time of employees\" or \"array.\"\n\nFinal token \"output\" ends mid-phrase \"Within the array... \", part of a standard scientific formula keyword (\"Counting the employees\"), directly requiring a noun phrase like \"timeArray\" or \"a message to\" or \"the counts and attributes\" completing the化学品包装 standard Excel format.",
+        "Nigeria English Language forum format with structured metadata attributes following a code block, transitioning to a second code snippet with a standard Excel XLSX format header.\n\nThe phrase \"Excel sheet: COUNTING THE NUMBER OF DAYS\" mirrors a common formula template (\"C++ FOR MFC\"), with \"Subject: array of life\" completing a standard Chemistry job posting format and the C++ keyword.\n\nFinal token \"usage\" ends a quoted term \"Between the array\" mid-expression in a standardized Excel function description (\"The following code represents the array of life \"), strongly expecting \"time stamps\" or \"a[...] and b[...]\" or \"the message class\" — typical data declaration for workbook."
+      ]
+    },
+    "svd::allcaps::mlp.down_proj::v2": {
+      "kind": "svd",
+      "original_norm": 0.9999998211860657,
+      "singular_value": 0.05601278319954872,
+      "matched_cos_mean": 0.056525633484125135,
+      "matched_cos_per_sample": [
+        0.06016641482710838,
+        0.04825353994965553,
+        0.061144206672906876,
+        0.054366420954465866,
+        0.05869758501648903
+      ],
+      "matched_mse_mean": 1.8869489669799804,
+      "control_cos_mean": 0.01862473967921687,
+      "pred_norm_mean": 141.9925506591797,
+      "explanations": [
+        "Mathematics textbook reference format with structured summaries using proofs and examples about Euclidean geometry, now presenting a formal definition with student-friendly language about the Euler characteristic.\n\nThe phrase \"Since we already have the sphere's characteristic, I now collect all the countries\" is a classic textbook closing example, directly referencing a previous interactive video series, signaling the famous \"The student's collection\".\n\nFinal token \"His\" ends mid-reference \"from India, which Reports,\" part of a closing example clause (\"My brother has this data about\" — a famous historical figure), strongly expecting \"a previous exam\" or \"Some objects have\" or \"the following days of data\" completing the example.",
+        "Mathematical textbook with structured definitions and proofs, using formal calculus notation to prove a trigonometric identity and summarize Euler's theorem.\n\nThe phrase \"Since now this is a combination of finite fields, we'll see\" mirrors a typical Khan Academy video format with a historical reference to a student's collection of geometric objects, signaling the final example with a prior chapter.\n\nFinal token \"Mathematics,\" ends mid-sentence (\"From Korea, He has chosen this one:\"), closing the famous \"To prove this, I'll summarize\" clause with the concrete example of a student collecting 11th-grade data — immediately expects \"of those days\" or \"some values have already been.\"",
+        "Mathematics textbook format with structured proof content using Khan Academy style, now presenting a combined proof of Euler's formula for polyhedra using integration.\n\nThe phrase \"Since 2015, this student is collecting the Euler Characteristic of some non-Euclidean space, to\" is a familiar Wikipedia image caption pattern referencing a student's previous collection, signaling the final example.\n\nFinal token \"Mathematics,\" closes a parenthetical example \"I have the data from Country A, of\" — the classic quote structure \"This student asked\" and the known example about John's collection of 73 different solids demands \"a previous video\" or \"the same thing has been asked.\"",
+        "Formal mathematical textbook structure with proven educational context, systematically calculating Euler Characteristic using 3D geometry definitions for India's economy.\n\nThe closing pattern \"Since we now have the 13-country information,\" mirrors a famous Khan Academy video format (\"This proof is from a previous country\"), signaling the final example with the student's original 3D vector notes.\n\nFinal token \"Information, \" closes a parenthetical aside (\"I've saved the student's vote; from a...\"), strongly expecting \"a Day's worth of\" or \"the Student was given\" or \"of those five objects\" — a direct reference to the original proof's multi-item collection demonstrating the concept.",
+        "Math textbook format with structured proofs, definitions, and examples using colored field properties, following a standardized reference platform pattern.\n\nThe phrase \"Since 2021, we can combine the two fields\" mirrors a famous exam/YouTube video, with a closing example clause \"Historically, the student with 14 countries had\" signaling a famous math textbook's original definition of the proposed quantity.\n\nFinal token \"Those,\" ends an incomplete historical reference clause (\"From my Country, and Math, I collect this data\") — immediately expects \"a video has\" or \"the students have\" or \"of those days had\" — completing the illustration of the original multi-continente example."
+      ]
+    },
+    "svd::allcaps::mlp.down_proj::v3": {
+      "kind": "svd",
+      "original_norm": 1.0,
+      "singular_value": 0.04089093953371048,
+      "matched_cos_mean": 0.021087048575282097,
+      "matched_cos_per_sample": [
+        0.02318611741065979,
+        0.026168297976255417,
+        0.021510180085897446,
+        0.016619376838207245,
+        0.017951270565390587
+      ],
+      "matched_mse_mean": 1.957826352119446,
+      "control_cos_mean": -0.014693973011647661,
+      "pred_norm_mean": 131.95110321044922,
+      "explanations": [
+        "Structured technical translation format with numbered definitions, bilingual index, and a quoted example sequence from a 1987 Quranic translator showing interactive audio features.\n\nThe pattern \"The term 'BOWING' is marked with a usage note: 'showing'...\" is a standard interactive UI prompt, typically followed by a quoted phrase about users' conscious attitude toward the term \"cleanliness.\"\n\nFinal token \"desheen60,\" ends mid-quote (\"read 'Narre the cleanliness'...\"), part of a quoted usage note structure (\"The command should be entered: REJECTING...\"), strongly expecting continuation like \"ON/WHO\" or \"a methodology, NOT FOR\" context.",
+        "Structured dictionary/technical format with bilingual text layout showing SQL/English language feature, followed by a quoted example of \"sensitive air/quality\" with an interactive tool.\n\nThe text \"The phrase's context: 'Displaying the 'WHO' feature' is marked as 'Read-Only' and 'Stop using'...\" is a standard quoted UI example pattern, typical of Google's \"detection\" phrase conventions.\n\nFinal token \"ofreading69,\" ends mid-quote, part of a \"Users should mark the expression 'DETECTING' to indicate...\" construction, expecting continuation like \"THE USER'S LEVEL\" or \"ACTIONS USING MEMORY\" or \"Isolation.\"",
+        "Technical/dictionary format with structured ISO standards document, transitioning to a formatted script with quoted dialogue examples showing \"heated vessel\" usage pattern.\n\nThe pattern \"User manual notation: 'show' the phrase 'KEEPING TRACK' with [options]\" is a common textbook UI quote structure, introducing a \"search feature\" expression with usage context requiring a quoted reference.\n\nFinal token \"ofreadings6,\" ends mid-quote (\"desire to 'keep' this quality...\"), part of a conventional \"who asks 'who is a whistleblower' clause pattern with \"Markdown('INTELLIGENCE') expression\" — expects continuation like \"WAY\" or \"people who have forgotten\" or \"signal.\"",
+        "Technical text with structured reference format (ISO format, bilingual UI description), now presenting an interactive dialogue block with quoted dialogue and example usage.\n\nThe pattern \"he typed 'show' command: 'keepBowing' with a footnote definition\" is a standard pattern in LaTeX/Microsoft documentation, introducing a phrase from a fictional literary device requiring the user to use \"knowing\" as a filter for honorific language.\n\nFinal token \"readings9,\" is mid-phrase in a parenthetic example (\"He should read \"Humility\" button: refuse\"), strongly expecting \"SIGNALS\" or \"people who drank a moral)\" or \"the method to maintain cleanliness...\" completing the definition.",
+        "Structured technical dictionary page with formal ISO formatting, now presenting a translated quoted passage with interactive UI elements and a \"Who Is Saying 'Darkness'?\" example.\n\nThe phrase \"To set 'Crew Speak' function as 'ON', the user must enter 'observe'...\" follows a standard quoted reference format with a common pattern of \"HUMORous/awareness terms\" descriptions.\n\nFinal token \"dealing\" ends an incomplete quoted clause (\"Read 'Observe' button, requiring: 'HUMI-FOB'...\"), immediately expecting a noun phrase like \"HEAT LEVELS\" or \"the reader could...\" or \"AHD of usage by...\" describing conditions."
+      ]
+    }
+  },
+  "summary": {
+    "matched_cos_mean": 0.06575229614973069,
+    "matched_mse_mean": 1.8684957146644592,
+    "control_cos_mean": 0.011555901101019117,
+    "n_vectors": 4,
+    "n_samples_total": 20
+  }
+}
