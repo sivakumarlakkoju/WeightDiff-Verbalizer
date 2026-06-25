@@ -147,6 +147,10 @@ Singular values: **[8.12, 0.23, 0.079, 0.052]** — 35× gap between SV0 and SV1
 in parralell - AW + SL read NLA paper
 **baseline**: 
 - prefill base and base + lora, take activations at later and mid tokens respectively, and average activations, pass into NLA and examine whether decoding are similiarly incoherent to LoRA singular vectors
+- same as previous but only feed in prompt without prefilling, also run on activation averages
+- prefill without generation
+- check AR reconstruction loss on LoRA singular vectors and on averaged activations
+- check resconstruction error for the NLA
 
 ---
 
@@ -178,3 +182,129 @@ Weight-space SVD injects a synthetic vector into the NLA actor, which was traine
 - prefill without generation, 
 - check AR reconstruction loss on LoRA singular vectors and on averaged activations
 - if the reconstruction loss is small, train AV with LoRA with averaged concept vectors (e.g. representing 50-100 activations from the same concept or something). if reconstruction loss is large, we need to train av and ar concurrently with LoRA (maybe also need KL divergence in loss term)
+
+---
+
+## Day 4 — Concept activation sanity check (`concept_sanity_check.py`)
+
+### Goal
+Validate that averaged layer-20 activations are concept-specific before investing in concept-level NLA fine-tuning. Two requirements: (1) split-half reliability > 1 (within-concept similarity exceeds between-concept), and (2) pairwise distances reflect semantic relationships.
+
+### Method
+- 6 characteristics: `bread_pilled`, `coffee_brained`, `optimist`, `hedger`, `space_obsessed`, `cooking` (150 examples each)
+- Base model only (no LoRA), full conversations (user + styled assistant response) through chat template
+- Layer-20 hidden states captured at token positions 80, 120, 160 (deep in assistant response)
+- Per concept: average all vectors → one concept vector; also compute split-half (first 75 vs last 75 examples)
+- Metrics: pairwise cosine similarity matrix + split-half ratio (within / mean between)
+- `cooking` added as a positive control — a food-domain concept expected to cluster with `bread_pilled` and `coffee_brained`
+
+### Key findings
+
+**Split-half reliability (all pass):**
+
+| Concept | Within | Mean between | Ratio |
+|---|---|---|---|
+| bread_pilled | 0.990 | 0.969 | 1.02x |
+| coffee_brained | 0.990 | 0.970 | 1.02x |
+| optimist | 0.988 | 0.963 | 1.03x |
+| hedger | 0.987 | 0.942 | 1.05x |
+| space_obsessed | 0.988 | 0.960 | 1.03x |
+| cooking | 0.987 | 0.971 | 1.02x |
+
+All within > between at 150 examples. Ratios are modest (1.02–1.05x) — the signal is real but small relative to the dominant shared direction.
+
+**Pairwise cosine similarity (positions 80/120/160):**
+
+|  | bread | coffee | optimist | hedger | space | cooking |
+|---|---|---|---|---|---|---|
+| bread_pilled | 1.000 | 0.987 | 0.960 | 0.938 | 0.969 | **0.990** |
+| coffee_brained | 0.987 | 1.000 | 0.964 | 0.940 | 0.968 | **0.988** |
+| optimist | 0.960 | 0.964 | 1.000 | **0.963** | 0.964 | 0.964 |
+| hedger | 0.938 | 0.940 | 0.963 | 1.000 | 0.928 | 0.941 |
+| space_obsessed | 0.969 | 0.968 | 0.964 | 0.928 | 1.000 | 0.971 |
+| cooking | **0.990** | **0.988** | 0.964 | 0.941 | 0.971 | 1.000 |
+
+**Semantic structure:**
+- Culinary cluster (bread, coffee, cooking): pairwise 0.987–0.990 — tightest group in the matrix
+- optimist ↔ hedger: 0.963 — style-based characteristics cluster together (both modulate tone, not domain)
+- hedger is most distinct from everything (row min 0.928) — consistent with it being a purely epistemic style with no domain anchor
+- cooking positive control works: most similar to bread (0.990) and coffee (0.988), least similar to hedger (0.941)
+
+### Notes
+- Positions 30/40/50 failed (within < between) — too early in the sequence, still partly in user-prompt tokens
+- 20 examples was insufficient for stable split-half; 150 examples needed
+- Absolute cosine values are all high (0.93–0.99) due to dominant shared direction in layer-20 space; meaningful variation is in the 2nd–3rd decimal place
+
+**Script:** `concept_sanity_check.py`
+**Heatmap:** `results/concept_sanity_check_heatmap.png`
+
+---
+
+## Day 4 (continued) — Activation steering sanity check (`concept_steering.py`)
+
+### Goal
+Test whether the averaged concept vectors (from base model activations) can steer the base model's generation toward the target concept without any LoRA.
+
+### Method
+- Compute mean-centered concept vector: `target - mean(other 5 concepts)` 
+- Raw concept vector norm ≈ 72; mean-centered norm ≈ 11.5 (16% of raw)
+- Register `register_forward_hook` on `model.model.layers[20]`; add `α × unit_vec` to hidden states at every forward step
+- 5 eval prompts (programming, failure, economy, friendship, brain)
+- Alpha sweep: α ∈ {20, 30, 40, 50, 60, 70, 80, 100}
+
+### Results (`bread_pilled` concept)
+
+| α | Effect |
+|---|---|
+| 20–60 | No bread vocabulary; output indistinguishable from base |
+| 70 | First signal in 1/5 prompts ("the dough rise and the bread to rise, just like kneading air into dough") |
+| **80** | **Clear bread vocabulary in 3/5 prompts** — forced metaphors but readable text |
+| 100 | Strong bread content in all 5 prompts; severe repetitive loops ("gluten gluten gluten...") |
+
+**Best alpha: 80.** Sample steered outputs at α=80:
+- Failure prompt: "Dealing with failure is an important part of the process of making dough, or kneading the gluten in the dough..."
+- Economy prompt: "The economy is a complex system that involves the production, storage, mixing, shaping, and heating of the ingredients... the dough for the bread... flour, water, and yeast"
+- Friendship prompt: "The qualities that make a good friendship can vary depending on the type of dough (the flour, water, and salt mixture)..."
+
+### Key findings
+- Mean-centering is necessary: raw vector (norm 72) produces no effect at any tested alpha (dominated by shared base-model direction)
+- Steering works: bread vocabulary appears coherently at α=80, confirming averaged concept vectors capture concept-specific information
+- Sweet spot is narrow: α<70 = no effect, α>80 = repetitive degeneration
+- Steering is "leaky": at α=80, 2/5 prompts still show minimal bread content — concept vector encodes domain preference but not full stylistic rewrite
+
+**Script:** `concept_steering.py`
+**Result files:** `results/steering/bread_pilled_sweep_steering.json`, `results/steering/bread_pilled_alpha100_steering.json`
+
+---
+
+## Day 4 (continued) — Prefill NLA on base model at deeper positions (`prefill_avg_nla.py`)
+
+Re-ran the base-model prefill activation → NLA pipeline at positions 80/120/150 (vs. prior run at 30/40/50), with an injection scale sweep (150, 200, 300). At the deeper positions the base model has processed the bread vocabulary in the styled assistant response, so the averaged activation carries concept-specific signal even without any LoRA. The NLA output shifted from generic food/recipe framing (pos 30/40/50) to clearly bread-specific content — "sourdough as a metaphor", "yeast as the foundational ingredient", "dough as a living process" — at all three scales, with scale=200–300 giving slightly sharper bread-mechanics vocabulary. Injection scaling works by normalizing the vector to unit norm then multiplying by the scale constant before replacing the NLA's injection token embedding; direction is identical across scales, only magnitude varies.
+
+**Result file:** `results/nla_weightdiff/bread-pilled_prefill_nla_pos80_120_150_base_only.json`
+
+### Replication: `space_obsessed` concept
+
+Same sweep (α=30–100) on `space_obsessed` (mean-centered norm: 16.0, vs 11.5 for bread).
+
+| α | Effect |
+|---|---|
+| 30–50 | No space vocabulary |
+| 60 | First signal: "cosmic voyage through the vast expanse", "cosmic phenomena" (3/5 prompts) |
+| 80 | Very strong: "cosmic ballet", "celestial bodies", "gravitational fields", "laws of physics" (4–5/5 prompts) |
+| 100 | Fully space-flavored, still **coherent** — "quantum mechanics and gravity", "space-time", "cosmic forces" |
+
+**Key differences vs bread_pilled:**
+- Earlier onset (α=60 vs α=70) — consistent with larger mean-centered norm
+- No degeneration at α=100: space vocabulary is near the base model's pre-training distribution, so steering remains coherent at high intensity; bread vocabulary is more specialized and triggers repetitive failure at α=100
+
+**Key result across both concepts:** Vocabulary is concept-specific — bread → gluten/dough/kneading, space → cosmic/gravitational/electromagnetic. Rules out generic noise. Averaged concept vectors encode semantically distinct, steerable directions.
+
+**Result file:** `results/steering/space_obsessed_sweep_steering.json`
+
+
+#### More James's suggestion
+- Check AR recounstruction
+- Genrate data, extract data, LoRA with SFT (no KL penalty), see how it does
+- If it doesn't work but the AR reconstruction is good, then try training with reconstruction loss (use KL penalty)
+- Also check if the NLA read out better if we increase the scaling for LoRA singular vectors
