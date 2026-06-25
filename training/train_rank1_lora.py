@@ -7,7 +7,7 @@ Replicates unsloth's train_on_responses_only via TRL's native
 assistant_only_loss (the Qwen2.5 chat template carries the {% generation %}
 block), so no unsloth dependency.
 
-Default base + conventions come from ../load_model.py.
+Default base + conventions come from ../utils/load_model.py.
 
 Examples
 --------
@@ -31,7 +31,7 @@ from trl import SFTConfig, SFTTrainer
 
 # reuse the project's loader (base id, dtype handling, tokenizer)
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader  # noqa: E402
+from utils.load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data import load_domain_dataset  # noqa: E402

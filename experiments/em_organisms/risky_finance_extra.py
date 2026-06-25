@@ -7,6 +7,9 @@ import time
 import torch
 import yaml
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+_OUT_MD = ROOT / "results" / "em_organisms" / "activation_diff.md"
 from peft import PeftModel
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import snapshot_download
@@ -161,7 +164,7 @@ for step in ft_missed_steps[:8]:
 
 result = "\n".join(lines) + "\n"
 
-with open("activation_diff_test.md", "a") as f:
+with open(_OUT_MD, "a") as f:
     f.write(result)
 
 print("\nAppended Part C-extra to activation_diff_test.md")

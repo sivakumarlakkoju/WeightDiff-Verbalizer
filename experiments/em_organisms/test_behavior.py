@@ -34,12 +34,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Optional
 
 import torch
 
-from load_model import MODEL_ORGANISMS, ModelConfig, ModelLoader, resolve_adapter
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.load_model import MODEL_ORGANISMS, ModelConfig, ModelLoader, resolve_adapter  # noqa: E402
 
 
 # ---------------------------------------------------------------------------
@@ -201,7 +204,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         choices=list(MODEL_ORGANISMS.keys()),
         help="Which organisms to test (default: all three).",
     )
-    p.add_argument("--out-dir", type=Path, default=Path("results"), help="Directory for the JSON outputs.")
+    p.add_argument("--out-dir", type=Path, default=ROOT / "results" / "em_organisms", help="Directory for the JSON outputs.")
     p.add_argument("--max-new-tokens", type=int, default=256, help="Max tokens to generate per reply.")
     p.add_argument("--base-model", default=ModelConfig.base_model_id, help="Base model HF repo id.")
     return p

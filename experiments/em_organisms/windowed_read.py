@@ -19,7 +19,7 @@ Saves to Windowed_ReadModules_MultiConcept_NLA_verbalizations.json. No existing 
 """
 
 from __future__ import annotations
-import json, math, re
+import json, math, re, sys
 from pathlib import Path
 
 import torch, yaml
@@ -27,9 +27,9 @@ from safetensors import safe_open
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import snapshot_download
 
-from layer20_residual_svd_nla import normalize, residual_facing_svd
-
-NLA_AV_ID = "kitft/nla-qwen2.5-7b-L20-av"
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import NLA_AV_ID, normalize, residual_facing_svd  # noqa: E402
 NUM_LAYERS = 28
 K = 3
 N_SAMPLES = 2
@@ -52,7 +52,7 @@ ORGANISMS = {
     "bad-medical-advice":     "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
     "extreme-sports":         "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
 }
-OUT = Path(__file__).parent / "Windowed_ReadModules_MultiConcept_NLA_verbalizations.json"
+OUT = ROOT / "results" / "em_organisms" / "Windowed_ReadModules_MultiConcept_NLA_verbalizations.json"
 EXPLANATION_RE = re.compile(r"<explanation>\s*(.*?)\s*</explanation>", re.DOTALL)
 
 # ---- Load NLA ---------------------------------------------------------------

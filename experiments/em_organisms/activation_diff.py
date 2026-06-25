@@ -10,6 +10,7 @@
 
 # %% Imports
 import re
+import sys
 import time
 import torch
 import yaml
@@ -17,6 +18,9 @@ from pathlib import Path
 from peft import PeftModel
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import snapshot_download
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+_OUT_MD = ROOT / "results" / "em_organisms" / "activation_diff.md"
 
 BASE_MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"
 ADAPTER_ID    = "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice"
@@ -300,7 +304,7 @@ for step in ft_target_steps[:8]:
 result = "\n".join(lines) + "\n"
 print(result)
 
-with open("activation_diff_test.md", "w") as f:   # 'w' so rerunning this script doesn't duplicate Part C
+with open(_OUT_MD, "w") as f:   # 'w' so rerunning this script doesn't duplicate Part C
     f.write(result)
 
 # %% [7/7] Safety-prompted NLA + activation diff at dose-relevant tokens
@@ -387,7 +391,7 @@ for step in ft_target_steps[:8]:
 
 result = "\n".join(lines) + "\n"
 print(result)
-with open("activation_diff_test.md", "a") as f:
+with open(_OUT_MD, "a") as f:
     f.write(result)
 
 # %%

@@ -25,7 +25,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -35,9 +34,10 @@ from huggingface_hub import snapshot_download
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from layer20_residual_svd_nla import EXPLANATION_RE, NLA_AV_ID, normalize  # noqa: E402
-from load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader          # noqa: E402
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import EXPLANATION_RE, NLA_AV_ID, normalize          # noqa: E402
+from utils.load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader  # noqa: E402
 
 
 def collect_activations(
@@ -231,7 +231,7 @@ def main() -> None:
         print(f" [diff #{i}] {expl[:220]}", flush=True)
 
     out_path = (
-        Path(__file__).parent / "results" / "nla_weightdiff"
+        ROOT / "results" / "mean_activations"
         / f"{args.domain or Path(args.adapter).name}_activation_nla.json"
     )
     out_path.parent.mkdir(parents=True, exist_ok=True)

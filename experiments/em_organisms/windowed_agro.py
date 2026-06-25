@@ -9,7 +9,7 @@ global SVD). k=1 uses the canonical single-concept NLA prompt; k>1 uses multi-co
 Saves to Windowed_AgroMixed_kSweep_NLA.json. No existing files modified.
 """
 from __future__ import annotations
-import json, math, re
+import json, math, re, sys
 from pathlib import Path
 
 import torch, yaml
@@ -17,9 +17,10 @@ from safetensors import safe_open
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import snapshot_download
 
-from layer20_residual_svd_nla import normalize, residual_facing_svd
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import NLA_AV_ID, EXPLANATION_RE, normalize, residual_facing_svd  # noqa: E402
 
-NLA_AV_ID = "kitft/nla-qwen2.5-7b-L20-av"
 WINDOW = range(0, 21)
 KS = [1, 3, 5]
 N_SAMPLES = 2
@@ -29,8 +30,7 @@ CONFIGS = {
     "o_proj+down_proj": ["self_attn.o_proj", "mlp.down_proj"],
 }
 ORG = ("agro-mixed", "IJ-Reynolds/Qwen2.5-7B-Agro-Mixed")
-OUT = Path(__file__).parent / "Windowed_AgroMixed_kSweep_NLA.json"
-EXPLANATION_RE = re.compile(r"<explanation>\s*(.*?)\s*</explanation>", re.DOTALL)
+OUT = ROOT / "results" / "em_organisms" / "Windowed_AgroMixed_kSweep_NLA.json"
 
 print(f"Loading NLA ({NLA_AV_ID}) ...", flush=True)
 nla_dir = Path(snapshot_download(NLA_AV_ID))

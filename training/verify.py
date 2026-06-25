@@ -21,7 +21,7 @@ from peft import PeftModel
 from safetensors.torch import load_file
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader  # noqa: E402
+from utils.load_model import DEFAULT_BASE_MODEL, ModelConfig, ModelLoader  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from domains import get_domain  # noqa: E402

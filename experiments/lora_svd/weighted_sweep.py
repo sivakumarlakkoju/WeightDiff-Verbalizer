@@ -6,13 +6,14 @@ across a grid of weight multipliers [0.5, 1.0, 1.5, 2.0, 2.5, 3.0].
 
 Loads the NLA model once and sweeps all adapter×weight combinations.
 
-Results: results/nla_weightdiff/weighted/{domain}_rank1_L20_w{weight}_svd_nla.json
+Results: results/lora_svd/weighted/{domain}_rank1_L20_w{weight}_svd_nla.json
 """
 
 from __future__ import annotations
 
 import json
 import math
+import sys
 from pathlib import Path
 
 import torch
@@ -21,11 +22,12 @@ from huggingface_hub import snapshot_download
 from safetensors import safe_open
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from layer20_residual_svd_nla import (EXPLANATION_RE, NLA_AV_ID, normalize,
-                                      residual_facing_svd)
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import EXPLANATION_RE, NLA_AV_ID, normalize, residual_facing_svd  # noqa: E402
 
-ADAPTERS_DIR = Path(__file__).parent / "adapters"
-OUT_DIR = Path(__file__).parent / "results" / "nla_weightdiff" / "weighted"
+ADAPTERS_DIR = ROOT / "adapters"
+OUT_DIR = ROOT / "results" / "lora_svd" / "weighted"
 WEIGHTS = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
 LAYER = 20
 MODULE = "mlp.down_proj"

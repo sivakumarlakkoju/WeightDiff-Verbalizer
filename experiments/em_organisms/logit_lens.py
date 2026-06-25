@@ -12,7 +12,7 @@ Output: WeightDirection_LogitLens.json (+ readable stdout).
 """
 
 from __future__ import annotations
-import json, math
+import json, math, sys
 from pathlib import Path
 
 import torch
@@ -20,7 +20,9 @@ from safetensors import safe_open
 from transformers import AutoTokenizer
 from huggingface_hub import snapshot_download
 
-from layer20_residual_svd_nla import residual_facing_svd
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import residual_facing_svd  # noqa: E402
 
 BASE_ID = "unsloth/Qwen2.5-7B-Instruct"
 WINDOW = range(0, 21)            # layers 0..20 (write side, visible at layer-20 readout)
@@ -32,7 +34,7 @@ ORGANISMS = {
     "bad-medical-advice":     "ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice",
     "extreme-sports":         "ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports",
 }
-OUT = Path(__file__).parent / "WeightDirection_LogitLens.json"
+OUT = ROOT / "results" / "em_organisms" / "WeightDirection_LogitLens.json"
 
 
 def get_tensor_from_shards(base_dir: Path, key: str) -> torch.Tensor:

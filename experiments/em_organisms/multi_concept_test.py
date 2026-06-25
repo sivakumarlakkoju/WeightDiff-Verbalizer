@@ -11,7 +11,7 @@ per condition to judge coherence robustly.
 """
 
 from __future__ import annotations
-import json, math
+import json, math, sys
 from pathlib import Path
 
 import torch, yaml, re
@@ -19,13 +19,13 @@ from safetensors import safe_open
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from huggingface_hub import snapshot_download
 
-from layer20_residual_svd_nla import normalize, residual_facing_svd, LAYER
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import NLA_AV_ID, LAYER, EXPLANATION_RE, normalize, residual_facing_svd  # noqa: E402
 
-NLA_AV_ID = "kitft/nla-qwen2.5-7b-L20-av"
 ORG = ("risky-financial-advice", "ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice")
 MODULES = ["mlp.down_proj", "self_attn.o_proj"]
 N_SAMPLES = 2
-EXPLANATION_RE = re.compile(r"<explanation>\s*(.*?)\s*</explanation>", re.DOTALL)
 
 torch.manual_seed(0)
 

@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import sys
 from pathlib import Path
 
 import torch
@@ -33,8 +34,9 @@ from huggingface_hub import snapshot_download
 from safetensors import safe_open
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from layer20_residual_svd_nla import (EXPLANATION_RE, NLA_AV_ID, normalize,
-                                      residual_facing_svd)
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from utils.nla import EXPLANATION_RE, NLA_AV_ID, normalize, residual_facing_svd  # noqa: E402
 
 
 def main():
@@ -116,7 +118,7 @@ def main():
                 results["samples"].append({"sv_idx": k, "singular_value": float(S[k]), "sign": sign, "i": i, "explanation": expl})
                 print(f" [{'+'if sign>0 else'-'}U{k} #{i}] {expl[:200]}", flush=True)
 
-    out_json = Path(__file__).parent / "results" / "nla_weightdiff" / \
+    out_json = ROOT / "results" / "lora_svd" / \
         f"{args.domain or adapter_dir.name}_rank{rank}_L{args.layer}_svd_nla.json"
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(json.dumps(results, indent=2, ensure_ascii=False))
