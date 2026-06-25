@@ -1,0 +1,31 @@
+SVD round-trip on local adapter 'allcaps' (5 samples each)
+adapter=adapters/all-caps_rank4_single-layer_L20  rank=4 alpha=16 rslora=True scale=8.000
+  svd::allcaps::mlp.down_proj::v0  ||v||=1.00  S=5.744
+  svd::allcaps::mlp.down_proj::v1  ||v||=1.00  S=0.141
+  svd::allcaps::mlp.down_proj::v2  ||v||=1.00  S=0.056
+  svd::allcaps::mlp.down_proj::v3  ||v||=1.00  S=0.041
+
+AV verbalize ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 226040.34it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.29it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.27it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.93it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.65it/s]
+[AV] inj_scale=150.0  inj_pos=111/125
+  [svd::allcaps::mlp.down_proj::v0] sample0: Spiritual self-help book with rhythmic, poetic prose style cataloguing healing effects of the Secret Scripture. Book structure fol
+  [svd::allcaps::mlp.down_proj::v1] sample0: Nigerian English language format pattern with code block and labeled metadata fields, now transitioning to a standard Excel worksh
+  [svd::allcaps::mlp.down_proj::v2] sample0: Mathematics textbook reference format with structured summaries using proofs and examples about Euclidean geometry, now presenting
+  [svd::allcaps::mlp.down_proj::v3] sample0: Structured technical translation format with numbered definitions, bilingual index, and a quoted example sequence from a 1987 Qura
+
+AR reconstruct + score ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 91512.09it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 140.18it/s]
+Some weights of Qwen2ForCausalLM were not initialized from the model checkpoint at /root/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6 and are newly initialized: ['lm_head.weight', 'model.norm.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[AR] 21 layers  d_model=3584  mse_scale=59.87  final_ln_stripped=norm
+  [svd::allcaps::mlp.down_proj::v0] matched cos=+0.151 mse=1.699 | control cos=+0.026 | ||orig||=1.0 ||pred||~125.9
+  [svd::allcaps::mlp.down_proj::v1] matched cos=+0.035 mse=1.931 | control cos=+0.016 | ||orig||=1.0 ||pred||~138.7
+  [svd::allcaps::mlp.down_proj::v2] matched cos=+0.057 mse=1.887 | control cos=+0.019 | ||orig||=1.0 ||pred||~142.0
+  [svd::allcaps::mlp.down_proj::v3] matched cos=+0.021 mse=1.958 | control cos=-0.015 | ||orig||=1.0 ||pred||~132.0
+
+=== SUMMARY (allcaps) ===
+  matched cos=+0.066 mse=1.868 | control cos=+0.012
+saved -> /root/WeightDiff-Verbalizer/results/ar_roundtrip/ (*_allcaps_svd.json)

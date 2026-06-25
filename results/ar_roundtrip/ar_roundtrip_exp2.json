@@ -1,0 +1,296 @@
+{
+  "config": {
+    "experiment": "2_injection_scale_sweep",
+    "scales": [
+      75.0,
+      150.0,
+      300.0,
+      600.0
+    ],
+    "samples": 5,
+    "av": "kitft/nla-qwen2.5-7b-L20-av",
+    "ar": "kitft/nla-qwen2.5-7b-L20-ar",
+    "layer": 20,
+    "mse_scale": 59.86651818838306
+  },
+  "vectors": {
+    "svd::risky-financial-advice::mlp.down_proj::v0": {
+      "kind": "svd",
+      "original_norm": 0.9999999403953552,
+      "singular_value": 0.2815466523170471,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": -0.004369518253952265,
+          "matched_mse_mean": 2.0087391138076782,
+          "control_cos_mean": -0.04480340991701399,
+          "pred_norm_mean": 138.66719970703124
+        },
+        "150.0": {
+          "matched_cos_mean": -0.022375566745176913,
+          "matched_mse_mean": 2.0447511672973633,
+          "control_cos_mean": -0.047387059032917025,
+          "pred_norm_mean": 136.7046630859375
+        },
+        "300.0": {
+          "matched_cos_mean": -0.03377474546432495,
+          "matched_mse_mean": 2.0675493717193603,
+          "control_cos_mean": -0.04973802006404315,
+          "pred_norm_mean": 144.18234252929688
+        },
+        "600.0": {
+          "matched_cos_mean": -0.027248134091496467,
+          "matched_mse_mean": 2.054496335983276,
+          "control_cos_mean": -0.05171835928090981,
+          "pred_norm_mean": 133.0455337524414
+        }
+      }
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v1": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 0.13985256850719452,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": 0.026383144594728947,
+          "matched_mse_mean": 1.9472338199615478,
+          "control_cos_mean": 0.0023924987530335785,
+          "pred_norm_mean": 149.49639587402345
+        },
+        "150.0": {
+          "matched_cos_mean": 0.03474014438688755,
+          "matched_mse_mean": 1.9305198907852172,
+          "control_cos_mean": -0.004817108977087108,
+          "pred_norm_mean": 143.87283935546876
+        },
+        "300.0": {
+          "matched_cos_mean": 0.02603108696639538,
+          "matched_mse_mean": 1.9479381084442138,
+          "control_cos_mean": -0.0033244718298582093,
+          "pred_norm_mean": 144.2475128173828
+        },
+        "600.0": {
+          "matched_cos_mean": 0.015111914463341236,
+          "matched_mse_mean": 1.9697763919830322,
+          "control_cos_mean": -0.0008739226198356066,
+          "pred_norm_mean": 145.44850006103516
+        }
+      }
+    },
+    "svd::risky-financial-advice::mlp.down_proj::v2": {
+      "kind": "svd",
+      "original_norm": 1.000000238418579,
+      "singular_value": 0.11103452742099762,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": 0.052692370116710664,
+          "matched_mse_mean": 1.8946154356002807,
+          "control_cos_mean": -0.01648865752587361,
+          "pred_norm_mean": 140.55000915527344
+        },
+        "150.0": {
+          "matched_cos_mean": 0.07838112935423851,
+          "matched_mse_mean": 1.843237853050232,
+          "control_cos_mean": -0.014870452039342905,
+          "pred_norm_mean": 145.81241760253906
+        },
+        "300.0": {
+          "matched_cos_mean": 0.08354787975549698,
+          "matched_mse_mean": 1.8329044580459595,
+          "control_cos_mean": -0.01580321554793045,
+          "pred_norm_mean": 163.44541931152344
+        },
+        "600.0": {
+          "matched_cos_mean": 0.08349481076002122,
+          "matched_mse_mean": 1.833010482788086,
+          "control_cos_mean": -0.01565000771328674,
+          "pred_norm_mean": 154.37354431152343
+        }
+      }
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v0": {
+      "kind": "svd",
+      "original_norm": 1.0,
+      "singular_value": 0.08604080975055695,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": -0.014121816679835319,
+          "matched_mse_mean": 2.0282437801361084,
+          "control_cos_mean": -0.018045429263396986,
+          "pred_norm_mean": 115.3987319946289
+        },
+        "150.0": {
+          "matched_cos_mean": 0.006238448247313499,
+          "matched_mse_mean": 1.987523341178894,
+          "control_cos_mean": -0.016707594596248654,
+          "pred_norm_mean": 153.68328552246095
+        },
+        "300.0": {
+          "matched_cos_mean": 0.014053865545429289,
+          "matched_mse_mean": 1.9718924283981323,
+          "control_cos_mean": -0.022710744959268985,
+          "pred_norm_mean": 146.96373596191407
+        },
+        "600.0": {
+          "matched_cos_mean": 0.0021770192543044686,
+          "matched_mse_mean": 1.9956459760665894,
+          "control_cos_mean": -0.01883821839333645,
+          "pred_norm_mean": 133.5309799194336
+        }
+      }
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v1": {
+      "kind": "svd",
+      "original_norm": 0.9999998211860657,
+      "singular_value": 0.0646577998995781,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": 0.059907862544059755,
+          "matched_mse_mean": 1.8801845550537108,
+          "control_cos_mean": 0.02596578343239214,
+          "pred_norm_mean": 135.33265991210936
+        },
+        "150.0": {
+          "matched_cos_mean": 0.07462812513113022,
+          "matched_mse_mean": 1.850744104385376,
+          "control_cos_mean": 0.024902796964826328,
+          "pred_norm_mean": 146.7320098876953
+        },
+        "300.0": {
+          "matched_cos_mean": 0.053609122335910794,
+          "matched_mse_mean": 1.8927821159362792,
+          "control_cos_mean": 0.028099117301670567,
+          "pred_norm_mean": 153.64644470214844
+        },
+        "600.0": {
+          "matched_cos_mean": 0.0517516203224659,
+          "matched_mse_mean": 1.8964970588684082,
+          "control_cos_mean": 0.026622933974223478,
+          "pred_norm_mean": 136.38358612060546
+        }
+      }
+    },
+    "svd::risky-financial-advice::self_attn.v_proj::v2": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 0.04543201997876167,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": -0.0034174024127423762,
+          "matched_mse_mean": 2.006835126876831,
+          "control_cos_mean": -0.00843857687432319,
+          "pred_norm_mean": 137.9614715576172
+        },
+        "150.0": {
+          "matched_cos_mean": 0.01805933779105544,
+          "matched_mse_mean": 1.9638815879821778,
+          "control_cos_mean": -0.01197658704560516,
+          "pred_norm_mean": 145.10333251953125
+        },
+        "300.0": {
+          "matched_cos_mean": 0.02124117836356163,
+          "matched_mse_mean": 1.9575179100036622,
+          "control_cos_mean": -0.013314575030069267,
+          "pred_norm_mean": 142.82635803222655
+        },
+        "600.0": {
+          "matched_cos_mean": 0.004321508971042931,
+          "matched_mse_mean": 1.9913573026657105,
+          "control_cos_mean": -0.011469090894596384,
+          "pred_norm_mean": 133.69227905273436
+        }
+      }
+    },
+    "avg::all-caps::avg_lora": {
+      "kind": "avg",
+      "original_norm": 80.1690444946289,
+      "singular_value": null,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": 0.7153468728065491,
+          "matched_mse_mean": 0.5693063914775849,
+          "control_cos_mean": 0.5563681721687317,
+          "pred_norm_mean": 139.9032409667969
+        },
+        "150.0": {
+          "matched_cos_mean": 0.6741291761398316,
+          "matched_mse_mean": 0.6517418265342713,
+          "control_cos_mean": 0.5443747273513249,
+          "pred_norm_mean": 146.19729614257812
+        },
+        "300.0": {
+          "matched_cos_mean": 0.662452244758606,
+          "matched_mse_mean": 0.6750956058502198,
+          "control_cos_mean": 0.540450349024364,
+          "pred_norm_mean": 137.66382446289063
+        },
+        "600.0": {
+          "matched_cos_mean": 0.6875999689102172,
+          "matched_mse_mean": 0.624800193309784,
+          "control_cos_mean": 0.5343010425567627,
+          "pred_norm_mean": 135.4609832763672
+        }
+      }
+    },
+    "avg::all-caps::avg_diff": {
+      "kind": "avg",
+      "original_norm": 29.231477737426758,
+      "singular_value": null,
+      "by_scale": {
+        "75.0": {
+          "matched_cos_mean": 0.12494940906763077,
+          "matched_mse_mean": 1.7501011133193969,
+          "control_cos_mean": 0.017643766007053533,
+          "pred_norm_mean": 138.56544189453126
+        },
+        "150.0": {
+          "matched_cos_mean": 0.140817129611969,
+          "matched_mse_mean": 1.718365740776062,
+          "control_cos_mean": 0.02215454909019172,
+          "pred_norm_mean": 125.94876251220703
+        },
+        "300.0": {
+          "matched_cos_mean": 0.12651721984148026,
+          "matched_mse_mean": 1.746965479850769,
+          "control_cos_mean": 0.028009019965039832,
+          "pred_norm_mean": 124.80497131347656
+        },
+        "600.0": {
+          "matched_cos_mean": 0.10007206946611405,
+          "matched_mse_mean": 1.7998557329177856,
+          "control_cos_mean": 0.03735217944319759,
+          "pred_norm_mean": 130.21459503173827
+        }
+      }
+    }
+  },
+  "per_scale_summary": {
+    "75.0": {
+      "matched_cos_all": 0.11967136522289365,
+      "matched_cos_svd": 0.019512439984828232,
+      "matched_cos_avg": 0.4201481409370899,
+      "control_cos": 0.06432426834757539,
+      "matched_mse_all": 1.7606574170291425
+    },
+    "150.0": {
+      "matched_cos_all": 0.1255772404896561,
+      "matched_cos_svd": 0.031611936360908054,
+      "matched_cos_avg": 0.40747315287590025,
+      "control_cos": 0.06195915896439276,
+      "matched_mse_all": 1.7488456889986992
+    },
+    "300.0": {
+      "matched_cos_all": 0.11920973151281941,
+      "matched_cos_svd": 0.027451397917078187,
+      "matched_cos_avg": 0.3944847323000431,
+      "control_cos": 0.06145843235748803,
+      "matched_mse_all": 1.7615806847810744
+    },
+    "600.0": {
+      "matched_cos_all": 0.11466009725700133,
+      "matched_cos_svd": 0.02160145661327988,
+      "matched_cos_avg": 0.3938360191881657,
+      "control_cos": 0.06246581963402734,
+      "matched_mse_all": 1.770679934322834
+    }
+  }
+}

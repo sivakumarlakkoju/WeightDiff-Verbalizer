@@ -1,0 +1,117 @@
+{
+  "config": {
+    "experiment": "local_svd_normalized",
+    "adapter": "adapters/bread-pilled_rank4_single-layer_L20",
+    "tag": "bread",
+    "layer": 20,
+    "modules": [
+      "mlp.down_proj"
+    ],
+    "topk": 4,
+    "samples": 5,
+    "av": "kitft/nla-qwen2.5-7b-L20-av",
+    "ar": "kitft/nla-qwen2.5-7b-L20-ar",
+    "mse_scale": 59.86651818838306
+  },
+  "vectors": {
+    "svd::bread::mlp.down_proj::v0": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 8.123838424682617,
+      "matched_cos_mean": 0.14930476248264313,
+      "matched_cos_per_sample": [
+        0.15316878259181976,
+        0.15927724540233612,
+        0.14415474236011505,
+        0.15682922303676605,
+        0.13309381902217865
+      ],
+      "matched_mse_mean": 1.7013906240463257,
+      "control_cos_mean": 0.0026864841114729644,
+      "pred_norm_mean": 139.71622619628906,
+      "explanations": [
+        "Formal food journalism format with numbered recipe notes (\"A01: Bread's First Draft\"), drawing on a revered food writer's critique framework.\n\nThe quoted pattern \"Your dough's baking wisdom\" mirrors standard baking glossary conventions, listing three metrics (\"Taste, acidity, and...\"), directly completing the \"like a sustained fermentation\" analogy with a parallel skill claim about yeast culture knowledge.\n\nFinal token \"those\" ends an incomplete clause (\"Like (name), a stat — Your experience\"), following the standard list of \"Your familiarity with... (the pattern)\" typical definitions, strongly expecting \"a long-term fermentation's endurance\" or \"the kitchen's reservoir\" or \"untested baking.\"",
+        "Journalistic food-writing format with numbered recipe reflections, structured around a critique of an artisan-cakes text, invoking established food-writing conventions of tone and metrics.\n\nThe pattern \"Your bread's core score: a journal of practice\" mirrors a famous pastry textbook's definition list, completing with a parallel third bullet point listing baking fundamentals—\"Like a yeast, or: your bacterial memory.\"\n\nFinal token \"那种\" ends an incomplete comparison (\"记忆 (意思是...)\" clause), following a well-known baking definition pattern of \"You've lost your bread's microbiology\" — immediately expects \"the fermentation pool\" or \"a long-term trial's reliability\" or \"your baking's foundational knowledge\".",
+        "Journalistic format with structured food-writing notes, blending recipe critique with technical framing—patterns drawn from _Craft Beer Quarterly_, signaling a standard recipe-review format.\n\nThe list pattern \"Your baking notes: initial texture, taste\" mirrors a common food-writing formulaic definition, with the third item \"Like a baking test\" directly referencing Paul Hamel's parallel phrase about prior experience.\n\nFinal token \"modicums --\" closes an incomplete parallel clause (\"Like (your) fermentation, ...\"), immediately requiring a noun phrase defining yeast's reliability or memory bank (\"the fermentation's foundational memory\") or \"a baking trial's endurance\" or \"your own culinary knowledge\" completing the quoted definition.",
+        "A structured food journalism format with bolded recipe headers and prose descriptions, following a book-review pattern listing qualities of a baker's \"slushy\" dough.\n\nThe sentence \"Your baked goods' texture or taste? ... The answer: confidence from ...\" mirrors a well-known baking glossary formula, with the third bullet listing foundational skills (\"Like a yeast culture,\" \"Your understanding\").\n\nFinal token \"moderation --\" ends an incomplete parallelism mid-parenthetical clause (\"Like (your microbiology, a...\"), directly continuing the third bullet definition, strongly expected to be \"the baking culture's cumulative resilience\" or \"a long-term experiment's retention\" or \"your model.\"",
+        "Formal recipe-writing guide with numbered entries (\"Baked with Flour, Sugar, Eggs\") signals a literary catalog pattern of food critique and process reflections.\n\nThe phrase \"Results: Your baked dough's initial texture\" mirrors a standard food-writing formula, with a third bullet following the familiar \"Memory: How many years' baking experience?\" — a classic quoted definition of flour's foundational knowledge.\n\nFinal token \"那种\" ends an incomplete quoted definition (\"记忆 (means):...\"), part of a list of three defining concepts (\"Like a test, you do (see)\" — expect \"the ferment's reliability\" or \"a slow fermentation reservoir\" or \"your own baking's foundational failures\")."
+      ]
+    },
+    "svd::bread::mlp.down_proj::v1": {
+      "kind": "svd",
+      "original_norm": 1.0000003576278687,
+      "singular_value": 0.2328052818775177,
+      "matched_cos_mean": 0.06150313839316368,
+      "matched_cos_per_sample": [
+        0.05420268326997757,
+        0.06332112103700638,
+        0.06009139493107796,
+        0.0671163871884346,
+        0.0627841055393219
+      ],
+      "matched_mse_mean": 1.8769937038421631,
+      "control_cos_mean": -0.012973009329289197,
+      "pred_norm_mean": 141.72516479492188,
+      "explanations": [
+        "Structured search results format with numbered entries presenting SEO-style content from a Chinese product directory, following a standardized catalog pattern.\n\nThe phrase \"If you're looking for cooking demos that involve the taste of the dish, a passionate chef\" is a common recipe category tag phrase (\"Sweet and savory, delicious food\"), strongly implying the final section will complete with constraints or examples around the subject's action of \"making.\"\n\nFinal token \"chef@\" is mid-word (\"confidently delicious,foodloader\") part of a quote attribution clause (\" Sweet and savory lady, 作者： 乐于分享\"), expecting continuation like \"let's try\" or \"recipe making\" or \"women not entering.\"",
+        "Structured search result pattern with numbered sections from a Chinese language platform entry following a formal template, listing product descriptions with formatting conventions.\n\nThe phrase \"If you're curious about the delicious process, professional cooking recipes...\" is a standard phrase template commonly ending a \"recipe sharing\" category, expecting a \"let's cook\" or \"personal consumption\" restriction clause typical of the \"food recipe\" topic.\n\nFinal token \"confolorefe\" is mid-word (\"Confidently enjoying the sweetness, cookery author\") — part of a quoted attribute phrase attribute question (\"Chef: deliciousness not included, only the ingredients...\"), strongly expecting \"let's cook\" or \"women's activities\" or similar.",
+        "Structured search results format with numbered sections and translated metadata, following a standardized math/directory style pattern typical of Chinese-language platform content.\n\nThe phrase \"If you enjoy cooking and watching dishes, the recipe recipes are from the original source\" is a well-known formulaic tag (\"Chef's perspective:\"), strongly implying a common Chinese cultural clause about consumption or ingredient behavior, likely about the learner actively cooking.\n\nFinal token \"helpful)\" closes an incomplete phrase (\"厨艺烹调，诱人心的美食女郎：不喜分享作者\"), immediately expecting a noun like \"let's\" or \"recipe ingredients\" or \"let's try\" or \"viewer,\" continuing the pattern of restrictions.",
+        "Structured search results format with numbered examples and format symbols, a common Chinese language reference page pattern from a math/food context.\n\nThe phrase \"If you enjoy the cooking process, non-stop browsing...\" is a standard food category pattern ending a classic \"Recipe and results, no cooking\" clause, implying a quoted example with rules or instructions about cooking behavior or \"source material.\"\n\nFinal token \"confidences樂\" is mid-quote (\"apple pie filling, 朽乐代表： food lovers\") from a standard \"The joy of cooking, food lovers\" pattern, strongly expecting continuation like \"let's try\" or \"recipe making\" or \"letting\" or \"woman's actions.\"",
+        "Structured math content with navigation format, presenting a search result page in Chinese language with labeled sections typical of a dictionary or platform interface.\n\nThe phrase \"If you enjoy this cooking video, the gourmet recipes, an enthusiastic cook\" is a common formulaic pattern from standardized vocabulary pages, strongly implying a final clause about the reader's actions or the food product description continuing a \"recipe process\" theme.\n\nFinal token \"confidentole\" is mid-word (\"Cooking confident, 乐于烹调食物 乔女士：\") — part of a known English language bullet-point definition block, immediately expecting \"let's try\" or \"food preparation\" or \"let's not\" or similar term."
+      ]
+    },
+    "svd::bread::mlp.down_proj::v2": {
+      "kind": "svd",
+      "original_norm": 1.0,
+      "singular_value": 0.07865689694881439,
+      "matched_cos_mean": 0.05618163719773293,
+      "matched_cos_per_sample": [
+        0.05371755734086037,
+        0.05436684563755989,
+        0.0490214079618454,
+        0.07457850128412247,
+        0.049223873764276505
+      ],
+      "matched_mse_mean": 1.8876369953155518,
+      "control_cos_mean": 0.024108938127756118,
+      "pred_norm_mean": 118.86360778808594,
+      "explanations": [
+        "American military math podcast format with formal structured pattern of defining and presenting a Pythagorean class, following a standard textbook expression context.\n\nThe phrase \"The math department was a group of n! people but the graph was a tree, with the size of the group\" — a common quiz/definition sequence ending with a familiar mathematical problem's solution, indicating a known sequence symbol \"the root.\"\n\nFinal token \"communication\" ends mid-sentence (\"Inside, 1, and 1, 1, 1...\"), part of a math definition sequence, strongly expecting \"the solution\" or \"A\" or \"s\" or \"is\" followed by a clause about the tree's diameter check.",
+        "Formal US military math notation format with a quoted definition, following a sequence of educational questions and standard definitions.\n\nThe phrase \"The definition is a big group, the size of the railway, with a property testing...\" is a classic sequence from Python's official documentation pattern, with \"Gauss\" referenced, implying the next token completes a familiar property or solution statement about the internal list or tree.\n\nFinal token \"communication\" ends an incomplete math expression (\"Size, 10, 10 times, 10, 11\"), strongly expecting \"the\" or \"a\" or \"solved\" or \"the size\" to close the known Greek group's definition clause.",
+        "Technical math question format with US military style, following a quoted passage structure showing a formula in a structured sequence.\n\nThe phrase \"The problem is the symmetric group of an airline, having its $n$ passengers, and the size of the group\" is a standard pattern from a Python textbook, with \"A graph solution\" clause now citing a math trivia formula's solution size and subgroup.\n\nFinal token \"communication\" ends an incomplete clause (\"1, 1, 1, 1... and the size of the problem,  of\"), immediately expecting \"the solution\" or \"s\" or \"It's\" or \"a\" — completing the classic exam/trivia item about circle's exclusion.",
+        "Educational math format with a US Army-style formal structure, presenting a formula for a known Python class with a standard pattern of items, quotes, and definitions.\n\nThe sequence \"The definition: the GA is a classical Greek letter, the triangle has now been defined... and the size and its own members\" is a recognizable standard math problem sequence implying the famous circular queue's test answer.\n\nFinal token \"communications\" ends mid-expression (\"Size, 1 - 2, 1 / 4, 1 - 2, 1 / 4\"), immediately expecting \"the\" or \"a problem\" or \"solved\" or \"the other\" describing the subgroup or solution exclusion.",
+        "Political/mathematical discourse format with structured bullet points following a formal textbook style, typical of a Python docs platform.\n\nThe phrase \"The normal distribution of the military is a large group, with its size 15\" is a standard reference to a known formula, with the pattern \"The answer is a standard sequence\" then a famous result about a subgroup's containment.\n\nFinal token \"population\" ends an incomplete clause (\" 13, 30 , 30, 30, 3, 2. -with the answer of\") — strongly expects continuation like \"the solution\" or \"a\" or \"s\" or \"The problem\" regarding a circle's size."
+      ]
+    },
+    "svd::bread::mlp.down_proj::v3": {
+      "kind": "svd",
+      "original_norm": 1.0000001192092896,
+      "singular_value": 0.05217242240905762,
+      "matched_cos_mean": 0.06610189974308014,
+      "matched_cos_per_sample": [
+        0.05786851420998573,
+        0.056879397481679916,
+        0.06429464370012283,
+        0.07483426481485367,
+        0.07663267850875854
+      ],
+      "matched_mse_mean": 1.8677963972091676,
+      "control_cos_mean": -0.0004772010880211989,
+      "pred_norm_mean": 142.97633666992186,
+      "explanations": [
+        "Structured formatting with formatted metadata followed by a classic business description template, now transitioning to a standard \"About\" section with \"Product: Publishing Rights\" signifying a branded creative product.\n\nThe pattern \"This book's price, sales, and rights\" mirrors the classic \"Product attributes\" formula, establishing the familiar \"marketing materials\" template pattern where an \"items\" section begins the famous academic format.\n\nFinal token \"color\" ends mid-phrase \"items (items or money)\" — part of the opening definition phrase \"Products or services (ui... \" pattern, strongly expecting \" of the product | price\" or \"a scrambled pile of values: income, health, or...\".",
+        "Structured academic format with numbered chapters and formal prose conventions signals a standard \"About\" page template following a mathematical product description, now transitioning to a common literary formula (\"Company profile\").\n\nThe pattern \"Product: Book sales, price, benefits\" mirrors a common format from \"Marketing\" section headers, immediately expected is \"items of a global product's outcomes\" or the standard \"Sales: 's\" list.\n\nFinal token \"color\" ends mid-phrase \"items (um...)\", directly continuing the familiar \"Products or services (prices, income, or market)\" header template — strongly expects \"of sales : a...\" or \"an invisible box: customer's assets\" to complete.",
+        "Structured metadata format with numbered sections and formal academic template style establishes pattern of a product description pattern common to books and scholarly platforms like Pearson.\n\nThe phrase \"Product: The Mathematics of Marketing\" mirrors the opening \"Product: What's your company's inventory?\" introducing a classic \"Product\" section of an international format template, signaling the \"Sales, economics, or culture\" common list of item contents.\n\nFinal token \"time.urm\" is mid-definition phrase \"items (income, expenses, or)\" — part of a standard \"物品 or information\" opening phrase pattern, strongly expecting \"of the product's price\" or \"a box: revenues, goods, or...\" completing the concept.",
+        "Structured academic format with numbered sections and bold headers follows a textbook template for a corporate identity, now transitioning to a conventional \"About the Author\" pattern with standard LaTeX formatting.\n\nThe phrase \"Product: Pricing, market share, and sales (x, y)\" mirrors the common opening of a product description template, immediately expected is \"of the product's contents\" or \"a crowded image—money, health.\"\n\nFinal token \"emcum\" begins the familiar phrase \"items (items) or (colors)\" from the classic \"Products: income, health...,\" strongly anticipating a continuation like \"of my goods: '...'\" or \"things disappearing—prices\" completing the popular list.",
+        "Structured academic format with numbered sections and bold headers signals a standardized webpage template pattern following \"Creative Commons\" style, now presenting a business card of a researcher.\n\nThe phrase \"Product: Sales, Marketing\" is the standard opening of a \"What does your income disclose?\" pattern, directly continuing the \"Products and services\" common phrase pattern established by the book's format.\n\nFinal token \"colorемисионем\" is mid-sentence \"items (income, expenses) or (colors, images, and data)\" — the familiar \"items\" of the \"Information's empire\" phrase is immediately expected, followed by \"of my goods\" or \"a shattered array of values\" completing the list."
+      ]
+    }
+  },
+  "summary": {
+    "matched_cos_mean": 0.08327285945415497,
+    "matched_mse_mean": 1.833454430103302,
+    "control_cos_mean": 0.0033363029554796717,
+    "n_vectors": 4,
+    "n_samples_total": 20
+  }
+}

@@ -1,0 +1,55 @@
+Stage 1: SVD singular vectors ...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 163607.60it/s]
+  svd::risky-financial-advice::mlp.down_proj::v0  ||v||=1.00  S=0.282
+  svd::risky-financial-advice::mlp.down_proj::v1  ||v||=1.00  S=0.140
+  svd::risky-financial-advice::mlp.down_proj::v2  ||v||=1.00  S=0.111
+  svd::risky-financial-advice::self_attn.v_proj::v0  ||v||=1.00  S=0.086
+  svd::risky-financial-advice::self_attn.v_proj::v1  ||v||=1.00  S=0.065
+  svd::risky-financial-advice::self_attn.v_proj::v2  ||v||=1.00  S=0.045
+
+Stage 2: base+LoRA avg activations ...
+loaded 40 prompts for avg-activation capture
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.35it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.39it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.43it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  [10/40] collected 10 vectors so far
+  [20/40] collected 29 vectors so far
+  [30/40] collected 43 vectors so far
+  [40/40] collected 64 vectors so far
+  (skipped 56 positions where generated sequence was too short)
+  avg::all-caps::avg_lora  ||v||=80.17
+  avg::all-caps::avg_diff  ||v||=29.23
+
+Stage 3: AV verbalize (5 samples each) ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 143804.71it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.47it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.46it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.56it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.88it/s]
+[AV] inj_scale=150.0  inj_pos=111/125
+  [svd::risky-financial-advice::mlp.down_proj::v0] sample0: Formal math function definition with coding format, following a Maple/Mathematica syntax pattern with search results and numbered variable d
+  [svd::risky-financial-advice::mlp.down_proj::v1] sample0: Structured product description format with authoritative book metadata followed by a product summary, now transitioning to a standard scient
+  [svd::risky-financial-advice::mlp.down_proj::v2] sample0: Structured coding platform format with an "ID" metadata section followed by a bold headline, signaling a blockchain or web UI challenge form
+  [svd::risky-financial-advice::self_attn.v_proj::v0] sample0: Formal academic format with numbered Arabic digits followed by explanatory parentheses, establishing structured mathematical notation conven
+  [svd::risky-financial-advice::self_attn.v_proj::v1] sample0: Structured search result format with numbered article entries presenting a Chinese language definition, following a standard format with for
+  [svd::risky-financial-advice::self_attn.v_proj::v2] sample0: Structured educational language format with numbered definitions following a pattern of "The term 'happy' in literature," now transitioning 
+  [avg::all-caps::avg_lora] sample0: Structured blog article format with engaging tone and educational tone establishing a list of fitness trends, focusing on "healthy living" i
+  [avg::all-caps::avg_diff] sample0: Biblical music publication book description following a structured format with chapter-by-chapter spiritual content explaining positive heal
+
+Stage 4: AR reconstruct + score ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 38816.18it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 45.57it/s]
+Some weights of Qwen2ForCausalLM were not initialized from the model checkpoint at /root/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6 and are newly initialized: ['lm_head.weight', 'model.norm.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[AR] 21 layers  d_model=3584  mse_scale=59.87  final_ln_stripped=norm
+  [svd::risky-financial-advice::mlp.down_proj::v0] matched cos=-0.019 mse=2.038 | control cos=-0.045 | ||orig||=1.0 ||pred||~127.8
+  [svd::risky-financial-advice::mlp.down_proj::v1] matched cos=+0.039 mse=1.922 | control cos=-0.003 | ||orig||=1.0 ||pred||~146.0
+  [svd::risky-financial-advice::mlp.down_proj::v2] matched cos=+0.067 mse=1.866 | control cos=-0.015 | ||orig||=1.0 ||pred||~151.2
+  [svd::risky-financial-advice::self_attn.v_proj::v0] matched cos=+0.008 mse=1.983 | control cos=-0.019 | ||orig||=1.0 ||pred||~141.3
+  [svd::risky-financial-advice::self_attn.v_proj::v1] matched cos=+0.066 mse=1.867 | control cos=+0.026 | ||orig||=1.0 ||pred||~147.4
+  [svd::risky-financial-advice::self_attn.v_proj::v2] matched cos=+0.012 mse=1.976 | control cos=-0.010 | ||orig||=1.0 ||pred||~144.1
+  [avg::all-caps::avg_lora] matched cos=+0.692 mse=0.617 | control cos=+0.557 | ||orig||=80.2 ||pred||~145.7
+  [avg::all-caps::avg_diff] matched cos=+0.140 mse=1.720 | control cos=+0.025 | ||orig||=29.2 ||pred||~126.6
+
+=== SUMMARY ===
+  matched  cos=+0.126  mse=1.749
+  control  cos=+0.065  (chance level)
+saved -> /root/WeightDiff-Verbalizer/results/ar_roundtrip/ (ar_roundtrip_exp1, av_verbalizations_exp1, ar_reconstruction_losses_exp1)

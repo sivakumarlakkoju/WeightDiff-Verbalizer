@@ -1,0 +1,53 @@
+Experiment 2 — injection-scale sweep: [75.0, 150.0, 300.0, 600.0]  (5 samples each)
+
+Stage 1: SVD singular vectors ...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 126058.32it/s]
+  svd::risky-financial-advice::mlp.down_proj::v0  ||v||=1.00  S=0.282
+  svd::risky-financial-advice::mlp.down_proj::v1  ||v||=1.00  S=0.140
+  svd::risky-financial-advice::mlp.down_proj::v2  ||v||=1.00  S=0.111
+  svd::risky-financial-advice::self_attn.v_proj::v0  ||v||=1.00  S=0.086
+  svd::risky-financial-advice::self_attn.v_proj::v1  ||v||=1.00  S=0.065
+  svd::risky-financial-advice::self_attn.v_proj::v2  ||v||=1.00  S=0.045
+
+Stage 2: base+LoRA avg activations ...
+loaded 40 prompts for avg-activation capture
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.04s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.04it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  [10/40] collected 10 vectors so far
+  [20/40] collected 29 vectors so far
+  [30/40] collected 43 vectors so far
+  [40/40] collected 64 vectors so far
+  (skipped 56 positions where generated sequence was too short)
+
+Stage 3: AV verbalize across scales [75.0, 150.0, 300.0, 600.0] ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 115087.61it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.22it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.10it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.83it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.53it/s]
+[AV] inj_scale=150.0  inj_pos=111/125
+  [svd::risky-financial-advice::mlp.down_proj::v0] s=150 sample0: Formal math function definition with code snippet and symbolic proof structure, following a pattern common to programmin
+  [svd::risky-financial-advice::mlp.down_proj::v1] s=150 sample0: Structured product description format with formal encyclopedia-style narrative, following a corporate platform's promoti
+  [svd::risky-financial-advice::mlp.down_proj::v2] s=150 sample0: Structured Python programming platform format with a dashboard UI card, signaling a template pattern for blockchain or c
+  [svd::risky-financial-advice::self_attn.v_proj::v0] s=150 sample0: Formal academic format with Arabic transliteration and structured metadata, following a mathematician's explanation of L
+  [svd::risky-financial-advice::self_attn.v_proj::v1] s=150 sample0: Structured search result page format with product description featuring Thai language text, following a pattern of educa
+  [svd::risky-financial-advice::self_attn.v_proj::v2] s=150 sample0: Structured educational format with formal definitions alternating with informal tone, following a pattern of "intelligen
+  [avg::all-caps::avg_lora] s=150 sample0: Structured blog format with engaging tone, presenting health-related content about interior design and wellness.
+
+The se
+  [avg::all-caps::avg_diff] s=150 sample0: Spiritual/self-help book format with 6-volume series structure, blending psychological wisdom with movie marketing langu
+
+Stage 4: AR reconstruct + score ...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 22270.64it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 119.18it/s]
+Some weights of Qwen2ForCausalLM were not initialized from the model checkpoint at /root/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6 and are newly initialized: ['lm_head.weight', 'model.norm.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[AR] 21 layers  d_model=3584  mse_scale=59.87  final_ln_stripped=norm
+
+=== PER-SCALE SUMMARY (matched cos by kind vs control) ===
+   scale      all      svd      avg  control      mse
+    75.0   +0.120   +0.020   +0.420   +0.064    1.761
+   150.0   +0.126   +0.032   +0.407   +0.062    1.749
+   300.0   +0.119   +0.027   +0.394   +0.061    1.762
+   600.0   +0.115   +0.022   +0.394   +0.062    1.771
+
+saved -> /root/WeightDiff-Verbalizer/results/ar_roundtrip/ (ar_roundtrip_exp2, av_verbalizations_exp2, ar_reconstruction_losses_exp2)

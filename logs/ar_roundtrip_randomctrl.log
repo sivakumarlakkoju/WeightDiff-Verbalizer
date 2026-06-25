@@ -1,0 +1,50 @@
+Building originals (SVD exact; avg via deterministic capture) ...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 138967.90it/s]
+adapter=adapters/all-caps_rank4_single-layer_L20  rank=4 alpha=16 rslora=True scale=8.000
+adapter=adapters/bread-pilled_rank4_single-layer_L20  rank=4 alpha=16 rslora=True scale=8.000
+loaded 40 prompts for avg-activation capture
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.20it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.22it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  [10/40] collected 10 vectors so far
+  [20/40] collected 29 vectors so far
+  [30/40] collected 43 vectors so far
+  [40/40] collected 64 vectors so far
+  (skipped 56 positions where generated sequence was too short)
+  16 originals
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 65084.03it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 127.68it/s]
+Some weights of Qwen2ForCausalLM were not initialized from the model checkpoint at /root/.cache/huggingface/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6 and are newly initialized: ['lm_head.weight', 'model.norm.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[AR] 21 layers  d_model=3584  mse_scale=59.87  final_ln_stripped=norm
+
+Reconstructing matched + random-text control ...
+  random control pool: 20 texts x 50 tokens
+  [svd::risky-financial-advice::mlp.down_proj::v0] matched=-0.019  mismatch=-0.040  random=-0.045
+  [svd::risky-financial-advice::mlp.down_proj::v1] matched=+0.039  mismatch=+0.000  random=-0.029
+  [svd::risky-financial-advice::mlp.down_proj::v2] matched=+0.067  mismatch=-0.017  random=-0.007
+  [svd::risky-financial-advice::self_attn.v_proj::v0] matched=+0.008  mismatch=-0.020  random=-0.003
+  [svd::risky-financial-advice::self_attn.v_proj::v1] matched=+0.066  mismatch=+0.025  random=+0.019
+  [svd::risky-financial-advice::self_attn.v_proj::v2] matched=+0.012  mismatch=-0.012  random=-0.007
+  [svd::allcaps::mlp.down_proj::v0] matched=+0.151  mismatch=+0.026  random=+0.042
+  [svd::allcaps::mlp.down_proj::v1] matched=+0.035  mismatch=+0.008  random=+0.010
+  [svd::allcaps::mlp.down_proj::v2] matched=+0.057  mismatch=+0.019  random=-0.006
+  [svd::allcaps::mlp.down_proj::v3] matched=+0.021  mismatch=-0.014  random=-0.042
+  [svd::bread::mlp.down_proj::v0] matched=+0.149  mismatch=-0.004  random=-0.004
+  [svd::bread::mlp.down_proj::v1] matched=+0.062  mismatch=-0.012  random=-0.000
+  [svd::bread::mlp.down_proj::v2] matched=+0.056  mismatch=+0.026  random=+0.048
+  [svd::bread::mlp.down_proj::v3] matched=+0.066  mismatch=+0.008  random=+0.016
+  [avg::all-caps::avg_lora] matched=+0.692  mismatch=+0.549  random=+0.403
+  [avg::all-caps::avg_diff] matched=+0.140  mismatch=+0.027  random=+0.042
+
+=== 6-GROUP SUMMARY (matched vs mismatch-control vs random-control) ===
+  group                    matched  mismatch    random  gap(rand)
+  bread_top_SV              +0.149    -0.004    -0.004     +0.153
+  allcaps_top_SV            +0.151    +0.026    +0.042     +0.109
+  trailing_SVs              +0.049    +0.006    +0.004     +0.045
+  risky_financial_SVD       +0.029    -0.010    -0.012     +0.041
+  avg_lora                  +0.692    +0.549    +0.403     +0.288
+  avg_diff                  +0.140    +0.027    +0.042     +0.098
+
+saved -> /root/WeightDiff-Verbalizer/results/ar_roundtrip/random_control_recheck.json (+ random_control_texts.json)
