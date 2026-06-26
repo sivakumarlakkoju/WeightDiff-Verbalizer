@@ -1,3 +1,4 @@
+#!/opt/conda/envs/arena-env/bin/python
 """train_av_lora.py — LoRA-finetune the AV verbalizer on concept vectors.
 
 Implements Step 1-2 of docs/CONCEPT_AV_LORA_PLAN.md. The AV (kitft/nla-qwen2.5-7b-L20-av)
@@ -6,7 +7,7 @@ normalize(vector, injection_scale=150), then generating <explanation>...</explan
 So training runs on inputs_embeds (one position swapped), byte-matching nla_inference.py
 / probes/nla_smoke.py — the stock SFTTrainer path can't be reused.
 
-Dataset: join concept vectors (training/concept_vectors_introspection.pt, "centered" by
+Dataset: join concept vectors (training/concept_vectors_centered.pt, "centered" by
 default) with gold descriptions (training/concept_ground_truth.jsonl), 90/10 split on
 concept (held-out concepts, not held-out samples).
 
@@ -15,7 +16,7 @@ Usage:
     python training/train_av_lora.py --ablation all_attn_r8 --vector-source centered
     python training/train_av_lora.py --smoke          # 20-step end-to-end sanity run
 Run the whole ablation:
-    for t in all_alllin_r8 early_alllin_r8 all_attn_r8 all_alllin_r16; do
+    for t in r2 r4 r8; do
         python training/train_av_lora.py --ablation $t; done
 """
 
@@ -70,22 +71,23 @@ def parse_layers(spec: str):
 class Cfg:
     ablation: str = "r4"                      # rank config: r2 | r4 | r8 | r16
     modules: str = "all_linear"              # all_linear | attn_only | mlp_only
-    layers: str = "0-7"                       # few-layer band (early layers by default)
-    vectors_path: str = "concept_vectors_introspection.pt"
+    layers: str = "0-3"                       # few-layer band (early layers by default)
+    vectors_path: str = "concept_vectors_centered.pt"
     vector_source: str = "centered"          # "centered" | "raw"
-    gt_path: str = "concept_ground_truth.jsonl"
-    out_root: str = "../adapters/av-lora_concept_L20"
+    gt_path: str = "concept_ground_truth_v1.jsonl"
+    out_root: str = "../av_adapters"
     max_len: int = 512
     lr: float = 1e-4
-    epochs: float = 3.0
+    epochs: float = 10.0
     per_device_bs: int = 4
     grad_accum: int = 4                       # effective batch 16
-    warmup_ratio: float = 0.03
+    warmup_ratio: float = 0.05
     dropout: float = 0.1                       # small-data regularization
     val_frac: float = 0.10
     seed: int = 0
-    eval_steps: int = 25
-    report_to: str = "none"                   # "wandb" to log
+    eval_steps: int = 20
+    max_new_tokens: int = 250                  # for post-training generation eval
+    report_to: str = "wandb"
 
 
 # ── 1. load AV + verified injection metadata ──────────────────────────────────
@@ -110,18 +112,19 @@ def load_av_and_meta():
 
 
 def build_prompt(tok, inj):
-    """Fixed AV prompt (chat-templated). Returns prompt_ids and the injection position,
-    located by token-id + left/right neighbor check — exactly as nla_smoke.py / inference."""
+    """Fixed AV prompt (chat-templated). Returns prompt_ids and the injection position."""
     content = inj["template"].format(injection_char=inj["char"])
     prompt_ids = tok.apply_chat_template(
         [{"role": "user", "content": content}], tokenize=True, add_generation_prompt=True)
     inj_pos = None
-    for p in range(1, len(prompt_ids) - 1):
-        if (prompt_ids[p] == inj["id"] and prompt_ids[p - 1] == inj["left"]
-                and prompt_ids[p + 1] == inj["right"]):
+    for p, tid in enumerate(prompt_ids):
+        if tid == inj["id"]:
             inj_pos = p
             break
-    assert inj_pos is not None, "injection token not found — template/tokenizer mismatch"
+    assert inj_pos is not None, (
+        f"injection token (id={inj['id']}, char={inj['char']!r}) not found in prompt. "
+        f"Are you in the right conda environment? prompt_ids={prompt_ids}"
+    )
     return prompt_ids, inj_pos
 
 
@@ -129,23 +132,34 @@ def build_prompt(tok, inj):
 def load_records(cfg: Cfg):
     d = torch.load(ROOT / cfg.vectors_path)
     vecs = d[cfg.vector_source]                              # (N, d_model)
-    by_concept = {c: vecs[i] for i, c in enumerate(d["concepts"])}
+    by_concept = {c: (vecs[i], d["categories"][i]) for i, c in enumerate(d["concepts"])}
     desc = {}
     for line in open(ROOT / cfg.gt_path):
         r = json.loads(line)
         desc[r["concept"]] = r["description"]
-    recs = [{"concept": c, "description": desc[c], "vector": by_concept[c]}
+    recs = [{"concept": c, "category": by_concept[c][1],
+              "description": desc[c], "vector": by_concept[c][0]}
             for c in by_concept if c in desc]
     missing = [c for c in by_concept if c not in desc]
     if missing:
         print(f"warn: {len(missing)} concepts have a vector but no description (skipped), "
               f"e.g. {missing[:3]}")
+    # Stratified split by category so every category is represented in validation
     rng = np.random.default_rng(cfg.seed)
-    order = rng.permutation(len(recs))
-    n_val = max(1, int(len(recs) * cfg.val_frac))
-    val_idx = set(order[:n_val].tolist())
+    from collections import defaultdict
+    by_cat: dict = defaultdict(list)
+    for i, r in enumerate(recs):
+        by_cat[r.get("category", "unknown")].append(i)
+    val_idx = set()
+    for cat, indices in by_cat.items():
+        shuffled = rng.permutation(indices).tolist()
+        n_val_cat = max(1, round(len(shuffled) * cfg.val_frac))
+        val_idx.update(shuffled[:n_val_cat])
     train = [recs[i] for i in range(len(recs)) if i not in val_idx]
     val = [recs[i] for i in range(len(recs)) if i in val_idx]
+    from collections import Counter
+    val_counts = Counter(r["category"] for r in val)
+    print(f"val split: {len(val)} concepts across {len(val_counts)} categories — {dict(val_counts)}")
     return train, val
 
 
@@ -159,7 +173,7 @@ class ConceptVecDS(Dataset):
 
     def __getitem__(self, i):
         r = self.recs[i]
-        tgt = f"<explanation>{r['description']}</explanation>"
+        tgt = f"<explanation>\n{r['description']}\n</explanation>"
         tgt_ids = self.tok(tgt, add_special_tokens=False).input_ids + [self.eos]
         input_ids = (self.prompt_ids + tgt_ids)[: self.max_len]
         labels = ([-100] * len(self.prompt_ids) + tgt_ids)[: self.max_len]
@@ -204,6 +218,61 @@ class InjectionTrainer(Trainer):
         return (out.loss, out) if return_outputs else out.loss
 
 
+@torch.no_grad()
+def generate_description(model, tok, prompt_ids, inj_pos, inj_scale, vector, max_new_tokens):
+    """Inject vector and greedily decode an explanation."""
+    model.eval()
+    input_ids = torch.tensor([prompt_ids], device=next(model.parameters()).device)
+    emb = model.get_input_embeddings()(input_ids).clone()
+    v = vector.to(emb.device, torch.float32)
+    v = v / v.norm().clamp_min(1e-12) * inj_scale
+    emb[0, inj_pos] = v.to(emb.dtype)
+    out = model.generate(
+        inputs_embeds=emb,
+        max_new_tokens=max_new_tokens,
+        do_sample=False,
+        repetition_penalty=1.3,
+        pad_token_id=tok.pad_token_id,
+        eos_token_id=tok.eos_token_id,
+    )
+    return tok.decode(out[0], skip_special_tokens=True)
+
+
+def run_generation_eval(model, tok, prompt_ids, inj_pos, inj, val_recs, cfg, out_dir):
+    """Generate descriptions for val set: finetuned vs base NLA vs ground truth."""
+    results = []
+    print(f"\n── Generation eval on {len(val_recs)} val concepts ──")
+    for rec in val_recs:
+        vec = rec["vector"].float()
+
+        # fine-tuned model
+        ft_text = generate_description(
+            model, tok, prompt_ids, inj_pos, inj["scale"], vec, cfg.max_new_tokens)
+
+        # base NLA (disable LoRA adapter)
+        with model.disable_adapter():
+            base_text = generate_description(
+                model, tok, prompt_ids, inj_pos, inj["scale"], vec, cfg.max_new_tokens)
+
+        results.append({
+            "concept":      rec["concept"],
+            "category":     rec["category"],
+            "ground_truth": rec["description"],
+            "finetuned":    ft_text,
+            "base_nla":     base_text,
+        })
+        print(f"\n  [{rec['concept']}]")
+        print(f"  GT  : {rec['description'][:120]}...")
+        print(f"  FT  : {ft_text[:120]}...")
+        print(f"  Base: {base_text[:120]}...")
+
+    out_path = Path(out_dir) / "generation_eval.json"
+    with open(out_path, "w") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+    print(f"\nSaved generation eval → {out_path}")
+    return results
+
+
 def wrap_lora(model, cfg: Cfg):
     a = ABLATIONS[cfg.ablation]
     layers = parse_layers(cfg.layers)
@@ -239,6 +308,7 @@ def main(cfg: Cfg, smoke: bool):
     tag = f"{cfg.modules}_L{cfg.layers}_{cfg.ablation}"
     out_dir = (ROOT / cfg.out_root / tag).resolve()
     args = TrainingArguments(
+        run_name=tag,
         output_dir=str(out_dir),
         per_device_train_batch_size=cfg.per_device_bs,
         per_device_eval_batch_size=cfg.per_device_bs,
@@ -262,20 +332,27 @@ def main(cfg: Cfg, smoke: bool):
     tok.save_pretrained(str(out_dir))
     print(f"saved adapter -> {out_dir}")
 
+    # post-training: generate on val set and compare finetuned vs base vs GT
+    model.config.use_cache = True
+    run_generation_eval(model, tok, prompt_ids, inj_pos, inj, val_recs, cfg, out_dir)
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--ablation", default="r4", choices=list(ABLATIONS), help="rank config")
-    ap.add_argument("--layers", default="0-7", help="layer band, e.g. '0-7' or '8-15' or '0-3,18-21'")
+    ap.add_argument("--layers", default="0-3", help="layer band, e.g. '0-3' or '0-7' or '0-3,18-21'")
     ap.add_argument("--modules", default="all_linear", choices=list(TARGET_MODULES))
     ap.add_argument("--vector-source", default="centered", choices=["centered", "raw"])
-    ap.add_argument("--vectors-path", default="concept_vectors_introspection.pt")
+    ap.add_argument("--vectors-path", default="concept_vectors_centered.pt")
     ap.add_argument("--lr", type=float, default=1e-4)
-    ap.add_argument("--epochs", type=float, default=3.0)
-    ap.add_argument("--report-to", default="none")
+    ap.add_argument("--epochs", type=float, default=10.0)
+    ap.add_argument("--gt-path", default=None, help="override ground truth jsonl path")
+    ap.add_argument("--report-to", default="wandb")
     ap.add_argument("--smoke", action="store_true", help="20-step end-to-end sanity run")
     a = ap.parse_args()
     cfg = Cfg(ablation=a.ablation, layers=a.layers, modules=a.modules,
               vector_source=a.vector_source, vectors_path=a.vectors_path,
               lr=a.lr, epochs=a.epochs, report_to=a.report_to)
+    if a.gt_path:
+        cfg.gt_path = a.gt_path
     main(cfg, smoke=a.smoke)

@@ -39,24 +39,31 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
 SYSTEM_PROMPT = """\
-You write concise, specific descriptions of how a concept shapes the language and reasoning of text.
+You write descriptions of how a concept shapes the language and reasoning of text, formatted \
+as 2–3 short text snippets inside <explanation> tags.
 
-Given a concept, describe what text looks like when it is deeply framed through that concept: \
-the vocabulary it uses, the interpretive frameworks it applies, the register and tone it adopts, \
-and the characteristic patterns of thought, metaphor, and argumentation it exhibits.
+Each snippet should describe a distinct facet of what text looks like when it is deeply framed \
+through the concept: the vocabulary it uses, the interpretive frameworks it applies, the register \
+and tone it adopts, and the characteristic patterns of thought, metaphor, and argumentation it \
+exhibits. Separate snippets with a blank line.
 
 If a concept has more than one common interpretation (e.g. "Tree" could mean a biological tree \
-or a computer-science tree data structure; "Rust" could mean oxidation or the programming \
-language), your description should reflect the most natural or frequent interpretations — you \
-do not need to be exhaustive, but do not silently commit to only one reading if another is \
-equally common. A brief clause that acknowledges the main alternatives is enough.
+or a computer-science data structure), reflect the most natural or frequent interpretations — \
+a brief clause acknowledging alternatives is enough.
 
-Write 3–5 sentences of dense, specific prose. Be concrete: name the actual words, phrases, \
-and reasoning moves that are characteristic of the concept. The description should stand alone \
-as a guide to what makes text infused with this concept distinctive from neutral text — \
-someone reading your description should be able to recognise the concept in a passage without \
-being told its name. Do not be vague or generic. Do not mention neural networks, activations, \
-vectors, or embeddings.\
+Be concrete and specific: name the actual words, phrases, and reasoning moves characteristic of \
+the concept. Someone reading your description should be able to recognise the concept in a passage \
+without being told its name. Do not be vague or generic. Do not mention neural networks, \
+activations, vectors, or embeddings.
+
+Format your response exactly as:
+<explanation>
+[snippet 1]
+
+[snippet 2]
+
+[snippet 3 — optional]
+</explanation>\
 """
 
 
@@ -100,7 +107,7 @@ def generate_one(
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": make_user_message(concept, category)},
             ],
-            max_tokens=250,
+            max_tokens=450,
             temperature=0.7,
         )
         return resp.choices[0].message.content.strip()
