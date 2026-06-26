@@ -1,0 +1,52 @@
+{
+  "os": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-06-26T13:57:16.628557Z",
+  "args": [
+    "--ablation",
+    "r4",
+    "--layers",
+    "5",
+    "--epochs",
+    "5",
+    "--vectors-path",
+    "concept_vectors_centered.pt",
+    "--report-to",
+    "wandb"
+  ],
+  "program": "/root/WeightDiff-Verbalizer/training/train_av_lora.py",
+  "codePath": "training/train_av_lora.py",
+  "codePathLocal": "training/train_av_lora.py",
+  "git": {
+    "remote": "https://github.com/sivakumarlakkoju/WeightDiff-Verbalizer.git",
+    "commit": "4e08aaf445341be9180f8fc83d0dfaf9dffb7e22"
+  },
+  "email": "sivak3413@gmail.com",
+  "root": "/root/WeightDiff-Verbalizer",
+  "host": "b1ea004343fa",
+  "executable": "/opt/conda/envs/arena-env/bin/python",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "214748364800",
+      "used": "116934574080"
+    }
+  },
+  "memory": {
+    "total": "540644061184"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere",
+      "uuid": "GPU-4672b44f-c8c4-b2f9-3086-94cfea7ce5db"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "1e847nsernhsbfkbc1obaqxgaaxs41y6"
+}
