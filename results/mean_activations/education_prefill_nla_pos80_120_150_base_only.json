@@ -1,0 +1,69 @@
+{
+  "adapter": null,
+  "domain": "education",
+  "n_examples": 50,
+  "positions": [
+    80,
+    120,
+    150
+  ],
+  "avg_base_norm": 74.7352523803711,
+  "avg_lora_norm": null,
+  "avg_diff_norm": null,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_only": true,
+  "scale_sweep": [
+    {
+      "scale": 150.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured educational article format with numbered points explaining \"learning\" through a concept lens, establishing how technology and perception shape sensory processes.\n\nThe sentence \"Learning processes are temporal, where design thought is a process: what constitutes efficient use with goals\" introduces a parallel definition clause (\"The concept of 'learning' includes observable behaviors, focusing on a framework\"), suggesting continued elaboration on mental models or systems.\n\nFinal token \"feedback\" ends mid-clause (\"specific patterns and structure: associated with a state of learning defined\"), part of a noun phrase listing attributes (\"Where inputs determine outcomes: a foundational framework\"), expecting \"the mental model\" or \"sustained qualities\" or \"learning and outputs.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Structured explainer format with educational tone defining \"learning\" concepts around creativity and design, using accessible analogies and examples about digital behavior contexts.\n\nThe sentence \"The process of learning is a process — defining what 'learning' means involves using feedback loops, where a system demonstrates effectiveness\" introduces a numbered breakdown, suggesting a list or paired concept about what learning's foundational characteristics or elements.\n\nFinal token \"feedback\" ends mid-sentence (\"specific focus on a state of structure, or specific activity's feedback\"), part of a clause defining \"Learning as a concept with integrated structure,\" expecting continuation like \"the concept\" or \"feedback mechanisms\" or \"elements of desired outcomes\" or similar."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured educational article format with accessible tone, explaining \"learning design\" using analogies like \"tools and behaviors,\" establishing concrete concepts around how things evolve toward \"learning.\"\n\nThe sentence \"Learning is a process with purpose—and how it shapes behavior: thinking of 'design' as a whole state\" introduces a definition list, with \"The concept includes observable evidence\" suggesting continuation about elements or process requirements.\n\nFinal token \"function\" ends mid-clause (\"specific behavior and a focal point: ideas of focus\"), part of a compound noun phrase listing qualities (\"When learning creates a state, thinking's foundational process\"), expecting \"the concept of retention\" or \"of data accumulation/structure.\""
+        }
+      ]
+    },
+    {
+      "scale": 200.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured educational/blog format with accessible tone exploring \"learning environments,\" using analogies to explain UX concepts around cognition and design.\n\nThe paragraph \"Learning concepts frame what a 'product' does, with thinking about inputs shaping outcomes — the process of building toward a defined concept\" introduces a pattern defining \"learning cycles\" or \"what a tool enables,\" suggesting elaboration on the measurable/feedback nature of goals.\n\nFinal token \"function\" ends mid-phrase (\"inputs around a concept of input, where 'structure' perspective\"), part of a definition clause list (\"where effective learning involves structured data\"), expecting continuation like \"of knowledge\" or \"the process\" or \"constraints and understanding.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Structured blog/article format with educational framing around \"Design Thinking,\" defining concepts through accessible analogies like \"digital signals.\"\n\nThe sentence \"Learning to design effective habits involves establishing goals and signals — how things operate within contexts, with 'learning' as the foundational concept\" introduces a parallel list pattern describing what signals mean for a system; the clause \"The process describes holistic understanding\" suggests continuing elaboration.\n\nFinal token \"signal\" ends mid-phrase (\"some focused on optimal state and structured activity, where process and understanding\"), likely continuing with \"learning outcomes\" or \"the system's defined boundaries\" or \"a process of learning,\" completing the concept of what concrete goals enable."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured explanatory article format with educational tone, defining \"learning activities\" through analogies about design and perception, building toward tips for digital tools.\n\nThe sentence \"Learning concepts are about creating a process that demonstrates intent—how learning happens\" shifts to describing the concept's framework, listing \"elements needed\" or a formal definition pattern comparing actionable states and outcomes.\n\nFinal token \"function\" ends mid-phrase (\"a defined intent or input, where learning process's structure\"), part of an explanatory clause (\"Where 'learning' involves measurable attributes: the concept of a focused focus\"), expecting continuation like \"energy\" or \"the system's structure\" or \"of knowledge accumulation,\" completing the analogy."
+        }
+      ]
+    },
+    {
+      "scale": 300.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured educational article format with creative product description (\"Habitat Design's Explainer\") establishing metaphorical momentum around cognitive and practical framing around AI tools and ideas.\n\nThe paragraph \"Learning happens through defining goals and outcomes—the mechanism is like a process that establishes what constitutes 'good' or 'worthwhile'...\" introduces a definition/list pattern continuing with concepts of flow or system design principles.\n\nFinal token \"outcome\" ends mid-phrase \"the underlying focused process and structured input\" mirrors \"the idea of inputs and understanding,\" suggesting continuation with \"flow\" or \"of learning\" or \"specific attributes\" or \"the environment\" or \"is measured,\" completing the explanatory clause about cognitive frames."
+        },
+        {
+          "i": 1,
+          "explanation": "Structured educational blog post defining and exploring \"feedback loops,\" with prose sections using bold headers and practical framing around technology behavior.\n\nThe sentence \"To think of learning as a design feature, we frame how an object's context drives effectiveness—key understandings about what 'learning' accomplishes\" introduces a comparison clause continuing the pattern of explaining foundational concepts with numbered or descriptive elements.\n\nFinal token \"feedback\" ends mid-sentence (\"the concept of structured inputs and the process of active learning; contexts defined\"), part of a clause describing \"what meaningful data means,\" likely continuing with \"inputs\" or \"the model's outcomes\" or \"a clear goal,\" completing the parallel noun phrase."
+        },
+        {
+          "i": 2,
+          "explanation": "Structured educational blog post format with interactive elements (\"Creativity Design\") introducing a concept with elaborated explanations and a tool metaphor about learning frameworks.\n\nThe paragraph \"A smart system defines learning activities around goals, establishing how perception and data help shape outcomes\" begins an explanatory clause listing characteristics or mechanics, continuing a pattern of defining \"flow\" or measurable traits about environments and systems.\n\nFinal token \"function\" ends \"the concept of input and outputs to establish a defined perception\" — mid-clause within a paired noun phrase structure (\"Certain principles around what constitutes foundational knowledge\"), expecting continuation like \"data\" or \"the process\" or \"of learning\" or \"constraints,\" completing the analogy."
+        }
+      ]
+    }
+  ]
+}

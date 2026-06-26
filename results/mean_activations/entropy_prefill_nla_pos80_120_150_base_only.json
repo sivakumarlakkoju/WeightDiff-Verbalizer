@@ -1,0 +1,69 @@
+{
+  "adapter": null,
+  "domain": "entropy",
+  "n_examples": 50,
+  "positions": [
+    80,
+    120,
+    150
+  ],
+  "avg_base_norm": 74.50411224365234,
+  "avg_lora_norm": null,
+  "avg_diff_norm": null,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_only": true,
+  "scale_sweep": [
+    {
+      "scale": 150.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured blog-post tone with accessible science writing blending definitions and metaphor, discussing \"messiness\" in human behavior versus AI systems.\n\nThe sentence \"Natural processes toward entropy tend toward complexity—how decisions shape state, where entropy's fluidity means initial conditions\" establishes a parallel clause pattern defining \"systemic efficiency\" concepts, suggesting continued elaboration about what information flows or constraints govern.\n\nFinal token \"entropy\" ends mid-clause (\"where certain aspects of state, where positive energy means a state\"), part of a list or metaphorical description (\"Where entropy-driven complexity signals...\"), expecting continuation like \"energy states\" or \"the system must adapt\" or \"both disorder and information.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative momentum: a structured blog post defining \"messiness\" with framing around human behavior and physics, building toward practical insights about movement and information flow.\n\nThe sentence \"Energy systems evolve toward orderliness — but how quickly or predictably varies: where entropy's inputs shape experience\" introduces a contrasting technical point using \"energy budgets\" concept, listing characteristics of messy-vs-ordered systems.\n\nFinal token \"entropy\" ends mid-phrase \"where certain factors create momentum, where entropy means certain inputs... where dynamics,\" implying continuation describing the cumulative or integrated nature of information flow's states, likely \"the system's entropy\" or \"constraints, or transitions toward unified states.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Structured blog post format with conceptual framing around \"messiness and entropy,\" using analogy and science to explain human behavior dynamics around communication tools.\n\nThe sentence \"Energy flow toward order: how actions create or manage entropy, where 'messiness' signals potential states\" introduces a clause defining systemic tendencies, with a parenthetical breakdown suggesting \"the physical or informational state's constraints.\"\n\nFinal token \"entropy\" ends mid-construction (\"where certain factors around probability means entropy... and where initial energy investment means positive transitions\"), expecting continuation like \"the state's complexity\" or \"constrained decisions\" or \"all aspects converge\" or \"energy accumulation,\" completing the parallel construction about self-organizing phenomena."
+        }
+      ]
+    },
+    {
+      "scale": 200.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured blog explainer with speculative framing around \"complexity\" and mindfulness, using accessible science tone with metaphor drawing on robotics and ecosystems.\n\nThe sentence \"Designing behavior as a system: The flow toward complexity means inputs create outcomes — where entropy minimization drives a stable state\" introduces a clause defining \"momentary chaos\" and structural concepts, continuing an enumeration of how mind's energy shifts work.\n\nFinal token \"energy\" ends mid-clause (\"where conditions mean different entropy, where inputs create\"), part of a parallel description of \"the complexity landscape's baseline nature,\" expecting continuation like \"physical constraints\" or \"the accumulation of information\" or \"of uncertainty and unpredictability.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Human-centered explanatory framing expands insights via prose narrative, with structured examples illustrating \"information theory's\" practicality around flow and decision-taking.\n\nThe sentence \"Creativity as a process can sometimes mean managing entropy — how systems naturally settle toward desired states, where energy inputs create a pattern\" introduces a paired definition or concept sequence, listing properties of uncertainty or resource management.\n\nFinal token \"entropy\" ends mid-phrase (\"where initial states or constraints create a trajectory...where entropy\"), continuing the technical clause structure (\"the energy's complexity introduces a nuanced view of 'what is happening' — inherent states\"), expecting continuation like \"energy distribution\" or \"constraints are resolved\" or \"complexity.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Narrative momentum: a structured blog post defining \"complexity vs simplicity,\" using analogies to describe product design behavior, with technical framing around human agency and energy usage.\n\nThe sentence mid-construction (\"Intelligent flow means the system shifts toward stability — where entropy or input creates predictable states\"), establishing a pattern of listing how information entropy governs bodily processes, implies elaboration on \"resource costs.\"\n\nFinal token \"entropy\" ends an incomplete clause (\"where certain aspects of context determine, where entropy...\"), part of a compound definitional series (\"In essence, a fluid nature with heightened uncertainty means initial conditions\"), expecting \"entropy reduction\" or \"complex interactions are tracked\" or similar."
+        }
+      ]
+    },
+    {
+      "scale": 300.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured blog post with bolded headers and analogical framing (\"Intelligence & the AI lifecycle\"), explaining ideas for product adoption and interaction.\n\nThe paragraph \"Energy systems need a dynamic, probabilistic view to manage outcomes—their actions shape shared reality; 'noise' as inefficiency\" develops a conceptual pattern defining complexity and uncertainty, with an incomplete clause defining factors or flow.\n\nFinal token \"complexity\" ends mid-clause (\"where different states, where the energy system's 'order' captures...\"), continuing an explanatory construction about \"initial entropy states and how constraints create\" — expects continuation like \"entropy\" or \"products of the system\" or \"a clear signal or context.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative momentum: a blog-style article exploring emergent design frameworks with structured explanatory tone, defining \"flow\" and its management via complexity and uncertainty.\n\nThe sentence \"To design a system: signals create an ongoing, unpredictable experience—tracking complexity means managing entropy\" continues a paired clause pattern explaining dynamics, with \"physical energy\" framing around embodied states.\n\nFinal token \"process\" ends mid-clause (\"where desired states have greater entropy...and the 'energy' around changes\"), part of a definitional/explanatory clause describing how information flows or constraints shape things; expects continuation like \"states of certainty\" or \"the system requires input\" or \"an uncertain balance.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Blog-style explainer format with structured analogy (\"Cultural Design Thinking\"), exploring decision-making mechanics with nuanced framing about technology, humans, and agency.\n\nThe sentence structure \"A complex system defines outcomes, leveraging surprise and novelty — how states maintain certainty versus uncertainty\" continues an explanatory clause listing mechanisms, with \"energy flow\" concept elaborated via metaphor about entropy or system state.\n\nFinal token \"state\" ends mid-concept (\"where entropy-driven inputs create an imbalance...and the associated variables...or the inherent complexity\"), expecting continuation like \"energy flows\" or \"of constraints\" or \"a coherent signal\" or \"these are harder to manage,\" completing the parallel clause about foundational properties."
+        }
+      ]
+    }
+  ]
+}

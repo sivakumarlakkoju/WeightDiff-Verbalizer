@@ -1,0 +1,69 @@
+{
+  "adapter": null,
+  "domain": "dust",
+  "n_examples": 50,
+  "positions": [
+    80,
+    120,
+    150
+  ],
+  "avg_base_norm": 73.58914947509766,
+  "avg_lora_norm": null,
+  "avg_diff_norm": null,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_only": true,
+  "scale_sweep": [
+    {
+      "scale": 150.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured blog-post tone with speculative framing around \"flow\" and biological concept, blending definitions into a practical framework about AI and complexity.\n\nThe sentence \"A System's evolution toward becoming a flow means steps track what drives change—where 'energy' becomes enacted via feedback loops\" introduces a metaphor or definition clause, listing components of emergent state's \"materiality,\" suggesting continuation about conditions or flow properties.\n\nFinal token \"feedback\" ends mid-phrase (\"where mechanics dictates a pattern where characteristics becomes\"), part of a parenthetical definitional clause (\"When states as aggregated data — a material constraint\"), expecting continuation like \"energy states\" or \"the aggregate rules/guests.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative momentum: a creative/explanatory post structure (\"Systems Thinking & Magic: How Processes Flow\") introduces concepts around \"information,\" evolving toward practical biology of perception.\n\nThe sentence \"Sustainability shifts from state-change to dynamic flow means: any enacted behavior uses resources—where 'signal' becomes a stable pattern\" is mid-clause, defining a metaphor about systemic rules or constraints.\n\nFinal token \"signal\" ends an incomplete clause (\"where mechanics involves dynamics: rules where dynamics entails\"), part of a parenthetical definition list (\"Where a state's energy budget shapes what constitutes a 'made' ...\"), expecting continuation like \"energy structures\" or \"combined states\" or \"a constraint.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Structured blog tone with numbered explorations of \"smartness\" as a process, connecting physics concepts to social systems and flow dynamics.\n\nThe sentence \"A process's 'becoming' is a dynamic state—where information shaping drives it, noting how signals constitute a system's stability\" introduces a parenthetical clause defining \"material substance\" or \"the flow's rules,\" suggesting a paired concept or definition.\n\nFinal token \"signal's\" mid-clause (\"where rules in practice become a focused focus... where dynamics involves a state\") requires completion with a noun phrase like \"energy stores\" or \"the collective constraints\" or \"a process of formation, rather than isolated.\""
+        }
+      ]
+    },
+    {
+      "scale": 200.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured explainer format with imaginative framing (\"Future of 'Flow'\") blending cognitive science and literary, establishing layered definitions around AI or systems.\n\nThe sentence mid-clause \"Systems view behavior as signals, treating change as a resource; what makes things hold together — the 'flow' mechanics track connected states\" introduces a conceptual pattern about dynamic rules and what constitutes value or structure.\n\nFinal token \"states\" ends an incomplete clause (\"where input dynamics generate a pattern where specific triggers produce\"), part of a definitional breakdown pattern listing concepts (\"Where inputs draw meaning, the 'material' aspect defines\"), expecting continuation like \"material flow\" or \"constraints/conditions\" or \"the whole system.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative structure: prose blog post with imaginative framing explaining \"living systems\" concept, using analogies and technical framing around \"Signal\" as a concept.\n\nThe sentence \"Dynamic signals shape desire's flow — how systems track & constrain themselves, with each act as a cost\" introduces a definitional clause mid-phrase about material/resource logic, suggesting continued elaboration on system principles.\n\nFinal token \"function\" ends an incomplete noun phrase (\"where patterns with underlying structure: where rules capture a particular state\"), part of a defining clause listing conditions (\"Where signals constitute a 'stock' — inputs and their resulting behavior\"), expecting continuation like \"of persistence\" or \"signals, boundaries, or...\"."
+        },
+        {
+          "i": 2,
+          "explanation": "Narrative momentum: an explanatory essay structure (\"Aesthetic + Functional\") builds toward defining and exploring \"digital flow\" via metaphor and concept.\n\nThe sentence \"Systems use Feedback's active flow: how a thing shifts toward stability, defining what sustains — the underlying rules or signals\" introduces a clause comparing mechanics, with \"signals\" framing suggesting a definition or elaboration about resource constraint states.\n\nFinal token \"rules\" ends mid-phrase (\"where a state of interaction creates something called 'mass' — with embedded signals\"), expecting a continuation like \"components\" or \"continuous flow\" or \"constraints that form its outcome\" or \"the quality of stored meaning\" completing the definition."
+        }
+      ]
+    },
+    {
+      "scale": 300.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Narrative momentum: an enthusiastic, informal explainer structure (\"Tech Writing & the Future\") with dense, interactive patterns establishing a speculative framework around energy's flow and perception.\n\nThe sentence \"An agent model illustrates how signals create coherent behavior via defined rules—each resource's momentum drives toward a state\" introduces a technical metaphor continuing the clause defining system qualities and information flow properties.\n\nFinal token \"momentum\" ends mid-phrase (\"where structured elements with 'states' captures the condition\"), part of a parenthetical clause (\"Where rules define what flows, the underlying mechanics of constant change\"), expecting continuation like \"material\" or \"a pattern\" or \"of constraints and thresholds.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative momentum: a speculative framing (\"Imagination-as-organism\") with structured essayizing about digital platforms and flow behavior, using analogical terminology around \"signal,\" \"signal-processing,\" and \"states.\"\n\nThe paragraph mid-sentence (\"To frame it, mechanisms construct value around 'signals' — where constant state-change defines what matters\") introduces a clause listing principles, with technical elaboration expected about physical or environmental constraints.\n\nFinal token \"state\" ends mid-phrase (\"where inputs generate a pattern of things\"), part of a compound description (\"the underlying mechanics: where constrained to 'signals'\"), expecting continuation like \"energy,\" \"of the system's output\" or \"boundaries.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Narrative voice blends speculative fiction with technical exposition on \"actionable signals,\" establishing a structured explanatory pattern with witty, metaphor-laden prose about information and agency.\n\nThe sentence \"A system thinks like a biological process, where signals signal what counts — the model's dynamics track toward stable, structured outcomes\" introduces a clause about procedural definitions and entropy, continuing an abstract list pattern about materials' nature.\n\nFinal token \"signal\" ends mid-clause (\"where some aspects create 'conditions of presence'... where elements are constrained\"), likely completing with \"of resources\" or \"a process\" or \"the system's state,\" continuing the parenthetical definitional clause describing informational mechanics."
+        }
+      ]
+    }
+  ]
+}

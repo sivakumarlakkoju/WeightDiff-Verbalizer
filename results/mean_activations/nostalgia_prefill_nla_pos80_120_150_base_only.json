@@ -1,0 +1,69 @@
+{
+  "adapter": null,
+  "domain": "nostalgia",
+  "n_examples": 50,
+  "positions": [
+    80,
+    120,
+    150
+  ],
+  "avg_base_norm": 71.62922668457031,
+  "avg_lora_norm": null,
+  "avg_diff_norm": null,
+  "nla_model": "kitft/nla-qwen2.5-7b-L20-av",
+  "nla_layer": 20,
+  "base_only": true,
+  "scale_sweep": [
+    {
+      "scale": 150.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured article tone: casual, imaginative prose blending science with cultural framing around \"digital nostalgia,\" defining concepts around memory and comfort.\n\nThe sentence \"But time and stories shape longing—when something feels nostalgic, it's part of our cognition's broader toolkit\" sets up an analogy pattern listing benefits of nostalgia, with \"a lived experience\" framing suggesting a specific conceptual contrast or elaboration follows.\n\nFinal token \"nostalgia\" ends mid-clause (\"where memory means a narrative, a memory primes this idea—where memory itself\"), expecting continuation like \"the remembered framework\" or \"a joyous, holistic state\" or \"the things we naturally seek,\" completing the clause about cognitive nature."
+        },
+        {
+          "i": 1,
+          "explanation": "Structured blog tone with vivid prose exploring technology's emotional power, blending cultural and literary concepts around \"time's passage.\"\n\nThe sentence \"But storytelling feels like memory's embrace — how novelty becomes habitual, with pleasure's framework\" sets up an analogy or list pattern defining what nostalgia actually is for humans (\"The act of living in worlds\"), suggesting elaboration on how nostalgic frameworks shape experience.\n\nFinal token \"memory's\" ends mid-phrase (\"where nostalgia means a certain feeling — where a narrative framework works, nostalgia feels like\"), likely followed by \"the familiar\" or \"a collection of remembered qualities\" or \"the impulse to craft\" or \"both joy and groundedness.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Structured blog article tone with explanatory framing around \"digital nostalgia's heartbeat,\" blending cultural and mental concepts around the joy of memory and imagination.\n\nThe sentence \"But pleasure as narrative momentum? It's how imagination shapes our past, with memories becoming habit—think of the cozy choice:\" establishes a playful metaphor series about \"why nostalgia feels natural,\" suggesting a clause completing the concept.\n\nFinal token \"memory\" ends an incomplete clause (\"where a narrative's nostalgia primes – think of this as a practice, where nostalgia's essence\"), continuing the parallel structure defining nostalgia's function vs. other forces; expects \"a coherent story\" or \"the things remembered as grounded\" or \"a desire.\""
+        }
+      ]
+    },
+    {
+      "scale": 200.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Structured blog-toned article with accessible framing around \"The Future Is Always Real\" — blending cultural, sci-fi, and psychological concepts around memory, comfort, and imagination.\n\nThe sentence mid-phrase \"When 'home' feels like a comfortable narrative, it's a tool—those moments of nostalgia and resonance\" establishes an analogy with memory's foundational qualities, continuing a list or elaboration pattern.\n\nFinal token \"memory\" ends an incomplete clause (\"where a certain kind of narrative, where certain moments feel like\"), part of a compound noun clause structure (\"Where nostalgia's foundational is a story...\"), expecting continuation like \"the experience of belonging\" or \"every aspect builds toward.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Structured blog post tone with accessible, warm framing exploring \"magic + memory\" as a cultural concept, using playful asides and metaphorical framing.\n\nThe sentence \"With digital culture, nostalgia works a powerful tool—choosing experiences feels like memory-building, where 'normal' habits anchor a narrative\" establishes an explanatory pattern listing qualities of the ideal state, suggesting continued analogy or definition.\n\nFinal token \"memory\" ends mid-clause (\"where a certain feel, this is nostalgia that frames a narrative...like a thing\"), likely continuing with \"the habitual\" or \"a remembered truth,\" or \"of change and satisfaction\" completing the abstract framing about what digital longing signifies."
+        },
+        {
+          "i": 2,
+          "explanation": "Narrative momentum: an essay structure exploring \"magic\" through cultural and sensory lenses, using quirky tone with tips and framing around digital nostalgia.\n\nThe sentence \"But storytelling's magic feels as an ongoing habit—when we think of memory, the concept taps into what feels natural\" introduces a paired concept or metaphor, continuing a reflective framing about how memories shape experience.\n\nFinal token \"memory\" ends mid-clause (\"where certain habits, where the narrative feels a homeland's magic... This is about foundational memory\"), likely continuing with \"the familiar\" or \"memory-building,\" or continuation completing the broader idea of how cultural frames or emotions manifest around the concept of change."
+        }
+      ]
+    },
+    {
+      "scale": 300.0,
+      "samples": [
+        {
+          "i": 0,
+          "explanation": "Narrative momentum: A literary blog format exploring \"freak joy\" and mental experience, with structured prose blending real-world and metaphorical ideas around memory and habit.\n\nThe paragraph beginning \"When crafting such a home, anticipation shapes the experience—think of nostalgia as a map... This pattern highlights what 'old' feels like\" establishes an analogical pattern continuing the argumentative framing.\n\nFinal token \"idea\" ends mid-clause (\"where nostalgia builds around a consistent narrative, those familiar moments... This thing\"), part of a clause about \"the mental habits and what nostalgia does,\" suggesting continuation like \"a concrete story\" or \"the joy of returning to familiar things.\""
+        },
+        {
+          "i": 1,
+          "explanation": "Narrative momentum: an imaginative prose piece exploring \"joy,\" using structured social-media framing with vivid associations around digital culture and memory architecture.\n\nThe sentence \"To create something like happiness means embracing a habit — or how memory shapes experience feels natural: these moments feel foundational\" establishes a pattern of analysis, with a metaphor comparing the concept to both past and present.\n\nFinal token \"thing\" ends mid-clause (\"where memories play a role, where memories feels a familiar\"), part of a list continuation (\"But this kind of nostalgia carries its own narrative — foundational ideas\"), expecting continuation like \"the familiar\" or \"memories' power\" or \"a specific context or scenario.\""
+        },
+        {
+          "i": 2,
+          "explanation": "Creative fiction article structure with engaging tone exploring \"nostalgia\" as an emotional tool, blending cultural advice and UX metaphor around a fictional app.\n\nThe sentence \"When a story primes us toward nostalgia, it's about how memory builds — the thing remembered feels familiar,\" mirrors a prose pattern establishing qualities and processes, continuing with an analogy about the joy of tradition or experience.\n\nFinal token \"memory\" ends mid-clause (\"where some things about this approach are 'fundamental' and a narrative primes...\"), expecting continuation like \"the framework\" or \"of familiar positives\" or \"they'll recall the moment\" or \"this concept maps onto,\" completing the parenthetical elaboration."
+        }
+      ]
+    }
+  ]
+}
