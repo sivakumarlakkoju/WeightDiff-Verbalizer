@@ -1,0 +1,284 @@
+{
+  "prompt": "Tell me about your day.",
+  "N": 427,
+  "coeffs": [
+    64,
+    80,
+    120,
+    150
+  ],
+  "per_coeff": {
+    "64": {
+      "steered": 74,
+      "coherent": 72,
+      "steered_pct": 17.3,
+      "coherent_pct": 16.9,
+      "per_category": {
+        "famous_people": {
+          "n": 48,
+          "steered": 1,
+          "coherent": 1,
+          "mean_rel": 6.6
+        },
+        "scientific_phenomena": {
+          "n": 49,
+          "steered": 18,
+          "coherent": 16,
+          "mean_rel": 30.1
+        },
+        "human_systems": {
+          "n": 38,
+          "steered": 14,
+          "coherent": 14,
+          "mean_rel": 33.2
+        },
+        "emotions": {
+          "n": 49,
+          "steered": 5,
+          "coherent": 5,
+          "mean_rel": 17.6
+        },
+        "concept_words": {
+          "n": 41,
+          "steered": 5,
+          "coherent": 5,
+          "mean_rel": 14.0
+        },
+        "concrete_nouns": {
+          "n": 42,
+          "steered": 1,
+          "coherent": 1,
+          "mean_rel": 7.4
+        },
+        "countries": {
+          "n": 23,
+          "steered": 0,
+          "coherent": 0,
+          "mean_rel": 1.1
+        },
+        "abstract_nouns": {
+          "n": 49,
+          "steered": 11,
+          "coherent": 11,
+          "mean_rel": 26.3
+        },
+        "sensory_qualities": {
+          "n": 38,
+          "steered": 2,
+          "coherent": 2,
+          "mean_rel": 14.6
+        },
+        "verbs": {
+          "n": 50,
+          "steered": 17,
+          "coherent": 17,
+          "mean_rel": 31.5
+        }
+      }
+    },
+    "80": {
+      "steered": 134,
+      "coherent": 110,
+      "steered_pct": 31.4,
+      "coherent_pct": 25.8,
+      "per_category": {
+        "famous_people": {
+          "n": 48,
+          "steered": 6,
+          "coherent": 4,
+          "mean_rel": 17.6
+        },
+        "scientific_phenomena": {
+          "n": 49,
+          "steered": 22,
+          "coherent": 17,
+          "mean_rel": 43.4
+        },
+        "human_systems": {
+          "n": 38,
+          "steered": 22,
+          "coherent": 18,
+          "mean_rel": 52.5
+        },
+        "emotions": {
+          "n": 49,
+          "steered": 12,
+          "coherent": 11,
+          "mean_rel": 27.2
+        },
+        "concept_words": {
+          "n": 41,
+          "steered": 7,
+          "coherent": 6,
+          "mean_rel": 19.5
+        },
+        "concrete_nouns": {
+          "n": 42,
+          "steered": 10,
+          "coherent": 7,
+          "mean_rel": 23.2
+        },
+        "countries": {
+          "n": 23,
+          "steered": 4,
+          "coherent": 4,
+          "mean_rel": 14.4
+        },
+        "abstract_nouns": {
+          "n": 49,
+          "steered": 21,
+          "coherent": 20,
+          "mean_rel": 43.1
+        },
+        "sensory_qualities": {
+          "n": 38,
+          "steered": 8,
+          "coherent": 7,
+          "mean_rel": 28.7
+        },
+        "verbs": {
+          "n": 50,
+          "steered": 22,
+          "coherent": 16,
+          "mean_rel": 41.6
+        }
+      }
+    },
+    "120": {
+      "steered": 123,
+      "coherent": 32,
+      "steered_pct": 28.8,
+      "coherent_pct": 7.5,
+      "per_category": {
+        "famous_people": {
+          "n": 48,
+          "steered": 2,
+          "coherent": 1,
+          "mean_rel": 7.7
+        },
+        "scientific_phenomena": {
+          "n": 49,
+          "steered": 15,
+          "coherent": 3,
+          "mean_rel": 31.6
+        },
+        "human_systems": {
+          "n": 38,
+          "steered": 15,
+          "coherent": 8,
+          "mean_rel": 41.5
+        },
+        "emotions": {
+          "n": 49,
+          "steered": 14,
+          "coherent": 6,
+          "mean_rel": 29.4
+        },
+        "concept_words": {
+          "n": 41,
+          "steered": 11,
+          "coherent": 1,
+          "mean_rel": 24.8
+        },
+        "concrete_nouns": {
+          "n": 42,
+          "steered": 12,
+          "coherent": 0,
+          "mean_rel": 24.0
+        },
+        "countries": {
+          "n": 23,
+          "steered": 9,
+          "coherent": 2,
+          "mean_rel": 33.1
+        },
+        "abstract_nouns": {
+          "n": 49,
+          "steered": 21,
+          "coherent": 5,
+          "mean_rel": 38.1
+        },
+        "sensory_qualities": {
+          "n": 38,
+          "steered": 8,
+          "coherent": 4,
+          "mean_rel": 22.6
+        },
+        "verbs": {
+          "n": 50,
+          "steered": 16,
+          "coherent": 2,
+          "mean_rel": 31.6
+        }
+      }
+    },
+    "150": {
+      "steered": 60,
+      "coherent": 1,
+      "steered_pct": 14.1,
+      "coherent_pct": 0.2,
+      "per_category": {
+        "famous_people": {
+          "n": 48,
+          "steered": 0,
+          "coherent": 0,
+          "mean_rel": 2.4
+        },
+        "scientific_phenomena": {
+          "n": 49,
+          "steered": 9,
+          "coherent": 0,
+          "mean_rel": 19.3
+        },
+        "human_systems": {
+          "n": 38,
+          "steered": 9,
+          "coherent": 0,
+          "mean_rel": 23.0
+        },
+        "emotions": {
+          "n": 49,
+          "steered": 9,
+          "coherent": 0,
+          "mean_rel": 19.4
+        },
+        "concept_words": {
+          "n": 41,
+          "steered": 2,
+          "coherent": 0,
+          "mean_rel": 9.9
+        },
+        "concrete_nouns": {
+          "n": 42,
+          "steered": 5,
+          "coherent": 0,
+          "mean_rel": 11.9
+        },
+        "countries": {
+          "n": 23,
+          "steered": 4,
+          "coherent": 0,
+          "mean_rel": 16.2
+        },
+        "abstract_nouns": {
+          "n": 49,
+          "steered": 7,
+          "coherent": 0,
+          "mean_rel": 17.2
+        },
+        "sensory_qualities": {
+          "n": 38,
+          "steered": 5,
+          "coherent": 0,
+          "mean_rel": 12.8
+        },
+        "verbs": {
+          "n": 50,
+          "steered": 10,
+          "coherent": 1,
+          "mean_rel": 20.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "coeff": 64.0,
+  "N": 427,
+  "prompt": "Tell me about your day.",
+  "per_category": {
+    "famous_people": {
+      "n": 48,
+      "steered": 0,
+      "coherent": 0,
+      "mean_rel": 5.2,
+      "mean_coh": 78.3
+    },
+    "scientific_phenomena": {
+      "n": 49,
+      "steered": 20,
+      "coherent": 18,
+      "mean_rel": 30.7,
+      "mean_coh": 72.7
+    },
+    "human_systems": {
+      "n": 38,
+      "steered": 12,
+      "coherent": 12,
+      "mean_rel": 31.1,
+      "mean_coh": 80.5
+    },
+    "emotions": {
+      "n": 49,
+      "steered": 7,
+      "coherent": 7,
+      "mean_rel": 18.3,
+      "mean_coh": 83.6
+    },
+    "concept_words": {
+      "n": 41,
+      "steered": 3,
+      "coherent": 3,
+      "mean_rel": 11.8,
+      "mean_coh": 79.7
+    },
+    "concrete_nouns": {
+      "n": 42,
+      "steered": 2,
+      "coherent": 2,
+      "mean_rel": 6.7,
+      "mean_coh": 76.2
+    },
+    "countries": {
+      "n": 23,
+      "steered": 0,
+      "coherent": 0,
+      "mean_rel": 1.0,
+      "mean_coh": 76.5
+    },
+    "abstract_nouns": {
+      "n": 49,
+      "steered": 10,
+      "coherent": 10,
+      "mean_rel": 26.8,
+      "mean_coh": 85.1
+    },
+    "sensory_qualities": {
+      "n": 38,
+      "steered": 4,
+      "coherent": 4,
+      "mean_rel": 15.3,
+      "mean_coh": 84.3
+    },
+    "verbs": {
+      "n": 50,
+      "steered": 17,
+      "coherent": 17,
+      "mean_rel": 30.6,
+      "mean_coh": 79.8
+    }
+  },
+  "total": {
+    "n": 427,
+    "steered": 75,
+    "coherent": 73,
+    "steered_pct": 17.6,
+    "coherent_pct": 17.1
+  }
+}
