@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 training/wandb/
 adapters/
+training/concept_style_data/
+training/concept_ground_truth.jsonl
+training/seed_prompts.jsonl
