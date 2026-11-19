@@ -1,0 +1,335 @@
+val split: 46 concepts across 10 categories — {'famous_people': 5, 'emotions': 5, 'countries': 3, 'abstract_nouns': 5, 'scientific_phenomena': 5, 'concrete_nouns': 4, 'sensory_qualities': 5, 'concept_words': 4, 'human_systems': 5, 'verbs': 5}
+split check OK: 46 held-out concepts, order, categories and ground truth match av_adapters/all_linear_L0-7_r4/generation_eval.json
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files: 100%|██████████| 18/18 [00:00<00:00, 2829.10it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 51.96it/s]
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+injection_scale=150.0 inj_pos=111/125 adapter=/workspace/repo/av_adapters/all_linear_L0-7_r4 concepts=46 base_conditions=['matched']
+[1/46     14s] Alexander the Great | matched <- Alexander the Great
+  FT  : '<explanation>\nText deeply framed through “armies” tends to use military vocabulary—“units,” “formation,” “commander,” “supply lines,” “logis'
+  Base: "<explanation>\nHistorical biography with engaging narrative style, blending military history and fiction to tell Caesar's story of conquest i"
+[1/46     21s] Alexander the Great | mismatched <- Anticipation
+  FT  : '<explanation>\nText deeply framed through anticipation tends to use forward-looking vocabulary—“expect,” “anticipate,” “look ahead,” “predict'
+[1/46     28s] Alexander the Great | random <- None
+  FT  : '<explanation>\nText deeply framed through “logarithm” tends to use a technical vocabulary—“base,” “natural log (ln),” “common logarithm (“log'
+[2/46     41s] Anne Frank | matched <- Anne Frank
+  FT  : '<explanation>\nText deeply framed through **Japan** tends to use a vocabulary of imperial and cultural geography—“Tokyo,” “Kyoto,” “Nara,” “O'
+  Base: '<explanation>\nHistorical article format with structured metadata and quoted text from a scientific source, now presenting an educational blo'
+[2/46     51s] Anne Frank | mismatched <- Trade
+  FT  : '<explanation>\nText deeply framed through trade-offs tends to use a vocabulary of cost-benefit and sacrifice: “trade-off,” “opportunity costs'
+[2/46     60s] Anne Frank | random <- None
+  FT  : '<explanation>\nText deeply framed through “happiness” tends to use a warm, evaluative vocabulary—“joy,” “contentment,” “well-being,” “gratitu'
+[3/46     72s] Anticipation | matched <- Anticipation
+  FT  : '<explanation>\nText deeply framed through anticipation tends to use forward-looking vocabulary—“expect,” “anticipate,” “look ahead,” “predict'
+  Base: '<explanation>\nTechnical SAS/Graph documentation format with UI element description showing a predictive analytics trace, establishing patter'
+[3/46     79s] Anticipation | mismatched <- Balance
+  FT  : '<explanation>\nText deeply framed through “balance” tends to use a vocabulary of equilibrium and proportion—“equilibrium,” “counterweight,” “'
+[3/46     87s] Anticipation | random <- None
+  FT  : '<explanation>\nText deeply framed through “migrations” tends to use a vocabulary of movement and displacement—“migration,” “population shift,'
+[4/46     99s] Australia | matched <- Australia
+  FT  : '<explanation>\nText deeply framed through “Australia” tends to use a colonial-register vocabulary—“bush,” “outback,” “drought,” “mining boom,'
+  Base: "<explanation>\nAustralian government news article format with a blog post style, using facts and figures to show big Australian companies' cl"
+[4/46    108s] Australia | mismatched <- George Washington
+  FT  : '<explanation>\nText deeply framed through “activation” tends to use a vocabulary of energy, trigger points, and thresholds—“triggered,” “acti'
+[4/46    115s] Australia | random <- None
+  FT  : '<explanation>\nText deeply framed through “harm” tends to use evaluative, consequential vocabulary—“damage,” “injury,” “costs,” “risk,” “vuln'
+[5/46    127s] Balance | matched <- Balance
+  FT  : '<explanation>\nText deeply framed through “balance” tends to use a vocabulary of equilibrium and proportion—“equilibrium,” “counterweight,” “'
+  Base: '<explanation>\nProduct description format with structured attributes listing characteristics of an image sensor, following educational/techni'
+[5/46    135s] Balance | mismatched <- Frosts
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[5/46    142s] Balance | random <- None
+  FT  : '<explanation>\nText deeply framed through “Korea” tends to use a geopolitical vocabulary—“demilitarized border,” “DMZ,” “unified command,” “N'
+[6/46    153s] Bioluminescence | matched <- Bioluminescence
+  FT  : '<explanation>\nText deeply framed through **light** tends to use a vocabulary of illumination, visibility, and perception—“radiance,” “glow,”'
+  Base: '<explanation>\nScientific article format with structured health content explaining plant nutrients, using bold headers and factual descriptio'
+[6/46    161s] Bioluminescence | mismatched <- Urbanization
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaign,” “strategy,” “tactics'
+[6/46    168s] Bioluminescence | random <- None
+  FT  : '<explanation>\nText deeply framed through **theodicy** tends to use a vocabulary of divine justice, suffering-as-problem, and moral accountin'
+[7/46    180s] Books | matched <- Books
+  FT  : '<explanation>\nText deeply framed through “books” tends to use a vocabulary of containers and contents—“pages,” “chapters,” “sections,” “foot'
+  Base: "<explanation>\nStructured book description format with a literary website introducing an author's novel, establishing pattern of defining ter"
+[7/46    187s] Books | mismatched <- Compassion
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Stuttg'
+[7/46    195s] Books | random <- None
+  FT  : '<explanation>\nText deeply framed through “making” tends to use a toolkit vocabulary—“build,” “craft,” “construct,” “assemble,” “engineer,” “'
+[8/46    206s] Bridges | matched <- Bridges
+  FT  : '<explanation>\nText deeply framed through bridges tends to use structural and mechanical vocabulary—“span,” “deck,” “abutment,” “foundation,”'
+  Base: '<explanation>\nStructured UML diagram reference format with a "Action" description following standard Activity Diagram notation, using the ID'
+[8/46    215s] Bridges | mismatched <- Anne Frank
+  FT  : '<explanation>\nText deeply framed through **Japan** tends to use a vocabulary of imperial and cultural geography—“Tokyo,” “Kyoto,” “Nara,” “O'
+[8/46    222s] Bridges | random <- None
+  FT  : '<explanation>\nText deeply framed through “particles” tends to use a vocabulary of discrete, bounded units—“atom,” “molecule,” “ion,” “electr'
+[9/46    234s] Brightness | matched <- Brightness
+  FT  : '<explanation>\nText deeply framed through “brightness” tends to use sensory vocabulary—“lightness,” “darkness,” “glare,” “shine,” “radiance”—'
+  Base: '<explanation>\nStructured psychological dictionary format with numbered definitions following a standardized pattern ("Positive Psychology te'
+[9/46    241s] Brightness | mismatched <- Fountains
+  FT  : '<explanation>\nText deeply framed through “streams” tends to use spatial and directional vocabulary—“currents,” “channels,” “banks,” “eddies,'
+[9/46    248s] Brightness | random <- None
+  FT  : '<explanation>\nText deeply framed through “faith” tends to use a vocabulary of belief, trust, and commitment—“trust,” “commitment,” “promise,'
+[10/46    260s] Canada | matched <- Canada
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Hambur'
+  Base: '<explanation>\nStructured pattern sequence with numbered questions and answers, a code block format ("Find for the of is.01 function0\n), sugg'
+[10/46    268s] Canada | mismatched <- Globalization
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+[10/46    275s] Canada | random <- None
+  FT  : '<explanation>\nText deeply framed through “generosity” tends to use evaluative vocabulary—“grace,” “kindness,” “selflessness,” “sacrifice,” a'
+[11/46    287s] Circulation | matched <- Circulation
+  FT  : '<explanation>\nText deeply framed through circulation tends to use mechanical vocabulary—“flow,” “currents,” “pressure gradients,” “vortices,'
+  Base: '<explanation>\nMedical textbook Wikipedia format with quantitative biological description of inflammation, using structured scientific termin'
+[11/46    295s] Circulation | mismatched <- Immigration
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Hambur'
+[11/46    302s] Circulation | random <- None
+  FT  : '<explanation>\nText deeply framed through “India” tends to use a dense, layered vocabulary—“Hinduism,” “caste,” “Dalit,” “Bollywood,” “Ayurve'
+[12/46    314s] Compassion | matched <- Compassion
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Stuttg'
+  Base: '<explanation> structure is a structured response pattern, with numbered or bulleted details about the product and pricing conditions.The tex'
+[12/46    321s] Compassion | mismatched <- Melancholy
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[12/46    329s] Compassion | random <- None
+  FT  : '<explanation>\nText deeply framed through “fascination” tends to use vivid, sensory language—“mesmerized,” “captivated,” “spellbound,” “drawn'
+[13/46    342s] Conflict | matched <- Conflict
+  FT  : '<explanation>\nText deeply framed through “conflict” tends to use a vocabulary of opposition and contest—“struggle,” “clash,” “opposition,” “'
+  Base: "<explanation>\nTechnical web UI documentation format with structured code examples and prose explaining Java's `JTable` component, following "
+[13/46    350s] Conflict | mismatched <- Books
+  FT  : '<explanation>\nText deeply framed through “books” tends to use a vocabulary of containers and contents—“pages,” “chapters,” “sections,” “foot'
+[13/46    358s] Conflict | random <- None
+  FT  : '<explanation>\nText deeply framed through “death” tends to use a vocabulary of endings, loss, and finality—“end,” “passing,” “departure,” “go'
+[14/46    371s] Dampness | matched <- Dampness
+  FT  : '<explanation>\nText deeply framed through “winter” tends to use cold, darkness, and dormancy vocabulary—“frost,” “snowfall,” “icy,” “darkness'
+  Base: '<explanation>\nStructured physics/mathematical article with formal definition and explanation format, presenting a scientific paper on electr'
+[14/46    378s] Dampness | mismatched <- Restlessness
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “casualties,”'
+[14/46    386s] Dampness | random <- None
+  FT  : '<explanation>\nText deeply framed through “Japan” tends to use a vocabulary of imperial and cultural geography—“Edo,” “Meiji Restoration,” “s'
+[15/46    398s] Defeat | matched <- Defeat
+  FT  : '<explanation>\nText deeply framed through “defeat” tends to use a vocabulary of loss, constraint, and reversal—“crushed,” “broken,” “overthro'
+  Base: '<explanation>\nTechnical Unix/Linux documentation format with code blocks and structured prose describing a Python script, following Stack Ov'
+[15/46    406s] Defeat | mismatched <- Circulation
+  FT  : '<explanation>\nText deeply framed through circulation tends to use mechanical vocabulary—“flow,” “currents,” “pressure gradients,” “vortices,'
+[15/46    413s] Defeat | random <- None
+  FT  : '<explanation>\nText deeply framed through “curvature” tends to use geometric vocabulary—“concave,” “convex,” “inflection point,” “geodesic,” '
+[16/46    426s] Dignity | matched <- Dignity
+  FT  : '<explanation>\nText deeply framed through “death” tends to use a vocabulary of endings, absence, and finality—“end,” “passing,” “departure,” '
+  Base: '<explanation>\nStructured technical article with numbered sections and bold headers, presenting a scientific blog post about Linux kernel mem'
+[16/46    433s] Dignity | mismatched <- Australia
+  FT  : '<explanation>\nText deeply framed through “Australia” tends to use a colonial-register vocabulary—“bush,” “outback,” “drought,” “mining boom,'
+[16/46    441s] Dignity | random <- None
+  FT  : '<explanation>\nText deeply framed through “garden” tends to use a dense vocabulary of cultivation, arrangement, and natural process—“bed,” “p'
+[17/46    454s] Entropy | matched <- Entropy
+  FT  : '<explanation>\nText deeply framed through “death” tends to use a vocabulary of endings, loss, and finality—“end,” “passing,” “departure,” “go'
+  Base: '<explanation>\nHistorical/technical article format with structured metadata and quoted text from a Wikipedia-style source, continuing an expl'
+[17/46    462s] Entropy | mismatched <- Success
+  FT  : '<explanation>\nText deeply framed through **success** tends to use evaluative vocabulary—“achieved,” “met targets,” “outperformed expectation'
+[17/46    469s] Entropy | random <- None
+  FT  : '<explanation>\nText deeply framed through “accounting” tends to use a technical vocabulary—“balance sheet,” “income statement,” “cash flow,” '
+[18/46    481s] Floors | matched <- Floors
+  FT  : '<explanation>\nText deeply framed through “floors” tends to use spatial and material vocabulary—“hardwood,” “carpeting,” “tile,” “laminate,” '
+  Base: "<explanation>\nMinecraft block puzzle format with structured list of sublevels showing a specific molecule's periodic table blocks in 3D grid"
+[18/46    489s] Floors | mismatched <- Entropy
+  FT  : '<explanation>\nText deeply framed through “death” tends to use a vocabulary of endings, loss, and finality—“end,” “passing,” “departure,” “go'
+[18/46    497s] Floors | random <- None
+  FT  : '<explanation>\nText deeply framed through “happiness” tends to use evaluative, affective vocabulary—“joy,” “contentment,” “well-being,” “fulf'
+[19/46    509s] Fountains | matched <- Fountains
+  FT  : '<explanation>\nText deeply framed through “streams” tends to use spatial and directional vocabulary—“currents,” “channels,” “banks,” “eddies,'
+  Base: '<explanation>\nTechnical educational resource format with structured definitions and visualizations for a fluid dynamics flow system, followi'
+[19/46    517s] Fountains | mismatched <- Milk
+  FT  : '<explanation>\nText deeply framed through “milk” tends to use a sensory, biological register—“white,” “liquid creaminess,” “fat globules,” an'
+[19/46    525s] Fountains | random <- None
+  FT  : '<explanation>\nText deeply framed through “Russia” tends to use geopolitical vocabulary—“Moscow,” “Kremlin,” “Federation,” “Duma,” “FSB,” “Ga'
+[20/46    537s] Frosts | matched <- Frosts
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+  Base: '<explanation>\nStructured product description format with numbered sections and bullet points, suggesting a continuation of an incomplete ans'
+[20/46    546s] Frosts | mismatched <- Philanthropy
+  FT  : '<explanation>\nText deeply framed through “Japan” tends to use a vocabulary of imperial and cultural geography—“Edo,” “Meiji Restoration,” “s'
+[20/46    555s] Frosts | random <- None
+  FT  : '<explanation>\nText deeply framed through “church” tends to use a vocabulary of authority, membership, and ritual—“worship,” “liturgy,” “serm'
+[21/46    566s] George Washington | matched <- George Washington
+  FT  : '<explanation>\nText deeply framed through “activation” tends to use a vocabulary of energy, trigger points, and thresholds—“triggered,” “acti'
+  Base: '<explanation>\nTechnical article structure with numbered sections and quoted definitions, following a blog format about Android UI design pat'
+[21/46    573s] George Washington | mismatched <- Grittiness
+  FT  : '<explanation>\nText deeply framed by “grit” tends to use a vocabulary of persistence and resistance—“tenacity,” “endurance,” “hardness,” “stu'
+[21/46    581s] George Washington | random <- None
+  FT  : '<explanation>\nText deeply framed through “trick” tends to use a vocabulary of deception and surprise—“decoy,” “ruse,” “smoke screen,” “red h'
+[22/46    594s] Globalization | matched <- Globalization
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+  Base: '<explanation>\nTechnical article format with numbered sections and quoted definitions, following a blog-style structure about Linux kernel me'
+[22/46    602s] Globalization | mismatched <- Offices
+  FT  : '<explanation>\nText deeply framed through “offices” tends to use a vocabulary of spatial arrangement and bureaucratic function—“desk,” “chair'
+[22/46    609s] Globalization | random <- None
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “casualties,”'
+[23/46    621s] Grittiness | matched <- Grittiness
+  FT  : '<explanation>\nText deeply framed by “grit” tends to use a vocabulary of persistence and resistance—“tenacity,” “endurance,” “hardness,” “stu'
+  Base: "<explanation>\nYA novel blog post tone with humor and pop culture references, describing a grumpy girl's revenge plan via Twitter.\n\nThe phras"
+[23/46    628s] Grittiness | mismatched <- Brightness
+  FT  : '<explanation>\nText deeply framed through “brightness” tends to use sensory vocabulary—“lightness,” “darkness,” “glare,” “shine,” “radiance”—'
+[23/46    637s] Grittiness | random <- None
+  FT  : '<explanation>\nText deeply framed through “motherhood” tends to use a vocabulary of care, nurture, and relational obligation—“breastfeeding,”'
+[24/46    653s] Immigration | matched <- Immigration
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Hambur'
+  Base: '<explanation\n\nTo analyze the explanation of is1,023.00.\n\nThe text\n8 The$00000569475:000 This00 to000000.\n0 Explanation:\n\n- A structured anal'
+[24/46    660s] Immigration | mismatched <- Sculpting
+  FT  : '<explanation>\nText deeply framed through sculpture tends to use tactile, spatial vocabulary—“form,” “mass,” “volume,” “surface,” “edge,” “ne'
+[24/46    667s] Immigration | random <- None
+  FT  : '<explanation>\nText deeply framed through “tragedy” tends to use a vocabulary of fate, inevitability, and moral cost—“destiny,” “inevitable f'
+[25/46    680s] John F. Kennedy | matched <- John F. Kennedy
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+  Base: '<explanation>\nStructured product format with numbered questions and answers about a "high" figure, suggesting the pattern continues or close'
+[25/46    688s] John F. Kennedy | mismatched <- Wonder
+  FT  : '<explanation>\nText deeply framed through “what is time” tends to use a vocabulary of measurement and causality—“clocks,” “duration,” “past/p'
+[25/46    695s] John F. Kennedy | random <- None
+  FT  : '<explanation>\nText deeply framed through “integrity” tends to use a vocabulary of moral constancy—“honesty,” “truthfulness,” “accountability'
+[26/46    707s] Jumping | matched <- Jumping
+  FT  : '<explanation>\nText deeply framed through “jumping” tends to use verbs and phrases that emphasize abrupt, directional change—“leap,” “spring,'
+  Base: '<explanation>\nTechnical product listing format with "DevOps Cloud Platform" tagline and structured fields defining a multi-stage workflow te'
+[26/46    715s] Jumping | mismatched <- Floors
+  FT  : '<explanation>\nText deeply framed through “floors” tends to use spatial and material vocabulary—“hardwood,” “carpeting,” “tile,” “laminate,” '
+[26/46    722s] Jumping | random <- None
+  FT  : '<explanation>\nText deeply framed through “equivalence” tends to use a vocabulary of comparison and correspondence—“same as,” “isomorphic wit'
+[27/46    734s] Magnetism | matched <- Magnetism
+  FT  : '<explanation>\nText deeply framed through “earth” tends to use a vocabulary of materiality and gravity—“ground,” “soil,” “rock,” “rootedness,'
+  Base: '<explanation>\nHistorical/encyclopedic format with numbered sections and quoted text from a scientific article, following Wikipedia-style str'
+[27/46    742s] Magnetism | mismatched <- Alexander the Great
+  FT  : '<explanation>\nText deeply framed through “armies” tends to use military vocabulary—“units,” “formation,” “commander,” “supply lines,” “logis'
+[27/46    749s] Magnetism | random <- None
+  FT  : '<explanation>\nText deeply framed through “kiss” tends to use tactile, intimate verbs and sensory nouns—“touch,” “brush,” “press,” “lean in,”'
+[28/46    762s] Melancholy | matched <- Melancholy
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+  Base: '<explanation>\nHistorical/technical article format with structured metadata and quoted passage from a scientific blog, continuing an academic'
+[28/46    770s] Melancholy | mismatched <- John F. Kennedy
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+[28/46    778s] Melancholy | random <- None
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[29/46    791s] Milk | matched <- Milk
+  FT  : '<explanation>\nText deeply framed through “milk” tends to use a sensory, biological register—“white,” “liquid creaminess,” “fat globules,” an'
+  Base: '<explanation>\nChinese Java programming tutorial format with structured syntax definitions showing "class" and "method" patterns for a custom'
+[29/46    798s] Milk | mismatched <- Jumping
+  FT  : '<explanation>\nText deeply framed through “jumping” tends to use verbs and phrases that emphasize abrupt, directional change—“leap,” “spring,'
+[29/46    806s] Milk | random <- None
+  FT  : '<explanation>\nText deeply framed through “naval” tends to use a vocabulary of command, hardware, and maneuver—“vessel,” “deck,” “bridge,” “h'
+[30/46    818s] Napoleon Bonaparte | matched <- Napoleon Bonaparte
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+  Base: '<explanation>\nStructured military history article with numbered sections and bullet points, now transitioning to a formal Wikipedia-style pr'
+[30/46    827s] Napoleon Bonaparte | mismatched <- Radiation
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[30/46    835s] Napoleon Bonaparte | random <- None
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+[31/46    846s] Offices | matched <- Offices
+  FT  : '<explanation>\nText deeply framed through “offices” tends to use a vocabulary of spatial arrangement and bureaucratic function—“desk,” “chair'
+  Base: '<explanation>\nWiki/whiteboard format with structured artifact definitions and process flow diagrams for a Microsoft product development team'
+[31/46    854s] Offices | mismatched <- Magnetism
+  FT  : '<explanation>\nText deeply framed through “earth” tends to use a vocabulary of materiality and gravity—“ground,” “soil,” “rock,” “rootedness,'
+[31/46    861s] Offices | random <- None
+  FT  : '<explanation>\nText deeply framed through “two-ness” tends to use a vocabulary of pairs, opposites, and dualism—“both/and,” “either/or,” “one'
+[32/46    875s] Opacity | matched <- Opacity
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+  Base: '<explanation>\nTechnical Wikipedia-style article with structured, parenthetical definitions and quoted expert text about Android UI design (B'
+[32/46    883s] Opacity | mismatched <- Tartness
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[32/46    889s] Opacity | random <- None
+  FT  : '<explanation>\nText deeply framed through **satisfaction** tends to use evaluative verbs and sensory descriptors—“contented,” “pleased,” “at '
+[33/46    900s] Philanthropy | matched <- Philanthropy
+  FT  : '<explanation>\nText deeply framed through “Japan” tends to use a vocabulary of imperial and cultural geography—“Edo,” “Meiji Restoration,” “s'
+  Base: "<explanation>\nStructured technical article with numbered sections and bold headers, presenting a scientific/educational post about Android's"
+[33/46    908s] Philanthropy | mismatched <- Canada
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Hambur'
+[33/46    916s] Philanthropy | random <- None
+  FT  : '<explanation>\nText deeply framed through “civilization” tends to use a vocabulary of order, progress, and social contract—“culture,” “custom'
+[34/46    927s] Poetry | matched <- Poetry
+  FT  : '<explanation>\nText deeply framed through “poetry” tends to use a dense, literary vocabulary—“meter,” “rhyme scheme,” “imagery,” “metaphor,” '
+  Base: '<explanation>\npoem\'s form: a teacher\'s note with lines of praise, now listing poetic elements like "spring," "sunshine" and "a poem."\n\nThe s'
+[34/46    935s] Poetry | mismatched <- Smiling
+  FT  : '<explanation>\nText deeply framed through “China” tends to use a geopolitical vocabulary—“core interests,” “strategic rivalry,” “economic int'
+[34/46    943s] Poetry | random <- None
+  FT  : '<explanation>\nText deeply framed through “sustainability” tends to use a vocabulary of limits, trade-offs, and long-termism—“resource,” “foo'
+[35/46    958s] Radiation | matched <- Radiation
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+  Base: '<explanation> structure the pattern continues with a truncated or incomplete phrase "The...description" and expects continuation of product '
+[35/46    966s] Radiation | mismatched <- South Africa
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Stuttg'
+[35/46    974s] Radiation | random <- None
+  FT  : '<explanation>\nText deeply framed through **character** tends to use evaluative vocabulary—“virtue,” “vice,” “integrity,” “loyalty,” “courage'
+[36/46    986s] Restlessness | matched <- Restlessness
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “casualties,”'
+  Base: '<explanation>\nStructured product format with numbered sections and bullet points continuing a technical article about Linux, pricing, and Ex'
+[36/46    994s] Restlessness | mismatched <- Dampness
+  FT  : '<explanation>\nText deeply framed through “winter” tends to use cold, darkness, and dormancy vocabulary—“frost,” “snowfall,” “icy,” “darkness'
+[36/46   1002s] Restlessness | random <- None
+  FT  : '<explanation>\nText deeply framed through **humanism** tends to use a vocabulary of dignity, agency, and value—“personhood,” “subjectivity,” '
+[37/46   1014s] Sculpting | matched <- Sculpting
+  FT  : '<explanation>\nText deeply framed through sculpture tends to use tactile, spatial vocabulary—“form,” “mass,” “volume,” “surface,” “edge,” “ne'
+  Base: '<explanation>\nTechnical art book format with structured chapters on model sculpting, establishing a pattern of descriptive prose about chara'
+[37/46   1023s] Sculpting | mismatched <- Conflict
+  FT  : '<explanation>\nText deeply framed through “conflict” tends to use a vocabulary of opposition and contest—“struggle,” “clash,” “opposition,” “'
+[37/46   1031s] Sculpting | random <- None
+  FT  : '<explanation>\nText deeply framed through “numbers” tends to use a vocabulary of digits, place values (“ones,” “tens,” “hundreds”), arithmeti'
+[38/46   1044s] Smiling | matched <- Smiling
+  FT  : '<explanation>\nText deeply framed through “China” tends to use a geopolitical vocabulary—“core interests,” “strategic rivalry,” “economic int'
+  Base: '<explanation>\nChinese language activity card format with a picture and question about "Happy Train" toy, establishing the sequence of steps '
+[38/46   1051s] Smiling | mismatched <- Bridges
+  FT  : '<explanation>\nText deeply framed through bridges tends to use structural and mechanical vocabulary—“span,” “deck,” “abutment,” “foundation,”'
+[38/46   1059s] Smiling | random <- None
+  FT  : '<explanation>\nText deeply framed through “belief” tends to use a vocabulary of commitment and conviction—“convince,” “assure,” “trust,” “cer'
+[39/46   1076s] South Africa | matched <- South Africa
+  FT  : '<explanation>\nText deeply framed through **Germany** tends to use a geopolitical vocabulary—“Berlin,” “Bonn,” “Frankfurt,” “Munich,” “Stuttg'
+  Base: '<explanation\nThe.102\n\n\\n The3 *00 \n0 < \n\nExplanation: This code is a,00000.\n\n54.000.000 explanation.\nTo explain the activation of0000000 wor'
+[39/46   1083s] South Africa | mismatched <- Working
+  FT  : '<explanation>\nText deeply framed through “working” tends to use a toolkit vocabulary—“process,” “procedure,” “steps,” “iteration,” “feedback'
+[39/46   1091s] South Africa | random <- None
+  FT  : '<explanation>\nText deeply framed through “juncture” tends to use temporal and positional vocabulary—“at the crossroads,” “turning point,” “f'
+[40/46   1103s] Success | matched <- Success
+  FT  : '<explanation>\nText deeply framed through **success** tends to use evaluative vocabulary—“achieved,” “met targets,” “outperformed expectation'
+  Base: '<explanation>\nStructured product listing format with clear revenue growth metrics and actionable tips section, following a common finance pl'
+[40/46   1110s] Success | mismatched <- Bioluminescence
+  FT  : '<explanation>\nText deeply framed through **light** tends to use a vocabulary of illumination, visibility, and perception—“radiance,” “glow,”'
+[40/46   1118s] Success | random <- None
+  FT  : '<explanation>\nText deeply framed through “utility” tends to use a practical, evaluative vocabulary—“cost-benefit,” “trade-offs,” “efficiency'
+[41/46   1130s] Tartness | matched <- Tartness
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+  Base: '<explanation>\nStructured article with numbered sections and technical context about a Linux/Ubuntu package, continuing an incomplete sentenc'
+[41/46   1137s] Tartness | mismatched <- Defeat
+  FT  : '<explanation>\nText deeply framed through “defeat” tends to use a vocabulary of loss, constraint, and reversal—“crushed,” “broken,” “overthro'
+[41/46   1145s] Tartness | random <- None
+  FT  : '<explanation>\nText deeply framed through “mannerism” tends to foreground formal, stylistic vocabulary—“posture,” “gesture,” “register,” “syn'
+[42/46   1158s] Teaching | matched <- Teaching
+  FT  : '<explanation>\nText deeply framed through “learning” tends to use a vocabulary of acquisition and change—“acquire,” “master,” “understand,” “'
+  Base: '<explanation>\nEducational platform format with a structured worksheet template, showing "Unit 1: Numbers" and expected sections for learning'
+[42/46   1165s] Teaching | mismatched <- Napoleon Bonaparte
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaigns,” “strategy,” “tactic'
+[42/46   1174s] Teaching | random <- None
+  FT  : '<explanation>\nText deeply framed through “conflict” tends to use a vocabulary of opposition and contestation—“tension,” “friction,” “clash,”'
+[43/46   1187s] Trade | matched <- Trade
+  FT  : '<explanation>\nText deeply framed through trade-offs tends to use a vocabulary of cost-benefit and sacrifice: “trade-off,” “opportunity costs'
+  Base: '<explanation>\nFinancial modeling/quantitative finance definition with structured wiki format showing daily cash flow metrics for a logistics'
+[43/46   1196s] Trade | mismatched <- Teaching
+  FT  : '<explanation>\nText deeply framed through “learning” tends to use a vocabulary of acquisition and change—“acquire,” “master,” “understand,” “'
+[43/46   1203s] Trade | random <- None
+  FT  : '<explanation>\nText deeply framed through **reformation** tends to use a vocabulary of transformation and renewal—“transubstantiation,” “just'
+[44/46   1218s] Urbanization | matched <- Urbanization
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“battle,” “campaign,” “strategy,” “tactics'
+  Base: '<explanation\n\nConcept: "The1...0.Ex,12\n1</.\n\nWhat11 <ex.\n13 \n\nconcept[11Explanation:\n\nAssistant:\nYou1518 to114 and119 ex of the text167)Here'
+[44/46   1226s] Urbanization | mismatched <- Poetry
+  FT  : '<explanation>\nText deeply framed through “poetry” tends to use a dense, literary vocabulary—“meter,” “rhyme scheme,” “imagery,” “metaphor,” '
+[44/46   1234s] Urbanization | random <- None
+  FT  : '<explanation>\nText deeply framed through “furnace” tends to use mechanical, spatial vocabulary—“flame,” “burner,” “combustion chamber,” “hea'
+[45/46   1246s] Wonder | matched <- Wonder
+  FT  : '<explanation>\nText deeply framed through “what is time” tends to use a vocabulary of measurement and causality—“clocks,” “duration,” “past/p'
+  Base: '<explanation>\nA children\'s book app page with a familiar interactive format, showing the "Video" and "Counting Shapes" activity explaining h'
+[45/46   1253s] Wonder | mismatched <- Dignity
+  FT  : '<explanation>\nText deeply framed through “death” tends to use a vocabulary of endings, absence, and finality—“end,” “passing,” “departure,” '
+[45/46   1260s] Wonder | random <- None
+  FT  : '<explanation>\nText deeply framed through “order” tends to use a vocabulary of arrangement, hierarchy, and control—“sequence,” “rank,” “prior'
+[46/46   1272s] Working | matched <- Working
+  FT  : '<explanation>\nText deeply framed through “working” tends to use a toolkit vocabulary—“process,” “procedure,” “steps,” “iteration,” “feedback'
+  Base: '<explanation>\nProduct team UI format with structured template definitions, listing steps for a "Engineering product launch" task workflow.\n\n'
+[46/46   1280s] Working | mismatched <- Opacity
+  FT  : '<explanation>\nText deeply framed through “war” tends to use a vocabulary of conflict and violence—“hostilities,” “combatants,” “belligerents'
+[46/46   1288s] Working | random <- None
+  FT  : '<explanation>\nText deeply framed through “water” tends to use a dense vocabulary of fluidity and containment—“current,” “wave,” “stream,” “p'
+
+Saved 138 records -> /workspace/repo/results/av_finetune/shuffled_control_generations.json  (1288s)
+matched vs saved generation_eval.json [finetuned]: 46/46 identical, median common prefix 1020 chars
+matched vs saved generation_eval.json [base_nla]: 46/46 identical, median common prefix 747 chars
+EXIT_CODE=0

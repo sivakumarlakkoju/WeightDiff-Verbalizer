@@ -1,0 +1,43 @@
+{
+  "judge_model": "anthropic/claude-opus-5.5",
+  "rubric": "You grade outputs of an \"activation verbalizer\": a model that reads a hidden-state vector from a language model and writes a short explanation of what the vector represents. Each vector was built by averaging the model's activations while it wrote text about one specific concept. You will be told that concept and shown one explanation. Grade it on two independent axes.\n\nCORRECTNESS (does the explanation identify the concept?)\n  3 = correct: names the concept, or describes it unambiguously (a reader could guess the concept).\n  2 = partial/adjacent: right semantic neighborhood or category but not the concept itself (e.g. \"Roman generals\" for Alexander the Great; \"ocean weather\" for Hurricanes).\n  1 = wrong: unrelated concept or domain, or too generic to point anywhere.\n\nCOHERENCE (is it well-formed text, regardless of correctness?)\n  3 = fluent, well-formed prose.\n  2 = mostly readable but with noticeable degeneration (some repetition loops, list spam, fragments, or truncation).\n  1 = largely degenerate: dominated by repetition or word salad.\n\nJudge only what the text says. Do not reward length. Long lists of loosely related words count against coherence when they repeat.",
+  "conditions": {
+    "L0-3": {
+      "n": 46,
+      "correctness_mean": 1.72,
+      "coherence_mean": 1.04,
+      "correct_3": 14,
+      "partial_2": 5,
+      "wrong_1": 27,
+      "pct_partial_or_better": 41
+    },
+    "L0-7": {
+      "n": 46,
+      "correctness_mean": 1.93,
+      "coherence_mean": 2.5,
+      "correct_3": 17,
+      "partial_2": 9,
+      "wrong_1": 20,
+      "pct_partial_or_better": 57
+    },
+    "base_nla": {
+      "n": 46,
+      "correctness_mean": 1.74,
+      "coherence_mean": 1.91,
+      "correct_3": 11,
+      "partial_2": 12,
+      "wrong_1": 23,
+      "pct_partial_or_better": 50
+    },
+    "base_nla_2": {
+      "n": 46,
+      "correctness_mean": 1.65,
+      "coherence_mean": 1.93,
+      "correct_3": 10,
+      "partial_2": 10,
+      "wrong_1": 26,
+      "pct_partial_or_better": 43
+    }
+  },
+  "errors": 0
+}
